@@ -3,30 +3,30 @@
 
 # Package name
 # https://confluence.hl7.org/display/FHIR/NPM+Package+Specification#NPMPackageSpecification-Packagename
-id: ch.fhir.ig.ch-ig
-canonical: http://fhir.ch/ig/ch-ig
-name: CH_IG
-title: "CH IG (R4)"
-description: Implementation Guide CH IG (R4) for ...
+id: ch.fhir.ig.ch-elm
+canonical: http://fhir.ch/ig/ch-elm
+name: CH_ELM
+title: "CH ELM (R4)"
+description: FHIR® Implementation Guide for the Electronic Laboratory Report of the Swiss Federal Office of Public Health
 status: draft
 license: CC0-1.0
-copyright: CC0-1.0
+copyright: TBD
 jurisdiction: urn:iso:std:iso:3166#CHE
-date: 2023-05-11
+date: 2023-06-14
 version: 0.1.0
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 publisher:
-  name: HL7 Switzerland
+  name: Federal Office of Public Health FOPH
 contact:
-  - name: HL7 Switzerland
+  - name: Federal Office of Public Health FOPH
     telecom:
       - system: url
-        value: https://www.hl7.ch/
+        value: https://www.bag.admin.ch/bag/en/home/das-bag/kontakt-standort.html
 
 dependencies:
-  ch.fhir.ig.ch-core: 3.0.0
+  ch.fhir.ig.ch-laboratory-report: current
 
 pages:
   index.md:
@@ -51,7 +51,3 @@ menu:
 parameters:
   allow-extensible-warnings: true
 
-resources:
-  CodeSystem/ch-ig-example-translation:
-    name: CH IG Example Translation
-    exampleBoolean: false

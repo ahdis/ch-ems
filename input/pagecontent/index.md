@@ -1,13 +1,16 @@
 ### Introduction
 
-**CH IG** is a template for creating a [HL7 Switzerland](https://www.hl7.ch/) FHIR implementation guide.    
+TBD 
 
 
-### Source and Download
+<div markdown="1" class="stu-note">
 
-[GitHub Repository](https://github.com/ahdis/ch-ig)
+The specification herewith documented is work in progress. No liability can be inferred from the use or misuse of this specification, or its consequences.
 
-**Download**: You can download this implementation guide in the [NPM package](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) format from [here](package.tgz).
+</div>
+
+**Download**: You can download this implementation guide in [NPM format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](package.tgz).
+
 
 ### IP Statements
 This document is licensed under Creative Commons "No Rights Reserved" ([CC0](https://creativecommons.org/publicdomain/zero/1.0/)).
