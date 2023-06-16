@@ -2,3 +2,7 @@
 
 # For the eLM ConceptMaps source codes are not represented in the IG
 No Source Code System, so the source codes cannot be checked
+
+# Caused by the underlying CH Core profile
+The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+

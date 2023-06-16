@@ -5,6 +5,9 @@ Title: "Observation Results: laboratory (CH ELM)"
 Description: "This CH ELM base profile constrains the Observation resource to represent results produced by laboratory tests."
 * . ^short = "Observation Results: laboratory (CH ELM)"
 
+* subject only Reference(PatientChElm)
+* subject 1..
+
 * effective[x] only dateTime
 * effectiveDateTime 1..
 * effectiveDateTime obeys ch-elm-dateTime
