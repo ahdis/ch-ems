@@ -1,0 +1,50 @@
+LabCodeFOPH	Reporting unit identifying code
+LabName	Reporting unit name
+LabDepartment	Reporting unit department
+LabStreetAddressLine	Reporting unit street
+LabPostBox	Reporting unit post box
+LabZipCode	Reporting unit ZIP code
+LabCity	Reporting unit city
+LabOrderId	Reporting unit order id
+OrdererOrgName	Orderer organization name
+OrdererDivision	Orderer division
+OrdererPhysicianSurname	Ordering physician surname
+OrdererPhysicianGivenname	Ordering physician given name 
+OrdererStreetAddressLine	Orderer street
+OrdererPostBox	Orderer post box
+OrdererZipCode	Orderer ZIP code
+OrdererCity	Orderer city
+PrimaryLabName	Primary laboratory name
+PrimaryLabStreetAddressLine	Primary laboratory street
+PrimaryLabPostBox	Primary laboratory post box
+PrimaryLabZipCode	Primary laboratory ZIP code
+PrimaryLabCity	Primary laboratory city
+PrimaryLabOrderId	Primary laboratory order ID
+PatientSurname	Patient surname
+PatientGivenname	Patient given name
+PatientSexCode	Patient sex code
+PatientDayOfBirth	Patient day of birth 
+PatientMonthOfBirth	Patient month of birth 
+PatientYearOfBirth	Patient year of birth
+PatientPhoneNumber	Patient phone number
+PatientEmail	Patient e-mail address
+PatientStreetAddressLine	Patient street 
+PatientZipCode	Patient ZIP code
+PatientCity	Patient city of residence
+PatientCantonCode	Patient canton of residence
+PatientCountryCode	Patient country of residence code
+TestDayOfExecution	Day of test
+TestMonthOfExecution	Month of test
+TestYearOfExecution	Year of test
+    TestResultCode	Test result code
+TestDetectionCode	Detection-method code
+TestDetectionOther	Detection-method other
+TestDayOfCollection	Day of sample collection
+TestMonthOfCollection	Month sample collection
+TestYearOfCollection	Year sample collection
+TestCollectionMaterialCode	Sampling material code
+TestCollectionMaterialOther	Sampling material other
+TestOrganismCode	Organism
+TestOrganismOther	Organism other
+
+	

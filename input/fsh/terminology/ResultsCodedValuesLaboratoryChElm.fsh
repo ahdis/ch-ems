@@ -1,17 +1,12 @@
 ValueSet: ResultsCodedValuesLaboratoryChElm
 Id: results-coded-values-laboratory-ch-elm
 Title: "Results Coded Values Laboratory - CH ELM"
-Description: "This value set includes the codes for the laboratory test results"
+Description: "This value set includes the codes for the laboratory test results."
 * ^status = #draft
 * ^experimental = false
 
-// eLM CSV: 1=positive | 2=negative | 5=borderline | 8=undetermined
-
-// https://build.fhir.org/ig/HL7/fhir-ips/ValueSet-results-coded-values-laboratory-uv-ips.html
 * $sct#10828004	"Positive (qualifier value)"
 * $sct#260385009 "Negative (qualifier value)"
-
-// additional values
 * $sct#442779003 "Borderline low (qualifier value)"
 * $sct#442777001 "Borderline high (qualifier value)"
 * $sct#371932001 "Borderline normal (qualifier value)"
@@ -20,7 +15,7 @@ Description: "This value set includes the codes for the laboratory test results"
 
 
 
-Instance: eLMTestResultCode-to-ResultsCodedValuesLaboratoryChElm
+Instance: eLMTestResultCode-to-ChElm
 InstanceOf: ConceptMap
 Usage: #definition
 * experimental = false

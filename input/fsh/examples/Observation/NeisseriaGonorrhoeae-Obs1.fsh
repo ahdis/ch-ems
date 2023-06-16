@@ -7,9 +7,10 @@ Description: "tbd"
 * category[0] = $observation-category#laboratory "Laboratory"
 * code.text = "LOINC"
 * subject = Reference(Patient/TBD)
-* effectiveDateTime
+* effectiveDateTime = "2023-02-01"
 * performer
 * valueCodeableConcept = $sct#10828004 "Positive"
+* method = $sct#9718006 "Polymerase chain reaction analysis (procedure)" // 1=PCR
 
 
 

@@ -1,1 +1,4 @@
 == Suppressed Messages ==
+
+# For the eLM ConceptMaps source codes are not represented in the IG
+No Source Code System, so the source codes cannot be checked
