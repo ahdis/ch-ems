@@ -2,7 +2,7 @@ Instance: NeisseriaGonorrhoeae-DR1
 InstanceOf: DiagnosticReportChElm
 Usage: #example
 Title: "Neisseria Gonorrhoeae DR1"
-Description: "tbd"
+Description: "Example of a DiagnosticReport with a positive Neisseria Gonorrhoeae laboratory result."
 * extension[0].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
 * extension[=].valueReference = Reference(Composition/TBD)
 * status = #final

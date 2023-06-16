@@ -2,7 +2,7 @@ Instance: NeisseriaGonorrhoeae-Obs1
 InstanceOf: ObservationResultsLaboratoryChElm
 Usage: #example
 Title: "Neisseria Gonorrhoeae Obs1"
-Description: "tbd"
+Description: "Example of an Observation of a positive Neisseria Gonorrhoeae laboratory result."
 * status = #final
 * category[0] = $observation-category#laboratory "Laboratory"
 * code.text = "LOINC"
