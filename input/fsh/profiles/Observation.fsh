@@ -1,33 +1,26 @@
-Profile: ObservationResultsLaboratoryChElm
-Parent: ObservationResultsLaboratoryChLab
-Id: Observation-results-laboratory-ch-elm
-Title: "Observation Results: laboratory (CH ELM)"
-Description: "This CH ELM base profile constrains the Observation resource to represent results produced by laboratory tests."
-* . ^short = "Observation Results: laboratory (CH ELM)"
+Profile: ChElmObservationResultsLaboratory
+Parent: ChLabObservationResultsLaboratory
+Id: ch-elm-observation-results-laboratory
+Title: "CH ELM Observation Results: Laboratory"
+Description: "This CH ELM base profile constrains the Observation resource for the purpose of laboratory test reports."
+* . ^short = "CH ELM Observation Results: Laboratory"
 
-* subject only Reference(PatientChElm)
+* code only ChElmCodeableConcept
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.rules = #open
+* code.coding contains
+    neisseriaGonorrhoeae 0..1
+* code.coding[neisseriaGonorrhoeae] from ChElmResultsNeisseriaGonorrhoeae (required)
+
+* subject only Reference(ChElmPatient)
 * subject 1..
 
-* effective[x] only dateTime
-* effectiveDateTime 1..
+//* effective[x] only dateTime
+* effective[x] 1..
 * effectiveDateTime obeys ch-elm-dateTime
 
-* valueCodeableConcept 1..
-* valueCodeableConcept only CodeableConceptChElm
-* valueCodeableConcept from ResultsCodedValuesLaboratoryChElm (preferred)
+* value[x] 1..
+* valueCodeableConcept only ChElmCodeableConcept
+* valueCodeableConcept from ChElmResultsCodedValuesLaboratory (preferred)
 
-* method 1..
-* method only CodeableConceptChElm
-* method from DetectionMethodCodedValuesLaboratoryChElm (preferred)
-
-
-
-Mapping: eLM-for-ObservationResultsLaboratoryChElm
-Source: ObservationResultsLaboratoryChElm
-Target: "https://www.bag.admin.ch/bag/en/home.html"
-Id: eLM
-Title: "eLM"
-Description: "Mapping of elements from the former FOPH eLM CSV format to the new FHIR format."
-* effectiveDateTime         -> "TestYearOfExecution-TestMonthOfExecution-TestDayOfExecution"
-* valueCodeableConcept      -> "TestResultCode"
-* method                    -> "TestDetectionCode"

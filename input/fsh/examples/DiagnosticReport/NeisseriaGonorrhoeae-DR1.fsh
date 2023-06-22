@@ -1,13 +1,14 @@
 Instance: NeisseriaGonorrhoeae-DR1
-InstanceOf: DiagnosticReportChElm
+InstanceOf: ChElmDiagnosticReport
 Usage: #example
 Title: "Neisseria Gonorrhoeae DR1"
-Description: "Example of a DiagnosticReport with a positive Neisseria Gonorrhoeae laboratory result."
+Description: "Example of a DiagnosticReport for a Neisseria Gonorrhoeae laboratory result."
+
 * extension[0].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
 * extension[=].valueReference = Reference(Composition/TBD)
 * status = #final
 * code = $loinc#11502-2	"Laboratory report"
-* subject = Reference(Patient/TBD)
+* subject = Reference(DM)
 * result = Reference(NeisseriaGonorrhoeae-Obs1)
 
 

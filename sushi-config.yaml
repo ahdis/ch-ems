@@ -27,10 +27,15 @@ contact:
 
 dependencies:
   ch.fhir.ig.ch-laboratory-report: current
+  ch.fhir.ig.ch-core: current
 
 pages:
   index.md:
     title: Home
+  document.md:
+    title: Laboratory Report  
+  usecase-german.md:
+    title: Anwendungsfälle  
   profiles.md:
     title: Profiles
   extensions.md:
@@ -40,6 +45,9 @@ pages:
 
 menu:
   Home: index.html
+  Document: document.html
+  Use Case:
+    German: usecase-german.html
   Profiles: profiles.html
   Extensions: extensions.html
   Terminology: terminology.html

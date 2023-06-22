@@ -1,16 +1,16 @@
 Instance: NeisseriaGonorrhoeae-Obs1
-InstanceOf: ObservationResultsLaboratoryChElm
+InstanceOf: ChElmObservationResultsLaboratory
 Usage: #example
 Title: "Neisseria Gonorrhoeae Obs1"
 Description: "Example of an Observation of a positive Neisseria Gonorrhoeae laboratory result."
+
 * status = #final
 * category[0] = $observation-category#laboratory "Laboratory"
-* code.text = "LOINC"
-* subject = Reference(Patient/TBD)
+* code.coding[neisseriaGonorrhoeae] = $loinc#14127-5 "Neisseria gonorrhoeae [Presence] in Anal by Organism specific culture"
+* subject = Reference(DM)
 * effectiveDateTime = "2023-02-01"
 * performer
 * valueCodeableConcept = $sct#10828004 "Positive"
-* method = $sct#9718006 "Polymerase chain reaction analysis (procedure)" // 1=PCR
 
 
 
