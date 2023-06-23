@@ -22,5 +22,6 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 
 * value[x] 1..
 * valueCodeableConcept only ChElmCodeableConcept
-* valueCodeableConcept from ChElmResultsCodedValuesLaboratory (preferred)
+* valueCodeableConcept from ChElmResultsCodedValuesLaboratory (extensible)
 
+* performer only Reference(ChElmPractitionerRoleReportingLab)

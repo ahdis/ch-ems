@@ -1,5 +1,11 @@
 == Suppressed Messages ==
 
-# Caused by the underlying CH Core profile
+# Caused by the underlying profiles
 The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
 
+# Correct SNOMED CT code (https://browser.ihtsdotools.org/?)
+The code '10828004' is not valid in the system http://snomed.info/sct
+
+# Valid JSON (https://jsonlint.com/)
+Error reading Http Response: Error parsing JSON source: Unexpected char '<' in json stream at Line 1 (path=[null])

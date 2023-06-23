@@ -2,8 +2,10 @@ Profile: ChElmPatient
 Parent: ChLabPatient
 Id: ch-elm-patient
 Title: "CH ELM Patient"
-Description: "This CH ELM base profile constrains the Patient resource for the purpose of laboratory test reports."
+Description: "This CH ELM base profile constrains the Patient resource for the purpose of laboratory orders and test reports."
 * . ^short = "CH ELM Patient"
+
+// Mit der Anpassung der Epidemienverordnung und die Meldeverordnung wird neu die AHV-Nummer des Patienten Meldepflichtig, sofern elektronisch gemeldet wird und Massnahmen notwendig sind.
 
 * name 1..
 * name.family 1..

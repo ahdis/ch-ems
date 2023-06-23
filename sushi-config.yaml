@@ -58,4 +58,5 @@ menu:
 # FHIR Tools IG: http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 parameters:
   allow-extensible-warnings: true
+  display-warnings: true
 

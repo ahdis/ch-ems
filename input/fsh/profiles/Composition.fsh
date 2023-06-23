@@ -6,4 +6,4 @@ Description: "This CH ELM base profile constrains the Composition resource for t
 * . ^short = "CH ELM Composition: Laboratory Report"
 
 * subject only Reference(ChElmPatient)
-* author only Reference(ChElmPractitionerRole)
+* author only Reference(ChElmPractitionerRoleReportingLab)

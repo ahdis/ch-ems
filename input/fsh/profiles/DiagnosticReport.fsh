@@ -8,3 +8,4 @@ Description: "This CH ELM base profile constrains the DiagnosticReport resource 
 * subject only Reference(ChElmPatient)
 * result 1..
 * result only Reference(ChElmObservationResultsLaboratory)
+* performer only Reference(ChElmPractitionerRoleReportingLab)

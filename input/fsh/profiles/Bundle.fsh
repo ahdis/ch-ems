@@ -9,7 +9,8 @@ Description: "This CH ELM base profile constrains the Bundle resource for the pu
 * entry[DiagnosticReport].resource only ChElmDiagnosticReport
 * entry[Patient].resource only ChElmPatient
 * entry[Observation].resource only ChElmObservationResultsLaboratory
-* entry[Specimen].resource only Specimen
-* entry[PractitionerRole].resource only ChElmPractitionerRole
-* entry[Practitioner].resource only ChElmPractitioner
-* entry[Organization].resource only ChElmOrganization
+* entry[Specimen].resource only ChElmSpecimen
+* entry[ServiceRequest].resource only ChElmServiceRequestLaboratoryOrder
+* entry[PractitionerRole].resource only ChElmPractitionerRoleReportingLab or ChElmPractitionerRoleOrderer
+* entry[Practitioner].resource only ChElmPractitionerReportingLab or ChElmPractitionerOrderer
+* entry[Organization].resource only ChElmOrganizationReportingLab or ChElmOrganizationOrderer or ChElmOrganizationDepartment
