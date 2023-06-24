@@ -1,5 +1,11 @@
-
-
+Instance: 1Spec-NeisseriaGonorrhoeae
+InstanceOf: ChElmSpecimen
+Usage: #example
+Title: "1Spec - Neisseria Gonorrhoeae"
+Description: "Example for a CH ELM Specimen: Laboratory."
+* type.text = "TBD"
+* subject = Reference(1Pat-DM)
+* collection.collectedDateTime = "2023-02-01"
 
 /*
 Instance: Inline-Instance-for-IT-CDA2FHIR-17e2cad1-c3e3-4901-adb1-c35a0b82b883-3

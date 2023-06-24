@@ -18,13 +18,15 @@ Description: "Example for a CH ELM Document: Laboratory Report."
 * entry[Patient].resource = 1Pat-DM
 * entry[Observation].fullUrl = "http://test.fhir.ch/r4/Observation/1Obs-NeisseriaGonorrhoeae"
 * entry[Observation].resource = 1Obs-NeisseriaGonorrhoeae
-//* entry[Specimen].fullUrl = "http://test.fhir.ch/r4/Specimen/"
-//* entry[Specimen].resource = 
-//* entry[PractitionerRole].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/PractRole"
-//* entry[PractitionerRole].resource = PractRole
-//* entry[Practitioner].fullUrl = "http://test.fhir.ch/r4/Practitioner/Pract"
-//* entry[Practitioner].resource = Pract
-* entry[Organization][0].fullUrl = "http://test.fhir.ch/r4/Organization/1Org-MedCompany"
-* entry[Organization][=].resource = 1Org-MedCompany
-* entry[Organization][+].fullUrl = "http://test.fhir.ch/r4/Organization/1Org-MedCompany-Abt2"
-* entry[Organization][=].resource = 1Org-MedCompany-Abt2
+* entry[Specimen].fullUrl = "http://test.fhir.ch/r4/Specimen/1Spec-NeisseriaGonorrhoeae"
+* entry[Specimen].resource = 1Spec-NeisseriaGonorrhoeae
+* entry[ServiceRequest].fullUrl = "http://test.fhir.ch/r4/ServiceRequest/1SR-NeisseriaGonorrhoeae"
+* entry[ServiceRequest].resource = 1SR-NeisseriaGonorrhoeae
+* entry[PractitionerRole].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/1PR-MedCompany"
+* entry[PractitionerRole].resource = 1PR-MedCompany
+* entry[Practitioner].fullUrl = "http://test.fhir.ch/r4/Practitioner/1Pract-MedCompany"
+* entry[Practitioner].resource = 1Pract-MedCompany
+* entry[Organization].fullUrl = "http://test.fhir.ch/r4/Organization/1Org-MedCompany"
+* entry[Organization].resource = 1Org-MedCompany
+* entry[Organization-Department].fullUrl = "http://test.fhir.ch/r4/Organization/1Org-MedCompany-Abt2"
+* entry[Organization-Department].resource = 1Org-MedCompany-Abt2

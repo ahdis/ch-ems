@@ -1,6 +1,16 @@
-
-
-
+Instance: 1SR-NeisseriaGonorrhoeae
+InstanceOf: ChElmServiceRequestLaboratoryOrder
+Usage: #example
+Title: "1SR - Neisseria Gonorrhoeae"
+Description: "Example for a CH ELM ServiceRequest: Laboratory Order"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:d4832dff-3e33-4c39-b5b3-2eb85f870e56"
+* status = #active
+* intent = #order
+//* code = $loinc#14957-5 "Microalbumin [Mass/volume] in Urine"
+* code.text = "TBD"
+* subject = Reference(1Pat-DM)
+* specimen = Reference(1Spec-NeisseriaGonorrhoeae)
 
 
 /*
