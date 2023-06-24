@@ -11,23 +11,29 @@ Description: "Example for a CH ELM Observation Results: Laboratory."
 * effectiveDateTime = "2023-02-01"
 * performer = Reference(1PR-MedCompany)
 * valueCodeableConcept = $sct#10828004 "Positive"
+* specimen = Reference(TBD)
 
 
 
-/*
-https://fshschool.org/FSHOnline/#/share/3XaAudr
-Instance: Inline-Instance-for-BundleLabResultReportPOC-4
+/* Composition.section
+Instance: Inline-Instance-for-IT-CDA2FHIR-17e2cad1-c3e3-4901-adb1-c35a0b82b883-19
 InstanceOf: Observation
 Usage: #inline
-* id = "8bd279af-125a-4318-b461-ba5629b12e7f"
-* meta.profile = "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+* id = "763f7902-8103-4d10-8bd1-546a726d43ee"
 * status = #final
-* category[0] = $observation-category#laboratory
-* category[+] = $v2-0074#MB "Microbiology"
-* code = $lab-localCs-eu-lab#3002989 "Hepatitis Panel, Acute with Reflex to HBsAg Confirmation and Reflex to HCV by Quantitative NAAT"
-* code.text = "Acute Hepatitis Panel, reflex to confirmation"
-* subject = Reference(Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5)
-* effectiveDateTime = "2022-10-25T13:35:00+01:00"
-* performer.display = "Dr. Patrick Dempsey"
-* hasMember = Reference(Observation/4e67180b-e419-4c11-8cbd-e946900a9dbe)
+* code.coding[0] = $loinc#14957-5 "Microalbumin [Mass/volume] in Urine"
+* code.coding[+] = urn:oid:2.16.840.1.113883.2.9.2.30.6.11#0090334.02 "Albumina nelle urine"
+* code.text = "Microalbumin Massa/Volume in Urine"
+* subject = Reference(urn:uuid:dc2b606f-3cf7-4711-a2ff-52da04b89e04)
+* encounter = Reference(urn:uuid:195a7abc-d109-404a-9dc7-ad2e80bafc8a)
+* effectiveDateTime = "2022-03-30T11:24:26+01:00"
+* valueQuantity.value = 16
+* valueQuantity.unit = "mg/L"
+* interpretation = urn:oid:2.16.840.1.113883.5.83#N "Normal"
+* specimen = Reference(urn:uuid:5837e9bf-8a2b-43c3-bec8-d68dbd7fa7fb)
+* referenceRange.low.value = 0
+* referenceRange.low.unit = "mg/L"
+* referenceRange.high.value = 20
+* referenceRange.high.unit = "mg/L"
+* referenceRange.type = urn:oid:2.16.840.1.113883.5.83#N "Normal"
 */

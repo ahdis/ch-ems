@@ -16,4 +16,6 @@ Description: "This CH ELM base profile constrains the ServiceRequest resource fo
 
 
 * subject only Reference(ChElmPatient)
+
+* specimen 1..
 * specimen only Reference(ChElmSpecimen)
