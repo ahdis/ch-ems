@@ -16,7 +16,6 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * subject only Reference(ChElmPatient)
 * subject 1..
 
-//* effective[x] only dateTime
 * effective[x] 1..
 * effectiveDateTime obeys ch-elm-dateTime
 

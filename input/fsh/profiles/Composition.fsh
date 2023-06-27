@@ -9,6 +9,7 @@ Description: "This CH ELM base profile constrains the Composition resource for t
 * subject only Reference(ChElmPatient)
 
 * author only Reference(ChElmPractitionerRoleReportingLab)
+* attester.party only Reference(ChElmPractitionerRoleReportingLab)
 
 * section 1..
 * section ^slicing.discriminator[0].type = #exists

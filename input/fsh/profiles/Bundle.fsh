@@ -5,9 +5,6 @@ Title: "CH ELM Document: Laboratory Report"
 Description: "This CH ELM base profile constrains the Bundle resource for the purpose of laboratory test reports."
 * . ^short = "CH ELM Document: Laboratory Report"
 
-* entry contains 
-    Organization-Department 0..*
-
 * entry[Composition].resource only ChElmComposition
 * entry[DiagnosticReport].resource only ChElmDiagnosticReport
 * entry[Patient].resource only ChElmPatient
@@ -17,4 +14,3 @@ Description: "This CH ELM base profile constrains the Bundle resource for the pu
 * entry[PractitionerRole].resource only ChElmPractitionerRoleReportingLab //or ChElmPractitionerRoleOrderer
 * entry[Practitioner].resource only ChElmPractitionerReportingLab //or ChElmPractitionerOrderer
 * entry[Organization].resource only ChElmOrganizationReportingLab //or ChElmOrganizationOrderer 
-* entry[Organization-Department].resource only ChElmOrganizationDepartment

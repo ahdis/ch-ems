@@ -28,6 +28,7 @@ InstanceOf: ChElmOrganizationReportingLab
 Usage: #example
 Title: "1Org - MedCompany"
 Description: "Example for a CH ELM Organization: Reporting Lab."
+* extension[department].valueString = "Abt. 2"
 * name = "MedCompany"
 * identifier[GLN].system = "urn:oid:2.51.1.3"
 * identifier[GLN].value = "7601002331470"
@@ -42,14 +43,6 @@ Description: "Example for a CH ELM Organization: Reporting Lab."
 * telecom[phone].value = "044 444 44 00"
 
 
-
-Instance: 1Org-MedCompany-Abt2
-InstanceOf: ChElmOrganizationDepartment
-Usage: #example
-Title: "1Org - MedCompany - Abt.2"
-Description: "Example for a CH ELM Organization: Department."
-* name = "Abt. 2"
-* partOf = Reference(1Org-MedCompany)
 
 
 
