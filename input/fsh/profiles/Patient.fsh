@@ -11,6 +11,8 @@ Description: "This CH ELM base profile constrains the Patient resource for the p
 * identifier[AHVN13] 1..
 
 * name 1..
+* name ^short = "Whether the personal data is transmitted by using initials or full name can be seen from the table on p.66 of this document: 
+https://www.bag.admin.ch/dam/bag/de/dokumente/mt/msys/leitfaden-zur-meldepflicht-2023.pdf.download.pdf/meldepflicht-leitfaden-2023-de.pdf"
 * name.family 1..
 * name.given 1..
 
