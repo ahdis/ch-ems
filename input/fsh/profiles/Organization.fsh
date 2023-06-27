@@ -6,7 +6,7 @@ Description: "This CH ELM base profile constrains the Organization resource for 
 * . ^short = "CH ELM Organization: Reporting Lab"
 * extension contains ChElmExtDepartment named department 0..1
 * identifier[GLN] 1..
-* identifier contains foph 1..1
+* identifier contains FOPH 1..1
 * identifier[FOPH] ^short = "Reporting laboratory identifying code, assigned by FOPH"
 * identifier[FOPH] ^patternIdentifier.system = "http://fhir.ch/ig/ch-elm/NamingSystem/LabCodeFOPH"
 * identifier[FOPH].value 1..
