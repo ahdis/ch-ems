@@ -3,10 +3,11 @@
 {% include list-profiles.xhtml %}
 
 #### Resource Overview
-This figure illustrates the resources, and their references to each other, for which profiles are defined to represent the CH ELM laboratory report.
+This figures illustrate the resources, and their references to each other, for which profiles are defined to represent the CH ELM laboratory report.
 
 {% include img.html img="profiles.png" caption="Fig.: Resource Overview" width="80%" %}
 
+{% include img.html img="service-request.png" caption="Fig.: Two variants of involved actors in the context of the ServiceRequest resource" width="80%" %}
 
 ### Data Type Profiles
 

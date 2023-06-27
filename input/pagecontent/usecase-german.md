@@ -6,4 +6,3 @@
 
 
 
-{% include img.html img="workflow-order.png" caption="Fig.: Different Laboratory Order Workflows" width="100%" %}

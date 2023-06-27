@@ -33,10 +33,12 @@ dependencies:
 pages:
   index.md:
     title: Home
-  document.md:
-    title: Laboratory Report  
   usecase-german.md:
     title: Anwendungsfälle  
+  logicalmodel.md:
+    title: Logical Model   
+  document.md:
+    title: FHIR Document (Bundle)   
   profiles.md:
     title: Profiles
   extensions.md:
@@ -46,9 +48,11 @@ pages:
 
 menu:
   Home: index.html
-  Document: document.html
   Use Case:
     German: usecase-german.html
+  Laboratory Report: 
+    Logical Model: logicalmodel.html
+    FHIR Document: document.html
   Profiles: profiles.html
   Extensions: extensions.html
   Terminology: terminology.html
