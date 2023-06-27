@@ -3,7 +3,7 @@ InstanceOf: ChElmSpecimen
 Usage: #example
 Title: "1Spec - Neisseria Gonorrhoeae"
 Description: "Example for a CH ELM Specimen: Laboratory."
-* type.text = "TBD"
+* type.text = $sct#74964007 "Other" // Kind of material that forms the specimen -> required by EU LAB
 * subject = Reference(1Pat-DM)
 * collection.collectedDateTime = "2023-02-01"
 

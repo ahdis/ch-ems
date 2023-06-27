@@ -7,8 +7,7 @@ Description: "Example for a CH ELM ServiceRequest: Laboratory Order"
 * identifier.value = "urn:uuid:d4832dff-3e33-4c39-b5b3-2eb85f870e56"
 * status = #active
 * intent = #order
-//* code = $loinc#14957-5 "Microalbumin [Mass/volume] in Urine"
-* code.text = "TBD"
+* code = $loinc#14127-5 "Neisseria gonorrhoeae [Presence] in Anal by Organism specific culture"
 * subject = Reference(1Pat-DM)
 * specimen = Reference(1Spec-NeisseriaGonorrhoeae)
 
