@@ -8,10 +8,22 @@ Description: "The logical model represents the laboratory report as an abstract 
 
 // Name | Card. | Type | Description | Definition
 
-* ReportingLab 1..1 Element "TBD: Element aus der Meldeverordnung"
-//  * LabCodeFOPH 1..1 "TBD: Element aus der Meldeverordnung" "Reporting unit identifying code"
+* ReportingLab 1..1 Element "TBD: Element aus der Meldeverordnung" "Reporting unit"
+* ReportingLab.LabCodeFOPH 1..1 Identifier "TBD: Element aus der Meldeverordnung" "Reporting unit identifying code"
 
-* Patient 1..1 Element "TBD: Element aus der Meldeverordnung"
+* Patient 1..1 Element "TBD: Element aus der Meldeverordnung" "Patient"
+
+
+
+Mapping: fhir
+Id: fhir
+Title: "CH ELM Laboratory Report Model to FHIR"
+Source: ChElmLaboratoryReport
+Target: "hl7.org/fhir/r4"
+* -> "Bundle.conformsTo('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document')"
+
+* ReportingLab -> "Organization.conformsTo('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-organization-reporting-lab')"
+* ReportingLab.LabCodeFOPH -> "Organization.identifier.where(system=http://fhir.ch/ig/ch-elm/NamingSystem/LabCodeFOPH)"
 
 
 

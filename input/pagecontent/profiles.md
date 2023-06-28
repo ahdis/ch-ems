@@ -3,7 +3,7 @@
 {% include list-profiles.xhtml %}
 
 #### Resource Overview
-This figures illustrate the resources, and their references to each other, for which profiles are defined to represent the CH ELM laboratory report.
+These figures illustrate the resources, and their references to each other, for which profiles are defined to represent the CH ELM laboratory report.
 
 {% include img.html img="profiles.png" caption="Fig.: Resource Overview" width="80%" %}
 
