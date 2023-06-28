@@ -1,4 +1,5 @@
 Logical: ChElmLaboratoryReport
+Parent: Element
 Id: LaboratoryReport
 Title: "CH ELM Laboratory Report"
 Description: "The logical model represents the laboratory report as an abstract data model. The model shows the used data set and specifies the data types and the cardinalities of the data elements."
@@ -6,6 +7,16 @@ Description: "The logical model represents the laboratory report as an abstract 
 * . ^definition = "Laboratory Report"
 
 // Name | Card. | Type | Description | Definition
+* ReportingLab 1..1 http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-organization-reporting-lab "TBD: Element aus der Meldeverordnung"
+* ReportingLab.LabCodeFOPH 1..1 "TBD: Element aus der Meldeverordnung" "Reporting unit identifying code"
+* ReportingLab.LabName 0..1 "TBD: Element aus der Meldeverordnung" "Reporting unit name"
+* ReportingLab.LabDepartment 0..1 "TBD: Element aus der Meldeverordnung" "Reporting unit department"
+* ReportingLab.LabStreetAddressLine 0..* "TBD: Element aus der Meldeverordnung" "Reporting unit street"
+* ReportingLab.LabPostBox 0..1 "TBD: Element aus der Meldeverordnung" "Reporting unit post box"
+* ReportingLab.LabZipCode 0..1 "TBD: Element aus der Meldeverordnung" "Reporting unit ZIP code"
+* ReportingLab.LabCity 0..1 "TBD: Element aus der Meldeverordnung" "Reporting unit city"
+* ReportingLab.LabOrderId 1..1 "TBD: Element aus der Meldeverordnung" "Reporting unit order id"
+
 
 * specimen 1..* http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-specimen "TBD: Element aus der Meldeverordnung"
 

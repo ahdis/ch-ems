@@ -6,6 +6,7 @@ LabPostBox	Reporting unit post box
 LabZipCode	Reporting unit ZIP code
 LabCity	Reporting unit city
 LabOrderId	Reporting unit order id
+
 OrdererOrgName	Orderer organization name
 OrdererDivision	Orderer division
 OrdererPhysicianSurname	Ordering physician surname

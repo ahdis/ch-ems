@@ -34,9 +34,7 @@ pages:
   index.md:
     title: Home
   usecase-german.md:
-    title: Anwendungsfälle  
-  logicalmodel.md:
-    title: Logical Model   
+    title: Anwendungsfälle    
   document.md:
     title: FHIR Document (Bundle)   
   profiles.md:
@@ -51,7 +49,7 @@ menu:
   Use Case:
     German: usecase-german.html
   Laboratory Report: 
-    Logical Model: logicalmodel.html
+    Logical Model: StructureDefinition-LaboratoryReport.html
     FHIR Document: document.html
   Profiles: profiles.html
   Extensions: extensions.html
