@@ -9,7 +9,10 @@ Description: "This CH ELM base profile constrains the Composition resource for t
 * subject only Reference(ChElmPatient)
 
 * author only Reference(ChElmPractitionerRoleReportingLab)
-* attester.party only Reference(ChElmPractitionerRoleReportingLab)
+
+// * attester 1..
+// * attester.party 1..
+// * attester.party only Reference(ChElmPractitionerRoleReportingLab)
 
 * section 1..
 * section ^slicing.discriminator[0].type = #exists
@@ -21,10 +24,19 @@ Description: "This CH ELM base profile constrains the Composition resource for t
 * section ^slicing.ordered = false
 * section ^slicing.rules = #open
 * section.title 1..
+
 * section.code 1..
 * section.code only ChElmCodeableConcept
+
 * section contains
     lab-no-subsections 0..*
 * section[lab-no-subsections].entry 1..
-* section[lab-no-subsections].entry only Reference(ChElmObservationResultsLaboratory)
+
+* section[lab-no-subsections].entry ^slicing.discriminator.type = #profile
+* section[lab-no-subsections].entry ^slicing.discriminator.path = "resolve()"
+* section[lab-no-subsections].entry ^slicing.rules = #open
+* section[lab-no-subsections].entry contains
+    neisseria-gonorrhoeae 0..1
+* section[lab-no-subsections].entry[neisseria-gonorrhoeae] only Reference(ChElmObservationResultsNeisseriaGonorrhoeae)
+
 * section[lab-no-subsections].section ..0

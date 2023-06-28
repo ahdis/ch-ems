@@ -16,10 +16,10 @@ Description: "Example for a CH ELM Composition: Laboratory Report."
 * date = "2023-02-02T10:00:00+01:00"
 * author = Reference(1PR-MedCompany)
 // * confidentiality (CH Core EPR)
-* attester.mode = #legal	
-* attester.party = Reference(1PR-MedCompany)
+// * attester.mode = #legal	
+// * attester.party = Reference(1PR-MedCompany)
 * title = "Laborbericht vom 02.02.2023"
 
-* section[0].title = "Neisseria Gonorrhoeae positiv"
-* section[=].code = $loinc#18725-2 "Microbiology studies (set)"
-* section[=].entry = Reference(1Obs-NeisseriaGonorrhoeae)
+* section[lab-no-subsections].title = "Neisseria Gonorrhoeae positiv"
+* section[lab-no-subsections].code = $loinc#18725-2 "Microbiology studies (set)"
+* section[lab-no-subsections].entry[neisseria-gonorrhoeae] = Reference(1Obs-NeisseriaGonorrhoeae)

@@ -15,13 +15,13 @@ Description: "This CH ELM base profile constrains the ServiceRequest resource fo
 * identifier[placerOrderIdentifier].value 1..
 
 * code 1..
+* code only ChElmCodeableConcept
 
 * basedOn only Reference(ChElmServiceRequestLaboratoryOrder)
 
 * subject only Reference(ChElmPatient)
 
-* specimen 1..
 * specimen only Reference(ChElmSpecimen)
 
 * requester 1..
-
+* requester only Reference(ChElmPractitionerRole)
