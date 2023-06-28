@@ -9,7 +9,7 @@ Description: "The logical model represents the laboratory report as an abstract 
 // Name | Card. | Type | Description 
 
 * ReportingLab 1..1 Element "Art. 4 Abs. 2 (Meldepflichtiges Laboratorium)" 
-* ReportingLab.LabCodeFOPH 1..1 integer "xxx" 
+* ReportingLab.LabCodeFOPH 1..1 string "xxx" 
 * ReportingLab.LabGLN 1..1 string "TODO" 
 * ReportingLab.LabName 1..1	string "Art. 4 Abs. 2 Bst. a (Bezeichnung des Laboratoriums)" 
 * ReportingLab.LabDepartment 0..1	string "TODO" 
@@ -18,31 +18,50 @@ Description: "The logical model represents the laboratory report as an abstract 
 * ReportingLab.LabPhysician.LabPhysicianSurname 1..1 string "Art. 4 Abs. 2 Bst. b (Name der verantwortlichen Laborleiterin oder des verantwortlichen Laborleiters)"
 * ReportingLab.LabPhysician.LabPhysicianGivenname 1..* string "Art. 4 Abs. 2 Bst. b (Vorame der verantwortlichen Laborleiterin oder des verantwortlichen Laborleiters)"
 * ReportingLab.LabAddress 1..* Element "TODO" 
-* ReportingLab.LabAddress.LabStreetAddressLine	0..1 string "TODO"
+* ReportingLab.LabAddress.LabStreetAddressLine 0..1 string "TODO"
 * ReportingLab.LabAddress.LabPostBox 0..1 string "TODO" 
-* ReportingLab.LabAddress.LabZipCode 1..1 integer "TODO"
-* ReportingLab.LabAddress.LabCity 1..1	string "TODO"
+* ReportingLab.LabAddress.LabZipCode 1..1 string "TODO"
+* ReportingLab.LabAddress.LabCity 1..1 string "TODO"
 * ReportingLab.LabPhone 1..1 string "TODO"
 * ReportingLab.LabEmail 1..1 string "TODO"
 * ReportingLab.LabOrderId	1..1 string "TODO" 
+* ReportingLab.SpecimenId	0..1 string "TODO" 
+
+* Orderer 1..1 Element "TODO"
+* Orderer.OrdererGLN 1..1 string "TODO" 
+* Orderer.OrdererOrgName 1..1	string "TODO" 
+* Orderer.OrdererDivision 0..1	string "TODO" 
+* Orderer.OrdererPhysician 1..1 Element "TODO"
+* Orderer.OrdererPhysician.OrdererPhysicianGLN 1..* string "TODO"
+* Orderer.OrdererPhysician.OrdererPhysicianSurname 1..1 string "TODO"
+* Orderer.OrdererPhysician.OrdererPhysicianGivenname 1..* string "TODO" 
+* Orderer.OrdererAddress 1..* Element "TODO"
+* Orderer.OrdererAddress.OrdererStreetAddressLine 0..1 string "TODO"
+* Orderer.OrdererAddress.OrdererPostBox 0..1 string "TODO" 
+* Orderer.OrdererAddress.OrdererZipCode 1..1 string "TODO"
+* Orderer.OrdererAddress.OrdererCity 1..1 string "TODO"
+* Orderer.OrdererPhone 1..1 string "TODO"
+* Orderer.OrdererEmail 1..1 string "TODO"
+
+* PrimaryLab 0..* Element "TODO" 
+* PrimaryLab.PrimaryLabGLN 1..1 string "TODO" 
+* PrimaryLab.PrimaryLabName 1..1	string "TODO" 
+* PrimaryLab.PrimaryLabDepartment 0..1	string "TODO" 
+* PrimaryLab.PrimaryLabPhysician 1..1 Element "TODO"
+* PrimaryLab.PrimaryLabPhysician.LabPhysicianGLN 1..* string "TODO"
+* PrimaryLab.PrimaryLabPhysician.PrimaryLabPhysicianSurname 1..1 string "TODO"
+* PrimaryLab.PrimaryLabPhysician.PrimaryLabPhysicianGivenname 1..* string "TODO" 
+* PrimaryLab.PrimaryLabAddress 1..* Element "TODO"
+* PrimaryLab.PrimaryLabAddress.PrimaryLabStreetAddressLine 0..1 string "TODO"
+* PrimaryLab.PrimaryLabAddress.PrimaryLabPostBox 0..1 string "TODO"
+* PrimaryLab.PrimaryLabAddress.PrimaryLabZipCode 1..1 string "TODO"
+* PrimaryLab.PrimaryLabAddress.PrimaryLabCity 1..1 string "TODO"
+* PrimaryLab.PrimaryLabPhone 1..1 string "TODO"
+* PrimaryLab.PrimaryLabEmail 1..1 string "TODO"
+* PrimaryLab.PrimaryLabOrderId 1..1 string "TODO" 
+* PrimaryLab.SpecimenId	0..1 string "TODO" 
 
 /*
-OrdererOrgName
-OrdererDivision
-OrdererPhysicianSurname
-OrdererPhysicianGivenname
-OrdererStreetAddressLine
-OrdererPostBox
-OrdererZipCode
-OrdererCity
-
-PrimaryLabName
-PrimaryLabStreetAddressLine
-PrimaryLabPostBox
-PrimaryLabZipCode
-PrimaryLabCity
-PrimaryLabOrderId
-
 * Patient 1..1 Element "TBD: Element aus der Meldeverordnung" "Patient"
 PatientSurname
 PatientGivenname
@@ -103,7 +122,41 @@ Target: "hl7.org/fhir/r4"
 * ReportingLab.LabPhone -> "Organization.telecom:phone.value"
 * ReportingLab.LabEmail -> "Organization.telecom:email.value"
 * ReportingLab.LabOrderId -> "ServiceRequest.identifier:placerOrderIdentifier"
+* ReportingLab.SpecimenId	-> "Specimen.accessionIdentifier.value"
 
+* Orderer -> "PractitionerRole.conformsTo('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-practitionerrole')"
+* Orderer.OrdererGLN -> "Organization.identifier:GLN"
+* Orderer.OrdererOrgName -> "Organization.name"
+* Orderer.OrdererDivision -> "Organization.extension:department"
+* Orderer.OrdererPhysician -> "Practitioner.conformsTo('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-practitioner')"
+* Orderer.OrdererPhysician.OrdererPhysicianGLN -> "Practitioner.identifier:GLN"
+* Orderer.OrdererPhysician.OrdererPhysicianSurname -> "Practitioner.name.family"
+* Orderer.OrdererPhysician.OrdererPhysicianGivenname -> "Practitioner.name.given"
+* Orderer.OrdererAddress -> "Organization.address"
+* Orderer.OrdererAddress.OrdererStreetAddressLine -> "Organization.address.line"
+* Orderer.OrdererAddress.OrdererPostBox -> "Organization.address.line"
+* Orderer.OrdererAddress.OrdererZipCode -> "Organization.address.postalCode"
+* Orderer.OrdererAddress.OrdererCity -> "Organization.address.city"
+* Orderer.OrdererPhone -> "Organization.telecom:phone.value"
+* Orderer.OrdererEmail -> "Organization.telecom:email.value"
+
+* PrimaryLab -> "PractitionerRole.conformsTo('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-practitionerrole')"
+* PrimaryLab.PrimaryLabGLN -> "Organization.identifier:GLN"
+* PrimaryLab.PrimaryLabName -> "Organization.name"
+* PrimaryLab.PrimaryLabDepartment -> "Organization.extension:department"
+* PrimaryLab.PrimaryLabPhysician -> "Practitioner.conformsTo('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-practitioner')"
+* PrimaryLab.PrimaryLabPhysician.LabPhysicianGLN -> "Practitioner.identifier:GLN"
+* PrimaryLab.PrimaryLabPhysician.PrimaryLabPhysicianSurname -> "Practitioner.name.family"
+* PrimaryLab.PrimaryLabPhysician.PrimaryLabPhysicianGivenname -> "Practitioner.name.given"
+* PrimaryLab.PrimaryLabAddress -> "Organization.address"
+* PrimaryLab.PrimaryLabAddress.PrimaryLabStreetAddressLine -> "Organization.address.line"
+* PrimaryLab.PrimaryLabAddress.PrimaryLabPostBox -> "Organization.address.line"
+* PrimaryLab.PrimaryLabAddress.PrimaryLabZipCode -> "Organization.address.postalCode"
+* PrimaryLab.PrimaryLabAddress.PrimaryLabCity -> "Organization.address.city"
+* PrimaryLab.PrimaryLabPhone -> "Organization.telecom:phone.value"
+* PrimaryLab.PrimaryLabEmail -> "Organization.telecom:email.value"
+* PrimaryLab.PrimaryLabOrderId -> "ServiceRequest.identifier:placerOrderIdentifier"
+* PrimaryLab.SpecimenId	-> "Specimen.accessionIdentifier.value"
 
 //* specimen 1..* http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-specimen "TBD: Element aus der Meldeverordnung"
 
