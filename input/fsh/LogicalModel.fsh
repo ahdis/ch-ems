@@ -3,15 +3,72 @@ Parent: Element
 Id: LaboratoryReport
 Title: "CH ELM Laboratory Report"
 Description: "The logical model represents the laboratory report as an abstract data model. The model shows the used data set and specifies the data types and the cardinalities of the data elements."
-* . ^short = "Laboratory Report"
+* . ^short = "Laboratory Report based on 'Meldeverordnung (SR 818.101.126)'"
 * . ^definition = "Laboratory Report"
 
-// Name | Card. | Type | Description | Definition
+// Name | Card. | Type | Description 
 
-* ReportingLab 1..1 Element "TBD: Element aus der Meldeverordnung" "Reporting unit"
-* ReportingLab.LabCodeFOPH 1..1 Identifier "TBD: Element aus der Meldeverordnung" "Reporting unit identifying code"
+* ReportingLab 1..1 Element "Art. 4 Abs. 2 (Meldepflichtiges Laboratorium)" 
+* ReportingLab.LabCodeFOPH 1..1 integer "xxx" 
+* ReportingLab.LabGLN 1..1 string "TODO" 
+* ReportingLab.LabName 0..1	string "Art. 4 Abs. 2 Bst. a (Bezeichnung des Laboratoriums)" 
+* ReportingLab.LabDepartment 0..1	string "TODO" 
+* ReportingLab.LabPhysician 1..1 Element "xxx"
+* ReportingLab.LabPhysician.LabPhysicianSurname 1..1 string "xxx" //"Art. 4 Abs. 2 Bst. b (Vorname der verantwortlichen Laborleiterin oder des verantwortlichen Laborleiters)"
+* ReportingLab.LabPhysician.LabPhysicianGivenname 1..1 string "xxx" //"Art. 4 Abs. 2 Bst. b (Name der verantwortlichen Laborleiterin oder des verantwortlichen Laborleiters)"
+* ReportingLab.LabAddress 0..* Element "TODO" 
+* ReportingLab.LabAddress.LabStreetAddressLine	0..1 string "TODO"
+* ReportingLab.LabAddress.LabPostBox 0..1 string "TODO" 
+* ReportingLab.LabAddress.LabZipCode 0..1 integer "TODO"
+* ReportingLab.LabAddress.LabCity 0..1	string "TODO"
+* ReportingLab.LabOrderId	1..1 string "TODO" 
+
+/*
+OrdererOrgName	Orderer organization name
+OrdererDivision	Orderer division
+OrdererPhysicianSurname	Ordering physician surname
+OrdererPhysicianGivenname	Ordering physician given name 
+OrdererStreetAddressLine	Orderer street
+OrdererPostBox	Orderer post box
+OrdererZipCode	Orderer ZIP code
+OrdererCity	Orderer city
+PrimaryLabName	Primary laboratory name
+PrimaryLabStreetAddressLine	Primary laboratory street
+PrimaryLabPostBox	Primary laboratory post box
+PrimaryLabZipCode	Primary laboratory ZIP code
+PrimaryLabCity	Primary laboratory city
+PrimaryLabOrderId	Primary laboratory order ID
 
 * Patient 1..1 Element "TBD: Element aus der Meldeverordnung" "Patient"
+PatientSurname	Patient surname
+PatientGivenname	Patient given name
+PatientSexCode	Patient sex code
+PatientDayOfBirth	Patient day of birth 
+PatientMonthOfBirth	Patient month of birth 
+PatientYearOfBirth	Patient year of birth
+PatientPhoneNumber	Patient phone number
+PatientEmail	Patient e-mail address
+PatientStreetAddressLine	Patient street 
+PatientZipCode	Patient ZIP code
+PatientCity	Patient city of residence
+PatientCantonCode	Patient canton of residence
+PatientCountryCode	Patient country of residence code
+TestDayOfExecution	Day of test
+TestMonthOfExecution	Month of test
+TestYearOfExecution	Year of test
+TestResultCode	Test result code
+TestDetectionCode	Detection-method code
+TestDetectionOther	Detection-method other
+TestDayOfCollection	Day of sample collection
+TestMonthOfCollection	Month sample collection
+TestYearOfCollection	Year sample collection
+TestCollectionMaterialCode	Sampling material code
+TestCollectionMaterialOther	Sampling material other
+TestOrganismCode	Organism
+TestOrganismOther	Organism other
+
+	*/
+
 
 
 
@@ -22,7 +79,7 @@ Source: ChElmLaboratoryReport
 Target: "hl7.org/fhir/r4"
 * -> "Bundle.conformsTo('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document')"
 
-* ReportingLab -> "Organization.conformsTo('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-organization-reporting-lab')"
+* ReportingLab -> "PractitionerRole.conformsTo('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-practitionerrole-reporting-lab')"
 * ReportingLab.LabCodeFOPH -> "Organization.identifier.where(system=http://fhir.ch/ig/ch-elm/NamingSystem/LabCodeFOPH)"
 
 
@@ -55,7 +112,7 @@ Target: "hl7.org/fhir/r4"
 
 
 /*
-Logical: ChElmLaboratoryReport
+Logical: LabReport
 Id: LabReport
 Title: "Laboratory Report"
 Description: "Laboratory Report"

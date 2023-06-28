@@ -1,17 +1,22 @@
-Instance: 1Spec-NeisseriaGonorrhoeae
+Instance: 1Spec-Specimen-Orderer
 InstanceOf: ChElmSpecimen
 Usage: #example
 Title: "1Spec - Neisseria Gonorrhoeae"
 Description: "Example for a CH ELM Specimen: Laboratory."
+* accessionIdentifier.system = "http://fhir.orderer.ch/specimen"
+* accessionIdentifier.value = "specimen-id-orderer"
 * type.text = $sct#74964007 "Other" // Kind of material that forms the specimen -> required by EU LAB
 * subject = Reference(1Pat-DM)
 * collection.collectedDateTime = "2023-02-01"
 
-/*
-Instance: Inline-Instance-for-IT-CDA2FHIR-17e2cad1-c3e3-4901-adb1-c35a0b82b883-3
-InstanceOf: Specimen
-Usage: #inline
-* id = "5837e9bf-8a2b-43c3-bec8-d68dbd7fa7fb"
-* type = urn:oid:2.16.840.1.113883.5.129#UR "Urine"
-* subject = Reference(urn:uuid:dc2b606f-3cf7-4711-a2ff-52da04b89e04)
-*/
+
+Instance: 1Spec-Specimen-PrimaryLab
+InstanceOf: ChElmSpecimen
+Usage: #example
+Title: "1Spec - Neisseria Gonorrhoeae"
+Description: "Example for a CH ELM Specimen: Laboratory."
+* accessionIdentifier.system = "http://fhir.primary-lab.ch/specimen"
+* accessionIdentifier.value = "specimen-id-primarylab"
+* type.text = $sct#74964007 "Other" // Kind of material that forms the specimen -> required by EU LAB
+* subject = Reference(1Pat-DM)
+* collection.collectedDateTime = "2023-02-01"

@@ -9,7 +9,7 @@ Description: "Example for a CH ELM ServiceRequest: Laboratory Order"
 * intent = #order
 * code = $loinc#14127-5 "Neisseria gonorrhoeae [Presence] in Anal by Organism specific culture"
 * subject = Reference(1Pat-DM)
-* specimen = Reference(1Spec-NeisseriaGonorrhoeae)
+* specimen = Reference(1Spec-Specimen-Orderer)
 * requester = Reference(1PR-CentreDeTestXa)
 
 
@@ -27,6 +27,6 @@ Description: "Example for a CH ELM ServiceRequest: Laboratory Order"
 * intent = #order
 * code = $loinc#14127-5 "Neisseria gonorrhoeae [Presence] in Anal by Organism specific culture"
 * subject = Reference(1Pat-DM)
-* specimen = Reference(1Spec-NeisseriaGonorrhoeae)
-* requester = Reference(1Org-SuperLabor)
+* specimen = Reference(1Spec-Specimen-PrimaryLab)
+* requester = Reference(1PR-SuperLabor)
 

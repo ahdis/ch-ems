@@ -18,8 +18,10 @@ Description: "Example for a CH ELM Document: Laboratory Report."
 * entry[Patient].resource = 1Pat-DM
 * entry[Observation].fullUrl = "http://test.fhir.ch/r4/Observation/1Obs-NeisseriaGonorrhoeae"
 * entry[Observation].resource = 1Obs-NeisseriaGonorrhoeae
-* entry[Specimen].fullUrl = "http://test.fhir.ch/r4/Specimen/1Spec-NeisseriaGonorrhoeae"
-* entry[Specimen].resource = 1Spec-NeisseriaGonorrhoeae
+* entry[Specimen][0].fullUrl = "http://test.fhir.ch/r4/Specimen/1Spec-Specimen-Orderer"
+* entry[Specimen][=].resource = 1Spec-Specimen-Orderer
+* entry[Specimen][+].fullUrl = "http://test.fhir.ch/r4/Specimen/1Spec-Specimen-PrimaryLab"
+* entry[Specimen][=].resource = 1Spec-Specimen-PrimaryLab
 * entry[ServiceRequest][0].fullUrl = "http://test.fhir.ch/r4/ServiceRequest/1SR-Order1-Orderer"
 * entry[ServiceRequest][=].resource = 1SR-Order1-Orderer
 * entry[ServiceRequest][+].fullUrl = "http://test.fhir.ch/r4/ServiceRequest/1SR-Order2-PrimaryLab"
@@ -28,10 +30,14 @@ Description: "Example for a CH ELM Document: Laboratory Report."
 * entry[PractitionerRole][=].resource = 1PR-MedCompany
 * entry[PractitionerRole][+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/1PR-CentreDeTestXa"
 * entry[PractitionerRole][=].resource = 1PR-CentreDeTestXa
+* entry[PractitionerRole][+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/1PR-SuperLabor"
+* entry[PractitionerRole][=].resource = 1PR-SuperLabor
 * entry[Practitioner][0].fullUrl = "http://test.fhir.ch/r4/Practitioner/1Pract-MedCompany"
 * entry[Practitioner][=].resource = 1Pract-MedCompany
 * entry[Practitioner][+].fullUrl = "http://test.fhir.ch/r4/Practitioner/1Pract-CentreDeTestXa"
 * entry[Practitioner][=].resource = 1Pract-CentreDeTestXa
+* entry[Practitioner][+].fullUrl = "http://test.fhir.ch/r4/Practitioner/1Pract-SuperLabor"
+* entry[Practitioner][=].resource = 1Pract-SuperLabor
 * entry[Organization][0].fullUrl = "http://test.fhir.ch/r4/Organization/1Org-MedCompany"
 * entry[Organization][=].resource = 1Org-MedCompany
 * entry[Organization][+].fullUrl = "http://test.fhir.ch/r4/Organization/1Org-CentreDeTestXa"
