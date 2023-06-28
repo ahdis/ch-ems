@@ -15,7 +15,8 @@ Description: "Example for a CH ELM Composition: Laboratory Report."
 * subject = Reference(1Pat-DM)
 * date = "2023-02-02T10:00:00+01:00"
 * author = Reference(1PR-MedCompany)
-* attester.mode = #professional	
+// * confidentiality (CH Core EPR)
+* attester.mode = #legal	
 * attester.party = Reference(1PR-MedCompany)
 * title = "Laborbericht vom 02.02.2023"
 
