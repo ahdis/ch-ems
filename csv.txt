@@ -36,7 +36,7 @@ PatientCountryCode	Patient country of residence code
 TestDayOfExecution	Day of test
 TestMonthOfExecution	Month of test
 TestYearOfExecution	Year of test
-    TestResultCode	Test result code
+TestResultCode	Test result code
 TestDetectionCode	Detection-method code
 TestDetectionOther	Detection-method other
 TestDayOfCollection	Day of sample collection
