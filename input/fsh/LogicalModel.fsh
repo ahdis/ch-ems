@@ -3,7 +3,7 @@ Parent: Element
 Id: LaboratoryReport
 Title: "CH ELM Laboratory Report"
 Description: "The logical model represents the laboratory report as an abstract data model. The model shows the used data set and specifies the data types and the cardinalities of the data elements."
-* . ^short = "Laboratory Report based on 'Meldeverordnung (SR 818.101.126)'"
+* . ^short = "Laborbericht basierend auf der 'Meldeverordnung 818.101.126'"
 * . ^definition = "Laboratory Report"
 
 // Name | Card. | Type | Description 
@@ -11,61 +11,68 @@ Description: "The logical model represents the laboratory report as an abstract 
 * ReportingLab 1..1 Element "Art. 4 Abs. 2 (Meldepflichtiges Laboratorium)" 
 * ReportingLab.LabCodeFOPH 1..1 integer "xxx" 
 * ReportingLab.LabGLN 1..1 string "TODO" 
-* ReportingLab.LabName 0..1	string "Art. 4 Abs. 2 Bst. a (Bezeichnung des Laboratoriums)" 
+* ReportingLab.LabName 1..1	string "Art. 4 Abs. 2 Bst. a (Bezeichnung des Laboratoriums)" 
 * ReportingLab.LabDepartment 0..1	string "TODO" 
 * ReportingLab.LabPhysician 1..1 Element "xxx"
-* ReportingLab.LabPhysician.LabPhysicianSurname 1..1 string "xxx" //"Art. 4 Abs. 2 Bst. b (Vorname der verantwortlichen Laborleiterin oder des verantwortlichen Laborleiters)"
-* ReportingLab.LabPhysician.LabPhysicianGivenname 1..1 string "xxx" //"Art. 4 Abs. 2 Bst. b (Name der verantwortlichen Laborleiterin oder des verantwortlichen Laborleiters)"
-* ReportingLab.LabAddress 0..* Element "TODO" 
+* ReportingLab.LabPhysician.LabPhysicianGLN 1..* string "TODO"
+* ReportingLab.LabPhysician.LabPhysicianSurname 1..1 string "Art. 4 Abs. 2 Bst. b (Name der verantwortlichen Laborleiterin oder des verantwortlichen Laborleiters)"
+* ReportingLab.LabPhysician.LabPhysicianGivenname 1..* string "Art. 4 Abs. 2 Bst. b (Vorame der verantwortlichen Laborleiterin oder des verantwortlichen Laborleiters)"
+* ReportingLab.LabAddress 1..* Element "TODO" 
 * ReportingLab.LabAddress.LabStreetAddressLine	0..1 string "TODO"
 * ReportingLab.LabAddress.LabPostBox 0..1 string "TODO" 
-* ReportingLab.LabAddress.LabZipCode 0..1 integer "TODO"
-* ReportingLab.LabAddress.LabCity 0..1	string "TODO"
+* ReportingLab.LabAddress.LabZipCode 1..1 integer "TODO"
+* ReportingLab.LabAddress.LabCity 1..1	string "TODO"
+* ReportingLab.LabPhone 1..1 string "TODO"
+* ReportingLab.LabEmail 1..1 string "TODO"
 * ReportingLab.LabOrderId	1..1 string "TODO" 
 
 /*
-OrdererOrgName	Orderer organization name
-OrdererDivision	Orderer division
-OrdererPhysicianSurname	Ordering physician surname
-OrdererPhysicianGivenname	Ordering physician given name 
-OrdererStreetAddressLine	Orderer street
-OrdererPostBox	Orderer post box
-OrdererZipCode	Orderer ZIP code
-OrdererCity	Orderer city
-PrimaryLabName	Primary laboratory name
-PrimaryLabStreetAddressLine	Primary laboratory street
-PrimaryLabPostBox	Primary laboratory post box
-PrimaryLabZipCode	Primary laboratory ZIP code
-PrimaryLabCity	Primary laboratory city
-PrimaryLabOrderId	Primary laboratory order ID
+OrdererOrgName
+OrdererDivision
+OrdererPhysicianSurname
+OrdererPhysicianGivenname
+OrdererStreetAddressLine
+OrdererPostBox
+OrdererZipCode
+OrdererCity
+
+PrimaryLabName
+PrimaryLabStreetAddressLine
+PrimaryLabPostBox
+PrimaryLabZipCode
+PrimaryLabCity
+PrimaryLabOrderId
 
 * Patient 1..1 Element "TBD: Element aus der Meldeverordnung" "Patient"
-PatientSurname	Patient surname
-PatientGivenname	Patient given name
-PatientSexCode	Patient sex code
-PatientDayOfBirth	Patient day of birth 
-PatientMonthOfBirth	Patient month of birth 
-PatientYearOfBirth	Patient year of birth
-PatientPhoneNumber	Patient phone number
-PatientEmail	Patient e-mail address
-PatientStreetAddressLine	Patient street 
-PatientZipCode	Patient ZIP code
-PatientCity	Patient city of residence
-PatientCantonCode	Patient canton of residence
-PatientCountryCode	Patient country of residence code
-TestDayOfExecution	Day of test
-TestMonthOfExecution	Month of test
-TestYearOfExecution	Year of test
-TestResultCode	Test result code
-TestDetectionCode	Detection-method code
-TestDetectionOther	Detection-method other
-TestDayOfCollection	Day of sample collection
-TestMonthOfCollection	Month sample collection
-TestYearOfCollection	Year sample collection
-TestCollectionMaterialCode	Sampling material code
-TestCollectionMaterialOther	Sampling material other
-TestOrganismCode	Organism
-TestOrganismOther	Organism other
+PatientSurname
+PatientGivenname
+PatientSexCode
+PatientDayOfBirth
+PatientMonthOfBirth
+PatientYearOfBirth
+PatientPhoneNumber
+PatientEmail
+PatientStreetAddressLine
+PatientZipCode
+PatientCity
+PatientCantonCode
+PatientCountryCode
+
+TestDayOfExecution
+TestMonthOfExecution
+TestYearOfExecution
+TestResultCode
+TestDetectionCode
+TestDetectionOther
+
+TestDayOfCollection
+TestMonthOfCollection
+TestYearOfCollection
+TestCollectionMaterialCode
+TestCollectionMaterialOther
+
+TestOrganismCode
+TestOrganismOther
 
 	*/
 
@@ -80,21 +87,23 @@ Target: "hl7.org/fhir/r4"
 * -> "Bundle.conformsTo('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document')"
 
 * ReportingLab -> "PractitionerRole.conformsTo('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-practitionerrole-reporting-lab')"
-* ReportingLab.LabCodeFOPH -> "Organization.identifier.where(system=http://fhir.ch/ig/ch-elm/NamingSystem/LabCodeFOPH)"
+* ReportingLab.LabCodeFOPH -> "Organization.identifier:FOPH"
+* ReportingLab.LabGLN -> "Organization.identifier:GLN"
+* ReportingLab.LabName -> "Organization.name"
+* ReportingLab.LabDepartment -> "Organization.extension:department"
+* ReportingLab.LabPhysician -> "Practitioner.conformsTo('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-practitioner')"
+* ReportingLab.LabPhysician.LabPhysicianGLN -> "Practitioner.identifier:GLN"
+* ReportingLab.LabPhysician.LabPhysicianSurname -> "Practitioner.name.family"
+* ReportingLab.LabPhysician.LabPhysicianGivenname -> "Practitioner.name.given"
+* ReportingLab.LabAddress -> "Organization.address"
+* ReportingLab.LabAddress.LabStreetAddressLine -> "Organization.address.line"
+* ReportingLab.LabAddress.LabPostBox -> "Organization.address.line"
+* ReportingLab.LabAddress.LabZipCode -> "Organization.address.postalCode"
+* ReportingLab.LabAddress.LabCity -> "Organization.address.city"
+* ReportingLab.LabPhone -> "Organization.telecom:phone.value"
+* ReportingLab.LabEmail -> "Organization.telecom:email.value"
+* ReportingLab.LabOrderId -> "ServiceRequest.identifier:placerOrderIdentifier"
 
-
-
-/*
-* ReportingLab 1..1 "TBD: Element aus der Meldeverordnung"
-  * LabCodeFOPH 1..1 "TBD: Element aus der Meldeverordnung" "Reporting unit identifying code"
-  * LabName 0..1 "TBD: Element aus der Meldeverordnung" "Reporting unit name"
-  * LabDepartment 0..1 "TBD: Element aus der Meldeverordnung" "Reporting unit department"
-  * LabStreetAddressLine 0..* "TBD: Element aus der Meldeverordnung" "Reporting unit street"
-  * LabPostBox 0..1 "TBD: Element aus der Meldeverordnung" "Reporting unit post box"
-* LabZipCode 0..1 "TBD: Element aus der Meldeverordnung" "Reporting unit ZIP code"
-* LabCity 0..1 "TBD: Element aus der Meldeverordnung" "Reporting unit city"
-* LabOrderId 1..1 "TBD: Element aus der Meldeverordnung" "Reporting unit order id"
-*/
 
 //* specimen 1..* http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-specimen "TBD: Element aus der Meldeverordnung"
 

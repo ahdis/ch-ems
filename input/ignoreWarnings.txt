@@ -8,9 +8,6 @@ The repeating element has a pattern. The pattern will apply to all the repeats (
 The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
 Found multiple matching profiles for Patient/1Pat-DM among choices: http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab, http://hl7.org/fhir/StructureDefinition/Patient
 
-# Valid JSON (https://jsonlint.com/)
-Error reading Http Response: Error parsing JSON source: Unexpected char '<' in json stream at Line 1 (path=[null])
-
 # Logical model just integrated as abstract data model
 Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 
