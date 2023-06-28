@@ -9,7 +9,7 @@ Description: "The logical model represents the laboratory report as an abstract 
 // Name | Card. | Type | Description | Definition
 
 * ReportingLab 1..1 Element "TBD: Element aus der Meldeverordnung"
-  * LabCodeFOPH 1..1 "TBD: Element aus der Meldeverordnung" "Reporting unit identifying code"
+//  * LabCodeFOPH 1..1 "TBD: Element aus der Meldeverordnung" "Reporting unit identifying code"
 
 * Patient 1..1 Element "TBD: Element aus der Meldeverordnung"
 
