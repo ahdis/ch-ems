@@ -7,19 +7,29 @@ Description: "The logical model represents the laboratory report as an abstract 
 * . ^definition = "Laboratory Report"
 
 // Name | Card. | Type | Description | Definition
-* ReportingLab 1..1 http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-organization-reporting-lab "TBD: Element aus der Meldeverordnung"
-* ReportingLab.LabCodeFOPH 1..1 "TBD: Element aus der Meldeverordnung" "Reporting unit identifying code"
-* ReportingLab.LabName 0..1 "TBD: Element aus der Meldeverordnung" "Reporting unit name"
-* ReportingLab.LabDepartment 0..1 "TBD: Element aus der Meldeverordnung" "Reporting unit department"
-* ReportingLab.LabStreetAddressLine 0..* "TBD: Element aus der Meldeverordnung" "Reporting unit street"
-* ReportingLab.LabPostBox 0..1 "TBD: Element aus der Meldeverordnung" "Reporting unit post box"
-* ReportingLab.LabZipCode 0..1 "TBD: Element aus der Meldeverordnung" "Reporting unit ZIP code"
-* ReportingLab.LabCity 0..1 "TBD: Element aus der Meldeverordnung" "Reporting unit city"
-* ReportingLab.LabOrderId 1..1 "TBD: Element aus der Meldeverordnung" "Reporting unit order id"
+
+* ReportingLab 1..1 Element "TBD: Element aus der Meldeverordnung"
+  * LabCodeFOPH 1..1 "TBD: Element aus der Meldeverordnung" "Reporting unit identifying code"
+
+* Patient 1..1 Element "TBD: Element aus der Meldeverordnung"
 
 
-* specimen 1..* http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-specimen "TBD: Element aus der Meldeverordnung"
 
+/*
+* ReportingLab 1..1 "TBD: Element aus der Meldeverordnung"
+  * LabCodeFOPH 1..1 "TBD: Element aus der Meldeverordnung" "Reporting unit identifying code"
+  * LabName 0..1 "TBD: Element aus der Meldeverordnung" "Reporting unit name"
+  * LabDepartment 0..1 "TBD: Element aus der Meldeverordnung" "Reporting unit department"
+  * LabStreetAddressLine 0..* "TBD: Element aus der Meldeverordnung" "Reporting unit street"
+  * LabPostBox 0..1 "TBD: Element aus der Meldeverordnung" "Reporting unit post box"
+* LabZipCode 0..1 "TBD: Element aus der Meldeverordnung" "Reporting unit ZIP code"
+* LabCity 0..1 "TBD: Element aus der Meldeverordnung" "Reporting unit city"
+* LabOrderId 1..1 "TBD: Element aus der Meldeverordnung" "Reporting unit order id"
+*/
+
+//* specimen 1..* http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-specimen "TBD: Element aus der Meldeverordnung"
+
+/*
 Mapping: fhir
 Id: fhir
 Title: "eHN Lab model to FHIR R4 Map"
@@ -29,7 +39,7 @@ Target: "hl7.org/fhir/r4"
 
 * specimen -> "Observation.conformsTo('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-results-laboratory').specimen.resolve()"
 * specimen -> "DiagnosticReport.conformsTo('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-diagnosticreport').specimen.resolve()"
-
+*/
 
 
 /*
