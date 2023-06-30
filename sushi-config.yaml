@@ -27,7 +27,7 @@ contact:
 
 dependencies:
   ch.fhir.ig.ch-laboratory-report: current
-  ch.fhir.ig.ch-core: current
+  ch.fhir.ig.ch-core: 4.0.0-ballot
   hl7.fhir.uv.extensions.r4: 1.0.0
 
 pages:
