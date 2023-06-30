@@ -7,7 +7,7 @@ Description: "Example for a CH ELM ServiceRequest: Laboratory Order"
 * identifier[placerOrderIdentifier].value = "U3F342"
 * status = #completed
 * intent = #order
-* code = $loinc#14127-5 "Neisseria gonorrhoeae [Presence] in Anal by Organism specific culture"
+* code = $loinc#21416-3 "Neisseria gonorrhoeae DNA [Presence] in Urine by NAA with probe detection"
 * subject = Reference(1Pat-DM)
 * specimen = Reference(1Spec-Specimen-Orderer)
 * requester = Reference(1PR-CentreDeTestXa)
@@ -25,7 +25,7 @@ Description: "Example for a CH ELM ServiceRequest: Laboratory Order"
 * basedOn = Reference(1SR-Order1-Orderer)
 * status = #completed
 * intent = #order
-* code = $loinc#14127-5 "Neisseria gonorrhoeae [Presence] in Anal by Organism specific culture"
+* code = $loinc#21416-3 "Neisseria gonorrhoeae DNA [Presence] in Urine by NAA with probe detection"
 * subject = Reference(1Pat-DM)
 * specimen = Reference(1Spec-Specimen-PrimaryLab)
 * requester = Reference(1PR-SuperLabor)

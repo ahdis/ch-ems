@@ -6,7 +6,7 @@ Description: "This CH ELM base profile constrains the Patient resource for the p
 * . ^short = "CH ELM Patient"
 
 // * extension contains $patient-sexParameterForClinicalUse named sexParameterForClinicalUse 1..1
-* gender 1..
+* gender 
 
 // Mit der Anpassung der Epidemienverordnung und die Meldeverordnung wird neu die AHV-Nummer des Patienten Meldepflichtig, sofern elektronisch gemeldet wird und Massnahmen notwendig sind.
 * identifier[AHVN13] 1..

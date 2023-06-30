@@ -29,14 +29,14 @@ Description: "This CH ELM base profile constrains the Composition resource for t
 * section.code only ChElmCodeableConcept
 
 * section contains
-    lab-no-subsections 0..*
-* section[lab-no-subsections].entry 1..
+    neisseria-gonorrhoeae 0..*
 
-* section[lab-no-subsections].entry ^slicing.discriminator.type = #profile
-* section[lab-no-subsections].entry ^slicing.discriminator.path = "resolve()"
-* section[lab-no-subsections].entry ^slicing.rules = #open
-* section[lab-no-subsections].entry contains
-    neisseria-gonorrhoeae 0..1
-* section[lab-no-subsections].entry[neisseria-gonorrhoeae] only Reference(ChElmObservationResultsNeisseriaGonorrhoeae)
+* section[neisseria-gonorrhoeae].code = $loinc#18725-2
+* section[neisseria-gonorrhoeae].code ^short = "Microbiology studies (set)"
+* section[neisseria-gonorrhoeae].entry 1..
+* section[neisseria-gonorrhoeae].entry only Reference(ChElmObservationResultsNeisseriaGonorrhoeae)
+* section[neisseria-gonorrhoeae].section ..0
 
-* section[lab-no-subsections].section ..0
+
+// $loinc#18769-0 "Microbial susceptibility tests Set" 
+// Neisseria meningitidis, Mycobacterium spp., Carbapenemase bildende Enterobacteriaceae, Streptococcus pneumoniae, Haemophilus influenzae 
