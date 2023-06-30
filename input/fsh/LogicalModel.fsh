@@ -3,97 +3,100 @@ Parent: Element
 Id: LaboratoryReport
 Title: "CH ELM Laboratory Report"
 Description: "The logical model represents the laboratory report as an abstract data model. The model shows the used data set and specifies the data types and the cardinalities of the data elements."
-* . ^short = "Laborbericht basierend auf der 'Meldeverordnung 818.101.126'"
+* . ^short = "Laborbericht basierend auf der SR 818.101.126 Verordnung des EDI über die Meldung von Beobachtungen übertragbarer Krankheiten des Menschen"
 * . ^definition = "Laboratory Report"
 
-// Name | Card. | Type | Description 
+* ReportingLab 1..1 Element "Reporting unit -> Art. 4 Abs. 2 (Meldepflichtiges Laboratorium)" 
+* ReportingLab.LabCodeFOPH 1..1 string "Reporting unit identifying code" 
+* ReportingLab.LabGLN 1..1 string "Reporting unit global location number (GLN) -> 1.1.2024: Art. 4 Abs. 2 Bst. d (GLN des Laboratoriums)" 
+* ReportingLab.LabName 1..1	string "Reporting unit name -> Art. 4 Abs. 2 Bst. a (Bezeichnung des Laboratoriums)" 
+* ReportingLab.LabDepartment 0..1 string "Reporting unit department" 
+* ReportingLab.LabPhysician 1..1 Element "Reporting unit physician"
+* ReportingLab.LabPhysician.LabPhysicianGLN 1..* string "Reporting unit physician global location number (GLN)"
+* ReportingLab.LabPhysician.LabPhysicianSurname 1..1 string "Reporting unit physician surname -> Art. 4 Abs. 2 Bst. b (Name der verantwortlichen Laborleiterin oder des verantwortlichen Laborleiters)"
+* ReportingLab.LabPhysician.LabPhysicianGivenname 1..* string "Reporting unit physician given name -> Art. 4 Abs. 2 Bst. b (Vorame der verantwortlichen Laborleiterin oder des verantwortlichen Laborleiters)"
+* ReportingLab.LabAddress 1..* Element "Reporting unit address -> Art. 4 Abs. 2 Bst. d (Adresse)" 
+* ReportingLab.LabAddress.LabStreetAddressLine 0..1 string "Reporting unit street"
+* ReportingLab.LabAddress.LabPostBox 0..1 string "Reporting unit post box" 
+* ReportingLab.LabAddress.LabZipCode 1..1 string "Reporting unit ZIP code"
+* ReportingLab.LabAddress.LabCity 1..1 string "Reporting unit city"
+* ReportingLab.LabPhone 1..1 string "Reporting unit phone number -> Art. 4 Abs. 2 Bst. c (Telefonnummer)"
+* ReportingLab.LabEmail 1..1 string "Reporting unit e-mail address -> Art. 4 Abs. 2 Bst. d (E-Mail-Adresse) / 1.1.2024: Art. 4 Abs. 2 Bst. c (E-Mail-Adresse)"
+* ReportingLab.LabOrderId 1..1 string "Reporting unit order ID" 
+* ReportingLab.SpecimenId 0..1 string "Reporting unit specimen ID" 
 
-* ReportingLab 1..1 Element "Art. 4 Abs. 2 (Meldepflichtiges Laboratorium)" 
-* ReportingLab.LabCodeFOPH 1..1 string "xxx" 
-* ReportingLab.LabGLN 1..1 string "TODO" 
-* ReportingLab.LabName 1..1	string "Art. 4 Abs. 2 Bst. a (Bezeichnung des Laboratoriums)" 
-* ReportingLab.LabDepartment 0..1	string "TODO" 
-* ReportingLab.LabPhysician 1..1 Element "xxx"
-* ReportingLab.LabPhysician.LabPhysicianGLN 1..* string "TODO"
-* ReportingLab.LabPhysician.LabPhysicianSurname 1..1 string "Art. 4 Abs. 2 Bst. b (Name der verantwortlichen Laborleiterin oder des verantwortlichen Laborleiters)"
-* ReportingLab.LabPhysician.LabPhysicianGivenname 1..* string "Art. 4 Abs. 2 Bst. b (Vorame der verantwortlichen Laborleiterin oder des verantwortlichen Laborleiters)"
-* ReportingLab.LabAddress 1..* Element "TODO" 
-* ReportingLab.LabAddress.LabStreetAddressLine 0..1 string "TODO"
-* ReportingLab.LabAddress.LabPostBox 0..1 string "TODO" 
-* ReportingLab.LabAddress.LabZipCode 1..1 string "TODO"
-* ReportingLab.LabAddress.LabCity 1..1 string "TODO"
-* ReportingLab.LabPhone 1..1 string "TODO"
-* ReportingLab.LabEmail 1..1 string "TODO"
-* ReportingLab.LabOrderId	1..1 string "TODO" 
-* ReportingLab.SpecimenId	0..1 string "TODO" 
+* Orderer 1..1 Element "Orderer -> 1.1.2024: Art. 4 Abs. 3 (Auftraggebende Ärztin oder auftraggebender Arzt und Betrieb in dem sie oder er tätig ist)"
+* Orderer.OrdererGLN 1..1 string "Orderer organization global location number (GLN) -> 1.1.2024: Art. 4 Abs. 3 Bst. c (GLN des Betriebs, in dem die auftraggebende Ärztin oder der auftraggebende Arzt tätig ist)"  
+* Orderer.OrdererOrgName 1..1 string "Orderer organization name" 
+* Orderer.OrdererDivision 0..1 string "Orderer division" 
+* Orderer.OrdererPhysician 1..1 Element "Orderer physician"
+* Orderer.OrdererPhysician.OrdererPhysicianGLN 1..* string "Orderer physician global location number (GLN) -> 1.1.2024: Art. 4 Abs. 3 Bst. a (GLN der auftraggebenden Ärztin oder des auftraggebenden Artzes)"
+* Orderer.OrdererPhysician.OrdererPhysicianSurname 1..1 string "Ordering physician surname -> Art. 4 Abs. 3 Bst. a (Name der auftraggebenden Ärztin oder des auftraggebenden Artzes)"
+* Orderer.OrdererPhysician.OrdererPhysicianGivenname 1..* string "Ordering physician given name -> Art. 4 Abs. 3 Bst. a (Vorname der auftraggebenden Ärztin oder des auftraggebenden Artzes)" 
+* Orderer.OrdererAddress 1..* Element "Orderer address -> Art. 4 Abs. 3 Bst. b (Adresse der auftraggebenden Ärztin oder des auftraggebenden Artzes) / 1.1.2024: Art. 4 Abs. 3 Bst. c (Adresse des Betriebs, in dem die auftraggebende Ärztin oder der auftraggebende Arzt tätig ist)"
+* Orderer.OrdererAddress.OrdererStreetAddressLine 0..1 string "Orderer street"
+* Orderer.OrdererAddress.OrdererPostBox 0..1 string "Orderer post box" 
+* Orderer.OrdererAddress.OrdererZipCode 1..1 string "Orderer ZIP code"
+* Orderer.OrdererAddress.OrdererCity 1..1 string "Orderer city"
+* Orderer.OrdererPhone 1..1 string "Orderer phone number -> 1.1.2024: Art. 4 Abs. 3 Bst. b (Telefonnummer)"
+* Orderer.OrdererEmail 1..1 string "Orderer e-mail address -> 1.1.2024: Art. 4 Abs. 3 Bst. b (E-Mail-Adresse)"
 
-* Orderer 1..1 Element "TODO"
-* Orderer.OrdererGLN 1..1 string "TODO" 
-* Orderer.OrdererOrgName 1..1	string "TODO" 
-* Orderer.OrdererDivision 0..1	string "TODO" 
-* Orderer.OrdererPhysician 1..1 Element "TODO"
-* Orderer.OrdererPhysician.OrdererPhysicianGLN 1..* string "TODO"
-* Orderer.OrdererPhysician.OrdererPhysicianSurname 1..1 string "TODO"
-* Orderer.OrdererPhysician.OrdererPhysicianGivenname 1..* string "TODO" 
-* Orderer.OrdererAddress 1..* Element "TODO"
-* Orderer.OrdererAddress.OrdererStreetAddressLine 0..1 string "TODO"
-* Orderer.OrdererAddress.OrdererPostBox 0..1 string "TODO" 
-* Orderer.OrdererAddress.OrdererZipCode 1..1 string "TODO"
-* Orderer.OrdererAddress.OrdererCity 1..1 string "TODO"
-* Orderer.OrdererPhone 1..1 string "TODO"
-* Orderer.OrdererEmail 1..1 string "TODO"
+* PrimaryLab 0..* Element "Primary laboratory" 
+* PrimaryLab.PrimaryLabGLN 1..1 string "Primary laboratory global location number (GLN)" 
+* PrimaryLab.PrimaryLabName 1..1 string "Primary laboratory name" 
+* PrimaryLab.PrimaryLabDepartment 0..1 string "Primary laboratory department" 
+* PrimaryLab.PrimaryLabPhysician 1..1 Element "Primary laboratory physician"
+* PrimaryLab.PrimaryLabPhysician.LabPhysicianGLN 1..* string "Primary laboratory physician global location number (GLN)"
+* PrimaryLab.PrimaryLabPhysician.PrimaryLabPhysicianSurname 1..1 string "Primary laboratory physician surname"
+* PrimaryLab.PrimaryLabPhysician.PrimaryLabPhysicianGivenname 1..* string "Primary laboratory physician given name" 
+* PrimaryLab.PrimaryLabAddress 1..* Element "Primary laboratory address"
+* PrimaryLab.PrimaryLabAddress.PrimaryLabStreetAddressLine 0..1 string "Primary laboratory street"
+* PrimaryLab.PrimaryLabAddress.PrimaryLabPostBox 0..1 string "Primary laboratory post box"
+* PrimaryLab.PrimaryLabAddress.PrimaryLabZipCode 1..1 string "Primary laboratory ZIP code"
+* PrimaryLab.PrimaryLabAddress.PrimaryLabCity 1..1 string "Primary laboratory city"
+* PrimaryLab.PrimaryLabPhone 1..1 string "Primary laboratory phone number"
+* PrimaryLab.PrimaryLabEmail 1..1 string "Primary laboratory e-mail address"
+* PrimaryLab.PrimaryLabOrderId 1..1 string "Primary laboratory order ID" 
+* PrimaryLab.SpecimenId	0..1 string "Primary laboratory specimen ID" 
 
-* PrimaryLab 0..* Element "TODO" 
-* PrimaryLab.PrimaryLabGLN 1..1 string "TODO" 
-* PrimaryLab.PrimaryLabName 1..1	string "TODO" 
-* PrimaryLab.PrimaryLabDepartment 0..1	string "TODO" 
-* PrimaryLab.PrimaryLabPhysician 1..1 Element "TODO"
-* PrimaryLab.PrimaryLabPhysician.LabPhysicianGLN 1..* string "TODO"
-* PrimaryLab.PrimaryLabPhysician.PrimaryLabPhysicianSurname 1..1 string "TODO"
-* PrimaryLab.PrimaryLabPhysician.PrimaryLabPhysicianGivenname 1..* string "TODO" 
-* PrimaryLab.PrimaryLabAddress 1..* Element "TODO"
-* PrimaryLab.PrimaryLabAddress.PrimaryLabStreetAddressLine 0..1 string "TODO"
-* PrimaryLab.PrimaryLabAddress.PrimaryLabPostBox 0..1 string "TODO"
-* PrimaryLab.PrimaryLabAddress.PrimaryLabZipCode 1..1 string "TODO"
-* PrimaryLab.PrimaryLabAddress.PrimaryLabCity 1..1 string "TODO"
-* PrimaryLab.PrimaryLabPhone 1..1 string "TODO"
-* PrimaryLab.PrimaryLabEmail 1..1 string "TODO"
-* PrimaryLab.PrimaryLabOrderId 1..1 string "TODO" 
-* PrimaryLab.SpecimenId	0..1 string "TODO" 
+* Patient 1..1 Element "Patient -> Anhang 3 (Angaben zur betrofenen Person)"
+* Patient.PatientOASI 1..* string "Patient old-age and survivors's insurance (OASI) number -> 1.1.2024: Anhang 3 (Angaben zur betroffenen Person: AHV-Nummer)"
+* Patient.PatientSurname 1..1 string "Patient surname -> Anhang 3 (Angaben zur betroffenen Person: Name, resp. Initialen)"
+* Patient.PatientGivenname 1..* string "Patient given name -> Anhang 3 (Angaben zur betroffenen Person: Vorname, resp. Initialen)"
+* Patient.PatientSexCode 1..1 code "Patient sex code -> Anhang 3 (Angaben zur betroffenen Person: Geschlecht)" // TBD: Sex and/or Gender?
+* Patient.PatientDateOfBirth 1..1 date "Patient date of birth -> Anhang 3 (Angaben zur betroffenen Person: Geburtsdatum)"
+* Patient.PatientDateOfBirth.PatientDayOfBirth 1..1 date "Patient day of birth"
+* Patient.PatientDateOfBirth.PatientMonthOfBirth 1..1 date "Patient month of birth"
+* Patient.PatientDateOfBirth.PatientYearOfBirth 1..1 date "Patient year of birth"
+* Patient.PatientPhoneNumber 0..* string "Patient phone number"
+* Patient.PatientEmail 0..* string "Patient e-mail address"
+* Patient.PatientAddress 1..* Element "Patient address -> Anhang 3 (Angaben zur betroffenen Person: Adresse)"
+* Patient.PatientAddress.PatientStreetAddressLine 0..* string "Patient street"
+* Patient.PatientAddress.PatientZipCode 1..1 string "Patient ZIP code"
+* Patient.PatientAddress.PatientCity 1..1 string "Patient city of residence"
+* Patient.PatientAddress.PatientCantonCode 0..1 string "Patient canton of residence"
+* Patient.PatientAddress.PatientCountryCode 0..1 code "Patient country of residence code"
 
-/*
-* Patient 1..1 Element "TBD: Element aus der Meldeverordnung" "Patient"
-PatientSurname
-PatientGivenname
-PatientSexCode
-PatientDayOfBirth
-PatientMonthOfBirth
-PatientYearOfBirth
-PatientPhoneNumber
-PatientEmail
-PatientStreetAddressLine
-PatientZipCode
-PatientCity
-PatientCantonCode
-PatientCountryCode
+* TestResult 1..* Element "Test -> Art. 4 Abs. 1 (Die zu meldenden laboranalytischen Befunde) - Anhang 3 (Angaben zum laboranalytischen Befund)"
+* TestResult.ExecutionDateTime 1..1 Element "Date (-time) of test"
+* TestResult.ExecutionDateTime.TestDayOfExecution 1..1 date "Day of test"
+* TestResult.ExecutionDateTime.TestMonthOfExecution 1..1 date "Month of test"
+* TestResult.ExecutionDateTime.TestYearOfExecution 1..1 date "Year of test"
+* TestResult.TestResultCode 1..1 code "Test result code -> Anhang 3 (Angaben zum laboranalytischen Befund: Resultat mit Interpretation)"
+* TestResult.TestDetectionCode 1..1 code "Detection-method code -> Anhang 3 (Angaben zum laboranalytischen Befund: Unteruschung Methode)"
+* TestResult.TestDetectionOther 0..1 code "Detection-method other -> Anhang 3 (Angaben zum laboranalytischen Befund: Unteruschung Methode)"
 
-TestDayOfExecution
-TestMonthOfExecution
-TestYearOfExecution
-TestResultCode
-TestDetectionCode
-TestDetectionOther
+* CollectionMaterial 0..* Element "Sampling -> Art. 4 Abs. 1 (Die zu meldenden laboranalytischen Befunde) - Anhang 3 (Angaben zum laboranalytischen Befund)"
+* CollectionMaterial.CollectionDateTime 0..1 Element "Date (-time) of sample collection"
+* CollectionMaterial.CollectionDateTime.TestDayOfCollection 1..1 date "Day of sample collection"
+* CollectionMaterial.CollectionDateTime.TestMonthOfCollection 1..1 date "Month sample collection"
+* CollectionMaterial.CollectionDateTime.TestYearOfCollection 1..1 date "Year sample collection"
+* CollectionMaterial.TestCollectionMaterialCode 1..1 code "Sampling material code -> Anhang 3 (Angaben zum laboranalytischen Befund: Unteruschung Material)"
+* CollectionMaterial.TestCollectionMaterialOther 0..1 code "Sampling material other -> Anhang 3 (Angaben zum laboranalytischen Befund: Unteruschung Material)"
 
-TestDayOfCollection
-TestMonthOfCollection
-TestYearOfCollection
-TestCollectionMaterialCode
-TestCollectionMaterialOther
-
-TestOrganismCode
-TestOrganismOther
-
-	*/
+* TestOrganism 1..* Element "Organism -> Art. 4 Abs. 1 (Die zu meldenden laboranalytischen Befunde) - Anhang 3 (Angaben zum laboranalytischen Befund)"
+* TestOrganism.TestOrganismCode 1..1 code "Organism -> Anhang 3 (Angaben zum laboranalytischen Befund: Beobachtung)"
+* TestOrganism.TestOrganismOther 0..1 code "Organism other -> Anhang 3 (Angaben zum laboranalytischen Befund: Beobachtung)"
 
 
 
