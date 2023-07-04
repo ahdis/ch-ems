@@ -124,7 +124,7 @@ Target: "hl7.org/fhir/r4"
 * ReportingLab.LabAddress.LabCity -> "Bundle.entry[0].resource.author.resolve().organization.resolve().address.city"
 * ReportingLab.LabPhone -> "Bundle.entry[0].resource.author.resolve().organization.resolve().telecom.where(system='phone').value"
 * ReportingLab.LabEmail -> "Bundle.entry[0].resource.author.resolve().organization.resolve().telecom.where(system='email').value"
-* ReportingLab.LabOrderId -> "TODO: ServiceRequest.identifier:placerOrderIdentifier"
+* ReportingLab.LabOrderId -> "Bundle.entry.resource.as(ServiceRequest).where(%resource.entry.resource.as(DiagnosticReport).basedOn.resolve()=$this).identifier"
 * ReportingLab.SpecimenId	-> "TODO: Specimen.accessionIdentifier.value"
 
 * Orderer -> "PractitionerRole.conformsTo('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-practitionerrole')"
@@ -179,3 +179,23 @@ Target: "hl7.org/fhir/r4"
 * Patient.PatientAddress.PatientCantonCode -> "Bundle.entry[0].resource.subject.resolve().address.state"
 * Patient.PatientAddress.PatientCountryCode -> "Bundle.entry[0].resource.subject.resolve().address.country.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding').value.code"
 
+* TestResult
+* TestResult.ExecutionDateTime
+* TestResult.ExecutionDateTime.TestDayOfExecution
+* TestResult.ExecutionDateTime.TestMonthOfExecution
+* TestResult.ExecutionDateTime.TestYearOfExecution 
+* TestResult.TestResultCode 
+* TestResult.TestDetectionCode 
+* TestResult.TestDetectionOther 
+
+* CollectionMaterial 
+* CollectionMaterial.CollectionDateTime 
+* CollectionMaterial.CollectionDateTime.TestDayOfCollection 
+* CollectionMaterial.CollectionDateTime.TestMonthOfCollection 
+* CollectionMaterial.CollectionDateTime.TestYearOfCollection 
+* CollectionMaterial.TestCollectionMaterialCode 
+* CollectionMaterial.TestCollectionMaterialOther 
+
+* TestOrganism 
+* TestOrganism.TestOrganismCode 
+* TestOrganism.TestOrganismOther 
