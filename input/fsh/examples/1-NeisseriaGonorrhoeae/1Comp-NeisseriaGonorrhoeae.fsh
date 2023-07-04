@@ -20,6 +20,6 @@ Description: "Example for a CH ELM Composition: Laboratory Report."
 // * attester.party = Reference(1PR-MedCompany)
 * title = "Laborbericht vom 02.02.2023"
 
-* section[neisseria-gonorrhoeae].title = "Neisseria Gonorrhoeae positiv"
-* section[neisseria-gonorrhoeae].code = $loinc#18725-2 "Microbiology studies (set)"
-* section[neisseria-gonorrhoeae].entry = Reference(1Obs-NeisseriaGonorrhoeae)
+* section[lab-no-subsections].title = "Microbiology studies (set)"
+* section[lab-no-subsections].code = $loinc#18725-2 "Microbiology studies (set)"
+* section[lab-no-subsections].entry = Reference(1Obs-NeisseriaGonorrhoeae)
