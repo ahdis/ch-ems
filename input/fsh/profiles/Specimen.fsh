@@ -5,7 +5,7 @@ Title: "CH ELM Specimen: Laboratory"
 Description: "This CH ELM base profile constrains the Observation resource for the purpose of laboratory test reports."
 * . ^short = "CH Lab Specimen: Laboratory"
 
-* accessionIdentifier
+//* accessionIdentifier
 
 * type 1.. // Req. EU LAB
 * type only ChElmCodeableConcept

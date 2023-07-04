@@ -23,7 +23,6 @@ Description: "The logical model represents the laboratory report as an abstract 
 * ReportingLab.LabPhone 1..1 string "Reporting unit phone number -> Art. 4 Abs. 2 Bst. c (Telefonnummer)"
 * ReportingLab.LabEmail 1..1 string "Reporting unit e-mail address -> Art. 4 Abs. 2 Bst. d (E-Mail-Adresse) / 1.1.2024: Art. 4 Abs. 2 Bst. c (E-Mail-Adresse)"
 * ReportingLab.LabOrderId 1..1 string "Reporting unit order ID" 
-* ReportingLab.SpecimenId 0..1 string "Reporting unit specimen ID" 
 
 * Orderer 1..1 Element "Orderer -> 1.1.2024: Art. 4 Abs. 3 (Auftraggebende Ärztin oder auftraggebender Arzt und Betrieb in dem sie oder er tätig ist)"
 * Orderer.OrdererGLN 1..1 string "Orderer organization global location number (GLN) -> 1.1.2024: Art. 4 Abs. 3 Bst. c (GLN des Betriebs, in dem die auftraggebende Ärztin oder der auftraggebende Arzt tätig ist)"  
@@ -57,7 +56,6 @@ Description: "The logical model represents the laboratory report as an abstract 
 * PrimaryLab.PrimaryLabPhone 1..1 string "Primary laboratory phone number"
 * PrimaryLab.PrimaryLabEmail 1..1 string "Primary laboratory e-mail address"
 * PrimaryLab.PrimaryLabOrderId 1..1 string "Primary laboratory order ID" 
-* PrimaryLab.SpecimenId	0..1 string "Primary laboratory specimen ID" 
 
 * Patient 1..1 Element "Patient -> Anhang 3 (Angaben zur betrofenen Person)"
 * Patient.PatientOASI 1..* string "Patient old-age and survivors's insurance (OASI) number -> 1.1.2024: Anhang 3 (Angaben zur betroffenen Person: AHV-Nummer)"
@@ -74,7 +72,7 @@ Description: "The logical model represents the laboratory report as an abstract 
 * Patient.PatientAddress.PatientStreetAddressLine 0..* string "Patient street"
 * Patient.PatientAddress.PatientZipCode 1..1 string "Patient ZIP code"
 * Patient.PatientAddress.PatientCity 1..1 string "Patient city of residence"
-* Patient.PatientAddress.PatientCantonCode 0..1 string "Patient canton of residence"
+* Patient.PatientAddress.PatientCantonCode 0..1 code "Patient canton of residence"
 * Patient.PatientAddress.PatientCountryCode 0..1 code "Patient country of residence code"
 
 * TestResult 1..* Element "Test -> Art. 4 Abs. 1 (Die zu meldenden laboranalytischen Befunde) - Anhang 3 (Angaben zum laboranalytischen Befund)"
@@ -124,30 +122,30 @@ Target: "hl7.org/fhir/r4"
 * ReportingLab.LabAddress.LabCity -> "Bundle.entry[0].resource.author.resolve().organization.resolve().address.city"
 * ReportingLab.LabPhone -> "Bundle.entry[0].resource.author.resolve().organization.resolve().telecom.where(system='phone').value"
 * ReportingLab.LabEmail -> "Bundle.entry[0].resource.author.resolve().organization.resolve().telecom.where(system='email').value"
-* ReportingLab.LabOrderId -> "Bundle.entry.resource.as(ServiceRequest).where(%resource.entry.resource.as(DiagnosticReport).basedOn.resolve()=$this).identifier"
-* ReportingLab.SpecimenId	-> "TODO: Specimen.accessionIdentifier.value"
+* ReportingLab.LabOrderId -> "Bundle.entry.resource.as(ServiceRequest).where(%resource.entry.resource.as(DiagnosticReport).basedOn.resolve()=$this).identifier.where(type.coding.code='PLAC')"
 
-* Orderer -> "PractitionerRole.conformsTo('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-practitionerrole')"
-* Orderer.OrdererGLN -> "Organization.identifier:GLN"
-* Orderer.OrdererOrgName -> "Organization.name"
-* Orderer.OrdererDivision -> "Organization.extension:department"
-* Orderer.OrdererPhysician -> "Practitioner.conformsTo('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-practitioner')"
-* Orderer.OrdererPhysician.OrdererPhysicianGLN -> "Practitioner.identifier:GLN"
-* Orderer.OrdererPhysician.OrdererPhysicianSurname -> "Practitioner.name.family"
-* Orderer.OrdererPhysician.OrdererPhysicianGivenname -> "Practitioner.name.given"
-* Orderer.OrdererAddress -> "Organization.address"
-* Orderer.OrdererAddress.OrdererStreetAddressLine -> "Organization.address.line"
-* Orderer.OrdererAddress.OrdererPostBox -> "Organization.address.line"
-* Orderer.OrdererAddress.OrdererZipCode -> "Organization.address.postalCode"
-* Orderer.OrdererAddress.OrdererCity -> "Organization.address.city"
-* Orderer.OrdererPhone -> "Organization.telecom:phone.value"
-* Orderer.OrdererEmail -> "Organization.telecom:email.value"
+* Orderer -> "Bundle.entry.resource.as(ServiceRequest).where(%resource.entry.resource.as(DiagnosticReport).basedOn.resolve()=$this).requester.resolve()"
+* Orderer.OrdererGLN -> "Bundle.entry.resource.as(ServiceRequest).where(%resource.entry.resource.as(DiagnosticReport).basedOn.resolve()=$this).requester.resolve().organization.resolve().identifier.where(system='urn:oid:2.51.1.3').value"
+* Orderer.OrdererOrgName -> "Bundle.entry.resource.as(ServiceRequest).where(%resource.entry.resource.as(DiagnosticReport).basedOn.resolve()=$this).requester.resolve().organization.resolve().name"
+* Orderer.OrdererDivision -> "Bundle.entry.resource.as(ServiceRequest).where(%resource.entry.resource.as(DiagnosticReport).basedOn.resolve()=$this).requester.resolve().organization.resolve().extension.where(url='http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-ext-department').value"
+* Orderer.OrdererPhysician -> "Bundle.entry.resource.as(ServiceRequest).where(%resource.entry.resource.as(DiagnosticReport).basedOn.resolve()=$this).requester.resolve().practitioner.resolve()"
+* Orderer.OrdererPhysician.OrdererPhysicianGLN -> "Bundle.entry.resource.as(ServiceRequest).where(%resource.entry.resource.as(DiagnosticReport).basedOn.resolve()=$this).requester.resolve().practitioner.resolve().identifier.where(system='urn:oid:2.51.1.3').value"
+* Orderer.OrdererPhysician.OrdererPhysicianSurname -> "Bundle.entry.resource.as(ServiceRequest).where(%resource.entry.resource.as(DiagnosticReport).basedOn.resolve()=$this).requester.resolve().practitioner.resolve().name.family"
+* Orderer.OrdererPhysician.OrdererPhysicianGivenname -> "Bundle.entry.resource.as(ServiceRequest).where(%resource.entry.resource.as(DiagnosticReport).basedOn.resolve()=$this).requester.resolve().practitioner.resolve().name.given"
+* Orderer.OrdererAddress -> "Bundle.entry.resource.as(ServiceRequest).where(%resource.entry.resource.as(DiagnosticReport).basedOn.resolve()=$this).requester.resolve().organization.resolve().address"
+* Orderer.OrdererAddress.OrdererStreetAddressLine -> "Bundle.entry.resource.as(ServiceRequest).where(%resource.entry.resource.as(DiagnosticReport).basedOn.resolve()=$this).requester.resolve().organization.resolve().address.line"
+* Orderer.OrdererAddress.OrdererPostBox -> "Bundle.entry.resource.as(ServiceRequest).where(%resource.entry.resource.as(DiagnosticReport).basedOn.resolve()=$this).requester.resolve().organization.resolve().address.line"
+* Orderer.OrdererAddress.OrdererZipCode -> "Bundle.entry.resource.as(ServiceRequest).where(%resource.entry.resource.as(DiagnosticReport).basedOn.resolve()=$this).requester.resolve().organization.resolve().address.postalCode"
+* Orderer.OrdererAddress.OrdererCity -> "Bundle.entry.resource.as(ServiceRequest).where(%resource.entry.resource.as(DiagnosticReport).basedOn.resolve()=$this).requester.resolve().organization.resolve().address.city"
+* Orderer.OrdererPhone -> "Bundle.entry.resource.as(ServiceRequest).where(%resource.entry.resource.as(DiagnosticReport).basedOn.resolve()=$this).requester.resolve().organization.resolve().telecom.where(system='phone').value"
+* Orderer.OrdererEmail -> "Bundle.entry.resource.as(ServiceRequest).where(%resource.entry.resource.as(DiagnosticReport).basedOn.resolve()=$this).requester.resolve().organization.resolve().telecom.where(system='email').value"
 
-* PrimaryLab -> "PractitionerRole.conformsTo('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-practitionerrole')"
+// TODO
+* PrimaryLab -> "PractitionerRole"
 * PrimaryLab.PrimaryLabGLN -> "Organization.identifier:GLN"
 * PrimaryLab.PrimaryLabName -> "Organization.name"
 * PrimaryLab.PrimaryLabDepartment -> "Organization.extension:department"
-* PrimaryLab.PrimaryLabPhysician -> "Practitioner.conformsTo('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-practitioner')"
+* PrimaryLab.PrimaryLabPhysician -> "Practitioner"
 * PrimaryLab.PrimaryLabPhysician.LabPhysicianGLN -> "Practitioner.identifier:GLN"
 * PrimaryLab.PrimaryLabPhysician.PrimaryLabPhysicianSurname -> "Practitioner.name.family"
 * PrimaryLab.PrimaryLabPhysician.PrimaryLabPhysicianGivenname -> "Practitioner.name.given"
@@ -159,7 +157,6 @@ Target: "hl7.org/fhir/r4"
 * PrimaryLab.PrimaryLabPhone -> "Organization.telecom:phone.value"
 * PrimaryLab.PrimaryLabEmail -> "Organization.telecom:email.value"
 * PrimaryLab.PrimaryLabOrderId -> "ServiceRequest.identifier:placerOrderIdentifier"
-* PrimaryLab.SpecimenId	-> "Specimen.accessionIdentifier.value"
 
 * Patient -> "Bundle.entry[0].resource.subject.resolve()"
 * Patient.PatientOASI -> "Bundle.entry[0].resource.subject.resolve().identifier.where(system='urn:oid:2.16.756.5.32').value"
@@ -176,26 +173,26 @@ Target: "hl7.org/fhir/r4"
 * Patient.PatientAddress.PatientStreetAddressLine -> "Bundle.entry[0].resource.subject.resolve().address.line"
 * Patient.PatientAddress.PatientZipCode -> "Bundle.entry[0].resource.subject.resolve().address.postalCode"
 * Patient.PatientAddress.PatientCity -> "Bundle.entry[0].resource.subject.resolve().address.city"
-* Patient.PatientAddress.PatientCantonCode -> "Bundle.entry[0].resource.subject.resolve().address.state"
+* Patient.PatientAddress.PatientCantonCode -> "Bundle.entry[0].resource.subject.resolve().address.state.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-7-cantonabbreviation').value"
 * Patient.PatientAddress.PatientCountryCode -> "Bundle.entry[0].resource.subject.resolve().address.country.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding').value.code"
 
-* TestResult
-* TestResult.ExecutionDateTime
-* TestResult.ExecutionDateTime.TestDayOfExecution
-* TestResult.ExecutionDateTime.TestMonthOfExecution
-* TestResult.ExecutionDateTime.TestYearOfExecution 
-* TestResult.TestResultCode 
-* TestResult.TestDetectionCode 
-* TestResult.TestDetectionOther 
+* TestResult -> "Bundle.entry[0].resource.section.where(code.coding.code='18725-2').entry.resolve()"
+* TestResult.ExecutionDateTime -> "Bundle.entry[0].resource.section.where(code.coding.code='18725-2').entry.resolve().effective"
+* TestResult.ExecutionDateTime.TestDayOfExecution -> "Bundle.entry[0].resource.section.where(code.coding.code='18725-2').entry.resolve().effective.toString().substring(8, 2)"
+* TestResult.ExecutionDateTime.TestMonthOfExecution -> "Bundle.entry[0].resource.section.where(code.coding.code='18725-2').entry.resolve().effective.toString().substring(5, 2)"
+* TestResult.ExecutionDateTime.TestYearOfExecution -> "Bundle.entry[0].resource.section.where(code.coding.code='18725-2').entry.resolve().effective.toString().substring(0, 4)"
+* TestResult.TestResultCode -> "Bundle.entry[0].resource.section.where(code.coding.code='18725-2').entry.resolve().value.coding"
+* TestResult.TestDetectionCode -> "Bundle.entry[0].resource.section.where(code.coding.code='18725-2').entry.resolve().code.coding"
+* TestResult.TestDetectionOther -> "Bundle.entry[0].resource.section.where(code.coding.code='18725-2').entry.resolve().code.coding"
 
-* CollectionMaterial 
-* CollectionMaterial.CollectionDateTime 
-* CollectionMaterial.CollectionDateTime.TestDayOfCollection 
-* CollectionMaterial.CollectionDateTime.TestMonthOfCollection 
-* CollectionMaterial.CollectionDateTime.TestYearOfCollection 
-* CollectionMaterial.TestCollectionMaterialCode 
-* CollectionMaterial.TestCollectionMaterialOther 
+* CollectionMaterial -> "Bundle.entry[0].resource.section.where(code.coding.code='18725-2').entry.resolve().specimen.resolve()"
+* CollectionMaterial.CollectionDateTime -> "Bundle.entry[0].resource.section.where(code.coding.code='18725-2').entry.resolve().specimen.resolve().collection.collected"
+* CollectionMaterial.CollectionDateTime.TestDayOfCollection -> "Bundle.entry[0].resource.section.where(code.coding.code='18725-2').entry.resolve().specimen.resolve().collection.collected.toString().substring(8, 2)"
+* CollectionMaterial.CollectionDateTime.TestMonthOfCollection -> "Bundle.entry[0].resource.section.where(code.coding.code='18725-2').entry.resolve().specimen.resolve().collection.collected.toString().substring(5, 2)"
+* CollectionMaterial.CollectionDateTime.TestYearOfCollection -> "Bundle.entry[0].resource.section.where(code.coding.code='18725-2').entry.resolve().specimen.resolve().collection.collected.toString().substring(0, 4)"
+* CollectionMaterial.TestCollectionMaterialCode -> "Bundle.entry[0].resource.section.where(code.coding.code='18725-2').entry.resolve().specimen.resolve().type.coding"
+* CollectionMaterial.TestCollectionMaterialOther -> "Bundle.entry[0].resource.section.where(code.coding.code='18725-2').entry.resolve().specimen.resolve().type.coding"
 
-* TestOrganism 
-* TestOrganism.TestOrganismCode 
-* TestOrganism.TestOrganismOther 
+* TestOrganism  -> "Bundle.entry[0].resource.section.where(code.coding.code='18725-2').entry.resolve()"
+* TestOrganism.TestOrganismCode -> "Bundle.entry[0].resource.section.where(code.coding.code='18725-2').entry.resolve().code.coding" 
+* TestOrganism.TestOrganismOther -> "Bundle.entry[0].resource.section.where(code.coding.code='18725-2').entry.resolve().code.coding" 
