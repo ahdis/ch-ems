@@ -4,11 +4,13 @@ TODO
 
 [Laborbericht: Neisseria Gonorrhoeae positiv](Bundle-1Doc-NeisseriaGonorrhoeae.html)
 
-{% include img.html img="scenario1.png" caption="Fig.: Szenario 1" width="50%" %}
+{% include img.html img="scenario1.png" caption="Abb.: Meldeweg für den Standardfall" width="60%" %}
 
 
 ### TODO: Andere Erreger
 
 TODO
 
-{% include img.html img="scenario2.png" caption="Fig.: Szenario 2" width="50%" %}
+Szenario 2 z.B. bei Masern, Pocken, Salmonellen
+
+{% include img.html img="scenario2.png" caption="Abb.: Meldeweg für Bestätigungstests" width="60%" %}
