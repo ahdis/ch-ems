@@ -19,7 +19,6 @@ Description: "Example for a CH ELM Practitioner (Reporting Lab)."
 
 
 
-
 Instance: 1Org-MedCompany
 InstanceOf: ChElmOrganizationReportingLab
 Usage: #example

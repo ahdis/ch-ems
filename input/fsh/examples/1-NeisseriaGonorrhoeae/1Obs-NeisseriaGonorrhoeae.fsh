@@ -11,5 +11,5 @@ Description: "Example for a CH ELM Observation Results: Laboratory."
 * effectiveDateTime = "2023-02-01"
 * performer = Reference(1PR-MedCompany)
 * valueCodeableConcept = $sct#10828004 "Positive"
-* specimen = Reference(1Spec-Specimen-PrimaryLab)
+* specimen = Reference(1Spec-Specimen-Orderer)
 
