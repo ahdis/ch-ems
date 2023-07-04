@@ -6,7 +6,7 @@ Description: "This CH ELM value set includes the codes for the lab specimen type
 * ^experimental = false
 
 * $sct#257261003        "Swab"                                  // 1=swab
-// über extensibel value set binding möglich                    // 2=other
+* $sct#123038009        "Specimen"                              // 2=other
 * $sct#258500001        "Nasopharyngeal swab"                   // 3=nasopharyngeal swab
 * $sct#461911000124106  "Oropharyngeal swab"                    // 4=oropharyngeal swab
 * $sct#258529004        "Throat swab"                           // 5=throat swab
