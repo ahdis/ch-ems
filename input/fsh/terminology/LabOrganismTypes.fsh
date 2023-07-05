@@ -5,8 +5,9 @@ Description: "This CH ELM value set includes the codes for the lab organism type
 * ^status = #draft
 * ^experimental = false
 
-* $sct#68704007 "Neisseria gonorrhoeae (organism)"
-* $sct#63938009 "Chlamydia trachomatis (organism)"
-* $sct#72904005 "Treponema pallidum (organism)"
-
-// TODO: add further codes
+* $sct#68704007 "Neisseria gonorrhoeae"
+* $sct#63938009 "Chlamydia trachomatis"
+* $sct#72904005 "Treponema pallidum"
+* $sct#840533007 "SARS-CoV-2"
+* $sct#725894000 "Influenza virus"
+* $sct#35408001 "Campylobacter"
