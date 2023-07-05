@@ -27,7 +27,7 @@ Description: "This CH ELM value set includes the codes for the lab specimen type
 * $sct#258450006        "Cerebrospinal fluid specimen"          // 20 cerebrospinal fluid
 * $sct#258589002        "Lymph node specimen"                   // 21 lymph node
 * $sct#258426009        "Placental membrane tissue specimen"    // 22 placental tissue
-// TODO                                                         // 23 punctate
+* $sct#57711000052109   "Specimen obtained by puncture procedure" // 23 punctate
 * $sct#119347001        "Seminal fluid"                         // 24 seminal fluid
 * $sct#122575003        "Urine specimen"                        // 25 urine
 * $sct#119394009        "Specimen from vagina"                  // 26 vaginal
