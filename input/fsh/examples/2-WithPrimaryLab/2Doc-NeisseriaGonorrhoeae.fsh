@@ -1,5 +1,5 @@
 Instance: 2Doc-NeisseriaGonorrhoeae
-InstanceOf: ChElmDocument
+InstanceOf: ChElmDocumentNeisseriaGonorrhoeae // ChElmDocument
 Usage: #example
 Title: "2Doc - Neisseria Gonorrhoeae"
 Description: "Example for a CH ELM Document: Laboratory Report."

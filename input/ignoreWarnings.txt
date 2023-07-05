@@ -13,4 +13,5 @@ Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 char
 
 # It is a base profile
 INFORMATION: StructureDefinition.where(url = 'http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-results-laboratory'): The Implementation Guide contains no explicitly linked examples for this profile
-
+WARNING: StructureDefinition​.where(url = 'http:​/​/fhir​.ch​/ig​/ch-elm​/StructureDefinition​/ch-elm-diagnosticreport'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition​.where(url = 'http:​/​/fhir​.ch​/ig​/ch-elm​/StructureDefinition​/ch-elm-document'): The Implementation Guide contains no examples for this profile
