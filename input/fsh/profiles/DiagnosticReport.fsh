@@ -9,6 +9,8 @@ Description: "This CH ELM base profile constrains the DiagnosticReport resource 
 * extension[diagnosticReportCompositionR5].value[x] 1..
 * extension[diagnosticReportCompositionR5].value[x] only Reference(ChElmComposition)
 */
+* code from ChElmLabOrganismTypes (extensible)
+* code only ChElmCodeableConcept
 * subject 1..
 * subject only Reference(ChElmPatient)
 * result 1..
