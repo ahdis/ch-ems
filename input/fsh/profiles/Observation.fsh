@@ -16,6 +16,7 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * performer only Reference(ChElmPractitionerRoleReportingLab)
 
 * specimen only Reference(ChElmSpecimen)
+* specimen 1..
 
 
 
