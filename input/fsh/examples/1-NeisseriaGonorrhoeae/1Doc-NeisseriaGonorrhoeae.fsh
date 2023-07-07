@@ -20,8 +20,8 @@ Description: "Example for a CH ELM Document: Laboratory Report."
 * entry[Observation].resource = 1Obs-NeisseriaGonorrhoeae
 * entry[Specimen][0].fullUrl = "http://test.fhir.ch/r4/Specimen/1Spec-Specimen-Orderer"
 * entry[Specimen][=].resource = 1Spec-Specimen-Orderer
-* entry[ServiceRequest][0].fullUrl = "http://test.fhir.ch/r4/ServiceRequest/1SR-Order1-Orderer"
-* entry[ServiceRequest][=].resource = 1SR-Order1-Orderer
+* entry[ServiceRequest][0].fullUrl = "http://test.fhir.ch/r4/ServiceRequest/1SR-Order1"
+* entry[ServiceRequest][=].resource = 1SR-Order1
 * entry[PractitionerRole][0].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/1PR-MedCompany"
 * entry[PractitionerRole][=].resource = 1PR-MedCompany
 * entry[PractitionerRole][+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/1PR-CentreDeTestXa"

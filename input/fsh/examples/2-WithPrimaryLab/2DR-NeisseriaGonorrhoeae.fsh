@@ -11,6 +11,6 @@ Description: "Example for a CH ELM DiagnosticReport: Laboratory Report."
 * subject = Reference(2Pat-DM)
 * result = Reference(2Obs-NeisseriaGonorrhoeae)
 * performer = Reference(2PR-MedCompany)
-* basedOn = Reference(2SR-Order2-PrimaryLab)
+* basedOn = Reference(2SR-Order2)
 * specimen = Reference(2Spec-Specimen-PrimaryLab)
 
