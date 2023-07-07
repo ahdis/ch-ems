@@ -74,13 +74,13 @@ Description: "The logical model represents the laboratory report as an abstract 
 * Patient.PatientAddress.PatientCountryCode 0..1 code "Patient country of residence code"
 
 * TestResult 1..* Element "Test -> Art. 4 Abs. 1 (Die zu meldenden laboranalytischen Befunde) - Anhang 3 (Angaben zum laboranalytischen Befund)"
-* TestResult.ExecutionDateTime 1..1 Element "Date (-time) of test"
+* TestResult.ExecutionDateTime 1..1 dateTime "Date (-time) of test"
 * TestResult.TestResultCode 1..1 code "Test result code -> Anhang 3 (Angaben zum laboranalytischen Befund: Resultat mit Interpretation)"
 * TestResult.TestDetectionCode 1..1 code "Detection-method code -> Anhang 3 (Angaben zum laboranalytischen Befund: Unteruschung Methode)"
 * TestResult.TestDetectionOther 0..1 code "Detection-method other -> Anhang 3 (Angaben zum laboranalytischen Befund: Unteruschung Methode)"
 
 * CollectionMaterial 1..1 Element "Sampling -> Art. 4 Abs. 1 (Die zu meldenden laboranalytischen Befunde) - Anhang 3 (Angaben zum laboranalytischen Befund)"
-* CollectionMaterial.CollectionDateTime 0..1 Element "Date (-time) of sample collection"
+* CollectionMaterial.CollectionDateTime 0..1 dateTime "Date (-time) of sample collection"
 * CollectionMaterial.TestCollectionMaterialCode 1..1 code "Sampling material code -> Anhang 3 (Angaben zum laboranalytischen Befund: Unteruschung Material)"
 * CollectionMaterial.TestCollectionMaterialOther 0..1 code "Sampling material other -> Anhang 3 (Angaben zum laboranalytischen Befund: Unteruschung Material)"
 
