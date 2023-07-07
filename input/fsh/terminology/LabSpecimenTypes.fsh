@@ -42,7 +42,7 @@ Description: "This CH ELM value set includes the codes for the lab specimen type
 * $sct#258527002	"Anal swab"
 * $sct#445160003	"Swab of eye"
 * $sct#119300005	"Specimen from blood product"
-* $sct#119300005	"Specimen from bronchus"
+* $sct#119391001	"Specimen from bronchus"
 * $sct#258454002	"Dialysis fluid specimen"
 * $sct#122643008	"Tissue specimen from large intestine"
 * $sct#119323008	"Pus specimen"
