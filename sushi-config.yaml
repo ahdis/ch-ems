@@ -10,7 +10,7 @@ title: "CH ELM (R4)"
 description: FHIR® Implementation Guide for the Electronic Laboratory Report of the Swiss Federal Office of Public Health
 status: draft
 license: CC0-1.0
-copyright: TBD
+copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CHE
 date: 2023-06-14
 version: 0.1.0
@@ -41,6 +41,8 @@ pages:
     title: Profiles
   extensions.md:
     title: Extensions
+  api.md:
+    title: API
   terminology.md:
     title: Terminology
 
@@ -49,11 +51,12 @@ menu:
   Use Case:
     German: usecase-german.html
   Laboratory Report: 
-    Logical Model: StructureDefinition-LaboratoryReport.html
     FHIR Document: document.html
+    Logical Model: StructureDefinition-LaboratoryReport.html
   Profiles: profiles.html
   Extensions: extensions.html
   Terminology: terminology.html
+  API: api.html
   Artifacts: artifacts.html
 
 # Parameters

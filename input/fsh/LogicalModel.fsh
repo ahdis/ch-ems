@@ -2,7 +2,7 @@ Logical: ChElmLaboratoryReport
 Parent: Element
 Id: LaboratoryReport
 Title: "CH ELM Laboratory Report"
-Description: "The logical model represents the laboratory report as an abstract data model. The model shows the used data set and specifies the data types and the cardinalities of the data elements."
+Description: "The logical model represents the laboratory report as an abstract data model. This data elements are defined by the ordonnace of FOPH and are then mapped to the FHIR document structure."
 * . ^short = "Laborbericht basierend auf der SR 818.101.126 Verordnung des EDI über die Meldung von Beobachtungen übertragbarer Krankheiten des Menschen"
 * . ^definition = "Laboratory Report"
 

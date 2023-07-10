@@ -1,6 +1,5 @@
 ### Resource Profiles
 
-{% include list-profiles.xhtml %}
 
 #### Resource Overview
 These figures illustrate the resources, and their references to each other, for which profiles are defined to represent the CH ELM laboratory report.
@@ -8,6 +7,8 @@ These figures illustrate the resources, and their references to each other, for 
 {% include img.html img="profiles.png" caption="Fig.: Resource Overview" width="80%" %}
 
 {% include img.html img="service-request.png" caption="Fig.: Two variants of involved actors in the context of the ServiceRequest resource" width="80%" %}
+
+{% include list-profiles.xhtml %}
 
 ### Data Type Profiles
 

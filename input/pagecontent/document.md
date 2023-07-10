@@ -2,6 +2,15 @@ This exchange format is defined as a [document](https://hl7.org/fhir/R4/document
 
 {% include img.html img="laboratory-report.png" caption="Fig.: Laboratory Report" width="40%" %}
 
+Each ELM document requires
+
+- a Compostion resource with the metadata for the document
+- a DiagnosticReport reesource indicating for which organism the report is
+
+These figures illustrate the resources, and their references to each other, for which profiles are defined to represent the CH ELM laboratory report.
+
+{% include img.html img="profiles.png" caption="Fig.: Resource Overview" width="80%" %}
+
 ### Examples and Profiles
 
 #### Neisseria Gonorrhoeae

@@ -1,7 +1,7 @@
 ### Introduction
 
-TODO
-
+CH ELM is a project of the Swiss Federal Office of Public Health (FOPH), Communicable Diseases Division, to enable laboratories to send their observations of notifiable communicable infectious diseases to the FOPH electronically.
+A report is created as a specialized Clinical Document based on the FHIR standard. This [FHIR document](document.html) is sent to the FOPH by a [FHIR restful web api endpoint](api.html). CH ELM derives from the [Swiss implementation guides](https://fhir.ch/) and the [European laboratory project](https://build.fhir.org/ig/hl7-eu/laboratory/branches/master/index.html).
 
 <div markdown="1" class="stu-note">
 

@@ -1,0 +1,16 @@
+@startuml
+title Publish Document Bundle
+hide footbox
+participant "Laboratory" as DocumentSource
+participant "FOPH" as DocumentRecipient
+autonumber
+activate DocumentSource
+activate DocumentRecipient
+DocumentSource -> DocumentRecipient : Request to publish document
+DocumentRecipient -> DocumentRecipient : Extract the document
+DocumentRecipient -> DocumentRecipient : Validate document 
+DocumentRecipient --> DocumentRecipient : Process document 
+DocumentRecipient --> DocumentSource : Document published
+deactivate DocumentSource
+deactivate DocumentRecipient
+@enduml
