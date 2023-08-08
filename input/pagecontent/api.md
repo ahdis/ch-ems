@@ -1,4 +1,4 @@
-CH ELLM provides a RESTful Web Api based on FHIR to enable a laboratory to send its reports. 
+CH ELM provides a RESTful Web Api based on FHIR to enable a laboratory to send its reports. 
 
 ### Scope
 The Simplified Publish transaction passes a Simplified Publish Request from the Laboratory to the FOPH, providing the document directly as a FHIR Bundle.
@@ -18,7 +18,7 @@ Release 4 of the [HL7® FHIR®](https://www.hl7.org/fhir/index.html) standard.
 
 <br clear="all">
 
-**Figure Simplified Publish Interactions**
+**Figure: Simplified Publish Interactions**
 
 #### Simplified Publish Request Message
 This message uses the HTTP POST method on the target Simplified Publish endpoint to convey the metadata and the document as a FHIR DocumentReference.
