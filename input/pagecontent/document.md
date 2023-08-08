@@ -5,7 +5,7 @@ This exchange format is defined as a [document](https://hl7.org/fhir/R4/document
 Each ELM document requires
 
 - a Composition resource with the metadata for the document
-- a DiagnosticReport reeource indicating for which organism the report is
+- a DiagnosticReport resource indicating for which organism the report is
 
 These figures illustrate the resources, and their references to each other, for which profiles are defined to represent the CH ELM laboratory report.
 
