@@ -6,7 +6,8 @@ Dieser Meldeweg gilt für Erreger wie [Neisseria Gonorrhoeae](#neisseria-gonorrh
 
 #### Neisseria Gonorrhoeae
 
-TODO
+DRAFT:   
+Herr Ernst Tanner geboren am 22.08.1966, Wohnhaft in Bern, konsultiert am 11.07.2023 seine Ärztin Martine Giacometti. Herr Tanner klagt über Juckreiz der Harnröhre und Schmerzen beim Wasserlassen. Da der Verdacht auf eine Harnwegsinfektion besteht, wird ein Abstrich abgenommen und zur Analyse an das Labor Viollier geschickt. Mittels Isolierung in Kultur wird am 14.07.2023 Neisseria gonorrhoeae nachgewiesen (LOINC 697-3). Das Labor meldet den meldepflichtig Laborbefund dem Meldesystem des Bundesamtes für Gesundheit.
 
 * [Laborbericht: Neisseria Gonorrhoeae positiv](Bundle-1Doc-NeisseriaGonorrhoeae.html)
    * [positives Testresultat](Observation-1Obs-NeisseriaGonorrhoeae.html) vom 01.02.2023
