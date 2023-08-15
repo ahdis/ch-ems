@@ -20,11 +20,17 @@ https://www.bag.admin.ch/dam/bag/de/dokumente/mt/msys/leitfaden-zur-meldepflicht
 * birthDate 1..
 * birthDate obeys ch-elm-dateTime
 
-* address 1..
-* address.postalCode 1..
-* address.city 1..
-* address.state // TODO: rule for FL ValueSet (based on CH Core)
-* address.country 1..
+* address ^slicing.discriminator[0].type = #value
+* address ^slicing.discriminator[=].path = "use"
+* address ^slicing.rules = #open
+* address contains home 1..1
+* address[home] ^short = "Residential address"
+* address[home].use 1..
+* address[home].use = #home
+* address[home].postalCode 1..
+* address[home].city 1..
+* address[home].state // TODO: rule for FL ValueSet (based on CH Core)
+* address[home].country 1..
 
 
 // * address.state                              -> ISO-3166-2:CH, without prefixed country code

@@ -10,11 +10,11 @@ Description: "Example for a CH ELM Patient (only with initials)."
 * name.family = "M"
 * name.given = "D"
 * birthDate = "1960-08-22"
-* address[0].use = #home
-* address[=].postalCode = "3000"
-* address[=].city = "Bern"
-* address[=].state = "BE"
-* address[=].country = "CH"
-* address[=].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
-* address[=].country.extension.valueCoding = urn:iso:std:iso:3166#CH
+* address[home].use = #home
+* address[home].postalCode = "3000"
+* address[home].city = "Bern"
+* address[home].state = "BE"
+* address[home].country = "CH"
+* address[home].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
+* address[home].country.extension.valueCoding = urn:iso:std:iso:3166#CH
 
