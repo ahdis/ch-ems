@@ -13,9 +13,7 @@ Description: "Example for a CH ELM Patient (only with initials)."
 * address[0].use = #home
 * address[=].postalCode = "3000"
 * address[=].city = "Bern"
-* address[=].state = "Bern"
-* address[=].state.extension[cantonAbbreviation].valueCode = #BE
+* address[=].state = "BE"
 * address[=].country = "CH"
 * address[=].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
 * address[=].country.extension.valueCoding = urn:iso:std:iso:3166#CH
-

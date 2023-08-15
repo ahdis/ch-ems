@@ -65,7 +65,3 @@ menu:
 parameters:
   allow-extensible-warnings: true
   display-warnings: true
-  special-url:
-    - http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-7-cantonabbreviation
-    - http://fhir.ch/ig/ch-core/CodeSystem/ech-7-cantonabbreviation
-    - http://fhir.ch/ig/ch-core/ValueSet/ech-7-cantonabbreviation
