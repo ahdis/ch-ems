@@ -71,7 +71,7 @@ Description: "The logical model represents the laboratory report as an abstract 
 * Patient.PatientAddress.PatientZipCode 1..1 string "Patient ZIP code"
 * Patient.PatientAddress.PatientCity 1..1 string "Patient city of residence"
 * Patient.PatientAddress.PatientCantonCode 0..1 code "Patient canton of residence"
-* Patient.PatientAddress.PatientCountryCode 0..1 code "Patient country of residence code"
+* Patient.PatientAddress.PatientCountryCode 1..1 code "Patient country of residence code"
 
 * TestResult 1..* Element "Test -> Art. 4 Abs. 1 (Die zu meldenden laboranalytischen Befunde) - Anhang 3 (Angaben zum laboranalytischen Befund)"
 * TestResult.ExecutionDateTime 1..1 dateTime "Date (-time) of test"

@@ -24,6 +24,7 @@ https://www.bag.admin.ch/dam/bag/de/dokumente/mt/msys/leitfaden-zur-meldepflicht
 * address.postalCode 1..
 * address.city 1..
 * address.state // TODO: rule for FL ValueSet (based on CH Core)
+* address.country 1..
 
 
 // * address.state                              -> ISO-3166-2:CH, without prefixed country code
