@@ -4,6 +4,7 @@ Id: ch-elm-observation-results-laboratory
 Title: "CH ELM Observation Results: Laboratory"
 Description: "This CH ELM base profile constrains the Observation resource for the purpose of laboratory test reports."
 * . ^short = "CH ELM Observation Results: Laboratory"
+* status = #final
 * code only ChElmCodeableConcept
 * subject only Reference(ChElmPatient)
 * subject 1..
