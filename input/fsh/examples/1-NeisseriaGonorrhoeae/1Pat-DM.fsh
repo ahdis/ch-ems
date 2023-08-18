@@ -3,7 +3,7 @@ InstanceOf: ChElmPatient
 Usage: #example
 Title: "1Pat - DM"
 Description: "Example for a CH ELM Patient (only with initials)."
-* gender = #female
+* gender = #male
 * identifier[AHVN13].system = "urn:oid:2.16.756.5.32"
 * identifier[AHVN13].value = "7562295883070"
 * name.family = "M"
