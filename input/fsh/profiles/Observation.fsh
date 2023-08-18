@@ -12,7 +12,7 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * effectiveDateTime obeys ch-elm-dateTime
 * value[x] 1..
 * valueCodeableConcept only ChElmCodeableConcept
-* valueCodeableConcept from ChElmResultsCodedValuesLaboratory (extensible)
+* valueCodeableConcept from ChElmResultsCodedValuesLaboratory (required)
 * performer 1..
 * performer only Reference(ChElmPractitionerRoleLab)
 * specimen only Reference(ChElmSpecimen)
