@@ -33,10 +33,12 @@ dependencies:
 pages:
   index.md:
     title: Home
-  usecase-german.md:
-    title: Anwendungsfälle    
   document.md:
     title: FHIR Document (Bundle)   
+  usecase-german.md:
+    title: Anwendungsfälle 
+  guidance.md:
+    title: Infectious Diseases Requiring Notification
   profiles.md:
     title: Profiles
   extensions.md:
@@ -48,11 +50,12 @@ pages:
 
 menu:
   Home: index.html
-  Use Case:
-    German: usecase-german.html
   Laboratory Report: 
     FHIR Document: document.html
     Logical Model: StructureDefinition-LaboratoryReport.html
+  Use Case:
+    German: usecase-german.html
+  Guidance: guidance.html
   Profiles: profiles.html
   Extensions: extensions.html
   Terminology: terminology.html

@@ -1,5 +1,4 @@
 ### Introduction
-
 CH ELM is a project of the Swiss Federal Office of Public Health (FOPH), Communicable Diseases Division, to enable laboratories to send their observations of notifiable communicable infectious diseases to the FOPH electronically.
 A report is created as a specialized Clinical Document based on the FHIR standard. This [FHIR document](document.html) is sent to the FOPH by a [FHIR restful web api endpoint](api.html). CH ELM derives from the [Swiss implementation guides](https://fhir.ch/) and the [European laboratory project](https://build.fhir.org/ig/hl7-eu/laboratory/branches/master/index.html).
 
@@ -11,6 +10,9 @@ The specification herewith documented is work in progress. No liability can be i
 
 **Download**: You can download this implementation guide in [NPM format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](package.tgz).
 
+### Must Support
+For the CH ELM exchange format, the [mustSupport](https://www.hl7.org/fhir/profiling.html#mustsupport) flag set to `true` has the following meaning:   
+If the sending application has data for the element, it is required to populate the element with a non-empty value. If the value is not known, the element may be omitted.
 
 ### IP Statements
 HL7®, HEALTH LEVEL SEVEN®, FHIR® and the FHIR <img src="icon-fhir-16.png" style="float: none; margin: 0px; padding: 0px; vertical-align: bottom"/>&reg; are trademarks owned by Health Level Seven International, registered with the United States Patent and Trademark Office.
