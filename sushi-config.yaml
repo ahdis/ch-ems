@@ -29,6 +29,7 @@ dependencies:
   ch.fhir.ig.ch-lab-report: current
   ch.fhir.ig.ch-core: 4.0.0-ballot
   hl7.fhir.uv.extensions.r4: 1.0.0
+  hl7.fhir.extensions.r5: 4.0.1
 
 pages:
   index.md:
