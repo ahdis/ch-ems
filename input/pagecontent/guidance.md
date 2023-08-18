@@ -2,18 +2,18 @@ The website of the Federal Office of Public Health (FOPH) ([EN](https://www.bag.
 
 *Please visit the FOPH website to access the most recent documents in the desired language (EN, DE, FR, IT) for each topic.*
 
-### Key facts
+### Key Facts
 The reporting obligation is the key systemic element for the surveillance of communicable diseases in Switzerland. The **Guide for the reporting obligation** describes, in addition to the reporting criteria and reporting deadlines, the relevant specifics of the reporting procedure for communicable diseases and pathogens subject to notification. The **poster** shows an overview of the communicable diseases and pathogens subject to notification.
 
-### Personal data (patient name)
+### Personal Data (Patient Name)
 Depending on the pathogen, the requirement for how the patient's name (e.g. Ernst Karl Tanner) is reported varies. There are three characteristics:
-* Full name
+* **Full name**
    * Pathogen: SARS-CoV-2, Legionella spp., etc.
    * [Example](Patient-Pat-ErnstKarlTanner.json.html): Ernst Karl Tanner (Patient.name.family = Tanner, Patient.name.given = Ernst, Karl)
-* Initials
+* **Initials**
    * Pathogen: Neisseria gonorrhoeae, Chlamydia trachomatis, etc.
    * [Example](Patient-Pat-ET.json.html): ET (Patient.name.family = T, Patient.name.given = E)
-* Special case
+* **Special case**
    * Pathogen: In the case of HIV/AIDS, under initials, enter the first letter and the number of letters of the first name. If this is longer than 9 letters, the number is 0. In the case of multi-part first names with a
 hyphen or in two words, only the first part is used.
    * [Example](Patient-Pat-E5.json.html): E5 (Patient.name.given = E5)
