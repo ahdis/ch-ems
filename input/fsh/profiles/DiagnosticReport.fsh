@@ -23,14 +23,3 @@ Description: "This CH ELM base profile constrains the DiagnosticReport resource 
 * basedOn only Reference(ChElmServiceRequestLaboratoryOrder)
 
 
-
-
-Profile: ChElmDiagnosticReportNeisseriaGonorrhoeae
-Parent: ChElmDiagnosticReport
-Id: ch-elm-diagnosticreport-neisseria-gonorrhoeae
-Title: "CH ELM DiagnosticReport: Neisseria Gonorrhoeae"
-Description: "This CH ELM profile constrains the DiagnosticReport resource for the purpose of laboratory test reports for neisseria gonorrhoeae."
-* . ^short = "CH ELM DiagnosticReport: Neisseria Gonorrhoeae"
-* code = $sct#68704007 
-* code ^short = "Neisseria gonorrhoeae (organism)"
-* result only Reference(ChElmObservationResultsNeisseriaGonorrhoeae)

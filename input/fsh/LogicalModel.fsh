@@ -1,3 +1,6 @@
+// Logical Models and not permitting MustSupport flag
+// https://chat.fhir.org/#narrow/stream/215610-shorthand/topic/Logical.20Models.20and.20not.20permitting.20MustSupport.20flag
+
 Logical: ChElmLaboratoryReport
 Parent: Element
 Id: LaboratoryReport

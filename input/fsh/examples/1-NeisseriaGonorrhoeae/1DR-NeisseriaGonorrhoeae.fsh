@@ -1,5 +1,5 @@
 Instance: 1DR-NeisseriaGonorrhoeae
-InstanceOf: ChElmDiagnosticReportNeisseriaGonorrhoeae
+InstanceOf: ChElmDiagnosticReport
 Usage: #example
 Title: "1DR - Neisseria Gonorrhoeae"
 Description: "Example for a CH ELM DiagnosticReport: Laboratory Report."

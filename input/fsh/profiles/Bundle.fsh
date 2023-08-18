@@ -22,18 +22,3 @@ Description: "This CH ELM base profile constrains the Bundle resource for the pu
 * entry[Organization] 1..
 
 
-
-
-
-
-
-
-Profile: ChElmDocumentNeisseriaGonorrhoeae
-Parent: ChElmDocument
-Id: ch-elm-document-neisseria-gonorrhoeae
-Title: "CH ELM Document: Neisseria Gonorrhoeae"
-Description: "This CH ELM profile constrains the Bundle resource for the purpose of laboratory test reports for neisseria gonorrhoeae."
-* . ^short = "CH ELM Document: Neisseria Gonorrhoeae"
-* entry[DiagnosticReport].resource only ChElmDiagnosticReportNeisseriaGonorrhoeae
-//* entry[Patient].resource only ChElmPatient // TODO
-* entry[Observation].resource only ChElmObservationResultsNeisseriaGonorrhoeae

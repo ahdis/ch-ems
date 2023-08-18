@@ -3,7 +3,7 @@ Parent:         DocumentReference
 Id:             SimplifiedPublishDocumentReference
 Title:          "DocumentReference for Simplified Publish"
 Description:    """
-A profile on the DocumentReference resource for  Simplified Publish constraints. 
+A profile on the DocumentReference resource for Simplified Publish constraints. 
 
 Simplified Publish
 - must be status current
@@ -22,7 +22,7 @@ Simplified Publish
 * description 0..1
 * securityLabel 0..* MS
 * content 1..1
-* content ^definition = "The document and format referenced."
+* content ^definition = "The document and format referenced"
 * content.attachment.language 0..1 MS
 * content.attachment.url 1..1
 * content.attachment.url ^short = "The document is referenced by this url, containted in the DocumentReference"

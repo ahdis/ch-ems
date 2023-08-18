@@ -21,12 +21,3 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 
 
 
-Profile: ChElmObservationResultsNeisseriaGonorrhoeae
-Parent: ChElmObservationResultsLaboratory
-Id: ch-elm-observation-results-neisseria-gonorrhoeae
-Title: "CH ELM Observation Results: Neisseria Gonorrhoeae"
-Description: "This CH ELM profile constrains the Observation resource for the purpose of laboratory test reports for neisseria gonorrhoeae."
-* . ^short = "CH ELM Observation Results: Neisseria Gonorrhoeae"
-* code from ChElmResultsNeisseriaGonorrhoeae (extensible)
-* effectiveDateTime 1..
-* valueCodeableConcept 1..
