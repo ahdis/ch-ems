@@ -1,13 +1,13 @@
-Instance: 1PR-CentreDeTestXa
+Instance: 1PR-FamilyPractice
 InstanceOf: ChElmPractitionerRole
 Usage: #example
-Title: "1PR - Martine Giacometti @ Centre de test XA"
+Title: "1PR - Martine Giacometti @ Family Practice"
 Description: "Example for a CH ELM PractitionerRole (Orderer)."
-* practitioner = Reference(1Pract-CentreDeTestXa)
-* organization = Reference(1Org-CentreDeTestXa)
+* practitioner = Reference(1Pract-FamilyPractice)
+* organization = Reference(1Org-FamilyPractice)
 
 
-Instance: 1Pract-CentreDeTestXa
+Instance: 1Pract-FamilyPractice
 InstanceOf: ChElmPractitioner
 Usage: #example
 Title: "1Pract - Martine Giacometti"
@@ -19,22 +19,20 @@ Description: "Example for a CH ELM Practitioner (Orderer)."
 
 
 
-Instance: 1Org-CentreDeTestXa
+Instance: 1Org-FamilyPractice
 InstanceOf: ChElmOrganization
 Usage: #example
-Title: "1Org - Centre de test XA"
+Title: "1Org - Family Practice"
 Description: "Example for a CH ELM Organization (Orderer)."
-* extension[department].valueString = "hematology"
-* name = "Centre de test XA"
+// * extension[department].valueString = "hematology"
+* name = "Familienpraxis"
 * identifier[GLN].system = "urn:oid:2.51.1.3"
 * identifier[GLN].value = "7601888888884"
-* telecom[email].value = "info@centredetestxa.ch"
-* telecom[phone].value = "044444444444"
-* address[0].line[0] = "Waldstr. 6"
+* address[0].line[0] = "Bernstr. 6"
 * address[=].line[+] = "Postfach 18"
-* address[=].postalCode = "8003"
-* address[=].city = "Zürich"
+* address[=].postalCode = "3000"
+* address[=].city = "Bern"
 * telecom[email].system = #email
-* telecom[email].value = "info@centredetestxa.ch"
+* telecom[email].value = "info@familienpraxis.ch"
 * telecom[phone].system = #phone
-* telecom[phone].value = "0444444444"
+* telecom[phone].value = "031 333 33 33"

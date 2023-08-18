@@ -1,13 +1,13 @@
-Instance: 1PR-MedCompany
+Instance: 1PR-LaborViollier
 InstanceOf: ChElmPractitionerRoleReportingLab
 Usage: #example
-Title: "1PR - Martina Reporter @ MedCompany"
+Title: "1PR - Martina Reporter @ Labor Viollier"
 Description: "Example for a CH ELM PractitionerRole (Reporting Lab)."
-* practitioner = Reference(1Pract-MedCompany)
-* organization = Reference(1Org-MedCompany)
+* practitioner = Reference(1Pract-LaborViollier)
+* organization = Reference(1Org-LaborViollier)
 
 
-Instance: 1Pract-MedCompany
+Instance: 1Pract-LaborViollier
 InstanceOf: ChElmPractitioner
 Usage: #example
 Title: "1Pract - Martina Reporter"
@@ -19,21 +19,21 @@ Description: "Example for a CH ELM Practitioner (Reporting Lab)."
 
 
 
-Instance: 1Org-MedCompany
+Instance: 1Org-LaborViollier
 InstanceOf: ChElmOrganizationReportingLab
 Usage: #example
-Title: "1Org - MedCompany"
+Title: "1Org - Labor Viollier"
 Description: "Example for a CH ELM Organization: Reporting Lab."
 * extension[department].valueString = "Abt. 2"
-* name = "MedCompany"
+* name = "Labor Viollier"
 * identifier[GLN].system = "urn:oid:2.51.1.3"
 * identifier[GLN].value = "7601002331470"
 * identifier[FOPH].system = "http://fhir.ch/ig/ch-elm/NamingSystem/LabCodeFOPH"
 * identifier[FOPH].value = "54322"
-* address[0].line = "Poststr. 4"
-* address[=].postalCode = "8006"
-* address[=].city = "Zürich"
+* address[0].line = "Laborstrasse 4"
+* address[=].postalCode = "3006"
+* address[=].city = "Bern"
 * telecom[email].system = #email
-* telecom[email].value = "info@medcompany.ch"
+* telecom[email].value = "info@laborviollier.ch"
 * telecom[phone].system = #phone
-* telecom[phone].value = "044 444 44 00"
+* telecom[phone].value = "0311111111"

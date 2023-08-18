@@ -8,7 +8,6 @@ Description: "Example for a CH ELM DiagnosticReport: Laboratory Report."
 * code = $sct#68704007 "Neisseria gonorrhoeae (organism)"
 * subject = Reference(1Pat-DM)
 * result = Reference(1Obs-NeisseriaGonorrhoeae)
-* performer = Reference(1PR-MedCompany)
-* basedOn = Reference(1SR-Order1)
-* specimen = Reference(1Spec-Specimen-Orderer)
-
+* performer = Reference(1PR-LaborViollier)
+* basedOn = Reference(1SR-Order)
+* specimen = Reference(1Spec-Specimen)
