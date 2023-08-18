@@ -1,7 +1,7 @@
-ValueSet: ChElmResultsNeisseriaGonorrhoeae
-Id: ch-elm-results-neisseria-gonorrhoeae
-Title: "CH ELM Results Neisseria Gonorrhoeae"
-Description: "This CH ELM value set includes the codes for the 'Neisseria gonorrhoeae' laboratory tests."
+ValueSet: ChElmResults
+Id: ch-elm-results
+Title: "CH ELM Results"
+Description: "This CH ELM value set includes the codes for the laboratory test results."
 * ^status = #active
 * ^experimental = false
 
