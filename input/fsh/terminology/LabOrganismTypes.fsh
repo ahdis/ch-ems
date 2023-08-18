@@ -2,7 +2,7 @@ ValueSet: ChElmLabOrganismTypes
 Id: ch-elm-lab-organism-types
 Title: "CH ELM Lab Organism Types"
 Description: "This CH ELM value set includes the codes for the lab organism types."
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 
 * $sct#68704007 "Neisseria gonorrhoeae"

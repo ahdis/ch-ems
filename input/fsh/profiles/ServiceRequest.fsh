@@ -9,7 +9,6 @@ Description: "This CH ELM base profile constrains the ServiceRequest resource fo
 * intent = #order
 * code 1..
 * code only ChElmCodeableConcept
-* basedOn only Reference(ChElmServiceRequestLaboratoryOrder)
 * subject only Reference(ChElmPatient)
 * specimen 1..
 * specimen only Reference(ChElmSpecimen)

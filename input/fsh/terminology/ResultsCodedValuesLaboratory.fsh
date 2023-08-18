@@ -2,7 +2,7 @@ ValueSet: ChElmResultsCodedValuesLaboratory
 Id: ch-elm-results-coded-values-laboratory
 Title: "CH ELM Results Coded Values Laboratory"
 Description: "This CH ELM value set includes the codes for the laboratory test results."
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 
 * $sct#10828004	"Positive (qualifier value)"

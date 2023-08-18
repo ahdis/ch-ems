@@ -7,7 +7,7 @@ Description: "This CH ELM base profile constrains the Bundle resource for the pu
 * entry[Composition].resource only ChElmComposition
 * entry[DiagnosticReport].resource only ChElmDiagnosticReport
 * entry[Patient].resource only ChElmPatient
-* entry[Patient] 1..
+* entry[Patient] 1..1
 * entry[Observation].resource only ChElmObservationResultsLaboratory
 * entry[Observation] 1..
 * entry[Specimen].resource only ChElmSpecimen

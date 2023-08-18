@@ -1,5 +1,5 @@
 Instance: 1PR-LaborViollier
-InstanceOf: ChElmPractitionerRoleReportingLab
+InstanceOf: ChElmPractitionerRoleLab
 Usage: #example
 Title: "1PR - Martina Reporter @ Labor Viollier"
 Description: "Example for a CH ELM PractitionerRole (Reporting Lab)."
@@ -20,10 +20,10 @@ Description: "Example for a CH ELM Practitioner (Reporting Lab)."
 
 
 Instance: 1Org-LaborViollier
-InstanceOf: ChElmOrganizationReportingLab
+InstanceOf: ChElmOrganizationLab
 Usage: #example
 Title: "1Org - Labor Viollier"
-Description: "Example for a CH ELM Organization: Reporting Lab."
+Description: "Example for a CH ELM Organization (Reporting Lab)."
 * extension[department].valueString = "Abt. 2"
 * name = "Labor Viollier"
 * identifier[GLN].system = "urn:oid:2.51.1.3"

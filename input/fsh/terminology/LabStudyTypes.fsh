@@ -2,7 +2,7 @@ ValueSet: ChElmLabStudyTypes
 Id: ch-elm-lab-study-types
 Title: "CH ELM Lab Study Types"
 Description: "This CH ELM value set includes the codes for the lab study types."
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 
 // Neisseria Gonorrhoeae, etc.

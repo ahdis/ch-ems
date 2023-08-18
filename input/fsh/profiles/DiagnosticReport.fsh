@@ -5,6 +5,8 @@ Title: "CH ELM DiagnosticReport: Laboratory Report"
 Description: "This CH ELM base profile constrains the DiagnosticReport resource for the purpose of laboratory test reports."
 * . ^short = "CH ELM DiagnosticReport: Laboratory Report"
 
+* status = #final
+
 * extension contains $extension-DiagnosticReport.composition named diagnosticReportCompositionR5 1..1
 * extension[diagnosticReportCompositionR5].value[x] 1..
 * extension[diagnosticReportCompositionR5].value[x] only Reference(ChElmComposition)
@@ -16,7 +18,7 @@ Description: "This CH ELM base profile constrains the DiagnosticReport resource 
 * result 1..
 * result only Reference(ChElmObservationResultsLaboratory)
 * performer 1..
-* performer only Reference(ChElmPractitionerRoleReportingLab)
+* performer only Reference(ChElmPractitionerRoleLab)
 * specimen 1..
 * specimen only Reference(ChElmSpecimen)
 * basedOn 1..

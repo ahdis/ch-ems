@@ -2,7 +2,7 @@ Instance: LabCodeFOPH
 InstanceOf: NamingSystem
 Usage: #definition
 * name = "LabCodeFOPH"
-* status = #draft
+* status = #active
 * kind = #identifier
 * date = "2023-06-27"
 * responsible = "FOPH"

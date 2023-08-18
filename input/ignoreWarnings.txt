@@ -11,7 +11,3 @@ Found multiple matching profiles for Patient/1Pat-DM among choices: http://hl7.e
 
 # Logical model only integrated as abstract data model
 Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-
-# It is a base profile
-INFORMATION: StructureDefinition.where(url = 'http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-results-laboratory'): The Implementation Guide contains no explicitly linked examples for this profile
-The Implementation Guide contains no examples for this profile

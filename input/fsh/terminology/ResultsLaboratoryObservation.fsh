@@ -2,7 +2,7 @@ ValueSet: ChElmResultsNeisseriaGonorrhoeae
 Id: ch-elm-results-neisseria-gonorrhoeae
 Title: "CH ELM Results Neisseria Gonorrhoeae"
 Description: "This CH ELM value set includes the codes for the 'Neisseria gonorrhoeae' laboratory tests."
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 
 * $loinc#14127-5	"Neisseria gonorrhoeae [Presence] in Anal by Organism specific culture"

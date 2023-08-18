@@ -5,14 +5,12 @@ Title: "CH ELM Composition: Laboratory Report"
 Description: "This CH ELM base profile constrains the Composition resource for the purpose of laboratory test reports."
 * . ^short = "CH ELM Composition: Laboratory Report"
 
+* status = #final
+
 * subject 1..
 * subject only Reference(ChElmPatient)
 
-* author only Reference(ChElmPractitionerRoleReportingLab)
-
-// * attester 1..
-// * attester.party 1..
-// * attester.party only Reference(ChElmPractitionerRoleReportingLab)
+* author only Reference(ChElmPractitionerRoleLab)
 
 * section 1..
 * section ^slicing.discriminator[0].type = #exists
@@ -29,7 +27,7 @@ Description: "This CH ELM base profile constrains the Composition resource for t
 * section.code only ChElmCodeableConcept
 
 * section contains
-    lab-no-subsections 0..*
+    lab-no-subsections 1..1
 
 * section[lab-no-subsections].code from ChElmLabStudyTypes (extensible)
 * section[lab-no-subsections].entry 1..

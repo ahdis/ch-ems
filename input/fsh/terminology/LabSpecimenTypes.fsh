@@ -2,7 +2,7 @@ ValueSet: ChElmLabSpecimenTypes
 Id: ch-elm-lab-specimen-types
 Title: "CH ELM Lab Specimen Types"
 Description: "This CH ELM value set includes the codes for the lab specimen types."
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 
 * $sct#257261003        "Swab"                                  // 1=swab

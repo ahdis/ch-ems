@@ -25,6 +25,6 @@ Im Falle von HIV/AIDS sind wir (noch) nicht konform zu EU-LAB, da dort name.fami
 Ebenfalls ist die Konformität zu CH Core noch nicht gewährleistet: https://github.com/hl7ch/ch-core/issues/240
 
 ### Multiplex Cases
-The exchange format defines the [FHIR document](document.html) for reporting to the FOPH so that **one document per pathogen** is submitted. 
+The exchange format defines the [FHIR document](document.html) for reporting to the FOPH so that **one document per pathogen per patient** is submitted. 
 
 

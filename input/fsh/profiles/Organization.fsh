@@ -15,12 +15,12 @@ Description: "This CH ELM base profile constrains the Organization resource for 
 
 
 
-Profile: ChElmOrganizationReportingLab
+Profile: ChElmOrganizationLab
 Parent: ChElmOrganization
-Id: ch-elm-organization-reporting-lab
-Title: "CH ELM Organization: Reporting Lab"
+Id: ch-elm-organization-lab
+Title: "CH ELM Organization: Lab"
 Description: "This CH ELM base profile constrains the Organization resource for the reporting laboratory for the purpose of laboratory test reports."
-* . ^short = "CH ELM Organization: Reporting Lab"
+* . ^short = "CH ELM Organization: Lab"
 * identifier contains FOPH 1..1
 * identifier[FOPH] ^short = "Reporting laboratory identifying code, assigned by FOPH"
 * identifier[FOPH] ^patternIdentifier.system = "http://fhir.ch/ig/ch-elm/NamingSystem/LabCodeFOPH"
