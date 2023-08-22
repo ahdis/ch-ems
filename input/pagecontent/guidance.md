@@ -21,7 +21,7 @@ hyphen or in two words, only the first part is used.
 The complete overview of which characteristics are used for which pathogens can be found in the *Guide for the reporting obligation* or the *Overview of reporting obligation*.
 
 **TODO:**    
-Im Falle von HIV/AIDS sind wir (noch) nicht konform zu EU-LAB, da dort name.family required ist (https://build.fhir.org/ig/hl7-eu/laboratory/branches/master/StructureDefinition-Patient-eu-lab.html). Frage gestellt, ob das so bleibt, oder es eine Chance gibt, das anzupassen (18.08.).   
+Im Falle von HIV/AIDS sind wir (noch) nicht konform zu EU-LAB, da dort name.family required ist (https://build.fhir.org/ig/hl7-eu/laboratory/branches/master/StructureDefinition-Patient-eu-lab.html): https://github.com/hl7-eu/laboratory/issues/48   
 Ebenfalls ist die Konformität zu CH Core noch nicht gewährleistet: https://github.com/hl7ch/ch-core/issues/240
 
 ### Laboratory Study Types
