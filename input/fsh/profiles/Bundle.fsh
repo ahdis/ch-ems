@@ -4,6 +4,12 @@ Id: ch-elm-document
 Title: "CH ELM Document: Laboratory Report"
 Description: "This CH ELM base profile constrains the Bundle resource for the purpose of laboratory test reports."
 * . ^short = "CH ELM Document: Laboratory Report"
+* identifier ^short = "Persistent, unique identifier for the document (UUID)"
+* identifier 1..
+* identifier.system 1..
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value 1..
+* identifier.value obeys ch-elm-doc-identifier
 * entry[Composition].resource only ChElmComposition
 * entry[DiagnosticReport].resource only ChElmDiagnosticReport
 * entry[Patient].resource only ChElmPatient

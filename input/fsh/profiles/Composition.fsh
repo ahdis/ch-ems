@@ -4,14 +4,16 @@ Id: ch-elm-composition
 Title: "CH ELM Composition: Laboratory Report"
 Description: "This CH ELM base profile constrains the Composition resource for the purpose of laboratory test reports."
 * . ^short = "CH ELM Composition: Laboratory Report"
-
+* identifier ^short = "Persistent, unique identifier for the document (UUID)"
+* identifier 1..
+* identifier.system 1..
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value 1..
+* identifier.value obeys ch-elm-doc-identifier
 * status = #final
-
 * subject 1..
 * subject only Reference(ChElmPatient)
-
 * author only Reference(ChElmPractitionerRoleLab)
-
 * section 1..
 * section ^slicing.discriminator[0].type = #exists
 * section ^slicing.discriminator[=].path = "$this.section"
