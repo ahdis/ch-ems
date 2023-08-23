@@ -6,7 +6,9 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * . ^short = "CH Lab Specimen: Laboratory"
 
 * type 1.. // Req. EU LAB
-* type only ChElmCodeableConcept
+* type.coding MS
+* type.coding.system 1..
+* type.coding.code 1..
 * type from ChElmLabSpecimenTypes (required)
 
 * subject 1..

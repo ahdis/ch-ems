@@ -11,8 +11,6 @@ Description: "This CH ELM base profile constrains the DiagnosticReport resource 
 * extension[diagnosticReportCompositionR5].value[x] 1..
 * extension[diagnosticReportCompositionR5].value[x] only Reference(ChElmComposition)
 
-//* code from ChElmResultsLaboratoryObservation (required)
-* code only ChElmCodeableConcept
 * code ^short = "Laboratory report"
 * code = $loinc#11502-2
 * subject 1..

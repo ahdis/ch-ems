@@ -8,7 +8,9 @@ Description: "This CH ELM base profile constrains the ServiceRequest resource fo
 * status = #completed
 * intent = #order
 * code 1..
-* code only ChElmCodeableConcept
+* code.coding MS
+* code.coding.system 1..
+* code.coding.code 1..
 * code from ChElmResultsLaboratoryObservation (required)
 * subject only Reference(ChElmPatient)
 * specimen 1..

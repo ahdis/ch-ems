@@ -22,13 +22,13 @@ Description: "This CH ELM base profile constrains the Composition resource for t
 * section ^slicing.ordered = false
 * section ^slicing.rules = #open
 * section.title 1..
-
 * section.code 1..
-* section.code only ChElmCodeableConcept
+* section.code.coding 1..
+* section.code.coding.system 1..
+* section.code.coding.code 1..
 
 * section contains
     lab-no-subsections 1..1
-
 * section[lab-no-subsections].code from ChElmLabStudyTypes (required)
 * section[lab-no-subsections].entry 1..
 * section[lab-no-subsections].entry only Reference(ChElmObservationResultsLaboratory)
