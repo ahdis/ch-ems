@@ -6,7 +6,7 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * . ^short = "CH ELM Observation Results: Laboratory"
 * status = #final
 * code only ChElmCodeableConcept
-* code from ChElmResults (required)
+* code from ChElmResultsLaboratoryObservation (required)
 * subject only Reference(ChElmPatient)
 * subject 1..
 * effective[x] 1..
@@ -18,3 +18,4 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * specimen only Reference(ChElmSpecimen)
 * specimen 1..
 * interpretation ..1
+* interpretation from ChElmObservationInterpretationCodes (required)

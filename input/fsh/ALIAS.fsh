@@ -4,6 +4,7 @@ Alias: $sct =                                       http://snomed.info/sct
 Alias: $observation-category =                      http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $v2-0203 =                                   http://terminology.hl7.org/CodeSystem/v2-0203
 // Alias: $sex-parameter-for-clinical-use =	        http://terminology.hl7.org/CodeSystem/sex-parameter-for-clinical-use
+Alias: $v3-ObservationInterpretation =              http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 
 // Extensions
 Alias: $extension-DiagnosticReport.composition =    http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition

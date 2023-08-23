@@ -1,7 +1,7 @@
 ValueSet: ChElmLabStudyTypes
 Id: ch-elm-lab-study-types
 Title: "CH ELM Lab Study Types"
-Description: "This CH ELM value set includes the codes for the lab study types."
+Description: "This CH ELM value set includes the codes for the laboratory specialties."
 * ^status = #active
 * ^experimental = false
 

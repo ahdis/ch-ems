@@ -5,7 +5,7 @@ Title: "1DR - Neisseria Gonorrhoeae"
 Description: "Example for a CH ELM DiagnosticReport: Laboratory Report."
 * extension[diagnosticReportCompositionR5].valueReference = Reference(1Comp-NeisseriaGonorrhoeae)
 * status = #final
-* code = $loinc#697-3 "Neisseria gonorrhoeae [Presence] in Urethra by Organism specific culture"
+* code = $loinc#11502-2 "Laboratory report"
 * subject = Reference(1Pat-DM)
 * result = Reference(1Obs-NeisseriaGonorrhoeae)
 * performer = Reference(1PR-LaborViollier)

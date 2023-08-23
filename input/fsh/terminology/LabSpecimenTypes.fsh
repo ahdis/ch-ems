@@ -1,7 +1,7 @@
 ValueSet: ChElmLabSpecimenTypes
 Id: ch-elm-lab-specimen-types
 Title: "CH ELM Lab Specimen Types"
-Description: "This CH ELM value set includes the codes for the lab specimen types."
+Description: "This CH ELM value set includes the codes for the laboratory specimen."
 * ^status = #active
 * ^experimental = false
 

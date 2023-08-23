@@ -25,19 +25,23 @@ Im Falle von HIV/AIDS sind wir (noch) nicht konform zu EU-LAB, da dort name.fami
 Ebenfalls ist die Konformität zu CH Core noch nicht gewährleistet: https://github.com/hl7ch/ch-core/issues/240
 
 ### Laboratory Study Types
-The laboratory report is currently either of the type pathogen detection (LOINC 18725-2 Microbiology studies (set)) or resistance detection (LOINC 18769-0 Microbial susceptibility tests Set). These types are defined in the [ValueSet CH ELM Lab Study Types](ValueSet-ch-elm-lab-study-types.html) and are represented in the `Composition.section.code` element of the respective document. 
+The laboratory report is currently either of the type [pathogen detection](#pathogen-detection) (LOINC 18725-2 Microbiology studies (set)) or [resistance detection](#resistance-detection) (LOINC 18769-0 Microbial susceptibility tests Set). These types are defined in the [ValueSet CH ELM Lab Study Types](ValueSet-ch-elm-lab-study-types.html) and are represented in the `Composition.section.code` element of the respective document. 
 
-TODO: Ergebnisse 
-- pathogen -> Y/N, [ValueSet CH ELM Results Coded Values Laboratory](ValueSet-ch-elm-results-coded-values-laboratory.html)
-- resistance -> susp/resist
+#### Pathogen Detection
+* `Composition.section.code` = LOINC 18725-2 Microbiology studies (set)
+* `Observation.value` = Positive/Negative ([CH ELM Results Coded Values Laboratory](ValueSet-ch-elm-results-coded-values-laboratory.html))
+
+#### Resistance Detection
+* `Composition.section.code` = LOINC 18769-0 Microbial susceptibility tests Set
+* `Observation.interpretation` = Resistant/Susceptible ([CH ELM Observation Interpretation Codes](ValueSet-ch-elm-observation-interpretation-codes.html))
 
 ### Laboratory Result
 The laboratory report is based on a 4-axis model, which is represented as a so-called leading LOINC code and optionally four additional elements.
-* Leading LOINC code: `DiagnosticReport.code 1..1` and `ServiceRequest.code 1..1` from [ValueSet CH ELM Results](ValueSet-ch-elm-results.html)
-   * Pathogen: `Observation.code 1..1` from [ValueSet CH ELM Results](ValueSet-ch-elm-results.html)
-   * Detection: `Observation.value 1..1` from [ValueSet CH ELM Results Coded Values Laboratory](ValueSet-ch-elm-results-coded-values-laboratory.html) or as value and then combined with `Observation.interpretation 0..1`
-   * Detection method: `Observation.method 0..1`
-   * Sample material: `Specimen.type 1..1` from [ValueSet CH ELM Lab Specimen Types](ValueSet-ch-elm-lab-specimen-types.html)
+* Leading LOINC code: `ServiceRequest.code 1..1` from [ValueSet CH ELM Results Laboratory Observation](ValueSet-ch-elm-results-laboratory-observation.html)
+   * **Pathogen**: `Observation.code 1..1` from [ValueSet CH ELM Results Laboratory Observation](ValueSet-ch-elm-results-laboratory-observation.html)
+   * **Detection**: `Observation.value 1..1` from [ValueSet CH ELM Results Coded Values Laboratory](ValueSet-ch-elm-results-coded-values-laboratory.html) or as value and then combined with `Observation.interpretation 0..1` from [ValueSet CH ELM Observation Interpretation Codes](ValueSet-ch-elm-observation-interpretation-codes.html)
+   * **Detection method**: `Observation.method 0..1`
+   * **Sample material**: `Specimen.type 1..1` from [ValueSet CH ELM Lab Specimen Types](ValueSet-ch-elm-lab-specimen-types.html)
 
 ### Multiplex Cases
 The exchange format defines the [FHIR document](document.html) for reporting to the FOPH so that **one document per pathogen per patient** is submitted. 
