@@ -1,7 +1,7 @@
 ValueSet: ChElmResultsLaboratoryObservation
 Id: ch-elm-results-laboratory-observation
 Title: "CH ELM Results Laboratory Observation"
-Description: "This CH ELM value set includes the codes for the laboratory test results (pathogen)."
+Description: "This CH ELM value set includes the codes for the laboratory test results (organism)."
 * ^status = #active
 * ^experimental = false
 
