@@ -119,6 +119,7 @@ Target: "hl7.org/fhir/r4"
 * Lab.LabPhone -> "Bundle.entry[0].resource.author.resolve().organization.resolve().telecom.where(system='phone').value"
 * Lab.LabEmail -> "Bundle.entry[0].resource.author.resolve().organization.resolve().telecom.where(system='email').value"
 * Lab.LabOrderId -> "Bundle.entry.resource.as(DiagnosticReport).basedOn.resolve().identifier"
+* Lab.LabOrderCode -> "Bundle.entry.resource.as(DiagnosticReport).basedOn.resolve().code"
 
 * Orderer -> "Bundle.entry.resource.as(DiagnosticReport).basedOn.resolve().requester.resolve()"
 //* Orderer -> "Scenario 2: Bundle.entry.resource.as(DiagnosticReport).basedOn.resolve().basedOn.resolve().requester.resolve()"
@@ -145,27 +146,27 @@ Target: "hl7.org/fhir/r4"
 * Patient.PatientDateOfBirth -> "Bundle.entry[0].resource.subject.resolve().birthDate"
 * Patient.PatientPhoneNumber -> "Bundle.entry[0].resource.subject.resolve().telecom.where(system='phone').value"
 * Patient.PatientEmail -> "Bundle.entry[0].resource.subject.resolve().telecom.where(system='email').value"
-* Patient.PatientAddress -> "Bundle.entry[0].resource.subject.resolve().address"
-* Patient.PatientAddress.PatientStreetAddressLine -> "Bundle.entry[0].resource.subject.resolve().address.line"
-* Patient.PatientAddress.PatientZipCode -> "Bundle.entry[0].resource.subject.resolve().address.postalCode"
-* Patient.PatientAddress.PatientCity -> "Bundle.entry[0].resource.subject.resolve().address.city"
-* Patient.PatientAddress.PatientCantonCode -> "Bundle.entry[0].resource.subject.resolve().address.state.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-7-cantonabbreviation').value"
-* Patient.PatientAddress.PatientCountryCode -> "Bundle.entry[0].resource.subject.resolve().address.country.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding').value.code"
+* Patient.PatientAddress -> "Bundle.entry[0].resource.subject.resolve().address.where(use='home')"
+* Patient.PatientAddress.PatientStreetAddressLine -> "Bundle.entry[0].resource.subject.resolve().address.where(use='home').line"
+* Patient.PatientAddress.PatientZipCode -> "Bundle.entry[0].resource.subject.resolve().address.where(use='home').postalCode"
+* Patient.PatientAddress.PatientCity -> "Bundle.entry[0].resource.subject.resolve().address.where(use='home').city"
+* Patient.PatientAddress.PatientCantonCode -> "Bundle.entry[0].resource.subject.resolve().address.where(use='home').state"
+* Patient.PatientAddress.PatientCountryCode -> "Bundle.entry[0].resource.subject.resolve().address.where(use='home').country.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding').value.code"
 
 * TestResult -> "Bundle.entry.resource.as(DiagnosticReport).result.resolve()"
 * TestResult.ExecutionDateTime -> "Bundle.entry.resource.as(DiagnosticReport).result.resolve().effective"
-* TestResult.TestResultCode -> "Bundle.entry.resource.as(DiagnosticReport).result.resolve().value.coding"
-* TestResult.TestDetectionCode -> "Bundle.entry.resource.as(DiagnosticReport).result.resolve().code.coding"
-* TestResult.TestDetectionOther -> "Bundle.entry.resource.as(DiagnosticReport).result.resolve().code.coding"
+* TestResult.TestResultCode -> "Bundle.entry.resource.as(DiagnosticReport).result.resolve().code" // coding/text?
+* TestResult.TestDetectionCode -> "Bundle.entry.resource.as(DiagnosticReport).result.resolve().method.coding"
+* TestResult.TestDetectionOther -> "Bundle.entry.resource.as(DiagnosticReport).result.resolve().method.text"
 
 * CollectionMaterial -> "Bundle.entry.resource.as(DiagnosticReport).specimen.resolve()"
 * CollectionMaterial.CollectionDateTime -> "Bundle.entry.resource.as(DiagnosticReport).specimen.resolve().collection.collected"
 * CollectionMaterial.TestCollectionMaterialCode -> "Bundle.entry.resource.as(DiagnosticReport).specimen.resolve().type.coding"
-* CollectionMaterial.TestCollectionMaterialOther -> "Bundle.entry.resource.as(DiagnosticReport).specimen.resolve().type.coding"
+* CollectionMaterial.TestCollectionMaterialOther -> "Bundle.entry.resource.as(DiagnosticReport).specimen.resolve().type.text"
 
-* TestOrganism  -> "Bundle.entry.resource.as(DiagnosticReport).code.coding"
-* TestOrganism.TestOrganismCode -> "Bundle.entry.resource.as(DiagnosticReport).code.coding" 
-* TestOrganism.TestOrganismOther -> "Bundle.entry.resource.as(DiagnosticReport).code.coding" 
+* TestOrganism  -> "Bundle.entry.resource.as(DiagnosticReport).code.coding" // TODO
+* TestOrganism.TestOrganismCode -> "Bundle.entry.resource.as(DiagnosticReport).code.coding" // TODO 
+* TestOrganism.TestOrganismOther -> "Bundle.entry.resource.as(DiagnosticReport).code.text" // TODO 
 
 
 

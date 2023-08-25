@@ -15,7 +15,8 @@ Description: "Example for a CH ELM Practitioner (Reporting Lab)."
 * identifier[GLN].system = "urn:oid:2.51.1.3"
 * identifier[GLN].value = "7601000201041"
 * name.family = "Reporter"
-* name.given = "Martina"
+* name.given[0] = "Martina"
+* name.given[+] = "Angela"
 
 
 
