@@ -6,11 +6,13 @@ participant "FOPH" as DocumentRecipient
 autonumber
 activate DocumentSource
 activate DocumentRecipient
-DocumentSource -> DocumentRecipient : Request to publish document
+DocumentSource -> DocumentRecipient : Request to provide DocumentReference with embedded Document 
 DocumentRecipient -> DocumentRecipient : Extract the document
 DocumentRecipient -> DocumentRecipient : Validate document 
-DocumentRecipient --> DocumentRecipient : Process document 
-DocumentRecipient --> DocumentSource : Document published
+DocumentRecipient -> DocumentRecipient : Queue document for processing 
+DocumentRecipient --> DocumentSource : Document accepted and queued for processing 
+DocumentSource -> DocumentRecipient : Check if document has been processed 
+DocumentRecipient --> DocumentSource : DocumentReference either completed, failed or in-progress 
 deactivate DocumentSource
 deactivate DocumentRecipient
 @enduml

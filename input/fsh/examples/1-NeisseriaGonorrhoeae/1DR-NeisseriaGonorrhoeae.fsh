@@ -3,7 +3,9 @@ InstanceOf: ChElmDiagnosticReport
 Usage: #example
 Title: "1DR - Neisseria Gonorrhoeae"
 Description: "Example for a CH ELM DiagnosticReport: Laboratory Report."
-* extension[diagnosticReportCompositionR5].valueReference = Reference(1Comp-NeisseriaGonorrhoeae)
+// * extension[DiagnosticReportCompositionR5].valueReference = Reference(1Comp-NeisseriaGonorrhoeae)
+* extension[DiagnosticReportCompositionR5].url = $diagnostic-report-composition-r5
+* extension[DiagnosticReportCompositionR5].valueReference = Reference(Composition/1Comp-NeisseriaGonorrhoeae)
 * status = #final
 * code = $loinc#11502-2 "Laboratory report"
 * subject = Reference(1Pat-DM)
