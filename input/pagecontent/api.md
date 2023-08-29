@@ -3,6 +3,8 @@ CH ELM provides a RESTful Web Api based on FHIR to enable a laboratory to send i
 ### Scope
 The Simplified Publish transaction passes a Simplified Publish Request from the Laboratory to the FOPH, providing the document directly as a FHIR Bundle.
 
+After providing the document the Laboratory shall check through the API that the document has been successfully processed. 
+
 ### Actor Roles
 **Actor:** Laboratory   
 **Role:** Sends CH ELM document and metadata to the FOPH   
@@ -58,29 +60,34 @@ For the pilot there is no support for Replace, Transform, Signs, and Append Asso
 
 ##### Expected Actions
 
-The Document Recipient shall accept both media types `application/fhir+json` and `application/fhir+xml`.
+The FOPH shall accept both media types `application/fhir+json` and `application/fhir+xml`.
 
-On receipt of the Simplified Publish Request Message, the Document Recipient shall extract the document from the DocumentReference.content.attachment.url and respond with one of the HTTP codes defined in the response [http://hl7.org/fhir/R4/http.html#ops](http://hl7.org/fhir/R4/http.html#ops). 
+On receipt of the Simplified Publish Request Message, the FOPH shall extract the document from the DocumentReference.content.attachment.url and respond with one of the HTTP codes defined in the response [http://hl7.org/fhir/R4/http.html#ops](http://hl7.org/fhir/R4/http.html#ops). 
 
 
-If the FOPH encounters any errors or if any validation fails, the Document Recipient shall return an error using a FHIR OperationOutcome.
+If the FOPH encounters any errors or if any validation fails, the FOPH shall return an error using a FHIR OperationOutcome.
 
 
 #### Simplified Publish Response Message
 
 The FOPH returns a HTTP Status code appropriate to the processing outcome, conforming to the create transaction specification requirements as specified in [http://hl7.org/fhir/R4/http.html#create](http://hl7.org/fhir/R4/http.html#create). 
 
+If the FOPH has accepted the information it will return and id for the created DocumentReference. The DocumentReference will have an additional element returning the processsing state of the document, which can have the following values:
+[in-progress](DocumentReference-1-DocumentReferenceResponseInProgress.json.html), [failed](DocumentReference-1-DocumentReferenceResponseFailed.json.html), [completed](DocumentReference-1-DocumentReferenceResponseCompleted.json.html). If failed a reference to an OperationOutcome is added.
+
 ##### Trigger Events
 
-This message shall be sent when a success or error condition needs to be communicated. Success is only indicated once the document is received and validated to the Document Recipient Actor configuration. 
+This message shall be sent when a success or error condition needs to be communicated. Success is only indicated once the document is received and validated to the FOPH Actor configuration. 
 
 ##### Message Semantics
 
-To enable the Laboratory to know the outcome of processing the transaction, and the identities assigned to the resources by the Document Recipient, the Document Recipient shall return the DocumentReference as created. The Document Recipient shall comply with FHIR [http://hl7.org/fhir/R4/http.html#ops](http://hl7.org/fhir/R4/http.html#ops). 
+To enable the Laboratory to know the outcome of processing the transaction, and the identities assigned to the resources by the FOPH, the FOPH shall return the DocumentReference as created conforming to [Simplified Publish DocumentReference Response](StructureDefinition-SimplifiedPublishDocumentReferenceResponse.html). 
 
 ##### Expected Actions
 
-The Document Source processes the results according to application-defined rules.	
+The FOPH processes the results according to application-defined rules. 
+	
+*Important*: The Laboratory SHALL afterwards check the status of the processing via accessing the DocumentReference directly via id (DocuemntReference/id) or querying via the provided identifier (DocumentReference?identifier=urn:uid:...) until the status is completed or failed.
 
 ### Security Considerations
 

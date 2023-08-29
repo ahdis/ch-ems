@@ -7,12 +7,6 @@ Description: "This CH ELM base profile constrains the DiagnosticReport resource 
 
 * status = #final
 
-* extension contains $extension-DiagnosticReport.composition named diagnosticReportCompositionR5 1..1
-* extension[diagnosticReportCompositionR5].value[x] 1..
-* extension[diagnosticReportCompositionR5].value[x] only Reference(ChElmComposition)
-
-* code ^short = "Laboratory report"
-* code = $loinc#11502-2
 * subject 1..
 * subject only Reference(ChElmPatient)
 * result 1..
