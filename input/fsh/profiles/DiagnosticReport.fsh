@@ -7,8 +7,6 @@ Description: "This CH ELM base profile constrains the DiagnosticReport resource 
 
 * status = #final
 
-* code ^short = "Laboratory report"
-* code = $loinc#11502-2
 * subject 1..
 * subject only Reference(ChElmPatient)
 * result 1..
