@@ -9,7 +9,7 @@ Description: "This CH ELM base profile constrains the Patient resource for the p
 * name 1..
 * name ^short = "Whether the personal data is transmitted by using initials, full name or a special combination can be seen from the table on p.66 of this document: 
 https://www.bag.admin.ch/dam/bag/de/dokumente/mt/msys/leitfaden-zur-meldepflicht-2023.pdf.download.pdf/meldepflicht-leitfaden-2023-de.pdf"
-* name.family MS
+* name.family 
 * name.family ^short = "May be omitted only in the case of HIV/AIDS, where a special combination of the first name (see Guidance) is submitted"
 * name.given 1..
 * birthDate 1..
@@ -26,3 +26,9 @@ https://www.bag.admin.ch/dam/bag/de/dokumente/mt/msys/leitfaden-zur-meldepflicht
 * address[home].state // TODO: rule for FL ValueSet (based on CH Core)
 * address[home].country 1..
 * address[home].country.extension[countrycode] 1..
+
+* telecom[email].value ^example.label = "CH ELM"
+* telecom[email].value ^example.valueString = "info@domain.ch"
+
+* telecom[phone].value ^example.label = "CH ELM"
+* telecom[phone].value ^example.valueString = "+41 79 999 55 66"

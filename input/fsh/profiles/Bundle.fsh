@@ -16,14 +16,18 @@ Description: "This CH ELM base profile constrains the Bundle resource for the pu
 
 * entry[Composition].resource only ChElmComposition
 * entry[DiagnosticReport].resource only ChElmDiagnosticReport
+* entry[DiagnosticReport].resource 1..
 * entry[Patient].resource only ChElmPatient
 * entry[Patient] 1..1
 * entry[Observation].resource only ChElmObservationResultsLaboratory
 * entry[Observation] 1..
+* entry[Observation].resource 1..
 * entry[Specimen].resource only ChElmSpecimen
 * entry[Specimen] 1..
+* entry[Specimen].resource 1..
 * entry[ServiceRequest].resource only ChElmServiceRequestLaboratoryOrder
 * entry[ServiceRequest] 1..
+* entry[ServiceRequest].resource 1..
 * entry[PractitionerRole].resource only ChElmPractitionerRoleOrderer
 * entry[PractitionerRole] 1..
 * entry[Practitioner].resource only ChElmPractitionerOrderer

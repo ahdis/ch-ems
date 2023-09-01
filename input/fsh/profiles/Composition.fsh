@@ -10,6 +10,8 @@ Description: "This CH ELM base profile constrains the Composition resource for t
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value 1..
 * identifier.value obeys ch-elm-doc-identifier
+* identifier.value ^example.label = "CH ELM"
+* identifier.value ^example.valueString = "urn:uuid:d494503a-7bef-4551-853c-f3dced2c518f"
 * status = #final
 * subject 1..
 * subject only Reference(ChElmPatient)
@@ -25,9 +27,7 @@ Description: "This CH ELM base profile constrains the Composition resource for t
 * section ^slicing.rules = #open
 * section.title 1..
 * section.code 1..
-* section.code.coding 1..
-* section.code.coding.system 1..
-* section.code.coding.code 1..
+* section.code only ChElmCodeableConcept
 
 * section contains
     lab-no-subsections 1..1

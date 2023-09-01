@@ -9,5 +9,9 @@ Description: "This CH ELM base profile constrains the Practitioner resource for 
 * name.given 1..
 * name.family 1..
 * telecom[email] 1..
+* telecom[email].value ^example.label = "CH ELM"
+* telecom[email].value ^example.valueString = "info@domain.ch"
 * telecom[phone] 1..
+* telecom[phone].value ^example.label = "CH ELM"
+* telecom[phone].value ^example.valueString = "+41 79 999 55 66"
 
