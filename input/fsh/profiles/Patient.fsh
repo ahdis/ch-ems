@@ -9,9 +9,11 @@ Description: "This CH ELM base profile constrains the Patient resource for the p
 * name 1..
 * name ^short = "Whether the personal data is transmitted by using initials, full name or a special combination can be seen from the table on p.66 of this document: 
 https://www.bag.admin.ch/dam/bag/de/dokumente/mt/msys/leitfaden-zur-meldepflicht-2023.pdf.download.pdf/meldepflicht-leitfaden-2023-de.pdf"
-* name.family 
-* name.family ^short = "May be omitted only in the case of HIV/AIDS, where a special combination of the first name (see Guidance) is submitted"
+* name.text ^short = "For usage in the case of HIV/AIDS see guidance"
+* name.family 1..
+* name.family ^short = "In the case of HIV/AIDS masked and provide a specific value (see guidance)"
 * name.given 1..
+* name.given ^short = "In the case of HIV/AIDS masked and provide a specific value (see guidance)"
 * birthDate 1..
 * birthDate obeys ch-elm-dateTime
 * address ^slicing.discriminator[0].type = #value

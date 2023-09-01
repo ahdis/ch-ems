@@ -14,9 +14,8 @@ Depending on the organism, the requirement for how the patient's name (e.g. Erns
    * Organism: Neisseria gonorrhoeae, Chlamydia trachomatis, etc.
    * [Example](Patient-Pat-ET.json.html): ET (Patient.name.family = T, Patient.name.given = E)
 * **Special case**
-   * Organism: In the case of HIV/AIDS, under initials, enter the first letter and the number of letters of the first name. If this is longer than 9 letters, the number is 0. In the case of multi-part first names with a
-hyphen or in two words, only the first part is used.
-   * [Example](Patient-Pat-E5.json.html): E5 (Patient.name.given = E5)
+   * Organism: In the case of HIV/AIDS, under initials, enter the first letter and the number of letters of the first name. If this is longer than 9 letters, the number is 0. In the case of multi-part first names with a hyphen or in two words, only the first part is used.
+   * [Example](Patient-Pat-E5.json.html): E5 (Patient.name.text = E5, Patient.name.family/Patient.name.given = masked)
 
 The complete overview of which characteristics are used for which organisms can be found in the *Guide for the reporting obligation* or the *Overview of reporting obligation*.
 

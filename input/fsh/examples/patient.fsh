@@ -47,7 +47,11 @@ Description: "Example for a CH ELM Patient - special case HIV/AIDS"
 * gender = #male
 * identifier[AHVN13].system = "urn:oid:2.16.756.5.32"
 * identifier[AHVN13].value = "7561234567897"
-* name.given = "E5"
+* name.text = "E5"
+* name.given.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* name.given.extension.valueCode = #masked
+* name.family.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* name.family.extension.valueCode = #masked
 * birthDate = "1966-08-22"
 * address[home].use = #home
 * address[home].postalCode = "3000"
