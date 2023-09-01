@@ -1,21 +1,12 @@
 
-Profile: ChElmPractitionerRole
+Profile: ChElmPractitionerRoleOrderer
 Parent: ChLabPractitionerRole
-Id: ch-elm-practitionerrole
-Title: "CH ELM PractitionerRole"
-Description: "This CH ELM base profile constrains the PractitionerRole resource for the purpose of laboratory test orders."
-* . ^short = "CH ELM PractitionerRole"
+Id: ch-elm-practitionerrole-orderer
+Title: "CH ELM PractitionerRole: Orderer"
+Description: "This CH ELM base profile constrains the PractitionerRole resource for the orderer."
+* . ^short = "CH ELM PractitionerRole: Orderer"
 * practitioner 1..
-* practitioner only Reference(ChElmPractitioner)
+* practitioner only Reference(ChElmPractitionerOrderer)
 * organization 1..
-* organization only Reference(ChElmOrganization)
+* organization only Reference(ChElmOrganizationOrderer)
 
-
-Profile: ChElmPractitionerRoleLab
-Parent: ChElmPractitionerRole
-Id: ch-elm-practitionerrole-lab
-Title: "CH ELM PractitionerRole: Lab"
-Description: "This CH ELM base profile constrains the PractitionerRole for a reporting laboratory resource for the purpose of laboratory test orders."
-* . ^short = "CH ELM PractitionerRole: Lab"
-
-* organization only Reference(ChElmOrganizationLab)

@@ -12,5 +12,9 @@ Found multiple matching profiles for Patient/1Pat-DM among choices: http://hl7.e
 # Logical model only integrated as abstract data model
 Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 
+# Others
+Reference to draft item http://hl7.org/fhir/task-status|4.0.1
+No code provided, and a code should be provided from the value set 'CH ELM Lab Specimen Types' (http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-lab-specimen-types|0.1.0)
+
 # Build error 
 The link 'StructureDefinition-LaboratoryReport-mappings.html#mappings-for-ch-elm-laboratory-report-to-fhir-hl7-org-fhir-r4' for "mapping" cannot be resolved (valid targets: [segment-header, publish-box, bottom, segment-post-footer, ChElmLaboratoryReportToFhir, ig-status, top, root, rim, stripe, logical-model-chelmlaboratoryreport-mappings, segment-footer, hl7-nav, logo, mappings-for-ch-elm-laboratory-report-to-fhir-hl7-orgfhirr4, segment-navbar, segment-content, segment-breadcrumb, mappings-for-rim-mapping-http-hl7-orgv3])

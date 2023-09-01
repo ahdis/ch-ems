@@ -13,7 +13,7 @@ Description: "This CH ELM base profile constrains the Composition resource for t
 * status = #final
 * subject 1..
 * subject only Reference(ChElmPatient)
-* author only Reference(ChElmPractitionerRoleLab)
+* author only Reference(ChElmOrganizationAuthor)
 * section 1..
 * section ^slicing.discriminator[0].type = #exists
 * section ^slicing.discriminator[=].path = "$this.section"

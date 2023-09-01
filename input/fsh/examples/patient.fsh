@@ -43,7 +43,7 @@ Instance: Pat-E5
 InstanceOf: ChElmPatient
 Usage: #example
 Title: "Pat - E5"
-Description: "Example for a CH ELM Patient - special case HIV/AIDS."
+Description: "Example for a CH ELM Patient - special case HIV/AIDS"
 * gender = #male
 * identifier[AHVN13].system = "urn:oid:2.16.756.5.32"
 * identifier[AHVN13].value = "7561234567897"

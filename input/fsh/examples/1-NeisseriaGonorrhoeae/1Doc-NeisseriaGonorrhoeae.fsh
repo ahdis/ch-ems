@@ -2,7 +2,7 @@ Instance: 1Doc-NeisseriaGonorrhoeae
 InstanceOf: ChElmDocument
 Usage: #example
 Title: "1Doc - Neisseria Gonorrhoeae"
-Description: "Example for a CH ELM Document: Laboratory Report."
+Description: "Example for a CH ELM Document: Laboratory Report"
 * meta.profile = "http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab"
 
 * identifier.system = "urn:ietf:rfc:3986"
@@ -28,16 +28,14 @@ Description: "Example for a CH ELM Document: Laboratory Report."
 * entry[Specimen][=].resource = 1Spec-Specimen
 * entry[ServiceRequest][0].fullUrl = "http://test.fhir.ch/r4/ServiceRequest/1SR-Order"
 * entry[ServiceRequest][=].resource = 1SR-Order
-* entry[PractitionerRole][0].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/1PR-LaborViollier"
-* entry[PractitionerRole][=].resource = 1PR-LaborViollier
-* entry[PractitionerRole][+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/1PR-FamilyPractice"
-* entry[PractitionerRole][=].resource = 1PR-FamilyPractice
-* entry[Practitioner][0].fullUrl = "http://test.fhir.ch/r4/Practitioner/1Pract-LaborViollier"
-* entry[Practitioner][=].resource = 1Pract-LaborViollier
-* entry[Practitioner][+].fullUrl = "http://test.fhir.ch/r4/Practitioner/1Pract-FamilyPractice"
-* entry[Practitioner][=].resource = 1Pract-FamilyPractice
-* entry[Organization][0].fullUrl = "http://test.fhir.ch/r4/Organization/1Org-LaborViollier"
-* entry[Organization][=].resource = 1Org-LaborViollier
-* entry[Organization][+].fullUrl = "http://test.fhir.ch/r4/Organization/1Org-FamilyPractice"
-* entry[Organization][=].resource = 1Org-FamilyPractice
+
+* entry[PractitionerRole][0].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/1PR-KsAbc"
+* entry[PractitionerRole][=].resource = 1PR-KsAbc
+
+* entry[Practitioner][0].fullUrl = "http://test.fhir.ch/r4/Practitioner/1Pract-KsAbc"
+* entry[Practitioner][=].resource = 1Pract-KsAbc
+* entry[Organization][0].fullUrl = "http://test.fhir.ch/r4/Organization/1Org-Labor"
+* entry[Organization][=].resource = 1Org-Labor
+* entry[Organization][+].fullUrl = "http://test.fhir.ch/r4/Organization/1Org-KsAbc"
+* entry[Organization][=].resource = 1Org-KsAbc
 

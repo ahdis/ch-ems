@@ -2,7 +2,7 @@ Instance: 1-DocumentReference
 InstanceOf: SimplifiedPublishDocumentReference
 Usage: #example
 Title: "DocumentReference for reporting Neisseria Gonorhoeae"
-Description: "Example for a CH ELM DocumentReference: Laboratory Report."
+Description: "Example for a CH ELM DocumentReference: Laboratory Report"
 * contained = 1Doc-NeisseriaGonorrhoeae
 * status = #current
 * identifier[0].system = "urn:ietf:rfc:3986"

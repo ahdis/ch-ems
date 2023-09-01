@@ -10,6 +10,10 @@ Description: "This CH ELM base profile constrains the Bundle resource for the pu
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value 1..
 * identifier.value obeys ch-elm-doc-identifier
+* identifier.value ^example.label = "CH ELM"
+* identifier.value ^example.valueString = "urn:uuid:d494503a-7bef-4551-853c-f3dced2c518f"
+
+
 * entry[Composition].resource only ChElmComposition
 * entry[DiagnosticReport].resource only ChElmDiagnosticReport
 * entry[Patient].resource only ChElmPatient
@@ -20,11 +24,11 @@ Description: "This CH ELM base profile constrains the Bundle resource for the pu
 * entry[Specimen] 1..
 * entry[ServiceRequest].resource only ChElmServiceRequestLaboratoryOrder
 * entry[ServiceRequest] 1..
-* entry[PractitionerRole].resource only ChElmPractitionerRole
+* entry[PractitionerRole].resource only ChElmPractitionerRoleOrderer
 * entry[PractitionerRole] 1..
-* entry[Practitioner].resource only ChElmPractitioner
+* entry[Practitioner].resource only ChElmPractitionerOrderer
 * entry[Practitioner] 1..
-* entry[Organization].resource only ChElmOrganization
-* entry[Organization] 1..
+* entry[Organization].resource only $ch-core-organization
+* entry[Organization] 2..
 
 

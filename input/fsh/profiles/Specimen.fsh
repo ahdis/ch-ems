@@ -9,7 +9,8 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * type.coding MS
 * type.coding.system 1..
 * type.coding.code 1..
-* type from ChElmLabSpecimenTypes (required)
+* type from ChElmLabSpecimenTypes (extensible) // required: No code provided, and a code is required from the value set 'CH ELM Lab Specimen Types' (http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-lab-specimen-types|0.1.0)
+* type.text = "Material declared by LOINC system axis"
 
 * subject 1..
 * subject only Reference(ChElmPatient)

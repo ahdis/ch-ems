@@ -10,5 +10,5 @@ Description: "Example for a CH ELM ServiceRequest: Laboratory Order"
 * code = $loinc#697-3 "Neisseria gonorrhoeae [Presence] in Urethra by Organism specific culture"
 * subject = Reference(1Pat-DM)
 * specimen = Reference(1Spec-Specimen)
-* requester = Reference(1PR-FamilyPractice)
+* requester = Reference(1PR-KsAbc)
 

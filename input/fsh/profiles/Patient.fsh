@@ -5,11 +5,11 @@ Title: "CH ELM Patient"
 Description: "This CH ELM base profile constrains the Patient resource for the purpose of laboratory orders and test reports."
 * . ^short = "CH ELM Patient"
 * gender 
-* identifier[AHVN13] MS
+* identifier[AHVN13] 1..
 * name 1..
 * name ^short = "Whether the personal data is transmitted by using initials, full name or a special combination can be seen from the table on p.66 of this document: 
 https://www.bag.admin.ch/dam/bag/de/dokumente/mt/msys/leitfaden-zur-meldepflicht-2023.pdf.download.pdf/meldepflicht-leitfaden-2023-de.pdf"
-* name.family MS 
+* name.family MS
 * name.family ^short = "May be omitted only in the case of HIV/AIDS, where a special combination of the first name (see Guidance) is submitted"
 * name.given 1..
 * birthDate 1..

@@ -1,27 +1,31 @@
-Profile: ChElmOrganization
+Profile: ChElmOrganizationAuthor
 Parent: $ch-core-organization
-Id: ch-elm-organization
-Title: "CH ELM Organization"
-Description: "This CH ELM base profile constrains the Organization resource for the purpose of laboratory test reports."
+Id: ch-elm-organization-author
+Title: "CH ELM Organization: Author"
+Description: "This CH ELM base profile constrains the Organization resource for the author of the laboratory report."
 * . ^short = "CH ELM Organization"
-* extension contains ChElmExtDepartment named department 0..1
 * identifier[GLN] 1..
-* name 1..
-* telecom[email] 1..
-* telecom[phone] 1..
-* address 1..
-* address.postalCode 1..
-* address.city 1..
-
 
 
 Profile: ChElmOrganizationLab
-Parent: ChElmOrganization
+Parent: $ch-core-organization
 Id: ch-elm-organization-lab
 Title: "CH ELM Organization: Lab"
-Description: "This CH ELM base profile constrains the Organization resource for the reporting laboratory for the purpose of laboratory test reports."
-* . ^short = "CH ELM Organization: Lab"
-* identifier contains FOPH 1..1
-* identifier[FOPH] ^short = "Reporting laboratory identifying code, assigned by FOPH"
-* identifier[FOPH] ^patternIdentifier.system = "http://fhir.ch/ig/ch-elm/NamingSystem/LabCodeFOPH"
-* identifier[FOPH].value 1..
+Description: "This CH ELM base profile constrains the Organization resource for the reporting laboratory."
+* . ^short = "CH ELM Organization"
+* identifier[GLN] 1..
+* name 1..
+
+
+Profile: ChElmOrganizationOrderer
+Parent: $ch-core-organization
+Id: ch-elm-organization-orderer
+Title: "CH ELM Organization: Orderer"
+Description: "This CH ELM base profile constrains the Organization resource for the orderer."
+* . ^short = "CH ELM Organization: Orderer"
+* extension contains ChElmExtDepartment named department 0..1
+* identifier[GLN] 1..
+* name 1..
+* address 1..
+* address.postalCode 1..
+* address.city 1..
