@@ -19,17 +19,17 @@ Description: "Example for a CH ELM Practitioner: Orderer"
 * telecom[email].system = #email
 * telecom[email].value = "m.giacometti@ks-abc.ch"
 * telecom[phone].system = #phone
-* telecom[phone].value = "+41 79 374 11 12"
+* telecom[phone].value = "+41 79 111 44 55"
 
 
 
 Instance: 1Org-KsAbc
 InstanceOf: ChElmOrganizationOrderer
 Usage: #example
-Title: "1Org - Kantonsspital abc"
-Description: "Example for a CH ELM Organization (Orderer)"
+Title: "1Org - Kantonsspital ABC"
+Description: "Example for a CH ELM Organization: Orderer"
 * extension[department].valueString = "Abteilung 2"
-* name = "Kantonsspital abc"
+* name = "Kantonsspital ABC"
 * identifier[GLN].system = "urn:oid:2.51.1.3"
 * identifier[GLN].value = "7601888888884"
 * address[0].line[0] = "Aortastrasse 22"

@@ -6,6 +6,9 @@ Dieser Meldeweg gilt für Erreger wie [Neisseria Gonorrhoeae](#neisseria-gonorrh
 #### Neisseria Gonorrhoeae
 [Herr Daniel Meier](Patient-1Pat-DM.html) geboren am 22.08.1960, wohnhaft in 3000 Bern, konsultiert am 11.07.2023 die Ärztin [Monika Giacometti](PractitionerRole-1PR-KsAbc.html) am Kantonsspital. Herr Meier klagt über Juckreiz der Harnröhre und Schmerzen beim Wasserlassen. Da der Verdacht auf eine Harnwegsinfektion besteht, wird ein [Abstrich](Specimen-1Spec-Specimen.html) abgenommen und dieser zusammen mit einem [Laborauftrag](ServiceRequest-1SR-Order.html) zur Analyse an das [Labor](Organization-1Org-Labor.html) geschickt. Mittels Isolierung in Kultur wird am 14.07.2023 [Neisseria gonorrhoeae nachgewiesen (LOINC 697-3)](Observation-1Obs-NeisseriaGonorrhoeae.html). Das Labor meldet den **[meldepflichtigen Laborbefund](Bundle-1Doc-NeisseriaGonorrhoeae.html)** dem Meldesystem des Bundesamtes für Gesundheit.
 
+##### Broker Szenario
+Wenn das [Labor](Organization-1bOrg-Labor.html) nicht selbst, sondern ein sogenannter [Broker](Organization-1bOrg-Broker.html), den **[meldepflichtigen Laborbefund](Bundle-1bDoc-NeisseriaGonorrhoeae.html)** dem Meldesystem des Bundesamtes für Gesunheit übermittelt, dann wird der Broker ebenfalls im Dokument abgebildet. 
+
 #### Chlamydia trachomatis
 Frau Isolde Huber geboren am 15.03.1969, wohnhaft in Basel, konsultiert am 12.07.2023 ihre Ärztin Melinda Weiss. Frau Huber klagt über Brennen beim Wasserlösen und vaginalem Ausfluss. Da der Verdacht auf eine Harnwegsinfektion besteht, wird ein Abstrich abgenommen und zur Analyse an das Labor Dr. Risch geschickt. Mittels Multiplex PCR wird am 15.07.2023 Chlamydia trachomatis nachgewiesen, der Nachweis von Neisseria gonorrhoeae ist negativ (LOINC 44807-6). Das Labor meldet den positiven Befund für Chlamydia trachomatis dem Meldesystem des Bundesamtes für Gesundheit.
 

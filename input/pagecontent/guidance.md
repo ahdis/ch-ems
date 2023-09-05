@@ -25,6 +25,7 @@ The laboratory report is currently either of the type [organism detection](#orga
 #### Organism Detection
 * `Composition.section.code` = LOINC 18725-2 Microbiology studies (set)
 * `Observation.value` = Positive/Negative ([CH ELM Results Coded Values Laboratory](ValueSet-ch-elm-results-coded-values-laboratory.html))
+* `Observation.interpretation` = Positive/Negative ([CH ELM Observation Interpretation Codes](ValueSet-ch-elm-observation-interpretation-codes.html))
 
 #### Resistance Detection
 * `Composition.section.code` = LOINC 18769-0 Microbial susceptibility tests Set

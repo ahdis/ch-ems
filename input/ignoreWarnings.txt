@@ -6,7 +6,6 @@ Found multiple matching profiles for Patient/1Pat-DM among choices: http://hl7.e
 
 # Caused by the underlying profiles 
 The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
-The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
 Found multiple matching profiles for Patient/1Pat-DM among choices: http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab, http://hl7.org/fhir/StructureDefinition/Patient
 
 # Logical model only integrated as abstract data model

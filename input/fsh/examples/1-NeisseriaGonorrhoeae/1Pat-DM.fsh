@@ -9,12 +9,10 @@ Description: "Example for a CH ELM Patient (only with initials)"
 * name.family = "M"
 * name.given = "D"
 * birthDate = "1960-08-22"
-* telecom[email].system = #email
-* telecom[email].value = "d-m@patient.ch"
-* telecom[phone].system = #phone
-* telecom[phone].value = "+41 79 999 55 66"
+// * telecom[phone].system = #phone
+// * telecom[phone].value = "+41 79 999 55 66"
 * address[home].use = #home
-* address[home].line = "Weg der Besserung 3a"
+// * address[home].line = "Weg der Besserung 3a"
 * address[home].postalCode = "3000"
 * address[home].city = "Bern"
 * address[home].state = "BE"
