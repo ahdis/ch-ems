@@ -24,6 +24,7 @@ Release 4 of the [HL7® FHIR®](https://www.hl7.org/fhir/index.html) standard.
 
 #### Simplified Publish Request Message
 This message uses the HTTP POST method on the target Simplified Publish endpoint to convey the metadata and the document as a FHIR DocumentReference.
+See also the [CapabilityStatement](CapabilityStatement-ch-elm-documentrecipient.html) of the server.
 
 ##### Trigger Events
 

@@ -1,0 +1,38 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "ch-elm-documentrecipient",
+  "url": "http://fhir.ch/ig/ch-elm/CapabilityStatement/ch-elm-documentrecipient",
+  "name": "CH_ELM_CapabilityStatement_DocumentRecipient",
+  "title": "Document Recipient implementing Simplified Publish Option",
+  "status": "active",
+  "experimental": false,
+  "description": "Document Recipient implementing Simplified Publish",
+  "kind": "requirements",
+  "fhirVersion": "4.0.1",
+  "format": [
+    "application/fhir+xml",
+    "application/fhir+json"
+  ],
+  "rest": [
+    {
+      "mode": "server",
+      "security": {
+			  "description": "TLS with client ceritifcare required"
+      },
+      "resource": [
+        {
+          "type": "DocumentReference",
+          "profile": "http://fhir.ch/ig/ch-elm/StructureDefinition/SimplifiedPublishDocumentReference",
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "read"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
