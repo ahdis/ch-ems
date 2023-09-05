@@ -69,3 +69,6 @@ menu:
 parameters:
   allow-extensible-warnings: true
   display-warnings: true
+  path-resource:
+    - input/resources
+    - fsh-generated/resources
