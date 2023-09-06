@@ -11,9 +11,6 @@ Found multiple matching profiles for Patient/1Pat-DM among choices: http://hl7.e
 # Logical model only integrated as abstract data model
 Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 
-# Data type profiles
-The Implementation Guide contains no examples for this data type profile
-
 # Others
 Reference to draft item http://hl7.org/fhir/task-status|4.0.1
 No code provided, and a code should be provided from the value set 'CH ELM Lab Specimen Types' (http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-lab-specimen-types|0.1.0)

@@ -1,9 +1,9 @@
 ### Szenario 1 - Meldeweg für den Standardfall
-Dieser Meldeweg gilt für Erreger wie [Neisseria Gonorrhoeae](#neisseria-gonorrhoeae), [Chlamydia trachomatis](#chlamydia-trachomatis) und weitere.
+Dieser Meldeweg gilt für Erreger wie [Neisseria gonorrhoeae](#neisseria-gonorrhoeae), [Chlamydia trachomatis](#chlamydia-trachomatis) und weitere.
 
 {% include img.html img="scenario1.png" caption="Abb. 3: Meldeweg für den Standardfall" width="60%" %}
 
-#### Neisseria Gonorrhoeae
+#### Neisseria gonorrhoeae
 [Herr Daniel Meier](Patient-1Pat-DM.html) geboren am 22.08.1960, wohnhaft in 3000 Bern, konsultiert am 11.07.2023 die Ärztin [Monika Giacometti](PractitionerRole-1PR-KsAbc.html) am Kantonsspital. Herr Meier klagt über Juckreiz der Harnröhre und Schmerzen beim Wasserlassen. Da der Verdacht auf eine Harnwegsinfektion besteht, wird ein [Abstrich](Specimen-1Spec-Specimen.html) abgenommen und dieser zusammen mit einem [Laborauftrag](ServiceRequest-1SR-Order.html) zur Analyse an das [Labor](Organization-1Org-Labor.html) geschickt. Mittels Isolierung in Kultur wird am 14.07.2023 [Neisseria gonorrhoeae nachgewiesen (LOINC 697-3)](Observation-1Obs-NeisseriaGonorrhoeae.html). Das Labor meldet den **[meldepflichtigen Laborbefund](Bundle-1Doc-NeisseriaGonorrhoeae.html)** dem Meldesystem des Bundesamtes für Gesundheit.
 
 ##### Broker Szenario
