@@ -3,6 +3,10 @@
 # Based on the design choice from HL7 Europe Laboratory Report (https://build.fhir.org/ig/hl7-eu/laboratory/branches/master/background.html#design-choices)
 Entry 'http://test.fhir.ch/r4/DiagnosticReport/1DR-NeisseriaGonorrhoeae' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Found multiple matching profiles for Patient/1Pat-DM among choices: http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-animal-eu-lab, http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab, http://hl7.org/fhir/StructureDefinition/Patient
+Entry 'http://test.fhir.ch/r4/DiagnosticReport/1bDR-NeisseriaGonorrhoeae' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:2f69f609-e3bf-4863-bc42-3cbf0568cab1' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Found multiple matching profiles for urn:uuid:50d5deca-64e9-4a30-8cec-40ac1f015655 among choices: http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab, http://hl7.org/fhir/StructureDefinition/Patient
+Found multiple matching profiles for urn:uuid:50d5deca-64e9-4a30-8cec-40ac1f015655 among choices: http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-animal-eu-lab, http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab, http://hl7.org/fhir/StructureDefinition/Patient
 
 # Caused by the underlying profiles 
 The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)

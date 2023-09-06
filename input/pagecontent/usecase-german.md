@@ -10,7 +10,7 @@ Dieser Meldeweg gilt für Erreger wie [Neisseria gonorrhoeae](#neisseria-gonorrh
 Wenn das [Labor](Organization-1bOrg-Labor.html) nicht selbst, sondern ein sogenannter [Broker](Organization-1bOrg-Broker.html), den **[meldepflichtigen Laborbefund](Bundle-1bDoc-NeisseriaGonorrhoeae.html)** dem Meldesystem des Bundesamtes für Gesunheit übermittelt, dann wird der Broker ebenfalls im Dokument abgebildet. 
 
 #### Chlamydia trachomatis
-Frau Isolde Huber geboren am 15.03.1969, wohnhaft in Basel, konsultiert am 12.07.2023 ihre Ärztin Melinda Weiss. Frau Huber klagt über Brennen beim Wasserlösen und vaginalem Ausfluss. Da der Verdacht auf eine Harnwegsinfektion besteht, wird ein Abstrich abgenommen und zur Analyse an das Labor Dr. Risch geschickt. Mittels Multiplex PCR wird am 15.07.2023 Chlamydia trachomatis nachgewiesen, der Nachweis von Neisseria gonorrhoeae ist negativ (LOINC 44807-6). Das Labor meldet den positiven Befund für Chlamydia trachomatis dem Meldesystem des Bundesamtes für Gesundheit.
+Frau Isolde Huber geboren am 15.03.1969, wohnhaft in Basel, konsultiert am 12.07.2023 ihre Ärztin Melinda Weiss. Frau Huber klagt über Brennen beim Wasserlösen und vaginalem Ausfluss. Da der Verdacht auf eine Harnwegsinfektion besteht, wird ein Abstrich abgenommen und zur Analyse an das Labor Dr. Risch geschickt. Mittels Multiplex PCR wird am 15.07.2023 Chlamydia trachomatis nachgewiesen, der Nachweis von Neisseria gonorrhoeae ist negativ (LOINC 44807-6). Das Labor meldet den positiven **[meldepflichtigen Laborbefund](Bundle-2Doc-NeisseriaGonorrhoeae.html)** für Chlamydia trachomatis dem Meldesystem des Bundesamtes für Gesundheit.
 
 
 ### Szenario 2 - Meldeweg für Bestätigungstests
