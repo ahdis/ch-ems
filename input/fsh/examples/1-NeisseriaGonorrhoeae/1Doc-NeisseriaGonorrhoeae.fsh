@@ -10,12 +10,6 @@ Description: "Example for a CH ELM Document: Laboratory Report (where the 'Lab' 
 * type = #document
 * timestamp = "2023-07-14T16:00:00+02:00"
 
-// alternativ for a further example:
-// * entry[0].fullUrl = "urn:uuid:593045bb-0273-40ba-a5d4-c06469ae6b1b"
-// * entry[=].resource = Composition-1Comp-NeisseriaGonorrhoeae
-// Composition.id = "593045bb-0273-40ba-a5d4-c06469ae6b1b"
-// = Reference(Composition/593045bb-0273-40ba-a5d4-c06469ae6b1b)
-
 * entry[Composition].fullUrl = "http://test.fhir.ch/r4/Composition/1Comp-NeisseriaGonorrhoeae"
 * entry[Composition].resource = 1Comp-NeisseriaGonorrhoeae
 * entry[DiagnosticReport].fullUrl = "http://test.fhir.ch/r4/DiagnosticReport/1DR-NeisseriaGonorrhoeae"
@@ -34,6 +28,7 @@ Description: "Example for a CH ELM Document: Laboratory Report (where the 'Lab' 
 
 * entry[Practitioner][0].fullUrl = "http://test.fhir.ch/r4/Practitioner/1Pract-KsAbc"
 * entry[Practitioner][=].resource = 1Pract-KsAbc
+
 * entry[Organization][0].fullUrl = "http://test.fhir.ch/r4/Organization/1Org-Labor"
 * entry[Organization][=].resource = 1Org-Labor
 * entry[Organization][+].fullUrl = "http://test.fhir.ch/r4/Organization/1Org-KsAbc"

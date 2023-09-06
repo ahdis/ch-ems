@@ -25,7 +25,7 @@ https://www.bag.admin.ch/dam/bag/de/dokumente/mt/msys/leitfaden-zur-meldepflicht
 * address[home].use = #home
 * address[home].postalCode 1..
 * address[home].city 1..
-* address[home].state // TODO: rule for FL ValueSet (based on CH Core)
+* address[home].state 1..
 * address[home].country 1..
 * address[home].country.extension[countrycode] 1..
 
