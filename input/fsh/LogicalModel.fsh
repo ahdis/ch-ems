@@ -5,7 +5,14 @@ Logical: ChElmLaboratoryReport
 Parent: Element
 Id: LaboratoryReport
 Title: "CH ELM Laboratory Report"
-Description: "The logical model represents the CH ELM laboratory report as an abstract data model. This data elements are defined by the ordinance of the Federal Department of Home Affairs (FDHA) and are then mapped to the FHIR document structure."
+Description: """The logical model represents the CH ELM laboratory report as an abstract data model. This data elements are defined by the ordinance of the Federal Department of Home Affairs (FDHA) and are then mapped to the FHIR document structure. 
+
+Cardinalities:
+- The cardinalities in the logical model show the so-called 'best case'. This means that if these data are available, they must be submitted to the FOPH.
+- Since in reality the data is not always available, the CH ELM profiles define which elements are required or optional.
+- See also the concept 'Must Support', which is described on the 'Home' page of this implementation guide"""
+
+
 * . ^short = "Laborbericht basierend auf der SR 818.101.126 Verordnung des EDI über die Meldung von Beobachtungen übertragbarer Krankheiten des Menschen"
 * . ^definition = "Laboratory Report"
 
@@ -27,7 +34,7 @@ Description: "The logical model represents the CH ELM laboratory report as an ab
 * Orderer 1..1 Element "Orderer of the laboratory test -> Art. 4 Abs. 3 (Auftraggebende Ärztin oder auftraggebender Arzt und Betrieb in dem sie oder er tätig ist)"
 * Orderer.OrganizationGLN 1..1 Identifier "Orderer organization Global location number (GLN) of the ordering organization"  
 * Orderer.OrganizationName 1..1 string "Name of the ordering organization" 
-* Orderer.OrganizationDepartment 0..1 string "Department where the laboratory test is ordered" 
+* Orderer.OrganizationDepartment 1..1 string "Department where the laboratory test is ordered" 
 * Orderer.Physician 1..1 Element "Ordering physician"
 * Orderer.Physician.GLN 1..1 Identifier "Global location number (GLN) of the physician"
 * Orderer.Physician.Surname 1..1 string "Surname physician"
@@ -35,8 +42,8 @@ Description: "The logical model represents the CH ELM laboratory report as an ab
 * Orderer.Physician.Phone 1..1 string "Phone number physician"
 * Orderer.Physician.Email 1..1 string "Email address physician"
 * Orderer.OrganizationAddress 1..1 Element "Address of the ordering organization"
-* Orderer.OrganizationAddress.StreetLine 0..1 string "Street name, house number"
-* Orderer.OrganizationAddress.PostBox 0..1 string "P.O. Box number" 
+* Orderer.OrganizationAddress.StreetLine 1..1 string "Street name, house number"
+* Orderer.OrganizationAddress.PostBox 1..1 string "P.O. Box number" 
 * Orderer.OrganizationAddress.ZipCode 1..1 string "Zip code"
 * Orderer.OrganizationAddress.City 1..1 string "City"
 
@@ -46,13 +53,12 @@ Description: "The logical model represents the CH ELM laboratory report as an ab
 * Patient.Givenname 1..1 string "Given name (or initials)"
 * Patient.Gender 1..1 code "Gender" 
 * Patient.DateOfBirth 1..1 date "Date of birth"
-* Patient.Phone 0..1 string "Phone number"
-* Patient.Email 0..1 string "Email address"
+* Patient.Phone 1..1 string "Phone number"
 * Patient.Address 1..1 Element "Residence address"
-* Patient.Address.StreetLine 0..1 string "Street name, house number"
+* Patient.Address.StreetLine 1..1 string "Street name, house number"
 * Patient.Address.ZipCode 1..1 string "Zip code"
 * Patient.Address.City 1..1 string "City"
-* Patient.Address.Canton 0..1 code "Canton"
+* Patient.Address.Canton 1..1 code "Canton"
 * Patient.Address.Country 1..1 code "Country"
 
 * TestResult 1..1 Element "Laboratory result -> Art. 4 Abs. 1 (Die zu meldenden laboranalytischen Befunde) - Anhang 3 (Angaben zum laboranalytischen Befund)"
@@ -60,17 +66,21 @@ Description: "The logical model represents the CH ELM laboratory report as an ab
 * TestResult.ExecutionDateTime 1..1 dateTime "Date (-time) of test"
 * TestResult.Type 1..1 Element "Type of test"
 * TestResult.Type.Code 1..1 code "Coded data"
-* TestResult.Type.CodeSystem 1..1 uri "Identity fo the terminolgy system"
+* TestResult.Type.CodeSystem 1..1 uri "Identity fo the terminolgy system (LOINC)"
 * TestResult.Specimen 1..1 Element "Test sample"
-* TestResult.Specimen.CollectionDateTime 0..1 dateTime "Date (-time) of sample collection"
-* TestResult.Specimen.Type 1..1 code "Sample material"
+* TestResult.Specimen.CollectionDateTime 1..1 dateTime "Date (-time) of sample collection"
+* TestResult.Specimen.Type 1..1 code "Collection material"
 * TestResult.Specimen.Type.Code 0..1 code "Coded data"
-* TestResult.Specimen.Type.CodeSystem 0..1 uri "Identity fo the terminolgy system"
+* TestResult.Specimen.Type.CodeSystem 0..1 uri "Identity fo the terminolgy system (SNOMED CT)"
 * TestResult.Specimen.Type.Text 0..1 string "Remark that material is already declared by LOINC system axis"
 * TestResult.Value 1..1 Element "Acutal test result"
-* TestResult.Value.Code 0..1 code "Coded data"
-* TestResult.Value.CodeSystem 0..1 uri "Identity fo the terminolgy system"
-* TestResult.Value.MeasuredValue 0..1 Quantity "Measured data"
+* TestResult.Value.Code 1..1 code "Coded data"
+* TestResult.Value.CodeSystem 1..1 uri "Identity fo the terminolgy system (SNOMED CT)"
+* TestResult.Interpretation 1..1 Element "Interpretation of the test result"
+* TestResult.Interpretation.Code 1..1 code "Coded data"
+* TestResult.Interpretation.CodeSystem 1..1 uri "Identity fo the terminolgy system (HL7 ObservationInterpretation)"
+
+
 
 
 
@@ -120,7 +130,6 @@ Target: "hl7.org/fhir/r4"
 * Patient.Gender -> "Bundle.entry[0].resource.subject.resolve().gender"
 * Patient.DateOfBirth -> "Bundle.entry[0].resource.subject.resolve().birthDate"
 * Patient.Phone -> "Bundle.entry[0].resource.subject.resolve().telecom.where(system='phone').value"
-* Patient.Email -> "Bundle.entry[0].resource.subject.resolve().telecom.where(system='email').value"
 * Patient.Address -> "Bundle.entry[0].resource.subject.resolve().address.where(use='home')"
 * Patient.Address.StreetLine -> "Bundle.entry[0].resource.subject.resolve().address.where(use='home').line"
 * Patient.Address.ZipCode -> "Bundle.entry[0].resource.subject.resolve().address.where(use='home').postalCode"
@@ -143,5 +152,7 @@ Target: "hl7.org/fhir/r4"
 * TestResult.Value -> "Bundle.entry[0].resource.section.entry.resolve().value"
 * TestResult.Value.Code -> "Bundle.entry[0].resource.section.entry.resolve().value.coding.code"
 * TestResult.Value.CodeSystem -> "Bundle.entry[0].resource.section.entry.resolve().value.coding.system"
-* TestResult.Value.MeasuredValue -> "Bundle.entry[0].resource.section.entry.resolve().value" // TODO value
+* TestResult.Interpretation -> "Bundle.entry[0].resource.section.entry.resolve().interpretation"
+* TestResult.Interpretation.Code -> "Bundle.entry[0].resource.section.entry.resolve().interpretation.coding.code"
+* TestResult.Interpretation.CodeSystem -> "Bundle.entry[0].resource.section.entry.resolve().interpretation.coding.system"
 
