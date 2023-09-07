@@ -1,3 +1,5 @@
+Die nachfolgenden Anwendungsfälle dienen der Illustration der Szenarien, wie sie bei meldepflichtigen Laborbefunden, die ans Bundesamt für Gesundheit übermittelt werden, auftreten. Die Fälle sollen exemplarisch die Repräsentation der Labormeldungen darstellen. Sie wurden inhaltlich und klinisch noch nicht validiert.
+
 ### Szenario 1 - Meldeweg für den Standardfall
 Dieser Meldeweg gilt für Erreger wie [Neisseria gonorrhoeae](#neisseria-gonorrhoeae), [Chlamydia trachomatis](#chlamydia-trachomatis) und weitere.
 
