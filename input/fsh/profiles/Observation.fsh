@@ -10,11 +10,13 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * subject only Reference(ChElmPatient)
 * subject 1..
 * effective[x] 1..
+* effectiveDateTime 1..
 * effectiveDateTime obeys ch-elm-dateTime
 * value[x] 1..
+* valueCodeableConcept 1..
 * valueCodeableConcept only ChElmCodeableConcept
 * valueCodeableConcept from ChElmResultsCodedValuesLaboratory (required)
-* performer 1..
+* performer 1..1
 * performer only Reference(ChElmOrganizationLab)
 * specimen only Reference(ChElmSpecimen)
 * specimen 1..

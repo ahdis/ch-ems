@@ -15,6 +15,7 @@ Description: "This CH ELM base profile constrains the Composition resource for t
 * status = #final
 * subject 1..
 * subject only Reference(ChElmPatient)
+* author ..1
 * author only Reference(ChElmOrganizationAuthor)
 * section 1..
 * section ^slicing.discriminator[0].type = #exists
@@ -32,7 +33,7 @@ Description: "This CH ELM base profile constrains the Composition resource for t
 * section contains
     lab-no-subsections 1..1
 * section[lab-no-subsections].code from ChElmLabStudyTypes (required)
-* section[lab-no-subsections].entry 1..
+* section[lab-no-subsections].entry 1..1
 * section[lab-no-subsections].entry only Reference(ChElmObservationResultsLaboratory)
 * section[lab-no-subsections].section ..0
 
