@@ -4,8 +4,17 @@ Id: ch-elm-patient
 Title: "CH ELM Patient"
 Description: "This CH ELM base profile constrains the Patient resource for the purpose of laboratory orders and test reports."
 * . ^short = "CH ELM Patient"
-* gender 
+
+* identifier MS
+
+* identifier contains OASI-LI 0..* MS
 * identifier[AHVN13] MS
+* identifier[AHVN13] ^short = "OASI Number Switzerland"
+
+* identifier[OASI-LI] only OasiLiIdentifier
+* identifier[OASI-LI] ^short = "OASI Number Principality of Liechtenstein"
+* identifier[OASI-LI] ^patternIdentifier.system = "http://ahv.li/identifier/oasi"
+
 * name 1..
 * name ^short = "Whether the personal data is transmitted by using initials, full name or a special combination can be seen from the table on p.66 of this document: 
 https://www.bag.admin.ch/dam/bag/de/dokumente/mt/msys/leitfaden-zur-meldepflicht-2023.pdf.download.pdf/meldepflicht-leitfaden-2023-de.pdf"
@@ -14,8 +23,12 @@ https://www.bag.admin.ch/dam/bag/de/dokumente/mt/msys/leitfaden-zur-meldepflicht
 * name.family ^short = "In the case of HIV/AIDS masked and provide a specific value (see IG guidance)"
 * name.given 1..
 * name.given ^short = "In the case of HIV/AIDS masked and provide a specific value (see IG guidance)"
+
+* gender 
+
 * birthDate 1..
 * birthDate obeys ch-elm-dateTime
+
 * address ^slicing.discriminator[0].type = #value
 * address ^slicing.discriminator[=].path = "use"
 * address ^slicing.rules = #open

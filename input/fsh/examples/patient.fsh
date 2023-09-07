@@ -60,3 +60,21 @@ Description: "Example for a CH ELM Patient - special case HIV/AIDS"
 * address[home].country = "CH"
 * address[home].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
 * address[home].country.extension.valueCoding = urn:iso:std:iso:3166#CH
+
+
+
+Instance: Pat-LillyLiechtenstein
+InstanceOf: ChElmPatient
+Usage: #example
+Title: "Pat - Lilly Liechtenstein"
+Description: "Example for a CH ELM Patient - OASI number of the Principality of Liechtenstein"
+* identifier[OASI-LI].system = "http://ahv.li/identifier/oasi"
+* identifier[OASI-LI].value = "123456"
+* name.family = "Liechtenstein"
+* name.given[0] = "Lilly"
+* gender = #female
+* birthDate = "2000-09-14"
+* address[home].state = "FL"
+* address[home].country = "LI"
+* address[home].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
+* address[home].country.extension.valueCoding = urn:iso:std:iso:3166#LI
