@@ -24,7 +24,7 @@ Description: "This CH ELM value set includes the codes for the laboratory test r
 * $loinc#694-0	     "Neisseria gonorrhoeae [Presence] in Semen by Organism specific culture"
 * $loinc#696-5	     "Neisseria gonorrhoeae [Presence] in Throat by Organism specific culture"
 * $loinc#697-3	     "Neisseria gonorrhoeae [Presence] in Urethra by Organism specific culture"
-* $loinc#698-1	     "Neisseria gonorrhoeae [Presence] in Specimen by Organism specific culture "
+* $loinc#698-1	     "Neisseria gonorrhoeae [Presence] in Specimen by Organism specific culture"
 * $loinc#80366-8	 "Neisseria gonorrhoeae rRNA [Presence] in Anorectal by NAA with probe detection"
 * $loinc#80368-4	 "Neisseria gonorrhoeae [Presence] in Anorectal by Organism specific culture"
 * $loinc#88224-1 	 "Neisseria gonorrhoeae DNA [Presence] in Anorectal by NAA with probe detection"
