@@ -6,14 +6,13 @@ Dieser Meldeweg gilt für Erreger wie [Neisseria gonorrhoeae](#neisseria-gonorrh
 {% include img.html img="scenario1.png" caption="Abb. 3: Meldeweg für den Standardfall" width="60%" %}
 
 #### Neisseria gonorrhoeae
-[Herr Daniel Meier](Patient-1Pat-DM.html) geboren am 22.08.1960, wohnhaft in 3000 Bern, konsultiert am 11.07.2023 die Ärztin [Monika Giacometti](PractitionerRole-1PR-KsAbc.html) am Kantonsspital. Herr Meier klagt über Juckreiz der Harnröhre und Schmerzen beim Wasserlassen. Da der Verdacht auf eine Harnwegsinfektion besteht, wird ein [Abstrich](Specimen-1Spec-Specimen.html) abgenommen und dieser zusammen mit einem [Laborauftrag](ServiceRequest-1SR-Order.html) zur Analyse an das [Labor](Organization-1Org-Labor.html) geschickt. Mittels Isolierung in Kultur wird am 14.07.2023 [Neisseria gonorrhoeae nachgewiesen (LOINC 697-3)](Observation-1Obs-NeisseriaGonorrhoeae.html). Das Labor meldet den **[meldepflichtigen Laborbefund](Bundle-1Doc-NeisseriaGonorrhoeae.html)** dem Meldesystem des Bundesamtes für Gesundheit.
+[Herr Daniel Meier](Patient-1Pat-DM.html) geboren am 22.08.1960, wohnhaft in 3000 Bern, konsultiert am 11.07.2023 die [Ärztin Dr. Monika Giacometti am Kantonsspital](PractitionerRole-1PR-KsAbc.html). Herr Meier klagt über Juckreiz der Harnröhre und Schmerzen beim Wasserlassen. Da der Verdacht auf eine Harnwegsinfektion besteht, wird ein [Abstrich](Specimen-1Spec-Specimen.html) abgenommen und zur Analyse an das [Labor](Organization-1Org-Labor.html) geschickt. Mittels Isolierung in Kultur wird am 14.07.2023 [Neisseria gonorrhoeae nachgewiesen (LOINC 697-3)](Observation-1Obs-NeisseriaGonorrhoeae.html). Das Labor meldet den **[meldepflichtigen Laborbefund](Bundle-1Doc-NeisseriaGonorrhoeae.html)** dem Meldesystem des Bundesamtes für Gesundheit.
 
 ##### Broker Szenario
 [Private Dienstleister (sog. Broker)](Organization-1bOrg-Broker.html), welche den **[meldepflichtigen Laborbefund](Bundle-1bDoc-NeisseriaGonorrhoeae.html)** im Auftrag des [Labors](Organization-1bOrg-Labor.html) an das Meldesystem des Bundesamtes für Gesundheit übermitteln, werden im FHIR-Dokument als Autor des Dokuments abgebildet.
 
 #### Chlamydia trachomatis
 Frau Hanna Felber, geboren am 17.10.1985, wohnhaft in 4552 Derendingen, konsultiert am 29.7.2023 ihren Hausarzt Dr. Peter Hauser in seiner Praxis in Solothurn. Frau Felber klagt über Brennen beim Wasserlösen und vaginalem Ausfluss. Da der Verdacht auf eine Harnwegsinfektion besteht, wird mit einem sterilen Verfahren eine urethrale Probe entnommen und an das Labor geschickt. Mittels Kultur wird am 4.8.2023 Chlamydia trachomatis (LOINC 6349-5) nachgewiesen. Das Labor meldet den positiven **[meldepflichtigen Laborbefund](Bundle-2Doc-ChlamydiaTrachomatis.html)** unter Angabe des verwendeten Probematerials (SNOMED CT 119393003) ans Bundesamt für Gesundheit.
-
 
 ### Szenario 2 - Meldeweg für Bestätigungstests
 Dieser Meldeweg gilt für Erreger wie [Salmonella spp.](#salmonella-spp), [Neisseria meningitidis](#neisseria-meningitidis) und weitere.
