@@ -5,7 +5,7 @@ Logical: ChElmLaboratoryReport
 Parent: Element
 Id: LaboratoryReport
 Title: "CH ELM Laboratory Report"
-Description: """The logical model represents the CH ELM laboratory report as an abstract data model. This data elements are defined by the ordinance of the Federal Department of Home Affairs (FDHA) and are then mapped to the FHIR document structure. 
+Description: """The logical model represents the CH ELM laboratory report as an abstract data model. This data elements are defined by the ordinance of the Federal Office of Public Health (FOPH) and are then mapped to the FHIR document structure. 
 
 Cardinalities:
 - The cardinalities in the logical model show the so-called 'best case'. This means that if these data are available, they must be submitted to the FOPH.
@@ -13,7 +13,7 @@ Cardinalities:
 - See also the concept 'Must Support', which is described on the 'Home' page of this implementation guide"""
 
 
-* . ^short = "Laborbericht basierend auf der SR 818.101.126 Verordnung des EDI über die Meldung von Beobachtungen übertragbarer Krankheiten des Menschen"
+* . ^short = "Laborbericht basierend auf der SR 818.101.126 Verordnung des EDI über die Meldung von Beobachtungen übertragbarer Krankheiten des Menschen (https://www.fedlex.admin.ch/eli/cc/2015/892/de)"
 * . ^definition = "Laboratory Report"
 
 * Header 1..1 Element "Document information"
