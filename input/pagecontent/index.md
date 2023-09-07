@@ -12,6 +12,26 @@ The specification herewith documented is work in progress. No liability can be i
 
 **Download**: You can download this implementation guide in [NPM format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](package.tgz).
 
+### Implementation Support for Laboratories
+
+This guide supports you as a laboratory in the following way:
+- Use cases ([DE](usecase-german.html)) describe the different scenarios with respective example reports for specific organisms, e.g. for Neisseria Gonorrhoeae [xml](Bundle-1Doc-NeisseriaGonorrhoeae.xml.html) or [json](Bundle-1Doc-NeisseriaGonorrhoeae.json.html), you choose if you want to provide the FHIR report in xml or json format.
+- What needs to be defined in the Laboratory report is defined in [FHIR document](document.html), profiles define the constraints on FHIR Resources which need to be included in the report, see the overview [here](profiles.html).
+- The data elements defined by the ordinance of the Federal Department of Home Affairs (FDHA) for the report are defined in [logical model](StructureDefinition-LaboratoryReport.html) and are then [mapped](StructureDefinition-LaboratoryReport-mappings.html#mappings-for-ch-elm-laboratory-report-to-fhir-hl7-org-fhir-r4) to the FHIR document structure.  
+- ValueSets for the [Terminology](terminology.html) are provided as FHIR resources which you can directly import from the [npm package](package.tgz)   
+- The [report](document.html) is sent to the FOPH by a [FHIR restful web api endpoint](api.html)
+- Further documentation for specific topics can be found on the [guidance](guidance.html)
+
+[FHIR R4](https://hl7.org/fhir/R4/index.html) has a huge implementation community and offers various libraries to support the implementation of FHIR based solutions, for creating the FHIR document or providing a client for doing the FHIR API calls. For java we recommend [hapi-fhir](https://hapifhir.io/), for .NET [firely-net-sdk](https://github.com/FirelyTeam/firely-net-sdk), but there also multiple other [options](https://confluence.hl7.org/display/FHIR/Open+Source+Implementations). If you have questions about general FHIR questions do not hesitate to ask in [chat.fhir.org](https://chat.fhir.org/).
+
+To check if your report is valid to the requirements of this ImplementationGuide you can check it with the [FHIR Validator](https://confluence.hl7.org/display/FHIR/Using+the+FHIR+Validator) providing this [package](package.tgz) as a parameter and specifying the profile http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document.
+
+Since the FHIR API is standardized you can test your client also against a public FHIR test server like [hapi](https://hapi.fhir.org/baseR4/swagger-ui/). 
+
+If you have any additional questions do not hesitate to contact the Swiss Federal Office of Public Health (FOPH), Communicable Diseases Division. 
+
+If you have general feedback this implementation guide you find at the bottom a "Propose a change" Link where you can raise an issue.
+
 ### Must Support
 For the CH ELM exchange format, the [mustSupport](https://www.hl7.org/fhir/profiling.html#mustsupport) flag set to `true` has the following meaning:   
 If the sending application has data for the element, it is required to populate the element with a non-empty value. If the value is not known, the element may be omitted.
