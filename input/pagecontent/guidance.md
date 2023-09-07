@@ -27,16 +27,27 @@ The laboratory report is currently either of the type [organism detection](#orga
 * `Observation.value` = Positive/Negative ([CH ELM Results Coded Values Laboratory](ValueSet-ch-elm-results-coded-values-laboratory.html))
 * `Observation.interpretation` = Positive/Negative ([CH ELM Observation Interpretation Codes](ValueSet-ch-elm-observation-interpretation-codes.html))
 
+[Example](Bundle-1Doc-NeisseriaGonorrhoeae.html): Laboratory report for Neisseria gonorrhoeae
+
 #### Resistance Detection
 * `Composition.section.code` = LOINC 18769-0 Microbial susceptibility tests Set
 * `Observation.interpretation` = Resistant/Susceptible ([CH ELM Observation Interpretation Codes](ValueSet-ch-elm-observation-interpretation-codes.html))
 
 ### Laboratory Result
 The laboratory result reflects a 4-axis model. The values for the axes listed below are represented by a so-called leading LOINC code and are partially complemented by SNOMED CT codes.
-* Organism (e.g. Neisseria gonorrhoeae)
-* Detection (e.g. nucleic acid, antigen)
-* Detection method (e.g. PCR, culture/isolation)
-* Collection material (e.g. urine, blood)
+* **Organism** (e.g. Neisseria gonorrhoeae)
+   * [Example](Bundle-1Doc-NeisseriaGonorrhoeae.html): Only a leading LOINC code (Observation.code = LOINC 697-3)
+* **Detection** (e.g. nucleic acid, antigen)
+* **Detection method** (e.g. PCR, culture/isolation)
+* **Collection material** (e.g. urine, blood)
+   * [Example](Bundle-2Doc-ChlamydiaTrachomatis.html): The leading LOINC code (Observation.code = LOINC 6349-5), complemented by a SNOMED CT code for the collection material (Specimen.type = SNOMED CT 119393003)
+
+#### Collection Material
+In the cases described below, the collection material must be explicitly specified.
+
+* Chlamydia trachomatis
+   * if Observation.code = LOINC 21613-5 / 31777-6 / 43304-5 / 6349-5
+   * use a Specimen.type form the [ValueSet CH ELM Lab Specimen Types: Chlamydia Trachomatis](ValueSet-ch-elm-lab-specimen-types-chlamydia-trachomatis.html)
 
 ### Multiplex Cases
 The exchange format defines the [FHIR document](document.html) for reporting to the FOPH so that **one document per organism per patient** is submitted. 
