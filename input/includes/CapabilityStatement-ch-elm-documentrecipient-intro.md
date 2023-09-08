@@ -1,9 +1,9 @@
-This is the **Requirements** CapabilityStatement for a Document Recipient with Simplified Publish. 
+This is the **Requirements** CapabilityStatement for a Document Recipient with  Publish. 
 
 <div>
-{%include SimplifiedPublishDocumentReference-seq.svg%}
+{%include PublishDocumentReference-seq.svg%}
 </div>
 
 <br clear="all">
 
-**Figure: Simplified Publish Interactions**
+**Figure:  Publish Interactions**

@@ -1,11 +1,11 @@
-Profile:        SimplifiedPublishDocumentReference
+Profile:        PublishDocumentReference
 Parent:         DocumentReference
-Id:             SimplifiedPublishDocumentReference
-Title:          "DocumentReference for Simplified Publish"
+Id:             PublishDocumentReference
+Title:          "DocumentReference for  Publish"
 Description:    """
-A profile on the DocumentReference resource for Simplified Publish constraints. 
+A profile on the DocumentReference resource for  Publish constraints. 
 
-Simplified Publish
+Publish
 - must be status current
 - must have an masterIdentifer
 - uses attachment.url to carry the document as a contained resource
@@ -65,14 +65,14 @@ Description: "Extension to define the status of the processing of the document"
 * extension[outcome].valueReference ^type.aggregation[0] = #contained
 * url only uri
 
-Profile:        SimplifiedPublishDocumentReferenceResponse
+Profile:        PublishDocumentReferenceResponse
 Parent:         DocumentReference
-Id:             SimplifiedPublishDocumentReferenceResponse
-Title:          "DocumentReference for Simplified Publish Response"
+Id:             PublishDocumentReferenceResponse
+Title:          "DocumentReference for  Publish Response"
 Description:    """
-A profile on the DocumentReference resource for Simplified Publish Response constraints. 
+A profile on the DocumentReference resource for  Publish Response constraints. 
 
-Simplified Publish Response
+Publish Response
 - must be status current
 - must have an identifer
 """

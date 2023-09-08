@@ -3,10 +3,10 @@
   "id": "ch-elm-documentrecipient",
   "url": "http://fhir.ch/ig/ch-elm/CapabilityStatement/ch-elm-documentrecipient",
   "name": "CH_ELM_CapabilityStatement_DocumentRecipient",
-  "title": "Document Recipient implementing Simplified Publish Option",
+  "title": "Document Recipient implementing  Publish Option",
   "status": "active",
   "experimental": false,
-  "description": "Document Recipient implementing Simplified Publish",
+  "description": "Document Recipient implementing  Publish",
   "kind": "requirements",
   "fhirVersion": "4.0.1",
   "format": [
@@ -22,7 +22,7 @@
       "resource": [
         {
           "type": "DocumentReference",
-          "profile": "http://fhir.ch/ig/ch-elm/StructureDefinition/SimplifiedPublishDocumentReference",
+          "profile": "http://fhir.ch/ig/ch-elm/StructureDefinition/PublishDocumentReference",
           "interaction": [
             {
               "code": "create"

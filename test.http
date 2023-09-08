@@ -1,0 +1,46 @@
+###
+POST http://hapi.fhir.org/baseR4/DocumentReference HTTP/1.1
+Content-Type: application/fhir+json
+Accept: application/fhir+json
+
+{
+  "resourceType" : "DocumentReference",
+  "meta" : {
+    "profile" : [
+      "http://fhir.ch/ig/ch-elm/StructureDefinition/PublishDocumentReference"
+    ]
+  },
+  "contained" : [
+    {
+      "resourceType" : "Bundle",
+      "id" : "1Doc-NeisseriaGonorrhoeae",
+      "meta" : {
+        "profile" : [
+          "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document",
+          "http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab"
+        ]
+      },
+      "identifier" : {
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:uuid:1901332d-6012-443f-9690-9291adb2e19d"
+      },
+      "type" : "document"       
+      // snip the rest of the bundle
+    }
+  ],
+  "identifier" : [
+    {
+      "system" : "urn:ietf:rfc:3986",
+      "value" : "urn:uuid:1901332d-6012-443f-9690-9291adb2e19d"
+    }
+  ],
+  "status" : "current",
+  "content" : [
+    {
+      "attachment" : {
+        "language" : "de-CH",
+        "url" : "#1Doc-NeisseriaGonorrhoeae"
+      }
+    }
+  ]
+}
