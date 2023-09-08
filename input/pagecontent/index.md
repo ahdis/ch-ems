@@ -10,7 +10,7 @@ The specification herewith documented is work in progress. No liability can be i
 
 </div>
 
-**Download**: You can download this implementation guide in [NPM format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](package.tgz).
+**Download**: You can download this implementation guide in [npm format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](package.tgz).
 
 ### Implementation Support for Laboratories
 

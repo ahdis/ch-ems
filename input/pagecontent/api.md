@@ -1,9 +1,9 @@
-CH ELM defines a RESTful Web API based on FHIR to enable a laboratory to send its reports. 
+CH ELM defines a RESTful web API based on FHIR to enable a laboratory to send its reports. 
 
 ### Scope
-The  Publish transaction passes a Publish Request from the Laboratory to the FOPH, providing the document directly as a FHIR Bundle.
+The Publish transaction passes a Publish Request from the laboratory to the FOPH, providing the document directly as a FHIR Bundle.
 
-After providing the document the Laboratory shall check through the API that the document has been successfully processed. 
+After providing the document the laboratory shall check through the API that the document has been successfully processed. 
 
 ### Actor Roles
 **Actor:** Laboratory   
@@ -28,11 +28,11 @@ See also the [CapabilityStatement](CapabilityStatement-ch-elm-documentrecipient.
 
 ##### Trigger Events
 
-This method is invoked when the Laboratory needs to submit one document to the FOPH. 
+This method is invoked when the laboratory needs to submit one document to the FOPH. 
 
 ##### Message Semantics
 
-The Laboratory shall initiate a FHIR “create” action by sending an HTTP POST request method composed of a FHIR [Publish DocumentReference](StructureDefinition-PublishDocumentReference.html), with the document referenced in the `DocumentReference.content.attachment.url` element and provided as contained bundle. 
+The laboratory shall initiate a FHIR “create” action by sending an HTTP POST request method composed of a FHIR [Publish DocumentReference](StructureDefinition-PublishDocumentReference.html), with the document referenced in the `DocumentReference.content.attachment.url` element and provided as contained bundle. 
 
 The media type of the HTTP body shall be either `application/fhir+json` or `application/fhir+xml`.
 
@@ -121,13 +121,13 @@ This message shall be sent when a success or error condition needs to be communi
 
 ##### Message Semantics
 
-To enable the Laboratory to know the outcome of processing the transaction, and the identities assigned to the resources by the FOPH, the FOPH shall return the DocumentReference as created conforming to [Publish DocumentReference Response](StructureDefinition-PublishDocumentReferenceResponse.html). 
+To enable the laboratory to know the outcome of processing the transaction, and the identities assigned to the resources by the FOPH, the FOPH shall return the DocumentReference as created conforming to [Publish DocumentReference Response](StructureDefinition-PublishDocumentReferenceResponse.html). 
 
 ##### Expected Actions
 
 The FOPH processes the results according to application-defined rules. 
 	
-*Important*: The Laboratory SHALL afterwards check the status of the processing via accessing the DocumentReference directly via id (DocuemntReference/id) or querying via the provided identifier by the laboratory (DocumentReference?identifier=urn:uid:...) until the status is completed or failed.
+*Important*: The laboratory SHALL afterwards check the status of the processing via accessing the DocumentReference directly via id (DocuemntReference/id) or querying via the provided identifier by the laboratory (DocumentReference?identifier=urn:uid:...) until the status is completed or failed.
 
 ### Security Considerations
 
