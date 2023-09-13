@@ -43,11 +43,11 @@ The laboratory result is represented by a so called leading LOINC code and labor
 * **Detection method**: organism specific culture
 * **Collection material**: urethra
 
-If the leading LOINC code does not cover all axes, the missing axis must be complemented by a SNOMED code (see below “Collection Material“)
+If the leading LOINC code does not cover all axes, the missing axis must be complemented by a SNOMED CT code (see below “Collection Material“).
 
 [Example](Bundle-2Doc-ChlamydiaTrachomatis.html): The leading LOINC code (Observation.code = LOINC 6349-5), complemented by a SNOMED CT code for the collection material (Specimen.type = SNOMED CT 119393003)
 
-**Important note**: the [valueset](ValueSet-ch-elm-results-laboratory-observation.html) is a selection of LOINC codes related to notifiable diseases and their legal basis. The [valueset](ValueSet-ch-elm-results-laboratory-observation.html) can be adapted according to laboratory-specific needs - please contact the FOPH in this regard.
+**Important note**: The [ValueSet](ValueSet-ch-elm-results-laboratory-observation.html) is a selection of LOINC codes related to notifiable diseases and their legal basis. The [ValueSet](ValueSet-ch-elm-results-laboratory-observation.html) can be adapted according to laboratory-specific needs - please contact the FOPH in this regard.
 
 #### Collection Material
 In the cases described below, the collection material must be explicitly specified.
@@ -56,7 +56,7 @@ In the cases described below, the collection material must be explicitly specifi
    * if Observation.code = LOINC 21613-5 / 31777-6 / 43304-5 / 6349-5
    * use a Specimen.type form the [ValueSet CH ELM Lab Specimen Types: Chlamydia Trachomatis](ValueSet-ch-elm-lab-specimen-types-chlamydia-trachomatis.html)
 
-In all other cases, the Specimen.type has to be defined as fixed text: “Material declared by LOINC system axis”
+In all other cases, the Specimen.type has to be defined as fixed text: “Material declared by LOINC system axis”.
 
 ### Multiplex Cases
 The exchange format defines the [FHIR document](document.html) for reporting to the FOPH so that **one document per organism per patient** is submitted. 
