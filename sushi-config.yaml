@@ -72,3 +72,4 @@ parameters:
   path-resource:
     - input/resources
     - fsh-generated/resources
+  no-narrative: Bundle/*
