@@ -2,7 +2,7 @@
 CH ELM is a project of the Swiss Federal Office of Public Health (FOPH), Communicable Diseases Division, to enable laboratories to send their observations of notifiable communicable infectious diseases to the FOPH electronically.
 A report is created as a specialized Clinical Document based on the HL7® FHIR® standard. This [FHIR document](document.html) is sent to the FOPH by a [FHIR RESTful web API endpoint](api.html). CH ELM derives from the [Swiss implementation guides](https://fhir.ch/) and the [European laboratory project](https://build.fhir.org/ig/hl7-eu/laboratory/branches/master/index.html) (see [graphical overview](#dependency-overview)).
 
-The expected content of the FHIR document, based on the ordinance of the Federal Office of Public Health ([DE](https://www.fedlex.admin.ch/eli/cc/2015/892/de), [FR](https://www.fedlex.admin.ch/eli/cc/2015/892/fr), [IT](https://www.fedlex.admin.ch/eli/cc/2015/892/it)), is defined in the [logical model](StructureDefinition-LaboratoryReport.html). A [mapping](StructureDefinition-LaboratoryReport-mappings.html#mappings-for-ch-elm-laboratory-report-to-fhir-hl7-org-fhir-r4) shows how to access the data from the FHIR doucment. In addition, further documentation for specific topics can be found on the [guidance](guidance.html) page and the use cases ([DE](usecase-german.html)) describe the different scenarios with respective examples for specific organisms.
+The expected content of the FHIR document, based on the ordinance of the Federal Office of Public Health ([DE](https://www.fedlex.admin.ch/eli/cc/2015/892/de), [FR](https://www.fedlex.admin.ch/eli/cc/2015/892/fr), [IT](https://www.fedlex.admin.ch/eli/cc/2015/892/it)), is defined in the [logical model](StructureDefinition-LaboratoryReport.html). A [mapping](StructureDefinition-LaboratoryReport-mappings.html#mappings-for-ch-elm-laboratory-report-to-fhir-hl7-org-fhir-r4) shows how to access the data from the FHIR document. In addition, further documentation for specific topics can be found on the [guidance](guidance.html) page and the use cases ([DE](usecase-german.html)) describe the different scenarios with respective examples for specific organisms.
 
 <div markdown="1" class="stu-note">
 
@@ -27,8 +27,6 @@ This guide supports you as a laboratory in the following way:
 To check if your report is valid to the requirements of this implementation guide you can check it with the [FHIR Validator](https://confluence.hl7.org/display/FHIR/Using+the+FHIR+Validator) providing this [package](package.tgz) as a parameter and specifying the profile `http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document`.
 
 Since the FHIR API is standardized you can test your client also against a public FHIR test server like [hapi](https://hapi.fhir.org/baseR4/swagger-ui/). 
-
-If you have any additional questions do not hesitate to contact the Swiss Federal Office of Public Health (FOPH), Communicable Diseases Division. 
 
 If you have general feedback this implementation guide you find at the bottom a "Propose a change" link where you can raise an issue.
 
