@@ -34,14 +34,14 @@ The laboratory report is currently either of the type [organism detection](#orga
 * `Observation.interpretation` = Resistant/Susceptible ([CH ELM Observation Interpretation Codes](ValueSet-ch-elm-observation-interpretation-codes.html))
 
 ### Laboratory Result
-The laboratory result is represented by a so called leading LOINC and laboratories are requested to choose the code from the provided ValueSet ([CH ELM Results Laboratory Observation](ValueSet-ch-elm-results-laboratory-observation.html)) that corresponds to the test parameters performed. The LOINC Code reflects a 4-axis model and ideally, the chosen LOINC Code covers all 4 axes.
+The laboratory result is represented by a so called leading LOINC code and laboratories are requested to choose the code from the provided ValueSet ([CH ELM Results Laboratory Observation](ValueSet-ch-elm-results-laboratory-observation.html)) that corresponds to the test parameters performed. The LOINC code reflects a 4-axis model and ideally, the chosen LOINC code covers all 4 axes.
 
 [Example](Bundle-1Doc-NeisseriaGonorrhoeae.html): LOINC [697-3 Neisseria gonorrhoeae [Presence] in Urethra by Organism specific culture](https://loinc.org/697-3/):
 
-* **Organism** Neisseria gonorrhoeae
-* **Detection** organism growth
-* **Detection method** organism specific culture
-* **Collection material** urethra
+* **Organism**: Neisseria gonorrhoeae
+* **Detection**: organism growth
+* **Detection method**: organism specific culture
+* **Collection material**: urethra
 
 If the leading LOINC code does not cover all axes, the missing axis must be complemented by a SNOMED code (see below “Collection Material“)
 
