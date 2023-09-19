@@ -8,6 +8,8 @@ The expected content of the FHIR document, based on the ordinance of the Federal
 
 The specification herewith documented is work in progress. No liability can be inferred from the use or misuse of this specification, or its consequences.
 
+[Changelog](changelog.html) with significant changes, open and closed issues.
+
 </div>
 
 **Download**: You can download this implementation guide in [npm format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](package.tgz).

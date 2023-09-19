@@ -12,7 +12,7 @@ status: draft
 license: CC0-1.0
 copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CHE
-date: 2023-09-13
+date: 2023-09-19
 version: 1.0.0-ci-build
 fhirVersion: 4.0.1
 copyrightYear: 2023+
@@ -48,6 +48,8 @@ pages:
     title: API
   terminology.md:
     title: Terminology
+  changelog.md:
+    title: Changelog       
 
 menu:
   Home: index.html
