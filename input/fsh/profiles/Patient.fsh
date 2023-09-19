@@ -24,7 +24,7 @@ https://www.bag.admin.ch/dam/bag/de/dokumente/mt/msys/leitfaden-zur-meldepflicht
 * name.given 1..
 * name.given ^short = "In the case of HIV/AIDS masked and provide a specific value (see IG guidance)"
 
-* gender 
+* gender 1..
 
 * birthDate 1..
 * birthDate obeys ch-elm-dateTime
