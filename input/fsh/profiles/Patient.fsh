@@ -39,7 +39,8 @@ https://www.bag.admin.ch/dam/bag/de/dokumente/mt/msys/leitfaden-zur-meldepflicht
 * address[home].postalCode MS
 * address[home].city MS
 * address[home].state MS
-* address[home].country.extension[countrycode] MS
+* address[home].country MS
+* address[home].country.extension[countrycode] 1..
 
 * telecom[phone].value ^example.label = "CH ELM"
 * telecom[phone].value ^example.valueString = "+41 79 999 55 66"
