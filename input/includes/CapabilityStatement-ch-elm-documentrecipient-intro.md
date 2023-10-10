@@ -1,9 +1,7 @@
-This is the **Requirements** CapabilityStatement for a Document Recipient with  Publish. 
+This is the **Requirements** CapabilityStatement for the Document Recipient. 
 
 <div>
 {%include PublishDocumentReference-seq.svg%}
 </div>
 
 <br clear="all">
-
-**Figure:  Publish Interactions**
