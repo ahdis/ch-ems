@@ -75,3 +75,4 @@ parameters:
     - input/resources
     - fsh-generated/resources
   no-narrative: Bundle/*
+  excludettl: true
