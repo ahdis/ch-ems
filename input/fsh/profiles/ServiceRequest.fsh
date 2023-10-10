@@ -1,5 +1,5 @@
 Profile: ChElmServiceRequestLaboratoryOrder
-Parent: ChLabServiceRequestLaboratoryOrder
+Parent: ChLabReportServiceRequest
 Id: ch-elm-servicerequest-laboratory-order
 Title: "CH ELM ServiceRequest: Laboratory Order"
 Description: "This CH ELM base profile constrains the ServiceRequest resource for the purpose of laboratory orders."

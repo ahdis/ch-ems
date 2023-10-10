@@ -1,5 +1,5 @@
 Profile: ChElmDocument
-Parent: ChLabDocument
+Parent: ChLabReportDocument
 Id: ch-elm-document
 Title: "CH ELM Document: Laboratory Report"
 Description: "This CH ELM base profile constrains the Bundle resource for the purpose of laboratory test reports."
