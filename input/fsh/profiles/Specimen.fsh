@@ -1,5 +1,5 @@
 Profile: ChElmSpecimen
-Parent: ChLabSpecimen
+Parent: ChLabReportSpecimen
 Id: ch-elm-specimen
 Title: "CH ELM Specimen: Laboratory"
 Description: "This CH ELM base profile constrains the Specimen resource for the purpose of laboratory test reports."

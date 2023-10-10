@@ -1,5 +1,5 @@
 Profile: ChElmComposition
-Parent: ChLabComposition
+Parent: ChLabReportComposition
 Id: ch-elm-composition
 Title: "CH ELM Composition: Laboratory Report"
 Description: "This CH ELM base profile constrains the Composition resource for the purpose of laboratory test reports."
