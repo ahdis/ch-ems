@@ -26,7 +26,7 @@ Release 4 of the [HL7® FHIR®](https://www.hl7.org/fhir/index.html) standard.
 The Send report transaction passes a DocumentReference message from the laboratory to the FOPH, providing the report directly as a FHIR Bundle.
 
 ####  Send Report Message
-This message uses the HTTP POST method on the the DocumentReference endpoint to convey the metadata and the document as a FHIR DocumentReference.
+This message uses the HTTP POST method on the DocumentReference endpoint to convey the metadata and the document as a FHIR DocumentReference.
 See also the [CapabilityStatement](CapabilityStatement-ch-elm-documentrecipient.html) of the server.
 
 ##### Trigger Events
