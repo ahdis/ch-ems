@@ -119,11 +119,11 @@ To enable the laboratory to know the outcome of processing the transaction, and 
 
 The FOPH processes the results according to application-defined rules. 
 	
-*Important*: The laboratory SHALL afterwards check the status of the processing, see next message.
+*Important*: The laboratory shall afterwards check the status of the processing, see next message.
 
 ### Verifying processing state
 
-The laboratory SHALL verify through the API that the reports have been successfully processed. The laboratory can either query the DocumentReference by id or query it with different search parameters.
+The laboratory shall verify through the API that the reports have been successfully processed. The laboratory can either query the DocumentReference by id or query it with different search parameters.
 
 #### Request Message
 
@@ -219,7 +219,7 @@ The laboratory shall process the results. It is in the responsibility of the lab
 
 ### Security Considerations
 
-mTLS SHALL be used.
+mTLS shall be used.
 <div markdown="5" class="dragon">
 During the pilot a TLS client certificate will be provided by the FOPH.
 </div>
