@@ -165,11 +165,27 @@ This parameter, of type date, specifies the time when the DocumentReference was 
 **_lastUpdate**:
 The search parameter _lastUpdated can be used to select resources based on the last time they were changed. See [http://hl7.org/fhir/R4/search.html#lastUpdated](http://hl7.org/fhir/R4/search.html#lastUpdated]) for use of the _lastUpdate search type.
 
+for date and _lastUpdate the following [prefixes](http://hl7.org/fhir/R4/search.html#prefix) for parameter are supported: eq,ne,gt,ge,lt, le
+
 **identifier**:
 This parameter, of type token, specifies an identifier for this DocumentReference and/or the contained document. The search results represent the results of a search on DocumentReference.identifier. 
 
 **elm-status**:
 This [parameter](SearchParameter-SearchParameter-ch-elm-status.html), of type token, specifies the status of the processing of the report at the FOPH. It can be either in-progress, failed or completed, see [ValueSet](ValueSet-ch-elm-status.html).
+
+###### Managing Returned Resources 
+
+**Sorting**
+The client can indicate which order to return the results by using the parameter [_sort](http://hl7.org/fhir/R4/search.html#_sort), which can contain a comma-separated list of sort rules in priority order.
+The following support parameters can be specified: identifier, date, elm-status, _lastUpdated. A prefix of '-' indicates decreasing order; in its absence, 
+the parameter is applied in increasing order.
+
+**Paging**
+The parameter _count is defined as an instruction to the server regarding how many resources should be returned in a single page.
+
+If _count has the value 0, this shall be treated the same as _summary=count: the server returns a bundle that reports the total number of resources that match in Bundle.total, but with no entries, and no prev/next/last links.
+
+FOPH allows with the parameter page to directly query a specific page in the search result. The client can also follow the first, next, prev, last link in the Bundle search response.
 
 ###### Populating Expected Response Format
 
