@@ -171,7 +171,7 @@ for date and _lastUpdate the following [prefixes](http://hl7.org/fhir/R4/search.
 This parameter, of type token, specifies an identifier for this DocumentReference and/or the contained document. The search results represent the results of a search on DocumentReference.identifier. 
 
 **elm-status**:
-This [parameter](SearchParameter-SearchParameter-ch-elm-status.html), of type token, specifies the status of the processing of the report at the FOPH. It can be either in-progress, failed or completed, see [ValueSet](ValueSet-ch-elm-status.html).
+This [parameter](SearchParameter-SearchParameter-ch-elm-status.html), of type token, specifies the status of the processing of the report at the FOPH. It can be either in-progress, failed or completed, see [ValueSet](ValueSet-ch-elm-status.html). Only one status per query is supported, you cannot query for multiple (e.g. failed, complete).
 
 ###### Managing Returned Resources 
 
