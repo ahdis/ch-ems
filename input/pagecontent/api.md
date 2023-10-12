@@ -176,12 +176,14 @@ This [parameter](SearchParameter-SearchParameter-ch-elm-status.html), of type to
 ###### Managing Returned Resources 
 
 **Sorting**
+
 The client can indicate which order to return the results by using the parameter [_sort](http://hl7.org/fhir/R4/search.html#_sort), which can contain a comma-separated list of sort rules in priority order.
-The following support parameters can be specified: identifier, date, elm-status, _lastUpdated. A prefix of '-' indicates decreasing order; in its absence, 
+The following support parameters can be specified: **identifier**, **date**, **elm-status**, **_lastUpdated**. A prefix of '-' indicates decreasing order; in its absence, 
 the parameter is applied in increasing order.
 
 **Paging**
-The parameter _count is defined as an instruction to the server regarding how many resources should be returned in a single page.
+
+The parameter *_count* is defined as an instruction to the server regarding how many resources should be returned in a single [page](http://hl7.org/fhir/R4/search.html#count).
 
 If _count has the value 0, this shall be treated the same as _summary=count: the server returns a bundle that reports the total number of resources that match in Bundle.total, but with no entries, and no prev/next/last links.
 
