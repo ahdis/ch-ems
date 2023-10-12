@@ -3,10 +3,10 @@
   "id": "ch-elm-documentrecipient",
   "url": "http://fhir.ch/ig/ch-elm/CapabilityStatement/ch-elm-documentrecipient",
   "name": "CH_ELM_CapabilityStatement_DocumentRecipient",
-  "title": "Document Recipient implementing  Publish Option",
+  "title": "FOPH CapabilityStatement for receiving laboratory reports",
   "status": "active",
   "experimental": false,
-  "description": "Document Recipient implementing  Publish",
+  "description": "CapabilityStatement for receiving laboratory reports",
   "kind": "requirements",
   "fhirVersion": "4.0.1",
   "format": [
@@ -17,7 +17,7 @@
     {
       "mode": "server",
       "security": {
-			  "description": "TLS with client ceritifcare required"
+			  "description": "TLS with client certificate required"
       },
       "resource": [
         {
@@ -29,6 +29,41 @@
             },
             {
               "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],          
+          "searchParam": [
+            {
+              "name": "_id",
+              "definition": "http://hl7.org/fhir/SearchParameter/Resource-id",
+              "type": "token",
+              "documentation": "Logical id of this artifact"
+            },
+            {
+              "name": "_lastupdated",
+              "definition": "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated",
+              "type": "date",
+              "documentation": "When the resource version last changed"
+            },
+            {
+              "name": "date",
+              "definition": "http://hl7.org/fhir/SearchParameter/DocumentReference-date",
+              "type": "date",
+              "documentation": "When this document reference was created"
+            },
+            {
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier",
+              "type": "token",
+              "documentation": "The identifier for this DocumentReference"
+            },
+            {
+              "name": "elm-status",
+              "definition": "http://fhir.ch/ig/ch-elm/SearchParameter/DocumentReference-ch-elm-status",
+              "type": "token",
+              "documentation": "in-progress | failed | completed"
             }
           ]
         }
