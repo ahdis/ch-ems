@@ -4,7 +4,7 @@ Id: ch-elm-composition
 Title: "CH ELM Composition: Laboratory Report"
 Description: "This CH ELM base profile constrains the Composition resource for the purpose of laboratory test reports."
 * . ^short = "CH ELM Composition: Laboratory Report"
-* identifier ^short = "Persistent, unique identifier for the document (UUID)"
+* identifier ^short = "Persistent, unique identifier for the diagnostic report (UUID)"
 * identifier 1..
 * identifier.system 1..
 * identifier.system = "urn:ietf:rfc:3986"

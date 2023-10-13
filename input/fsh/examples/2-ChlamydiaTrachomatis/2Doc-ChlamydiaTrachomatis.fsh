@@ -57,6 +57,8 @@ Usage: #inline
 * extension.url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
 * extension.valueReference = Reference(urn:uuid:da065461-34df-4e2e-b69f-4181908575d0)
 * extension.valueReference.type = "Composition"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:1301332d-6012-443f-9690-929132b2e155"
 * basedOn = Reference(urn:uuid:9d409938-5af8-4fae-88d1-541f35111c1f)
 * basedOn.type = "ServiceRequest"
 * status = #final
