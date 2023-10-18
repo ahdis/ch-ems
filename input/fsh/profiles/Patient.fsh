@@ -7,13 +7,13 @@ Description: "This CH ELM base profile constrains the Patient resource for the p
 
 * identifier MS
 
-* identifier contains OASI-LI 0..* MS
+* identifier contains IDN 0..* MS
 * identifier[AHVN13] MS
 * identifier[AHVN13] ^short = "OASI Number Switzerland"
 
-* identifier[OASI-LI] only OasiLiIdentifier
-* identifier[OASI-LI] ^short = "OASI Number Principality of Liechtenstein"
-* identifier[OASI-LI] ^patternIdentifier.system = "http://ahv.li/identifier/oasi"
+* identifier[IDN] only IdnIdentifier
+* identifier[IDN] ^short = "IDN Liechtenstein"
+* identifier[IDN] ^patternIdentifier.system = "urn:oid:2.16.438.10.20.10.10.1.2.1"
 
 * name 1..
 * name ^short = "Whether the personal data is transmitted by using initials, full name or a special combination can be seen from the table on p.66 of this document: 
