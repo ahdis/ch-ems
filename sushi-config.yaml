@@ -76,3 +76,8 @@ parameters:
     - fsh-generated/resources
   no-narrative: Bundle/*
   excludettl: true
+
+resources:
+  ValueSet/ch-elm-results-laboratory-observation:
+    name: CH ELM Results Laboratory Observation
+    exampleBoolean: false
