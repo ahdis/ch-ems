@@ -67,9 +67,9 @@ Instance: Pat-LillyLiechtenstein
 InstanceOf: ChElmPatient
 Usage: #example
 Title: "Pat - Lilly Liechtenstein"
-Description: "Example for a CH ELM Patient - OASI number of the Principality of Liechtenstein"
-* identifier[OASI-LI].system = "http://ahv.li/identifier/oasi"
-* identifier[OASI-LI].value = "123456"
+Description: "Example for a CH ELM Patient - IDN Liechtenstein"
+* identifier[IDN].system = "urn:oid:2.16.438.10.20.10.10.1.2.1"
+* identifier[IDN].value = "1234567890123"
 * name.family = "Liechtenstein"
 * name.given[0] = "Lilly"
 * gender = #female
