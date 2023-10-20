@@ -1,0 +1,61 @@
+{
+    "resourceType": "ConceptMap",
+    "id": "ch-elm-expected-materials-group-to-results-completing-vs",
+    "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expected-materials-group-to-results-completing-vs",
+    "version": "2023-10-18",
+    "name": "ChElmExpectedMaterialsGroupToResultsCompletingValueSets",
+    "title": "CH ELM Expected Materials Group To Results Completing ValueSets Mapping",
+    "status": "active",
+    "experimental": false,
+    "description": "This CH ELM concept map shows which leading LOINC codes have to be complemented by a SNOMED CT code. The target code shows the URL of the value set from which the completing codes for the expected materials group must to come.",
+    "sourceCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expected-materials-group",
+    "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-completing-vs",
+    "group": [
+        {
+            "source": "http://loinc.org",
+            "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-completing-vs",
+            "element": [
+                {
+                    "code": "21613-5",
+                    "display": "Chlamydia trachomatis DNA [Presence] in Specimen by NAA with probe detection",
+                    "target": [
+                        {
+                            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
+                            "equivalence": "relatedto"
+                        }
+                    ]
+                },
+                {
+                    "code": "31777-6",
+                    "display": "Chlamydia trachomatis Ag [Presence] in Specimen",
+                    "target": [
+                        {
+                            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
+                            "equivalence": "relatedto"
+                        }
+                    ]
+                },
+                {
+                    "code": "43304-5",
+                    "display": "Chlamydia trachomatis rRNA [Presence] in Specimen by NAA with probe detection",
+                    "target": [
+                        {
+                            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
+                            "equivalence": "relatedto"
+                        }
+                    ]
+                },
+                {
+                    "code": "6349-5",
+                    "display": "Chlamydia trachomatis [Presence] in Specimen by Organism specific culture",
+                    "target": [
+                        {
+                            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
+                            "equivalence": "relatedto"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

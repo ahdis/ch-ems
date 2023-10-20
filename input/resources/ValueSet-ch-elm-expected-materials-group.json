@@ -1,0 +1,36 @@
+{
+    "resourceType": "ValueSet",
+    "id": "ch-elm-expected-materials-group",
+    "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expected-materials-group",
+    "version": "2023-10-18",
+    "name": "ChElmExpectedMaterialsGroup",
+    "title": "CH ELM Expected Materials Group",
+    "status": "active",
+    "experimental": false,
+    "description": "This CH ELM value set includes the leading LOINC codes for the laboratory test results, which have to be complemented by a SNOMED CT code for the expected materials.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://loinc.org",
+                "concept": [
+                    {
+                        "code": "21613-5",
+                        "display": "Chlamydia trachomatis DNA [Presence] in Specimen by NAA with probe detection"
+                    },
+                    {
+                        "code": "31777-6",
+                        "display": "Chlamydia trachomatis Ag [Presence] in Specimen"
+                    },
+                    {
+                        "code": "43304-5",
+                        "display": "Chlamydia trachomatis rRNA [Presence] in Specimen by NAA with probe detection"
+                    },
+                    {
+                        "code": "6349-5",
+                        "display": "Chlamydia trachomatis [Presence] in Specimen by Organism specific culture"
+                    }
+                ]
+            }
+        ]
+    }
+}

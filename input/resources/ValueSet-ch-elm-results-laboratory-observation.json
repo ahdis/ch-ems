@@ -138,12 +138,6 @@
                         "display": "Chlamydia trachomatis DNA [Presence] in Urethra by NAA with probe detection"
                     },
                     {
-                        "extension": [
-                            {
-                                "url": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-ext-expected-materials-group",
-                                "valueUrl": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-lab-specimen-types-chlamydia-trachomatis"
-                            }
-                        ],
                         "code": "21613-5",
                         "display": "Chlamydia trachomatis DNA [Presence] in Specimen by NAA with probe detection"
                     },
@@ -152,12 +146,6 @@
                         "display": "Chlamydia trachomatis rRNA [Presence] in Genital fluid by probe"
                     },
                     {
-                        "extension": [
-                            {
-                                "url": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-ext-expected-materials-group",
-                                "valueUrl": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-lab-specimen-types-chlamydia-trachomatis"
-                            }
-                        ],
                         "code": "31777-6",
                         "display": "Chlamydia trachomatis Ag [Presence] in Specimen"
                     },
@@ -166,12 +154,6 @@
                         "display": "Chlamydia trachomatis rRNA [Presence] in Urine by NAA with probe detection"
                     },
                     {
-                        "extension": [
-                            {
-                                "url": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-ext-expected-materials-group",
-                                "valueUrl": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-lab-specimen-types-chlamydia-trachomatis"
-                            }
-                        ],
                         "code": "43304-5",
                         "display": "Chlamydia trachomatis rRNA [Presence] in Specimen by NAA with probe detection"
                     },
@@ -212,12 +194,6 @@
                         "display": "Chlamydia trachomatis rRNA [Presence] in Anal by NAA with probe detection"
                     },
                     {
-                        "extension": [
-                            {
-                                "url": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-ext-expected-materials-group",
-                                "valueUrl": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-lab-specimen-types-chlamydia-trachomatis"
-                            }
-                        ],
                         "code": "6349-5",
                         "display": "Chlamydia trachomatis [Presence] in Specimen by Organism specific culture"
                     },

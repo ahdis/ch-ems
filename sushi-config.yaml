@@ -8,7 +8,7 @@ canonical: http://fhir.ch/ig/ch-elm
 name: CH_ELM
 title: "CH ELM (R4)"
 description: FHIR® Implementation Guide for the Electronic Laboratory Report of the Swiss Federal Office of Public Health
-status: draft
+status: draft # draft | active | retired | unknown
 license: CC0-1.0
 copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CHE
@@ -78,8 +78,3 @@ parameters:
   excludettl: true
   apply-version: false
   default-version: true
-
-resources:
-  ValueSet/ch-elm-results-laboratory-observation:
-    name: CH ELM Results Laboratory Observation
-    exampleBoolean: false
