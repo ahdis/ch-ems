@@ -27,3 +27,8 @@ Invariant: ch-elm-leading-code
 Description: "The ServiceRequest.code and the Observation.code are in general equal."
 Severity: #warning
 Expression: "entry.resource.ofType(ServiceRequest).code = entry.resource.ofType(Observation).code"
+
+Invariant: ch-elm-urlconformstochelmbundle
+Description: "Must have a resolvable URL conforming to the CH-ELM Bundle."
+Severity: #error
+Expression: "url.exists() and url.resolve().conformsTo('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document')"

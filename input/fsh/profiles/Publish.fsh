@@ -20,6 +20,8 @@ A profile on the DocumentReference resource with publication constraints:
 * securityLabel 0..* MS
 * content 1..1
 * content ^definition = "The document and format referenced"
+* content.attachment 1..1
+* content.attachment obeys ch-elm-urlconformstochelmbundle
 * content.attachment.language 0..1 MS
 * content.attachment.url 1..1
 * content.attachment.url ^short = "The document is referenced by this url, contained in the DocumentReference"
