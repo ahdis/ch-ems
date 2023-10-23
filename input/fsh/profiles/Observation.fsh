@@ -3,6 +3,8 @@ Parent: ChLabObservationResultsLaboratory
 Id: ch-elm-observation-results-laboratory
 Title: "CH ELM Observation Results: Laboratory"
 Description: "This CH ELM base profile constrains the Observation resource for the purpose of laboratory test reports."
+* obeys ch-elm-expected-materials-group
+* obeys ch-elm-material-declared-by-loinc
 * . ^short = "CH ELM Observation Results: Laboratory"
 * status = #final
 * code from ChElmResultsLaboratoryObservation (required)
