@@ -1,17 +1,17 @@
 {
     "resourceType": "ValueSet",
-    "id": "ch-elm-results-completing-vs",
-    "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-completing-vs",
+    "id": "ch-elm-result-completion-vs",
+    "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-result-completion-vs",
     "version": "2023-10-18",
-    "name": "ChElmResultsCompletingValueSets",
-    "title": "CH ELM Results Completing ValueSets",
+    "name": "ChElmResultCompletionValueSets",
+    "title": "CH ELM Result Completion ValueSets",
     "status": "active",
     "experimental": false,
-    "description": "This CH ELM value set includes the value set URLs as codes to map in the concept maps the leading LOINC codes, which must be complemented with SNOMED CT codes.",
+    "description": "This CH ELM value set includes the value set URLs as codes to map in the concept maps the leading codes, which must be completed with additional codes.",
     "compose": {
         "include": [
             {
-                "system": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-completing-vs",
+                "system": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-result-completion-vs",
                 "concept": [
                     {
                         "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sterile-spec"

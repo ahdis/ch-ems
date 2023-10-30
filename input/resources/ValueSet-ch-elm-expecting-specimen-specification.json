@@ -1,13 +1,13 @@
 {
     "resourceType": "ValueSet",
-    "id": "ch-elm-expected-materials-group",
-    "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expected-materials-group",
-    "version": "2023-10-18",
-    "name": "ChElmExpectedMaterialsGroup",
-    "title": "CH ELM Expected Materials Group",
+    "id": "ch-elm-expecting-specimen-specification",
+    "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-specimen-specification",
+    "version": "2023-10-30",
+    "name": "ChElmExpectingSpecimenSpecification",
+    "title": "CH ELM Expeting Specimen Specification",
     "status": "active",
     "experimental": false,
-    "description": "This CH ELM value set includes the leading LOINC codes for the laboratory test results, which have to be complemented by a SNOMED CT code for the expected materials.",
+    "description": "This CH ELM value set includes the leading codes for the laboratory test results, which have to be completed by another code for the expecting specimen.",
     "compose": {
         "include": [
             {

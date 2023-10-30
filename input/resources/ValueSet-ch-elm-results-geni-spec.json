@@ -7,7 +7,7 @@
   "title": "CH ELM Results Geni Spec",
   "status": "active",
   "experimental": false,
-  "description": "This CH ELM value set includes the codes for the laboratory test results to complement the leading LOINC code with a SNOMED CT code.",
+  "description": "This CH ELM value set includes the codes for the laboratory test results to complete the leading code with an additional code.",
   "compose": {
     "include": [
       {
