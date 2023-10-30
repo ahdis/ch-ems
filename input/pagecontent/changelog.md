@@ -14,8 +14,8 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#21](https://github.com/ahdis/ch-elm/issues/21): Usage of the IDN instead of the OASI for Patient.identifier Liechtenstein.
 * Add a computable way for the concept of leading code and in some cases necessary addition of additional codes to the leading code, see [Guidance - Laboratory Result](guidance.html#laboratory-result)
    * [#25](https://github.com/ahdis/ch-elm/issues/25): Renaming of the specimen-specific ValueSet 'CH ELM Lab Specimen Types: Chlamydia Trachomatis' to ValueSet 'CH ELM Results Geni Spec'
-   * [#26](https://github.com/ahdis/ch-elm/issues/26): Remove ValueSet 'CH ELM Lab Specimen Types'; now handled via the newly introduced mechanism
-   * Change the fixed value for Specimen.type.text to a more general version: 'Material declared by LOINC system axis' -> 'Material declared by leading code (Observation.code)'
+   * [#26](https://github.com/ahdis/ch-elm/issues/26)/[#8](https://github.com/ahdis/ch-elm/issues/8): Remove ValueSet 'CH ELM Lab Specimen Types'; now handled via the newly introduced mechanism
+   * [#8](https://github.com/ahdis/ch-elm/issues/8): Change the fixed value for Specimen.type.text to a more general version: 'Material declared by LOINC system axis' -> 'Material declared by leading code (Observation.code)'
 
 #### Fixed
 * [#9](https://github.com/ahdis/ch-elm/issues/9): Set minimum cardinality of Patient.gender to 1 (according to the logical model)
