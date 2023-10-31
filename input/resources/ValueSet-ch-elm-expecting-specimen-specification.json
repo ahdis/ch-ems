@@ -4,7 +4,7 @@
     "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-specimen-specification",
     "version": "2023-10-30",
     "name": "ChElmExpectingSpecimenSpecification",
-    "title": "CH ELM Expeting Specimen Specification",
+    "title": "CH ELM Expecting Specimen Specification",
     "status": "active",
     "experimental": false,
     "description": "This CH ELM value set includes the leading codes for the laboratory test results, which have to be completed by another code for the expecting specimen.",
