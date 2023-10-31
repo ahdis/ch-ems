@@ -56,7 +56,7 @@ If the leading code does not cover all axes, the missing axis must be completed 
 ##### Expecting Specimen Specification
 In some cases, the collection material must be explicitly specified.
 
-[Example Chlamydia trachomatis](Bundle-2Doc-ChlamydiaTrachomatis.html): The leading code (Observation.code = LOINC 6349-5), is completed by an additional code for the collection material (Specimen.type = SNOMED CT 119393003).
+[Example Chlamydia trachomatis](Bundle-2Doc-ChlamydiaTrachomatis.html): The leading code (Observation.code = LOINC 6349-5) is completed by an additional code for the collection material (Specimen.type = SNOMED CT 119393003).
 
 1. Check if Observation.code is a member of the [CH ELM Expecting Specimen Specification To Result Completion ValueSets Mapping](ConceptMap-ch-elm-expecting-specimen-specification-to-result-completion-vs.html) (Source Code)
    * NO: Observation.code does cover all axes, see section [Leading Code](#leading-code)
@@ -64,21 +64,22 @@ In some cases, the collection material must be explicitly specified.
       * Example Chlamydia trachomatis: LOINC 6349-5 is a member of the ConceptMap 
 2. The mapping shows from which ValueSet the code for Specimen.type has to come from (Target Code)
    * Example Chlamydia trachomatis: http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec
-3. Define Specimen.type with a code from the [ValueSet CH ELM Results Geni Spec](ValueSet-ch-elm-results-geni-spec.html)
-   * Example Chlamydia trachomatis: Speciment.type = SNOMED CT 119393003
+3. Define Specimen.type with a code from the ValueSet from step 2
+   * Example Chlamydia trachomatis: Speciment.type = SNOMED CT 119393003 from [ValueSet CH ELM Results Geni Spec](ValueSet-ch-elm-results-geni-spec.html)
 
 ##### Expecting Organism Specification
-In some cases, an additional organism must be specified, e.g.:
+In some cases, an additional organism must be specified.
 
-* TODO
-   * if Observation.code = LOINC ...
-   * use a ... from the [ValueSet CH ELM ...]()
-   * [Example]()
+[Example Carbapenemase-producing Enterobacteriaceae (CPE)](Bundle-3Doc-CPE.html): The leading code (Observation.code = LOINC 85827-4) is completed by an additional code for the organism (Observation.valueCodeableConcept = SNOMED CT 56415008).
 
-In all other cases, the ...
-
+1. Check if Observation.code is a member of the [CH ELM Expecting Organism Specification To Result Completion ValueSets Mapping](ConceptMap-ch-elm-expecting-organism-specification-to-result-completion-vs.html) (Source Code)
+   * NO: Observation.code does cover all axes, see section [Leading Code](#leading-code)
+   * YES: An additional code for the organism must be specified, continue with step 2
+      * Example Carbapenemase-producing Enterobacteriaceae (CPE): LOINC 85827-4 is a member of the ConceptMap 
+2. The mapping shows from which ValueSet the code for Observation.valueCodeableConcept has to come from (Target Code)   
+   * Example Carbapenemase-producing Enterobacteriaceae (CPE): http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org
+3. Define Observation.valueCodeableConcept with a code from the ValueSet from step 2
+   * Example Carbapenemase-producing Enterobacteriaceae (CPE): Observation.valueCodeableConcept = SNOMED CT 56415008 from [ValueSet CH ELM Results CPE Org](ValueSet-ch-elm-results-cpe-org.html)     
 
 ### Multiplex Cases
 The exchange format defines the [FHIR document](document.html) for reporting to the FOPH so that **one document per organism per patient** is submitted. 
-
-

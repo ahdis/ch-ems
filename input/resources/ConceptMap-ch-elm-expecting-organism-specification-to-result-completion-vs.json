@@ -16,11 +16,11 @@
             "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-result-completion-vs",
             "element": [
                 {
-                    "code": "21613-5",
-                    "display": "Chlamydia trachomatis DNA [Presence] in Specimen by NAA with probe detection",
+                    "code": "85827-4",
+                    "display": "Carbapenem resistance bla OXA-48-like gene [Presence] in Isolate or Specimen by Molecular method",
                     "target": [
                         {
-                            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
+                            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org",
                             "equivalence": "relatedto"
                         }
                     ]
