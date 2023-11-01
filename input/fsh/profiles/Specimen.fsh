@@ -10,7 +10,7 @@ Description: "This CH ELM base profile constrains the Specimen resource for the 
 * type.coding ^short = "If the collection material is not declared by leading code (Observation.code)"
 * type.coding only ChElmCoding
 * type.text ^short = "If the collection material is declared by leading code (Observation.code)"
-* type.text = "Material declared by leading code (Observation.code)"
+* type.text = "Material declared by Observation.code or non-mandatory"
 
 * subject 1..
 * subject only Reference(ChElmPatient)

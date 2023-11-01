@@ -18,7 +18,7 @@ Description: "If Observation.code is a member of http://fhir.ch/ig/ch-elm/ValueS
 Severity: #error
 Expression: "code.memberOf('http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-specimen-specification') implies specimen.resolve().exists() and specimen.resolve().type.exists() and specimen.resolve().type.memberOf('http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-specimen-specification-to-result-completion-vs'.resolve().group.where(source='http://loinc.org').element.where(code=%context.code.coding.where(system='http://loinc.org').first().code).target.first().code)"
 
-Invariant: ch-elm-material-declared-by-leading-code
-Description: "Material declared by leading code (Observation.code)"
+Invariant: ch-elm-material
+Description: "Material declared by Observation.code or non-mandatory"
 Severity: #error
-Expression: "code.memberOf('http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-specimen-specification').not() implies specimen.resolve().exists() and specimen.resolve().type.exists() and specimen.resolve().type.text.exists() and specimen.resolve().type.text='Material declared by leading code (Observation.code)'"
+Expression: "code.memberOf('http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-specimen-specification').not() implies specimen.resolve().exists() and specimen.resolve().type.exists() and specimen.resolve().type.text.exists() and specimen.resolve().type.text='Material declared by Observation.code or non-mandatory'"

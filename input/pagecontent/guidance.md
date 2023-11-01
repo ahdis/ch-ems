@@ -45,7 +45,7 @@ The laboratory result is represented by a so called leading code (in most cases 
 * **Detection method**: organism specific culture
 * **Collection material**: urethra
 
-Note: The Specimen.type.text element in this case contains a fixed text as value: “Material declared by leading code (Observation.code)”.
+Note: The Specimen.type.text element in this case contains a fixed text as value: “Material declared by Observation.code or non-mandatory”.
 
 <span style="color:red;">Important note:</span>     
 The ([ValueSet CH ELM Results Laboratory Observation](ValueSet-ch-elm-results-laboratory-observation.html)) is a selection of LOINC codes related to notifiable diseases and their legal basis. The ValueSet can be adapted according to laboratory-specific needs - please contact the FOPH in this regard.

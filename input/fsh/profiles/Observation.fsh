@@ -4,7 +4,7 @@ Id: ch-elm-observation-results-laboratory
 Title: "CH ELM Observation Results: Laboratory"
 Description: "This CH ELM base profile constrains the Observation resource for the purpose of laboratory test reports."
 * obeys ch-elm-expecting-specimen-specification
-* obeys ch-elm-material-declared-by-leading-code
+* obeys ch-elm-material
 * . ^short = "CH ELM Observation Results: Laboratory"
 * status = #final
 * code from ChElmResultsLaboratoryObservation (required)
@@ -14,6 +14,7 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * effective[x] 1..
 * effectiveDateTime 1..
 * effectiveDateTime obeys ch-elm-dateTime
+
 * value[x] 1..
 * valueQuantity 0..1
 // * valueQuantity only ChElmQuantity
@@ -21,15 +22,14 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * valueCodeableConcept only ChElmCodeableConcept
 * valueCodeableConcept from ChElmResultsCodedValuesLaboratory (preferred) // (required)
 // https://build.fhir.org/ig/FHIR/fhir-tools-ig/StructureDefinition-additional-binding.html
-/*
 * valueCodeableConcept ^binding.extension[0].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
 * valueCodeableConcept ^binding.extension[=].extension[0].url = "purpose"
 * valueCodeableConcept ^binding.extension[=].extension[=].valueCode = #candidate
 * valueCodeableConcept ^binding.extension[=].extension[+].url = "valueSet"
-* valueCodeableConcept ^binding.extension[=].extension[=].valueCanonical = "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-microorganism"
+* valueCodeableConcept ^binding.extension[=].extension[=].valueCanonical = "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org"
 * valueCodeableConcept ^binding.extension[=].extension[+].url = "documentation"
-* valueCodeableConcept ^binding.extension[=].extension[=].valueMarkdown = "Additional conformance binding to be able to represent additional organisms, with codes from the ValueSet CH ELM Results Microorganism."
-*/
+* valueCodeableConcept ^binding.extension[=].extension[=].valueMarkdown = "Additional conformance binding to be able to represent additional codes for organisms."
+
 * performer 1..1
 * performer only Reference(ChElmOrganizationLab)
 * specimen only Reference(ChElmSpecimen)

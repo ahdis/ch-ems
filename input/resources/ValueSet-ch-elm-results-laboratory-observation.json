@@ -216,6 +216,10 @@
                     {
                         "code": "80367-6",
                         "display": "Chlamydia trachomatis [Presence] in Anorectal by Organism specific culture"
+                    },
+                    {
+                        "code": "85827-4",
+                        "display": "Carbapenem resistance bla OXA-48-like gene [Presence] by Molecular method"
                     }
                 ]
             }

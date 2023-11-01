@@ -3,6 +3,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### 1.0.0-release
 
 #### Added
+* New examples: Carbapenemase-producing Enterobacteriaceae (CPE)
 
 #### Changed / Updated
 * [#15](https://github.com/ahdis/ch-elm/issues/15): API update for search capabilities
@@ -16,7 +17,7 @@ All significant changes to this FHIR implementation guide will be documented on 
    * [#23](https://github.com/ahdis/ch-elm/issues/23): Include rules to check if the described mechanism is applied correctly
    * [#25](https://github.com/ahdis/ch-elm/issues/25): Renaming of the specimen-specific ValueSet 'CH ELM Lab Specimen Types: Chlamydia Trachomatis' to ValueSet 'CH ELM Results Geni Spec'
    * [#26](https://github.com/ahdis/ch-elm/issues/26)/[#8](https://github.com/ahdis/ch-elm/issues/8): Remove ValueSet 'CH ELM Lab Specimen Types'; now handled via the newly introduced mechanism
-   * [#8](https://github.com/ahdis/ch-elm/issues/8): Change the fixed value for Specimen.type.text to a more general version: 'Material declared by LOINC system axis' -> 'Material declared by leading code (Observation.code)'
+   * [#8](https://github.com/ahdis/ch-elm/issues/8): Change the fixed value for Specimen.type.text to a more general version: 'Material declared by LOINC system axis' -> 'Material declared by Observation.code or non-mandatory'
 
 #### Fixed
 * [#9](https://github.com/ahdis/ch-elm/issues/9): Set minimum cardinality of Patient.gender to 1 (according to the logical model)
