@@ -15,5 +15,8 @@ Each CH ELM document requires
 The profile [CH ELM Document](StructureDefinition-ch-elm-document.html) is a **generic profile** for all types of laboratory reports.
 
 Here are examples of laboratory reports for different organisms that have different requirements (see also use case ([DE](usecase-german.html)) or [guidance](guidance.html)):
-* Neisseria Gonorrhoeae [JSON](Bundle-1Doc-NeisseriaGonorrhoeae.json.html), [XML](Bundle-1Doc-NeisseriaGonorrhoeae.xml.html)
+* Neisseria Gonorrhoeae: [JSON](Bundle-1Doc-NeisseriaGonorrhoeae.json.html), [XML](Bundle-1Doc-NeisseriaGonorrhoeae.xml.html)
+   * Neisseria gonorrhoeae - Broker Szenario: [JSON](Bundle-1bDoc-NeisseriaGonorrhoeae.json.html), [XML](Bundle-1bDoc-NeisseriaGonorrhoeae.xml.html)
+* Chlamydia trachomatis: [JSON](Bundle-2Doc-ChlamydiaTrachomatis.json.html), [XML](Bundle-2Doc-ChlamydiaTrachomatis.xml.html)
+* Carbapenemase-producing Enterobacteriaceae (CPE): [JSON](Bundle-3Doc-CPE.json.html), [XML](Bundle-3Doc-CPE.xml.html)
 

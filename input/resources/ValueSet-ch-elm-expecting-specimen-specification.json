@@ -1,0 +1,36 @@
+{
+    "resourceType": "ValueSet",
+    "id": "ch-elm-expecting-specimen-specification",
+    "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-specimen-specification",
+    "version": "2023-10-30",
+    "name": "ChElmExpectingSpecimenSpecification",
+    "title": "CH ELM Expecting Specimen Specification",
+    "status": "active",
+    "experimental": false,
+    "description": "This CH ELM value set includes the leading codes for the laboratory test results, which have to be completed by another code for the expecting specimen.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://loinc.org",
+                "concept": [
+                    {
+                        "code": "21613-5",
+                        "display": "Chlamydia trachomatis DNA [Presence] in Specimen by NAA with probe detection"
+                    },
+                    {
+                        "code": "31777-6",
+                        "display": "Chlamydia trachomatis Ag [Presence] in Specimen"
+                    },
+                    {
+                        "code": "43304-5",
+                        "display": "Chlamydia trachomatis rRNA [Presence] in Specimen by NAA with probe detection"
+                    },
+                    {
+                        "code": "6349-5",
+                        "display": "Chlamydia trachomatis [Presence] in Specimen by Organism specific culture"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,93 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "ch-elm-result-completion-vs",
+    "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-result-completion-vs",
+    "version": "2023-10-30",
+    "name": "ChElmResultCompletionValueSets",
+    "title": "CH ELM Result Completion ValueSets",
+    "status": "active",
+    "experimental": false,
+    "description": "This CH ELM code system defines the value set URLs as codes to map in the concept maps the leading codes, which must be completed with additional codes.",
+    "caseSensitive": false,
+    "content": "complete",
+    "concept": [
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sterile-spec"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-bot-spec"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-diph-spec"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-spec"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mpx-sash"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mpx-ctng"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-inf-org"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mea-org"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-ehec-org"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-shi-org"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-diph-org"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-pneu-org"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-org"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sal-org"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-haem-org"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-lis-org"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-chol-org"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-hiv-org"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-bru-org"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mpx-sashec"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-men-org"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mal-org"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-bot-org"
+        },
+        {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-gen-org"
+        }
+    ]
+}

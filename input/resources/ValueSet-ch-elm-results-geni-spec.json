@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-results-geni-spec",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
+  "version": "2023-10-18",
+  "name": "ChElmResultsGeniSpec",
+  "title": "CH ELM Results Geni Spec",
+  "status": "active",
+  "experimental": false,
+  "description": "This CH ELM value set includes the codes for the laboratory test results to complete the leading code with an additional code.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "119395005",
+            "display": "Specimen from uterine cervix"
+          },
+          {
+            "code": "258527002",
+            "display": "Anal swab"
+          },
+          {
+            "code": "258508008",
+            "display": "Genital swab"
+          },
+          {
+            "code": "258520000",
+            "display": "Vaginal swab"
+          },
+          {
+            "code": "119393003",
+            "display": "Specimen from urethra"
+          },
+          {
+            "code": "119347001",
+            "display": "Seminal fluid"
+          },
+          {
+            "code": "119396006",
+            "display": "Specimen from endometrium"
+          }
+        ]
+      }
+    ]
+  }
+}

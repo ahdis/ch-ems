@@ -34,31 +34,52 @@ The laboratory report is currently either of the type [organism detection](#orga
 * `Observation.interpretation` = Resistant/Susceptible ([CH ELM Observation Interpretation Codes](ValueSet-ch-elm-observation-interpretation-codes.html))
 
 ### Laboratory Result
-The laboratory result is represented by a so called leading LOINC code and laboratories are requested to choose the code from the provided ValueSet ([CH ELM Results Laboratory Observation](ValueSet-ch-elm-results-laboratory-observation.html)) that corresponds to the test parameters performed. The LOINC code reflects a 4-axis model and ideally, the chosen LOINC code covers all 4 axes.
 
-[Example](Bundle-1Doc-NeisseriaGonorrhoeae.html): LOINC [697-3 Neisseria gonorrhoeae [Presence] in Urethra by Organism specific culture](https://loinc.org/697-3/):
+#### Leading Code
+The laboratory result is represented by a so called leading code (in most cases LOINC) and laboratories are requested to choose the code from the provided ([ValueSet CH ELM Results Laboratory Observation](ValueSet-ch-elm-results-laboratory-observation.html)) that corresponds to the test parameters performed. The leading code reflects a 4-axis model and ideally, the chosen code covers all 4 axes.
+
+[Example Neisseria gonorrhoeae](Bundle-1Doc-NeisseriaGonorrhoeae.html): The leading LOINC code [697-3 Neisseria gonorrhoeae [Presence] in Urethra by Organism specific culture](https://loinc.org/697-3/) covering all 4 axes:
 
 * **Organism**: Neisseria gonorrhoeae
 * **Detection**: organism growth
 * **Detection method**: organism specific culture
 * **Collection material**: urethra
 
-If the leading LOINC code does not cover all axes, the missing axis must be complemented by a SNOMED CT code (see below “Collection Material“).
+Note: The Specimen.type.text element in this case contains a fixed text as value: “Material declared by Observation.code or non-mandatory”.
 
-[Example](Bundle-2Doc-ChlamydiaTrachomatis.html): The leading LOINC code (Observation.code = LOINC 6349-5), complemented by a SNOMED CT code for the collection material (Specimen.type = SNOMED CT 119393003)
+<span style="color:red;">Important note:</span>     
+The ([ValueSet CH ELM Results Laboratory Observation](ValueSet-ch-elm-results-laboratory-observation.html)) is a selection of LOINC codes related to notifiable diseases and their legal basis. The ValueSet can be adapted according to laboratory-specific needs - please contact the FOPH in this regard.
 
-**Important note**: The [ValueSet](ValueSet-ch-elm-results-laboratory-observation.html) is a selection of LOINC codes related to notifiable diseases and their legal basis. The [ValueSet](ValueSet-ch-elm-results-laboratory-observation.html) can be adapted according to laboratory-specific needs - please contact the FOPH in this regard.
+#### Completion of the Leading Code
+If the leading code does not cover all axes, the missing axis must be completed by an additional code. 
 
-#### Collection Material
-In the cases described below, the collection material must be explicitly specified.
+##### Expecting Specimen Specification
+In some cases, the collection material must be explicitly specified.
 
-* Chlamydia trachomatis
-   * if Observation.code = LOINC 21613-5 / 31777-6 / 43304-5 / 6349-5
-   * use a Specimen.type form the [ValueSet CH ELM Lab Specimen Types: Chlamydia Trachomatis](ValueSet-ch-elm-lab-specimen-types-chlamydia-trachomatis.html)
+[Example Chlamydia trachomatis](Bundle-2Doc-ChlamydiaTrachomatis.html): The leading code (Observation.code = LOINC 6349-5) is completed by an additional code for the collection material (Specimen.type = SNOMED CT 119393003).
 
-In all other cases, the Specimen.type has to be defined as fixed text: “Material declared by LOINC system axis”.
+1. Check if Observation.code is a member of the [CH ELM Expecting Specimen Specification To Result Completion ValueSets Mapping](ConceptMap-ch-elm-expecting-specimen-specification-to-result-completion-vs.html) (Source Code)
+   * NO: Observation.code does cover all axes, see section [Leading Code](#leading-code)
+   * YES: The collection material must be explicitly specified, continue with step 2
+      * Example Chlamydia trachomatis: LOINC 6349-5 is a member of the ConceptMap 
+2. The mapping shows from which ValueSet the code for Specimen.type has to come from (Target Code)
+   * Example Chlamydia trachomatis: http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec
+3. Define Specimen.type with a code from the ValueSet from step 2
+   * Example Chlamydia trachomatis: Speciment.type = SNOMED CT 119393003 from [ValueSet CH ELM Results Geni Spec](ValueSet-ch-elm-results-geni-spec.html)
+
+##### Expecting Organism Specification
+In some cases, an additional organism must be specified.
+
+[Example Carbapenemase-producing Enterobacteriaceae (CPE)](Bundle-3Doc-CPE.html): The leading code (Observation.code = LOINC 85827-4) is completed by an additional code for the organism (Observation.valueCodeableConcept = SNOMED CT 56415008).
+
+1. Check if Observation.code is a member of the [CH ELM Expecting Organism Specification To Result Completion ValueSets Mapping](ConceptMap-ch-elm-expecting-organism-specification-to-result-completion-vs.html) (Source Code)
+   * NO: Observation.code does cover all axes, see section [Leading Code](#leading-code)
+   * YES: An additional code for the organism must be specified, continue with step 2
+      * Example Carbapenemase-producing Enterobacteriaceae (CPE): LOINC 85827-4 is a member of the ConceptMap 
+2. The mapping shows from which ValueSet the code for Observation.valueCodeableConcept has to come from (Target Code)   
+   * Example Carbapenemase-producing Enterobacteriaceae (CPE): http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org
+3. Define Observation.valueCodeableConcept with a code from the ValueSet from step 2
+   * Example Carbapenemase-producing Enterobacteriaceae (CPE): Observation.valueCodeableConcept = SNOMED CT 56415008 from [ValueSet CH ELM Results CPE Org](ValueSet-ch-elm-results-cpe-org.html)     
 
 ### Multiplex Cases
 The exchange format defines the [FHIR document](document.html) for reporting to the FOPH so that **one document per organism per patient** is submitted. 
-
-

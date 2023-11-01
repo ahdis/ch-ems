@@ -6,11 +6,9 @@ Description: "This CH ELM base profile constrains the Specimen resource for the 
 * . ^short = "CH Lab Specimen: Laboratory"
 
 * type 1.. // Req. EU LAB
-* type.coding ^short = "If the collection material is not declared by LOINC system axis (Observation.code)"
+* type ^short = "The mechanism to declare the collection material is described under 'Guidance - Laboratory Result'"
 * type.coding only ChElmCoding
-* type from ChElmLabSpecimenTypes (extensible) // 'required' not possible: No code provided, and a code is required from the value set 'CH ELM Lab Specimen Types' (http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-lab-specimen-types|0.1.0)
-* type.text ^short = "If the collection material is declared by LOINC system axis (Observation.code)"
-* type.text = "Material declared by LOINC system axis"
+* type.text = "Material declared by Observation.code or non-mandatory"
 
 * subject 1..
 * subject only Reference(ChElmPatient)
