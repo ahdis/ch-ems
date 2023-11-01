@@ -7,9 +7,7 @@ Description: "This CH ELM base profile constrains the Specimen resource for the 
 
 * type 1.. // Req. EU LAB
 * type ^short = "The mechanism to declare the collection material is described under 'Guidance - Laboratory Result'"
-* type.coding ^short = "If the collection material is not declared by leading code (Observation.code)"
 * type.coding only ChElmCoding
-* type.text ^short = "If the collection material is declared by leading code (Observation.code)"
 * type.text = "Material declared by Observation.code or non-mandatory"
 
 * subject 1..

@@ -21,14 +21,7 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * valueCodeableConcept 0..1
 * valueCodeableConcept only ChElmCodeableConcept
 * valueCodeableConcept from ChElmResultsCodedValuesLaboratory (preferred) // (required)
-// https://build.fhir.org/ig/FHIR/fhir-tools-ig/StructureDefinition-additional-binding.html
-* valueCodeableConcept ^binding.extension[0].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
-* valueCodeableConcept ^binding.extension[=].extension[0].url = "purpose"
-* valueCodeableConcept ^binding.extension[=].extension[=].valueCode = #candidate
-* valueCodeableConcept ^binding.extension[=].extension[+].url = "valueSet"
-* valueCodeableConcept ^binding.extension[=].extension[=].valueCanonical = "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org"
-* valueCodeableConcept ^binding.extension[=].extension[+].url = "documentation"
-* valueCodeableConcept ^binding.extension[=].extension[=].valueMarkdown = "Additional conformance binding to be able to represent additional codes for organisms."
+* valueCodeableConcept ^short = "Positive/Negative or code for an additional organism specification, see also 'Guidance - Laboratory Result'"
 
 * performer 1..1
 * performer only Reference(ChElmOrganizationLab)
