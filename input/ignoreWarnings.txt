@@ -5,6 +5,7 @@ Entry 'http://test.fhir.ch/r4/DiagnosticReport/1DR-NeisseriaGonorrhoeae' isn't r
 Entry 'http://test.fhir.ch/r4/DiagnosticReport/1bDR-NeisseriaGonorrhoeae' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'urn:uuid:2f69f609-e3bf-4863-bc42-3cbf0568cab1' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'http://test.fhir.ch/r4/DiagnosticReport/3DR-CPE' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'http://test.fhir.ch/r4/DiagnosticReport/4DR-Campylobacter' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 
 # Caused by the underlying profiles 
 The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)

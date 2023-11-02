@@ -220,6 +220,10 @@
                     {
                         "code": "85827-4",
                         "display": "Carbapenem resistance bla OXA-48-like gene [Presence] by Molecular method"
+                    },
+                    {
+                        "code": "101552-8",
+                        "display": "Campylobacter coli DNA [Presence] in Stool by NAA with probe detection"
                     }
                 ]
             }
