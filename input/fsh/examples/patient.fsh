@@ -80,3 +80,21 @@ Description: "Example for a CH ELM Patient - IDN Liechtenstein"
 * address[home].country = "LI"
 * address[home].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
 * address[home].country.extension.valueCoding = urn:iso:std:iso:3166#LI
+
+
+Instance: Pat-HF
+InstanceOf: Patient
+Usage: #inline
+* identifier.system = "urn:oid:2.16.756.5.32"
+* identifier.value = "7561234567897"
+* name.family = "F"
+* name.given = "H"
+* gender = #female
+* birthDate = "1985-10-17"
+* address.use = #home
+* address.city = "Derendingen"
+* address.state = "SO"
+* address.postalCode = "4552"
+* address.country = "CH"
+* address.country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
+* address.country.extension.valueCoding = urn:iso:std:iso:3166#CH
