@@ -3,7 +3,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### 1.0.0-release
 
 #### Added
-* New examples: Carbapenemase-producing Enterobacteriaceae (CPE)
+* New examples: Carbapenemase-producing Enterobacteriaceae (CPE), Campylobacter spp., Treponema pallidum
 * In order to have the possibility to react quickly to any changes in the reporting needs, a two-stage validation strength has been introduced:
    * Profile [CH ELM Document: Laboratory Report (strict)](StructureDefinition-ch-elm-document-strict.html): The leading code element has a [required](https://hl7.org/fhir/R4/terminologies.html#required) binding to the ValueSet CH ELM Results Laboratory Observation
       * Usage: For all examples in this published version of the implementation guide
