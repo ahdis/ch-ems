@@ -27,3 +27,4 @@ Entry 'http://test.fhir.ch/r4/DiagnosticReport/3DR-CPE' isn't reachable by trave
 Entry 'http://test.fhir.ch/r4/DiagnosticReport/4DR-Campylobacter' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'http://test.fhir.ch/r4/DiagnosticReport/5DR-TreponemaPallidum' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'http://test.fhir.ch/r4/DiagnosticReport/6DR-Influenza' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'http://test.fhir.ch/r4/DiagnosticReport/7DR-SARSCoV2' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)

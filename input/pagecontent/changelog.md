@@ -3,7 +3,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### 1.0.0-release
 
 #### Added
-* New examples: Carbapenemase-producing Enterobacteriaceae (CPE), Campylobacter spp., Treponema pallidum, Influenza
+* New examples: Carbapenemase-producing Enterobacteriaceae (CPE), Campylobacter spp., Treponema pallidum, Influenza, SARS-CoV-2
 
 #### Changed / Updated
 * [#15](https://github.com/ahdis/ch-elm/issues/15): API update for search capabilities

@@ -22,3 +22,4 @@ Here are examples of laboratory reports for different organisms that have differ
 * Campylobacter spp.: [JSON](Bundle-4Doc-Campylobacter.json.html), [XML](Bundle-4Doc-Campylobacter.xml.html)
 * Treponema pallidum: [JSON](Bundle-5Doc-TreponemaPallidum.json.html), [XML](Bundle-5Doc-TreponemaPallidum.xml.html) 
 * Influenza: [JSON](Bundle-6Doc-Influenza.json.html), [XML](Bundle-6Doc-Influenza.xml.html) 
+* SARS-CoV-2: [JSON](Bundle-7Doc-SARSCoV2.json.html), [XML](Bundle-7Doc-SARSCoV2.xml.html) 
