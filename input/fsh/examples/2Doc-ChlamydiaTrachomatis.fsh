@@ -1,5 +1,5 @@
 Instance: 2Doc-ChlamydiaTrachomatis
-InstanceOf: ChElmDocument
+InstanceOf: ChElmDocumentStrict
 Usage: #example
 Title: "2Doc - Chlamydia Trachomatis"
 Description: "Example for a CH ELM Document: Laboratory Report (collection material in addition to the leading LOINC code, with references/fullUrls as UUIDs)"
