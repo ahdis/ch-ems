@@ -30,7 +30,7 @@ Description: "Example for a CH ELM Document: Laboratory Report (organism in addi
 * entry[=].resource = 3Org-KsAbc
 
 Instance: 3Comp-CPE
-InstanceOf: Composition
+InstanceOf: ChElmComposition
 Usage: #inline
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
@@ -48,10 +48,10 @@ Usage: #inline
 * section.entry = Reference(3Obs-CPE)
 
 Instance: 3DR-CPE
-InstanceOf: DiagnosticReport
+InstanceOf: ChElmDiagnosticReport
 Usage: #inline
-* extension.url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
-* extension.valueReference = Reference(3Comp-CPE)
+* extension[DiagnosticReportCompositionR5].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
+* extension[DiagnosticReportCompositionR5].valueReference = Reference(Composition/3Comp-CPE)
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:1301332d-6012-443f-9690-72913db2e3cc"
 * basedOn = Reference(3SR-Order)
@@ -63,7 +63,7 @@ Usage: #inline
 * result = Reference(3Obs-CPE)
 
 Instance: 3Pat-HF
-InstanceOf: Patient
+InstanceOf: ChElmPatient
 Usage: #inline
 * identifier.system = "urn:oid:2.16.756.5.32"
 * identifier.value = "7561234567897"
@@ -71,17 +71,17 @@ Usage: #inline
 * name.given = "H"
 * gender = #female
 * birthDate = "1985-10-17"
-* address.use = #home
-* address.city = "Derendingen"
-* address.state = "SO"
-* address.postalCode = "4552"
-* address.country = "CH"
-* address.country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
-* address.country.extension.valueCoding = urn:iso:std:iso:3166#CH
+* address[home].use = #home
+* address[home].city = "Derendingen"
+* address[home].state = "SO"
+* address[home].postalCode = "4552"
+* address[home].country = "CH"
+* address[home].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
+* address[home].country.extension.valueCoding = urn:iso:std:iso:3166#CH
 
 
 Instance: 3Obs-CPE
-InstanceOf: Observation
+InstanceOf: ChElmObservationResultsLaboratory
 Usage: #inline
 * status = #final
 * category = $observation-category#laboratory "Laboratory"
@@ -94,14 +94,14 @@ Usage: #inline
 * specimen = Reference(3Spec-Specimen)
 
 Instance: 3Spec-Specimen
-InstanceOf: Specimen
+InstanceOf: ChElmSpecimen
 Usage: #inline
 * type.text = "Material declared by Observation.code or non-mandatory"
 * subject = Reference(3Pat-HF)
 * collection.collectedDateTime = "2023-08-01"
 
 Instance: 3SR-Order
-InstanceOf: ServiceRequest
+InstanceOf: ChElmServiceRequestLaboratoryOrder
 Usage: #inline
 * identifier.system = "http://fhir.lab.ch/order-identifier"
 * identifier.value = "34854112365"
@@ -113,23 +113,23 @@ Usage: #inline
 * specimen = Reference(3Spec-Specimen)
 
 Instance: 3Org-Labor
-InstanceOf: Organization
+InstanceOf: ChElmOrganizationLab
 Usage: #inline
-* identifier.system = "urn:oid:2.51.1.3"
-* identifier.value = "7601002331470"
+* identifier[GLN].system = "urn:oid:2.51.1.3"
+* identifier[GLN].value = "7601002331470"
 * name = "SanLab"
 
 Instance: 3PR-KsAbc
-InstanceOf: PractitionerRole
+InstanceOf: ChElmPractitionerRoleOrderer
 Usage: #inline
 * practitioner = Reference(3Pract-KsAbc)
 * organization = Reference(3Org-KsAbc)
 
 Instance: 3Pract-KsAbc
-InstanceOf: Practitioner
+InstanceOf: ChElmPractitionerOrderer
 Usage: #inline
-* identifier.system = "urn:oid:2.51.1.3"
-* identifier.value = "7601000234438"
+* identifier[GLN].system = "urn:oid:2.51.1.3"
+* identifier[GLN].value = "7601000234438"
 * name.family = "Giacometti"
 * name.given = "Monika"
 * telecom[0].system = #email
@@ -138,14 +138,15 @@ Usage: #inline
 * telecom[=].value = "+41 79 111 44 55"
 
 Instance: 3Org-KsAbc
-InstanceOf: Organization
+InstanceOf: ChElmOrganizationOrderer
 Usage: #inline
 * extension.url = "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-ext-department"
 * extension.valueString = "Abteilung 2"
-* identifier.system = "urn:oid:2.51.1.3"
-* identifier.value = "7601888888884"
+* identifier[GLN].system = "urn:oid:2.51.1.3"
+* identifier[GLN].value = "7601888888884"
 * name = "Kantonsspital ABC"
-* address.line[0] = "Aortastrasse 22"
-* address.line[+] = "Postfach 18"
+* address.line.extension[streetName].valueString = "Aortastrasse"
+* address.line.extension[houseNumber].valueString = "22"
+* address.line.extension[postOfficeBoxNumber].valueString = "18"
 * address.city = "Bern"
 * address.postalCode = "3000"
