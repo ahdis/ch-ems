@@ -30,7 +30,7 @@ Description: "Example for a CH ELM Document: Laboratory Report (SNOMED CT as lea
 * entry[=].resource = 1Org-KsAbc
 
 Instance: 5Comp-TreponemaPallidum
-InstanceOf: Composition
+InstanceOf: ChElmComposition
 Usage: #inline
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
@@ -48,10 +48,10 @@ Usage: #inline
 * section.entry = Reference(5Obs-TreponemaPallidum)
 
 Instance: 5DR-TreponemaPallidum
-InstanceOf: DiagnosticReport
+InstanceOf: ChElmDiagnosticReport
 Usage: #inline
-* extension.url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
-* extension.valueReference = Reference(5Comp-TreponemaPallidum)
+* extension[DiagnosticReportCompositionR5].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
+* extension[DiagnosticReportCompositionR5].valueReference = Reference(Composition/5Comp-TreponemaPallidum)
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:1901332d-6012-443f-9690-9291adb234fe"
 * basedOn = Reference(5SR-Order)
@@ -63,7 +63,7 @@ Usage: #inline
 * result = Reference(5Obs-TreponemaPallidum)
 
 Instance: 5Obs-TreponemaPallidum
-InstanceOf: Observation
+InstanceOf: ChElmObservationResultsLaboratory
 Usage: #inline
 * status = #final
 * category = $observation-category#laboratory "Laboratory"
@@ -76,14 +76,14 @@ Usage: #inline
 * specimen = Reference(5Spec-Specimen)
 
 Instance: 5Spec-Specimen
-InstanceOf: Specimen
+InstanceOf: ChElmSpecimen
 Usage: #inline
 * type.text = "Material declared by Observation.code or non-mandatory"
 * subject = Reference(1Pat-DM)
 * collection.collectedDateTime = "2023-09-12"
 
 Instance: 5SR-Order
-InstanceOf: ServiceRequest
+InstanceOf: ChElmServiceRequestLaboratoryOrder
 Usage: #inline
 * identifier.system = "http://fhir.lab.ch/order-identifier"
 * identifier.value = "23846922417"

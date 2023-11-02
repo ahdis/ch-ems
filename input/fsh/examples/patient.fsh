@@ -96,3 +96,27 @@ Usage: #inline
 * address.country = "CH"
 * address.country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
 * address.country.extension.valueCoding = urn:iso:std:iso:3166#CH
+
+
+Instance: Pat-AntoineDupont
+InstanceOf: ChElmPatient
+Usage: #example
+Title: "Pat - Antoine Dupont"
+Description: "Example for a CH ELM Patient - full name"
+* gender = #female
+* identifier[AHVN13].system = "urn:oid:2.16.756.5.32"
+* identifier[AHVN13].value = "7561234567866"
+* name.family = "Dupont"
+* name.given = "Antoine"
+* birthDate = "1981-02-07"
+* telecom.system = #phone
+* telecom.value = "+41 76 222 55 22"
+* address[home].use = #home
+* address[home].line.extension[streetName].valueString = "Rue de la république"
+* address[home].line.extension[houseNumber].valueString = "10"
+* address[home].postalCode = "1227"
+* address[home].city = "Carouge"
+* address[home].state = "GE"
+* address[home].country = "CH"
+* address[home].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
+* address[home].country.extension.valueCoding = urn:iso:std:iso:3166#CH
