@@ -26,6 +26,9 @@ Description: "This CH ELM base profile constrains the Organization resource for 
 * extension contains ChElmExtDepartment named department 0..1 MS
 * identifier[GLN] MS
 * name MS
-* address.line MS
+* address.line ..1 MS
+* address.line.extension[streetName] MS
+* address.line.extension[houseNumber] MS
+* address.line.extension[postOfficeBoxNumber] MS
 * address.postalCode MS
 * address.city MS

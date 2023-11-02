@@ -36,6 +36,9 @@ https://www.bag.admin.ch/dam/bag/de/dokumente/mt/msys/leitfaden-zur-meldepflicht
 * address[home] ^short = "Residential address"
 * address[home].use 1..
 * address[home].use = #home
+* address[home].line ..1
+* address[home].line.extension[streetName] 1..
+* address[home].line.extension[houseNumber] MS
 * address[home].postalCode MS
 * address[home].city MS
 * address[home].state MS
