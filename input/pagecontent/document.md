@@ -20,3 +20,4 @@ Here are examples of laboratory reports for different organisms that have differ
 * Chlamydia trachomatis: [JSON](Bundle-2Doc-ChlamydiaTrachomatis.json.html), [XML](Bundle-2Doc-ChlamydiaTrachomatis.xml.html)
 * Carbapenemase-producing Enterobacteriaceae (CPE): [JSON](Bundle-3Doc-CPE.json.html), [XML](Bundle-3Doc-CPE.xml.html)
 * Campylobacter spp.: [JSON](Bundle-4Doc-Campylobacter.json.html), [XML](Bundle-4Doc-Campylobacter.xml.html)
+* Treponema pallidum: [JSON](Bundle-5Doc-TreponemaPallidum.json.html), [XML](Bundle-5Doc-TreponemaPallidum.xml.html) 

@@ -226,6 +226,15 @@
                         "display": "Campylobacter coli DNA [Presence] in Stool by NAA with probe detection"
                     }
                 ]
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "concept": [
+                    {
+                        "code": "72904005",
+                        "display": "Treponema pallidum (organism)"
+                    }
+                ]
             }
         ]
     }
