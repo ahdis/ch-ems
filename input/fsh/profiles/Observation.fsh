@@ -4,6 +4,7 @@ Id: ch-elm-observation-results-laboratory
 Title: "CH ELM Observation Results: Laboratory"
 Description: "This CH ELM base profile constrains the Observation resource for the purpose of laboratory test reports."
 * obeys ch-elm-expecting-specimen-specification
+* obeys ch-elm-expecting-organism-specification
 * obeys ch-elm-material
 * . ^short = "CH ELM Observation Results: Laboratory"
 * status = #final
