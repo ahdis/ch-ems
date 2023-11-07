@@ -1,5 +1,5 @@
 Instance: 1Doc-NeisseriaGonorrhoeae
-InstanceOf: ChElmDocument
+InstanceOf: ChElmDocumentStrict
 Usage: #example
 Title: "1Doc - Neisseria Gonorrhoeae"
 Description: "Example for a CH ELM Document: Laboratory Report (where the 'Lab' is the same as the 'Author')"

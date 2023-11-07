@@ -1,5 +1,5 @@
 Instance: 3Doc-CPE
-InstanceOf: ChElmDocument
+InstanceOf: ChElmDocumentStrict
 Usage: #example
 Title: "3Doc - Carbapenemase-producing Enterobacteriaceae (CPE)"
 Description: "Example for a CH ELM Document: Laboratory Report (organism in addition to the leading LOINC code)"

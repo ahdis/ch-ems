@@ -4,6 +4,7 @@ Id: ch-elm-document
 Title: "CH ELM Document: Laboratory Report"
 Description: "This CH ELM base profile constrains the Bundle resource for the purpose of laboratory test reports."
 * . ^short = "CH ELM Document: Laboratory Report"
+* obeys ch-elm-leading-code
 * identifier ^short = "Persistent, unique identifier for the diagnostic report (UUID)"
 * identifier 1..
 * identifier.system 1..
@@ -12,7 +13,6 @@ Description: "This CH ELM base profile constrains the Bundle resource for the pu
 * identifier.value obeys ch-elm-doc-identifier
 * identifier.value ^example.label = "CH ELM"
 * identifier.value ^example.valueString = "urn:uuid:d494503a-7bef-4551-853c-f3dced2c518f"
-
 
 * entry[Composition].resource only ChElmComposition
 * entry[DiagnosticReport].resource only ChElmDiagnosticReport
@@ -36,3 +36,12 @@ Description: "This CH ELM base profile constrains the Bundle resource for the pu
 * entry[Organization] 1..3
 
 
+
+
+
+Profile: ChElmDocumentStrict
+Parent: ChElmDocument
+Id: ch-elm-document-strict
+Title: "CH ELM Document: Laboratory Report (strict)"
+Description: "CH ELM profile for the Bundle resource with a stricter validation mechanism than the base profile via binding strength reinforcement for the leading code element."
+* entry[Observation].resource only ChElmObservationResultsLaboratoryStrict

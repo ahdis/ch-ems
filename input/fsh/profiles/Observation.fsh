@@ -7,7 +7,7 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * obeys ch-elm-material
 * . ^short = "CH ELM Observation Results: Laboratory"
 * status = #final
-* code from ChElmResultsLaboratoryObservation (required)
+* code from ChElmResultsLaboratoryObservation (extensible)
 * code only ChElmCodeableConcept
 * subject only Reference(ChElmPatient)
 * subject 1..
@@ -20,7 +20,7 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 // * valueQuantity only ChElmQuantity
 * valueCodeableConcept 0..1
 * valueCodeableConcept only ChElmCodeableConcept
-* valueCodeableConcept from ChElmResultsCodedValuesLaboratory (preferred) // (required)
+* valueCodeableConcept from ChElmResultsCodedValuesLaboratory (preferred) // not required, because the additional organism codes come from other valuesets
 * valueCodeableConcept ^short = "Positive/Negative or code for an additional organism specification, see also 'Guidance - Laboratory Result'"
 
 * performer 1..1
@@ -30,3 +30,14 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * interpretation 1..1
 * interpretation from ChElmObservationInterpretationCodes (required)
 * interpretation only ChElmCodeableConcept
+
+
+
+
+
+Profile: ChElmObservationResultsLaboratoryStrict
+Parent: ChElmObservationResultsLaboratory
+Id: ch-elm-observation-results-laboratory-strict
+Title: "CH ELM Observation Results: Laboratory (strict)"
+Description: "CH ELM profile for the Observation resource with a stricter validation mechanism than the base profile via binding strength reinforcement for the leading code element."
+* code from ChElmResultsLaboratoryObservation (required)

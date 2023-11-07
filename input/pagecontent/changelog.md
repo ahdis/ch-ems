@@ -4,6 +4,12 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Added
 * New examples: Carbapenemase-producing Enterobacteriaceae (CPE), Campylobacter spp., Treponema pallidum, Influenza, SARS-CoV-2
+* In order to have the possibility to react quickly to any changes in the reporting needs, a two-stage validation strength has been introduced:
+   * Profile [CH ELM Document: Laboratory Report (strict)](StructureDefinition-ch-elm-document-strict.html): The leading code element has a [required](https://hl7.org/fhir/R4/terminologies.html#required) binding to the ValueSet CH ELM Results Laboratory Observation
+      * Usage: For all examples in this published version of the implementation guide
+   * Profile [CH ELM Document: Laboratory Report](StructureDefinition-ch-elm-document.html): The leading code element has an [extensible](https://hl7.org/fhir/R4/terminologies.html#extensible) binding to the ValueSet CH ELM Results Laboratory Observation
+      * Potential usage: A new leading code to be reported is introduced, which could not yet get updated in the implementation guide 
+* Include a check (warning) if Observation.code and ServiceRequest.code are equal (so far no other requirements)
 
 #### Changed / Updated
 * [#15](https://github.com/ahdis/ch-elm/issues/15): API update for search capabilities
