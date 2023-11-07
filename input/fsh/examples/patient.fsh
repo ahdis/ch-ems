@@ -2,7 +2,7 @@ Instance: Pat-ErnstKarlTanner
 InstanceOf: ChElmPatient
 Usage: #example
 Title: "Pat - Ernst Karl Tanner"
-Description: "Example for a CH ELM Patient - full name"
+Description: "Example for a CH ELM Patient - full name (and full address)"
 * gender = #male
 * identifier[AHVN13].system = "urn:oid:2.16.756.5.32"
 * identifier[AHVN13].value = "7561234567897"
@@ -11,6 +11,8 @@ Description: "Example for a CH ELM Patient - full name"
 * name.given[+] = "Karl"
 * birthDate = "1966-08-22"
 * address[home].use = #home
+* address[home].line.extension[streetName].valueString = "Tannenstrasse"
+* address[home].line.extension[houseNumber].valueString = "10a"
 * address[home].postalCode = "3000"
 * address[home].city = "Bern"
 * address[home].state = "BE"

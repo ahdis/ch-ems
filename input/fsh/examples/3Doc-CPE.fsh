@@ -30,7 +30,7 @@ Description: "Example for a CH ELM Document: Laboratory Report (organism in addi
 * entry[=].resource = 1Org-KsAbc
 
 Instance: 3Comp-CPE
-InstanceOf: Composition
+InstanceOf: ChElmComposition
 Usage: #inline
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
@@ -48,10 +48,10 @@ Usage: #inline
 * section.entry = Reference(3Obs-CPE)
 
 Instance: 3DR-CPE
-InstanceOf: DiagnosticReport
+InstanceOf: ChElmDiagnosticReport
 Usage: #inline
-* extension.url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
-* extension.valueReference = Reference(3Comp-CPE)
+* extension[DiagnosticReportCompositionR5].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
+* extension[DiagnosticReportCompositionR5].valueReference = Reference(Composition/3Comp-CPE)
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:1301332d-6012-443f-9690-72913db2e3cc"
 * basedOn = Reference(3SR-Order)
@@ -62,11 +62,8 @@ Usage: #inline
 * specimen = Reference(3Spec-Specimen)
 * result = Reference(3Obs-CPE)
 
-
-
-
 Instance: 3Obs-CPE
-InstanceOf: Observation
+InstanceOf: ChElmObservationResultsLaboratory
 Usage: #inline
 * status = #final
 * category = $observation-category#laboratory "Laboratory"
@@ -79,14 +76,14 @@ Usage: #inline
 * specimen = Reference(3Spec-Specimen)
 
 Instance: 3Spec-Specimen
-InstanceOf: Specimen
+InstanceOf: ChElmSpecimen
 Usage: #inline
 * type.text = "Material declared by Observation.code or non-mandatory"
 * subject = Reference(Pat-HF)
 * collection.collectedDateTime = "2023-08-01"
 
 Instance: 3SR-Order
-InstanceOf: ServiceRequest
+InstanceOf: ChElmServiceRequestLaboratoryOrder
 Usage: #inline
 * identifier.system = "http://fhir.lab.ch/order-identifier"
 * identifier.value = "34854112365"

@@ -31,7 +31,7 @@ Description: "Example for a CH ELM Document: Laboratory Report (collection mater
 * entry[=].resource = f18f5763-d9a4-4bb7-999e-959beaaba714
 
 Instance: da065461-34df-4e2e-b69f-4181908575d0
-InstanceOf: Composition
+InstanceOf: ChElmComposition
 Usage: #inline
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
@@ -52,11 +52,11 @@ Usage: #inline
 * section.entry.type = "Observation"
 
 Instance: 2f69f609-e3bf-4863-bc42-3cbf0568cab1
-InstanceOf: DiagnosticReport
+InstanceOf: ChElmDiagnosticReport
 Usage: #inline
-* extension.url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
-* extension.valueReference = Reference(urn:uuid:da065461-34df-4e2e-b69f-4181908575d0)
-* extension.valueReference.type = "Composition"
+* extension[DiagnosticReportCompositionR5].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"
+* extension[DiagnosticReportCompositionR5].valueReference = Reference(urn:uuid:da065461-34df-4e2e-b69f-4181908575d0)
+* extension[DiagnosticReportCompositionR5].valueReference.type = "Composition"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:1301332d-6012-443f-9690-929132b2e155"
 * basedOn = Reference(urn:uuid:9d409938-5af8-4fae-88d1-541f35111c1f)
@@ -73,7 +73,7 @@ Usage: #inline
 * result.type = "Observation"
 
 Instance: 50d5deca-64e9-4a30-8cec-40ac1f015655
-InstanceOf: Patient
+InstanceOf: ChElmPatient
 Usage: #inline
 * identifier.system = "urn:oid:2.16.756.5.32"
 * identifier.value = "7561234567897"
@@ -81,16 +81,16 @@ Usage: #inline
 * name.given = "H"
 * gender = #female
 * birthDate = "1985-10-17"
-* address.use = #home
-* address.city = "Derendingen"
-* address.state = "SO"
-* address.postalCode = "4552"
-* address.country = "CH"
-* address.country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
-* address.country.extension.valueCoding = urn:iso:std:iso:3166#CH
+* address[home].use = #home
+* address[home].city = "Derendingen"
+* address[home].state = "SO"
+* address[home].postalCode = "4552"
+* address[home].country = "CH"
+* address[home].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
+* address[home].country.extension.valueCoding = urn:iso:std:iso:3166#CH
 
 Instance: 632a79ff-42d7-49e0-97ca-69a3a2015760
-InstanceOf: Observation
+InstanceOf: ChElmObservationResultsLaboratory
 Usage: #inline
 * status = #final
 * category = $observation-category#laboratory "Laboratory"
@@ -106,7 +106,7 @@ Usage: #inline
 * specimen.type = "Specimen"
 
 Instance: b2b24ded-fd9f-40bc-a822-1fb07e14c2ef
-InstanceOf: Specimen
+InstanceOf: ChElmSpecimen
 Usage: #inline
 * type = $sct#119393003 "Specimen from urethra (specimen)"
 * subject = Reference(urn:uuid:50d5deca-64e9-4a30-8cec-40ac1f015655)
@@ -114,7 +114,7 @@ Usage: #inline
 * collection.collectedDateTime = "2023-07-29"
 
 Instance: 9d409938-5af8-4fae-88d1-541f35111c1f
-InstanceOf: ServiceRequest
+InstanceOf: ChElmServiceRequestLaboratoryOrder
 Usage: #inline
 * identifier.system = "http://fhir.lab.ch/order-identifier"
 * identifier.value = "7601002331521"
@@ -129,14 +129,14 @@ Usage: #inline
 * specimen.type = "Specimen"
 
 Instance: 8b9163cc-4894-462c-8060-b9b01f705a8b // Organization: Author & Lab
-InstanceOf: Organization
+InstanceOf: ChElmOrganizationLab
 Usage: #inline
-* identifier.system = "urn:oid:2.51.1.3"
-* identifier.value = "7601002331470"
+* identifier[GLN].system = "urn:oid:2.51.1.3"
+* identifier[GLN].value = "7601002331470"
 * name = "SanLab"
 
 Instance: c2be8e31-506b-42b2-adfc-7e47dd23cdb4 // PractitionerRole: Orderer
-InstanceOf: PractitionerRole
+InstanceOf: ChElmPractitionerRoleOrderer
 Usage: #inline
 * practitioner = Reference(urn:uuid:c3384814-b10a-4aea-b84c-a92e9a9f41e3) // Practitioner: Orderer
 * practitioner.type = "Practitioner"
@@ -144,10 +144,10 @@ Usage: #inline
 * organization.type = "Organization"
 
 Instance: c3384814-b10a-4aea-b84c-a92e9a9f41e3 // Practitioner: Orderer
-InstanceOf: Practitioner
+InstanceOf: ChElmPractitionerOrderer
 Usage: #inline
-* identifier.system = "urn:oid:2.51.1.3"
-* identifier.value = "7601000000514"
+* identifier[GLN].system = "urn:oid:2.51.1.3"
+* identifier[GLN].value = "7601000000514"
 * name.family = "Hauser"
 * name.given = "Peter"
 * telecom[0].system = #email
@@ -156,9 +156,10 @@ Usage: #inline
 * telecom[=].value = "+41 79 222 33 44"
 
 Instance: f18f5763-d9a4-4bb7-999e-959beaaba714 // Organization: Orderer
-InstanceOf: Organization
+InstanceOf: ChElmOrganizationOrderer
 Usage: #inline
 * name = "Praxis Dr. Hauser"
-* address.line = "Hauptstrasse 10"
+* address.line.extension[streetName].valueString = "Hauptstrasse"
+* address.line.extension[houseNumber].valueString = "10"
 * address.city = "Solothurn"
 * address.postalCode = "4500"
