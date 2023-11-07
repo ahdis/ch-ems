@@ -28,3 +28,6 @@ Entry 'http://test.fhir.ch/r4/DiagnosticReport/4DR-Campylobacter' isn't reachabl
 Entry 'http://test.fhir.ch/r4/DiagnosticReport/5DR-TreponemaPallidum' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'http://test.fhir.ch/r4/DiagnosticReport/6DR-Influenza' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'http://test.fhir.ch/r4/DiagnosticReport/7DR-SARSCoV2' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+# open issue with IGPublisher https://github.com/ahdis/ch-elm/issues/28
+Error in constraint 'ch-elm-urlconformstochelmbundle' with expression 'url.exists() and url.resolve().conformsTo('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document')': Error evaluating FHIRPath expression: The function resolve can only be used on ordered collections (@char 3)
