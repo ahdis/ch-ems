@@ -1,0 +1,39 @@
+{
+    "resourceType": "DocumentReference",
+    "id": "4822e056-41f5-4f65-b20e-86f9c874b9f8",
+    "meta": {
+      "profile": [
+        "http://fhir.ch/ig/ch-elm/StructureDefinition/PublishDocumentReferenceResponse"
+      ]
+    },
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Document Submission Confirmation</b>: &quot;The document has been saved and awaits processing. Document Id: {GuidToFhirString(newRecordId, false)}. Monitor the status until it&#39;s no longer &#39;in-progress&#39;. For the latest results, poll the DocumentReference endpoint in batches or query directly using the specific ID, which may be slower in high volumes. Refer to the Implementation Guide and the API documentation for more on querying the DocumentReference endpoint. Note: Processing times may vary.<br /></p></div>"
+    },
+    "extension": [
+      {
+        "extension": [
+          {
+            "url": "status",
+            "valueCode": "in-progress"
+          }
+        ],
+        "url": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-ext-elm-status"
+      }
+    ],
+    "identifier": [
+      {
+        "system": "urn:ietf:rfc:3986",
+        "value": "urn:uuid:1901332d-6012-443f-9690-9291adb2e19d"
+      }
+    ],
+    "status": "current",
+    "date": "2023-11-08T11:01:15.947627+00:00",
+    "content": [
+      {
+        "attachment": {
+          "url": "urn:uuid:4822e056-41f5-4f65-b20e-86f9c874b9f8"
+        }
+      }
+    ]
+  }

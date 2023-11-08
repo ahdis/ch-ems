@@ -1,0 +1,13 @@
+### $validate on DocumentReference
+POST https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference/$validate HTTP/1.1
+Content-Type: application/fhir+json
+Accept: application/fhir+json
+
+< ./DocumentReference-1-DocumentReference.json
+
+### $validate on root/ bundle not defined (yet)
+POST https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/$validate HTTP/1.1
+Content-Type: application/fhir+json
+Accept: application/fhir+json
+
+< ./bundle.json

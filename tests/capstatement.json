@@ -1,0 +1,115 @@
+{
+    "resourceType": "CapabilityStatement",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><b>Capability Statement for FOPH FHIR v4 eLM Implementation</b><p>Base URL: https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir</p><p>Software: FOPH FHIR v4 eLM Implementation, Version: 1.0.0</p><p>FHIR Version: N4_0_1</p><p>Mode: Server</p><p>Security Services:  </p><p>Supported Formats: json xml </p><p>Supports resource: DocumentReference with interactions: Read Create </p><p>Supports resource: ValueSet with interactions: </p><p>Supports operation: metadata (http://hl7.org/fhir/OperationDefinition/CapabilityStatement)</p></div>"
+    },
+    "status": "active",
+    "date": "2023-11-08T10:34:23.9471631+00:00",
+    "publisher": "Federal Office of Public Health - FOPH",
+    "kind": "instance",
+    "software": {
+      "name": "FOPH FHIR v4 eLM Implementation",
+      "version": "1.0.0"
+    },
+    "implementation": {
+      "description": "Processes laboratory data as FHIR DocumentReferences for FOPH reporting, while also providing additional services in this context.",
+      "url": "https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir"
+    },
+    "fhirVersion": "4.0.1",
+    "format": [
+      "json",
+      "xml"
+    ],
+    "rest": [
+      {
+        "mode": "server",
+        "security": {
+          "cors": false,
+          "service": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/restful-security-service",
+                  "code": "Certificates"
+                }
+              ]
+            }
+          ]
+        },
+        "resource": [
+          {
+            "type": "DocumentReference",
+            "interaction": [
+              {
+                "code": "read"
+              },
+              {
+                "code": "create"
+              }
+            ],
+            "versioning": "no-version",
+            "readHistory": false,
+            "updateCreate": false,
+            "conditionalCreate": false,
+            "conditionalRead": "not-supported",
+            "conditionalUpdate": false,
+            "conditionalDelete": "not-supported",
+            "searchParam": [
+              {
+                "name": "date",
+                "definition": "http://hl7.org/fhir/SearchParameter/DocumentReference-date",
+                "type": "date",
+                "documentation": "Allows filtering based on the delivery date and time."
+              },
+              {
+                "name": "elm-status",
+                "type": "string",
+                "documentation": "Allows filtering based on the processing state of the resource."
+              },
+              {
+                "name": "identifier",
+                "type": "string",
+                "documentation": "Allows filtering based on the laboratories identifier."
+              },
+              {
+                "name": "_lastUpdated",
+                "type": "date",
+                "documentation": "Allows filtering based on the last action date."
+              }
+            ],
+            "operation": [
+              {
+                "name": "$validate",
+                "definition": "http://hl7.org/fhir/OperationDefinition/Resource-validate"
+              }
+            ]
+          },
+          {
+            "type": "ValueSet",
+            "versioning": "versioned",
+            "readHistory": false,
+            "updateCreate": false,
+            "conditionalCreate": false,
+            "conditionalRead": "not-supported",
+            "conditionalUpdate": false,
+            "conditionalDelete": "not-supported",
+            "searchParam": [
+              {
+                "name": "url",
+                "definition": "http://hl7.org/fhir/SearchParameter/ValueSet-url",
+                "type": "uri",
+                "documentation": "The logical URL for the value set (canonical identifier)"
+              }
+            ]
+          }
+        ],
+        "operation": [
+          {
+            "name": "metadata",
+            "definition": "http://hl7.org/fhir/OperationDefinition/CapabilityStatement"
+          }
+        ]
+      }
+    ]
+  }

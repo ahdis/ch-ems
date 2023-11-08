@@ -1,0 +1,28 @@
+###
+GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet HTTP/1.1
+Accept: application/fhir+json
+
+
+### via fullurl
+GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet?url=http%3A%2F%2Ffhir.ch%2Fig%2Fch-elm%2FValueSet%2Fch-elm-results-bot-spec HTTP/1.1
+Accept: application/fhir+json
+
+
+### not working
+GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/ChElmResultsBotSpec HTTP/1.1
+Accept: application/fhir+json
+
+###
+GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet?url=http%3A%2F%2Ffhir.ch%2Fig%2Fch-elm%2FValueSet%2Fch-elm-results-laboratory-observation  HTTP/1.1
+Accept: application/fhir+json
+
+
+###
+GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet?url=http%3A%2F%2Ffhir.ch%2Fig%2Fch-elm%2FValueSet%2Fch-elm-results-geni-spec HTTP/1.1
+Accept: application/fhir+json
+
+
+### not yet implemented
+GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ConceptMap HTTP/1.1
+Accept: application/fhir+json
+

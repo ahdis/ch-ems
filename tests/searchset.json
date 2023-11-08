@@ -1,0 +1,256 @@
+{
+    "resourceType": "Bundle",
+    "type": "searchset",
+    "total": 4,
+    "link": [
+      {
+        "relation": "first",
+        "url": "https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference?_page=0&_count=4"
+      },
+      {
+        "relation": "self",
+        "url": "https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference?_page=0&_count=4"
+      },
+      {
+        "relation": "last",
+        "url": "https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference?_page=0&_count=4"
+      }
+    ],
+    "entry": [
+      {
+        "fullUrl": "https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference/4822e056-41f5-4f65-b20e-86f9c874b9f8",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "4822e056-41f5-4f65-b20e-86f9c874b9f8",
+          "meta": {
+            "lastUpdated": "2023-11-08T11:01:15.905364+00:00",
+            "profile": [
+              "http://fhir.ch/ig/ch-elm/StructureDefinition/PublishDocumentReferenceResponse"
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>DocumentReference result created for the id: <b>4822e056-41f5-4f65-b20e-86f9c874b9f8</b><br /></p></div>"
+          },
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "status",
+                  "valueCode": "in-progress"
+                }
+              ],
+              "url": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-ext-elm-status"
+            }
+          ],
+          "identifier": [
+            {
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:uuid:1901332d-6012-443f-9690-9291adb2e19d"
+            }
+          ],
+          "status": "current",
+          "date": "2023-11-08T11:01:15.905364+00:00",
+          "content": [
+            {
+              "attachment": {
+                "url": "urn:uuid:4822e056-41f5-4f65-b20e-86f9c874b9f8"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "fullUrl": "https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference/479105b0-0224-4201-a6c3-cb802a1819b0",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "479105b0-0224-4201-a6c3-cb802a1819b0",
+          "meta": {
+            "lastUpdated": "2023-10-23T14:51:42.2409226+00:00",
+            "profile": [
+              "http://fhir.ch/ig/ch-elm/StructureDefinition/PublishDocumentReferenceResponse"
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>DocumentReference result created for the id: <b>479105b0-0224-4201-a6c3-cb802a1819b0</b><br /></p></div>"
+          },
+          "contained": [
+            {
+              "resourceType": "OperationOutcome",
+              "id": "1-OperationOutcome",
+              "issue": [
+                {
+                  "severity": "warning",
+                  "code": "informational",
+                  "details": {
+                    "text": "Profile Validation is not implemented yet."
+                  }
+                }
+              ]
+            }
+          ],
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "status",
+                  "valueCode": "completed"
+                },
+                {
+                  "url": "outcome",
+                  "valueReference": {
+                    "reference": "#1-OperationOutcome"
+                  }
+                }
+              ],
+              "url": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-ext-elm-status"
+            }
+          ],
+          "identifier": [
+            {
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:uuid:39023323-6012-443f-9690-9291adb21297"
+            }
+          ],
+          "status": "current",
+          "date": "2023-10-23T14:51:15.6813214+00:00",
+          "content": [
+            {
+              "attachment": {
+                "url": "urn:uuid:479105b0-0224-4201-a6c3-cb802a1819b0"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "fullUrl": "https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference/5a23b7a5-4a81-4939-8975-f7bc1901828e",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "5a23b7a5-4a81-4939-8975-f7bc1901828e",
+          "meta": {
+            "lastUpdated": "2023-10-23T14:51:40.6469459+00:00",
+            "profile": [
+              "http://fhir.ch/ig/ch-elm/StructureDefinition/PublishDocumentReferenceResponse"
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>DocumentReference result created for the id: <b>5a23b7a5-4a81-4939-8975-f7bc1901828e</b><br /></p></div>"
+          },
+          "contained": [
+            {
+              "resourceType": "OperationOutcome",
+              "id": "1-OperationOutcome",
+              "issue": [
+                {
+                  "severity": "warning",
+                  "code": "informational",
+                  "details": {
+                    "text": "Profile Validation is not implemented yet."
+                  }
+                }
+              ]
+            }
+          ],
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "status",
+                  "valueCode": "completed"
+                },
+                {
+                  "url": "outcome",
+                  "valueReference": {
+                    "reference": "#1-OperationOutcome"
+                  }
+                }
+              ],
+              "url": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-ext-elm-status"
+            }
+          ],
+          "identifier": [
+            {
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:uuid:39023322-6012-443f-9690-9291adb21297"
+            }
+          ],
+          "status": "current",
+          "date": "2023-10-23T14:50:46.3803811+00:00",
+          "content": [
+            {
+              "attachment": {
+                "url": "urn:uuid:5a23b7a5-4a81-4939-8975-f7bc1901828e"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "fullUrl": "https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference/5cc01936-336c-4938-9c6d-6f6d1ecb1841",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "5cc01936-336c-4938-9c6d-6f6d1ecb1841",
+          "meta": {
+            "lastUpdated": "2023-10-23T14:48:06.4972944+00:00",
+            "profile": [
+              "http://fhir.ch/ig/ch-elm/StructureDefinition/PublishDocumentReferenceResponse"
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>DocumentReference result created for the id: <b>5cc01936-336c-4938-9c6d-6f6d1ecb1841</b><br /></p></div>"
+          },
+          "contained": [
+            {
+              "resourceType": "OperationOutcome",
+              "id": "1-OperationOutcome",
+              "issue": [
+                {
+                  "severity": "warning",
+                  "code": "informational",
+                  "details": {
+                    "text": "Profile Validation is not implemented yet."
+                  }
+                }
+              ]
+            }
+          ],
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "status",
+                  "valueCode": "completed"
+                },
+                {
+                  "url": "outcome",
+                  "valueReference": {
+                    "reference": "#1-OperationOutcome"
+                  }
+                }
+              ],
+              "url": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-ext-elm-status"
+            }
+          ],
+          "identifier": [
+            {
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:uuid:39023327-6012-443f-9690-9291adb21297"
+            }
+          ],
+          "status": "current",
+          "date": "2023-10-23T10:02:12.5275789+00:00",
+          "content": [
+            {
+              "attachment": {
+                "url": "urn:uuid:5cc01936-336c-4938-9c6d-6f6d1ecb1841"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }

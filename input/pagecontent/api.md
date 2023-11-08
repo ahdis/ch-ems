@@ -242,3 +242,13 @@ mTLS shall be used.
 During the pilot a TLS client certificate will be provided by the FOPH.
 </div>
 <p>&nbsp;</p>
+
+### Endpoints
+
+The following endpoints are defined:
+
+**Integration System**: 
+https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir
+
+**Production System**: 
+https://ws.infreport.bag.admin.ch/ch-elm/v1/fhir
