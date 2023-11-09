@@ -26,6 +26,7 @@ All significant changes to this FHIR implementation guide will be documented on 
    * [#26](https://github.com/ahdis/ch-elm/issues/26)/[#8](https://github.com/ahdis/ch-elm/issues/8): Remove ValueSet 'CH ELM Lab Specimen Types'; now handled via the newly introduced mechanism
    * [#8](https://github.com/ahdis/ch-elm/issues/8): Change the fixed value for Specimen.type.text to a more general version: 'Material declared by LOINC system axis' -> 'Material declared by Observation.code or non-mandatory'
 * [#35](https://github.com/ahdis/ch-elm/issues/35): Address.line now requires the explicit specification of streetName, houseNumber and postOfficeBoxNumber (via extensions)
+* [#34](https://github.com/ahdis/ch-elm/issues/34): Restriction of maximum cardinalities
 
 #### Fixed
 * [#9](https://github.com/ahdis/ch-elm/issues/9): Set minimum cardinality of Patient.gender to 1 (according to the logical model)

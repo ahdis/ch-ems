@@ -4,7 +4,7 @@ Id: ch-elm-codeableconcept
 Title: "CH ELM CodeableConcept"
 Description: "This profile represents the constraint applied to the CodeableConcept data type by this IG to use the 'CH ELM CodeableConcept' data type profile."
 * coding only ChElmCoding
-* coding 1..
+* coding 1..1
 
 
 Profile: ChElmCoding
