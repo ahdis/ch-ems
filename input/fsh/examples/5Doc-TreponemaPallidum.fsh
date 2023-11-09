@@ -66,7 +66,7 @@ Instance: 5Obs-TreponemaPallidum
 InstanceOf: ChElmObservationResultsLaboratory
 Usage: #inline
 * status = #final
-* category = $observation-category#laboratory "Laboratory"
+* category[laboratory] = $observation-category#laboratory "Laboratory"
 * code = $sct#72904005 "Treponema pallidum (organism)"
 * subject = Reference(1Pat-DM)
 * effectiveDateTime = "2023-09-15T09:15:00+02:00"

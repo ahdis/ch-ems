@@ -66,7 +66,7 @@ Instance: 3Obs-CPE
 InstanceOf: ChElmObservationResultsLaboratory
 Usage: #inline
 * status = #final
-* category = $observation-category#laboratory "Laboratory"
+* category[laboratory] = $observation-category#laboratory "Laboratory"
 * code = $loinc#85827-4 "Carbapenem resistance bla OXA-48-like gene [Presence] by Molecular method"
 * subject = Reference(Pat-HF)
 * effectiveDateTime = "2023-08-04T08:25:00+02:00"

@@ -93,7 +93,7 @@ Instance: 632a79ff-42d7-49e0-97ca-69a3a2015760
 InstanceOf: ChElmObservationResultsLaboratory
 Usage: #inline
 * status = #final
-* category = $observation-category#laboratory "Laboratory"
+* category[laboratory] = $observation-category#laboratory "Laboratory"
 * code = $loinc#6349-5 "Chlamydia trachomatis [Presence] in Specimen by Organism specific culture"
 * subject = Reference(urn:uuid:50d5deca-64e9-4a30-8cec-40ac1f015655)
 * subject.type = "Patient"

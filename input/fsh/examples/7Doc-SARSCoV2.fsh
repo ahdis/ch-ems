@@ -66,7 +66,7 @@ Instance: 7Obs-SARSCoV2
 InstanceOf: ChElmObservationResultsLaboratory
 Usage: #inline
 * status = #final
-* category = $observation-category#laboratory "Laboratory"
+* category[laboratory] = $observation-category#laboratory "Laboratory"
 * code = $loinc#94500-6 "SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory specimen by NAA with probe detection"
 * subject = Reference(Pat-AntoineDupont)
 * effectiveDateTime = "2023-09-12T07:40:00+02:00"

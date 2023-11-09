@@ -67,7 +67,7 @@ Instance: 4Obs-Campylobacter
 InstanceOf: ChElmObservationResultsLaboratory
 Usage: #inline
 * status = #final
-* category = $observation-category#laboratory "Laboratory"
+* category[laboratory] = $observation-category#laboratory "Laboratory"
 * code = $loinc#101552-8 "Campylobacter coli DNA [Presence] in Stool by NAA with probe detection"
 * subject = Reference(Pat-HF)
 * effectiveDateTime = "2023-09-19T17:50:00+02:00"
