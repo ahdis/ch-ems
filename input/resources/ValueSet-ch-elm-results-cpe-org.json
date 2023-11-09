@@ -4,7 +4,7 @@
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org",
   "version": "2023-10-31",
   "name": "ChElmResultsCpeOrg",
-  "title": "CH ELM Results CPE Org",
+  "title": "CH ELM Results Cpe Org",
   "status": "active",
   "experimental": false,
   "description": "This CH ELM value set includes the codes for the laboratory test results to complete the leading code with an additional code.",

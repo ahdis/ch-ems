@@ -58,7 +58,7 @@ In some cases, the collection material must be explicitly specified.
 
 [Example Chlamydia trachomatis](Bundle-2Doc-ChlamydiaTrachomatis.html): The leading code (Observation.code = LOINC 6349-5) is completed by an additional code for the collection material (Specimen.type = SNOMED CT 119393003).
 
-1. Check if Observation.code is a member of the [CH ELM Expecting Specimen Specification To Result Completion ValueSets Mapping](ConceptMap-ch-elm-expecting-specimen-specification-to-result-completion-vs.html) (Source Code)
+1. Check if Observation.code is a member of the ConceptMap [CH ELM Expecting Specimen Specification To Result Completion Vs](ConceptMap-ch-elm-expecting-specimen-specification-to-result-completion-vs.html) (Source Code)
    * NO: Observation.code does cover all axes, see section [Leading Code](#leading-code)
    * YES: The collection material must be explicitly specified, continue with step 2
       * Example Chlamydia trachomatis: LOINC 6349-5 is a member of the ConceptMap 
@@ -74,7 +74,7 @@ In some cases, an additional organism must be specified.
 
 [Example Carbapenemase-producing Enterobacteriaceae (CPE)](Bundle-3Doc-CPE.html): The leading code (Observation.code = LOINC 85827-4) is completed by an additional code for the organism (Observation.valueCodeableConcept = SNOMED CT 56415008).
 
-1. Check if Observation.code is a member of the [CH ELM Expecting Organism Specification To Result Completion ValueSets Mapping](ConceptMap-ch-elm-expecting-organism-specification-to-result-completion-vs.html) (Source Code)
+1. Check if Observation.code is a member of the ConceptMap [CH ELM Expecting Organism Specification To Result Completion Vs](ConceptMap-ch-elm-expecting-organism-specification-to-result-completion-vs.html) (Source Code)
    * NO: Observation.code does cover all axes, see section [Leading Code](#leading-code)
    * YES: An additional code for the organism must be specified, continue with step 2
       * Example Carbapenemase-producing Enterobacteriaceae (CPE): LOINC 85827-4 is a member of the ConceptMap 
