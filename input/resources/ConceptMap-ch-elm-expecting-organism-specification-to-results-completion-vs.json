@@ -1,19 +1,19 @@
 {
     "resourceType": "ConceptMap",
-    "id": "ch-elm-expecting-organism-specification-to-result-completion-vs",
-    "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-organism-specification-to-result-completion-vs",
+    "id": "ch-elm-expecting-organism-specification-to-results-completion-vs",
+    "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-organism-specification-to-results-completion-vs",
     "version": "2023-10-30",
-    "name": "ChElmExpectingOrganismSpecificationToResultCompletionVs",
-    "title": "CH ELM Expecting Organism Specification To Result Completion Vs",
+    "name": "ChElmExpectingOrganismSpecificationToResultsCompletionVs",
+    "title": "CH ELM Expecting Organism Specification To Results Completion Vs",
     "status": "active",
     "experimental": false,
     "description": "This CH ELM concept map shows which leading codes have to be completed by an additional code. The target code shows the URL of the value set from which the completing codes for the expecting specimen must come from.",
     "sourceCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-organism-specification",
-    "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-result-completion-vs",
+    "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-completion-vs",
     "group": [
         {
             "source": "http://loinc.org",
-            "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-result-completion-vs",
+            "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-completion-vs",
             "element": [
                 {
                     "code": "85827-4",
