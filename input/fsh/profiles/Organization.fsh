@@ -23,6 +23,7 @@ Description: "This CH ELM base profile constrains the Organization resource for 
 * identifier[UIDB] 0..0
 * identifier[BER] 0..0
 * name 1..
+* name ^maxLength = 100
 
 
 Profile: ChElmOrganizationOrderer
@@ -38,6 +39,7 @@ Description: "This CH ELM base profile constrains the Organization resource for 
 * identifier[UIDB] 0..0
 * identifier[BER] 0..0
 * name MS
+* name ^maxLength = 100
 * address ..1 MS
 * address.line ..1 MS
 * address.line.extension[streetName] MS

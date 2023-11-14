@@ -11,6 +11,7 @@ All significant changes to this FHIR implementation guide will be documented on 
       * Potential usage: A new leading code to be reported is introduced, which could not yet get updated in the implementation guide 
 * Include a check (warning) if Observation.code and ServiceRequest.code are equal (so far no other requirements)
 * Validation of Bundle for DocumentReference [#29](https://github.com/ahdis/ch-elm/issues/29)
+* [#43](https://github.com/ahdis/ch-elm/issues/43): Add limits to string lengths
 
 #### Changed / Updated
 * [#15](https://github.com/ahdis/ch-elm/issues/15): API update for search capabilities
