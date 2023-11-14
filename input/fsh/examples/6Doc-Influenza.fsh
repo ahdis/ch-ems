@@ -66,7 +66,7 @@ Instance: 6Obs-Influenza
 InstanceOf: ChElmObservationResultsLaboratory
 Usage: #inline
 * status = #final
-* category = $observation-category#laboratory "Laboratory"
+* category[laboratory] = $observation-category#laboratory "Laboratory"
 * code = $loinc#100343-3 "Influenza virus B RNA [Presence] in Saliva (oral fluid) by NAA with probe detection"
 * subject = Reference(1Pat-DM)
 * effectiveDateTime = "2023-09-10T14:20:00+02:00"

@@ -17,13 +17,13 @@ Description: "This CH ELM base profile constrains the Composition resource for t
 * subject only Reference(ChElmPatient)
 * author ..1
 * author only Reference(ChElmOrganizationAuthor)
-* section 1..
-* section.title 1..
-* section.code 1..
-* section.code only ChElmCodeableConcept
-
+* section 1..1
 * section[lab-no-subsections] 1..1
+* section[lab-no-subsections].title 1..
+* section[lab-no-subsections].code 1..
+* section[lab-no-subsections].code only ChElmCodeableConcept
 * section[lab-no-subsections].code from ChElmLabStudyTypes (required)
 * section[lab-no-subsections].entry 1..1
 * section[lab-no-subsections].entry only Reference(ChElmObservationResultsLaboratory)
 * section[lab-no-subsections].section ..0
+* section[lab-subsections] 0..0
