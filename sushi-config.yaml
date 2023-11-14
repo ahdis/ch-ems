@@ -8,15 +8,15 @@ canonical: http://fhir.ch/ig/ch-elm
 name: CH_ELM
 title: "CH ELM (R4)"
 description: FHIR® Implementation Guide for the Electronic Laboratory Report of the Swiss Federal Office of Public Health
-status: draft # draft | active | retired | unknown
+status: active # draft | active | retired | unknown
 license: CC0-1.0
 copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CHE
-date: 2023-09-19
-version: 1.0.0-ci-build
+date: 2023-11-16
+version: 1.0.0
 fhirVersion: 4.0.1
 copyrightYear: 2023+
-releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: trial-use # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 publisher:
   name: Federal Office of Public Health FOPH
 contact:
@@ -74,7 +74,9 @@ parameters:
   path-resource:
     - input/resources
     - fsh-generated/resources
-  no-narrative: Bundle/*
+  no-narrative: 
+    - Bundle/*
+    - DocumentReference/*
   excludettl: true
-  apply-version: false
-  default-version: true
+#  apply-version: false
+#  default-version: true
