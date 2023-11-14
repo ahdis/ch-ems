@@ -4,7 +4,7 @@ Id: ch-elm-practitioner-orderer
 Title: "CH ELM Practitioner: Orderer"
 Description: "This CH ELM base profile constrains the Practitioner resource for the orderer."
 * . ^short = "CH ELM Practitioner: Orderer"
-* identifier ..1
+* identifier ..1 MS
 * identifier[GLN] ..1 MS
 * identifier[ZSR] 0..0
 * name ..1

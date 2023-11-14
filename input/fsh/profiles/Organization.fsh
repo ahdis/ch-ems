@@ -32,13 +32,13 @@ Title: "CH ELM Organization: Orderer"
 Description: "This CH ELM base profile constrains the Organization resource for the orderer."
 * . ^short = "CH ELM Organization: Orderer"
 * extension contains ChElmExtDepartment named department 0..1 MS
-* identifier ..1
+* identifier ..1 MS
 * identifier[GLN] MS
 * identifier[ZSR] 0..0
 * identifier[UIDB] 0..0
 * identifier[BER] 0..0
 * name MS
-* address ..1
+* address ..1 MS
 * address.line ..1 MS
 * address.line.extension[streetName] MS
 * address.line.extension[houseNumber] MS

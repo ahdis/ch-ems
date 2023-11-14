@@ -33,11 +33,11 @@ https://www.bag.admin.ch/dam/bag/de/dokumente/mt/msys/leitfaden-zur-meldepflicht
 * birthDate 1..
 * birthDate obeys ch-elm-dateTime
 
-* address 1..1
+* address ..1 MS
 * address ^slicing.discriminator[0].type = #value
 * address ^slicing.discriminator[=].path = "use"
 * address ^slicing.rules = #open
-* address contains home 1..1
+* address contains home ..1 MS
 * address[home] ^short = "Residential address"
 * address[home].use 1..
 * address[home].use = #home

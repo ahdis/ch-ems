@@ -14,5 +14,6 @@ Description: "This CH ELM base profile constrains the Specimen resource for the 
 * subject 1..
 * subject only Reference(ChElmPatient)
 
+* collection MS
 * collection.collectedDateTime obeys ch-elm-dateTime
 * collection.collectedDateTime MS
