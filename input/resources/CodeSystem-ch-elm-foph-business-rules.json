@@ -1,0 +1,58 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "ch-elm-foph-business-rules",
+    "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-foph-business-rules",
+    "version": "2023-11-13",
+    "name": "ChElmFophBusinessRules",
+    "title": "CH ELM Foph Business Rules",
+    "status": "active",
+    "experimental": false,
+    "description": "This CH ELM code system describes specific business rules of the FOPH, which are applied during processing. Please note that the set of rules detailed herein only covers processes explicitly declared by the FOPH. Additional rules, not included in this code system, are applied by the FHIR validation logic, resulting in further codes. For more information about these additional codes, consult the official FHIR documentation and the implementation guideline.",
+    "caseSensitive": false,
+    "hierarchyMeaning": "is-a",
+    "content": "complete",
+    "concept": [
+        {
+            "code": "error",
+            "display": "Error",
+            "definition": "If the rule is violated, the resource is not conformant.",
+            "concept": [
+                {
+                    "code": "FOPH-001",
+                    "display": "Could not detect reporting unit member. Organization Id: %submitterOrganizationId%, Error: %error%"
+                }
+            ]
+        },
+        {
+            "code": "warning",
+            "display": "Warning",
+            "definition": "If the rule is violated, the resource is conformant, but it is not necessarily following best practice.",
+            "concept": [
+                {
+                    "code": "FOPH-002",
+                    "display": "Expected 0..1 AHV Identifiers but received %numberOfReceivedIdentifiers%. Only the first identifier of this type is imported."
+                },
+                {
+                    "code": "FOPH-003",
+                    "display": "Expected 0..1 Non-AHV Identifiers but received %numberOfReceivedIdentifiers%. Only the first identifier of this type is imported."
+                },
+                {
+                    "code": "FOPH-004",
+                    "display": "Expected exactly 1 patient name, received %numberOfPatientNames%. Only the first name will be imported."
+                },
+                {
+                    "code": "FOPH-005",
+                    "display": "Multiple patient given names are only allowed for illnesses that require a fully named patient. Only the first given name will be imported."
+                },
+                {
+                    "code": "FOPH-006",
+                    "display": "Multiple addresses with use home received. Only the first address will be imported."
+                },
+                {
+                    "code": "FOPH-007",
+                    "display": "Patient address must include the following elements: %missingElements%."
+                }
+            ]
+        }
+    ]
+}
