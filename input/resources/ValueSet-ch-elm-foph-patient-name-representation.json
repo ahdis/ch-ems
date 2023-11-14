@@ -20,15 +20,15 @@
           {
             "code": "initials",
             "display": "Initials"
-            },
+          },
           {
             "code": "hiv-code",
             "display": "HIV Code"
-            },
+          },
           {
             "code": "conditional",
             "display": "Conditional"
-          }  
+          }
         ]
       }
     ]
