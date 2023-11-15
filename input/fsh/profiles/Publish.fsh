@@ -89,7 +89,7 @@ A profile on the DocumentReference resource for the publication response:
 Instance: SearchParameter-ch-elm-status
 InstanceOf: SearchParameter
 Usage: #definition
-* name = "elm-status"
+* name = "elmstatus"
 * description = "Status of the processing of the document referenced by the DocumentReference"
 * status = #active
 * code = #elm-status
