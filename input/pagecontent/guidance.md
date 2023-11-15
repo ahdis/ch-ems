@@ -19,7 +19,7 @@ Depending on the organism (leading code), the requirement for how the patient's 
 * **Conditional**
    * The patient's identification cannot determinded directly based on the leading code. Consult the implementation guideline for further information.
 
-The complete overview of which characteristics are used for which organisms can be found in the ConceptMap [CH ELM Results To Foph Patient Name Representation](ConceptMap-ch-elm-results-to-foph-patient-name-representation.html) and in the Ordinance of the FDHA on the Reporting of Observations of Communicable human diseases (SR 818.101.126) ([DE](https://www.fedlex.admin.ch/eli/cc/2015/892/de), [FR](https://www.fedlex.admin.ch/eli/cc/2015/892/fr), [IT](https://www.fedlex.admin.ch/eli/cc/2015/892/it)).   
+The complete overview of which characteristics are used for which organisms can be found in the ConceptMap [CH ELM Results To FOPH Patient Name Representation](ConceptMap-ch-elm-results-to-foph-patient-name-representation.html) and in the Ordinance of the FDHA on the Reporting of Observations of Communicable human diseases (SR 818.101.126) ([DE](https://www.fedlex.admin.ch/eli/cc/2015/892/de), [FR](https://www.fedlex.admin.ch/eli/cc/2015/892/fr), [IT](https://www.fedlex.admin.ch/eli/cc/2015/892/it)).   
 
 Note: There is no constraint in the patient profile that checks whether the name has been provided correctly. This requirement validation is performed by the FOPH, see also [Business Rules](CodeSystem-ch-elm-foph-business-rules.html).
 

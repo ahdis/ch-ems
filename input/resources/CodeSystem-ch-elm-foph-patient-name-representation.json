@@ -4,7 +4,7 @@
   "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-foph-patient-name-representation",
   "version": "2023-11-14",
   "name": "ChElmFophPatientNameRepresentation",
-  "title": "CH ELM Foph Patient Name Representation",
+  "title": "CH ELM FOPH Patient Name Representation",
   "status": "active",
   "experimental": false,
   "description": "This CH ELM code system defines the codes which identify possible patient name schemas to be used.",
@@ -24,12 +24,12 @@
     {
       "code": "full-name",
       "display": "Full Name",
-      "definition": "Full Name of the Patient (including given and family names)."
+      "definition": "Full name of the patient (given name and family name)."
     },
     {
       "code": "initials",
       "display": "Initials",
-      "definition": "Only the initials of the patient's given name and family name are required."
+      "definition": "The first letter of the given name and family name. For compound names, only include the first part of the name."
     },
     {
       "code": "hiv-code",
@@ -39,7 +39,7 @@
     {
       "code": "conditional",
       "display": "Conditional",
-      "definition": "The leading code (Observation.code) does not define a patient-anonymisation, it is dependent on further specification of the organism. Consult the Ordinance SR 818.101.126 (https://www.fedlex.admin.ch/eli/cc/2015/892/de) to determine the required patient-anonymisation depending on the organism reported."
+      "definition": "The leading code (Observation.code) does not define a patient-anonymization, it is dependent on further specification of the organism. Consult the Ordinance SR 818.101.126 (https://www.fedlex.admin.ch/eli/cc/2015/892/de) to determine the required patient-anonymization depending on the organism reported."
     }
   ]
 }
