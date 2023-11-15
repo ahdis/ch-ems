@@ -24,7 +24,7 @@
     {
       "code": "full-name",
       "display": "Full Name",
-      "definition": "Full Name of the Patient (including given and family names)"
+      "definition": "Full Name of the Patient (including given and family names)."
     },
     {
       "code": "initials",
@@ -34,12 +34,12 @@
     {
       "code": "hiv-code",
       "display": "HIV Code",
-      "definition": "An HIV-specific code representing the patient. Consult the Implementation Guide for details on constructing the HIV patient identification code."
+      "definition": "An HIV-specific code representing the patient. Consult the 'Guidance - Personal Data (Patient Name)' for details on constructing the HIV patient identification code."
     },
     {
       "code": "conditional",
       "display": "Conditional",
-      "definition": "The patient's identification cannot determinded directly based on the leading code. Consult the implementation guideline for further information."
+      "definition": "The leading code (Observation.code) does not define a patient-anonymisation, it is dependent on further specification of the organism. Consult the Ordinance SR 818.101.126 (https://www.fedlex.admin.ch/eli/cc/2015/892/de) to determine the required patient-anonymisation depending on the organism reported."
     }
   ]
 }
