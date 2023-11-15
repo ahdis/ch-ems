@@ -33,8 +33,8 @@
             "definition": "If the rule is violated, the resource is conformant, but it is not necessarily following best practice.",
             "concept": [
                 {
-                    "code": "FOPH-007",
-                    "display": "Patient address must include the following elements: %missingElements%."
+                    "code": "FOPH-003",
+                    "display": "The following elements for the patient's address are expected: %missingElements%."
                 }
             ]
         },
@@ -45,11 +45,11 @@
             "concept": [
                 {
                     "code": "FOPH-001",
-                    "display": "Could not detect reporting unit member. Organization Id: %submitterOrganizationId%, Error: %error%"
+                    "display": "The provided laboratory identification %identifier% is either unknown or corresponds to a laboratory for which your account does not have reporting permissions. Please verify your laboratory identification. If it's correct, complete the necessary onboarding process before submitting data on behalf of this lab."
                 },
                 {
-                    "code": "FOPH-008",
-                    "display": "The required anonymization for the reported pathogen was violated."
+                    "code": "FOPH-002",
+                    "display": "The required anonymization for the reported organism was violated."
                 }                
             ]
         }
