@@ -7,4 +7,4 @@ Description: "This CH ELM extension enables the representation of a department (
 * . ^short = "CH ELM Extension: Department"
 * value[x] 1..
 * value[x] only string
-* valueString. ^short = "Name of the department"
+* valueString ^short = "Name of the department"
