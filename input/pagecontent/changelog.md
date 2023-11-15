@@ -12,6 +12,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * Include a check (warning) if Observation.code and ServiceRequest.code are equal (so far no other requirements)
 * [#29](https://github.com/ahdis/ch-elm/issues/29): Validation of Bundle for DocumentReference 
 * [#39](https://github.com/ahdis/ch-elm/issues/39): Integration of FOPH business rules as CodeSystem
+* [#43](https://github.com/ahdis/ch-elm/issues/43): Add limits to string lengths
 
 #### Changed / Updated
 * [#15](https://github.com/ahdis/ch-elm/issues/15): API update for search capabilities
