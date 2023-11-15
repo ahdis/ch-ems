@@ -1,0 +1,57 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "ch-elm-foph-business-rules",
+    "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-foph-business-rules",
+    "version": "2023-11-14",
+    "name": "ChElmFophBusinessRules",
+    "title": "CH ELM Foph Business Rules",
+    "status": "active",
+    "experimental": false,
+    "description": "This CH ELM code system describes specific business rules of the FOPH, which are applied during processing. Please note that the set of rules detailed herein only covers processes explicitly declared by the FOPH. Additional rules, not included in this code system, are applied by the FHIR validation logic, resulting in further codes. For more information about these additional codes, consult the official FHIR documentation and the implementation guideline.",
+    "jurisdiction": [
+        {
+            "coding": [
+                {
+                    "system": "urn:iso:std:iso:3166",
+                    "code": "CHE"
+                }
+            ]
+        }
+    ],
+    "caseSensitive": false,
+    "hierarchyMeaning": "is-a",
+    "content": "complete",
+    "concept": [
+        {
+            "code": "information",
+            "display": "Information",
+            "definition": "A purely informational message."
+        },
+        {
+            "code": "warning",
+            "display": "Warning",
+            "definition": "If the rule is violated, the resource is conformant, but it is not necessarily following best practice.",
+            "concept": [
+                {
+                    "code": "FOPH-003",
+                    "display": "The following elements for the patient's address are expected: %missingElements%."
+                }
+            ]
+        },
+        {
+            "code": "error",
+            "display": "Error",
+            "definition": "If the rule is violated, the resource is not conformant.",
+            "concept": [
+                {
+                    "code": "FOPH-001",
+                    "display": "The provided laboratory identification %identifier% is either unknown or corresponds to a laboratory for which your account does not have reporting permissions. Please verify your laboratory identification. If it's correct, complete the necessary onboarding process before submitting data on behalf of this lab."
+                },
+                {
+                    "code": "FOPH-002",
+                    "display": "The required anonymization for the reported organism was violated."
+                }                
+            ]
+        }
+    ]
+}

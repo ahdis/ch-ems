@@ -7,6 +7,7 @@ Description: "This CH ELM base profile constrains the ServiceRequest resource fo
 * identifier 1..1
 * identifier.system 1..
 * identifier.value 1..
+* identifier.value ^maxLength = 100
 * status = #completed
 * intent = #order
 * code 1..
