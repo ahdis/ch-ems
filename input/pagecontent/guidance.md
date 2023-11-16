@@ -6,18 +6,22 @@ The website of the Federal Office of Public Health (FOPH) ([EN](https://www.bag.
 The reporting obligation is the key systemic element for the surveillance of communicable diseases in Switzerland. Notifiable laboratory findings must comply with the legal provisions regarding reporting criteria, reporting deadlines and reporting data in accordance with the Ordinance of the FDHA on the Reporting of Observations of Communicable human diseases (SR 818.101.126) ([DE](https://www.fedlex.admin.ch/eli/cc/2015/892/de), [FR](https://www.fedlex.admin.ch/eli/cc/2015/892/fr), [IT](https://www.fedlex.admin.ch/eli/cc/2015/892/it)).
 
 ### Personal Data (Patient Name)
-Depending on the organism, the requirement for how the patient's name (e.g. Ernst Karl Tanner) is reported varies. There are three characteristics:
-* **Full name**
+Depending on the organism (leading code), the requirement for how the patient's name (e.g. Ernst Karl Tanner) is reported varies. There are different [patient name schemas](CodeSystem-ch-elm-foph-patient-name-representation.html) to be used:
+* **Full Name**
    * Organism: SARS-CoV-2, Legionella spp., etc.
    * [Example](Patient-Pat-ErnstKarlTanner.json.html): Ernst Karl Tanner (Patient.name.family = Tanner, Patient.name.given = Ernst, Karl)
 * **Initials**
    * Organism: Neisseria gonorrhoeae, Chlamydia trachomatis, etc.
    * [Example](Patient-Pat-ET.json.html): ET (Patient.name.family = T, Patient.name.given = E)
-* **Special case**
+* **HIV Code**
    * Organism: In the case of HIV/AIDS, under initials, enter the first letter and the number of letters of the first name. If this is longer than 9 letters, the number is 0. In the case of multi-part first names with a hyphen or in two words, only the first part is used.
    * [Example](Patient-Pat-E5.json.html): E5 (Patient.name.text = E5, Patient.name.family/Patient.name.given = masked)
+* **Conditional**
+   * The patient's identification cannot determinded directly based on the leading code. Consult the implementation guideline for further information.
 
-The complete overview of which characteristics are used for which organisms can be found in the Ordinance of the FDHA on the Reporting of Observations of Communicable human diseases (SR 818.101.126) ([DE](https://www.fedlex.admin.ch/eli/cc/2015/892/de), [FR](https://www.fedlex.admin.ch/eli/cc/2015/892/fr), [IT](https://www.fedlex.admin.ch/eli/cc/2015/892/it)).
+The complete overview of which characteristics are used for which organisms can be found in the ConceptMap [CH ELM Results To FOPH Patient Name Representation](ConceptMap-ch-elm-results-to-foph-patient-name-representation.html) and in the Ordinance of the FDHA on the Reporting of Observations of Communicable human diseases (SR 818.101.126) ([DE](https://www.fedlex.admin.ch/eli/cc/2015/892/de), [FR](https://www.fedlex.admin.ch/eli/cc/2015/892/fr), [IT](https://www.fedlex.admin.ch/eli/cc/2015/892/it)).   
+
+Note: There is no constraint in the patient profile that checks whether the name has been provided correctly. This requirement validation is performed by the FOPH, see also [Business Rules](CodeSystem-ch-elm-foph-business-rules.html).
 
 ### Laboratory Study Types
 The laboratory report is currently either of the type [organism detection](#organism-detection) (LOINC 18725-2 Microbiology studies (set)) or [resistance detection](#resistance-detection) (LOINC 18769-0 Microbial susceptibility tests Set). These types are defined in the [ValueSet CH ELM Lab Study Types](ValueSet-ch-elm-lab-study-types.html) and are represented in the `Composition.section.code` element of the respective document. 

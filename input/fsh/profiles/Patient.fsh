@@ -20,9 +20,8 @@ Description: "This CH ELM base profile constrains the Patient resource for the p
 * identifier[insuranceCardNumber] 0..0
 
 * name 1..1
-* name ^short = "Whether the personal data is transmitted by using initials, full name or a special combination can be seen from the table on p.66 of this document: 
-https://www.bag.admin.ch/dam/bag/de/dokumente/mt/msys/leitfaden-zur-meldepflicht-2023.pdf.download.pdf/meldepflicht-leitfaden-2023-de.pdf"
-* name.text ^short = "For usage in the case of HIV/AIDS see IG guidance"
+* name ^short = "Whether the personal data is transmitted by using initials, full name or a special combination is described under 'Guidance - Personal Data (Patient Name)'"
+* name.text ^short = "For usage in the case of HIV/AIDS (see IG guidance)"
 * name.text ^maxLength = 2
 * name.family 1..
 * name.family ^short = "In the case of HIV/AIDS masked and provide a specific value (see IG guidance)"

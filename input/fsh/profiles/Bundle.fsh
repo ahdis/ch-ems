@@ -36,12 +36,9 @@ Description: "This CH ELM base profile constrains the Bundle resource for the pu
 * entry[Organization] 1..3
 
 
-
-
-
 Profile: ChElmDocumentStrict
 Parent: ChElmDocument
 Id: ch-elm-document-strict
 Title: "CH ELM Document: Laboratory Report (strict)"
-Description: "CH ELM profile for the Bundle resource with a stricter validation mechanism than the base profile via binding strength reinforcement for the leading code element."
+Description: "CH ELM profile for the Bundle resource with a stricter validation mechanism than the base profile via binding strength reinforcement for the leading code element and checking patient name requirements if possible."
 * entry[Observation].resource only ChElmObservationResultsLaboratoryStrict

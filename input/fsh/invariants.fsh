@@ -37,3 +37,13 @@ Invariant: ch-elm-urlconformstochelmbundle
 Description: "Must have a resolvable URL conforming to the CH-ELM Bundle."
 Severity: #error
 Expression: "url.exists() and url.resolve().conformsTo('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document')"
+
+Invariant: ch-elm-patient-name-representation-initial-loinc
+Description: "If Observation.code is a mapped to initials in http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-foph-patient-name-representation then patient.name.first and given can must have one character"
+Severity: #error
+Expression: "'http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-foph-patient-name-representation'.resolve().group.where(source='http://loinc.org').element.where(code=%context.code.coding.where(system='http://loinc.org').first().code).target.first().code = 'initials' implies subject.resolve().name.first().family.length() = 1 and  subject.resolve().name.first().given.first().length() = 1"
+
+Invariant: ch-elm-patient-name-representation-initial-snomedct
+Description: "If Observation.code is a mapped to initials in http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-foph-patient-name-representation then patient.name.first and given can must have one character"
+Severity: #error
+Expression: "'http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-foph-patient-name-representation'.resolve().group.where(source='http://snomed.info/sct').element.where(code=%context.code.coding.where(system='http://snomed.info/sct').first().code).target.first().code = 'initials' implies subject.resolve().name.first().family.length() = 1 and  subject.resolve().name.first().given.first().length() = 1"
