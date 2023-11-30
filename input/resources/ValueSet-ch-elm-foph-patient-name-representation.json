@@ -1,13 +1,16 @@
 {
   "resourceType": "ValueSet",
   "id": "ch-elm-foph-patient-name-representation",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>CH ELM FOPH Patient Name Representation</b><br />This CH ELM resource defines the codes which identify possible patient name schemas to be used.<br /></p></div>"
+  },
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-foph-patient-name-representation",
-  "version": "2023-11-14",
+  "version": "2023-11-30",
   "name": "ChElmFophPatientNameRepresentation",
   "title": "CH ELM FOPH Patient Name Representation",
   "status": "active",
-  "experimental": false,
-  "description": "This CH ELM value set includes the codes which identify possible patient name schemas to be used.",
+  "description": "This CH ELM resource defines the codes which identify possible patient name schemas to be used.",
   "compose": {
     "include": [
       {
@@ -15,7 +18,7 @@
         "concept": [
           {
             "code": "full-name",
-            "display": "Full Name"
+            "display": "Full name"
           },
           {
             "code": "initials",

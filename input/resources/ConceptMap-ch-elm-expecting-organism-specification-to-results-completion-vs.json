@@ -1,41 +1,26 @@
 {
-    "resourceType": "ConceptMap",
-    "id": "ch-elm-expecting-organism-specification-to-results-completion-vs",
-    "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-organism-specification-to-results-completion-vs",
-    "version": "2023-11-14",
-    "name": "ChElmExpectingOrganismSpecificationToResultsCompletionVs",
-    "title": "CH ELM Expecting Organism Specification To Results Completion Vs",
-    "status": "active",
-    "experimental": false,
-    "description": "This CH ELM concept map shows which leading codes have to be completed by an additional code. The target code shows the URL of the value set from which the completing codes for the expecting specimen must come from.",
-    "jurisdiction": [
-      {
-        "coding": [
-          {
-            "system": "urn:iso:std:iso:3166",
-            "code": "CHE"
-          }
-        ]
-      }
-    ],
-    "sourceCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-organism-specification",
-    "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-completion-vs",
-    "group": [
+  "resourceType": "ConceptMap",
+  "id": "ch-elm-expecting-organism-specification-to-results-completion-vs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>CH ELM Expecting Organism Specification To Results Completion Vs</b><br />This CH ELM concept map shows which leading codes have to be completed by an additional code. The target code shows the URL of the value set from which the completing codes for the expecting specimen must come from.<br /></p></div>"
+  },
+  "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-organism-specification-to-results-completion-vs",
+  "version": "2023-11-30",
+  "name": "ChElmExpectingOrganismSpecificationToResultsCompletionVs",
+  "title": "CH ELM Expecting Organism Specification To Results Completion Vs",
+  "status": "active",
+  "description": "This CH ELM concept map shows which leading codes have to be completed by an additional code. The target code shows the URL of the value set from which the completing codes for the expecting specimen must come from.",
+  "jurisdiction": [
+    {
+      "coding": [
         {
-            "source": "http://loinc.org",
-            "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-completion-vs",
-            "element": [
-                {
-                    "code": "85827-4",
-                    "display": "Carbapenem resistance bla OXA-48-like gene [Presence] by Molecular method",
-                    "target": [
-                        {
-                            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org",
-                            "equivalence": "relatedto"
-                        }
-                    ]
-                }
-            ]
+          "system": "urn:iso:std:iso:3166",
+          "code": "CHE"
         }
-    ]
+      ]
+    }
+  ],
+  "sourceCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-organism-specification",
+  "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-completion-vs"
 }

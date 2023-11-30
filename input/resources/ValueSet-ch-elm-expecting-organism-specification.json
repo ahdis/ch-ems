@@ -1,24 +1,14 @@
 {
   "resourceType": "ValueSet",
   "id": "ch-elm-expecting-organism-specification",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>CH ELM Expecting Organism Specification</b><br />This CH ELM value set includes the leading codes for the laboratory test results, which have to be completed by another code for the expecting organism.<br /></p></div>"
+  },
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-organism-specification",
-  "version": "2023-11-14",
+  "version": "2023-11-30",
   "name": "ChElmExpectingOrganismSpecification",
   "title": "CH ELM Expecting Organism Specification",
   "status": "active",
-  "experimental": false,
-  "description": "This CH ELM value set includes the leading codes for the laboratory test results, which have to be completed by another code for the expecting organism.",
-  "compose": {
-    "include": [
-      {
-        "system": "http://loinc.org",
-        "concept": [
-          {
-            "code": "85827-4",
-            "display": "Carbapenem resistance bla OXA-48-like gene [Presence] by Molecular method"
-          }
-        ]
-      }
-    ]
-  }
+  "description": "This CH ELM value set includes the leading codes for the laboratory test results, which have to be completed by another code for the expecting organism."
 }
