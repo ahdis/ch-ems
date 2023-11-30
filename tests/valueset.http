@@ -26,3 +26,23 @@ Accept: application/fhir+json
 GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ConceptMap HTTP/1.1
 Accept: application/fhir+json
 
+
+###
+GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/ch-elm-results-completion-vs HTTP/1.1
+Accept: application/fhir+json
+
+###
+GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/ch-elm-results-geni-spec HTTP/1.1
+Accept: application/fhir+json
+
+###
+GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/ch-elm-results-cpe-org HTTP/1.1
+Accept: application/fhir+json
+
+###
+GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/ch-elm-results-laboratory-observation HTTP/1.1
+Accept: application/fhir+json
+
+###
+GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ValueSet/ch-elm-results-laboratory-observation HTTP/1.1
+Accept: application/fhir+json
