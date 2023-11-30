@@ -31,7 +31,7 @@ Description: "This CH ELM base profile constrains the Bundle resource for the pu
 * entry[PractitionerRole].resource only ChElmPractitionerRoleOrderer
 * entry[PractitionerRole] 1..1
 * entry[Practitioner].resource only ChElmPractitionerOrderer
-* entry[Practitioner] 1..1
+* entry[Practitioner] 0..1
 * entry[Organization].resource only $ch-core-organization
 * entry[Organization] 1..3
 
