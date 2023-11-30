@@ -7,6 +7,7 @@ A profile on the DocumentReference resource with publication constraints:
 - must be status current
 - must have an identifier
 - uses attachment.url to carry the document as a contained resource
+- validation according to http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document
 """
 * modifierExtension 0..0
 * identifier 1..1
@@ -26,6 +27,19 @@ A profile on the DocumentReference resource with publication constraints:
 * content.attachment.url 1..1
 * content.attachment.url ^short = "The document is referenced by this url, contained in the DocumentReference"
 * content.attachment.creation 0..1 MS
+
+Profile:        PublishDocumentReferenceStrict
+Parent:         PublishDocumentReference
+Id:             PublishDocumentReferenceStrict
+Title:          "DocumentReference for sending the report with strict validation"
+Description:    """
+A profile on the DocumentReference resource with publication constraints: 
+- must be status current
+- must have an identifier
+- uses attachment.url to carry the document as a contained resource
+- strict validation according to http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+"""
+* content.attachment obeys ch-elm-urlconformstochelmbundlestrict
 
 ValueSet: ChElmStatus
 Id: ch-elm-status

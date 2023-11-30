@@ -1,7 +1,7 @@
 {
   "package-id" : "ch.fhir.ig.ch-elm",
-  "version" : "1.0.0-trialuse",
-  "path" : "http://fhir.ch/ig/ch-elm/1.0.0-trialuse",
+  "version" : "1.0.0",
+  "path" : "http://fhir.ch/ig/ch-elm/1.0.0",
   "mode" : "milestone",
   "status" : "draft",
   "sequence" : "STU 1",
@@ -11,5 +11,5 @@
   "title" : "Observations of notifiable communicable infectious diseases",
   "introduction" : "CH ELM is a project of the Swiss Federal Office of Public Health (FOPH), Communicable Diseases Division, to enable laboratories to send their observations of notifiable communicable infectious diseases to the FOPH electronically.",
   "ci-build" : "https://build.fhir.org/ig/ahdis/ch-elm/index.html",
-  "first": true
+  "first": false
 }

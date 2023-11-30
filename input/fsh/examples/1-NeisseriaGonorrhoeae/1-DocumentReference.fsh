@@ -1,4 +1,16 @@
 Instance: 1-DocumentReference
+InstanceOf: PublishDocumentReferenceStrict
+Usage: #example
+Title: "DocumentReference for reporting Neisseria Gonorhoeae"
+Description: "Example for a CH ELM DocumentReference: Laboratory Report"
+* contained = 1Doc-NeisseriaGonorrhoeae
+* status = #current
+* identifier[0].system = "urn:ietf:rfc:3986"
+* identifier[0].value = "urn:uuid:1901332d-6012-443f-9690-9291adb2e19d"
+* content.attachment.language = #de-CH
+* content.attachment.url = "#1Doc-NeisseriaGonorrhoeae" 
+
+Instance: 2-DocumentReference
 InstanceOf: PublishDocumentReference
 Usage: #example
 Title: "DocumentReference for reporting Neisseria Gonorhoeae"
