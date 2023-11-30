@@ -1,5 +1,14 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
+### x.x.x-release
+
+#### Added
+
+#### Changed / Updated
+
+#### Fixed
+
+
 ### 1.0.0-release
 
 #### Added
