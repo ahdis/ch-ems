@@ -6,8 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>CH ELM Foph Business Rules</b><br />This CH ELM code system describes specific business rules of the FOPH, which are applied during processing. Please note that the set of rules detailed herein only covers processes explicitly declared by the FOPH. Additional rules, not included in this code system, are applied by the FHIR validation logic, resulting in further codes. For more information about these additional codes, consult the official FHIR documentation and the implementation guideline.<br /></p></div>"
   },
   "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-foph-business-rules",
-  "version": "2023-11-30",
+  "version": "2023-12-01",
+  "name": "ChElmFophBusinessRules",
+  "title": "CH ELM Foph Business Rules",
   "status": "active",
+  "experimental": false,
   "description": "This CH ELM code system describes specific business rules of the FOPH, which are applied during processing. Please note that the set of rules detailed herein only covers processes explicitly declared by the FOPH. Additional rules, not included in this code system, are applied by the FHIR validation logic, resulting in further codes. For more information about these additional codes, consult the official FHIR documentation and the implementation guideline.",
   "jurisdiction": [
     {
@@ -40,8 +43,12 @@
       "definition": "If the rule is violated, the resource is conformant, but it is not necessarily following best practice.",
       "concept": [
         {
-          "code": "FOPH-009",
-          "display": "The transmitted code %code% (%codeSystem%) is outside the defined validity period %validFrom% - %validTo%."
+          "code": "FOPH-005",
+          "display": "The required anonymization for the reported organism was violated. The following field(s) are affected: %fields%"
+        },
+        {
+          "code": "FOPH-011",
+          "display": "The material is already specified by the leading code. The additional material specified in specimen.type will be ignored."
         },
         {
           "code": "FOPH-010",
@@ -63,8 +70,8 @@
       "definition": "If the rule is violated, the resource is not conformant.",
       "concept": [
         {
-          "code": "FOPH-005",
-          "display": "The required anonymization for the reported organism was violated."
+          "code": "FOPH-009",
+          "display": "The transmitted code %code% (%codeSystem%) is outside the defined validity period %validFrom% - %validTo%."
         },
         {
           "code": "FOPH-002",

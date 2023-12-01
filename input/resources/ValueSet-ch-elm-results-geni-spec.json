@@ -6,10 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>CH ELM Results Geni Spec</b><br />The &quot;CH ELM Results Geni Spec&quot; material group provides a curated set of codes representing specific materials. Each code within this group is selected to ensure consistency and accuracy for medical coding related to the primary LOINC codes. Clients using the &quot;CH ELM Results Geni Spec&quot; group should refer to the provided codes to ensure they capture and report material information correctly and consistently.<br /></p></div>"
   },
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
-  "version": "2023-11-30",
+  "version": "2023-12-01",
   "name": "ChElmResultsGeniSpec",
   "title": "CH ELM Results Geni Spec",
   "status": "active",
+  "experimental": false,
   "description": "The \"CH ELM Results Geni Spec\" material group provides a curated set of codes representing specific materials. Each code within this group is selected to ensure consistency and accuracy for medical coding related to the primary LOINC codes. Clients using the \"CH ELM Results Geni Spec\" group should refer to the provided codes to ensure they capture and report material information correctly and consistently.",
   "compose": {
     "include": [

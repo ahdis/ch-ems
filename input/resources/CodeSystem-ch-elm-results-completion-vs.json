@@ -6,9 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>CH ELM Results Completion Vs</b><br />This CH ELM code system defines the value set URLs as codes to map in the concept maps the leading codes, which must be completed with additional codes.<br /></p></div>"
   },
   "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-completion-vs",
-  "version": "2023-11-30",
+  "version": "2023-12-01",
+  "name": "ChElmResultsCompletionVs",
   "title": "CH ELM Results Completion Vs",
   "status": "active",
+  "experimental": false,
   "description": "This CH ELM code system defines the value set URLs as codes to map in the concept maps the leading codes, which must be completed with additional codes.",
   "jurisdiction": [
     {

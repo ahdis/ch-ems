@@ -6,10 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>CH ELM Results Cpe Org</b><br />The &quot;CH ELM Results Cpe Org&quot; organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the &quot;CH ELM Results Cpe Org&quot; group should refer to the provided codes to accurately and uniformly capture and report organism-related information.<br /></p></div>"
   },
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org",
-  "version": "2023-11-30",
+  "version": "2023-12-01",
   "name": "ChElmResultsCpeOrg",
   "title": "CH ELM Results Cpe Org",
   "status": "active",
+  "experimental": false,
   "description": "The \"CH ELM Results Cpe Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Cpe Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information.",
   "compose": {
     "include": [

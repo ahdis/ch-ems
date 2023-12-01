@@ -6,10 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>CH ELM Results Completion Vs</b><br />This CH ELM value set includes the value set URLs as codes to map in the concept maps the leading codes, which must be completed with additional codes.<br /></p></div>"
   },
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-completion-vs",
-  "version": "2023-11-30",
+  "version": "2023-12-01",
   "name": "ChElmResultsCompletionVs",
   "title": "CH ELM Results Completion Vs",
   "status": "active",
+  "experimental": false,
   "description": "This CH ELM value set includes the value set URLs as codes to map in the concept maps the leading codes, which must be completed with additional codes.",
   "compose": {
     "include": [
@@ -17,116 +18,88 @@
         "system": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-completion-vs",
         "concept": [
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-bot-spec",
-            "display": "ch-elm-results-bot-spec"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-bot-spec"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-diph-spec",
-            "display": "ch-elm-results-diph-spec"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-diph-spec"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
-            "display": "ch-elm-results-geni-spec"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sterile-spec",
-            "display": "ch-elm-results-sterile-spec"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sterile-spec"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-spec",
-            "display": "ch-elm-results-tub-spec"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-spec"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-bot-org",
-            "display": "ch-elm-results-bot-org"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-bot-org"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-bru-org",
-            "display": "ch-elm-results-bru-org"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-bru-org"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-camp-org",
-            "display": "ch-elm-results-camp-org"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-camp-org"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-chol-org",
-            "display": "ch-elm-results-chol-org"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-chol-org"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org",
-            "display": "ch-elm-results-cpe-org"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-diph-org",
-            "display": "ch-elm-results-diph-org"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-diph-org"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-ehec-org",
-            "display": "ch-elm-results-ehec-org"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-ehec-org"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-haem-org",
-            "display": "ch-elm-results-haem-org"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-haem-org"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-hiv-org",
-            "display": "ch-elm-results-hiv-org"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-hiv-org"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-inf-org",
-            "display": "ch-elm-results-inf-org"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-inf-org"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-influ-org",
-            "display": "ch-elm-results-influ-org"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-influ-org"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-lis-org",
-            "display": "ch-elm-results-lis-org"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-lis-org"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mal-org",
-            "display": "ch-elm-results-mal-org"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mal-org"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mea-org",
-            "display": "ch-elm-results-mea-org"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mea-org"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-men-org",
-            "display": "ch-elm-results-men-org"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-men-org"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mpx-ctng",
-            "display": "ch-elm-results-mpx-ctng"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mpx-ctng"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mpx-sash",
-            "display": "ch-elm-results-mpx-sash"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mpx-sash"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mpx-sashec",
-            "display": "ch-elm-results-mpx-sashec"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mpx-sashec"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-pneu-org",
-            "display": "ch-elm-results-pneu-org"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-pneu-org"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sal-org",
-            "display": "ch-elm-results-sal-org"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sal-org"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-shi-org",
-            "display": "ch-elm-results-shi-org"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-shi-org"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-gen-org",
-            "display": "ch-elm-results-tub-gen-org"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-gen-org"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-org",
-            "display": "ch-elm-results-tub-org"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-org"
           }
         ]
       }

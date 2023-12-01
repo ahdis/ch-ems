@@ -6,7 +6,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>CH ELM Results To FOPH Patient Name Representation</b><br />This CH ELM concept map specifies the required mode of patient representation for each leading code. It determines whether the full name, initials, or a unique code (e.g., for HIV patients) should be used, based on the specific LOINC code associated with the laboratory data. This ensures consistent and appropriate handling of patient identity in accordance with the type of pathogen reported.<br /></p></div>"
   },
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-foph-patient-name-representation",
-  "version": "2023-11-30",
+  "version": "2023-12-01",
   "name": "ChElmResultsToFophPatientNameRepresentation",
   "title": "CH ELM Results To FOPH Patient Name Representation",
   "status": "active",

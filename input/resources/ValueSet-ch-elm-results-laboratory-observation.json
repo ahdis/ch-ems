@@ -6,10 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>CH ELM Results Laboratory Observation</b><br />This CH ELM value set includes the codes for the laboratory test results (organism).<br /></p></div>"
   },
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
-  "version": "2023-11-30",
+  "version": "2023-12-01",
   "name": "ChElmResultsLaboratoryObservation",
   "title": "CH ELM Results Laboratory Observation",
   "status": "active",
+  "experimental": false,
   "description": "This CH ELM value set includes the codes for the laboratory test results (organism).",
   "compose": {
     "include": [
