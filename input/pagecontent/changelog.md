@@ -7,7 +7,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Changed / Updated
 
 #### Fixed
-
+* [#45](https://github.com/ahdis/ch-elm/issues/45): Fix minimum cardinality for Practitioner in Bundle
 
 ### 1.0.0-release
 
