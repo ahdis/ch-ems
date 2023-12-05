@@ -1,4 +1,4 @@
-Instance: 1-DocumentReference
+Instance: 1-DocumentReferenceStrict
 InstanceOf: PublishDocumentReferenceStrict
 Usage: #example
 Title: "DocumentReference for reporting Neisseria Gonorhoeae"
@@ -10,7 +10,7 @@ Description: "Example for a CH ELM DocumentReference: Laboratory Report"
 * content.attachment.language = #de-CH
 * content.attachment.url = "#1Doc-NeisseriaGonorrhoeae" 
 
-Instance: 2-DocumentReference
+Instance: 1-DocumentReference
 InstanceOf: PublishDocumentReference
 Usage: #example
 Title: "DocumentReference for reporting Neisseria Gonorhoeae"
