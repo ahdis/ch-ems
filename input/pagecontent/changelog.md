@@ -5,6 +5,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Added
 
 #### Changed / Updated
+* [#49](https://github.com/ahdis/ch-elm/issues/49): Update description of CS/VS CH ELM FOPH Patient Name Representation
 
 #### Fixed
 * [#45](https://github.com/ahdis/ch-elm/issues/45): Fix minimum cardinality for Practitioner in Bundle

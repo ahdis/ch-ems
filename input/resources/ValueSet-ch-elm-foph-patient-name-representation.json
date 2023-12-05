@@ -7,7 +7,7 @@
   "title": "CH ELM FOPH Patient Name Representation",
   "status": "active",
   "experimental": false,
-  "description": "This CH ELM value set includes the codes which identify possible patient name schemas to be used.",
+  "description": "This CH ELM resource defines the codes which identify possible patient name schemas to be used.",
   "compose": {
     "include": [
       {
