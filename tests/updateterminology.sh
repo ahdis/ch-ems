@@ -1,7 +1,7 @@
 #!/bin/sh
 
-CERT=""
-KEY=""
+CERT="/Users/oegger/Documents/github/k8s-fhir.ch/configurations/bag-elm/0B357C8314DE78BD49EE37119ACE00FB.cer"
+KEY="/Users/oegger/Documents/github/k8s-fhir.ch/configurations/bag-elm/0B357C8314DE78BD49EE37119ACE00FB.key"
 
 VALUESET="ch-elm-results-laboratory-observation"
 curl --request GET \
