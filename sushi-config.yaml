@@ -26,7 +26,7 @@ contact:
         value: https://www.bag.admin.ch/bag/en/home/das-bag/kontakt-standort.html
 
 dependencies:
-  hl7.fhir.eu.laboratory: current
+  hl7.fhir.eu.laboratory: 0.1.0-ballot
   ch.fhir.ig.ch-lab-report: current
   ch.fhir.ig.ch-core: current
   hl7.fhir.uv.extensions.r4: 1.0.0
