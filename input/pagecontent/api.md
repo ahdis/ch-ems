@@ -19,7 +19,7 @@ After providing the report the laboratory shall verify through the API that the 
 **Figure: Report Interactions**
 
 ### Referenced Standards
-Release 4 of the [HL7® FHIR®](https://www.hl7.org/fhir/index.html) standard.
+Release 4 of the [HL7® FHIR®](https://hl7.org/fhir/r4/index.html) standard.
 
 ### Send Report transaction
 
