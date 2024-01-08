@@ -5,10 +5,10 @@ Title: "CH ELM Organization: Author"
 Description: "This CH ELM base profile constrains the Organization resource for the author of the laboratory report."
 * . ^short = "CH ELM Organization: Author"
 * identifier ..1
-* identifier[GLN] 1..
+* identifier[GLN] 0..
 * identifier[ZSR] 0..0
-* identifier[UIDB] 0..0
-* identifier[BER] 0..0
+* identifier[UIDB] 0..1 MS
+* identifier[BER] 0..1 MS
 
 
 Profile: ChElmOrganizationLab
@@ -18,10 +18,10 @@ Title: "CH ELM Organization: Lab"
 Description: "This CH ELM base profile constrains the Organization resource for the reporting laboratory."
 * . ^short = "CH ELM Organization: Lab"
 * identifier ..1
-* identifier[GLN] 1..
+* identifier[GLN] 0..
 * identifier[ZSR] 0..0
-* identifier[UIDB] 0..0
-* identifier[BER] 0..0
+* identifier[UIDB] 0..1 MS
+* identifier[BER] 0..1 MS
 * name 1..
 * name ^maxLength = 100
 
@@ -34,10 +34,10 @@ Description: "This CH ELM base profile constrains the Organization resource for 
 * . ^short = "CH ELM Organization: Orderer"
 * extension contains ChElmExtDepartment named department 0..1 MS
 * identifier ..1 MS
-* identifier[GLN] MS
+* identifier[GLN] 0..1
 * identifier[ZSR] 0..0
-* identifier[UIDB] 0..0
-* identifier[BER] 0..0
+* identifier[UIDB] 0..1 MS
+* identifier[BER] 0..1 MS
 * name MS
 * name ^maxLength = 100
 * address ..1 MS
