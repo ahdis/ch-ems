@@ -3,7 +3,6 @@ InstanceOf: ChElmComposition
 Usage: #example
 Title: "1Comp - Neisseria Gonorrhoeae"
 Description: "Example for a CH ELM Composition: Laboratory Report"
-* meta.profile = "http://hl7.eu/fhir/laboratory/StructureDefinition/Composition-eu-lab"
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:1901332d-6012-443f-9690-9291adb2e19d"

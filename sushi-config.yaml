@@ -82,3 +82,12 @@ parameters:
   excludettl: true
 #  apply-version: false
 #  default-version: true
+
+instanceOptions:
+  # Determines for which types of Instances SUSHI will automatically set meta.profile
+  # if InstanceOf references a profile. Options are:
+  # - always: Set meta.profile for all Instances of profiles (default)
+  # - never: Do not set meta.profile on any Instances
+  # - inline-only: Set meta.profile for only Instances of profiles with Usage set to #inline
+  # - standalone-only: Set meta.profile for only Instances of profiles where Usage is any value other than #inline
+  setMetaProfile: never

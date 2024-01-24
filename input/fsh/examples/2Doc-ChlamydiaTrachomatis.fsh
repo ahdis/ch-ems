@@ -3,7 +3,6 @@ InstanceOf: ChElmDocumentStrict
 Usage: #example
 Title: "2Doc - Chlamydia Trachomatis"
 Description: "Example for a CH ELM Document: Laboratory Report (collection material in addition to the leading LOINC code, with references/fullUrls as UUIDs)"
-* meta.profile[0] = "http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:1301332d-6012-443f-9690-929132b2e155"
 * type = #document
@@ -159,6 +158,7 @@ Instance: f18f5763-d9a4-4bb7-999e-959beaaba714 // Organization: Orderer
 InstanceOf: ChElmOrganizationOrderer
 Usage: #inline
 * name = "Praxis Dr. Hauser"
+* address.line = "Hauptstrasse 10"
 * address.line.extension[streetName].valueString = "Hauptstrasse"
 * address.line.extension[houseNumber].valueString = "10"
 * address.city = "Solothurn"

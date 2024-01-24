@@ -14,6 +14,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#45](https://github.com/ahdis/ch-elm/issues/45): Fix minimum cardinality for Practitioner in Bundle
 * [#54](https://github.com/ahdis/ch-elm/issues/54): API fixed to Release FHIR R4
 * [#55](https://github.com/ahdis/ch-elm/issues/55): fixed link to specimen in broker example 1bDoc - Neisseria Gonorrhoeae 
+* [#58](https://github.com/ahdis/ch-elm/issues/58): Don't indicated meta.profiles in examples
 
 ### 1.0.0-release
 

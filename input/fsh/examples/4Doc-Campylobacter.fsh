@@ -3,7 +3,6 @@ InstanceOf: ChElmDocument
 Usage: #example
 Title: "4Doc - Campylobacter spp."
 Description: "Example for a CH ELM Document: Laboratory Report"
-* meta.profile[0] = "http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:1901332d-6012-443f-9690-9291adb2cb3b"
 * type = #document

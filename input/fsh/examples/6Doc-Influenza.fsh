@@ -3,7 +3,6 @@ InstanceOf: ChElmDocument
 Usage: #example
 Title: "6Doc - Influenza"
 Description: "Example for a CH ELM Document: Laboratory Report"
-* meta.profile[0] = "http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:1901332d-6012-443f-9690-9291adb23a5c"
 * type = #document
@@ -123,6 +122,7 @@ Usage: #example
 Title: "Org - Praxis Dr. Hauser"
 Description: "Example for a CH ELM Organization: Orderer"
 * name = "Praxis Dr. Hauser"
+* address.line = "Hauptstrasse 10"
 * address.line.extension[streetName].valueString = "Hauptstrasse"
 * address.line.extension[houseNumber].valueString = "10"
 * address.city = "Solothurn"

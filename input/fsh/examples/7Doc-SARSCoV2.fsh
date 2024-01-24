@@ -3,7 +3,6 @@ InstanceOf: ChElmDocument
 Usage: #example
 Title: "7Doc - SARS-CoV-2"
 Description: "Example for a CH ELM Document: Laboratory Report (document in French, patient with full name)"
-* meta.profile[0] = "http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:1901332d-6012-443f-9690-9291adb2aa34"
 * type = #document
@@ -126,6 +125,7 @@ Description: "Example for a CH ELM Organization: Orderer"
 * name = "Hôpital régional soleil"
 * identifier[GLN].system = "urn:oid:2.51.1.3"
 * identifier[GLN].value = "7601000201041"
+* address.line = "Rue des alpes 35"
 * address.line.extension[streetName].valueString = "Rue des alpes"
 * address.line.extension[houseNumber].valueString = "35"
 * address.city = "Genève"

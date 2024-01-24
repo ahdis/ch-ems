@@ -3,7 +3,6 @@ InstanceOf: ChElmDocumentStrict
 Usage: #example
 Title: "3Doc - Carbapenemase-producing Enterobacteriaceae (CPE)"
 Description: "Example for a CH ELM Document: Laboratory Report (organism in addition to the leading LOINC code)"
-* meta.profile[0] = "http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:1301332d-6012-443f-9690-72913db2e3cc"
 * type = #document

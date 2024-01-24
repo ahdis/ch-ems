@@ -3,7 +3,6 @@ InstanceOf: ChElmDocumentStrict
 Usage: #example
 Title: "1Doc - Neisseria Gonorrhoeae"
 Description: "Example for a CH ELM Document: Laboratory Report (where the 'Lab' is the same as the 'Author')"
-* meta.profile = "http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab"
 
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:1901332d-6012-443f-9690-9291adb2e19d"
