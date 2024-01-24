@@ -9,6 +9,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#49](https://github.com/ahdis/ch-elm/issues/49): Update description of CS/VS CH ELM FOPH Patient Name Representation
 * [#52](https://github.com/ahdis/ch-elm/issues/52): CH ELM Organization: BUR and UID as identifiers 0..1, no ZSR anymore
 * [#6](https://github.com/ahdis/ch-elm/issues/6): Fix ig dependencies to published versions 
+* [#60](https://github.com/ahdis/ch-elm/issues/60): Removal of rule that prevents a specimen code to be sent 
 
 #### Fixed
 * [#45](https://github.com/ahdis/ch-elm/issues/45): Fix minimum cardinality for Practitioner in Bundle

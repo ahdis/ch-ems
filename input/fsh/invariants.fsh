@@ -9,19 +9,14 @@ Severity: #error
 Expression: "startsWith('urn:uuid:')"
 
 Invariant: ch-elm-practrole
-Description: "Must have at least a practitioner or an organization."
+Description: "Must have at least a practitioner or an organization. Practitioner or organization must have at least a postalCode and city defined."
 Severity: #error
-Expression: "practitioner.exists() or practitioner.exists()"
+Expression: "(practitioner.exists() and practitioner.resolve().address.city.exists() and practitioner.resolve().address.postalCode.exists()) or (organization.exists() and organization.resolve().address.city.exists() and organization.resolve().address.postalCode.exists())"
 
 Invariant: ch-elm-expecting-specimen-specification
 Description: "If Observation.code is a member of http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-specimen-specification, then Specimen.type must be a member of the mapped ValueSet in http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-specimen-specification-to-results-completion-vs"
 Severity: #error
 Expression: "code.memberOf('http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-specimen-specification') implies specimen.resolve().exists() and specimen.resolve().type.exists() and specimen.resolve().type.memberOf('http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-specimen-specification-to-results-completion-vs'.resolve().group.where(source='http://loinc.org').element.where(code=%context.code.coding.where(system='http://loinc.org').first().code).target.first().code)"
-
-Invariant: ch-elm-material
-Description: "Material declared by Observation.code or non-mandatory."
-Severity: #error
-Expression: "code.memberOf('http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-specimen-specification').not() implies specimen.resolve().exists() and specimen.resolve().type.exists() and specimen.resolve().type.text.exists() and specimen.resolve().type.text.first()='Material declared by Observation.code or non-mandatory'"
 
 Invariant: ch-elm-leading-code
 Description: "The ServiceRequest.code and the Observation.code are in general equal."
