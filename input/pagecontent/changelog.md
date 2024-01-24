@@ -3,6 +3,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### x.x.x-release
 
 #### Added
+* [#56](https://github.com/ahdis/ch-elm/issues/56): add a search box to the ig #56
 
 #### Changed / Updated
 * [#49](https://github.com/ahdis/ch-elm/issues/49): Update description of CS/VS CH ELM FOPH Patient Name Representation
