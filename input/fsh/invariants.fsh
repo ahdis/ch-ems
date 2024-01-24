@@ -9,7 +9,7 @@ Severity: #error
 Expression: "startsWith('urn:uuid:')"
 
 Invariant: ch-elm-practrole
-Description: "Must have at least a practitioner or an organization. Practitioner or organization must have at least a postalCode and city defined."
+Description: "Must have at least a practitioner or an organization. Practitioner or organization must have at least a postalCode and a city defined."
 Severity: #error
 Expression: "(practitioner.exists() and practitioner.resolve().address.city.exists() and practitioner.resolve().address.postalCode.exists()) or (organization.exists() and organization.resolve().address.city.exists() and organization.resolve().address.postalCode.exists())"
 

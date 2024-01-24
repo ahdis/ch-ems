@@ -20,4 +20,7 @@ Description: "This CH ELM base profile constrains the Practitioner resource for 
 * telecom[phone].value ^example.label = "CH ELM"
 * telecom[phone].value ^example.valueString = "+41 79 999 55 66"
 * telecom[phone].value ^maxLength = 25
+* address ..1 MS
+* address.postalCode MS
+* address.city MS
 
