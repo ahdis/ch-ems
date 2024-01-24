@@ -10,6 +10,7 @@ Description: "Example for a CH ELM Patient - full name (and full address)"
 * name.given = "Ernst Karl"
 * birthDate = "1966-08-22"
 * address[home].use = #home
+* address[home].line = "Tannenstrasse 10a"
 * address[home].line.extension[streetName].valueString = "Tannenstrasse"
 * address[home].line.extension[houseNumber].valueString = "10a"
 * address[home].postalCode = "3000"
@@ -113,6 +114,7 @@ Description: "Example for a CH ELM Patient - full name"
 * telecom.system = #phone
 * telecom.value = "+41 76 222 55 22"
 * address[home].use = #home
+* address[home].line = "Rue de la république 10"
 * address[home].line.extension[streetName].valueString = "Rue de la république"
 * address[home].line.extension[houseNumber].valueString = "10"
 * address[home].postalCode = "1227"
