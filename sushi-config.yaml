@@ -13,10 +13,10 @@ license: CC0-1.0
 copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CHE
 date: 2024-01-31
-version: 1.1.0
+version: 1.2.0-cibuild
 fhirVersion: 4.0.1
 copyrightYear: 2023+
-releaseLabel: trial-use # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 publisher:
   name: Federal Office of Public Health FOPH
 contact:
