@@ -1,6 +1,6 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### x.x.x-release
+### 1.1.0 2024/01/31
 
 #### Added
 * [#56](https://github.com/ahdis/ch-elm/issues/56): add a search box to the ig #56
