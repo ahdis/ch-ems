@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-interpretation-codes-resistant-susceptible",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-resistant-susceptible",
+  "version": "2024-01-31",
+  "name": "ChElmInterpretationCodesResistantSusceptible",
+  "title": "CH ELM Interpretation Codes resistant and susceptible",
+  "status": "active",
+  "experimental": false,
+  "description": "This CH ELM value set includes the code for resistant and susceptible interpretation codes.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+        "concept": [
+          {
+            "code": "R",
+            "display": "Resistant"
+          },
+          {
+            "code": "S",
+            "display": "Susceptible"
+          }
+        ]
+      }
+    ]
+  }
+}

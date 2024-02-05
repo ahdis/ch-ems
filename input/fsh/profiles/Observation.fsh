@@ -5,6 +5,8 @@ Title: "CH ELM Observation Results: Laboratory"
 Description: "This CH ELM base profile constrains the Observation resource for the purpose of laboratory test reports."
 * obeys ch-elm-expecting-specimen-specification
 * obeys ch-elm-expecting-organism-specification
+* obeys ch-elm-interpretation-code-loinc
+* obeys ch-elm-interpretation-code-snomedct
 * . ^short = "CH ELM Observation Results: Laboratory"
 * status = #final
 * code from ChElmResultsLaboratoryObservation (extensible)
@@ -30,7 +32,6 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * interpretation 1..1
 * interpretation from ChElmObservationInterpretationCodes (required)
 * interpretation only ChElmCodeableConcept
-
 
 
 
