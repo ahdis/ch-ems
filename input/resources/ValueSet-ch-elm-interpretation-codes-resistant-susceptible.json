@@ -4,7 +4,7 @@
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-resistant-susceptible",
   "version": "2024-01-31",
   "name": "ChElmInterpretationCodesResistantSusceptible",
-  "title": "CH ELM Interpretation Codes resistant and susceptible",
+  "title": "CH ELM Interpretation Codes Resistant and Susceptible",
   "status": "active",
   "experimental": false,
   "description": "This CH ELM value set includes the code for resistant and susceptible interpretation codes.",
