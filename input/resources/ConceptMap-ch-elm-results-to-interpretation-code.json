@@ -19,11 +19,11 @@
     }
   ],
   "sourceCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
-  "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-ch-elm-interpretation-codes-vs",
+  "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-vs",
   "group": [
     {
       "source": "http://loinc.org",
-      "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-ch-elm-interpretation-codes-vs",
+      "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-interpretation-codes-vs",
       "element": [
         {
           "code": "14127-5",

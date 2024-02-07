@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
-  "id": "ch-elm-interpretation-codes-resistant-susceptible",
-  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-resistant-susceptible",
+  "id": "ch-elm-interpretation-codes-res-sus",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-res-sus",
   "version": "2024-01-31",
   "name": "ChElmInterpretationCodesResistantSusceptible",
   "title": "CH ELM Interpretation Codes Resistant and Susceptible",
