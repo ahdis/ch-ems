@@ -89,5 +89,9 @@ In some cases, an additional organism must be specified.
 
 {% include img.html img="expecting-organism-specification.png" caption="Fig. 8: Schematic illustration of the mechanism for the expecting organism specification (for simplicity, only the relevant elements are shown)" width="100%" %}  
 
+##### Interpretation Codes
+Depending on the leading code different interpretation codes are allowed. The [ConceptMap](ConceptMap-ch-elm-results-to-interpretation-code.html) specifies which values from which ValueSet
+are allowed (e.g. for Neisseria gonorrhoeae the [ValueSet: CH ELM Interpretation Codes Positive ](ValueSet-ch-elm-interpretation-codes-pos.html) is specified, which allows only a positive interpretation code to be specified).
+
 ### Multiplex Cases
 The exchange format defines the [FHIR document](document.html) for reporting to the FOPH so that **one document per organism per patient** is submitted. 

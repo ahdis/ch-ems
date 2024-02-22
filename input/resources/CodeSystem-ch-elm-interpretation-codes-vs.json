@@ -1,0 +1,33 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ch-elm-interpretation-codes-vs",
+  "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-interpretation-codes-vs",
+  "version": "2024-01-31",
+  "name": "ChElmInterpretationCodeVs",
+  "title": "CH ELM Interpretation Codes Vs",
+  "status": "active",
+  "experimental": false,
+  "description": "This CH ELM code system defines the value set URLs as Interpretation Codes to map in the concept maps the leading codes.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "CHE"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos"
+    },
+    {
+      "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg"
+    },
+    {
+      "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-resistant-susceptible"
+    }  ]
+}

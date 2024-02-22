@@ -1,0 +1,541 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "ch-elm-results-to-interpretation-code",
+  "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-interpretation-code",
+  "version": "2024-01-31",
+  "name": "ChElmResultsToInterpretationCode",
+  "title": "CH ELM Results To Interpretation Code",
+  "status": "active",
+  "experimental": false,
+  "description": "This CH ELM concept map specifies the interpretation codes for each leading code. E.g. if positive, positive and negative or resistant-susceptible values are allowed  ",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "CHE"
+        }
+      ]
+    }
+  ],
+  "sourceCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
+  "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-vs",
+  "group": [
+    {
+      "source": "http://loinc.org",
+      "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-interpretation-codes-vs",
+      "element": [
+        {
+          "code": "14127-5",
+          "display": "Neisseria gonorrhoeae [Presence] in Anal by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "14463-4",
+          "display": "Chlamydia trachomatis [Presence] in Cervix by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "14464-2",
+          "display": "Chlamydia trachomatis [Presence] in Vaginal fluid by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "14465-9",
+          "display": "Chlamydia trachomatis [Presence] in Urethra by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "16600-9",
+          "display": "Chlamydia trachomatis rRNA [Presence] in Genital specimen by Probe",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "21190-4",
+          "display": "Chlamydia trachomatis DNA [Presence] in Cervix by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "21191-2",
+          "display": "Chlamydia trachomatis DNA [Presence] in Urethra by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "21415-5",
+          "display": "Neisseria gonorrhoeae DNA [Presence] in Urethra by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "21416-3",
+          "display": "Neisseria gonorrhoeae DNA [Presence] in Urine by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "21613-5",
+          "display": "Chlamydia trachomatis DNA [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "23838-6",
+          "display": "Chlamydia trachomatis rRNA [Presence] in Genital fluid by Probe",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "24111-7",
+          "display": "Neisseria gonorrhoeae DNA [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "31777-6",
+          "display": "Chlamydia trachomatis Ag [Presence] in Specimen",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "32705-6",
+          "display": "Neisseria gonorrhoeae DNA [Presence] in Vaginal fluid by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "42931-6",
+          "display": "Chlamydia trachomatis rRNA [Presence] in Urine by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "43304-5",
+          "display": "Chlamydia trachomatis rRNA [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "43305-2",
+          "display": "Neisseria gonorrhoeae rRNA [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "45084-1",
+          "display": "Chlamydia trachomatis DNA [Presence] in Vaginal fluid by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "45090-8",
+          "display": "Chlamydia trachomatis DNA [Presence] in Anal by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "45093-2",
+          "display": "Chlamydia trachomatis [Presence] in Anal by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "45095-7",
+          "display": "Chlamydia trachomatis [Presence] in Genital specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "47387-6",
+          "display": "Neisseria gonorrhoeae DNA [Presence] in Genital specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "50387-0",
+          "display": "Chlamydia trachomatis rRNA [Presence] in Cervix by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "50388-8",
+          "display": "Neisseria gonorrhoeae rRNA [Presence] in Cervix by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "51578-3",
+          "display": "Chlamydia trachomatis DNA [Presence] in Semen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "53879-3",
+          "display": "Neisseria gonorrhoeae rRNA [Presence] in Vaginal fluid by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "53925-4",
+          "display": "Chlamydia trachomatis rRNA [Presence] in Urethra by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "53926-2",
+          "display": "Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "53927-0",
+          "display": "Neisseria gonorrhoeae rRNA [Presence] in Urethra by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "57287-5",
+          "display": "Chlamydia trachomatis rRNA [Presence] in Anal by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "57458-2",
+          "display": "Neisseria gonorrhoeae rRNA [Presence] in Anal by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "60255-7",
+          "display": "Neisseria gonorrhoeae rRNA [Presence] in Throat by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "60256-5",
+          "display": "Neisseria gonorrhoeae rRNA [Presence] in Urine by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "6349-5",
+          "display": "Chlamydia trachomatis [Presence] in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "6356-0",
+          "display": "Chlamydia trachomatis DNA [Presence] in Genital specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "6357-8",
+          "display": "Chlamydia trachomatis DNA [Presence] in Urine by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "688-2",
+          "display": "Neisseria gonorrhoeae [Presence] in Cervix by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "691-6",
+          "display": "Neisseria gonorrhoeae [Presence] in Genital specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "693-2",
+          "display": "Neisseria gonorrhoeae [Presence] in Vaginal fluid by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "694-0",
+          "display": "Neisseria gonorrhoeae [Presence] in Semen by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "696-5",
+          "display": "Neisseria gonorrhoeae [Presence] in Throat by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "697-3",
+          "display": "Neisseria gonorrhoeae [Presence] in Urethra by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "698-1",
+          "display": "Neisseria gonorrhoeae [Presence] in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "80363-5",
+          "display": "Chlamydia trachomatis DNA [Presence] in Anorectal by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "80364-3",
+          "display": "Chlamydia trachomatis rRNA [Presence] in Anorectal by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "80366-8",
+          "display": "Neisseria gonorrhoeae rRNA [Presence] in Anorectal by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "80367-6",
+          "display": "Chlamydia trachomatis [Presence] in Anorectal by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "80368-4",
+          "display": "Neisseria gonorrhoeae [Presence] in Anorectal by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "88224-1",
+          "display": "Neisseria gonorrhoeae DNA [Presence] in Anorectal by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "88225-8",
+          "display": "Neisseria gonorrhoeae DNA [Presence] in Throat by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "96599-6",
+          "display": "Neisseria gonorrhoeae DNA [Presence] in Cervix by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

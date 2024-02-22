@@ -1,5 +1,10 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
+### 1.2.0 - cibuild 
+
+* [#32](https://github.com/ahdis/ch-elm/issues/62): adding ValueSets/ConceptMaps for Interpretation Code
+
+
 ### 1.1.0 2024/01/31
 
 #### Added
