@@ -9,6 +9,12 @@ A profile on the DocumentReference resource with publication constraints:
 - uses attachment.url to carry the document as a contained resource
 - validation according to http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document
 """
+* contained 1..
+* contained ^slicing.discriminator.type = #profile
+* contained ^slicing.discriminator.path = "resolve()"
+* contained ^slicing.rules = #open
+* contained contains document 1..1 MS
+* contained[document] only ChElmDocument
 * modifierExtension 0..0
 * identifier 1..1
 * status 1..1
@@ -22,7 +28,7 @@ A profile on the DocumentReference resource with publication constraints:
 * content 1..1
 * content ^definition = "The document and format referenced"
 * content.attachment 1..1
-* content.attachment obeys ch-elm-urlconformstochelmbundle
+* content.attachment obeys ch-elm-resolveableurl
 * content.attachment.language 0..1 MS
 * content.attachment.url 1..1
 * content.attachment.url ^short = "The document is referenced by this url, contained in the DocumentReference"
@@ -39,7 +45,7 @@ A profile on the DocumentReference resource with publication constraints:
 - uses attachment.url to carry the document as a contained resource
 - strict validation according to http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
 """
-* content.attachment obeys ch-elm-urlconformstochelmbundlestrict
+* contained[document] only ChElmDocumentStrict
 
 ValueSet: ChElmStatus
 Id: ch-elm-status

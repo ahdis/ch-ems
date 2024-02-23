@@ -28,15 +28,10 @@ Description: "If Observation.code is a member of http://fhir.ch/ig/ch-elm/ValueS
 Severity: #error
 Expression: "code.memberOf('http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-organism-specification') implies value.exists() and (value as CodeableConcept).exists() and (value as CodeableConcept).memberOf('http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-organism-specification-to-results-completion-vs'.resolve().group.where(source='http://loinc.org').element.where(code=%context.code.coding.where(system='http://loinc.org').first().code).target.first().code)"
 
-Invariant: ch-elm-urlconformstochelmbundle
-Description: "Must have a resolvable URL conforming to the CH-ELM Bundle."
+Invariant: ch-elm-resolveableurl
+Description: "Must have a resolvable URL."
 Severity: #error
-Expression: "url.exists() and url.resolve().conformsTo('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document')"
-
-Invariant: ch-elm-urlconformstochelmbundlestrict
-Description: "Must have a resolvable URL conforming to the CH-ELM Bundle."
-Severity: #error
-Expression: "url.exists() and url.resolve().conformsTo('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict')"
+Expression: "url.exists() and url.resolve()"
 
 Invariant: ch-elm-patient-name-representation-initial-loinc
 Description: "If Observation.code is a mapped to initials in http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-foph-patient-name-representation then patient.name.first and given can must have one character"
