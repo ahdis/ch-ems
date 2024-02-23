@@ -4,8 +4,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 * [#32](https://github.com/ahdis/ch-elm/issues/62): adding ValueSets/ConceptMaps for Interpretation Code
 
-
-### 1.1.0 2024/01/31
+* [#68](https://github.com/ahdis/ch-elm/issues/68): Add slice for DocumentReference.contained for improving validation output
 
 #### Added
 * [#56](https://github.com/ahdis/ch-elm/issues/56): add a search box to the ig #56
