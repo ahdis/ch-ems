@@ -1,5 +1,5 @@
 Instance: 7Doc-SARSCoV2
-InstanceOf: ChElmDocument
+InstanceOf: ChElmDocumentStrict
 Usage: #example
 Title: "7Doc - SARS-CoV-2"
 Description: "Example for a CH ELM Document: Laboratory Report (document in French, patient with full name)"
@@ -130,3 +130,15 @@ Description: "Example for a CH ELM Organization: Orderer"
 * address.line.extension[houseNumber].valueString = "35"
 * address.city = "Genève"
 * address.postalCode = "1202"
+
+Instance: 7-DocumentReferenceStrict
+InstanceOf: PublishDocumentReferenceStrict
+Usage: #example
+Title: "DocumentReference for reporting SARSCoV2"
+Description: "Example for a CH ELM DocumentReference: Laboratory Report"
+* contained = 7Doc-SARSCoV2
+* status = #current
+* identifier[0].system = "urn:ietf:rfc:3986"
+* identifier[0].value = "urn:uuid:d03a9668-a8f9-4e9a-b853-1a84e6a8aae2"
+* content.attachment.language = #de-CH
+* content.attachment.url = "#7Doc-SARSCoV2" 

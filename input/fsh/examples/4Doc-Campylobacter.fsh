@@ -1,5 +1,5 @@
 Instance: 4Doc-Campylobacter
-InstanceOf: ChElmDocument
+InstanceOf: ChElmDocumentStrict
 Usage: #example
 Title: "4Doc - Campylobacter spp."
 Description: "Example for a CH ELM Document: Laboratory Report"
