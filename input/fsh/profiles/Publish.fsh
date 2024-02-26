@@ -11,10 +11,10 @@ A profile on the DocumentReference resource with publication constraints:
 """
 * contained 1..
 * contained ^slicing.discriminator.type = #profile
-* contained ^slicing.discriminator.path = "resolve()"
+* contained ^slicing.discriminator.path = "$this"
 * contained ^slicing.rules = #open
 * contained contains document 1..1 MS
-* contained[document] only ChElmDocument
+* contained[document] ^type.profile = Canonical(ChElmDocument)
 * modifierExtension 0..0
 * identifier 1..1
 * status 1..1
@@ -45,7 +45,7 @@ A profile on the DocumentReference resource with publication constraints:
 - uses attachment.url to carry the document as a contained resource
 - strict validation according to http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
 """
-* contained[document] only ChElmDocumentStrict
+* contained[document] ^type.profile = Canonical(ChElmDocumentStrict)
 
 ValueSet: ChElmStatus
 Id: ch-elm-status
