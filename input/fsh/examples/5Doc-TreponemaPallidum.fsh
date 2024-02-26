@@ -1,5 +1,5 @@
 Instance: 5Doc-TreponemaPallidum
-InstanceOf: ChElmDocument
+InstanceOf: ChElmDocumentStrict
 Usage: #example
 Title: "5Doc - Treponema pallidum"
 Description: "Example for a CH ELM Document: Laboratory Report (SNOMED CT as leading code)"

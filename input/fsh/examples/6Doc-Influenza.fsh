@@ -1,5 +1,5 @@
 Instance: 6Doc-Influenza
-InstanceOf: ChElmDocument
+InstanceOf: ChElmDocumentStrict
 Usage: #example
 Title: "6Doc - Influenza"
 Description: "Example for a CH ELM Document: Laboratory Report"
