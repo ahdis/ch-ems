@@ -1,57 +1,103 @@
 {
-    "resourceType": "CodeSystem",
-    "id": "ch-elm-foph-business-rules",
-    "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-foph-business-rules",
-    "version": "2023-11-14",
-    "name": "ChElmFophBusinessRules",
-    "title": "CH ELM Foph Business Rules",
-    "status": "active",
-    "experimental": false,
-    "description": "This CH ELM code system describes specific business rules of the FOPH, which are applied during processing. Please note that the set of rules detailed herein only covers processes explicitly declared by the FOPH. Additional rules, not included in this code system, are applied by the FHIR validation logic, resulting in further codes. For more information about these additional codes, consult the official FHIR documentation and the implementation guideline.",
-    "jurisdiction": [
+  "resourceType": "CodeSystem",
+  "id": "ch-elm-foph-business-rules",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>CH ELM FOPH Business Rules</b><br />This CH ELM code system describes specific business rules of the FOPH, which are applied during processing. Please note that the set of rules detailed herein only covers processes explicitly declared by the FOPH. Additional rules, not included in this code system, are applied by the FHIR validation logic, resulting in further codes. For more information about these additional codes, consult the official FHIR documentation and the implementation guideline.<br /></p></div>"
+  },
+  "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-foph-business-rules",
+  "version": "2024-03-14",
+  "name": "ChElmFophBusinessRules",
+  "title": "CH ELM FOPH Business Rules",
+  "status": "active",
+  "experimental": false,
+  "description": "This CH ELM code system describes specific business rules of the FOPH, which are applied during processing. Please note that the set of rules detailed herein only covers processes explicitly declared by the FOPH. Additional rules, not included in this code system, are applied by the FHIR validation logic, resulting in further codes. For more information about these additional codes, consult the official FHIR documentation and the implementation guideline.",
+  "jurisdiction": [
+    {
+      "coding": [
         {
-            "coding": [
-                {
-                    "system": "urn:iso:std:iso:3166",
-                    "code": "CHE"
-                }
-            ]
+          "system": "urn:iso:std:iso:3166",
+          "code": "CHE"
         }
-    ],
-    "caseSensitive": false,
-    "hierarchyMeaning": "is-a",
-    "content": "complete",
-    "concept": [
+      ]
+    }
+  ],
+  "caseSensitive": false,
+  "hierarchyMeaning": "is-a",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "information",
+      "display": "Information",
+      "definition": "A purely informational message.",
+      "concept": [
         {
-            "code": "information",
-            "display": "Information",
-            "definition": "A purely informational message."
+          "code": "FOPH-000",
+          "display": "Generic Information"
+        }
+      ]
+    },
+    {
+      "code": "warning",
+      "display": "Warning",
+      "definition": "If the rule is violated, the resource is conformant, but it is not necessarily following best practice.",
+      "concept": [
+        {
+          "code": "FOPH-005",
+          "display": "The required anonymization for the reported organism was violated. The following field(s) are affected: %fields%"
         },
         {
-            "code": "warning",
-            "display": "Warning",
-            "definition": "If the rule is violated, the resource is conformant, but it is not necessarily following best practice.",
-            "concept": [
-                {
-                    "code": "FOPH-003",
-                    "display": "The following elements for the patient's address are expected: %missingElements%."
-                }
-            ]
+          "code": "FOPH-011",
+          "display": "The material is already specified by the leading code. The additional material specified in specimen.type will be ignored."
         },
         {
-            "code": "error",
-            "display": "Error",
-            "definition": "If the rule is violated, the resource is not conformant.",
-            "concept": [
-                {
-                    "code": "FOPH-001",
-                    "display": "The provided laboratory identification %identifier% is either unknown or corresponds to a laboratory for which your account does not have reporting permissions. Please verify your laboratory identification. If it's correct, complete the necessary onboarding process before submitting data on behalf of this lab."
-                },
-                {
-                    "code": "FOPH-002",
-                    "display": "The required anonymization for the reported organism was violated."
-                }                
-            ]
+          "code": "FOPH-010",
+          "display": "Attention, the code %code% (%codeSystem%) expires on %validTo%. Please adjust your systems by this date."
+        },
+        {
+          "code": "FOPH-001",
+          "display": "Generic Warning"
+        },
+        {
+          "code": "FOPH-006",
+          "display": "The following elements for the patient's address are expected: %missingElements%."
         }
-    ]
+      ]
+    },
+    {
+      "code": "error",
+      "display": "Error",
+      "definition": "If the rule is violated, the resource is not conformant.",
+      "concept": [
+        {
+          "code": "FOPH-009",
+          "display": "The transmitted code %code% (%codeSystem%) is outside the defined validity period %validFrom% - %validTo%."
+        },
+        {
+          "code": "FOPH-002",
+          "display": "Generic Error"
+        },
+        {
+          "code": "FOPH-007",
+          "display": "The specified material is not supported by the provided leading code."
+        },
+        {
+          "code": "FOPH-012",
+          "display": "The transmitted leading code %code% (%codeSystem%) could not be found in the current value set."
+        },
+        {
+          "code": "FOPH-008",
+          "display": "The specified organism is not supported by the provided leading code."
+        },
+        {
+          "code": "FOPH-004",
+          "display": "The provided laboratory identification \"%identifier%\" is either unknown or corresponds to a laboratory for which your account does not have reporting permissions. Please verify your laboratory identification. If it's correct, complete the necessary onboarding process before submitting data on behalf of this lab."
+        },
+        {
+          "code": "FOPH-013",
+          "display": "The transmitted code %code% (%codeSystem%) is outside the defined validity period."
+        }
+      ]
+    }
+  ]
 }

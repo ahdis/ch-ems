@@ -1,8 +1,12 @@
 {
   "resourceType": "ValueSet",
   "id": "ch-elm-expecting-specimen-specification",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>CH ELM Expecting Specimen Specification</b><br />This CH ELM value set includes the leading codes for the laboratory test results, which have to be completed by another code for the expecting specimen.<br /></p></div>"
+  },
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-specimen-specification",
-  "version": "2023-11-14",
+  "version": "2024-03-14",
   "name": "ChElmExpectingSpecimenSpecification",
   "title": "CH ELM Expecting Specimen Specification",
   "status": "active",

@@ -1,71 +1,75 @@
 {
-    "resourceType": "ConceptMap",
-    "id": "ch-elm-expecting-specimen-specification-to-results-completion-vs",
-    "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-specimen-specification-to-results-completion-vs",
-    "version": "2023-11-14",
-    "name": "ChElmExpectingSpecimenSpecificationToResultsCompletionVs",
-    "title": "CH ELM Expecting Specimen Specification To Results Completion Vs",
-    "status": "active",
-    "experimental": false,
-    "description": "This CH ELM concept map shows which leading codes have to be completed by an additional code. The target code shows the URL of the value set from which the completing codes for the expecting specimen must come from.",
-    "jurisdiction": [
-      {
-        "coding": [
-          {
-            "system": "urn:iso:std:iso:3166",
-            "code": "CHE"
-          }
-        ]
-      }
-    ],
-    "sourceCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-specimen-specification",
-    "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-completion-vs",
-    "group": [
-      {
-          "source": "http://loinc.org",
-          "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-completion-vs",
-          "element": [
-              {
-                  "code": "21613-5",
-                  "display": "Chlamydia trachomatis DNA [Presence] in Specimen by NAA with probe detection",
-                  "target": [
-                      {
-                          "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
-                          "equivalence": "relatedto"
-                      }
-                  ]
-              },
-              {
-                  "code": "31777-6",
-                  "display": "Chlamydia trachomatis Ag [Presence] in Specimen",
-                  "target": [
-                      {
-                          "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
-                          "equivalence": "relatedto"
-                      }
-                  ]
-              },
-              {
-                  "code": "43304-5",
-                  "display": "Chlamydia trachomatis rRNA [Presence] in Specimen by NAA with probe detection",
-                  "target": [
-                      {
-                          "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
-                          "equivalence": "relatedto"
-                      }
-                  ]
-              },
-              {
-                  "code": "6349-5",
-                  "display": "Chlamydia trachomatis [Presence] in Specimen by Organism specific culture",
-                  "target": [
-                      {
-                          "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
-                          "equivalence": "relatedto"
-                      }
-                  ]
-              }
+  "resourceType": "ConceptMap",
+  "id": "ch-elm-expecting-specimen-specification-to-results-completion-vs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>CH ELM Expecting Specimen Specification To Results Completion Vs</b><br />This CH ELM concept map shows which leading codes have to be completed by an additional code. The target code shows the URL of the value set from which the completing codes for the expecting specimen must come from.<br /></p></div>"
+  },
+  "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-specimen-specification-to-results-completion-vs",
+  "version": "2024-03-14",
+  "name": "ChElmExpectingSpecimenSpecificationToResultsCompletionVs",
+  "title": "CH ELM Expecting Specimen Specification To Results Completion Vs",
+  "status": "active",
+  "experimental": false,
+  "description": "This CH ELM concept map shows which leading codes have to be completed by an additional code. The target code shows the URL of the value set from which the completing codes for the expecting specimen must come from.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "CHE"
+        }
+      ]
+    }
+  ],
+  "sourceCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-specimen-specification",
+  "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-completion-vs",
+  "group": [
+    {
+      "source": "http://loinc.org",
+      "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-completion-vs",
+      "element": [
+        {
+          "code": "21613-5",
+          "display": "Chlamydia trachomatis DNA [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
+              "equivalence": "relatedto"
+            }
           ]
-      }
+        },
+        {
+          "code": "31777-6",
+          "display": "Chlamydia trachomatis Ag [Presence] in Specimen",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "43304-5",
+          "display": "Chlamydia trachomatis rRNA [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "6349-5",
+          "display": "Chlamydia trachomatis [Presence] in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
+              "equivalence": "relatedto"
+            }
+          ]
+        }
+      ]
+    }
   ]
 }

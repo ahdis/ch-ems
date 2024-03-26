@@ -1,0 +1,15 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-results-complete-spec",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>CH ELM Results Complete Spec</b><br />The &quot;CH ELM Results Complete Spec&quot; material group provides a curated set of codes representing specific materials. Each code within this group is selected to ensure consistency and accuracy for medical coding related to the primary LOINC codes. Clients using the &quot;CH ELM Results Complete Spec&quot; group should refer to the provided codes to ensure they capture and report material information correctly and consistently.<br /></p></div>"
+  },
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-complete-spec",
+  "version": "2024-03-14",
+  "name": "ChElmResultsCompleteSpec",
+  "title": "CH ELM Results Complete Spec",
+  "status": "active",
+  "experimental": false,
+  "description": "The \"CH ELM Results Complete Spec\" material group provides a curated set of codes representing specific materials. Each code within this group is selected to ensure consistency and accuracy for medical coding related to the primary LOINC codes. Clients using the \"CH ELM Results Complete Spec\" group should refer to the provided codes to ensure they capture and report material information correctly and consistently."
+}
