@@ -6,6 +6,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#68](https://github.com/ahdis/ch-elm/issues/68): Add slice for DocumentReference.contained for improving validation output
 * [#71](https://github.com/ahdis/ch-elm/issues/71): Fix SARS-CoV-2 Strict validation
 * [#72](https://github.com/ahdis/ch-elm/issues/72): Einbau ValueSet Specimen.type
+* [#73](https://github.com/ahdis/ch-elm/issues/73): Change status of IG from Draft to Release for version 1.2.0
 * [#75](https://github.com/ahdis/ch-elm/issues/75): PractitionerRole: Orderer -> update contraints
 
 ### 1.1.0 2024/01/31
