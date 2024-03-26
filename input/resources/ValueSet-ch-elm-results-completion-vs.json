@@ -1,12 +1,9 @@
 {
   "resourceType": "ValueSet",
   "id": "ch-elm-results-completion-vs",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>CH ELM Results Completion Vs</b><br />This CH ELM value set includes the value set URLs as codes to map in the concept maps the leading codes, which must be completed with additional codes.<br /></p></div>"
-  },
+  
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-completion-vs",
-  "version": "2024-03-14",
+  "version": "2024-03-26",
   "name": "ChElmResultsCompletionVs",
   "title": "CH ELM Results Completion Vs",
   "status": "active",

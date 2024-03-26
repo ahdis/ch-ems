@@ -1,12 +1,9 @@
 {
   "resourceType": "CodeSystem",
   "id": "ch-elm-foph-patient-name-representation",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>CH ELM FOPH Patient Name Representation</b><br />This CH ELM resource defines the codes which identify possible patient name schemas to be used.<br /></p></div>"
-  },
+  
   "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-foph-patient-name-representation",
-  "version": "2024-03-14",
+  "version": "2024-03-26",
   "name": "ChElmFophPatientNameRepresentation",
   "title": "CH ELM FOPH Patient Name Representation",
   "status": "active",

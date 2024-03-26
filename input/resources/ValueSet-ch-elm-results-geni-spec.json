@@ -1,12 +1,9 @@
 {
   "resourceType": "ValueSet",
   "id": "ch-elm-results-geni-spec",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>CH ELM Results Geni Spec</b><br />The &quot;CH ELM Results Geni Spec&quot; material group provides a curated set of codes representing specific materials. Each code within this group is selected to ensure consistency and accuracy for medical coding related to the primary LOINC codes. Clients using the &quot;CH ELM Results Geni Spec&quot; group should refer to the provided codes to ensure they capture and report material information correctly and consistently.<br /></p></div>"
-  },
+  
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
-  "version": "2024-03-14",
+  "version": "2024-03-26",
   "name": "ChElmResultsGeniSpec",
   "title": "CH ELM Results Geni Spec",
   "status": "active",
@@ -17,6 +14,14 @@
       {
         "system": "http://snomed.info/sct",
         "concept": [
+          {
+            "code": "119396006",
+            "display": "Specimen from endometrium (specimen)"
+          },
+          {
+            "code": "119324002",
+            "display": "Specimen of unknown material (specimen)"
+          },
           {
             "code": "119395005",
             "display": "Specimen from uterine cervix (specimen)"
@@ -38,16 +43,16 @@
             "display": "Vaginal swab (specimen)"
           },
           {
+            "code": "257261003",
+            "display": "Swab (specimen)"
+          },
+          {
             "code": "119393003",
             "display": "Specimen from urethra (specimen)"
           },
           {
             "code": "119347001",
             "display": "Seminal fluid specimen (specimen)"
-          },
-          {
-            "code": "119396006",
-            "display": "Specimen from endometrium (specimen)"
           }
         ]
       }

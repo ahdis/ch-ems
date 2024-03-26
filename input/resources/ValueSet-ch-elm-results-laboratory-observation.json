@@ -1,12 +1,9 @@
 {
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>CH ELM Results Laboratory Observation</b><br />This CH ELM value set includes the codes for the laboratory test results (organism).<br /></p></div>"
-  },
+  
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
-  "version": "2024-03-14",
+  "version": "2024-03-26",
   "name": "ChElmResultsLaboratoryObservation",
   "title": "CH ELM Results Laboratory Observation",
   "status": "active",
@@ -202,7 +199,7 @@
             "display": "Neisseria gonorrhoeae rRNA [Presence] in Urethra by NAA with probe detection"
           },
           {
-            "code": "55456-9",
+            "code": "55465-9",
             "display": "Influenza virus A H1 2009 pandemic RNA [Presence] in Specimen by NAA with probe detection"
           },
           {
@@ -340,6 +337,10 @@
           {
             "code": "85478-6",
             "display": "Influenza virus B RNA [Presence] in Upper respiratory specimen by NAA with probe detection"
+          },
+          {
+            "code": "85827-4",
+            "display": "Carbapenem resistance bla OXA-48-like gene [Presence] by Molecular method"
           },
           {
             "code": "88224-1",

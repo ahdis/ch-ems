@@ -1,12 +1,9 @@
 {
   "resourceType": "ConceptMap",
   "id": "ch-elm-expecting-organism-specification-to-results-completion-vs",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>CH ELM Expecting Organism Specification To Results Completion Vs</b><br />This CH ELM concept map shows which leading codes have to be completed by an additional code. The target code shows the URL of the value set from which the completing codes for the expecting specimen must come from.<br /></p></div>"
-  },
+  
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-organism-specification-to-results-completion-vs",
-  "version": "2024-03-14",
+  "version": "2024-03-26",
   "name": "ChElmExpectingOrganismSpecificationToResultsCompletionVs",
   "title": "CH ELM Expecting Organism Specification To Results Completion Vs",
   "status": "active",
@@ -65,6 +62,16 @@
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-camp-diar-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "85827-4",
+          "display": "Carbapenem resistance bla OXA-48-like gene [Presence] by Molecular method",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org",
               "equivalence": "relatedto"
             }
           ]
