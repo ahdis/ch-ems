@@ -3,7 +3,7 @@
   "id": "ch-elm-results-to-interpretation-code",
   
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-interpretation-code",
-  "version": "2024-03-26",
+  "version": "2024-03-27",
   "name": "ChElmResultsToInterpretationCode",
   "title": "CH ELM Results To Interpretation Code",
   "status": "active",
@@ -829,6 +829,16 @@
         {
           "code": "85478-6",
           "display": "Influenza virus B RNA [Presence] in Upper respiratory specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "85827-4",
+          "display": "Carbapenem resistance bla OXA-48-like gene [Presence] by Molecular method",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
