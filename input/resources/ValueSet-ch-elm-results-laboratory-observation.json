@@ -3,7 +3,7 @@
   "id": "ch-elm-results-laboratory-observation",
   
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
-  "version": "2024-03-26",
+  "version": "2024-03-27",
   "name": "ChElmResultsLaboratoryObservation",
   "title": "CH ELM Results Laboratory Observation",
   "status": "active",

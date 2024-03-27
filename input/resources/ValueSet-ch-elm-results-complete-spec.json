@@ -3,7 +3,7 @@
   "id": "ch-elm-results-complete-spec",
   
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-complete-spec",
-  "version": "2024-03-26",
+  "version": "2024-03-27",
   "name": "ChElmResultsCompleteSpec",
   "title": "CH ELM Results Complete Spec",
   "status": "active",
@@ -28,7 +28,7 @@
           },
           {
             "code": "309051001",
-            "display": "Body fluid sample (specimen)"
+            "display": "Body fluid specimen (specimen)"
           },
           {
             "code": "119401005",
@@ -52,7 +52,7 @@
           },
           {
             "code": "258580003",
-            "display": "Whole blood sample (specimen)"
+            "display": "Whole blood specimen (specimen)"
           },
           {
             "code": "119389009",
@@ -67,8 +67,8 @@
             "display": "Specimen from prostate (specimen)"
           },
           {
-            "code": "119360007",
-            "display": "Dialysis fluid specimen (specimen)"
+            "code": "258454002",
+            "display": "Dialysate specimen (specimen)"
           },
           {
             "code": "430268003",
@@ -84,7 +84,7 @@
           },
           {
             "code": "258465007",
-            "display": "Lacrimal fluid sample (specimen)"
+            "display": "Lacrimal fluid specimen (specimen)"
           },
           {
             "code": "119359002",
@@ -108,7 +108,7 @@
           },
           {
             "code": "168139001",
-            "display": "Peritoneal fluid sample (specimen)"
+            "display": "Peritoneal fluid specimen (specimen)"
           },
           {
             "code": "445160003",
@@ -156,7 +156,7 @@
           },
           {
             "code": "258589002",
-            "display": "Lymph node sample (specimen)"
+            "display": "Lymph node specimen (specimen)"
           },
           {
             "code": "119295008",
@@ -204,11 +204,11 @@
           },
           {
             "code": "309165001",
-            "display": "Ear sample (specimen)"
+            "display": "Ear specimen (specimen)"
           },
           {
             "code": "258459007",
-            "display": "Gastric fluid sample (specimen)"
+            "display": "Gastric fluid specimen (specimen)"
           },
           {
             "code": "608969007",
@@ -220,7 +220,7 @@
           },
           {
             "code": "258450006",
-            "display": "Cerebrospinal fluid sample (specimen)"
+            "display": "Cerebrospinal fluid specimen (specimen)"
           },
           {
             "code": "258415003",
