@@ -10,7 +10,7 @@ This profile constrains the PractitionerRole resource for the orderer:
 """
 * . ^short = "CH ELM PractitionerRole: Orderer"
 
-* obeys ch-elm-practrole
+* obeys ch-elm-practrole and ch-elm-practrole-organizaton-name-exists
 
 * practitioner MS
 * practitioner only Reference(ChElmPractitionerOrderer)

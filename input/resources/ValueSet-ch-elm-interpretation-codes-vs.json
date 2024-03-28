@@ -1,9 +1,10 @@
 {
   "resourceType": "ValueSet",
   "id": "ch-elm-interpretation-codes-vs",
+  
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-vs",
-  "version": "2024-01-31",
-  "name": "ChElmInterpretationCodeVs",
+  "version": "2024-03-27",
+  "name": "ChElmInterpretationCodesVs",
   "title": "CH ELM Interpretation Codes Vs",
   "status": "active",
   "experimental": false,

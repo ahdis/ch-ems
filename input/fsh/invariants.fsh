@@ -13,6 +13,11 @@ Description: "Must have at least a practitioner or an organization. Practitioner
 Severity: #error
 Expression: "(practitioner.exists() and practitioner.resolve().address.city.exists() and practitioner.resolve().address.postalCode.exists()) or (organization.exists() and organization.resolve().address.city.exists() and organization.resolve().address.postalCode.exists())"
 
+Invariant: ch-elm-practrole-organizaton-name-exists
+Description: "Must provide an organization name in case there is no practitioner."
+Severity: #error
+Expression: "practitioner.exists().not() implies (organization.exists() and organization.resolve().name.exists())"
+
 Invariant: ch-elm-expecting-specimen-specification
 Description: "If Observation.code is a member of http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-specimen-specification, then Specimen.type must be a member of the mapped ValueSet in http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-specimen-specification-to-results-completion-vs"
 Severity: #error

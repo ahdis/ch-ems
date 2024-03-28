@@ -1,9 +1,9 @@
 {
   "package-id" : "ch.fhir.ig.ch-elm",
-  "version" : "1.2.0-cibuild",
-  "path" : "http://fhir.ch/ig/ch-elm/1.1.0",
+  "version" : "1.2.0",
+  "path" : "http://fhir.ch/ig/ch-elm/1.2.0",
   "mode" : "milestone",
-  "status" : "draft",
+  "status" : "release",
   "sequence" : "STU 1",
   "desc" : "FOPH",
   "changes" : "changelog.html",

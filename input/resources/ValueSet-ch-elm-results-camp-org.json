@@ -1,0 +1,73 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-results-camp-org",
+  
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-camp-org",
+  "version": "2024-03-27",
+  "name": "ChElmResultsCampOrg",
+  "title": "CH ELM Results Camp Org",
+  "status": "active",
+  "experimental": false,
+  "description": "The \"CH ELM Results Camp Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Camp Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "450602004",
+            "display": "Campylobacter ureolyticus (organism)"
+          },
+          {
+            "code": "103427005",
+            "display": "Campylobacter upsaliensis (organism)"
+          },
+          {
+            "code": "116386003",
+            "display": "Campylobacter lari (organism)"
+          },
+          {
+            "code": "113525005",
+            "display": "Campylobacter rectus (organism)"
+          },
+          {
+            "code": "9041007",
+            "display": "Campylobacter hyointestinalis (organism)"
+          },
+          {
+            "code": "116037008",
+            "display": "Campylobacter curvus (organism)"
+          },
+          {
+            "code": "9892000",
+            "display": "Campylobacter concisus (organism)"
+          },
+          {
+            "code": "703009006",
+            "display": "Campylobacter jejuni or Campylobacter coli (finding)"
+          },
+          {
+            "code": "84210007",
+            "display": "Campylobacter fetus (organism)"
+          },
+          {
+            "code": "113528007",
+            "display": "Campylobacter gracilis (organism)"
+          },
+          {
+            "code": "40614002",
+            "display": "Campylobacter coli (organism)"
+          },
+          {
+            "code": "35408001",
+            "display": "Genus Campylobacter (organism)"
+          },
+          {
+            "code": "66543000",
+            "display": "Campylobacter jejuni (organism)"
+          }
+        ]
+      }
+    ]
+  }
+}

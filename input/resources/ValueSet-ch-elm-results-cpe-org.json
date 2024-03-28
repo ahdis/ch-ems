@@ -1,13 +1,14 @@
 {
   "resourceType": "ValueSet",
   "id": "ch-elm-results-cpe-org",
+  
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org",
-  "version": "2023-10-31",
+  "version": "2024-03-27",
   "name": "ChElmResultsCpeOrg",
   "title": "CH ELM Results Cpe Org",
   "status": "active",
   "experimental": false,
-  "description": "This CH ELM value set includes the codes for the laboratory test results to complete the leading code with an additional code.",
+  "description": "The \"CH ELM Results Cpe Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Cpe Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information.",
   "compose": {
     "include": [
       {

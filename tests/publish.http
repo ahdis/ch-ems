@@ -17,7 +17,22 @@ Accept: application/fhir+json
 
 < ./2Doc-ChlamydiaTrachomatis.json
 
+
+### SARSS-CoV-2
+# @name docfref 
+POST https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference HTTP/1.1
+Content-Type: application/fhir+json
+Accept: application/fhir+json
+
+< ../output/DocumentReference-7-DocumentReferenceStrict.json
+
 ###
+GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference/{{docfref.response.body.id}} HTTP/1.1
+Content-Type: application/fhir+json
+Accept: application/fhir+json
+
+### COVID
+# @name sts 
 POST https://test.ahdis.ch/matchboxv3/fhir/$validate?profile=http://fhir.ch/ig/ch-elm/StructureDefinition/PublishDocumentReference|1.0.0 HTTP/1.1
 Content-Type: application/fhir+json
 Accept: application/fhir+json

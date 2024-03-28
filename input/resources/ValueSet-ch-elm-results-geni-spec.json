@@ -1,45 +1,58 @@
 {
   "resourceType": "ValueSet",
   "id": "ch-elm-results-geni-spec",
+  
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
-  "version": "2023-10-18",
+  "version": "2024-03-27",
   "name": "ChElmResultsGeniSpec",
   "title": "CH ELM Results Geni Spec",
   "status": "active",
   "experimental": false,
-  "description": "This CH ELM value set includes the codes for the laboratory test results to complete the leading code with an additional code.",
+  "description": "The \"CH ELM Results Geni Spec\" material group provides a curated set of codes representing specific materials. Each code within this group is selected to ensure consistency and accuracy for medical coding related to the primary LOINC codes. Clients using the \"CH ELM Results Geni Spec\" group should refer to the provided codes to ensure they capture and report material information correctly and consistently.",
   "compose": {
     "include": [
       {
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "119396006",
+            "display": "Specimen from endometrium (specimen)"
+          },
+          {
+            "code": "119324002",
+            "display": "Specimen of unknown material (specimen)"
+          },
+          {
             "code": "119395005",
-            "display": "Specimen from uterine cervix"
+            "display": "Specimen from uterine cervix (specimen)"
           },
           {
             "code": "258527002",
-            "display": "Anal swab"
+            "display": "Anal swab (specimen)"
           },
           {
-            "code": "258508008",
-            "display": "Genital swab"
+            "code": "122575003",
+            "display": "Urine specimen (specimen)"
           },
           {
-            "code": "258520000",
-            "display": "Vaginal swab"
+            "code": "257261003",
+            "display": "Swab (specimen)"
           },
           {
             "code": "119393003",
-            "display": "Specimen from urethra"
+            "display": "Specimen from urethra (specimen)"
           },
           {
             "code": "119347001",
-            "display": "Seminal fluid"
+            "display": "Seminal fluid specimen (specimen)"
           },
           {
-            "code": "119396006",
-            "display": "Specimen from endometrium"
+            "code": "119394009",
+            "display": "Specimen from vagina (specimen)"
+          },
+          {
+            "code": "119344008",
+            "display": "Specimen from genital system (specimen)"
           }
         ]
       }

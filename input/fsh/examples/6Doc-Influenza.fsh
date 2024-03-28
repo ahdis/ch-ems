@@ -66,7 +66,7 @@ InstanceOf: ChElmObservationResultsLaboratory
 Usage: #inline
 * status = #final
 * category[laboratory] = $observation-category#laboratory "Laboratory"
-* code = $loinc#100343-3 "Influenza virus B RNA [Presence] in Saliva (oral fluid) by NAA with probe detection"
+* code = $loinc#76078-5 "Influenza virus A RNA [Presence] in Nasopharynx by NAA with probe detection"
 * subject = Reference(1Pat-DM)
 * effectiveDateTime = "2023-09-10T14:20:00+02:00"
 * performer = Reference(1Org-Labor)
@@ -88,7 +88,7 @@ Usage: #inline
 * identifier.value = "26500923622"
 * status = #completed
 * intent = #order
-* code = $loinc#100343-3 "Influenza virus B RNA [Presence] in Saliva (oral fluid) by NAA with probe detection"
+* code = $loinc#76078-5 "Influenza virus A RNA [Presence] in Nasopharynx by NAA with probe detection"
 * subject = Reference(1Pat-DM)
 * requester = Reference(PR-PeterHauser)
 * specimen = Reference(6Spec-Specimen)
