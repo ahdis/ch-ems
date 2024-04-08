@@ -1,5 +1,9 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
+### ci-build 
+
+* [#74](https://github.com/ahdis/ch-elm/issues/62): Check for BER and UIDB format
+
 ### 1.2.0 2024/03/28 
 
 * [#32](https://github.com/ahdis/ch-elm/issues/62): adding ValueSets/ConceptMaps for Interpretation Code
