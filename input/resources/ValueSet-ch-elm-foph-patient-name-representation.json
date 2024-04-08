@@ -27,6 +27,10 @@
             "display": "HIV Code"
           },
           {
+            "code": "initials-or-vctcode",
+            "display": "Initials or VCT Code"
+          },
+          {
             "code": "conditional",
             "display": "Conditional"
           }

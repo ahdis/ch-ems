@@ -1,3 +1,15 @@
+Profile: CHElmHumanName
+Parent: CHCoreHumanName
+Id: ch-elm-humanname
+Title: "Human Name"
+Description: "Name with extensions for data-absent-reason"
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension contains ChElmExtVctCode named vctcode 0..1 and ChElmExtHivCode named hivcode 0..1
+* family.extension contains $data-absent-reason named dataabsentreason 0..1
+* given.extension contains $data-absent-reason named dataabsentreason 0..1
+
 Profile: ChElmPatient
 Parent: ChLabPatient
 Id: ch-elm-patient
@@ -20,9 +32,8 @@ Description: "This CH ELM base profile constrains the Patient resource for the p
 * identifier[insuranceCardNumber] 0..0
 
 * name 1..1
+* name only CHElmHumanName
 * name ^short = "Whether the personal data is transmitted by using initials, full name or a special combination is described under 'Guidance - Personal Data (Patient Name)'"
-* name.text ^short = "For usage in the case of HIV/AIDS (see IG guidance)"
-* name.text ^maxLength = 2
 * name.family 1..
 * name.family ^short = "In the case of HIV/AIDS masked and provide a specific value (see IG guidance)"
 * name.family ^maxLength = 100
@@ -60,3 +71,33 @@ Description: "This CH ELM base profile constrains the Patient resource for the p
 * telecom[phone].value ^example.label = "CH ELM"
 * telecom[phone].value ^example.valueString = "+41 79 999 55 66"
 * telecom[phone].value ^maxLength = 25
+
+Profile: ChElmPatientVCT
+Parent: ChElmPatient
+Title: "CH ELM Patient VCT"
+Description: "Patient representation via a VCT Code"
+* . ^short = "CH ELM Patient VCT"
+* name.extension[vctcode] 1.. 
+* name.extension[hivcode] ..0
+* name.family.extension[dataabsentreason] 1..
+* name.family.extension[dataabsentreason].valueCode = #masked
+* name.given.extension[dataabsentreason] 1..
+* name.given.extension[dataabsentreason].valueCode = #masked
+
+Profile: ChElmPatientHIV
+Parent: ChElmPatient
+Title: "CH ELM Patient HIV"
+Description: "Patient representation for HIV"
+* . ^short = "CH ELM Patient HIV"
+* name.extension[vctcode] ..0 
+* name.extension[hivcode] 1..
+* name.family.extension[dataabsentreason] 1..
+* name.family.extension[dataabsentreason].valueCode = #masked
+* name.given.extension[dataabsentreason] 1..
+* name.given.extension[dataabsentreason].valueCode = #masked
+
+Profile: ChElmPatientInitials
+Parent: ChElmPatient
+Title: "CH ELM Patient Initials"
+Description: "Patient representation via Initials"
+* name obeys name-initials

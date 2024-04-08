@@ -13,11 +13,14 @@ Depending on the organism (leading code), the requirement for how the patient's 
 * **Initials**
    * Organism: Neisseria gonorrhoeae, Chlamydia trachomatis, etc.
    * [Example](Patient-Pat-ET.json.html): ET (Patient.name.family = T, Patient.name.given = E)
+* **VCT Code**
+   * Organism: Neisseria gonorrhoeae, Chlamydia trachomatis, etc.
+   * [Example](Patient-Pat-VCT.json.html): kste12345 (Patient.name.extension = kste12345, Patient.name.family/Patient.name.given = masked)
 * **HIV Code**
    * Organism: In the case of HIV/AIDS, under initials, enter the first letter and the number of letters of the first name. If this is longer than 9 letters, the number is 0. In the case of multi-part first names with a hyphen or in two words, only the first part is used.
-   * [Example](Patient-Pat-E5.json.html): E5 (Patient.name.text = E5, Patient.name.family/Patient.name.given = masked)
+   * [Example](Patient-Pat-E5.json.html): E5 (Patient.name.extension = E5, Patient.name.family/Patient.name.given = masked)
 * **Conditional**
-   * The patient's identification cannot determinded directly based on the leading code. Consult the implementation guideline for further information.
+   * The patient's identification cannot determined directly based on the leading code. Consult the implementation guideline for further information.
 
 The complete overview of which characteristics are used for which organisms can be found in the ConceptMap [CH ELM Results To FOPH Patient Name Representation](ConceptMap-ch-elm-results-to-foph-patient-name-representation.html) and in the Ordinance of the FDHA on the Reporting of Observations of Communicable human diseases (SR 818.101.126) ([DE](https://www.fedlex.admin.ch/eli/cc/2015/892/de), [FR](https://www.fedlex.admin.ch/eli/cc/2015/892/fr), [IT](https://www.fedlex.admin.ch/eli/cc/2015/892/it)).   
 

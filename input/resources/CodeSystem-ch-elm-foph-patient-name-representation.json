@@ -38,6 +38,11 @@
       "definition": "An HIV-specific code representing the patient. Consult the 'Guidance - Personal Data (Patient Name)' for details on constructing the HIV patient identification code."
     },
     {
+      "code": "initials-or-vctcode",
+      "display": "Initials or VCT Code",
+      "definition": "A specific code representing the patient. Consult the 'Guidance - Personal Data (Patient Name)' for details on constructing the VCT patient identification code."
+    },    
+    {
       "code": "conditional",
       "display": "Conditional",
       "definition": "The leading code (Observation.code) does not define a patient-anonymization, it is dependent on further specification of the organism. Consult the Ordinance SR 818.101.126 (https://www.fedlex.admin.ch/eli/cc/2015/892/de) to determine the required patient-anonymization depending on the organism reported."

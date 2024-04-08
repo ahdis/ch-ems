@@ -72,12 +72,9 @@ Usage: #inline
 * result.type = "Observation"
 
 Instance: 50d5deca-64e9-4a30-8cec-40ac1f015655
-InstanceOf: ChElmPatient
+InstanceOf: ChElmPatientVCT
 Usage: #inline
-* identifier.system = "urn:oid:2.16.756.5.32"
-* identifier.value = "7561234567897"
-* name.family = "F"
-* name.given = "H"
+* name.extension[vctcode].valueString = "kste12345"
 * gender = #female
 * birthDate = "1985-10-17"
 * address[home].use = #home
