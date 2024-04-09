@@ -25,7 +25,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#52](https://github.com/ahdis/ch-elm/issues/52): CH ELM Organization: BUR and UID as identifiers 0..1, no ZSR anymore
 * [#6](https://github.com/ahdis/ch-elm/issues/6): Fix ig dependencies to published versions 
 * [#60](https://github.com/ahdis/ch-elm/issues/60): Removal of rule that prevents a specimen code to be sent 
-* [#61](https://github.com/ahdis/ch-elm/issues/61): postalCode / city required for Orderer (Practitioner and/or Organisation)
+* [#61](https://github.com/ahdis/ch-elm/issues/61): postalCode / city required for Orderer (Practitioner and/or Organization)
 
 #### Fixed
 * [#45](https://github.com/ahdis/ch-elm/issues/45): Fix minimum cardinality for Practitioner in Bundle
