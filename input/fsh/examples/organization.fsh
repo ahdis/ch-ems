@@ -1,6 +1,8 @@
 Instance: Organization-OrdererWithBERUIDB
 InstanceOf: ChElmOrganizationOrderer
 Usage: #example
+Title: "Org: Orderer with BER and UIDB"
+Description: "Example for a CH ELM Organization: Orderer"
 * name = "Praxis Dr. Hauser"
 * address.line = "Hauptstrasse 10"
 * address.line.extension[streetName].valueString = "Hauptstrasse"
