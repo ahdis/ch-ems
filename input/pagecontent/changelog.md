@@ -2,7 +2,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 ### ci-build 
 
-* [#74](https://github.com/ahdis/ch-elm/issues/62): Check for BER and UIDB format
+* [#74](https://github.com/ahdis/ch-elm/issues/74): Check for BER and UIDB format
 * [#77](https://github.com/ahdis/ch-elm/issues/77): VCT and HIV Codes for patient (guidance)
 
 ### 1.2.0 2024/03/28 
