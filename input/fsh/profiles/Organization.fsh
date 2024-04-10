@@ -10,7 +10,6 @@ Description: "This CH ELM base profile constrains the Organization resource for 
 * identifier[UIDB] 0..0
 * identifier[BER] 0..0
 
-
 Profile: ChElmOrganizationLab
 Parent: $ch-core-organization
 Id: ch-elm-organization-lab
@@ -25,6 +24,19 @@ Description: "This CH ELM base profile constrains the Organization resource for 
 * name 1..
 * name ^maxLength = 100
 
+Profile: BERIdentifierCheck
+Parent: BERIdentifier
+Id: ch-elm-ber-identifier
+Title: "BER Identifier"
+Description: "Identifier holding a number for BER (Business and Enterprise Register), BUR (Betriebs- und Unternehmensregister), REE (Registre des entreprises et des établissements), RIS (Registro delle imprese e degli stabilimenti)"
+* value obeys ber-length and ber-modulus-11
+
+Profile: UIDBIdentifierCheck
+Parent: UIDBIdentifier
+Id: ch-elm-uidb-identifier
+Title: "UIDB Identifier"
+Description: "Identifier holding a number for UIDB (Unique Identification Business), UID (Verwendung der Unternehmens-Identifikationsnummer), IDE (Utilisation du numéro d'identification des entreprises), IDI (Utilizzo del numero d'identificazione delle imprese)"
+* value obeys uidb-length and uidb-modulus-11
 
 Profile: ChElmOrganizationOrderer
 Parent: $ch-core-organization
@@ -35,7 +47,9 @@ Description: "This CH ELM base profile constrains the Organization resource for 
 * extension contains ChElmExtDepartment named department 0..1 MS
 * identifier MS
 * identifier[UIDB] 0..1 MS
+* identifier[UIDB] only UIDBIdentifierCheck
 * identifier[BER] 0..1 MS
+* identifier[BER] only BERIdentifierCheck
 * name MS
 * name ^maxLength = 100
 * address ..1 MS

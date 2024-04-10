@@ -1,5 +1,10 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
+### ci-build 
+
+* [#74](https://github.com/ahdis/ch-elm/issues/74): Check for BER and UIDB format
+* [#77](https://github.com/ahdis/ch-elm/issues/77): VCT and HIV Codes for patient (guidance)
+
 ### 1.2.0 2024/03/28 
 
 * [#32](https://github.com/ahdis/ch-elm/issues/62): adding ValueSets/ConceptMaps for Interpretation Code
@@ -20,7 +25,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#52](https://github.com/ahdis/ch-elm/issues/52): CH ELM Organization: BUR and UID as identifiers 0..1, no ZSR anymore
 * [#6](https://github.com/ahdis/ch-elm/issues/6): Fix ig dependencies to published versions 
 * [#60](https://github.com/ahdis/ch-elm/issues/60): Removal of rule that prevents a specimen code to be sent 
-* [#61](https://github.com/ahdis/ch-elm/issues/61): postalCode / city required for Orderer (Practitioner and/or Organisation)
+* [#61](https://github.com/ahdis/ch-elm/issues/61): postalCode / city required for Orderer (Practitioner and/or Organization)
 
 #### Fixed
 * [#45](https://github.com/ahdis/ch-elm/issues/45): Fix minimum cardinality for Practitioner in Bundle

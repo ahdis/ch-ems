@@ -581,7 +581,7 @@
           "display": "Chlamydia trachomatis [Presence] in Specimen by Organism specific culture",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]

@@ -9,3 +9,27 @@ Description: "This CH ELM extension enables the representation of a department (
 * value[x] only string
 * valueString ^short = "Name of the department"
 * valueString ^maxLength = 100
+
+Extension: ChElmExtVctCode
+Id: ch-elm-ext-vct-code
+Title: "CH ELM Extension: VCT code"
+Description: "This CH ELM extension enables to proivde the VCT Code."
+* ^context[+].type = #element
+* ^context[=].expression = "HumanName"
+* . ^short = "CH ELM Extension: VCT Code"
+* value[x] 1..
+* value[x] only string
+* valueString ^short = "Name of the VCT Code"
+* valueString ^maxLength = 20
+
+Extension: ChElmExtHivCode
+Id: ch-elm-ext-hiv-code
+Title: "CH ELM Extension: HIV code"
+Description: "This CH ELM extension enables to proivde the HIV Code."
+* ^context[+].type = #element
+* ^context[=].expression = "HumanName"
+* . ^short = "CH ELM Extension: HIV Code"
+* value[x] 1..
+* value[x] only string
+* valueString ^short = "Name of the HIV code"
+* valueString ^maxLength = 2
