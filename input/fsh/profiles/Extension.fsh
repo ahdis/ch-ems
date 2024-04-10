@@ -17,7 +17,6 @@ Description: "This CH ELM extension enables to proivde the VCT Code."
 * ^context[+].type = #element
 * ^context[=].expression = "HumanName"
 * . ^short = "CH ELM Extension: VCT Code"
-* obeys string-with-at-least-two-characters-and-two-digits
 * value[x] 1..
 * value[x] only string
 * valueString ^short = "Name of the VCT Code"

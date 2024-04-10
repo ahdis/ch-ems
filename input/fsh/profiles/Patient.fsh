@@ -77,6 +77,8 @@ Parent: ChElmPatient
 Title: "CH ELM Patient VCT"
 Description: "Patient representation via a VCT Code"
 * . ^short = "CH ELM Patient VCT"
+* identifier[AHVN13] 0..0
+* identifier[IDN] 0..0
 * name.extension[vctcode] 1.. 
 * name.extension[hivcode] ..0
 * name.family.extension[dataabsentreason] 1..

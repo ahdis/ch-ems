@@ -92,8 +92,3 @@ Invariant: name-initials
 Description: "a name with initials"
 Severity: #error
 Expression: "family.exists() and given.exists() and given.first().exists() and given.first().length() = 1 and family.length() = 1"
-
-Invariant: string-with-at-least-two-characters-and-two-digits
-Description: "at least 2 characters and at least 2 digits"
-Severity: #error
-Expression: "value.matches('.*[a-zA-Z].*[a-zA-Z].*') and value.matches('.*[0-9].*[0-9].*')"
