@@ -2,12 +2,12 @@
   "resourceType": "CodeSystem",
   "id": "ch-elm-interpretation-codes-vs",
   "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-interpretation-codes-vs",
-  "version": "2024-03-27",
+  "version": "2024-04-30",
   "name": "ChElmInterpretationCodesVs",
   "title": "CH ELM Interpretation Codes Vs",
   "status": "active",
   "experimental": false,
-  "description": "This CH ELM code system defines the value set URLs as Interpretation Codes to map in the concept maps the leading codes.",
+  "description": "The codes contained in this code system represent URLs of value sets that can be used as target codes in ConceptMaps. These value sets define the codes that are permitted to indicate the observation interpretation in relation to the leading code.",
   "jurisdiction": [
     {
       "coding": [

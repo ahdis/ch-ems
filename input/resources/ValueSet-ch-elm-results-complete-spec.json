@@ -1,9 +1,8 @@
 {
   "resourceType": "ValueSet",
   "id": "ch-elm-results-complete-spec",
-  
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-complete-spec",
-  "version": "2024-03-27",
+  "version": "2024-04-30",
   "name": "ChElmResultsCompleteSpec",
   "title": "CH ELM Results Complete Spec",
   "status": "active",

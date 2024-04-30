@@ -41,7 +41,7 @@ The media type of the HTTP body shall be either `application/fhir+json` or `appl
 
 The message is sent to the DocumentReference at the base URL as defined in FHIR. See [http://hl7.org/fhir/R4/http.html](http://hl7.org/fhir/R4/http.html) for the definition of “HTTP” access methods and “base”.
 
-```
+```http
 POST http://[base]/DocumentReference HTTP/1.1
 Content-Type: application/fhir+json
 Accept: application/fhir+json

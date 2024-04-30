@@ -1,9 +1,8 @@
 {
   "resourceType": "CodeSystem",
   "id": "ch-elm-foph-patient-name-representation",
-  
   "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-foph-patient-name-representation",
-  "version": "2024-03-27",
+  "version": "2024-04-30",
   "name": "ChElmFophPatientNameRepresentation",
   "title": "CH ELM FOPH Patient Name Representation",
   "status": "active",
@@ -39,9 +38,9 @@
     },
     {
       "code": "initials-or-vctcode",
-      "display": "Initials or VCT Code",
-      "definition": "A specific code representing the patient. Consult the 'Guidance - Personal Data (Patient Name)' for details on constructing the VCT patient identification code."
-    },    
+      "display": "Initials or VCT-Code",
+      "definition": "Initials of the patient name (given name and family name) or VCT-Code (voluntary counselling and testing code)."
+    },
     {
       "code": "conditional",
       "display": "Conditional",

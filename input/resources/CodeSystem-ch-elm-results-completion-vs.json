@@ -1,14 +1,13 @@
 {
   "resourceType": "CodeSystem",
   "id": "ch-elm-results-completion-vs",
-  
   "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-completion-vs",
-  "version": "2024-03-27",
+  "version": "2024-04-30",
   "name": "ChElmResultsCompletionVs",
   "title": "CH ELM Results Completion Vs",
   "status": "active",
   "experimental": false,
-  "description": "This CH ELM code system defines the value set URLs as codes to map in the concept maps the leading codes, which must be completed with additional codes.",
+  "description": "The codes contained in this code system represent URLs of value sets that can be used as target codes in ConceptMaps. These value sets define the codes that are permitted for specifying the organism or specimen in relation to the leading code.",
   "jurisdiction": [
     {
       "coding": [
@@ -75,6 +74,9 @@
     },
     {
       "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-influ-org"
+    },
+    {
+      "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-leg-org"
     },
     {
       "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-lis-org"

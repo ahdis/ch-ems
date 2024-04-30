@@ -1,9 +1,8 @@
 {
   "resourceType": "ValueSet",
   "id": "ch-elm-expecting-organism-specification",
-  
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-organism-specification",
-  "version": "2024-03-27",
+  "version": "2024-04-30",
   "name": "ChElmExpectingOrganismSpecification",
   "title": "CH ELM Expecting Organism Specification",
   "status": "active",
@@ -17,6 +16,14 @@
           {
             "code": "100911-7",
             "display": "Campylobacter sp [Presence] in Stool by Organism specific culture"
+          },
+          {
+            "code": "101427-3",
+            "display": "Shigella sp DNA [Presence] in Stool by NAA with probe detection"
+          },
+          {
+            "code": "32781-7",
+            "display": "Legionella sp Ag [Presence] in Urine"
           },
           {
             "code": "49614-1",
