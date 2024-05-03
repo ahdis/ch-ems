@@ -4,6 +4,8 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 * [#74](https://github.com/ahdis/ch-elm/issues/74): Check for BER and UIDB format
 * [#77](https://github.com/ahdis/ch-elm/issues/77): VCT and HIV Codes for patient (guidance)
+* [#81](https://github.com/ahdis/ch-elm/issues/81): Observation.value not mandatory
+* [#82](https://github.com/ahdis/ch-elm/issues/82): Adapt menu structure
 
 ### 1.2.0 2024/03/28 
 
