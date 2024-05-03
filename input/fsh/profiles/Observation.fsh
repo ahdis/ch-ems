@@ -17,7 +17,6 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * effectiveDateTime 1..
 * effectiveDateTime obeys ch-elm-dateTime
 
-* value[x] 1..
 * valueQuantity 0..1
 // * valueQuantity only ChElmQuantity
 * valueCodeableConcept 0..1

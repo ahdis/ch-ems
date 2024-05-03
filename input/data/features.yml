@@ -3,5 +3,5 @@ feedback:
     active: true
     formUrl: https://docs.google.com/forms/d/e/1FAIpQLSefM7pEMiqyr1AOEVFfoo54nKBLmuSffdyh3EonFfxhFLrcwA/viewform?usp=sf_link
 analytics:
-    active: true
-    tagId: G-ED8VLFMEVY
+#    active: true
+#    tagId: G-ED8VLFMEVY

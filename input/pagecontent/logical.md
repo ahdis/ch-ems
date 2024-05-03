@@ -1,0 +1,1 @@
+{% include StructureDefinition-LaboratoryReport-html.xhtml %}

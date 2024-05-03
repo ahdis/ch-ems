@@ -1,9 +1,8 @@
 {
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation",
-  
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
-  "version": "2024-03-27",
+  "version": "2024-04-30",
   "name": "ChElmResultsLaboratoryObservation",
   "title": "CH ELM Results Laboratory Observation",
   "status": "active",
@@ -15,6 +14,10 @@
         "system": "http://loinc.org",
         "concept": [
           {
+            "code": "100383-9",
+            "display": "Monkeypox virus DNA [Presence] in Specimen by NAA with probe detection"
+          },
+          {
             "code": "100911-7",
             "display": "Campylobacter sp [Presence] in Stool by Organism specific culture"
           },
@@ -25,6 +28,10 @@
           {
             "code": "101424-0",
             "display": "Influenza virus A H3 RNA [Presence] in Respiratory system specimen by NAA with probe detection"
+          },
+          {
+            "code": "101427-3",
+            "display": "Shigella sp DNA [Presence] in Stool by NAA with probe detection"
           },
           {
             "code": "101552-8",
@@ -91,6 +98,10 @@
             "display": "Neisseria gonorrhoeae DNA [Presence] in Specimen by NAA with probe detection"
           },
           {
+            "code": "31204-1",
+            "display": "Hepatitis B virus core IgM Ab [Presence] in Serum"
+          },
+          {
             "code": "31777-6",
             "display": "Chlamydia trachomatis Ag [Presence] in Specimen"
           },
@@ -105,6 +116,10 @@
           {
             "code": "32705-6",
             "display": "Neisseria gonorrhoeae DNA [Presence] in Vaginal fluid by NAA with probe detection"
+          },
+          {
+            "code": "32781-7",
+            "display": "Legionella sp Ag [Presence] in Urine"
           },
           {
             "code": "34487-9",
@@ -181,6 +196,10 @@
           {
             "code": "51578-3",
             "display": "Chlamydia trachomatis DNA [Presence] in Semen by NAA with probe detection"
+          },
+          {
+            "code": "5199-5",
+            "display": "Hepatitis C virus Ab [Presence] in Serum by Immunoblot"
           },
           {
             "code": "53879-3",
@@ -273,6 +292,10 @@
           {
             "code": "698-1",
             "display": "Neisseria gonorrhoeae [Presence] in Specimen by Organism specific culture"
+          },
+          {
+            "code": "70568-1",
+            "display": "Plasmodium knowlesi DNA [Presence] in Blood by NAA with probe detection"
           },
           {
             "code": "71429-5",

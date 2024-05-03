@@ -40,7 +40,7 @@ Accept: application/fhir+json
 < ./2Doc-ChlamydiaTrachomatis.json
 
 ###
-GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference/55e3ab0e-8e7f-4919-b4b7-3f2fd2a502ae HTTP/1.1
+GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference/8064a318-0105-4d94-a7b0-48ea4c32cd81 HTTP/1.1
 Content-Type: application/fhir+json
 Accept: application/fhir+json
 

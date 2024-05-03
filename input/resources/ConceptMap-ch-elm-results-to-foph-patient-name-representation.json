@@ -1,9 +1,8 @@
 {
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-foph-patient-name-representation",
-  
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-foph-patient-name-representation",
-  "version": "2024-03-27",
+  "version": "2024-04-30",
   "name": "ChElmResultsToFophPatientNameRepresentation",
   "title": "CH ELM Results To FOPH Patient Name Representation",
   "status": "active",
@@ -26,6 +25,16 @@
       "source": "http://loinc.org",
       "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-foph-patient-name-representation",
       "element": [
+        {
+          "code": "100383-9",
+          "display": "Monkeypox virus DNA [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
         {
           "code": "100911-7",
           "display": "Campylobacter sp [Presence] in Stool by Organism specific culture",
@@ -52,6 +61,16 @@
           "target": [
             {
               "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "101427-3",
+          "display": "Shigella sp DNA [Presence] in Stool by NAA with probe detection",
+          "target": [
+            {
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -101,7 +120,7 @@
           "display": "Neisseria gonorrhoeae [Presence] in Anal by Organism specific culture",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -111,7 +130,7 @@
           "display": "Chlamydia trachomatis [Presence] in Cervix by Organism specific culture",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -121,7 +140,7 @@
           "display": "Chlamydia trachomatis [Presence] in Vaginal fluid by Organism specific culture",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -131,7 +150,7 @@
           "display": "Chlamydia trachomatis [Presence] in Urethra by Organism specific culture",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -141,7 +160,7 @@
           "display": "Chlamydia trachomatis rRNA [Presence] in Genital specimen by Probe",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -151,7 +170,7 @@
           "display": "Chlamydia trachomatis DNA [Presence] in Cervix by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -161,7 +180,7 @@
           "display": "Chlamydia trachomatis DNA [Presence] in Urethra by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -171,7 +190,7 @@
           "display": "Neisseria gonorrhoeae DNA [Presence] in Urethra by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -181,7 +200,7 @@
           "display": "Neisseria gonorrhoeae DNA [Presence] in Urine by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -191,7 +210,7 @@
           "display": "Chlamydia trachomatis DNA [Presence] in Specimen by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -201,7 +220,7 @@
           "display": "Chlamydia trachomatis rRNA [Presence] in Genital fluid by Probe",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -211,7 +230,17 @@
           "display": "Neisseria gonorrhoeae DNA [Presence] in Specimen by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "31204-1",
+          "display": "Hepatitis B virus core IgM Ab [Presence] in Serum",
+          "target": [
+            {
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -221,7 +250,7 @@
           "display": "Chlamydia trachomatis Ag [Presence] in Specimen",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -251,7 +280,17 @@
           "display": "Neisseria gonorrhoeae DNA [Presence] in Vaginal fluid by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "32781-7",
+          "display": "Legionella sp Ag [Presence] in Urine",
+          "target": [
+            {
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -291,7 +330,7 @@
           "display": "Chlamydia trachomatis rRNA [Presence] in Urine by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -301,7 +340,7 @@
           "display": "Chlamydia trachomatis rRNA [Presence] in Specimen by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -311,7 +350,7 @@
           "display": "Neisseria gonorrhoeae rRNA [Presence] in Specimen by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -321,7 +360,7 @@
           "display": "Chlamydia trachomatis DNA [Presence] in Vaginal fluid by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -331,7 +370,7 @@
           "display": "Chlamydia trachomatis DNA [Presence] in Anal by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -341,7 +380,7 @@
           "display": "Chlamydia trachomatis [Presence] in Anal by Organism specific culture",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -351,7 +390,7 @@
           "display": "Chlamydia trachomatis [Presence] in Genital specimen by Organism specific culture",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -361,7 +400,7 @@
           "display": "Neisseria gonorrhoeae DNA [Presence] in Genital specimen by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -421,7 +460,7 @@
           "display": "Chlamydia trachomatis rRNA [Presence] in Cervix by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -431,7 +470,7 @@
           "display": "Neisseria gonorrhoeae rRNA [Presence] in Cervix by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -441,7 +480,17 @@
           "display": "Chlamydia trachomatis DNA [Presence] in Semen by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "5199-5",
+          "display": "Hepatitis C virus Ab [Presence] in Serum by Immunoblot",
+          "target": [
+            {
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -451,7 +500,7 @@
           "display": "Neisseria gonorrhoeae rRNA [Presence] in Vaginal fluid by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -461,7 +510,7 @@
           "display": "Chlamydia trachomatis rRNA [Presence] in Urethra by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -471,7 +520,7 @@
           "display": "Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -481,7 +530,7 @@
           "display": "Neisseria gonorrhoeae rRNA [Presence] in Urethra by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -501,7 +550,7 @@
           "display": "Chlamydia trachomatis rRNA [Presence] in Anal by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -511,7 +560,7 @@
           "display": "Neisseria gonorrhoeae rRNA [Presence] in Anal by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -521,7 +570,7 @@
           "display": "Neisseria gonorrhoeae rRNA [Presence] in Throat by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -531,7 +580,7 @@
           "display": "Neisseria gonorrhoeae rRNA [Presence] in Urine by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -591,7 +640,7 @@
           "display": "Chlamydia trachomatis DNA [Presence] in Genital specimen by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -601,7 +650,7 @@
           "display": "Chlamydia trachomatis DNA [Presence] in Urine by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -611,7 +660,7 @@
           "display": "Neisseria gonorrhoeae [Presence] in Cervix by Organism specific culture",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -621,7 +670,7 @@
           "display": "Neisseria gonorrhoeae [Presence] in Genital specimen by Organism specific culture",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -631,7 +680,7 @@
           "display": "Neisseria gonorrhoeae [Presence] in Vaginal fluid by Organism specific culture",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -641,7 +690,7 @@
           "display": "Neisseria gonorrhoeae [Presence] in Semen by Organism specific culture",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -651,7 +700,7 @@
           "display": "Neisseria gonorrhoeae [Presence] in Throat by Organism specific culture",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -661,7 +710,7 @@
           "display": "Neisseria gonorrhoeae [Presence] in Urethra by Organism specific culture",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -669,6 +718,16 @@
         {
           "code": "698-1",
           "display": "Neisseria gonorrhoeae [Presence] in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "initials-or-vctcode",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "70568-1",
+          "display": "Plasmodium knowlesi DNA [Presence] in Blood by NAA with probe detection",
           "target": [
             {
               "code": "initials",
@@ -761,7 +820,7 @@
           "display": "Chlamydia trachomatis DNA [Presence] in Anorectal by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -771,7 +830,7 @@
           "display": "Chlamydia trachomatis rRNA [Presence] in Anorectal by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -781,7 +840,7 @@
           "display": "Neisseria gonorrhoeae rRNA [Presence] in Anorectal by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -791,7 +850,7 @@
           "display": "Chlamydia trachomatis [Presence] in Anorectal by Organism specific culture",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -801,7 +860,7 @@
           "display": "Neisseria gonorrhoeae [Presence] in Anorectal by Organism specific culture",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -851,7 +910,7 @@
           "display": "Neisseria gonorrhoeae DNA [Presence] in Anorectal by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -861,7 +920,7 @@
           "display": "Neisseria gonorrhoeae DNA [Presence] in Throat by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -1011,7 +1070,7 @@
           "display": "Neisseria gonorrhoeae DNA [Presence] in Cervix by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]
@@ -1047,7 +1106,7 @@
           "display": "Treponema pallidum (organism)",
           "target": [
             {
-              "code": "initials",
+              "code": "initials-or-vctcode",
               "equivalence": "relatedto"
             }
           ]

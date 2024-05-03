@@ -1,14 +1,13 @@
 {
   "resourceType": "ConceptMap",
   "id": "ch-elm-expecting-organism-specification-to-results-completion-vs",
-  
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-organism-specification-to-results-completion-vs",
-  "version": "2024-03-27",
+  "version": "2024-04-30",
   "name": "ChElmExpectingOrganismSpecificationToResultsCompletionVs",
   "title": "CH ELM Expecting Organism Specification To Results Completion Vs",
   "status": "active",
   "experimental": false,
-  "description": "This CH ELM concept map shows which leading codes have to be completed by an additional code. The target code shows the URL of the value set from which the completing codes for the expecting specimen must come from.",
+  "description": "This CH ELM concept map shows which leading codes have to be completed by an additional code to specify the organism. The target code shows the URL of the value set containing the permitted codes for the organism specification.",
   "jurisdiction": [
     {
       "coding": [
@@ -32,6 +31,26 @@
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-camp-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "101427-3",
+          "display": "Shigella sp DNA [Presence] in Stool by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-shi-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "32781-7",
+          "display": "Legionella sp Ag [Presence] in Urine",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-leg-org",
               "equivalence": "relatedto"
             }
           ]
