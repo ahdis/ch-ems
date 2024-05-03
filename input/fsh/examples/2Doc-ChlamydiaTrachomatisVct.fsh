@@ -66,7 +66,7 @@ Usage: #inline
 * subject.type = "Patient"
 * performer = Reference(urn:uuid:8b9163cc-4894-462c-8060-b9b01f705a8b) // Organization: Author & Lab
 * performer.type = "Organization"
-* specimen = Reference(urn:uuid:b2b24ded-fd9f-40bc-a822-1fb07e14c2ef)
+* specimen = Reference(urn:uuid:8e87aff2-708a-4964-a5d1-281e4d4c2786 )
 * specimen.type = "Specimen"
 * result = Reference(urn:uuid:1ed18b09-bd72-4825-86c4-adfb102a260c)
 * result.type = "Observation"
@@ -121,5 +121,5 @@ Usage: #inline
 * subject.type = "Patient"
 * requester = Reference(urn:uuid:c2be8e31-506b-42b2-adfc-7e47dd23cdb4) // PractitionerRole: Orderer
 * requester.type = "PractitionerRole"
-* specimen = Reference(urn:uuid:b2b24ded-fd9f-40bc-a822-1fb07e14c2ef)
+* specimen = Reference(urn:uuid:8e87aff2-708a-4964-a5d1-281e4d4c2786 )
 * specimen.type = "Specimen"
