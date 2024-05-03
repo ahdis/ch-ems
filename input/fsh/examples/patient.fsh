@@ -44,7 +44,7 @@ Instance: Pat-VCT
 InstanceOf: ChElmPatientVCT
 Usage: #example
 Title: "Pat - VCT"
-Description: "Example for a CH ELM Patient - VCT"
+Description: "Example for a CH ELM Patient with VCT Code"
 * gender = #male
 * name.extension[vctcode].valueString = "kste12345"
 * birthDate = "1966-08-22"

@@ -18,6 +18,7 @@ Here are examples of laboratory reports for different organisms that have differ
 * Neisseria Gonorrhoeae: [JSON](Bundle-1Doc-NeisseriaGonorrhoeae.json.html), [XML](Bundle-1Doc-NeisseriaGonorrhoeae.xml.html)
    * Neisseria gonorrhoeae - Broker Szenario: [JSON](Bundle-1bDoc-NeisseriaGonorrhoeae.json.html), [XML](Bundle-1bDoc-NeisseriaGonorrhoeae.xml.html)
 * Chlamydia trachomatis: [JSON](Bundle-2Doc-ChlamydiaTrachomatis.json.html), [XML](Bundle-2Doc-ChlamydiaTrachomatis.xml.html)
+   * Chlamydia trachomatis - with Patient VCT Code: [JSON](Bundle-2Doc-ChlamydiaTrachomatis-Vct.json.html), [XML](Bundle-2Doc-ChlamydiaTrachomatis-Vct.xml.html)
 * Carbapenemase-producing Enterobacteriaceae (CPE): [JSON](Bundle-3Doc-CPE.json.html), [XML](Bundle-3Doc-CPE.xml.html)
 * Campylobacter spp.: [JSON](Bundle-4Doc-Campylobacter.json.html), [XML](Bundle-4Doc-Campylobacter.xml.html)
 * Treponema pallidum: [JSON](Bundle-5Doc-TreponemaPallidum.json.html), [XML](Bundle-5Doc-TreponemaPallidum.xml.html) 
