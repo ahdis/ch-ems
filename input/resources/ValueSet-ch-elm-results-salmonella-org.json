@@ -15,8 +15,8 @@
       "url": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-ext-organism-binding"
     }
   ],
-  "id": "ch-elm-results-salmonella-org",
-  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-salmonella-org",
+  "id": "ch-elm-results-sal-org",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sal-org",
   "version": "2024-05-06",
   "name": "ChElmResultsSalmonellaOrg",
   "title": "CH ELM Results Salmonella Org",
@@ -29,8 +29,8 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "90403009",
-            "display": "Salmonella Wa (organism)"
+            "code": "398467008",
+            "display": "Salmonella group O:4 (organism)"
           }
         ]
       }

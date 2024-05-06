@@ -104,6 +104,16 @@
               "equivalence": "relatedto"
             }
           ]
+        },
+        {
+          "code": "82301-3",
+          "display": "Salmonella sp [Presence] in Stool by Culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sal-org",
+              "equivalence": "relatedto"
+            }
+          ]
         }
       ]
     }
