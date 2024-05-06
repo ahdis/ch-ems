@@ -1,0 +1,227 @@
+map "http://fhir.ch/ig/ch-elm/StructureMap/QrToBundle" = "QrToBundle"
+
+uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QuestionnaireResponse as source
+uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias Bundle as target
+uses "http://hl7.org/fhir/StructureDefinition/Composition" alias Composition as target
+uses "http://hl7.org/fhir/StructureDefinition/Patient" alias Patient as target
+uses "http://hl7.org/fhir/StructureDefinition/Specimen" alias Specimen as target
+uses "http://hl7.org/fhir/StructureDefinition/Organization" alias Organization as target
+uses "http://hl7.org/fhir/StructureDefinition/Practitioner" alias Practitioner as target
+uses "http://hl7.org/fhir/StructureDefinition/PractitionerRole" alias PractitionerRole as target
+uses "http://hl7.org/fhir/StructureDefinition/ServiceRequest" alias ServiceRequest as target
+uses "http://hl7.org/fhir/StructureDefinition/Extension" alias Extension as target
+uses "http://hl7.org/fhir/StructureDefinition/DiagnosticReport" alias DiagnosticReport as target
+uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QuestionnaireResponse as target
+
+group QrToBundle(source qr : QuestionnaireResponse, target bundle : Bundle ) {
+   qr.item as item where linkId='LaboratoryReport' -> bundle.id = (%item.answer.value) "LaboratoryReport";  
+   qr -> bundle.entry as e, 
+            e.resource = create('Composition') as composition, 
+            composition.id = uuid() as uuid,
+            e.fullUrl = append('urn:uuid:',uuid),
+            bundle.type = 'document',
+            composition.type as type, type.coding as coding, coding.code = '4241000179101', coding.system = 'http://snomed.info/sct', coding.version="http://snomed.info/sct/2011000195101", coding.display = 'Laborbericht',
+            composition.status = 'final',
+            type.coding as coding2, coding2.code = '11502-2', coding2.system = 'http://loinc.org', coding2.display = 'Laboratory report',            
+
+            bundle.entry as e2, 
+            e2.resource = create('Patient') as patient,
+            patient.id = uuid() as uuid2,
+            e2.fullUrl = append('urn:uuid:',uuid2),
+            composition.subject = create('Reference') as reference, reference.reference = append('urn:uuid:',uuid2),
+
+            bundle.entry as e3, 
+            e3.resource = create('Organization') as organization,
+            organization.id = uuid() as uuid3,
+            e3.fullUrl = append('urn:uuid:',uuid3),
+            composition.author = create('Reference') as reference, reference.reference = append('urn:uuid:',uuid3),
+
+            bundle.entry as e4, 
+            e4.resource = create('Observation') as observation,
+            observation.id = uuid() as uuid4,
+            observation.status = 'final',
+            e4.fullUrl = append('urn:uuid:',uuid4),
+            observation.performer = create('Reference') as reference, reference.reference = append('urn:uuid:',uuid3),
+            observation.subject = create('Reference') as reference, reference.reference = append('urn:uuid:',uuid2),
+            observation.category = create('CodeableConcept') as codeableConcept, codeableConcept.coding as coding, coding.system = 'http://terminology.hl7.org/CodeSystem/observation-category', coding.code = 'laboratory', coding.display = 'Laboratory',
+
+            bundle.entry as ep, 
+            ep.resource = create('Practitioner') as practitionero,
+            practitionero.id = uuid() as uuidp,
+            ep.fullUrl = append('urn:uuid:',uuidp),
+
+            bundle.entry as eo, 
+            eo.resource = create('Organization') as organizationo,
+            organizationo.id = uuid() as uuido,
+            eo.fullUrl = append('urn:uuid:',uuido),
+
+            bundle.entry as e8, 
+            e8.resource = create('PractitionerRole') as practitionerrole,
+            practitionerrole.id = uuid() as uuid8,
+            e8.fullUrl = append('urn:uuid:',uuid8),
+            practitionerrole.practitioner = create('Reference') as reference, reference.reference = append('urn:uuid:',uuidp),
+            practitionerrole.organization = create('Reference') as reference, reference.reference = append('urn:uuid:',uuido),
+            
+            bundle.entry as e6, 
+            e6.resource = create('Specimen') as specimen,
+            specimen.id = uuid() as uuid6,
+            e6.fullUrl = append('urn:uuid:',uuid6),
+            specimen.subject = create('Reference') as reference, reference.reference = append('urn:uuid:',uuid2),
+            observation.specimen = create('Reference') as reference, reference.reference = append('urn:uuid:',uuid6),
+
+            bundle.entry as e7, 
+            e7.resource = create('ServiceRequest') as servicerequest,
+            servicerequest.id = uuid() as uuid7,
+            e7.fullUrl = append('urn:uuid:',uuid7),
+            servicerequest.status = 'completed',
+            servicerequest.intent = 'order',
+            servicerequest.subject = create('Reference') as reference, reference.reference = append('urn:uuid:',uuid2),
+            servicerequest.specimen = create('Reference') as reference, reference.reference = append('urn:uuid:',uuid6),
+            servicerequest.requester = create('Reference') as reference, reference.reference = append('urn:uuid:',uuid8),
+
+            bundle.entry as e5, 
+            e5.resource = create('DiagnosticReport') as diagnosticreport,
+            diagnosticreport.id = uuid() as uuid5,
+            e5.fullUrl = append('urn:uuid:',uuid5), 
+            diagnosticreport.extension as extensions, extensions.url = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition', extensions.value = create('Reference') as reference, reference.reference = append('urn:uuid:',uuid),
+            diagnosticreport.performer = create('Reference') as reference, reference.reference = append('urn:uuid:',uuid3),
+            diagnosticreport.subject = create('Reference') as reference, reference.reference = append('urn:uuid:',uuid2),
+            diagnosticreport.result = create('Reference') as reference, reference.reference = append('urn:uuid:',uuid4),
+            diagnosticreport.specimen = create('Reference') as reference, reference.reference = append('urn:uuid:',uuid6),
+            diagnosticreport.basedOn = create('Reference') as reference, reference.reference = append('urn:uuid:',uuid7),
+            diagnosticreport.status = 'final',
+            diagnosticreport.code = create('CodeableConcept') as codeableConcept, codeableConcept.coding as coding, coding.system = 'http://loinc.org', coding.code = '11502-2', coding.display = 'Laboratory report'
+            then QrToBundleItems(qr, bundle, composition, patient, organization, observation, uuid4, diagnosticreport, specimen, servicerequest, practitionero, organizationo) "QrToBundle";
+}
+
+group QrToBundleItems(source qr : QuestionnaireResponse, target bundle : Bundle, target composition: Composition, target patient: Patient, target organization: Organization, target observation: Observation, target obsid, target diagnosticreport: DiagnosticReport, target specimen: Specimen, target servicerequest: ServiceRequest, target ordererPract: Practitioner, target ordererOrg: Organization) {
+
+   qr.item as item where linkId='LaboratoryReport.Header.DocumentSectionTitle' -> composition.section as section, section.title = (%item.answer.value), 
+      section.entry = create('Reference') as reference, reference.reference = append('urn:uuid:',obsid)
+      then {
+         qr.item as item where linkId='LaboratoryReport.TestResult.StudyType' -> section.code = create('CodeableConcept') as codeableConcept, codeableConcept.coding as coding, coding.code = (%item.answer.value), coding.system = 'http://loinc.org' then {
+            item.answer as answer where value='18725-2' -> coding.display = 'Microbiology studies (set)';
+         } "LaboratoryReport-TestResult.StudyType";
+   }  "LaboratoryReport-Header-DocumentSectionTitle";
+
+
+   qr.item as item where linkId='LaboratoryReport.Header.DocumentIdentifier' -> bundle.identifier as documentIdentifier, documentIdentifier.system = 'urn:ietf:rfc:3986',  documentIdentifier.value = ('urn:uuid:'+%item.answer.value)  "LaboratoryReport-Header-DocumentTimestamp";  
+   qr.item as item where linkId='LaboratoryReport.Header.DocumentIdentifier' -> composition.identifier as documentIdentifier, documentIdentifier.system = 'urn:ietf:rfc:3986',  documentIdentifier.value = ('urn:uuid:'+%item.answer.value)  "LaboratoryReport-Header-DocumentTimestamp";  
+   qr.item as item where linkId='LaboratoryReport.Header.DocumentIdentifier' -> diagnosticreport.identifier as documentIdentifier, documentIdentifier.system = 'urn:ietf:rfc:3986',  documentIdentifier.value = ('urn:uuid:'+%item.answer.value)  "LaboratoryReport-Header-DocumentTimestamp";  
+   qr.item as item where linkId='LaboratoryReport.Header.DocumentTimestamp' -> bundle.timestamp = (%item.answer.value), composition.date = (%item.answer.value)  "LaboratoryReport-Header-DocumentTimestamp";  
+   qr.item as item where linkId='LaboratoryReport.Header.DocumentLanguage' -> composition.language = (%item.answer.value)  "LaboratoryReport-Header-DocumentLanguage";  
+   qr.item as item where linkId='LaboratoryReport.Header.DocumentTitle' -> composition.title = (%item.answer.value)  "LaboratoryReport-Header-DocumentTitle";  
+
+// TODO: simplified currently, same as below   qr.item as item where linkId='LaboratoryReport.Author.OrganizationGLN' -> organization.identifier as identifier, identifier.system= 'urn:oid:2.51.1.3', identifier.value = (%item.answer.value)   "LaboratoryReport-Author.OrganizationGLN";  
+   qr.item as item where linkId='LaboratoryReport.Lab.OrganizationGLN' -> organization.identifier as identifier, identifier.system= 'urn:oid:2.51.1.3', identifier.value = (%item.answer.value)   "LaboratoryReport-Lab-OrganizationGLN";  
+   qr.item as item where linkId='LaboratoryReport.Lab.OrganizationName' -> organization.name = (%item.answer.value)   "LaboratoryReport-Lab-OrganizationName";  
+   // FIXME: http://fhir.lab.ch/order-identifier this should not be fixed, either leave out, need to raise an issue
+   qr.item as item where linkId='LaboratoryReport.Lab.OrderIdentifier' -> servicerequest.identifier as identifier, identifier.system= 'http://fhir.lab.ch/order-identifier', identifier.value = (%item.answer.value)   "LaboratoryReport-Lab-OrderIdentifier";  
+
+   qr.item as item where linkId='LaboratoryReport.Orderer.OrganizationName' -> ordererOrg.name = (%item.answer.value)  "LaboratoryReport-Orderer-OrganizationName";  
+
+   qr.item as item where linkId='LaboratoryReport.Orderer.Physician.GLN' -> ordererPract.identifier as identifier, identifier.system= 'urn:oid:2.51.1.3', identifier.value = (%item.answer.value)   "LaboratoryReport-Orderer-Physician-GLN";  
+   qr.item as item where linkId='LaboratoryReport.Orderer.Physician.Surname' ->  ordererPract.name as name, name.family =  (%item.answer.value)  then {
+      qr.item as item where linkId='LaboratoryReport.Orderer.Physician.Givenname' -> name.given =  (%item.answer.value) "LaboratoryReport-Orderer-Physician-Givenname";
+   }  "LaboratoryReport-Orderer-Physician.Surname";  
+
+   qr.item as item where linkId='LaboratoryReport.Orderer.Physician.Phone' -> ordererPract.telecom as telecom, telecom.system= 'phone', telecom.value = (%item.answer.value)  "LaboratoryReport-Orderer-Physician-Phone";  
+   qr.item as item where linkId='LaboratoryReport.Orderer.Physician.Email' -> ordererPract.telecom as telecom, telecom.system= 'email', telecom.value = (%item.answer.value)  "LaboratoryReport-Orderer-Physician-Email";  
+
+   qr.item as item where linkId='LaboratoryReport.Orderer.OrganizationAddress.City' -> ordererOrg.address as address, address.city = (%item.answer.value)  then {
+      qr.item as item where linkId='LaboratoryReport.Orderer.OrganizationAddress.ZipCode' -> address.postalCode = (%item.answer.value)  "LaboratoryReport-Orderer-OrganizationAddress-ZipCode";  
+      qr.item as item where linkId='LaboratoryReport.Orderer.OrganizationAddress.StreetLine' -> 
+            address.line = (%item.answer.value) as line,
+            line.extension as extension,
+//            extension.url =  'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName', extension.value = (%item.answer.value.substring(0, %item.answer.value.indexOf(' '))),
+//            assuming max 5 last characters are the house number: %item.answer.value.substring(%item.answer.value.length()-5).indexOf(' ')+%item.answer.value.length()-5
+            extension.url =  'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName', extension.value = (%item.answer.value.substring(0, %item.answer.value.substring(%item.answer.value.length()-5).indexOf(' ')+%item.answer.value.length()-5)),
+            line.extension as extension,
+            extension.url =  'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber', extension.value = (%item.answer.value.substring(%item.answer.value.substring(%item.answer.value.length()-5).indexOf(' ')+%item.answer.value.length()-5+1)) then {
+               qr.item as item where linkId='LaboratoryReport.Orderer.OrganizationAddress.PostBox' ->
+                  line.extension as extension,
+                  extension.url =  'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox', extension.value = (%item.answer.value) "LaboratoryReport-Orderer-OrganizationAddress-PostBox";              
+            } "LaboratoryReport-Orderer-OrganizationAddress.StreetLine";  
+   
+   } "LaboratoryReport-Orderer-OrganizationAddress.City";  
+
+   qr.item as item where linkId='LaboratoryReport.Patient.OASI' -> patient.identifier as identifier, identifier.system= 'urn:oid:2.16.756.5.32', identifier.value = (%item.answer.value)  "LaboratoryReport-Patient-OASI";  
+
+   qr.item as item where linkId='LaboratoryReport.Patient.Surname' ->  patient.name as name, name.family =  (%item.answer.value)  then {
+      qr.item as item where linkId='LaboratoryReport.Patient.Givenname' -> name.given =  (%item.answer.value) "LaboratoryReport-Patient-Givenname";
+   }  "LaboratoryReport-Patient.Surname";  
+
+   qr.item as item where linkId='LaboratoryReport.Patient.Gender' -> patient.gender = (%item.answer.value)  "LaboratoryReport-Patient.Gender";  
+   qr.item as item where linkId='LaboratoryReport.Patient.DateOfBirth' -> patient.birthDate = (%item.answer.value)  "LaboratoryReport-Patient-DateOfBirth";  
+
+   qr.item as item where linkId='LaboratoryReport.Patient.Address.City' -> patient.address as address, address.use = 'home', address.city = (%item.answer.value) then {
+      qr.item as item where linkId='LaboratoryReport.Patient.Address.Canton' -> address.state = (%item.answer.value)  "LaboratoryReport-Patient-Address-Canton";  
+      qr.item as item where linkId='LaboratoryReport.Patient.Address.Country' -> address.country = (%item.answer.value) as country,
+         country.extension as extension, extension.url = 'http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding', extension.value = create('Coding') as coding, 
+         coding.system = 'urn:iso:std:iso:3166', coding.code = (%item.answer.value)  "LaboratoryReport-Patient.Address.Country";  
+      qr.item as item where linkId='LaboratoryReport.Patient.Address.ZipCode' -> address.postalCode = (%item.answer.value)  "LaboratoryReport-Patient-Address-ZipCode";  
+      qr.item as item where linkId='LaboratoryReport.Patient.Address.StreetLine' -> 
+            address.line = (%item.answer.value) as line,
+            line.extension as extension,
+            extension.url =  'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName', extension.value = (%item.answer.value.substring(0, %item.answer.value.substring(%item.answer.value.length()-5).indexOf(' ')+%item.answer.value.length()-5)),
+            line.extension as extension,
+            extension.url =  'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber', extension.value = (%item.answer.value.substring(%item.answer.value.substring(%item.answer.value.length()-5).indexOf(' ')+%item.answer.value.length()-5+1)) then {
+               qr.item as item where linkId='LaboratoryReport.Patient.Address.PostBox' ->
+                  line.extension as extension,
+                  extension.url =  'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox', extension.value = (%item.answer.value) "LaboratoryReport-Patient-Address-PostBox";              
+            } "LaboratoryReport-Patient.Address.StreetLine";  
+   
+   } "LaboratoryReport-Patient.Address.City";  
+
+
+   qr.item as item where linkId='LaboratoryReport.TestResult.ExecutionDateTime' then { 
+      item.answer as answer then {
+         answer.value as value -> observation.effective = cast(value, 'dateTime')  "LaboratoryReport-TestResult-ExecutionDateTime";  
+      } "LaboratoryReport-TestResult.ExecutionDateTime";
+   } "LaboratoryReport-TestResult.ExecutionDateTime";
+
+
+   qr.item as item where linkId='LaboratoryReport.TestResult.Type.Code' -> observation.code = create('CodeableConcept') as codeableConcept, codeableConcept.coding as coding, coding.code = (%item.answer.value) then {
+      qr.item as item where linkId='LaboratoryReport.TestResult.Type.CodeSystem' then {
+         item.answer as answer where value='LOINC' -> coding.system = 'http://loinc.org';
+      } "LaboratoryReport-TestResult.Type.CodeSystem";
+   }  "LaboratoryReport-TestResult.Type.Code";
+
+   qr.item as item where linkId='LaboratoryReport.TestResult.Type.Code' -> servicerequest.code = create('CodeableConcept') as codeableConcept, codeableConcept.coding as coding, coding.code = (%item.answer.value) then {
+      qr.item as item where linkId='LaboratoryReport.TestResult.Type.CodeSystem' then {
+         item.answer as answer where value='LOINC' -> coding.system = 'http://loinc.org';
+      } "LaboratoryReport-TestResult.Type.CodeSystem";
+   }  "LaboratoryReport-TestResult.Type.Code";
+
+   // FIXME LaboratoryReport.TestResult.Specimen.CollectionDateTime needs to be fixed to year-month-day in the excel sheet
+   qr.item as item where linkId='LaboratoryReport.TestResult.Specimen.CollectionDateTime' then { 
+      item.answer as answer then {
+         answer.value as value -> specimen.collection as collection, collection.collected = cast(value, 'dateTime')  "LaboratoryReport-TestResult-ExecutionDateTime";  
+      } "LaboratoryReport-TestResult.Specimen.CollectionDateTim";
+   } "LaboratoryReport-TestResult.Specimen.CollectionDateTim";
+
+   qr.item as item where linkId='LaboratoryReport.TestResult.Specimen.Type.Text' -> specimen.type = create('CodeableConcept') as codeableConcept, codeableConcept.text = (%item.answer.value) "LaboratoryReport-TestResult-Specimen-Type-Text";
+
+   qr.item as item where linkId='LaboratoryReport.TestResult.Specimen.Type.Code' -> specimen.type = create('CodeableConcept') as codeableConcept, codeableConcept.coding as coding, coding.code = (%item.answer.value) then {
+      qr.item as item where linkId='LaboratoryReport.TestResult.Specimen.Type.CodeSystem' then {
+         item.answer as answer where value='SNOMED CT' -> coding.system = 'http://snomed.info/sct';
+      } "LaboratoryReport-TestResult.Specimen.Type.CodeSystem";
+   }  "LaboratoryReport-TestResult.Specimen.Type.Code";
+
+   qr.item as item where linkId='LaboratoryReport.TestResult.Value.Code' -> observation.value = create('CodeableConcept') as codeableConcept, codeableConcept.coding as coding, coding.code = (%item.answer.value) then {
+      item.answer as answer where value='10828004' -> coding.display = 'Positive (qualifier value)';
+      item.answer as answer where value='260385009' -> coding.display = 'Negative (qualifier value)';
+      qr.item as item where linkId='LaboratoryReport.TestResult.Value.CodeSystem' then {
+         item.answer as answer where value='SNOMED CT' -> coding.system = 'http://snomed.info/sct';
+      } "LaboratoryReport-TestResult.Value.CodeSystem";
+   }  "LaboratoryReport-TestResult.Value.Code";
+
+   qr.item as item where linkId='LaboratoryReport.TestResult.Interpretation.Code' -> observation.interpretation = create('CodeableConcept') as codeableConcept, codeableConcept.coding as coding, coding.code = (%item.answer.value) then {
+      item.answer as answer where value='POS' -> coding.display = 'Positive';
+      item.answer as answer where value='NEG' -> coding.display = 'Negative';
+      qr.item as item where linkId='LaboratoryReport.TestResult.Interpretation.CodeSystem' then {
+         item.answer as answer where value='HL7 CodeSystem ObservationInterpretation' -> coding.system = 'http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation';
+      } "LaboratoryReport-TestResult.Interpretation.CodeSystem";
+   }  "LaboratoryReport-TestResult.Interpretation.Code";
+
+}

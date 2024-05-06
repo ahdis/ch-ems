@@ -34,3 +34,12 @@ Entry 'http://test.fhir.ch/r4/DiagnosticReport/4DR-Campylobacter' isn't reachabl
 Entry 'http://test.fhir.ch/r4/DiagnosticReport/5DR-TreponemaPallidum' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'http://test.fhir.ch/r4/DiagnosticReport/6DR-Influenza' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'http://test.fhir.ch/r4/DiagnosticReport/7DR-SARSCoV2' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+# Bundle-11Doc-Malaria.xml
+Entry 'urn:uuid:54e00fc7-5420-4f52-86e7-853bb5a6b758' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:0eff0e44-b23c-470e-9b39-fbc38139b188' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+# Bundle-12Doc-Monkeypox.xml
+Entry 'urn:uuid:b51f3209-5c05-454f-81a9-2e9cbbef9108' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:838af63a-9b35-4ed3-9768-6235842c7a9b' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+

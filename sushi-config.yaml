@@ -97,3 +97,29 @@ instanceOptions:
   # - inline-only: Set meta.profile for only Instances of profiles with Usage set to #inline
   # - standalone-only: Set meta.profile for only Instances of profiles where Usage is any value other than #inline
   setMetaProfile: never
+
+resources:
+  Bundle/8Doc-HepatiteB:
+    name: 8Doc - HepatiteB
+    description: "Document for Hepatite B"
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/9Doc-HepatiteC:
+    name: 9Doc - HepatiteC
+    description: "Example Document for Hepatite C"
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/10Doc-Legionella:
+    name: 10Doc - Legionella
+    description: "Example Document for Legionella"
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/11Doc-Malaria:
+    name: 11Doc - Malaria
+    description: "Example Document for Malaria"
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/12Doc-Monkeypox:
+    name: 12Doc - Monkeypox
+    description: "Example Document for Monkeypox"
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/13Doc-Shigella:
+    name: 13Doc - Shigella
+    description: "Example Document for Shigella"
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
