@@ -33,3 +33,23 @@ Description: "This CH ELM extension enables to proivde the HIV Code."
 * value[x] only string
 * valueString ^short = "Name of the HIV code"
 * valueString ^maxLength = 2
+
+Extension: ChElmExtValueExpectingOrgansimBinding
+Id: ch-elm-ext-organism-binding
+Title: "CH ELM Extension: ValueSet Excpeting Organism"
+Description: "This CH ELM extension enables to define the binding/optionality of the expecting organism ValueSets"
+* ^context[+].type = #element
+* ^context[=].expression = "ValueSet"
+* extension contains
+    optional 1..1 and
+    binding 1..1
+* extension[optional] only Extension
+* extension[optional] ^short = "If the value set is optional"
+* extension[optional].url only uri
+* extension[optional].value[x] only boolean
+* extension[binding] only Extension
+* extension[binding] ^short = "It a code binding is required or extensible (other values are allowed)"
+* extension[binding].url only uri
+* extension[binding].value[x] only code
+* extension[binding].valueCode from ChElmValueSetObservationExpectingOrganism (required)
+* url only uri

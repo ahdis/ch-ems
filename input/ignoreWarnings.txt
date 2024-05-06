@@ -34,3 +34,6 @@ Entry 'http://test.fhir.ch/r4/DiagnosticReport/4DR-Campylobacter' isn't reachabl
 Entry 'http://test.fhir.ch/r4/DiagnosticReport/5DR-TreponemaPallidum' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'http://test.fhir.ch/r4/DiagnosticReport/6DR-Influenza' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'http://test.fhir.ch/r4/DiagnosticReport/7DR-SARSCoV2' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+# Error evaluating FHIRPath expression: The function resolve can only be used on ordered string, uri, canonical or Reference but found [http://hl7.org/fhir/StructureDefinition/code] (@line 5 char 5)
+ch-elm-expecting-organism-specification: The type specified in ofType() is string which is not a possible candidate for the existing types () in the expression as(System.string).resolve().extension('http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-ext-organism-binding').first().extension('binding').first().value. Check the paths and types to be sure this is what is intended

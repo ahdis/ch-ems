@@ -20,3 +20,4 @@ Alias: $ch-elm-status =                           http://fhir.ch/ig/ch-elm/Value
 
 Alias: $data-absent-reason =                        http://hl7.org/fhir/StructureDefinition/data-absent-reason
 
+Alias: $binding-strength = http://hl7.org/fhir/binding-strength
