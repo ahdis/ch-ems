@@ -70,7 +70,6 @@ Usage: #inline
 * subject = Reference(Pat-AntoineDupont)
 * effectiveDateTime = "2023-09-12T07:40:00+02:00"
 * performer = Reference(1Org-Labor)
-* valueCodeableConcept = $sct#10828004 "Positive"
 * interpretation = $v3-ObservationInterpretation#POS "Positive"
 * specimen = Reference(7Spec-Specimen)
 
@@ -123,8 +122,8 @@ Title: "Org - Hôpital régional soleil"
 Description: "Example for a CH ELM Organization: Orderer"
 * extension[department].valueString = "Médecine interne"
 * name = "Hôpital régional soleil"
-* identifier[GLN].system = "urn:oid:2.51.1.3"
-* identifier[GLN].value = "7601000201041"
+* identifier[BER].system = "urn:oid:2.16.756.5.45"
+* identifier[BER].value = "A99086638"
 * address.line = "Rue des alpes 35"
 * address.line.extension[streetName].valueString = "Rue des alpes"
 * address.line.extension[houseNumber].valueString = "35"

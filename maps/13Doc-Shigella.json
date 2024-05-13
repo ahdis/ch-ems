@@ -83,10 +83,10 @@
             ]
         },
         {
-            "linkId": "LaboratoryReport.Orderer.OrganizationGLN",
+            "linkId": "LaboratoryReport.Orderer.OrganizationBER",
             "answer": [
                 {
-                    "valueString": "7601888888884"
+                    "valueString": "A99684215"
                 }
             ]
         },

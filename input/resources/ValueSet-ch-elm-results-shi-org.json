@@ -2,10 +2,47 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-shi-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-shi-org",
-  "version": "2024-04-30",
+  "version": "2024-05-13",
   "name": "ChElmResultsShiOrg",
   "title": "CH ELM Results Shi Org",
   "status": "active",
   "experimental": false,
-  "description": "The \"CH ELM Results Shi Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Shi Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information."
+  "description": "The \"CH ELM Results Shi Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Shi Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "125020009",
+            "display": "Shigella flexneri, serovar X (organism)"
+          },
+          {
+            "code": "85729005",
+            "display": "Shigella flexneri (organism)"
+          },
+          {
+            "code": "43612004",
+            "display": "Shigella dysenteriae (organism)"
+          },
+          {
+            "code": "55462008",
+            "display": "Shigella boydii (organism)"
+          },
+          {
+            "code": "77352002",
+            "display": "Genus Shigella (organism)"
+          },
+          {
+            "code": "4298009",
+            "display": "Shigella sonnei (organism)"
+          },
+          {
+            "code": "125021008",
+            "display": "Shigella flexneri, serovar Y (organism)"
+          }
+        ]
+      }
+    ]
+  }
 }

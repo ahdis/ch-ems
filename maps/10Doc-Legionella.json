@@ -83,10 +83,10 @@
             ]
         },
         {
-            "linkId": "LaboratoryReport.Orderer.OrganizationGLN",
+            "linkId": "LaboratoryReport.Orderer.OrganizationBER",
             "answer": [
                 {
-                    "valueString": "7601888888884"
+                    "valueString": "A99684215"
                 }
             ]
         },
@@ -286,7 +286,7 @@
             "linkId": "LaboratoryReport.TestResult.Specimen.CollectionDateTime",
             "answer": [
                 {
-                    "valueString": "2023-08-18"
+                    "valueString": "2023-09-18"
                 }
             ]
         },
@@ -302,7 +302,7 @@
             "linkId": "LaboratoryReport.TestResult.Value.Code",
             "answer": [
                 {
-                    "valueString": "10828004"
+                    "valueString": "103448007"
                 }
             ]
         },

@@ -83,10 +83,10 @@
             ]
         },
         {
-            "linkId": "LaboratoryReport.Orderer.OrganizationGLN",
+            "linkId": "LaboratoryReport.Orderer.OrganizationBER",
             "answer": [
                 {
-                    "valueString": "[gültige GLN]"
+                    "valueString": "A99086638"
                 }
             ]
         },
@@ -110,7 +110,7 @@
             "linkId": "LaboratoryReport.Orderer.Physician.GLN",
             "answer": [
                 {
-                    "valueString": "[gültige GLN]"
+                    "valueString": "7601000121219"
                 }
             ]
         },
@@ -295,22 +295,6 @@
             "answer": [
                 {
                     "valueString": "Material declared by Observation.code or non-mandatory"
-                }
-            ]
-        },
-        {
-            "linkId": "LaboratoryReport.TestResult.Value.Code",
-            "answer": [
-                {
-                    "valueString": "10828004"
-                }
-            ]
-        },
-        {
-            "linkId": "LaboratoryReport.TestResult.Value.CodeSystem",
-            "answer": [
-                {
-                    "valueString": "SNOMED CT"
                 }
             ]
         },

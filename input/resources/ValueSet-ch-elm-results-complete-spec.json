@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-complete-spec",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-complete-spec",
-  "version": "2024-04-30",
+  "version": "2024-05-13",
   "name": "ChElmResultsCompleteSpec",
   "title": "CH ELM Results Complete Spec",
   "status": "active",
@@ -13,6 +13,10 @@
       {
         "system": "http://snomed.info/sct",
         "concept": [
+          {
+            "code": "122592007",
+            "display": "Acellular blood (serum or plasma) specimen (specimen)"
+          },
           {
             "code": "119396006",
             "display": "Specimen from endometrium (specimen)"
