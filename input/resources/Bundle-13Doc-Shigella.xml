@@ -9,10 +9,10 @@
   <type value="document"/>
   <timestamp value="2024-04-20T07:35:00+02:00"/>
   <entry>
-    <fullUrl value="urn:uuid:650d0e78-56c6-4325-9f3a-3803327bd465"/>
+    <fullUrl value="urn:uuid:a191043f-525c-40a6-adb6-3923161517a8"/>
     <resource>
       <Composition>
-        <id value="650d0e78-56c6-4325-9f3a-3803327bd465"/>
+        <id value="a191043f-525c-40a6-adb6-3923161517a8"/>
         <language value="de-CH"/>
         <identifier>
           <system value="urn:ietf:rfc:3986"/>
@@ -33,11 +33,11 @@
           </coding>
         </type>
         <subject>
-          <reference value="urn:uuid:bd3c262a-307e-409c-8a6a-b9d1d0420554"/>
+          <reference value="urn:uuid:5d196c9e-dcfd-4852-8674-9b5f5dd2672f"/>
         </subject>
         <date value="2024-04-20T07:35:00+02:00"/>
         <author>
-          <reference value="urn:uuid:3fa2a175-adc0-495c-9465-05047d36b4e7"/>
+          <reference value="urn:uuid:e0b5f79d-48e6-4a0c-968b-51e01215ddf8"/>
         </author>
         <title value="Laborbericht vom 20.04.2024"/>
         <section>
@@ -50,17 +50,17 @@
             </coding>
           </code>
           <entry>
-            <reference value="urn:uuid:6462379c-1d37-4129-bbfc-503f148ec10e"/>
+            <reference value="urn:uuid:dc28efce-35bd-464d-a0fc-7272302e2cc9"/>
           </entry>
         </section>
       </Composition>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:bd3c262a-307e-409c-8a6a-b9d1d0420554"/>
+    <fullUrl value="urn:uuid:5d196c9e-dcfd-4852-8674-9b5f5dd2672f"/>
     <resource>
       <Patient>
-        <id value="bd3c262a-307e-409c-8a6a-b9d1d0420554"/>
+        <id value="5d196c9e-dcfd-4852-8674-9b5f5dd2672f"/>
         <identifier>
           <system value="urn:oid:2.16.756.5.32"/>
           <value value="7561733446723"/>
@@ -89,10 +89,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:3fa2a175-adc0-495c-9465-05047d36b4e7"/>
+    <fullUrl value="urn:uuid:e0b5f79d-48e6-4a0c-968b-51e01215ddf8"/>
     <resource>
       <Organization>
-        <id value="3fa2a175-adc0-495c-9465-05047d36b4e7"/>
+        <id value="e0b5f79d-48e6-4a0c-968b-51e01215ddf8"/>
         <identifier>
           <system value="urn:oid:2.51.1.3"/>
           <value value="7601002331470"/>
@@ -102,10 +102,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:6462379c-1d37-4129-bbfc-503f148ec10e"/>
+    <fullUrl value="urn:uuid:dc28efce-35bd-464d-a0fc-7272302e2cc9"/>
     <resource>
       <Observation>
-        <id value="6462379c-1d37-4129-bbfc-503f148ec10e"/>
+        <id value="dc28efce-35bd-464d-a0fc-7272302e2cc9"/>
         <status value="final"/>
         <category>
           <coding>
@@ -121,11 +121,11 @@
           </coding>
         </code>
         <subject>
-          <reference value="urn:uuid:bd3c262a-307e-409c-8a6a-b9d1d0420554"/>
+          <reference value="urn:uuid:5d196c9e-dcfd-4852-8674-9b5f5dd2672f"/>
         </subject>
         <effectiveDateTime value="2024-04-20T07:35:00+02:00"/>
         <performer>
-          <reference value="urn:uuid:3fa2a175-adc0-495c-9465-05047d36b4e7"/>
+          <reference value="urn:uuid:e0b5f79d-48e6-4a0c-968b-51e01215ddf8"/>
         </performer>
         <valueCodeableConcept>
           <coding>
@@ -141,16 +141,16 @@
           </coding>
         </interpretation>
         <specimen>
-          <reference value="urn:uuid:94f03dd7-2f65-4499-b1fa-3111a6edb0fd"/>
+          <reference value="urn:uuid:c78985f3-7057-4249-a76f-8b566a6fd357"/>
         </specimen>
       </Observation>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:ad32c5bb-3bea-4934-a1c5-50bf4fddb653"/>
+    <fullUrl value="urn:uuid:a93fc1ee-d173-49ba-ba43-8835646e56b8"/>
     <resource>
       <Practitioner>
-        <id value="ad32c5bb-3bea-4934-a1c5-50bf4fddb653"/>
+        <id value="a93fc1ee-d173-49ba-ba43-8835646e56b8"/>
         <identifier>
           <system value="urn:oid:2.51.1.3"/>
           <value value="7601000234438"/>
@@ -171,10 +171,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:7df4b4ed-123b-43fd-ae95-96117f1af50f"/>
+    <fullUrl value="urn:uuid:ead84752-7b24-4759-b313-75d22e87c00b"/>
     <resource>
       <Organization>
-        <id value="7df4b4ed-123b-43fd-ae95-96117f1af50f"/>
+        <id value="ead84752-7b24-4759-b313-75d22e87c00b"/>
         <identifier>
           <system value="urn:oid:2.16.756.5.45"/>
           <value value="A99684215"/>
@@ -199,29 +199,29 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:fde4a228-83fa-4087-9e13-ee50c99f94b7"/>
+    <fullUrl value="urn:uuid:9570f2de-bd34-4b94-a82d-262822c0d067"/>
     <resource>
       <PractitionerRole>
-        <id value="fde4a228-83fa-4087-9e13-ee50c99f94b7"/>
+        <id value="9570f2de-bd34-4b94-a82d-262822c0d067"/>
         <practitioner>
-          <reference value="urn:uuid:ad32c5bb-3bea-4934-a1c5-50bf4fddb653"/>
+          <reference value="urn:uuid:a93fc1ee-d173-49ba-ba43-8835646e56b8"/>
         </practitioner>
         <organization>
-          <reference value="urn:uuid:7df4b4ed-123b-43fd-ae95-96117f1af50f"/>
+          <reference value="urn:uuid:ead84752-7b24-4759-b313-75d22e87c00b"/>
         </organization>
       </PractitionerRole>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:94f03dd7-2f65-4499-b1fa-3111a6edb0fd"/>
+    <fullUrl value="urn:uuid:c78985f3-7057-4249-a76f-8b566a6fd357"/>
     <resource>
       <Specimen>
-        <id value="94f03dd7-2f65-4499-b1fa-3111a6edb0fd"/>
+        <id value="c78985f3-7057-4249-a76f-8b566a6fd357"/>
         <type>
           <text value="Material declared by Observation.code or non-mandatory"/>
         </type>
         <subject>
-          <reference value="urn:uuid:bd3c262a-307e-409c-8a6a-b9d1d0420554"/>
+          <reference value="urn:uuid:5d196c9e-dcfd-4852-8674-9b5f5dd2672f"/>
         </subject>
         <collection>
           <collectedDateTime value="2024-04-18"/>
@@ -230,10 +230,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:1fa64072-e75c-4715-b1ea-8b0316786a22"/>
+    <fullUrl value="urn:uuid:03be015c-e854-495b-a941-178aa147c299"/>
     <resource>
       <ServiceRequest>
-        <id value="1fa64072-e75c-4715-b1ea-8b0316786a22"/>
+        <id value="03be015c-e854-495b-a941-178aa147c299"/>
         <identifier>
           <system value="http://fhir.lab.ch/order-identifier"/>
           <value value="26955847714"/>
@@ -247,25 +247,25 @@
           </coding>
         </code>
         <subject>
-          <reference value="urn:uuid:bd3c262a-307e-409c-8a6a-b9d1d0420554"/>
+          <reference value="urn:uuid:5d196c9e-dcfd-4852-8674-9b5f5dd2672f"/>
         </subject>
         <requester>
-          <reference value="urn:uuid:fde4a228-83fa-4087-9e13-ee50c99f94b7"/>
+          <reference value="urn:uuid:9570f2de-bd34-4b94-a82d-262822c0d067"/>
         </requester>
         <specimen>
-          <reference value="urn:uuid:94f03dd7-2f65-4499-b1fa-3111a6edb0fd"/>
+          <reference value="urn:uuid:c78985f3-7057-4249-a76f-8b566a6fd357"/>
         </specimen>
       </ServiceRequest>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:8d1a9300-fa3f-4b70-895b-662312c0dfb3"/>
+    <fullUrl value="urn:uuid:2245543a-3727-4cac-9679-e45d6d65840a"/>
     <resource>
       <DiagnosticReport>
-        <id value="8d1a9300-fa3f-4b70-895b-662312c0dfb3"/>
+        <id value="2245543a-3727-4cac-9679-e45d6d65840a"/>
         <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition">
           <valueReference>
-            <reference value="urn:uuid:650d0e78-56c6-4325-9f3a-3803327bd465"/>
+            <reference value="urn:uuid:a191043f-525c-40a6-adb6-3923161517a8"/>
           </valueReference>
         </extension>
         <identifier>
@@ -273,7 +273,7 @@
           <value value="urn:uuid:1901332d-6012-413f-9690-9291adb2cb3b"/>
         </identifier>
         <basedOn>
-          <reference value="urn:uuid:1fa64072-e75c-4715-b1ea-8b0316786a22"/>
+          <reference value="urn:uuid:03be015c-e854-495b-a941-178aa147c299"/>
         </basedOn>
         <status value="final"/>
         <code>
@@ -284,16 +284,16 @@
           </coding>
         </code>
         <subject>
-          <reference value="urn:uuid:bd3c262a-307e-409c-8a6a-b9d1d0420554"/>
+          <reference value="urn:uuid:5d196c9e-dcfd-4852-8674-9b5f5dd2672f"/>
         </subject>
         <performer>
-          <reference value="urn:uuid:3fa2a175-adc0-495c-9465-05047d36b4e7"/>
+          <reference value="urn:uuid:e0b5f79d-48e6-4a0c-968b-51e01215ddf8"/>
         </performer>
         <specimen>
-          <reference value="urn:uuid:94f03dd7-2f65-4499-b1fa-3111a6edb0fd"/>
+          <reference value="urn:uuid:c78985f3-7057-4249-a76f-8b566a6fd357"/>
         </specimen>
         <result>
-          <reference value="urn:uuid:6462379c-1d37-4129-bbfc-503f148ec10e"/>
+          <reference value="urn:uuid:dc28efce-35bd-464d-a0fc-7272302e2cc9"/>
         </result>
       </DiagnosticReport>
     </resource>

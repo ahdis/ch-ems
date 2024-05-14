@@ -71,6 +71,7 @@ Usage: #inline
 * subject = Reference(Pat-HF)
 * effectiveDateTime = "2023-09-19T17:50:00+02:00"
 * performer = Reference(1Org-Labor)
+* valueCodeableConcept = $sct#10828004 "Positive"
 * interpretation = $v3-ObservationInterpretation#POS "Positive"
 * specimen = Reference(4Spec-Specimen)
 

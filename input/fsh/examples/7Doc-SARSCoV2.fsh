@@ -70,6 +70,7 @@ Usage: #inline
 * subject = Reference(Pat-AntoineDupont)
 * effectiveDateTime = "2023-09-12T07:40:00+02:00"
 * performer = Reference(1Org-Labor)
+* valueCodeableConcept = $sct#10828004 "Positive"
 * interpretation = $v3-ObservationInterpretation#POS "Positive"
 * specimen = Reference(7Spec-Specimen)
 

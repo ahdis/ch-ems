@@ -9,5 +9,6 @@ Description: "Example for a CH ELM Observation Results: Laboratory"
 * subject = Reference(1Pat-DM)
 * effectiveDateTime = "2023-07-14T11:10:00+02:00"
 * performer = Reference(1Org-Labor)
+* valueCodeableConcept = $sct#10828004 "Positive"
 * interpretation = $v3-ObservationInterpretation#POS "Positive"
 * specimen = Reference(1Spec-Specimen)

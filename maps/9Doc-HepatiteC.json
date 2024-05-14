@@ -299,6 +299,22 @@
             ]
         },
         {
+            "linkId": "LaboratoryReport.TestResult.Value.Code",
+            "answer": [
+                {
+                    "valueString": "10828004"
+                }
+            ]
+        },
+        {
+            "linkId": "LaboratoryReport.TestResult.Value.CodeSystem",
+            "answer": [
+                {
+                    "valueString": "SNOMED CT"
+                }
+            ]
+        },
+        {
             "linkId": "LaboratoryReport.TestResult.Interpretation.Code",
             "answer": [
                 {

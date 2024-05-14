@@ -99,6 +99,7 @@ Usage: #inline
 * effectiveDateTime = "2023-08-04T08:25:00+02:00"
 * performer = Reference(urn:uuid:8b9163cc-4894-462c-8060-b9b01f705a8b) // Organization: Author & Lab
 * performer.type = "Organization"
+* valueCodeableConcept = $sct#10828004 "Positive"
 * interpretation = $v3-ObservationInterpretation#POS "Positive"
 * specimen = Reference(urn:uuid:b2b24ded-fd9f-40bc-a822-1fb07e14c2ef)
 * specimen.type = "Specimen"
@@ -131,8 +132,6 @@ InstanceOf: ChElmOrganizationLab
 Usage: #inline
 * identifier[GLN].system = "urn:oid:2.51.1.3"
 * identifier[GLN].value = "7601002331470"
-// * identifier[BER].system = "urn:oid:2.16.756.5.45"
-// * identifier[BER].value = "A99684215"
 * name = "SanLab"
 
 Instance: c2be8e31-506b-42b2-adfc-7e47dd23cdb4 // PractitionerRole: Orderer
