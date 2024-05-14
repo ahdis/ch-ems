@@ -76,7 +76,7 @@ Cardinalities:
 * TestResult.Specimen.Type.Code 0..1 code "Coded data"
 * TestResult.Specimen.Type.CodeSystem 0..1 uri "Identity fo the terminolgy system"
 * TestResult.Specimen.Type.Text 0..1 string "Remark that material is declared by Observation.code or non-mandatory"
-* TestResult.Value 0..1 Element "Acutal test result"
+* TestResult.Value 1..1 Element "Acutal test result"
 * TestResult.Value.Code 1..1 code "Coded data"
 * TestResult.Value.CodeSystem 1..1 uri "Identity fo the terminolgy system"
 * TestResult.Interpretation 1..1 Element "Interpretation of the test result"
