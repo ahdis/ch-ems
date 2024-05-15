@@ -2,10 +2,63 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-leg-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-leg-org",
-  "version": "2024-04-30",
+  "version": "2024-05-13",
   "name": "ChElmResultsLegOrg",
   "title": "CH ELM Results Leg Org",
   "status": "active",
   "experimental": false,
-  "description": "The \"CH ELM Results Leg Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Leg Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information."
+  "description": "The \"CH ELM Results Leg Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Leg Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "103465003",
+            "display": "Legionella pneumophila serogroup 3 (organism)"
+          },
+          {
+            "code": "89605004",
+            "display": "Legionella longbeachae (organism)"
+          },
+          {
+            "code": "116380009",
+            "display": "Legionella micdadei (organism)"
+          },
+          {
+            "code": "7527002",
+            "display": "Genus Legionella (organism)"
+          },
+          {
+            "code": "103463005",
+            "display": "Legionella pneumophila serogroup 1 (organism)"
+          },
+          {
+            "code": "116379006",
+            "display": "Legionella maceachernii (organism)"
+          },
+          {
+            "code": "450611004",
+            "display": "Legionella bozemanae (organism)"
+          },
+          {
+            "code": "58923007",
+            "display": "Legionella cincinnatiensis (organism)"
+          },
+          {
+            "code": "131322009",
+            "display": "Legionella pneumophilia serogroup 10 (organism)"
+          },
+          {
+            "code": "103448007",
+            "display": "Legionella brunensis (organism)"
+          },
+          {
+            "code": "80897008",
+            "display": "Legionella pneumophila (organism)"
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-expecting-organism-specification-to-results-completion-vs",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-organism-specification-to-results-completion-vs",
-  "version": "2024-04-30",
+  "version": "2024-05-13",
   "name": "ChElmExpectingOrganismSpecificationToResultsCompletionVs",
   "title": "CH ELM Expecting Organism Specification To Results Completion Vs",
   "status": "active",
@@ -36,6 +36,16 @@
           ]
         },
         {
+          "code": "101219-4",
+          "display": "Legionella sp DNA [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-leg-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "101427-3",
           "display": "Shigella sp DNA [Presence] in Stool by NAA with probe detection",
           "target": [
@@ -46,11 +56,61 @@
           ]
         },
         {
+          "code": "26621-3",
+          "display": "Legionella sp Ag [Presence] in Specimen",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-leg-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "32781-7",
           "display": "Legionella sp Ag [Presence] in Urine",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-leg-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "38394-3",
+          "display": "Legionella sp identified in Urine by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-leg-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "46454-5",
+          "display": "Shigella sp [Presence] in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-shi-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "46455-2",
+          "display": "Shigella sp DNA [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-shi-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "47085-6",
+          "display": "Plasmodium sp DNA [Presence] in Blood by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mal-org",
               "equivalence": "relatedto"
             }
           ]
@@ -76,11 +136,81 @@
           ]
         },
         {
+          "code": "50687-3",
+          "display": "Plasmodium sp Ag [Presence] in Blood",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mal-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "51587-4",
+          "display": "Plasmodium sp [Presence] in Blood by Light microscopy",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mal-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "589-2",
+          "display": "Legionella sp identified in Bronchial specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-leg-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "590-0",
+          "display": "Legionella sp identified in Sputum by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-leg-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "593-4",
+          "display": "Legionella sp identified in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-leg-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "70569-9",
+          "display": "Plasmodium sp Ag [Identifier] in Blood by Rapid immunoassay",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mal-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "71429-5",
           "display": "Campylobacter sp DNA.diarrheagenic [Presence] in Stool by NAA with probe detection",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-camp-diar-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "82300-5",
+          "display": "Shigella sp [Presence] in Stool by Culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-shi-org",
               "equivalence": "relatedto"
             }
           ]

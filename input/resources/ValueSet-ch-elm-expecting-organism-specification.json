@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-expecting-organism-specification",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-organism-specification",
-  "version": "2024-04-30",
+  "version": "2024-05-13",
   "name": "ChElmExpectingOrganismSpecification",
   "title": "CH ELM Expecting Organism Specification",
   "status": "active",
@@ -18,12 +18,36 @@
             "display": "Campylobacter sp [Presence] in Stool by Organism specific culture"
           },
           {
+            "code": "101219-4",
+            "display": "Legionella sp DNA [Presence] in Specimen by NAA with probe detection"
+          },
+          {
             "code": "101427-3",
             "display": "Shigella sp DNA [Presence] in Stool by NAA with probe detection"
           },
           {
+            "code": "26621-3",
+            "display": "Legionella sp Ag [Presence] in Specimen"
+          },
+          {
             "code": "32781-7",
             "display": "Legionella sp Ag [Presence] in Urine"
+          },
+          {
+            "code": "38394-3",
+            "display": "Legionella sp identified in Urine by Organism specific culture"
+          },
+          {
+            "code": "46454-5",
+            "display": "Shigella sp [Presence] in Specimen by Organism specific culture"
+          },
+          {
+            "code": "46455-2",
+            "display": "Shigella sp DNA [Presence] in Specimen by NAA with probe detection"
+          },
+          {
+            "code": "47085-6",
+            "display": "Plasmodium sp DNA [Presence] in Blood by NAA with probe detection"
           },
           {
             "code": "49614-1",
@@ -34,8 +58,36 @@
             "display": "Campylobacter sp rRNA [Presence] in Specimen by Probe"
           },
           {
+            "code": "50687-3",
+            "display": "Plasmodium sp Ag [Presence] in Blood"
+          },
+          {
+            "code": "51587-4",
+            "display": "Plasmodium sp [Presence] in Blood by Light microscopy"
+          },
+          {
+            "code": "589-2",
+            "display": "Legionella sp identified in Bronchial specimen by Organism specific culture"
+          },
+          {
+            "code": "590-0",
+            "display": "Legionella sp identified in Sputum by Organism specific culture"
+          },
+          {
+            "code": "593-4",
+            "display": "Legionella sp identified in Specimen by Organism specific culture"
+          },
+          {
+            "code": "70569-9",
+            "display": "Plasmodium sp Ag [Identifier] in Blood by Rapid immunoassay"
+          },
+          {
             "code": "71429-5",
             "display": "Campylobacter sp DNA.diarrheagenic [Presence] in Stool by NAA with probe detection"
+          },
+          {
+            "code": "82300-5",
+            "display": "Shigella sp [Presence] in Stool by Culture"
           },
           {
             "code": "85827-4",

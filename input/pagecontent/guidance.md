@@ -11,10 +11,10 @@ Depending on the organism (leading code), the requirement for how the patient's 
    * Organism: SARS-CoV-2, Legionella spp., etc.
    * [Example](Patient-Pat-ErnstKarlTanner.json.html): Ernst Karl Tanner (Patient.name.family = Tanner, Patient.name.given = Ernst, Karl)
 * **Initials**
-   * Organism: Neisseria gonorrhoeae, Chlamydia trachomatis, etc.
+   * Organism: Neisseria gonorrhoeae, Chlamydia trachomatis, Treponema pallidum
    * [Example](Patient-Pat-ET.json.html): ET (Patient.name.family = T, Patient.name.given = E)
 * **VCT Code**
-   * Organism: Neisseria gonorrhoeae, Chlamydia trachomatis, etc.
+   * Organism: Neisseria gonorrhoeae, Chlamydia trachomatis, Treponema pallidum
    * [Example](Patient-Pat-VCT.json.html): kste12345 (Patient.name.extension = kste12345, Patient.name.family/Patient.name.given = masked)
 * **HIV Code**
    * Organism: In the case of HIV/AIDS, under initials, enter the first letter and the number of letters of the first name. If this is longer than 9 letters, the number is 0. In the case of multi-part first names with a hyphen or in two words, only the first part is used.
@@ -23,8 +23,6 @@ Depending on the organism (leading code), the requirement for how the patient's 
    * The patient's identification cannot determined directly based on the leading code. Consult the implementation guideline for further information.
 
 The complete overview of which characteristics are used for which organisms can be found in the ConceptMap [CH ELM Results To FOPH Patient Name Representation](ConceptMap-ch-elm-results-to-foph-patient-name-representation.html) and in the Ordinance of the FDHA on the Reporting of Observations of Communicable human diseases (SR 818.101.126) ([DE](https://www.fedlex.admin.ch/eli/cc/2015/892/de), [FR](https://www.fedlex.admin.ch/eli/cc/2015/892/fr), [IT](https://www.fedlex.admin.ch/eli/cc/2015/892/it)).   
-
-Note: There is no constraint in the patient profile that checks whether the name has been provided correctly. This requirement validation is performed by the FOPH, see also [Business Rules](CodeSystem-ch-elm-foph-business-rules.html).
 
 ### Laboratory Study Types
 The laboratory report is currently either of the type [organism detection](#organism-detection) (LOINC 18725-2 Microbiology studies (set)) or [resistance detection](#resistance-detection) (LOINC 18769-0 Microbial susceptibility tests Set). These types are defined in the [ValueSet CH ELM Lab Study Types](ValueSet-ch-elm-lab-study-types.html) and are represented in the `Composition.section.code` element of the respective document. 
@@ -43,7 +41,7 @@ The laboratory report is currently either of the type [organism detection](#orga
 ### Laboratory Result
 
 #### Leading Code
-The laboratory result is represented by a so called leading code (in most cases LOINC) and laboratories are requested to choose the code from the provided ([ValueSet CH ELM Results Laboratory Observation](ValueSet-ch-elm-results-laboratory-observation.html)) that corresponds to the test parameters performed. The leading code reflects a 4-axis model and ideally, the chosen code covers all 4 axes.
+The performed laboratory test is represented by a so called leading code from the valueset [ValueSet CH ELM Results Laboratory Observation](ValueSet-ch-elm-results-laboratory-observation.html) containing codes from the LOINC and SNOMED codesystem. The leading code reflects a 4-axis model and laboratories are requested to choose the code that corresponds to the specific parameters of the performed laboratory test. Ideally, the chosen code covers all 4 axes.
 
 [Example Neisseria gonorrhoeae](Bundle-1Doc-NeisseriaGonorrhoeae.html): The leading LOINC code [697-3 Neisseria gonorrhoeae [Presence] in Urethra by Organism specific culture](https://loinc.org/697-3/) covering all 4 axes:
 
@@ -55,7 +53,7 @@ The laboratory result is represented by a so called leading code (in most cases 
 Note: The Specimen.type.text element in this case contains a fixed text as value: “Material declared by Observation.code or non-mandatory”.
 
 <span style="color:red;">Important note:</span>     
-The ([ValueSet CH ELM Results Laboratory Observation](ValueSet-ch-elm-results-laboratory-observation.html)) is a selection of LOINC codes related to notifiable diseases and their legal basis. The ValueSet can be adapted according to laboratory-specific needs - please contact the FOPH in this regard.
+The [ValueSet CH ELM Results Laboratory Observation](ValueSet-ch-elm-results-laboratory-observation.html) is a selection of LOINC or SNOMED codes related to notifiable diseases and their legal basis. The ValueSet can be adapted according to laboratory-specific needs - please contact the FOPH in this regard.
 
 #### Completion of the Leading Code
 If the leading code does not cover all axes, the missing axis must be completed by an additional code. 

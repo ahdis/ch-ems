@@ -157,6 +157,8 @@ Usage: #inline
 Instance: f18f5763-d9a4-4bb7-999e-959beaaba714 // Organization: Orderer
 InstanceOf: ChElmOrganizationOrderer
 Usage: #inline
+* identifier[BER].system = "urn:oid:2.16.756.5.45"
+* identifier[BER].value = "A74966168"
 * name = "Praxis Dr. Hauser"
 * address.line = "Hauptstrasse 10"
 * address.line.extension[streetName].valueString = "Hauptstrasse"

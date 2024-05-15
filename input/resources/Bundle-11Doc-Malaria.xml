@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="11Doc-Malaria"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:1904332d-6012-443f-9690-9291adb234fe"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2023-09-15T11:00:00+02:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:3c604a32-e14c-48ff-a5f0-ba42054724d8"/>
+    <resource>
+      <Composition>
+        <id value="3c604a32-e14c-48ff-a5f0-ba42054724d8"/>
+        <language value="de-CH"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:1904332d-6012-443f-9690-9291adb234fe"/>
+        </identifier>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/2011000195101"/>
+            <code value="4241000179101"/>
+            <display value="Laborbericht"/>
+          </coding>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="11502-2"/>
+            <display value="Laboratory report"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:f1b1f500-04e0-4615-89ad-6cb4bf978f82"/>
+        </subject>
+        <date value="2023-09-15T11:00:00+02:00"/>
+        <author>
+          <reference value="urn:uuid:db02a3c0-ca1b-4355-a64f-47bbb5769f58"/>
+        </author>
+        <title value="Laborbericht vom 15.09.2023"/>
+        <section>
+          <title value="Analyseergebnisse der mikrobiologischen Untersuchung"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="18725-2"/>
+              <display value="Microbiology studies (set)"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="urn:uuid:378f63d4-5f6d-4ed0-af91-b2e6f0782f1f"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:f1b1f500-04e0-4615-89ad-6cb4bf978f82"/>
+    <resource>
+      <Patient>
+        <id value="f1b1f500-04e0-4615-89ad-6cb4bf978f82"/>
+        <identifier>
+          <system value="urn:oid:2.16.756.5.32"/>
+          <value value="7562295883070"/>
+        </identifier>
+        <name>
+          <family value="M"/>
+          <given value="D"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="1960-08-22"/>
+        <address>
+          <use value="home"/>
+          <city value="Bern"/>
+          <state value="BE"/>
+          <postalCode value="3000"/>
+          <country value="CH">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding">
+              <valueCoding>
+                <system value="urn:iso:std:iso:3166"/>
+                <code value="CH"/>
+              </valueCoding>
+            </extension>
+          </country>
+        </address>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:db02a3c0-ca1b-4355-a64f-47bbb5769f58"/>
+    <resource>
+      <Organization>
+        <id value="db02a3c0-ca1b-4355-a64f-47bbb5769f58"/>
+        <identifier>
+          <system value="urn:oid:2.51.1.3"/>
+          <value value="7601002331470"/>
+        </identifier>
+        <name value="SanLab"/>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:378f63d4-5f6d-4ed0-af91-b2e6f0782f1f"/>
+    <resource>
+      <Observation>
+        <id value="378f63d4-5f6d-4ed0-af91-b2e6f0782f1f"/>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="70568-1"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:f1b1f500-04e0-4615-89ad-6cb4bf978f82"/>
+        </subject>
+        <effectiveDateTime value="2023-09-15T09:15:00+02:00"/>
+        <performer>
+          <reference value="urn:uuid:db02a3c0-ca1b-4355-a64f-47bbb5769f58"/>
+        </performer>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="10828004"/>
+            <display value="Positive (qualifier value)"/>
+          </coding>
+        </valueCodeableConcept>
+        <interpretation>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+            <code value="POS"/>
+            <display value="Positive"/>
+          </coding>
+        </interpretation>
+        <specimen>
+          <reference value="urn:uuid:4a3b75c3-8132-495a-85db-6ac023ad9087"/>
+        </specimen>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:a36dbf65-de3d-4737-9e18-734cb0257b5a"/>
+    <resource>
+      <Practitioner>
+        <id value="a36dbf65-de3d-4737-9e18-734cb0257b5a"/>
+        <identifier>
+          <system value="urn:oid:2.51.1.3"/>
+          <value value="7601000234438"/>
+        </identifier>
+        <name>
+          <family value="Giacometti"/>
+          <given value="Monika"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="+41 79 111 44 55"/>
+        </telecom>
+        <telecom>
+          <system value="email"/>
+          <value value="m.giacometti@ks-abc.ch"/>
+        </telecom>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:76c479c6-acd4-4654-8b09-ce6060b4ef33"/>
+    <resource>
+      <Organization>
+        <id value="76c479c6-acd4-4654-8b09-ce6060b4ef33"/>
+        <identifier>
+          <system value="urn:oid:2.16.756.5.45"/>
+          <value value="A99684215"/>
+        </identifier>
+        <name value="Kantonsspital ABC"/>
+        <address>
+          <line value="Aortastrasse 22">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+              <valueString value="Aortastrasse"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+              <valueString value="22"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox">
+              <valueString value="Postfach 18"/>
+            </extension>
+          </line>
+          <city value="Bern"/>
+          <postalCode value="3000"/>
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:e277723a-e3fa-4905-85af-8515974106b2"/>
+    <resource>
+      <PractitionerRole>
+        <id value="e277723a-e3fa-4905-85af-8515974106b2"/>
+        <practitioner>
+          <reference value="urn:uuid:a36dbf65-de3d-4737-9e18-734cb0257b5a"/>
+        </practitioner>
+        <organization>
+          <reference value="urn:uuid:76c479c6-acd4-4654-8b09-ce6060b4ef33"/>
+        </organization>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:4a3b75c3-8132-495a-85db-6ac023ad9087"/>
+    <resource>
+      <Specimen>
+        <id value="4a3b75c3-8132-495a-85db-6ac023ad9087"/>
+        <type>
+          <text value="Material declared by Observation.code or non-mandatory"/>
+        </type>
+        <subject>
+          <reference value="urn:uuid:f1b1f500-04e0-4615-89ad-6cb4bf978f82"/>
+        </subject>
+        <collection>
+          <collectedDateTime value="2023-09-12"/>
+        </collection>
+      </Specimen>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:b3e70cdf-0598-476d-bd86-dc6b03e1e8b7"/>
+    <resource>
+      <ServiceRequest>
+        <id value="b3e70cdf-0598-476d-bd86-dc6b03e1e8b7"/>
+        <identifier>
+          <system value="http://fhir.lab.ch/order-identifier"/>
+          <value value="23846922417"/>
+        </identifier>
+        <status value="completed"/>
+        <intent value="order"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="70568-1"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:f1b1f500-04e0-4615-89ad-6cb4bf978f82"/>
+        </subject>
+        <requester>
+          <reference value="urn:uuid:e277723a-e3fa-4905-85af-8515974106b2"/>
+        </requester>
+        <specimen>
+          <reference value="urn:uuid:4a3b75c3-8132-495a-85db-6ac023ad9087"/>
+        </specimen>
+      </ServiceRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:04a1e30c-f03a-4dd6-981f-efa5d4835d47"/>
+    <resource>
+      <DiagnosticReport>
+        <id value="04a1e30c-f03a-4dd6-981f-efa5d4835d47"/>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition">
+          <valueReference>
+            <reference value="urn:uuid:3c604a32-e14c-48ff-a5f0-ba42054724d8"/>
+          </valueReference>
+        </extension>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:1904332d-6012-443f-9690-9291adb234fe"/>
+        </identifier>
+        <basedOn>
+          <reference value="urn:uuid:b3e70cdf-0598-476d-bd86-dc6b03e1e8b7"/>
+        </basedOn>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="11502-2"/>
+            <display value="Laboratory report"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:f1b1f500-04e0-4615-89ad-6cb4bf978f82"/>
+        </subject>
+        <performer>
+          <reference value="urn:uuid:db02a3c0-ca1b-4355-a64f-47bbb5769f58"/>
+        </performer>
+        <specimen>
+          <reference value="urn:uuid:4a3b75c3-8132-495a-85db-6ac023ad9087"/>
+        </specimen>
+        <result>
+          <reference value="urn:uuid:378f63d4-5f6d-4ed0-af91-b2e6f0782f1f"/>
+        </result>
+      </DiagnosticReport>
+    </resource>
+  </entry>
+</Bundle>

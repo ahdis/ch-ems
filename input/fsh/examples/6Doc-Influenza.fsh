@@ -122,6 +122,8 @@ Usage: #example
 Title: "Org - Praxis Dr. Hauser"
 Description: "Example for a CH ELM Organization: Orderer"
 * name = "Praxis Dr. Hauser"
+* identifier[BER].system = "urn:oid:2.16.756.5.45"
+* identifier[BER].value = "A74966168"
 * address.line = "Hauptstrasse 10"
 * address.line.extension[streetName].valueString = "Hauptstrasse"
 * address.line.extension[houseNumber].valueString = "10"
