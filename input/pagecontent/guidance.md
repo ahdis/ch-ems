@@ -11,7 +11,7 @@ Depending on the organism (leading code), the requirement for how the patient's 
    * Organism: SARS-CoV-2, Legionella spp., etc.
    * [Example](Patient-Pat-ErnstKarlTanner.json.html): Ernst Karl Tanner (Patient.name.family = Tanner, Patient.name.given = Ernst, Karl)
 * **Initials**
-   * Organism: Neisseria gonorrhoeae, Chlamydia trachomatis, Treponema pallidum
+   * Organism: Organism: Neisseria gonorrhoeae, Chlamydia trachomatis, etc
    * [Example](Patient-Pat-ET.json.html): ET (Patient.name.family = T, Patient.name.given = E)
 * **VCT Code**
    * Organism: Neisseria gonorrhoeae, Chlamydia trachomatis, Treponema pallidum

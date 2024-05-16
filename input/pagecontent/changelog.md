@@ -1,6 +1,6 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### ci-build 
+### 1.3.0 2024/05/16 
 
 * [#74](https://github.com/ahdis/ch-elm/issues/74): Check for BER and UIDB format
 * [#77](https://github.com/ahdis/ch-elm/issues/77): VCT and HIV Codes for patient (guidance)
