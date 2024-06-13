@@ -52,8 +52,8 @@ Entry 'urn:uuid:67d2d2fb-15c2-4b37-b7be-9f9efdbf4094' isn't reachable by travers
 Entry 'urn:uuid:30718319-2c52-4f5a-b0ee-b3322093157f' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 
 # input/resources/Bundle-8Doc-HepatiteB.xml ==
-Entry 'urn:uuid:ef543f73-c886-4a7f-81ce-12e2978b11c5'' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
-Entry 'urn:uuid:ae99fade-feb6-451b-a20b-bd8a04be8531 isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:ef543f73-c886-4a7f-81ce-12e2978b11c5' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:ae99fade-feb6-451b-a20b-bd8a04be8531' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 
 # input/resources/Bundle-9Doc-HepatiteC.xml ==
 Entry 'urn:uuid:30c5012b-18ea-4c3f-9654-68ccce1e1081' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)

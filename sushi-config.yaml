@@ -153,3 +153,6 @@ resources:
   TestScript/Test93-Error-FullName-Influenca:
     name: Test93 - Error if full name is provided by Influenca (should be initials)
     description: Test script to verify error if full name is provided by Influenca (must be initials)
+  TestScript/Test94-Ignore-Source-Warning:
+    name: Test94 - If warning is ignored for Binding for path (.+) has no source
+    description: Test script to verify if warning is ignored for Binding for path (.+) has no source

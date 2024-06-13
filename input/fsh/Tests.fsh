@@ -63,3 +63,17 @@ InstanceOf: TestScript
 * insert ActionAssertFhirPathTrue(Confirm that the returned resource is an OperationOutcome., [[is(FHIR.OperationOutcome)]])
 * insert ActionAssertFhirPathTrue(Confirm that we have at least one error, [[issue.where(severity='error' or severity='fatal').count()>0]])
 * insert ActionAssertFhirPathTrue(Check slicing fails, [[issue.where(severity='error' and diagnostics.startsWith('Slice \\'DocumentReference.contained:document\\': minimum required = 1, but only found 0')).count() > 0]])
+
+Instance: Test94-Ignore-Source-Warning
+InstanceOf: TestScript
+* url = "http://fhir.ch/ig/ch-elm/TestScript/Test94-Ignore-Source-Warning"
+* name = "Test94IgnoreSourceWarning"
+* status = #active
+* insert Fixture(inputdata, [[DocumentReference/1-DocumentReference]])
+* test.name = "Test94"
+* test.description = "Test script to verify that warning Binding for path (.+) has no source, so can't be checked"
+* insert ActionOperationValidate(http://fhir.ch/ig/ch-elm/StructureDefinition/PublishDocumentReference, inputdata)
+* insert ActionAssertResponseCodeOk
+* insert ActionAssertFhirPathTrue(Confirm that the returned resource is an OperationOutcome., [[is(FHIR.OperationOutcome)]])
+* insert ActionAssertFhirPathTrue(Confirm that we have no errors., [[issue.where(severity='error' or severity='fatal').count()=0]])
+* insert ActionAssertFhirPathTrue(Check slicing fails, [[issue.where(severity='information' and diagnostics.matches('Binding for path (.+) has no source, so can't be checked')).count() = 0]])
