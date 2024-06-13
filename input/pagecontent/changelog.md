@@ -3,8 +3,9 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### 1.3.1 2024/06/17 
 
 * [#88](https://github.com/ahdis/ch-elm/issues/88): Update ValueSets for malaria, new snomed codes legionalla
+* [#91](https://github.com/ahdis/ch-elm/issues/91)  extension line not required and not must support, updated examples, removed narratives
 * [#92](https://github.com/ahdis/ch-elm/issues/92): Show validation warning  for wrong BER / UIDB
-* [#93](https://github.com/ahdis/ch-elm/issues/93): patient name representation shall be incorrect (no distinction strict/non-strict for initials and vct) #93
+* [#93](https://github.com/ahdis/ch-elm/issues/93): patient name representation shall be incorrect (no distinction strict/non-strict for initials and vct)
 
 ### 1.3.0 2024/05/16 
 

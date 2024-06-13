@@ -84,7 +84,17 @@ parameters:
     - fsh-generated/resources
   no-narrative: 
     - Bundle/*
+    - Composition/*
+    - DiagnosticReport/*
     - DocumentReference/*
+    - Observation/*
+    - Organization/*
+    - Patient/*
+    - Practitioner/*
+    - PractitionerRole/*
+    - ServiceRequest/*
+    - Specimen/*
+
   excludettl: true
 #  apply-version: false
 #  default-version: true
