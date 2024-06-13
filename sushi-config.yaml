@@ -101,25 +101,39 @@ instanceOptions:
 resources:
   Bundle/8Doc-HepatiteB:
     name: 8Doc - HepatiteB
-    description: "Document for Hepatite B"
+    description: Document for Hepatite B
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Bundle/9Doc-HepatiteC:
     name: 9Doc - HepatiteC
-    description: "Example Document for Hepatite C"
+    description: Example Document for Hepatite C
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Bundle/10Doc-Legionella:
     name: 10Doc - Legionella
-    description: "Example Document for Legionella"
+    description: Example Document for Legionella
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Bundle/11Doc-Malaria:
     name: 11Doc - Malaria
-    description: "Example Document for Malaria"
+    description: Example Document for Malaria
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Bundle/12Doc-Monkeypox:
     name: 12Doc - Monkeypox
-    description: "Example Document for Monkeypox"
+    description: Example Document for Monkeypox
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Bundle/13Doc-Shigella:
     name: 13Doc - Shigella
-    description: "Example Document for Shigella"
+    description: Example Document for Shigella
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Binary/Test92-Bundle-WarningBerUidGln:
+    extension:
+      - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format
+        valueCode: application/fhir+json
+    name: Test92 - Bundle provoking warning for Ber Uid and Gln
+    description: Test bundle to verify if incorrect BerUid Gln are detected with warnings
+    exampleCanonical: http://hl7.org/fhir/StructureDefinition/Binary
+  Bundle/Binary-Test92-Bundle-WarningBerUidGln:
+    name: Test92 - Bundle provoking warning for Ber Uid and Gln
+    description: Test bundle to verify if incorrect BerUid Gln are detected with warnings
+    exampleCanonical: http://hl7.org/fhir/StructureDefinition/Bundle
+  TestScript/Test92-WarningBerUidGln:
+    name: Test92 - Warning for Ber Uid and Gln
+    description: Test script to verify if incorrect BerUid Gln are detected with warnings

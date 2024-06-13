@@ -73,20 +73,41 @@ Description: "BER must start with a letter followed by 8 digits"
 Severity: #warning
 Expression: "matches('^[A-Z][0-9]{8}$')"
 
+// the following invariants with -in-doc can be removed as soon as we use ch-core 5.0.0-ballot or later (because the slicing will use CH Core Organization and the warning will appear)
+Invariant: ber-length-in-doc
+Description: "BER must start with a letter followed by 8 digits for Organization.identifier where system is urn:oid:2.16.756.5.45"
+Severity: #warning
+Expression: "entry.select(resource as Organization).identifier.where(system='urn:oid:2.16.756.5.45').all($this.value.exists() and $this.value.matches('^[A-Z][0-9]{8}$'))"
+
 Invariant: ber-modulus-11
 Description: "BER must pass the modulus 11 check"
 Severity: #warning
 Expression: "11-((substring(1,1).toInteger()*5)+(substring(2,1).toInteger()*4)+(substring(3,1).toInteger()*3)+(substring(4,1).toInteger()*2)+(substring(5,1).toInteger()*7)+(substring(6,1).toInteger()*6)+(substring(7,1).toInteger()*5))mod(11)=substring(8,1).toInteger()"
+
+Invariant: ber-modulus-11-in-doc
+Description: "BER must pass the modulus 11 check for Organization.identifier where system is urn:oid:2.16.756.5.45"
+Severity: #warning
+Expression: "entry.select(resource as Organization).identifier.where(system='urn:oid:2.16.756.5.45').all($this.value.exists() and 11-(($this.value.substring(1,1).toInteger()*5)+($this.value.substring(2,1).toInteger()*4)+($this.value.substring(3,1).toInteger()*3)+($this.value.substring(4,1).toInteger()*2)+($this.value.substring(5,1).toInteger()*7)+($this.value.substring(6,1).toInteger()*6)+($this.value.substring(7,1).toInteger()*5))mod(11)=$this.value.substring(8,1).toInteger())"
 
 Invariant: uidb-length
 Description: "UIDB must start with 'CHE' followed by 9 digits"
 Severity: #warning
 Expression: "matches('^CHE[0-9]{9}$')"
 
+Invariant: uidb-length-in-doc
+Description: "UIDB must start with 'CHE' followed by 9 digits for Organization.identifier where system is urn:oid:2.16.756.5.35"
+Severity: #warning
+Expression: "entry.select(resource as Organization).identifier.where(system='urn:oid:2.16.756.5.35').all($this.value.exists() and $this.value.matches('^CHE[0-9]{9}$'))"
+
 Invariant: uidb-modulus-11
 Description: "UIDB must pass the modulus 11 check"
 Severity: #warning
 Expression: "11-((substring(3,1).toInteger()*5)+(substring(4,1).toInteger()*4)+(substring(5,1).toInteger()*3)+(substring(6,1).toInteger()*2)+(substring(7,1).toInteger()*7)+(substring(8,1).toInteger()*6)+(substring(9,1).toInteger()*5)+(substring(10,1).toInteger()*4))mod(11)=substring(11,1).toInteger()"
+
+Invariant: uidb-modulus-11-in-doc
+Description: "UIDB must pass the modulus 11 check for Organization.identifier where system is urn:oid:2.16.756.5.35"
+Severity: #warning
+Expression: "entry.select(resource as Organization).identifier.where(system='urn:oid:2.16.756.5.35').all($this.value.exists() and 11-(($this.value.substring(3,1).toInteger()*5)+($this.value.substring(4,1).toInteger()*4)+($this.value.substring(5,1).toInteger()*3)+($this.value.substring(6,1).toInteger()*2)+($this.value.substring(7,1).toInteger()*7)+($this.value.substring(8,1).toInteger()*6)+($this.value.substring(9,1).toInteger()*5)+($this.value.substring(10,1).toInteger()*4))mod(11)=$this.value.substring(11,1).toInteger())"
 
 Invariant: name-initials
 Description: "a name with initials"

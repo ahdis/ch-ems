@@ -1,5 +1,10 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
+### 1.3.1 2024/06/17 
+
+* [#92](https://github.com/ahdis/ch-elm/issues/92): Show validation warning  for wrong BER / UIDB
+
+
 ### 1.3.0 2024/05/16 
 
 * [#74](https://github.com/ahdis/ch-elm/issues/74): Check for BER and UIDB format

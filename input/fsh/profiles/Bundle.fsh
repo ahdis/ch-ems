@@ -5,6 +5,10 @@ Title: "CH ELM Document: Laboratory Report"
 Description: "This CH ELM base profile constrains the Bundle resource for the purpose of laboratory test reports."
 * . ^short = "CH ELM Document: Laboratory Report"
 * obeys ch-elm-leading-code
+* obeys ber-length-in-doc
+* obeys ber-modulus-11-in-doc
+* obeys uidb-length-in-doc
+* obeys uidb-modulus-11-in-doc
 * identifier ^short = "Persistent, unique identifier for the diagnostic report (UUID)"
 * identifier 1..
 * identifier.system 1..
