@@ -195,7 +195,6 @@
         "resourceType" : "ServiceRequest",
         "id" : "1SR-Order",
         "identifier" : [{
-          "system" : "http://fhir.lab.ch/order-identifier",
           "value" : "22000938108"
         }],
         "status" : "completed",

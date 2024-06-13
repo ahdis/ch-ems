@@ -115,7 +115,6 @@ Usage: #inline
 Instance: 9d409938-5af8-4fae-88d1-541f35111c1f
 InstanceOf: ChElmServiceRequestLaboratoryOrder
 Usage: #inline
-* identifier.system = "http://fhir.lab.ch/order-identifier"
 * identifier.value = "7601002331521"
 * status = #completed
 * intent = #order

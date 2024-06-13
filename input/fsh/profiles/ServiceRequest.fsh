@@ -5,7 +5,6 @@ Title: "CH ELM ServiceRequest: Laboratory Order"
 Description: "This CH ELM base profile constrains the ServiceRequest resource for the purpose of laboratory orders."
 * . ^short = "CH ELM ServiceRequest: Laboratory Order"
 * identifier 1..1
-* identifier.system 1..
 * identifier.value 1..
 * identifier.value ^maxLength = 100
 * status = #completed

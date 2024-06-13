@@ -227,6 +227,14 @@
             ]
         },
         {
+            "linkId": "LaboratoryReport.Patient.Address.Line",
+            "answer": [
+                {
+                    "valueString": "Bahnhofstrasse 27"
+                }
+            ]
+        },
+        {
             "linkId": "LaboratoryReport.Patient.Address.City",
             "answer": [
                 {

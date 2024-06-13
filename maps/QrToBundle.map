@@ -115,8 +115,7 @@ group QrToBundleItems(source qr : QuestionnaireResponse, target bundle : Bundle,
 // TODO: simplified currently, same as below   qr.item as item where linkId='LaboratoryReport.Author.OrganizationGLN' -> organization.identifier as identifier, identifier.system= 'urn:oid:2.51.1.3', identifier.value = (%item.answer.value)   "LaboratoryReport-Author.OrganizationGLN";  
    qr.item as item where linkId='LaboratoryReport.Lab.OrganizationGLN' -> organization.identifier as identifier, identifier.system= 'urn:oid:2.51.1.3', identifier.value = (%item.answer.value)   "LaboratoryReport-Lab-OrganizationGLN";  
    qr.item as item where linkId='LaboratoryReport.Lab.OrganizationName' -> organization.name = (%item.answer.value)   "LaboratoryReport-Lab-OrganizationName";  
-   // FIXME: http://fhir.lab.ch/order-identifier this should not be fixed, either leave out, need to raise an issue
-   qr.item as item where linkId='LaboratoryReport.Lab.OrderIdentifier' -> servicerequest.identifier as identifier, identifier.system= 'http://fhir.lab.ch/order-identifier', identifier.value = (%item.answer.value)   "LaboratoryReport-Lab-OrderIdentifier";  
+   qr.item as item where linkId='LaboratoryReport.Lab.OrderIdentifier' -> servicerequest.identifier as identifier, identifier.value = (%item.answer.value)   "LaboratoryReport-Lab-OrderIdentifier";  
 
    qr.item as item where linkId='LaboratoryReport.Orderer.OrganizationName' -> ordererOrg.name = (%item.answer.value)  "LaboratoryReport-Orderer-OrganizationName";  
    qr.item as item where linkId='LaboratoryReport.Orderer.OrganizationBER' -> ordererOrg.identifier as identifier, identifier.system= 'urn:oid:2.16.756.5.45', identifier.value = (%item.answer.value)   "LaboratoryReport-Orderer-OrganizationBER";  
@@ -162,6 +161,7 @@ group QrToBundleItems(source qr : QuestionnaireResponse, target bundle : Bundle,
          country.extension as extension, extension.url = 'http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding', extension.value = create('Coding') as coding, 
          coding.system = 'urn:iso:std:iso:3166', coding.code = (%item.answer.value)  "LaboratoryReport-Patient.Address.Country";  
       qr.item as item where linkId='LaboratoryReport.Patient.Address.ZipCode' -> address.postalCode = (%item.answer.value)  "LaboratoryReport-Patient-Address-ZipCode";  
+      qr.item as item where linkId='LaboratoryReport.Patient.Address.Line' ->  address.line = (%item.answer.value) "LaboratoryReport-Patient-Address-Line";
       qr.item as item where linkId='LaboratoryReport.Patient.Address.StreetLine' -> 
             address.line = (%item.answer.value) as line,
             line.extension as extension,

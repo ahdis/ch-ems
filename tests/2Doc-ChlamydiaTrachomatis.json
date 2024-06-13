@@ -240,7 +240,6 @@
           "profile" : ["http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-servicerequest-laboratory-order"]
         },
         "identifier" : [{
-          "system" : "http://fhir.lab.ch/order-identifier",
           "value" : "7601002331521"
         }],
         "status" : "completed",

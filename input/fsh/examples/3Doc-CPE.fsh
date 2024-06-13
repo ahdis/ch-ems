@@ -84,7 +84,6 @@ Usage: #inline
 Instance: 3SR-Order
 InstanceOf: ChElmServiceRequestLaboratoryOrder
 Usage: #inline
-* identifier.system = "http://fhir.lab.ch/order-identifier"
 * identifier.value = "34854112365"
 * status = #completed
 * intent = #order

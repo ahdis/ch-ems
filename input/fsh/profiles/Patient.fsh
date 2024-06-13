@@ -55,9 +55,7 @@ Description: "This CH ELM base profile constrains the Patient resource for the p
 * address[home].use 1..
 * address[home].use = #home
 * address[home].line ..1
-* address[home].line.extension[streetName] 1..
 * address[home].line.extension[streetName].valueString ^maxLength = 100
-* address[home].line.extension[houseNumber] MS
 * address[home].line.extension[houseNumber].valueString ^maxLength = 10
 * address[home].postalCode MS
 * address[home].postalCode ^maxLength = 10

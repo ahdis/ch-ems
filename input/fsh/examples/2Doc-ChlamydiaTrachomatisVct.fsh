@@ -112,7 +112,6 @@ Usage: #inline
 Instance: cfecb79a-7bb8-45a3-8b1e-9d02cad3e829 // VCT
 InstanceOf: ChElmServiceRequestLaboratoryOrder
 Usage: #inline
-* identifier.system = "http://fhir.lab.ch/order-identifier"
 * identifier.value = "7601002331521"
 * status = #completed
 * intent = #order
