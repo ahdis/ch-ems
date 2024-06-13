@@ -3,6 +3,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### 1.3.1 2024/06/17 
 
 * [#92](https://github.com/ahdis/ch-elm/issues/92): Show validation warning  for wrong BER / UIDB
+* [#93](https://github.com/ahdis/ch-elm/issues/93): patient name representation shall be incorrect (no distinction strict/non-strict for initials and vct) #93
 
 
 ### 1.3.0 2024/05/16 

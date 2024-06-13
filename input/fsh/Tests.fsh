@@ -48,3 +48,18 @@ InstanceOf: TestScript
 * insert ActionAssertFhirPathTrue(Check Constraint failed: ber-modulus-11, [[issue.where(severity='warning' and diagnostics.startsWith('Constraint failed: ber-modulus-11')).count() = 1]])
 * insert ActionAssertFhirPathTrue(Check Constraint failed: uidb-length, [[issue.where(severity='warning' and diagnostics.startsWith('Constraint failed: uidb-length')).count() = 1]])
 * insert ActionAssertFhirPathTrue(Check Constraint failed: uidb-modulus-11, [[issue.where(severity='warning' and diagnostics.startsWith('Constraint failed: uidb-modulus-11')).count() = 1]])
+
+
+Instance: Test93-Error-FullName-Influenca
+InstanceOf: TestScript
+* url = "http://fhir.ch/ig/ch-elm/TestScript/Test93-Error-FullName-Influenca"
+* name = "Test93ErrorFullNameInfluenca"
+* status = #active
+* insert Fixture(inputdata, [[Binary/Test93-DocumentReference-Error-FullName-Influenca]])
+* test.name = "Test93"
+* test.description = "Test script to verify error if full name is provided by Influenca (must be initials)"
+* insert ActionOperationValidate(http://fhir.ch/ig/ch-elm/StructureDefinition/PublishDocumentReference, inputdata)
+* insert ActionAssertResponseCodeOk
+* insert ActionAssertFhirPathTrue(Confirm that the returned resource is an OperationOutcome., [[is(FHIR.OperationOutcome)]])
+* insert ActionAssertFhirPathTrue(Confirm that we have at least one error, [[issue.where(severity='error' or severity='fatal').count()>0]])
+* insert ActionAssertFhirPathTrue(Check slicing fails, [[issue.where(severity='error' and diagnostics.startsWith('Slice \\'DocumentReference.contained:document\\': minimum required = 1, but only found 0')).count() > 0]])

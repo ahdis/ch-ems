@@ -7,6 +7,10 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * obeys ch-elm-expecting-organism-specification
 * obeys ch-elm-interpretation-code-loinc
 * obeys ch-elm-interpretation-code-snomedct
+* obeys ch-elm-patient-name-representation-initial-loinc
+* obeys ch-elm-patient-name-representation-initial-snomedct
+* obeys ch-elm-patient-name-representation-initial-or-vctcode-loinc
+* obeys ch-elm-patient-name-representation-initial-or-vctcode-snomedct
 * . ^short = "CH ELM Observation Results: Laboratory"
 * status = #final
 * code from ChElmResultsLaboratoryObservation (extensible)
@@ -41,8 +45,4 @@ Parent: ChElmObservationResultsLaboratory
 Id: ch-elm-observation-results-laboratory-strict
 Title: "CH ELM Observation Results: Laboratory (strict)"
 Description: "CH ELM profile for the Observation resource with a stricter validation mechanism than the base profile via binding strength reinforcement for the leading code element."
-* obeys ch-elm-patient-name-representation-initial-loinc
-* obeys ch-elm-patient-name-representation-initial-snomedct
-* obeys ch-elm-patient-name-representation-initial-or-vctcode-loinc
-* obeys ch-elm-patient-name-representation-initial-or-vctcode-snomedct
 * code from ChElmResultsLaboratoryObservation (required)
