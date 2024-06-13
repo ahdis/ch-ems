@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-results-mal-org",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mal-org",
+  "version": "2024-06-13",
+  "name": "ChElmResultsMalOrg",
+  "title": "CH ELM Results Mal Org",
+  "status": "active",
+  "experimental": false,
+  "description": "The \"CH ELM Results Mal Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Mal Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "30020004",
+            "display": "Plasmodium falciparum (organism)"
+          },
+          {
+            "code": "74746009",
+            "display": "Plasmodium vivax (organism)"
+          },
+          {
+            "code": "49918008",
+            "display": "Plasmodium knowlesi (organism)"
+          },
+          {
+            "code": "786826006",
+            "display": "Plasmodium ovale or Plasmodium vivax (finding)"
+          },
+          {
+            "code": "18508006",
+            "display": "Plasmodium ovale (organism)"
+          },
+          {
+            "code": "56395006",
+            "display": "Plasmodium malariae (organism)"
+          },
+          {
+            "code": "34706006",
+            "display": "Plasmodium (organism)"
+          }
+        ]
+      }
+    ]
+  }
+}

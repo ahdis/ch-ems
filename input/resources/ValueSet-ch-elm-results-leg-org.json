@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-leg-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-leg-org",
-  "version": "2024-05-13",
+  "version": "2024-06-13",
   "name": "ChElmResultsLegOrg",
   "title": "CH ELM Results Leg Org",
   "status": "active",
@@ -34,8 +34,24 @@
             "display": "Legionella pneumophila serogroup 1 (organism)"
           },
           {
+            "code": "113721003",
+            "display": "Legionella gormanii (organism)"
+          },
+          {
+            "code": "103467006",
+            "display": "Legionella pneumophila serogroup 5 (organism)"
+          },
+          {
             "code": "116379006",
             "display": "Legionella maceachernii (organism)"
+          },
+          {
+            "code": "18214000",
+            "display": "Legionella anisa (organism)"
+          },
+          {
+            "code": "103469009",
+            "display": "Legionella pneumophila serogroup 7 (organism)"
           },
           {
             "code": "450611004",
@@ -50,8 +66,20 @@
             "display": "Legionella pneumophilia serogroup 10 (organism)"
           },
           {
+            "code": "131324005",
+            "display": "Legionella pneumophilia serogroup 12 (organism)"
+          },
+          {
             "code": "103448007",
             "display": "Legionella brunensis (organism)"
+          },
+          {
+            "code": "103464004",
+            "display": "Legionella pneumophila serogroup 2 (organism)"
+          },
+          {
+            "code": "103468001",
+            "display": "Legionella pneumophila serogroup 6 (organism)"
           },
           {
             "code": "80897008",
