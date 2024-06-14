@@ -112,4 +112,4 @@ Expression: "entry.select(resource as Organization).identifier.where(system='urn
 Invariant: name-initials
 Description: "a name with initials"
 Severity: #error
-Expression: "family.exists() and given.exists() and given.first().exists() and given.first().length() = 1 and family.length() = 1"
+Expression: "given.exists() and given.first().exists() and (''+given.first()).length() = 1 and family.exists() and (''+family).length() = 1"
