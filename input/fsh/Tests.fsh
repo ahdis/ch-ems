@@ -27,7 +27,7 @@ RuleSet: ActionAssertFhirPath(description, fhirPath, value)
 * test.action[=].assert.warningOnly = false
 
 RuleSet: ActionAssertFhirPathTrue(description, fhirPath)
-* insert ActionAssertFhirPath({description}, [[{fhirPath}]], "true")
+* insert ActionAssertFhirPath({description}, [[{fhirPath}]], [["true"]])
 
 
 Instance: Test92-WarningBerUidGln
