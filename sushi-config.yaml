@@ -12,8 +12,8 @@ status: active # draft | active | retired | unknown
 license: CC0-1.0
 copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CHE
-date: 2024-05-16
-version: 1.3.0
+date: 2024-06-16
+version: 1.3.1
 fhirVersion: 4.0.1
 copyrightYear: 2023+
 releaseLabel: release # ci-build 
