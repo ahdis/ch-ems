@@ -76,4 +76,4 @@ InstanceOf: TestScript
 * insert ActionAssertResponseCodeOk
 * insert ActionAssertFhirPathTrue(Confirm that the returned resource is an OperationOutcome., [[is(FHIR.OperationOutcome)]])
 * insert ActionAssertFhirPathTrue(Confirm that we have no errors., [[issue.where(severity='error' or severity='fatal').count()=0]])
-* insert ActionAssertFhirPathTrue(Check slicing fails, [[issue.where(severity='information' and diagnostics.matches('Binding for path (.+) has no source, so can't be checked')).count() = 0]])
+* insert ActionAssertFhirPathTrue(Check slicing fails, [[issue.where(severity='information' and diagnostics.matches('Binding for path (.+) has no source, so can\\'t be checked')).count() = 0]])
