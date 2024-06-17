@@ -7,6 +7,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#92](https://github.com/ahdis/ch-elm/issues/92): Show validation warning  for wrong BER / UIDB
 * [#93](https://github.com/ahdis/ch-elm/issues/93): patient name representation shall be incorrect (no distinction strict/non-strict for initials and vct)
 * [#94](https://github.com/ahdis/ch-elm/issues/94): Validator Check: Ignore warning about Binding for path (.+) has no source
+* [#95](https://github.com/ahdis/ch-elm/issues/95): Increase maximum size of E-Mail form 50 to 255
 
 ### 1.3.0 2024/05/16 
 
