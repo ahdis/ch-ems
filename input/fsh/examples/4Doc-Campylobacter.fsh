@@ -1,7 +1,7 @@
 Instance: 4Doc-Campylobacter
 InstanceOf: ChElmDocumentStrict
 Usage: #example
-Title: "4Doc - Campylobacter spp."
+Title: "4Doc - Campylobacter coli"
 Description: "Example for a CH ELM Document: Laboratory Report"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:1901332d-6012-443f-9690-9291adb2cb3b"
