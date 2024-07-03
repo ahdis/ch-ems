@@ -17,7 +17,7 @@ Title: "CH ELM Patient"
 Description: "This CH ELM base profile constrains the Patient resource for the purpose of laboratory orders and test reports."
 * . ^short = "CH ELM Patient"
 
-* identifier ..2 MS
+* identifier ..1 MS
 
 * identifier contains IDN 0..1 MS
 * identifier[AHVN13] ..1 MS
@@ -35,10 +35,10 @@ Description: "This CH ELM base profile constrains the Patient resource for the p
 * name only CHElmHumanName
 * name ^short = "Whether the personal data is transmitted by using initials, full name or a special combination is described under 'Guidance - Personal Data (Patient Name)'"
 * name.family 1..
-* name.family ^short = "In the case of HIV/AIDS masked and provide a specific value (see IG guidance)"
+* name.family ^short = "masked when using HIV/VCT-extensions (see IG guidance)."
 * name.family ^maxLength = 100
 * name.given 1..1
-* name.given ^short = "In the case of HIV/AIDS masked and provide a specific value (see IG guidance)"
+* name.given ^short = "masked when using HIV/VCT-extensions (see IG guidance)."
 * name.given ^maxLength = 100
 
 * gender 1..
@@ -61,7 +61,8 @@ Description: "This CH ELM base profile constrains the Patient resource for the p
 * address[home].postalCode ^maxLength = 10
 * address[home].city MS
 * address[home].city ^maxLength = 50
-* address[home].state MS // kein Binding notwendig: constraint ch-addr-2 = For a Swiss address, a canton abbreviation from the value set 'eCH-0007 Canton Abbreviation' must be used.
+* address[home].state MS 
+* address[home].state ^short = "sub-unit of country. canton-abbreviation is expected for a Swiss or Liechtenstein address." // kein Binding notwendig: constraint ch-addr-2 = For a Swiss address, a canton abbreviation from the value set 'eCH-0007 Canton Abbreviation' must be used.
 * address[home].country MS
 * address[home].country.extension[countrycode] 1.. // kein Binding notwendig: constraint ch-addr-1 = ISO Country Alpha-2 or ISO Country Alpha-3 code
 
