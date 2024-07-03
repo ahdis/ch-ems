@@ -1,0 +1,14 @@
+### $validate on Bundle withouth anonymization
+POST  https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/Bundle/$validate?_validatorAnonymizePatientPriorToValidation=false HTTP/1.1
+Content-Type: application/fhir+json
+Accept: application/fhir+json
+
+< ./Bundle-falsche_ahv.json
+
+
+### $validate on Bundle withouth anonymization
+POST  https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/Bundle/$validate?_validatorAnonymizePatientPriorToValidation=true HTTP/1.1
+Content-Type: application/fhir+json
+Accept: application/fhir+json
+
+< ./Bundle-falsche_ahv.json
