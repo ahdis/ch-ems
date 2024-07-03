@@ -1,5 +1,9 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
+### 1.4.0 
+
+* [#65](https://github.com/ahdis/ch-elm/issues/65): Reminder: update to the newest version  hl7.fhir.eu.laboratory: 0.1.0 and ch.fhir.ig.ch-lab-report: 1.0.0-ballot 
+
 ### 1.3.1 2024/06/17 
 
 * [#88](https://github.com/ahdis/ch-elm/issues/88): Update ValueSets for malaria, new snomed codes legionalla

@@ -13,10 +13,10 @@ license: CC0-1.0
 copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CHE
 date: 2024-06-16
-version: 1.3.1
+version: 1.4.0-cibuild
 fhirVersion: 4.0.1
 copyrightYear: 2023+
-releaseLabel: release # ci-build 
+releaseLabel: ci-build # release # ci-build 
 publisher:
   name: Federal Office of Public Health FOPH
 contact:
@@ -27,9 +27,10 @@ contact:
 
 dependencies:
   hl7.terminology: 5.4.0
-  hl7.fhir.eu.laboratory: 0.1.0-ballot
-  ch.fhir.ig.ch-lab-report: 0.1.1
-  ch.fhir.ig.ch-core: 4.0.1
+  hl7.fhir.eu.laboratory: 0.1.0
+  hl7.fhir.uv.ips: 1.1.0
+  ch.fhir.ig.ch-lab-report: 1.0.0-ballot
+  ch.fhir.ig.ch-core: 5.0.0-ballot
   hl7.fhir.uv.extensions.r4: 1.0.0
   hl7.fhir.extensions.r5: 4.0.1
 pages:
