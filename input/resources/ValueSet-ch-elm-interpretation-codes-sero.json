@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-interpretation-codes-sero",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-sero",
+  "version": "2024-07-04",
+  "name": "ChElmInterpretationCodesSero",
+  "title": "CH ELM Interpretation Codes Sero",
+  "status": "active",
+  "experimental": false,
+  "description": "This CH ELM value set includes the code for sero interpretation code.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1290194006",
+            "display": "Seroconversion (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}
