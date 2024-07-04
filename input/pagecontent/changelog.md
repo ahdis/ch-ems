@@ -7,6 +7,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#99](https://github.com/ahdis/ch-elm/issues/99): CH ELM Patient adaptions
 * [#98](https://github.com/ahdis/ch-elm/issues/98): Two new interpretation groups sero and titer
 * [#97](https://github.com/ahdis/ch-elm/issues/97): Improvement error message
+* [#89](https://github.com/ahdis/ch-elm/issues/89): add ServiceRequest.requisition for referencing original order id
 
 ### 1.3.1 2024/06/17 
 
