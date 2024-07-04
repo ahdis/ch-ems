@@ -34,7 +34,7 @@ Severity: #error
 Expression: "code.memberOf('http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-organism-specification') implies (value.exists() and (value as CodeableConcept).exists() and (value as CodeableConcept).memberOf('http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-organism-specification-to-results-completion-vs'.resolve().group.where(source='http://loinc.org').element.where(code=%context.code.coding.where(system='http://loinc.org').first().code).target.first().code))"
 
 Invariant: ch-elm-resolveableurl
-Description: "Must have a resolvable URL."
+Description: "Must resolve to the contained bundle."
 Severity: #error
 Expression: "url.exists() and url.resolve()"
 
