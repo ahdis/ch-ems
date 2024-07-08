@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-interpretation-codes-vs",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-vs",
-  "version": "2024-06-13",
+  "version": "2024-07-05",
   "name": "ChElmInterpretationCodesVs",
   "title": "CH ELM Interpretation Codes Vs",
   "status": "active",
@@ -23,10 +23,10 @@
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-resistant-susceptible"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-titer"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-sero"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-sero"
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-titer"
           }
         ]
       }

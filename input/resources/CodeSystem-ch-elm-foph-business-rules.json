@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "ch-elm-foph-business-rules",
   "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-foph-business-rules",
-  "version": "2024-06-13",
+  "version": "2024-07-05",
   "name": "ChElmFophBusinessRules",
   "title": "CH ELM FOPH Business Rules",
   "status": "active",
@@ -38,6 +38,10 @@
       "display": "Warning",
       "definition": "If the rule is violated, the resource is conformant, but it is not necessarily following best practice.",
       "concept": [
+        {
+          "code": "FOPH-014",
+          "display": "The patient address state element should contain a two letter canton code."
+        },
         {
           "code": "FOPH-005",
           "display": "The required anonymization for the reported organism was violated. The following field(s) are affected: %fields%"

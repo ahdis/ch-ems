@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-geni-spec",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
-  "version": "2024-06-13",
+  "version": "2024-07-05",
   "name": "ChElmResultsGeniSpec",
   "title": "CH ELM Results Geni Spec",
   "status": "active",
