@@ -53,7 +53,7 @@ Accept: application/fhir+json
           }]
         },
         "subject" : {
-          "reference" : "Patient/1Pat-DM"
+          "reference" : "Patient/Pat-001"
         },
         "date" : "2023-07-14T16:00:00+02:00",
         "author" : [{
@@ -105,7 +105,7 @@ Accept: application/fhir+json
           }]
         },
         "subject" : {
-          "reference" : "Patient/1Pat-DM"
+          "reference" : "Patient/Pat-001"
         },
         "performer" : [{
           "reference" : "Organization/1Org-Labor"
@@ -119,10 +119,10 @@ Accept: application/fhir+json
       }
     },
     {
-      "fullUrl" : "http://test.fhir.ch/r4/Patient/1Pat-DM",
+      "fullUrl" : "http://test.fhir.ch/r4/Patient/Pat-001",
       "resource" : {
         "resourceType" : "Patient",
-        "id" : "1Pat-DM",
+        "id" : "Pat-001",
         "meta" : {
           "profile" : ["http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-patient"]
         },
@@ -178,7 +178,7 @@ Accept: application/fhir+json
           }]
         },
         "subject" : {
-          "reference" : "Patient/1Pat-DM"
+          "reference" : "Patient/Pat-001"
         },
         "effectiveDateTime" : "2023-07-14T11:10:00+02:00",
         "performer" : [{
@@ -215,7 +215,7 @@ Accept: application/fhir+json
           "text" : "Material declared by Observation.code or non-mandatory"
         },
         "subject" : {
-          "reference" : "Patient/1Pat-DM"
+          "reference" : "Patient/Pat-001"
         },
         "collection" : {
           "collectedDateTime" : "2023-07-01"
@@ -244,7 +244,7 @@ Accept: application/fhir+json
           }]
         },
         "subject" : {
-          "reference" : "Patient/1Pat-DM"
+          "reference" : "Patient/Pat-001"
         },
         "requester" : {
           "reference" : "PractitionerRole/1PR-KsAbc"

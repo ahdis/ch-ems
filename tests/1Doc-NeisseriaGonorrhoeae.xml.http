@@ -53,7 +53,7 @@ Accept: application/fhir+json
               </coding>
             </type>
             <subject>
-              <reference value="Patient/1Pat-DM"/>
+              <reference value="Patient/Pat-001"/>
             </subject>
             <date value="2023-07-14T16:00:00+02:00"/>
             <author>
@@ -105,7 +105,7 @@ Accept: application/fhir+json
               </coding>
             </code>
             <subject>
-              <reference value="Patient/1Pat-DM"/>
+              <reference value="Patient/Pat-001"/>
             </subject>
             <performer>
               <reference value="Organization/1Org-Labor"/>
@@ -120,10 +120,10 @@ Accept: application/fhir+json
         </resource>
       </entry>
       <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Patient/1Pat-DM"/>
+        <fullUrl value="http://test.fhir.ch/r4/Patient/Pat-001"/>
         <resource>
           <Patient>
-            <id value="1Pat-DM"/>
+            <id value="Pat-001"/>
             <meta>
               <profile value="http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-patient"/>
             </meta>
@@ -178,7 +178,7 @@ Accept: application/fhir+json
               </coding>
             </code>
             <subject>
-              <reference value="Patient/1Pat-DM"/>
+              <reference value="Patient/Pat-001"/>
             </subject>
             <effectiveDateTime value="2023-07-14T11:10:00+02:00"/>
             <performer>
@@ -216,7 +216,7 @@ Accept: application/fhir+json
               <text value="Material declared by Observation.code or non-mandatory"/>
             </type>
             <subject>
-              <reference value="Patient/1Pat-DM"/>
+              <reference value="Patient/Pat-001"/>
             </subject>
             <collection>
               <collectedDateTime value="2023-07-01"/>
@@ -246,7 +246,7 @@ Accept: application/fhir+json
               </coding>
             </code>
             <subject>
-              <reference value="Patient/1Pat-DM"/>
+              <reference value="Patient/Pat-001"/>
             </subject>
             <requester>
               <reference value="PractitionerRole/1PR-KsAbc"/>

@@ -11,8 +11,8 @@ Description: "Example for a CH ELM Document: Laboratory Report"
 * entry[=].resource = 6Comp-Influenza
 * entry[+].fullUrl = "http://test.fhir.ch/r4/DiagnosticReport/6DR-Influenza"
 * entry[=].resource = 6DR-Influenza
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/1Pat-DM"
-* entry[=].resource = 1Pat-DM
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/Pat-001"
+* entry[=].resource = Pat-001
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/6Obs-Influenza"
 * entry[=].resource = 6Obs-Influenza
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Specimen/6Spec-Specimen"
@@ -38,7 +38,7 @@ Usage: #inline
 * type.coding[0].version = "http://snomed.info/sct/2011000195101"
 * type.coding[=] = $sct#4241000179101 "Laborbericht"
 * type.coding[+] = $loinc#11502-2 "Laboratory report"
-* subject = Reference(1Pat-DM)
+* subject = Reference(Pat-001)
 * date = "2023-09-10T12:00:00+02:00"
 * author = Reference(1Org-Labor)
 * title = "Laborbericht vom 10.09.2023"
@@ -56,7 +56,7 @@ Usage: #inline
 * basedOn = Reference(6SR-Order)
 * status = #final
 * code = $loinc#11502-2 "Laboratory report"
-* subject = Reference(1Pat-DM)
+* subject = Reference(Pat-001)
 * performer = Reference(1Org-Labor)
 * specimen = Reference(6Spec-Specimen)
 * result = Reference(6Obs-Influenza)
@@ -67,7 +67,7 @@ Usage: #inline
 * status = #final
 * category[laboratory] = $observation-category#laboratory "Laboratory"
 * code = $loinc#76078-5 "Influenza virus A RNA [Presence] in Nasopharynx by NAA with probe detection"
-* subject = Reference(1Pat-DM)
+* subject = Reference(Pat-001)
 * effectiveDateTime = "2023-09-10T14:20:00+02:00"
 * performer = Reference(1Org-Labor)
 * valueCodeableConcept = $sct#10828004 "Positive"
@@ -78,7 +78,7 @@ Instance: 6Spec-Specimen
 InstanceOf: ChElmSpecimen
 Usage: #inline
 * type.text = "Material declared by Observation.code or non-mandatory"
-* subject = Reference(1Pat-DM)
+* subject = Reference(Pat-001)
 * collection.collectedDateTime = "2023-09-08"
 
 Instance: 6SR-Order
@@ -88,7 +88,7 @@ Usage: #inline
 * status = #completed
 * intent = #order
 * code = $loinc#76078-5 "Influenza virus A RNA [Presence] in Nasopharynx by NAA with probe detection"
-* subject = Reference(1Pat-DM)
+* subject = Reference(Pat-001)
 * requester = Reference(PR-PeterHauser)
 * specimen = Reference(6Spec-Specimen)
 

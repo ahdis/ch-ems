@@ -10,7 +10,7 @@ Description: "Example for a CH ELM Composition: Laboratory Report"
 * type[0].coding[0] = $sct#4241000179101 "Laborbericht"
 * type[=].coding[=].version = "http://snomed.info/sct/2011000195101"
 * type[=].coding[+] = $loinc#11502-2 "Laboratory report"
-* subject = Reference(1Pat-DM)
+* subject = Reference(Pat-001)
 * date = "2023-07-14T12:10:00+02:00"
 * author = Reference(1bOrg-Broker)
 * title = "Laborbericht MikroLab - 14.07.2023"

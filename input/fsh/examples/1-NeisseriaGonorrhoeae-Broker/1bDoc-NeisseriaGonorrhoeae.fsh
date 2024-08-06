@@ -13,8 +13,8 @@ Description: "Example for a CH ELM Document: Laboratory Report (where the 'Lab' 
 * entry[Composition].resource = 1bComp-NeisseriaGonorrhoeae
 * entry[DiagnosticReport].fullUrl = "http://test.fhir.ch/r4/DiagnosticReport/1bDR-NeisseriaGonorrhoeae"
 * entry[DiagnosticReport].resource = 1bDR-NeisseriaGonorrhoeae
-* entry[Patient].fullUrl = "http://test.fhir.ch/r4/Patient/1Pat-DM"
-* entry[Patient].resource = 1Pat-DM
+* entry[Patient].fullUrl = "http://test.fhir.ch/r4/Patient/Pat-001"
+* entry[Patient].resource = Pat-001
 * entry[Observation].fullUrl = "http://test.fhir.ch/r4/Observation/1bObs-NeisseriaGonorrhoeae"
 * entry[Observation].resource = 1bObs-NeisseriaGonorrhoeae
 * entry[Specimen][0].fullUrl = "http://test.fhir.ch/r4/Specimen/1bSpec-Specimen"

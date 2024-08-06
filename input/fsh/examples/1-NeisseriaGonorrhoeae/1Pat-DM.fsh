@@ -1,4 +1,4 @@
-Instance: 1Pat-DM
+Instance: Pat-001
 InstanceOf: ChElmPatient
 Usage: #example
 Title: "1Pat - DM"
