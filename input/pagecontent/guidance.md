@@ -9,7 +9,7 @@ The reporting obligation is the key systemic element for the surveillance of com
 Depending on the organism (leading code), the requirement for how the patient's name (e.g. Ernst Karl Tanner) is reported varies. There are different [patient name schemas](CodeSystem-ch-elm-foph-patient-name-representation.html) to be used:
 * **Full Name**
    * Organism: SARS-CoV-2, Legionella spp., etc.
-   * [Example](Patient-Pat-ErnstKarlTanner.json.html): Ernst Karl Tanner (Patient.name.family = Tanner, Patient.name.given = Ernst, Karl)
+   * [Example](Patient-Pat-006.json.html): Ernst Karl Tanner (Patient.name.family = Tanner, Patient.name.given = Ernst, Karl)
 * **Initials**
    * Organism: Organism: Neisseria gonorrhoeae, Chlamydia trachomatis, etc
    * [Example](Patient-Pat-005.json.html): ET (Patient.name.family = T, Patient.name.given = E)
