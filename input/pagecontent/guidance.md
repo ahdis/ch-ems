@@ -12,7 +12,7 @@ Depending on the organism (leading code), the requirement for how the patient's 
    * [Example](Patient-Pat-ErnstKarlTanner.json.html): Ernst Karl Tanner (Patient.name.family = Tanner, Patient.name.given = Ernst, Karl)
 * **Initials**
    * Organism: Organism: Neisseria gonorrhoeae, Chlamydia trachomatis, etc
-   * [Example](Patient-Pat-ET.json.html): ET (Patient.name.family = T, Patient.name.given = E)
+   * [Example](Patient-Pat-005.json.html): ET (Patient.name.family = T, Patient.name.given = E)
 * **VCT Code**
    * Organism: Neisseria gonorrhoeae, Chlamydia trachomatis, Treponema pallidum
    * [Example](Patient-Pat-VCT.json.html): kste12345 (Patient.name.extension = kste12345, Patient.name.family/Patient.name.given = masked)

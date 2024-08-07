@@ -21,7 +21,7 @@ Description: "Example for a CH ELM Patient - full name (and full address)"
 * address[home].country.extension.valueCoding = urn:iso:std:iso:3166#CH
 
 
-Instance: Pat-ET
+Instance: Pat-005
 InstanceOf: ChElmPatientInitials
 Usage: #example
 Title: "Pat - ET"
