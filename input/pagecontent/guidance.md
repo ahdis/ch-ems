@@ -18,7 +18,7 @@ Depending on the organism (leading code), the requirement for how the patient's 
    * [Example](Patient-Pat-VCT.json.html): kste12345 (Patient.name.extension = kste12345, Patient.name.family/Patient.name.given = masked)
 * **HIV Code**
    * Organism: In the case of HIV/AIDS, under initials, enter the first letter and the number of letters of the first name. If this is longer than 9 letters, the number is 0. In the case of multi-part first names with a hyphen or in two words, only the first part is used.
-   * [Example](Patient-Pat-E5.json.html): E5 (Patient.name.extension = E5, Patient.name.family/Patient.name.given = masked)
+   * [Example](Patient-Pat-004.json.html): E5 (Patient.name.extension = E5, Patient.name.family/Patient.name.given = masked)
 * **Conditional**
    * The patient's identification cannot determined directly based on the leading code. Consult the implementation guideline for further information.
 
