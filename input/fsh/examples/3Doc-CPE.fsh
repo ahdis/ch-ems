@@ -11,8 +11,8 @@ Description: "Example for a CH ELM Document: Laboratory Report (organism in addi
 * entry[=].resource = 3Comp-CPE
 * entry[+].fullUrl = "http://test.fhir.ch/r4/DiagnosticReport/3DR-CPE"
 * entry[=].resource = 3DR-CPE
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/Pat-HF"
-* entry[=].resource = Pat-HF
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/Pat-002"
+* entry[=].resource = Pat-002
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/3Obs-CPE"
 * entry[=].resource = 3Obs-CPE
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Specimen/3Spec-Specimen"
@@ -38,7 +38,7 @@ Usage: #inline
 * type.coding[0].version = "http://snomed.info/sct/2011000195101"
 * type.coding[=] = $sct#4241000179101 "Laborbericht"
 * type.coding[+] = $loinc#11502-2 "Laboratory report"
-* subject = Reference(Pat-HF)
+* subject = Reference(Pat-002)
 * date = "2023-08-05T11:30:00+02:00"
 * author = Reference(1Org-Labor)
 * title = "Laborbericht vom 05.08.2023"
@@ -56,7 +56,7 @@ Usage: #inline
 * basedOn = Reference(3SR-Order)
 * status = #final
 * code = $loinc#11502-2 "Laboratory report"
-* subject = Reference(Pat-HF)
+* subject = Reference(Pat-002)
 * performer = Reference(1Org-Labor)
 * specimen = Reference(3Spec-Specimen)
 * result = Reference(3Obs-CPE)
@@ -67,7 +67,7 @@ Usage: #inline
 * status = #final
 * category[laboratory] = $observation-category#laboratory "Laboratory"
 * code = $loinc#85827-4 "Carbapenem resistance bla OXA-48-like gene [Presence] by Molecular method"
-* subject = Reference(Pat-HF)
+* subject = Reference(Pat-002)
 * effectiveDateTime = "2023-08-04T08:25:00+02:00"
 * performer = Reference(1Org-Labor)
 * valueCodeableConcept = $sct#56415008 "Klebsiella pneumoniae (organism)"
@@ -78,7 +78,7 @@ Instance: 3Spec-Specimen
 InstanceOf: ChElmSpecimen
 Usage: #inline
 * type.text = "Material declared by Observation.code or non-mandatory"
-* subject = Reference(Pat-HF)
+* subject = Reference(Pat-002)
 * collection.collectedDateTime = "2023-08-01"
 
 Instance: 3SR-Order
@@ -88,6 +88,6 @@ Usage: #inline
 * status = #completed
 * intent = #order
 * code = $loinc#85827-4 "Carbapenem resistance bla OXA-48-like gene [Presence] by Molecular method"
-* subject = Reference(Pat-HF)
+* subject = Reference(Pat-002)
 * requester = Reference(1PR-KsAbc)
 * specimen = Reference(3Spec-Specimen)

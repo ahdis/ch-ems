@@ -76,7 +76,7 @@ Description: "Example for a CH ELM Patient - special case HIV/AIDS"
 * address[home].state = "BE"
 * address[home].country = "CH"
 * address[home].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
-* address[home].country.extension.valueCoding = urn:iso:std:iso:3166#CH
+* address[home].country.extension.valueCoding = urn:iso:std:iso:3166#CH 
 
 
 
@@ -97,7 +97,7 @@ Description: "Example for a CH ELM Patient - IDN Liechtenstein"
 * address[home].country.extension.valueCoding = urn:iso:std:iso:3166#LI
 
 
-Instance: Pat-HF
+Instance: Pat-002
 InstanceOf: Patient
 Usage: #inline
 * identifier.system = "urn:oid:2.16.756.5.32"
