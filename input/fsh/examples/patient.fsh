@@ -80,7 +80,7 @@ Description: "Example for a CH ELM Patient - special case HIV/AIDS"
 
 
 
-Instance: Pat-LillyLiechtenstein
+Instance: Pat-007
 InstanceOf: ChElmPatient
 Usage: #example
 Title: "Pat - Lilly Liechtenstein"
