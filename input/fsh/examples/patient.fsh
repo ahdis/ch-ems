@@ -115,7 +115,7 @@ Usage: #inline
 * address.country.extension.valueCoding = urn:iso:std:iso:3166#CH
 
 
-Instance: Pat-AntoineDupont
+Instance: Pat-003
 InstanceOf: ChElmPatient
 Usage: #example
 Title: "Pat - Antoine Dupont"
