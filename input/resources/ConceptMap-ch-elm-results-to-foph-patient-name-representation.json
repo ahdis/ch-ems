@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-foph-patient-name-representation",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-foph-patient-name-representation",
-  "version": "2024-07-05",
+  "version": "2024-08-08",
   "name": "ChElmResultsToFophPatientNameRepresentation",
   "title": "CH ELM Results To FOPH Patient Name Representation",
   "status": "active",
@@ -566,6 +566,16 @@
           ]
         },
         {
+          "code": "44012-3",
+          "display": "Measles virus IgG and IgM [Interpretation] in Serum",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "45084-1",
           "display": "Chlamydia trachomatis DNA [Presence] in Vaginal fluid by NAA with probe detection",
           "target": [
@@ -1006,6 +1016,16 @@
           ]
         },
         {
+          "code": "6811-4",
+          "display": "Dengue virus IgG Ab [Titer] in Serum",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "688-2",
           "display": "Neisseria gonorrhoeae [Presence] in Cervix by Organism specific culture",
           "target": [
@@ -1301,6 +1321,16 @@
           "target": [
             {
               "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "86581-6",
+          "display": "Neisseria meningitidis [Presence] in Cerebral spinal fluid by Organism specific culture",
+          "target": [
+            {
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]

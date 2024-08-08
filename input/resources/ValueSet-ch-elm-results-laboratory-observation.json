@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
-  "version": "2024-07-05",
+  "version": "2024-08-08",
   "name": "ChElmResultsLaboratoryObservation",
   "title": "CH ELM Results Laboratory Observation",
   "status": "active",
@@ -230,6 +230,10 @@
             "display": "Neisseria gonorrhoeae rRNA [Presence] in Specimen by NAA with probe detection"
           },
           {
+            "code": "44012-3",
+            "display": "Measles virus IgG and IgM [Interpretation] in Serum"
+          },
+          {
             "code": "45084-1",
             "display": "Chlamydia trachomatis DNA [Presence] in Vaginal fluid by NAA with probe detection"
           },
@@ -406,6 +410,10 @@
             "display": "Chlamydia trachomatis DNA [Presence] in Urine by NAA with probe detection"
           },
           {
+            "code": "6811-4",
+            "display": "Dengue virus IgG Ab [Titer] in Serum"
+          },
+          {
             "code": "688-2",
             "display": "Neisseria gonorrhoeae [Presence] in Cervix by Organism specific culture"
           },
@@ -524,6 +532,10 @@
           {
             "code": "85827-4",
             "display": "Carbapenem resistance bla OXA-48-like gene [Presence] by Molecular method"
+          },
+          {
+            "code": "86581-6",
+            "display": "Neisseria meningitidis [Presence] in Cerebral spinal fluid by Organism specific culture"
           },
           {
             "code": "88224-1",

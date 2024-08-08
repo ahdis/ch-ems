@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-completion-vs",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-completion-vs",
-  "version": "2024-07-05",
+  "version": "2024-08-08",
   "name": "ChElmResultsCompletionVs",
   "title": "CH ELM Results Completion Vs",
   "status": "active",
@@ -105,9 +105,6 @@
           },
           {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-org"
-          },
-          {
-            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-virus-cult-org"
           }
         ]
       }

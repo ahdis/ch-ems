@@ -21,9 +21,7 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * effectiveDateTime 1..
 * effectiveDateTime obeys ch-elm-dateTime
 
-* value[x] 1..
 * valueQuantity 0..1
-// * valueQuantity only ChElmQuantity
 * valueCodeableConcept 0..1
 * valueCodeableConcept only ChElmCodeableConcept
 * valueCodeableConcept from ChElmResultsCodedValuesLaboratory (preferred) // not required, because the additional organism codes come from other valuesets
@@ -34,11 +32,10 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * specimen only Reference(ChElmSpecimen)
 * specimen 1..
 * interpretation 1..1
-* interpretation from ChElmObservationInterpretationCodes (required)
 * interpretation only ChElmCodeableConcept
-
-
-
+* interpretation ^short = "see also 'Guidance - Laboratory Result'"
+* dataAbsentReason 0..1
+* dataAbsentReason ^short = "see also 'Guidance - Laboratory Result'"
 
 Profile: ChElmObservationResultsLaboratoryStrict
 Parent: ChElmObservationResultsLaboratory

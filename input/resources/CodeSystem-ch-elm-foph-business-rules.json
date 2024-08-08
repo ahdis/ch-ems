@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "ch-elm-foph-business-rules",
   "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-foph-business-rules",
-  "version": "2024-07-05",
+  "version": "2024-08-08",
   "name": "ChElmFophBusinessRules",
   "title": "CH ELM FOPH Business Rules",
   "status": "active",
