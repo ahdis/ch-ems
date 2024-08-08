@@ -84,6 +84,8 @@ Description: "Patient representation via a VCT Code"
 * name.family.extension[dataabsentreason].valueCode = #masked
 * name.given.extension[dataabsentreason] 1..
 * name.given.extension[dataabsentreason].valueCode = #masked
+* address[home].line ..0
+* telecom ..0
 
 Profile: ChElmPatientHIV
 Parent: ChElmPatient
@@ -96,9 +98,13 @@ Description: "Patient representation for HIV"
 * name.family.extension[dataabsentreason].valueCode = #masked
 * name.given.extension[dataabsentreason] 1..
 * name.given.extension[dataabsentreason].valueCode = #masked
+* address[home].line ..0
+* telecom ..0
 
 Profile: ChElmPatientInitials
 Parent: ChElmPatient
 Title: "CH ELM Patient Initials"
 Description: "Patient representation via Initials"
 * name obeys name-initials
+* address[home].line ..0
+* telecom ..0
