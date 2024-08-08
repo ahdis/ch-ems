@@ -2,6 +2,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 ### 1.4.0 
 
+* added examples for Meningo, Measles Seroconversion and Dengue Titer
 * [#65](https://github.com/ahdis/ch-elm/issues/65): Reminder: update to the newest version  hl7.fhir.eu.laboratory: 0.1.0 and ch.fhir.ig.ch-lab-report: 1.0.0-ballot 
 * [#100](https://github.com/ahdis/ch-elm/issues/100): Fix Campylobacter example title
 * [#99](https://github.com/ahdis/ch-elm/issues/99): CH ELM Patient adaptions
@@ -10,7 +11,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#89](https://github.com/ahdis/ch-elm/issues/89): add ServiceRequest.requisition for referencing original order id
 * [#103](https://github.com/ahdis/ch-elm/issues/103): change patient id references with serial numbers
 * [#102](https://github.com/ahdis/ch-elm/issues/102): patient.street, patient.telecom only allowed for full name representation 
-* [#104](https://github.com/ahdis/ch-elm/issues/104): remover practitioner-orderer.telecom constraint 0..1
+* [#104](https://github.com/ahdis/ch-elm/issues/104): remove practitioner-orderer.telecom constraint 0..1
 
 ### 1.3.1 2024/06/17 
 

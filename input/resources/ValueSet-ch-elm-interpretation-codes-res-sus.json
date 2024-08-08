@@ -1,0 +1,11 @@
+{
+  "resourceType": "OperationOutcome",
+  "id": "0DCE8DD1-DD0A-4F5B-9CD0-C3D77B515B43",
+  "issue": [
+    {
+      "severity": "error",
+      "code": "not-found",
+      "diagnostics": "No ValueSet found with id 'ch-elm-interpretation-codes-res-sus'."
+    }
+  ]
+}
