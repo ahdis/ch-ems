@@ -11,8 +11,8 @@ Description: "Example for a CH ELM Document: Laboratory Report (document in Fren
 * entry[=].resource = 7Comp-SARSCoV2
 * entry[+].fullUrl = "http://test.fhir.ch/r4/DiagnosticReport/7DR-SARSCoV2"
 * entry[=].resource = 7DR-SARSCoV2
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/Pat-AntoineDupont"
-* entry[=].resource = Pat-AntoineDupont
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/Pat-003"
+* entry[=].resource = Pat-003
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/7Obs-SARSCoV2"
 * entry[=].resource = 7Obs-SARSCoV2
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Specimen/7Spec-Specimen"
@@ -38,7 +38,7 @@ Usage: #inline
 * type.coding[0].version = "http://snomed.info/sct/2011000195101"
 * type.coding[=] = $sct#4241000179101 "Laborbericht"
 * type.coding[+] = $loinc#11502-2 "Laboratory report"
-* subject = Reference(Pat-AntoineDupont)
+* subject = Reference(Pat-003)
 * date = "2023-09-12T08:30:00+02:00"
 * author = Reference(1Org-Labor)
 * title = "Rapport de laboratoire du 12.09.2023"
@@ -56,7 +56,7 @@ Usage: #inline
 * basedOn = Reference(7SR-Order)
 * status = #final
 * code = $loinc#11502-2 "Laboratory report"
-* subject = Reference(Pat-AntoineDupont)
+* subject = Reference(Pat-003)
 * performer = Reference(1Org-Labor)
 * specimen = Reference(7Spec-Specimen)
 * result = Reference(7Obs-SARSCoV2)
@@ -67,7 +67,7 @@ Usage: #inline
 * status = #final
 * category[laboratory] = $observation-category#laboratory "Laboratory"
 * code = $loinc#94500-6 "SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory specimen by NAA with probe detection"
-* subject = Reference(Pat-AntoineDupont)
+* subject = Reference(Pat-003)
 * effectiveDateTime = "2023-09-12T07:40:00+02:00"
 * performer = Reference(1Org-Labor)
 * valueCodeableConcept = $sct#10828004 "Positive"
@@ -78,7 +78,7 @@ Instance: 7Spec-Specimen
 InstanceOf: ChElmSpecimen
 Usage: #inline
 * type.text = "Material declared by Observation.code or non-mandatory"
-* subject = Reference(Pat-AntoineDupont)
+* subject = Reference(Pat-003)
 * collection.collectedDateTime = "2023-09-11"
 
 Instance: 7SR-Order
@@ -88,7 +88,7 @@ Usage: #inline
 * status = #completed
 * intent = #order
 * code = $loinc#94500-6 "SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory specimen by NAA with probe detection"
-* subject = Reference(Pat-AntoineDupont)
+* subject = Reference(Pat-003)
 * requester = Reference(PR-JeanneMoreau)
 * specimen = Reference(7Spec-Specimen)
 

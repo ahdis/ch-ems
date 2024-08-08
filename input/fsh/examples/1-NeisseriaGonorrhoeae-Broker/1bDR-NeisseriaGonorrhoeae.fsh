@@ -9,7 +9,7 @@ Description: "Example for a CH ELM DiagnosticReport: Laboratory Report"
 * identifier.value = "urn:uuid:1901332d-6012-443f-9690-9291df32e177"
 * status = #final
 * code = $loinc#11502-2 "Laboratory report"
-* subject = Reference(1Pat-DM)
+* subject = Reference(Pat-001)
 * result = Reference(1bObs-NeisseriaGonorrhoeae)
 * performer = Reference(1bOrg-Labor)
 * basedOn = Reference(1bSR-Order)

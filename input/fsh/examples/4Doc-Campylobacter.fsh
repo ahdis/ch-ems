@@ -11,8 +11,8 @@ Description: "Example for a CH ELM Document: Laboratory Report"
 * entry[=].resource = 4Comp-Campylobacter
 * entry[+].fullUrl = "http://test.fhir.ch/r4/DiagnosticReport/4DR-Campylobacter"
 * entry[=].resource = 4DR-Campylobacter
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/Pat-HF"
-* entry[=].resource = Pat-HF
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/Pat-002"
+* entry[=].resource = Pat-002
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/4Obs-Campylobacter"
 * entry[=].resource = 4Obs-Campylobacter
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Specimen/4Spec-Specimen"
@@ -38,7 +38,7 @@ Usage: #inline
 * type.coding[0].version = "http://snomed.info/sct/2011000195101"
 * type.coding[=] = $sct#4241000179101 "Laborbericht"
 * type.coding[+] = $loinc#11502-2 "Laboratory report"
-* subject = Reference(Pat-HF)
+* subject = Reference(Pat-002)
 * date = "2023-09-20T07:35:00+02:00"
 * author = Reference(1Org-Labor)
 * title = "Laborbericht vom 20.09.2023"
@@ -56,7 +56,7 @@ Usage: #inline
 * basedOn = Reference(4SR-Order)
 * status = #final
 * code = $loinc#11502-2 "Laboratory report"
-* subject = Reference(Pat-HF)
+* subject = Reference(Pat-002)
 * performer = Reference(1Org-Labor)
 * specimen = Reference(4Spec-Specimen)
 * result = Reference(4Obs-Campylobacter)
@@ -68,7 +68,7 @@ Usage: #inline
 * status = #final
 * category[laboratory] = $observation-category#laboratory "Laboratory"
 * code = $loinc#101552-8 "Campylobacter coli DNA [Presence] in Stool by NAA with probe detection"
-* subject = Reference(Pat-HF)
+* subject = Reference(Pat-002)
 * effectiveDateTime = "2023-09-19T17:50:00+02:00"
 * performer = Reference(1Org-Labor)
 * valueCodeableConcept = $sct#10828004 "Positive"
@@ -79,7 +79,7 @@ Instance: 4Spec-Specimen
 InstanceOf: ChElmSpecimen
 Usage: #inline
 * type.text = "Material declared by Observation.code or non-mandatory"
-* subject = Reference(Pat-HF)
+* subject = Reference(Pat-002)
 * collection.collectedDateTime = "2023-09-18"
 
 Instance: 4SR-Order
@@ -89,6 +89,6 @@ Usage: #inline
 * status = #completed
 * intent = #order
 * code = $loinc#101552-8 "Campylobacter coli DNA [Presence] in Stool by NAA with probe detection"
-* subject = Reference(Pat-HF)
+* subject = Reference(Pat-002)
 * requester = Reference(1PR-KsAbc)
 * specimen = Reference(4Spec-Specimen)

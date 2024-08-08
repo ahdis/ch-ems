@@ -1,4 +1,4 @@
-Instance: Pat-ErnstKarlTanner
+Instance: Pat-006
 InstanceOf: ChElmPatient
 Usage: #example
 Title: "Pat - Ernst Karl Tanner"
@@ -21,7 +21,7 @@ Description: "Example for a CH ELM Patient - full name (and full address)"
 * address[home].country.extension.valueCoding = urn:iso:std:iso:3166#CH
 
 
-Instance: Pat-ET
+Instance: Pat-005
 InstanceOf: ChElmPatientInitials
 Usage: #example
 Title: "Pat - ET"
@@ -56,7 +56,7 @@ Description: "Example for a CH ELM Patient with VCT Code"
 * address[home].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
 * address[home].country.extension.valueCoding = urn:iso:std:iso:3166#CH
 
-Instance: Pat-E5
+Instance: Pat-004
 InstanceOf: ChElmPatientHIV
 Usage: #example
 Title: "Pat - E5"
@@ -76,11 +76,11 @@ Description: "Example for a CH ELM Patient - special case HIV/AIDS"
 * address[home].state = "BE"
 * address[home].country = "CH"
 * address[home].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
-* address[home].country.extension.valueCoding = urn:iso:std:iso:3166#CH
+* address[home].country.extension.valueCoding = urn:iso:std:iso:3166#CH 
 
 
 
-Instance: Pat-LillyLiechtenstein
+Instance: Pat-007
 InstanceOf: ChElmPatient
 Usage: #example
 Title: "Pat - Lilly Liechtenstein"
@@ -97,7 +97,7 @@ Description: "Example for a CH ELM Patient - IDN Liechtenstein"
 * address[home].country.extension.valueCoding = urn:iso:std:iso:3166#LI
 
 
-Instance: Pat-HF
+Instance: Pat-002
 InstanceOf: Patient
 Usage: #inline
 * identifier.system = "urn:oid:2.16.756.5.32"
@@ -115,7 +115,7 @@ Usage: #inline
 * address.country.extension.valueCoding = urn:iso:std:iso:3166#CH
 
 
-Instance: Pat-AntoineDupont
+Instance: Pat-003
 InstanceOf: ChElmPatient
 Usage: #example
 Title: "Pat - Antoine Dupont"

@@ -9,16 +9,16 @@ The reporting obligation is the key systemic element for the surveillance of com
 Depending on the organism (leading code), the requirement for how the patient's name (e.g. Ernst Karl Tanner) is reported varies. There are different [patient name schemas](CodeSystem-ch-elm-foph-patient-name-representation.html) to be used:
 * **Full Name**
    * Organism: SARS-CoV-2, Legionella spp., etc.
-   * [Example](Patient-Pat-ErnstKarlTanner.json.html): Ernst Karl Tanner (Patient.name.family = Tanner, Patient.name.given = Ernst, Karl)
+   * [Example](Patient-Pat-006.json.html): Ernst Karl Tanner (Patient.name.family = Tanner, Patient.name.given = Ernst, Karl)
 * **Initials**
    * Organism: Organism: Neisseria gonorrhoeae, Chlamydia trachomatis, etc
-   * [Example](Patient-Pat-ET.json.html): ET (Patient.name.family = T, Patient.name.given = E)
+   * [Example](Patient-Pat-005.json.html): ET (Patient.name.family = T, Patient.name.given = E)
 * **VCT Code**
    * Organism: Neisseria gonorrhoeae, Chlamydia trachomatis, Treponema pallidum
    * [Example](Patient-Pat-VCT.json.html): kste12345 (Patient.name.extension = kste12345, Patient.name.family/Patient.name.given = masked)
 * **HIV Code**
    * Organism: In the case of HIV/AIDS, under initials, enter the first letter and the number of letters of the first name. If this is longer than 9 letters, the number is 0. In the case of multi-part first names with a hyphen or in two words, only the first part is used.
-   * [Example](Patient-Pat-E5.json.html): E5 (Patient.name.extension = E5, Patient.name.family/Patient.name.given = masked)
+   * [Example](Patient-Pat-004.json.html): E5 (Patient.name.extension = E5, Patient.name.family/Patient.name.given = masked)
 * **Conditional**
    * The patient's identification cannot determined directly based on the leading code. Consult the implementation guideline for further information.
 
