@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-interpretation-codes-pos",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
-  "version": "2024-01-31",
+  "version": "2024-08-08",
   "name": "ChElmInterpretationCodesPos",
   "title": "CH ELM Interpretation Codes Positive",
   "status": "active",
   "experimental": false,
-  "description": "This CH ELM value set includes the code for positive interpretation code.",
+  "description": "This CH ELM value set includes the code for positive interpretation code(s).",
   "compose": {
     "include": [
       {

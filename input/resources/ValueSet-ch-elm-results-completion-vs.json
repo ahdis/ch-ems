@@ -105,6 +105,9 @@
           },
           {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tub-org"
+          },
+          {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-virus-cult-org"
           }
         ]
       }

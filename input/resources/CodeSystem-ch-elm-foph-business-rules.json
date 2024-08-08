@@ -55,6 +55,10 @@
           "display": "Attention, the code %code% (%codeSystem%) expires on %validTo%. Please adjust your systems by this date."
         },
         {
+          "code": "FOPH-015",
+          "display": "For VCT patients, the identifier (OASI/AHV/ID-N) must not be reported."
+        },
+        {
           "code": "FOPH-001",
           "display": "Generic Warning"
         },
@@ -72,6 +76,10 @@
         {
           "code": "FOPH-009",
           "display": "The transmitted code %code% (%codeSystem%) is outside the defined validity period %validFrom% - %validTo%."
+        },
+        {
+          "code": "FOPH-016",
+          "display": "The country code specified under patient address could not resolved. An ISO 3166 2 or 3 letter code is expected."
         },
         {
           "code": "FOPH-002",

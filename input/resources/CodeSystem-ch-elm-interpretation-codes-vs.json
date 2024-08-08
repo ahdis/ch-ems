@@ -28,7 +28,7 @@
       "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg"
     },
     {
-      "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-res-sus"
+      "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-resistant-susceptible"
     },
     {
       "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-sero"
