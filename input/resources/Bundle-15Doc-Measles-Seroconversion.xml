@@ -134,12 +134,12 @@
         <performer>
           <reference value="urn:uuid:9c334f06-5493-422e-a9e3-b3868337527b"/>
         </performer>
-        <dataAbsentReason>
+        <valueCodeableConcept>
           <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason"/>
-            <code value="not-applicable"/>
+            <system value="http://snomed.info/sct"/>
+            <code value="426558008"/>
           </coding>
-        </dataAbsentReason>
+        </valueCodeableConcept>
         <interpretation>
           <coding>
             <system value="http://snomed.info/sct"/>
