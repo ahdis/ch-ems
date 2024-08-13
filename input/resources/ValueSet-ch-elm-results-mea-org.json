@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-results-mea-org",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mea-org",
+  "version": "2024-08-13",
+  "name": "ChElmResultsMeaOrg",
+  "title": "CH ELM Results Mea Org",
+  "status": "active",
+  "experimental": false,
+  "description": "The \"CH ELM Results Mea Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Mea Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "426558008",
+            "display": "Measles virus genotype A (organism)"
+          },
+          {
+            "code": "427290009",
+            "display": "Measles virus genotype D8 (organism)"
+          },
+          {
+            "code": "52584002",
+            "display": "Measles virus (organism)"
+          },
+          {
+            "code": "427073007",
+            "display": "Measles virus genotype B3 (organism)"
+          }
+        ]
+      }
+    ]
+  }
+}
