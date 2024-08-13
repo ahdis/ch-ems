@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-expecting-specimen-specification",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-specimen-specification",
-  "version": "2024-08-08",
+  "version": "2024-08-13",
   "name": "ChElmExpectingSpecimenSpecification",
   "title": "CH ELM Expecting Specimen Specification",
   "status": "active",
@@ -14,20 +14,76 @@
         "system": "http://loinc.org",
         "concept": [
           {
+            "code": "104375-1",
+            "display": "Corynebacterium ulcerans DNA [Presence] in Specimen by NAA with probe detection"
+          },
+          {
+            "code": "104376-9",
+            "display": "Diphtheria toxin DNA [Presence] in Specimen by NAA with probe detection"
+          },
+          {
+            "code": "16134-9",
+            "display": "Neisseria meningitidis [Presence] in Specimen by Organism specific culture"
+          },
+          {
+            "code": "16676-9",
+            "display": "Corynebacterium diphtheriae [Presence] in Specimen by Organism specific culture"
+          },
+          {
             "code": "21613-5",
             "display": "Chlamydia trachomatis DNA [Presence] in Specimen by NAA with probe detection"
+          },
+          {
+            "code": "24102-6",
+            "display": "Corynebacterium toxin [Presence] in Specimen by Immune diffusion (ID)"
+          },
+          {
+            "code": "29907-3",
+            "display": "Haemophilus influenzae B DNA [Presence] in Specimen by NAA with probe detection"
           },
           {
             "code": "31777-6",
             "display": "Chlamydia trachomatis Ag [Presence] in Specimen"
           },
           {
+            "code": "31969-9",
+            "display": "Streptococcus pneumoniae Ag [Presence] in Specimen"
+          },
+          {
+            "code": "38353-9",
+            "display": "Streptococcus sp identified in Specimen by Organism specific culture"
+          },
+          {
             "code": "43304-5",
             "display": "Chlamydia trachomatis rRNA [Presence] in Specimen by NAA with probe detection"
           },
           {
+            "code": "49671-1",
+            "display": "Neisseria meningitidis DNA [Presence] in Specimen by NAA with probe detection"
+          },
+          {
+            "code": "49672-9",
+            "display": "Streptococcus pneumoniae DNA [Presence] in Specimen by NAA with probe detection"
+          },
+          {
+            "code": "58473-0",
+            "display": "Haemophilus influenzae serotype DNA [Identifier] in Specimen by NAA with probe detection"
+          },
+          {
+            "code": "61366-1",
+            "display": "Haemophilus influenzae DNA [Presence] in Specimen by NAA with probe detection"
+          },
+          {
             "code": "6349-5",
             "display": "Chlamydia trachomatis [Presence] in Specimen by Organism specific culture"
+          },
+          {
+            "code": "67561-1",
+            "display": "Corynebacterium diphtheriae DNA [Presence] in Specimen by NAA with probe detection"
+          },
+          {
+            "code": "69410-9",
+            "display": "Haemophilus influenzae [Identifier] in Specimen by Organism specific culture"
           }
         ]
       }

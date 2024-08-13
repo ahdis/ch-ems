@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-interpretation-codes-titer",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-titer",
-  "version": "2024-07-04",
+  "version": "2024-08-13",
   "name": "ChElmInterpretationCodesTiter",
-  "title": "CH ELM Interpretation Codes Titer",
+  "title": "CH ELM Interpretation Codes TITER",
   "status": "active",
   "experimental": false,
-  "description": "This CH ELM value set includes the code for titer interpretation code.",
+  "description": "This CH ELM value set includes the code for titer interpretation code(s).",
   "compose": {
     "include": [
       {
