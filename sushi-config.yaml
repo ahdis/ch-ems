@@ -146,7 +146,9 @@ resources:
     name: 16Doc - Dengue Titer
     description: Example Document Dengue with high IgG Ab-Titer
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
-
+  Bundle/17Doc-Neisseria:
+    name: 17Doc - Neisseria meningitidis – microscopic finding
+    description: Example Document for a microscopic observation of Neisseria meningitidis by primary lab
   Binary/Test92-Bundle-WarningBerUidGln:
     extension:
       - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format

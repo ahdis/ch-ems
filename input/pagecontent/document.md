@@ -30,6 +30,7 @@ Here are examples of laboratory reports for different organisms that have differ
 * Malaria: [JSON](Bundle-11Doc-Malaria.json.html), [XML](Bundle-11Doc-Malaria.xml.html) 
 * Monkeypox: [JSON](Bundle-12Doc-Monkeypox.json.html), [XML](Bundle-12Doc-Monkeypox.xml.html) 
 * Shigella: [JSON](Bundle-13Doc-Shigella.json.html), [XML](Bundle-13Doc-Shigella.xml.html) 
-* Meningo by secondary lab: [JSON](Bundle-14Doc-Meningo-SecLab.json.html), [XML](Bundle-14Doc-Meningo-SecLab.xml.html) 
+* Neisseria meningitidis by primary lab: [JSON](Bundle-17Doc-Neisseria.json.html), [XML](Bundle-17Doc-Neisseria.xml.html)
+* Neisseria meningitidis by secondary lab: [JSON](Bundle-14Doc-Neisseriameningitidis-confirmationtest.json.html), [XML](Bundle-14Doc-Neisseriameningitidis-confirmationtest.xml.html) 
 * Measles Seroconversion: [JSON](Bundle-15Doc-Measles-Seroconversion.json.html), [XML](Bundle-15Doc-Measles-Seroconversion.xml.html) 
 * Dengue Titer: [JSON](Bundle-16Doc-Dengue-Titer.json.html), [XML](Bundle-16Doc-Dengue-Titer.xml.html)
