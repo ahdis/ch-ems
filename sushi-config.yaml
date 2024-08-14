@@ -134,9 +134,9 @@ resources:
     name: 13Doc - Shigella
     description: Example Document for Shigella
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
-  Bundle/14Doc-Meningo-SecLab:
-    name: 14Doc - Meningo by secondary lab
-    description: Example Document for Meningo
+  Bundle/14Doc-Neisseriameningitidis-confirmationtest:
+    name: 14Doc - Neisseria meningitidis - confirmation test
+    description: Example Document for a confirmation test of Neisseria meningitidis by secondary lab (reference laboratory)
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Bundle/15Doc-Measles-Seroconversion:
     name: 15Doc - Measles Seroconversion
@@ -144,7 +144,7 @@ resources:
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Bundle/16Doc-Dengue-Titer:
     name: 16Doc - Dengue Titer
-    description: Example Document Dengue Titer
+    description: Example Document Dengue with high IgG Ab-Titer
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
 
   Binary/Test92-Bundle-WarningBerUidGln:

@@ -10,6 +10,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#97](https://github.com/ahdis/ch-elm/issues/97): Improvement error message
 * [#89](https://github.com/ahdis/ch-elm/issues/89): add ServiceRequest.requisition for referencing original order id
 * [#103](https://github.com/ahdis/ch-elm/issues/103): change patient id references with serial numbers
+* [#110](https://github.com/ahdis/ch-elm/issues/110): change example names and description from meningo and dengue titer
 * [#102](https://github.com/ahdis/ch-elm/issues/102): patient.street, patient.telecom only allowed for full name representation 
 * [#104](https://github.com/ahdis/ch-elm/issues/104): remove practitioner-orderer.telecom constraint 0..1
 
