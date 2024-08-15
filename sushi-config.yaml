@@ -149,6 +149,9 @@ resources:
   Bundle/17Doc-Neisseria:
     name: 17Doc - Neisseria meningitidis – microscopic finding
     description: Example Document for a microscopic observation of Neisseria meningitidis by primary lab
+  Bundle/18Doc-C-diphtheriae:
+    name: 18Doc - Corynebacterium diphtheriae 
+    description: Example Document for Corynebacterium diphtheriae with specimen specification
   Binary/Test92-Bundle-WarningBerUidGln:
     extension:
       - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format
