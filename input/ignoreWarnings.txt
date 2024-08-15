@@ -40,6 +40,14 @@ Entry 'http://test.fhir.ch/r4/DiagnosticReport/5DR-TreponemaPallidum' isn't reac
 Entry 'http://test.fhir.ch/r4/DiagnosticReport/6DR-Influenza' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'http://test.fhir.ch/r4/DiagnosticReport/7DR-SARSCoV2' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 
+# input/resources/Bundle-8Doc-HepatiteB.xml ==
+Entry 'urn:uuid:ef543f73-c886-4a7f-81ce-12e2978b11c5' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:ae99fade-feb6-451b-a20b-bd8a04be8531' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+# input/resources/Bundle-9Doc-HepatiteC.xml ==
+Entry 'urn:uuid:30c5012b-18ea-4c3f-9654-68ccce1e1081' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:ba628129-10bd-493f-a42e-8e74e7abbd94' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
 # input/resources/Bundle-10Doc-Legionella.xml ==
 Entry 'urn:uuid:196a41fb-78fd-4d88-b5f9-c807e915dad9' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'urn:uuid:c0474d76-ea60-4540-8448-7472ff6d1f33' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
@@ -55,14 +63,6 @@ Entry 'urn:uuid:ec48f270-f518-45c3-8e6d-4dde446a8821' isn't reachable by travers
 # input/resources/Bundle-13Doc-Shigella.xml ==
 Entry 'urn:uuid:67d2d2fb-15c2-4b37-b7be-9f9efdbf4094' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'urn:uuid:30718319-2c52-4f5a-b0ee-b3322093157f' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
-
-# input/resources/Bundle-8Doc-HepatiteB.xml ==
-Entry 'urn:uuid:ef543f73-c886-4a7f-81ce-12e2978b11c5' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
-Entry 'urn:uuid:ae99fade-feb6-451b-a20b-bd8a04be8531' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
-
-# input/resources/Bundle-9Doc-HepatiteC.xml ==
-Entry 'urn:uuid:30c5012b-18ea-4c3f-9654-68ccce1e1081' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
-Entry 'urn:uuid:ba628129-10bd-493f-a42e-8e74e7abbd94' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 
 # input/resources/Bundle-14Doc-Meningo-SecLab.xml ==
 Entry 'urn:uuid:6dc3d310-833f-469b-baf7-7824cb5a4fd8' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
@@ -83,3 +83,31 @@ Entry 'urn:uuid:0f987ac6-72f0-4c69-bc3e-39c805d3de1c' isn't reachable by travers
 # input/resources/Bundle-16Doc-Dengue-Titer.xml ==
 Entry 'urn:uuid:f11b136f-3d38-4330-b3a9-038f15670915' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'urn:uuid:21ecc3e7-147b-49f9-a279-c3dd2e543d19' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+# input\resources\Bundle-17Doc-Neisseria.xml ==
+Entry 'urn:uuid:fb4cda61-696a-48ea-bb53-2c939d2afa78' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:0dedadd9-4e61-40a3-97ce-8f46b05cc1f9' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+# input\resources\Bundle-18Doc-C-diphtheriae.xml ==
+Entry 'urn:uuid:b94d3c99-71ab-4467-b600-13dcf2c32b5b' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:a6864010-e40c-49c7-b70b-defe3cdf73dc' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+# input\resources\Bundle-19Doc-S-pneumoniae.xml ==
+Entry 'urn:uuid:bbae3573-5fe4-40eb-af6e-b2d9bf18741f' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:d6058f3d-091a-41f5-93b0-0738bf65a3b5' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+# input\resources\Bundle-20Doc-Vibrio-cholerae.xml ==
+Entry 'urn:uuid:e91c013b-d627-4345-b19b-4927bd927c3f' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:2f3dff1e-eb3c-4af5-8478-7a73251ebdbc' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+# input\resources\Bundle-21Doc-HepatiteE.xml ==
+Entry 'urn:uuid:9e07bb0f-f119-4c17-b897-d1a2d8a37363' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Bundle.entry[11]: Entry 'urn:uuid:85a06323-44f3-4f99-9a14-ebf46f695c89' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+# input\resources\Bundle-22Doc-H-influenzae.xml ==
+Entry 'urn:uuid:24015685-568e-4338-b33d-8cf051bf72d9' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:2cf0731f-5d91-4fe4-ae17-5cc29a35daa6' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+# input\resources\Bundle-23Doc-F-tularensis.xml ==
+Entry 'urn:uuid:e9dcd38c-593d-4db5-9181-e439c6fda5dd' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:265708c7-e532-4855-908b-cfea197761b8' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
