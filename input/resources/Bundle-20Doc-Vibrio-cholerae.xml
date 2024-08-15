@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle 
   xmlns="http://hl7.org/fhir">
-  <id value="18Doc-C-diphtheriae"/>
+    <id value="20Doc-Vibrio-cholerae"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:uuid:ac01252d-6012-443f-9690-9291adb23433"/>
@@ -9,10 +9,10 @@
   <type value="document"/>
   <timestamp value="2024-08-14T11:00:00+02:00"/>
   <entry>
-    <fullUrl value="urn:uuid:d04dfed5-7d8c-4008-bd64-67ff3dba21a6"/>
+    <fullUrl value="urn:uuid:5ce27e23-a0d6-46a9-a9eb-c40fb9a1818a"/>
     <resource>
       <Composition>
-        <id value="d04dfed5-7d8c-4008-bd64-67ff3dba21a6"/>
+        <id value="5ce27e23-a0d6-46a9-a9eb-c40fb9a1818a"/>
         <language value="de-CH"/>
         <identifier>
           <system value="urn:ietf:rfc:3986"/>
@@ -33,11 +33,11 @@
           </coding>
         </type>
         <subject>
-          <reference value="urn:uuid:11e6e6e3-db63-4e7f-8591-d2ff663bafda"/>
+          <reference value="urn:uuid:90f9c93c-4bea-46cb-bdbe-0bc08101fbac"/>
         </subject>
         <date value="2024-08-14T11:00:00+02:00"/>
         <author>
-          <reference value="urn:uuid:59455fa1-a0ea-4b5d-bc9b-f4924b52bb69"/>
+          <reference value="urn:uuid:0d4e1427-e05f-4db2-afda-c55eabaf6909"/>
         </author>
         <title value="Laborbericht vom 14.8.2024"/>
         <section>
@@ -50,17 +50,17 @@
             </coding>
           </code>
           <entry>
-            <reference value="urn:uuid:cb49ec4c-4454-4799-bba3-1724d718a21f"/>
+            <reference value="urn:uuid:7d7bcbb5-1e55-44ad-a9e5-c9bf33d6bd30"/>
           </entry>
         </section>
       </Composition>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:11e6e6e3-db63-4e7f-8591-d2ff663bafda"/>
+    <fullUrl value="urn:uuid:90f9c93c-4bea-46cb-bdbe-0bc08101fbac"/>
     <resource>
       <Patient>
-        <id value="11e6e6e3-db63-4e7f-8591-d2ff663bafda"/>
+        <id value="90f9c93c-4bea-46cb-bdbe-0bc08101fbac"/>
         <identifier>
           <system value="urn:oid:2.16.756.5.32"/>
           <value value="7561234567897"/>
@@ -97,10 +97,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:59455fa1-a0ea-4b5d-bc9b-f4924b52bb69"/>
+    <fullUrl value="urn:uuid:0d4e1427-e05f-4db2-afda-c55eabaf6909"/>
     <resource>
       <Organization>
-        <id value="59455fa1-a0ea-4b5d-bc9b-f4924b52bb69"/>
+        <id value="0d4e1427-e05f-4db2-afda-c55eabaf6909"/>
         <identifier>
           <system value="urn:oid:2.51.1.3"/>
           <value value="7601002331470"/>
@@ -110,10 +110,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:cb49ec4c-4454-4799-bba3-1724d718a21f"/>
+    <fullUrl value="urn:uuid:7d7bcbb5-1e55-44ad-a9e5-c9bf33d6bd30"/>
     <resource>
       <Observation>
-        <id value="cb49ec4c-4454-4799-bba3-1724d718a21f"/>
+        <id value="7d7bcbb5-1e55-44ad-a9e5-c9bf33d6bd30"/>
         <status value="final"/>
         <category>
           <coding>
@@ -125,15 +125,15 @@
         <code>
           <coding>
             <system value="http://loinc.org"/>
-            <code value="67561-1"/>
+            <code value="53942-9"/>
           </coding>
         </code>
         <subject>
-          <reference value="urn:uuid:11e6e6e3-db63-4e7f-8591-d2ff663bafda"/>
+          <reference value="urn:uuid:90f9c93c-4bea-46cb-bdbe-0bc08101fbac"/>
         </subject>
         <effectiveDateTime value="2024-08-12T09:15:00+02:00"/>
         <performer>
-          <reference value="urn:uuid:59455fa1-a0ea-4b5d-bc9b-f4924b52bb69"/>
+          <reference value="urn:uuid:0d4e1427-e05f-4db2-afda-c55eabaf6909"/>
         </performer>
         <dataAbsentReason>
           <coding>
@@ -149,16 +149,16 @@
           </coding>
         </interpretation>
         <specimen>
-          <reference value="urn:uuid:54d2ee7e-227e-4396-8653-8e82a6d0e3e7"/>
+          <reference value="urn:uuid:b28199d0-7d4c-4af0-afc6-a4842e665d2c"/>
         </specimen>
       </Observation>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:88da073c-c6de-4b56-8b70-5a39709f7e06"/>
+    <fullUrl value="urn:uuid:1503c5eb-e2b7-4751-81ac-89b20a904884"/>
     <resource>
       <Practitioner>
-        <id value="88da073c-c6de-4b56-8b70-5a39709f7e06"/>
+        <id value="1503c5eb-e2b7-4751-81ac-89b20a904884"/>
         <identifier>
           <system value="urn:oid:2.51.1.3"/>
           <value value="7601000234438"/>
@@ -179,10 +179,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:65d13017-fb61-4306-944d-2a82bb3d71d3"/>
+    <fullUrl value="urn:uuid:409e7c49-ae05-44b7-a36b-aa2b7e9f5f7d"/>
     <resource>
       <Organization>
-        <id value="65d13017-fb61-4306-944d-2a82bb3d71d3"/>
+        <id value="409e7c49-ae05-44b7-a36b-aa2b7e9f5f7d"/>
         <identifier>
           <system value="urn:oid:2.16.756.5.45"/>
           <value value="A99684215"/>
@@ -207,32 +207,29 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:1c75859e-db70-4bc4-a54c-ac3d266fa058"/>
+    <fullUrl value="urn:uuid:e8f6adae-30ed-4f55-973a-3ed4f139645b"/>
     <resource>
       <PractitionerRole>
-        <id value="1c75859e-db70-4bc4-a54c-ac3d266fa058"/>
+        <id value="e8f6adae-30ed-4f55-973a-3ed4f139645b"/>
         <practitioner>
-          <reference value="urn:uuid:88da073c-c6de-4b56-8b70-5a39709f7e06"/>
+          <reference value="urn:uuid:1503c5eb-e2b7-4751-81ac-89b20a904884"/>
         </practitioner>
         <organization>
-          <reference value="urn:uuid:65d13017-fb61-4306-944d-2a82bb3d71d3"/>
+          <reference value="urn:uuid:409e7c49-ae05-44b7-a36b-aa2b7e9f5f7d"/>
         </organization>
       </PractitionerRole>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:54d2ee7e-227e-4396-8653-8e82a6d0e3e7"/>
+    <fullUrl value="urn:uuid:b28199d0-7d4c-4af0-afc6-a4842e665d2c"/>
     <resource>
       <Specimen>
-        <id value="54d2ee7e-227e-4396-8653-8e82a6d0e3e7"/>
+        <id value="b28199d0-7d4c-4af0-afc6-a4842e665d2c"/>
         <type>
-          <coding>
-              <system value="http://snomed.info/sct"/>
-            <code value="608969007"/>
-          </coding>
+          <text value="Material declared by Observation.code or non-mandatory"/>
         </type>
         <subject>
-          <reference value="urn:uuid:11e6e6e3-db63-4e7f-8591-d2ff663bafda"/>
+          <reference value="urn:uuid:90f9c93c-4bea-46cb-bdbe-0bc08101fbac"/>
         </subject>
         <collection>
           <collectedDateTime value="2024-08-10T09:15:00+02:00"/>
@@ -241,10 +238,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:b94d3c99-71ab-4467-b600-13dcf2c32b5b"/>
+    <fullUrl value="urn:uuid:e91c013b-d627-4345-b19b-4927bd927c3f"/>
     <resource>
       <ServiceRequest>
-        <id value="b94d3c99-71ab-4467-b600-13dcf2c32b5b"/>
+        <id value="e91c013b-d627-4345-b19b-4927bd927c3f"/>
         <identifier>
           <value value="50002755"/>
         </identifier>
@@ -253,29 +250,29 @@
         <code>
           <coding>
             <system value="http://loinc.org"/>
-            <code value="67561-1"/>
+            <code value="53942-9"/>
           </coding>
         </code>
         <subject>
-          <reference value="urn:uuid:11e6e6e3-db63-4e7f-8591-d2ff663bafda"/>
+          <reference value="urn:uuid:90f9c93c-4bea-46cb-bdbe-0bc08101fbac"/>
         </subject>
         <requester>
-          <reference value="urn:uuid:1c75859e-db70-4bc4-a54c-ac3d266fa058"/>
+          <reference value="urn:uuid:e8f6adae-30ed-4f55-973a-3ed4f139645b"/>
         </requester>
         <specimen>
-          <reference value="urn:uuid:54d2ee7e-227e-4396-8653-8e82a6d0e3e7"/>
+          <reference value="urn:uuid:b28199d0-7d4c-4af0-afc6-a4842e665d2c"/>
         </specimen>
       </ServiceRequest>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:a6864010-e40c-49c7-b70b-defe3cdf73dc"/>
+    <fullUrl value="urn:uuid:2f3dff1e-eb3c-4af5-8478-7a73251ebdbc"/>
     <resource>
       <DiagnosticReport>
-        <id value="a6864010-e40c-49c7-b70b-defe3cdf73dc"/>
+        <id value="2f3dff1e-eb3c-4af5-8478-7a73251ebdbc"/>
         <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition">
           <valueReference>
-            <reference value="urn:uuid:d04dfed5-7d8c-4008-bd64-67ff3dba21a6"/>
+            <reference value="urn:uuid:5ce27e23-a0d6-46a9-a9eb-c40fb9a1818a"/>
           </valueReference>
         </extension>
         <identifier>
@@ -283,7 +280,7 @@
           <value value="urn:uuid:ac01252d-6012-443f-9690-9291adb23433"/>
         </identifier>
         <basedOn>
-          <reference value="urn:uuid:b94d3c99-71ab-4467-b600-13dcf2c32b5b"/>
+          <reference value="urn:uuid:e91c013b-d627-4345-b19b-4927bd927c3f"/>
         </basedOn>
         <status value="final"/>
         <code>
@@ -294,16 +291,16 @@
           </coding>
         </code>
         <subject>
-          <reference value="urn:uuid:11e6e6e3-db63-4e7f-8591-d2ff663bafda"/>
+          <reference value="urn:uuid:90f9c93c-4bea-46cb-bdbe-0bc08101fbac"/>
         </subject>
         <performer>
-          <reference value="urn:uuid:59455fa1-a0ea-4b5d-bc9b-f4924b52bb69"/>
+          <reference value="urn:uuid:0d4e1427-e05f-4db2-afda-c55eabaf6909"/>
         </performer>
         <specimen>
-          <reference value="urn:uuid:54d2ee7e-227e-4396-8653-8e82a6d0e3e7"/>
+          <reference value="urn:uuid:b28199d0-7d4c-4af0-afc6-a4842e665d2c"/>
         </specimen>
         <result>
-          <reference value="urn:uuid:cb49ec4c-4454-4799-bba3-1724d718a21f"/>
+          <reference value="urn:uuid:7d7bcbb5-1e55-44ad-a9e5-c9bf33d6bd30"/>
         </result>
       </DiagnosticReport>
     </resource>
