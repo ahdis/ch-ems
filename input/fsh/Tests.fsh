@@ -90,18 +90,18 @@ InstanceOf: TestScript
 * insert ActionAssertResponseCodeOk
 * insert ActionAssertFhirPathTrue(Confirm that the returned resource is an OperationOutcome., [[is(FHIR.OperationOutcome)]])
 * insert ActionAssertFhirPathTrue(Confirm that we have no errors., [[issue.where(severity='error' or severity='fatal').count()=0]])
-* insert ActionAssertFhirPathTrue(Check warning ignored, [[issue.where(severity='information' and diagnostics.matches('None of the codings provided are in the value set \\'Observation Interpretation Codes\\'(.+)')).count() = 0]])
+* insert ActionAssertFhirPathTrue(Check warning ignored, [[issue.where(severity='warning' and diagnostics.matches('None of the codings provided are in the value set \\'Observation Interpretation Codes\\'(.+)')).count() = 0]])
 
 Instance: Test96-Ignore-Slice-Patient-Eu-Lab-Warning
 InstanceOf: TestScript
-* url = "http://fhir.ch/ig/ch-elm/TestScript/Test96-Ignore-Slice-Patient-Eu-Lab-Warning"
-* name = "Test96IgnoreObservationInterpretationCodesWarning"
+* url = "http://fhir.ch/ig/ch-elm/TestScript/Test96-Ignore-Slice-Patient-Eu-Lab-Information"
+* name = "Test96IgnoreObservationInterpretationCodesInformation"
 * status = #active
 * insert Fixture(inputdata, [[DocumentReference/2-DocumentReferenceVct]])
 * test.name = "Test96"
-* test.description = "Test script to verify that warning This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab is ignored"
+* test.description = "Test script to verify that Information This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab is ignored"
 * insert ActionOperationValidate(http://fhir.ch/ig/ch-elm/StructureDefinition/PublishDocumentReference, inputdata)
 * insert ActionAssertResponseCodeOk
 * insert ActionAssertFhirPathTrue(Confirm that the returned resource is an OperationOutcome., [[is(FHIR.OperationOutcome)]])
 * insert ActionAssertFhirPathTrue(Confirm that we have no errors., [[issue.where(severity='error' or severity='fatal').count()=0]])
-* insert ActionAssertFhirPathTrue(Check warning ignored, [[issue.where(severity='information' and diagnostics.matches('This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab(.+)')).count() = 0]])
+* insert ActionAssertFhirPathTrue(Check information ignored, [[issue.where(severity='information' and diagnostics.matches('This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab(.+)')).count() = 0]])
