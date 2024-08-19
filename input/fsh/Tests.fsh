@@ -92,7 +92,7 @@ InstanceOf: TestScript
 * insert ActionAssertFhirPathTrue(Confirm that we have no errors., [[issue.where(severity='error' or severity='fatal').count()=0]])
 * insert ActionAssertFhirPathTrue(Check warning ignored, [[issue.where(severity='warning' and diagnostics.matches('None of the codings provided are in the value set \\'Observation Interpretation Codes\\'(.+)')).count() = 0]])
 
-Instance: Test96-Ignore-Slice-Patient-Eu-Lab-Warning
+Instance: Test96-Ignore-Slice-Patient-Eu-Lab-Information
 InstanceOf: TestScript
 * url = "http://fhir.ch/ig/ch-elm/TestScript/Test96-Ignore-Slice-Patient-Eu-Lab-Information"
 * name = "Test96IgnoreObservationInterpretationCodesInformation"

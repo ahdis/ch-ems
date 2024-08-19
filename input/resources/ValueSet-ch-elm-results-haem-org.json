@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-results-haem-org",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-haem-org",
+  "version": "2024-08-19",
+  "name": "ChElmResultsHaemOrg",
+  "title": "CH ELM Results Haem Org",
+  "status": "active",
+  "experimental": false,
+  "description": "The \"CH ELM Results Haem Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Haem Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "103442008",
+            "display": "Haemophilus influenzae type b (organism)"
+          },
+          {
+            "code": "115407004",
+            "display": "Haemophilus influenzae, not b (organism)"
+          },
+          {
+            "code": "103441001",
+            "display": "Haemophilus influenzae type a (organism)"
+          },
+          {
+            "code": "103444009",
+            "display": "Haemophilus influenzae type d (organism)"
+          },
+          {
+            "code": "103443003",
+            "display": "Haemophilus influenzae type c (organism)"
+          },
+          {
+            "code": "103446006",
+            "display": "Haemophilus influenzae type f (organism)"
+          },
+          {
+            "code": "103445005",
+            "display": "Haemophilus influenzae type e (organism)"
+          }
+        ]
+      }
+    ]
+  }
+}

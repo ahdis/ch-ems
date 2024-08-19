@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-expecting-specimen-specification-to-results-completion-vs",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-specimen-specification-to-results-completion-vs",
-  "version": "2024-08-13",
+  "version": "2024-08-19",
   "name": "ChElmExpectingSpecimenSpecificationToResultsCompletionVs",
   "title": "CH ELM Expecting Specimen Specification To Results Completion Vs",
   "status": "active",
@@ -106,6 +106,16 @@
           ]
         },
         {
+          "code": "31912-9",
+          "display": "Neisseria meningitidis Ag [Presence] in Specimen",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sterile-spec",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "31969-9",
           "display": "Streptococcus pneumoniae Ag [Presence] in Specimen",
           "target": [
@@ -181,6 +191,16 @@
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "6600-1",
+          "display": "Haemophilus sp identified in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sterile-spec",
               "equivalence": "relatedto"
             }
           ]

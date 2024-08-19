@@ -1,0 +1,64 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-results-chol-org",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-chol-org",
+  "version": "2024-08-19",
+  "name": "ChElmResultsCholOrg",
+  "title": "CH ELM Results Chol Org",
+  "status": "active",
+  "experimental": false,
+  "description": "The \"CH ELM Results Chol Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Chol Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "302576007",
+            "display": "Vibrio cholerae O1 classical Ogawa (organism)"
+          },
+          {
+            "code": "75953000",
+            "display": "Vibrio cholerae (organism)"
+          },
+          {
+            "code": "125048009",
+            "display": "Vibrio cholerae serogroup O139 (organism)"
+          },
+          {
+            "code": "62987004",
+            "display": "Vibrio cholerae, O1 (organism)"
+          },
+          {
+            "code": "302575006",
+            "display": "Vibrio cholerae O1 classical Inaba (organism)"
+          },
+          {
+            "code": "302572009",
+            "display": "Vibrio cholerae O1 El Tor Inaba (organism)"
+          },
+          {
+            "code": "302573004",
+            "display": "Vibrio cholerae O1 El Tor Ogawa (organism)"
+          },
+          {
+            "code": "415819003",
+            "display": "Vibrio cholerae, non-O1/non-O139 (organism)"
+          },
+          {
+            "code": "302577003",
+            "display": "Vibrio cholerae O1 classical Hikojima (organism)"
+          },
+          {
+            "code": "76436009",
+            "display": "Vibrio cholerae, classical biotype (organism)"
+          },
+          {
+            "code": "302574005",
+            "display": "Vibrio cholerae O1 El Tor Hikojima (organism)"
+          }
+        ]
+      }
+    ]
+  }
+}

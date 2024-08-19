@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-foph-patient-name-representation",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-foph-patient-name-representation",
-  "version": "2024-08-13",
+  "version": "2024-08-19",
   "name": "ChElmResultsToFophPatientNameRepresentation",
   "title": "CH ELM Results To FOPH Patient Name Representation",
   "status": "active",
@@ -25,6 +25,16 @@
       "source": "http://loinc.org",
       "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-foph-patient-name-representation",
       "element": [
+        {
+          "code": "46732-4",
+          "display": "Francisella tularensis subtype [Identifier] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
         {
           "code": "100383-9",
           "display": "Monkeypox virus DNA [Presence] in Specimen by NAA with probe detection",
@@ -246,16 +256,6 @@
           ]
         },
         {
-          "code": "13952-7",
-          "display": "Hepatitis B virus core Ab [Presence] in Serum or Plasma by Immunoassay",
-          "target": [
-            {
-              "code": "full-name",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "13954-3",
           "display": "Hepatitis B virus e Ag [Presence] in Serum or Plasma by Immunoassay",
           "target": [
@@ -338,16 +338,6 @@
         {
           "code": "16676-9",
           "display": "Corynebacterium diphtheriae [Presence] in Specimen by Organism specific culture",
-          "target": [
-            {
-              "code": "full-name",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "17057-1",
-          "display": "Legionella pneumophila Ag [Presence] in Specimen",
           "target": [
             {
               "code": "full-name",
@@ -516,16 +506,6 @@
           ]
         },
         {
-          "code": "26621-3",
-          "display": "Legionella sp Ag [Presence] in Specimen",
-          "target": [
-            {
-              "code": "full-name",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "29610-3",
           "display": "Hepatitis B virus DNA [Presence] in Serum or Plasma by NAA with probe detection",
           "target": [
@@ -646,16 +626,6 @@
           ]
         },
         {
-          "code": "31869-1",
-          "display": "Legionella pneumophila Ag [Presence] in Sputum",
-          "target": [
-            {
-              "code": "full-name",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "31870-9",
           "display": "Legionella pneumophila Ag [Presence] in Urine",
           "target": [
@@ -708,6 +678,16 @@
         {
           "code": "31887-3",
           "display": "Measles virus Ag [Presence] in Specimen",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "31912-9",
+          "display": "Neisseria meningitidis Ag [Presence] in Specimen",
           "target": [
             {
               "code": "full-name",
@@ -791,16 +771,6 @@
           "target": [
             {
               "code": "initials",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "38394-3",
-          "display": "Legionella sp identified in Urine by Organism specific culture",
-          "target": [
-            {
-              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -1376,38 +1346,8 @@
           ]
         },
         {
-          "code": "60262-3",
-          "display": "Dengue virus 1 RNA [Presence] in Serum by NAA with probe detection",
-          "target": [
-            {
-              "code": "full-name",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "60418-1",
-          "display": "Dengue virus 4 RNA [Presence] in Serum by NAA with probe detection",
-          "target": [
-            {
-              "code": "full-name",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "60419-9",
-          "display": "Dengue virus 3 RNA [Presence] in Serum by NAA with probe detection",
-          "target": [
-            {
-              "code": "full-name",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "60420-7",
-          "display": "Dengue virus 2 RNA [Presence] in Serum by NAA with probe detection",
+          "code": "60422-3",
+          "display": "Measles virus genotype [Identifier] in Specimen by NAA with probe detection",
           "target": [
             {
               "code": "full-name",
@@ -1508,6 +1448,16 @@
         {
           "code": "6387-5",
           "display": "Dengue virus DNA [Presence] in Specimen by Probe",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "6508-6",
+          "display": "Neisseria meningitidis Ag [Presence] in Cerebral spinal fluid",
           "target": [
             {
               "code": "full-name",
@@ -2018,6 +1968,26 @@
         {
           "code": "88584-8",
           "display": "Corynebacterium diphtheriae [Presence] in Upper respiratory specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "88585-5",
+          "display": "Legionella sp identified in Lower respiratory specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "88588-9",
+          "display": "Legionella sp DNA [Identifier] in Lower respiratory specimen by NAA with probe detection",
           "target": [
             {
               "code": "full-name",

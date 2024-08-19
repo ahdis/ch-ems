@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-expecting-specimen-specification",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-specimen-specification",
-  "version": "2024-08-13",
+  "version": "2024-08-19",
   "name": "ChElmExpectingSpecimenSpecification",
   "title": "CH ELM Expecting Specimen Specification",
   "status": "active",
@@ -46,6 +46,10 @@
             "display": "Chlamydia trachomatis Ag [Presence] in Specimen"
           },
           {
+            "code": "31912-9",
+            "display": "Neisseria meningitidis Ag [Presence] in Specimen"
+          },
+          {
             "code": "31969-9",
             "display": "Streptococcus pneumoniae Ag [Presence] in Specimen"
           },
@@ -76,6 +80,10 @@
           {
             "code": "6349-5",
             "display": "Chlamydia trachomatis [Presence] in Specimen by Organism specific culture"
+          },
+          {
+            "code": "6600-1",
+            "display": "Haemophilus sp identified in Specimen by Organism specific culture"
           },
           {
             "code": "67561-1",

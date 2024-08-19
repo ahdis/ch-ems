@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-results-diph-org",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-diph-org",
+  "version": "2024-08-19",
+  "name": "ChElmResultsDiphOrg",
+  "title": "CH ELM Results Diph Org",
+  "status": "active",
+  "experimental": false,
+  "description": "The \"CH ELM Results Diph Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Diph Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "55084001",
+            "display": "Corynebacterium pseudotuberculosis (organism)"
+          },
+          {
+            "code": "243255007",
+            "display": "Corynebacterium diphtheriae var belfanti (organism)"
+          },
+          {
+            "code": "70876001",
+            "display": "Corynebacterium diphtheriae type intermedius (organism)"
+          },
+          {
+            "code": "13755001",
+            "display": "Corynebacterium diphtheriae type mitis (organism)"
+          },
+          {
+            "code": "5851001",
+            "display": "Corynebacterium diphtheriae (organism)"
+          },
+          {
+            "code": "77086004",
+            "display": "Genus Corynebacterium (organism)"
+          },
+          {
+            "code": "83675005",
+            "display": "Corynebacterium diphtheriae type gravis (organism)"
+          },
+          {
+            "code": "103428000",
+            "display": "Corynebacterium ulcerans (organism)"
+          }
+        ]
+      }
+    ]
+  }
+}
