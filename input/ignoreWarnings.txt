@@ -111,3 +111,6 @@ Entry 'urn:uuid:2cf0731f-5d91-4fe4-ae17-5cc29a35daa6' isn't reachable by travers
 # input\resources\Bundle-23Doc-F-tularensis.xml ==
 Entry 'urn:uuid:e9dcd38c-593d-4db5-9181-e439c6fda5dd' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'urn:uuid:265708c7-e532-4855-908b-cfea197761b8' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+# Terminology error during build, no impact
+Error from http://tx.fhir.org/r4: POST Stream too large%

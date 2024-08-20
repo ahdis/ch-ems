@@ -1,16 +1,16 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### 1.4.0 
+### 1.4.0 2024/08/20
 
 * [#111](https://github.com/ahdis/ch-elm/issues/111) added examples for Neisseria (primary and secondary lab), Measles Seroconversion,  Corynebacterium diphtheriae, Streptococcus pneumoniae,  Vibrio cholerae, Hepatite E, Haemophilus influenzae, Francisella tularensis, Dengue Titer and updated valuesets
-* [#65](https://github.com/ahdis/ch-elm/issues/65): Reminder: update to the newest version  hl7.fhir.eu.laboratory: 0.1.0 and ch.fhir.ig.ch-lab-report: 1.0.0-ballot 
+* [#65](https://github.com/ahdis/ch-elm/issues/65): Update to the newest version hl7.fhir.eu.laboratory: 0.1.0 and ch.fhir.ig.ch-lab-report: 1.0.0-ballot 
 * [#100](https://github.com/ahdis/ch-elm/issues/100): Fix Campylobacter example title
 * [#99](https://github.com/ahdis/ch-elm/issues/99): CH ELM Patient adaptions
 * [#98](https://github.com/ahdis/ch-elm/issues/98): Two new interpretation groups sero and titer
 * [#97](https://github.com/ahdis/ch-elm/issues/97): Improvement error message
 * [#89](https://github.com/ahdis/ch-elm/issues/89): add ServiceRequest.requisition for referencing original order id
 * [#103](https://github.com/ahdis/ch-elm/issues/103): change patient id references with serial numbers
-* [#110](https://github.com/ahdis/ch-elm/issues/110): change example names and description from meningo and dengue titer
+* [#110](https://github.com/ahdis/ch-elm/issues/110): change example names and description for meningo and dengue titer
 * [#102](https://github.com/ahdis/ch-elm/issues/102): patient.street, patient.telecom only allowed for full name representation 
 * [#104](https://github.com/ahdis/ch-elm/issues/104): remove practitioner-orderer.telecom constraint 0..1
 
