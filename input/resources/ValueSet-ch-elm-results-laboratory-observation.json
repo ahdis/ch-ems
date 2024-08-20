@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
-  "version": "2024-08-19",
+  "version": "2024-08-20",
   "name": "ChElmResultsLaboratoryObservation",
   "title": "CH ELM Results Laboratory Observation",
   "status": "active",
@@ -750,14 +750,6 @@
             "display": "Campylobacter coli+jejuni tuf gene [Presence] in Stool by NAA with probe detection"
           },
           {
-            "code": "82187-6",
-            "display": "Streptococcus pneumoniae DNA [Presence] in Cerebral spinal fluid by NAA with non-probe detection"
-          },
-          {
-            "code": "82201-5",
-            "display": "Vibrio cholerae DNA [Presence] in Stool by NAA with non-probe detection"
-          },
-          {
             "code": "82300-5",
             "display": "Shigella sp [Presence] in Stool by Culture"
           },
@@ -930,6 +922,10 @@
             "display": "SARS-CoV-2 (COVID-19) RNA [Presence] in Oropharyngeal wash by NAA with probe detection"
           },
           {
+            "code": "97314-9",
+            "display": "Vibrio cholerae DNA [Presence] in Stool by NAA with probe detection"
+          },
+          {
             "code": "97513-6",
             "display": "Campylobacter sp [Presence] in Specimen by Organism specific culture"
           },
@@ -944,6 +940,10 @@
           {
             "code": "99092-9",
             "display": "Neisseria meningitidis DNA [Presence] in Cerebral spinal fluid by NAA with probe detection"
+          },
+          {
+            "code": "99094-5",
+            "display": "Streptococcus pneumoniae DNA [Presence] in Cerebral spinal fluid by NAA with probe detection"
           }
         ]
       },

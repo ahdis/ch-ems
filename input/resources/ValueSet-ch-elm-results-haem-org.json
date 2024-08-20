@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-haem-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-haem-org",
-  "version": "2024-08-19",
+  "version": "2024-08-20",
   "name": "ChElmResultsHaemOrg",
   "title": "CH ELM Results Haem Org",
   "status": "active",
@@ -28,6 +28,10 @@
           {
             "code": "103444009",
             "display": "Haemophilus influenzae type d (organism)"
+          },
+          {
+            "code": "44470000",
+            "display": "Haemophilus influenzae (organism)"
           },
           {
             "code": "103443003",

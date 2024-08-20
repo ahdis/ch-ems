@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-interpretation-code",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-interpretation-code",
-  "version": "2024-08-19",
+  "version": "2024-08-20",
   "name": "ChElmResultsToInterpretationCode",
   "title": "CH ELM Results To Interpretation Code",
   "status": "active",
@@ -1866,26 +1866,6 @@
           ]
         },
         {
-          "code": "82187-6",
-          "display": "Streptococcus pneumoniae DNA [Presence] in Cerebral spinal fluid by NAA with non-probe detection",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "82201-5",
-          "display": "Vibrio cholerae DNA [Presence] in Stool by NAA with non-probe detection",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "82300-5",
           "display": "Shigella sp [Presence] in Stool by Culture",
           "target": [
@@ -2316,6 +2296,16 @@
           ]
         },
         {
+          "code": "97314-9",
+          "display": "Vibrio cholerae DNA [Presence] in Stool by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "97513-6",
           "display": "Campylobacter sp [Presence] in Specimen by Organism specific culture",
           "target": [
@@ -2348,6 +2338,16 @@
         {
           "code": "99092-9",
           "display": "Neisseria meningitidis DNA [Presence] in Cerebral spinal fluid by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "99094-5",
+          "display": "Streptococcus pneumoniae DNA [Presence] in Cerebral spinal fluid by NAA with probe detection",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",

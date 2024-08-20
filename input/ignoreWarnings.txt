@@ -102,7 +102,7 @@ Entry 'urn:uuid:2f3dff1e-eb3c-4af5-8478-7a73251ebdbc' isn't reachable by travers
 
 # input\resources\Bundle-21Doc-HepatiteE.xml ==
 Entry 'urn:uuid:9e07bb0f-f119-4c17-b897-d1a2d8a37363' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
-Bundle.entry[11]: Entry 'urn:uuid:85a06323-44f3-4f99-9a14-ebf46f695c89' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:85a06323-44f3-4f99-9a14-ebf46f695c89' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 
 # input\resources\Bundle-22Doc-H-influenzae.xml ==
 Entry 'urn:uuid:24015685-568e-4338-b33d-8cf051bf72d9' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)

@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-sterile-spec",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sterile-spec",
-  "version": "2024-08-19",
+  "version": "2024-08-20",
   "name": "ChElmResultsSterileSpec",
   "title": "CH ELM Results Sterile Spec",
   "status": "active",
@@ -24,6 +24,10 @@
           {
             "code": "122571007",
             "display": "Pericardial fluid specimen (specimen)"
+          },
+          {
+            "code": "309066003",
+            "display": "Skin biopsy specimen (specimen)"
           },
           {
             "code": "119297000",
