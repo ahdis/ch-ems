@@ -2,14 +2,9 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 ### 1.4.0 2024/08/20
 
-<<<<<<< HEAD
 * [#115](https://github.com/ahdis/ch-elm/issues/115) reorganize FHIR document page
-* [#111](https://github.com/ahdis/ch-elm/issues/111) added examples for Neisseria (primary and secondary lab), Measles Seroconversion and Dengue Titer and updated valuesets
-* [#65](https://github.com/ahdis/ch-elm/issues/65): Reminder: update to the newest version  hl7.fhir.eu.laboratory: 0.1.0 and ch.fhir.ig.ch-lab-report: 1.0.0-ballot 
-=======
 * [#111](https://github.com/ahdis/ch-elm/issues/111) added examples for Neisseria (primary and secondary lab), Measles Seroconversion,  Corynebacterium diphtheriae, Streptococcus pneumoniae,  Vibrio cholerae, Hepatite E, Haemophilus influenzae, Francisella tularensis, Dengue Titer and updated valuesets
 * [#65](https://github.com/ahdis/ch-elm/issues/65): Update to the newest version hl7.fhir.eu.laboratory: 0.1.0 and ch.fhir.ig.ch-lab-report: 1.0.0-ballot 
->>>>>>> 4d6bc00ce723325dca900b868f2e492e6d930afc
 * [#100](https://github.com/ahdis/ch-elm/issues/100): Fix Campylobacter example title
 * [#99](https://github.com/ahdis/ch-elm/issues/99): CH ELM Patient adaptions
 * [#98](https://github.com/ahdis/ch-elm/issues/98): Two new interpretation groups sero and titer

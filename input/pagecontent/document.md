@@ -24,7 +24,7 @@ The bundle resource contains a consistent set of entries representing FHIR resou
         vertical-align: top;
     }
 
-<<<<<<< HEAD
+
     th {
         font-weight: bold;
         width: 25%; 
@@ -433,31 +433,3 @@ Example of a VCT Patient with specimen specification
         </tr>
     </tbody>
 </table>
-=======
-Here are examples of laboratory reports for different organisms that have different requirements (see also use case ([DE](usecase-german.html)) or [guidance](guidance.html)):
-* Neisseria Gonorrhoeae: [JSON](Bundle-1Doc-NeisseriaGonorrhoeae.json.html), [XML](Bundle-1Doc-NeisseriaGonorrhoeae.xml.html)
-   * Neisseria gonorrhoeae - Broker Szenario: [JSON](Bundle-1bDoc-NeisseriaGonorrhoeae.json.html), [XML](Bundle-1bDoc-NeisseriaGonorrhoeae.xml.html)
-* Chlamydia trachomatis: [JSON](Bundle-2Doc-ChlamydiaTrachomatis.json.html), [XML](Bundle-2Doc-ChlamydiaTrachomatis.xml.html)
-   * Chlamydia trachomatis - with Patient VCT Code: [JSON](Bundle-2Doc-ChlamydiaTrachomatis-Vct.json.html), [XML](Bundle-2Doc-ChlamydiaTrachomatis-Vct.xml.html)
-* Carbapenemase-producing Enterobacteriaceae (CPE): [JSON](Bundle-3Doc-CPE.json.html), [XML](Bundle-3Doc-CPE.xml.html)
-* Campylobacter spp.: [JSON](Bundle-4Doc-Campylobacter.json.html), [XML](Bundle-4Doc-Campylobacter.xml.html)
-* Treponema pallidum: [JSON](Bundle-5Doc-TreponemaPallidum.json.html), [XML](Bundle-5Doc-TreponemaPallidum.xml.html) 
-* Influenza: [JSON](Bundle-6Doc-Influenza.json.html), [XML](Bundle-6Doc-Influenza.xml.html) 
-* SARS-CoV-2: [JSON](Bundle-7Doc-SARSCoV2.json.html), [XML](Bundle-7Doc-SARSCoV2.xml.html) 
-* Hepatite B: [JSON](Bundle-8Doc-HepatiteB.json.html), [XML](Bundle-8Doc-HepatiteB.xml.html) 
-* Hepatite C: [JSON](Bundle-9Doc-HepatiteC.json.html), [XML](Bundle-9Doc-HepatiteC.xml.html) 
-* Legionella: [JSON](Bundle-10Doc-Legionella.json.html), [XML](Bundle-10Doc-Legionella.xml.html) 
-* Malaria: [JSON](Bundle-11Doc-Malaria.json.html), [XML](Bundle-11Doc-Malaria.xml.html) 
-* Monkeypox: [JSON](Bundle-12Doc-Monkeypox.json.html), [XML](Bundle-12Doc-Monkeypox.xml.html) 
-* Shigella: [JSON](Bundle-13Doc-Shigella.json.html), [XML](Bundle-13Doc-Shigella.xml.html) 
-* Neisseria meningitidis by secondary lab: [JSON](Bundle-14Doc-Neisseriameningitidis-confirmationtest.json.html), [XML](Bundle-14Doc-Neisseriameningitidis-confirmationtest.xml.html) 
-* Measles Seroconversion: [JSON](Bundle-15Doc-Measles-Seroconversion.json.html), [XML](Bundle-15Doc-Measles-Seroconversion.xml.html) 
-* Dengue Titer: [JSON](Bundle-16Doc-Dengue-Titer.json.html), [XML](Bundle-16Doc-Dengue-Titer.xml.html)
-* Neisseria meningitidis by primary lab: [JSON](Bundle-17Doc-Neisseria.json.html), [XML](Bundle-17Doc-Neisseria.xml.html)
-* Corynebacterium diphtheriae with specimen specification: [JSON](Bundle-18Doc-C-diphtheriae.json.html), [XML](Bundle-18Doc-C-diphtheriae.xml.html)
-* Streptococcus pneumoniae: [JSON](Bundle-19Doc-S-pneumoniae.json.html), [XML](Bundle-19Doc-S-pneumoniae.xml.html)
-* Vibrio cholerae: [JSON](Bundle-20Doc-Vibrio-cholerae.json.html), [XML](Bundle-20Doc-Vibrio-cholerae.xml.html)
-* Hepatite E: [JSON](Bundle-21Doc-HepatiteE.json.html), [XML](Bundle-21Doc-HepatiteE.xml.html)
-* Haemophilus influenzae: [JSON](Bundle-22Doc-H-influenzae.json.html), [XML](Bundle-22Doc-H-influenzae.xml.html)
-* Francisella tularensis with organism specification: [JSON](Bundle-23Doc-F-tularensis.json.html), [XML](Bundle-23Doc-F-tularensis.xml.html)
->>>>>>> 4d6bc00ce723325dca900b868f2e492e6d930afc
