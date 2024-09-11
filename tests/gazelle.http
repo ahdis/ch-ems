@@ -1,0 +1,26 @@
+### demo for gazelle ehealthsuisse simulator
+
+### matchbox availability and configuration
+GET https://ehealthsuisse.ihe-europe.net/matchboxv3/fhir/metadata HTTP/1.1
+Accept: application/fhir+json
+
+### matchbox validatior
+POST https://ehealthsuisse.ihe-europe.net/matchboxv3/fhir/$validate?profile=http://fhir.ch/ig/ch-elm/StructureDefinition/PublishDocumentReference HTTP/1.1
+Content-Type: application/fhir+json
+Accept: application/fhir+json
+
+< ../output/DocumentReference-1-DocumentReference.json
+
+### publication of a bundle to the simulator
+# @name publish
+POST https://ehealthsuisse.ihe-europe.net/elm-simulator/fhir/ch/DocumentReference HTTP/1.1
+Accept: application/fhir+json
+Content-Type: application/fhir+json
+
+< ../output/DocumentReference-1-DocumentReference.json
+
+### retrieve the published DocumentReference
+@id = {{publish.response.body.id}}
+GET https://ehealthsuisse.ihe-europe.net/elm-simulator/fhir/ch/DocumentReference/{{id}} HTTP/1.1
+Accept: application/fhir+json
+Content-Type: application/fhir+json
