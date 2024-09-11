@@ -1,4 +1,4 @@
-The CH ELM exchange format defines a FHIR document representing a coherent set of information specific to the transmission of laboratory data. This FHIR document is based on the [CH Lab report document](StructureDefinition-ch-lab-report-document.html) which is part of the [CH LAB-Report Project](ballot/index.html).
+The CH ELM exchange format defines a FHIR document representing a coherent set of information specific to the transmission of laboratory data. This FHIR document is based on the [CH Lab report document](StructureDefinition-ch-elm-document.html) which is part of the [CH LAB-Report Project](index.html).
 
 The exchange format expects a separate FHIR document per patient, organism and test performed.
 
@@ -6,59 +6,86 @@ The FHIR document consists of a bundle-resource of type "document" (the terms "F
 
 The bundle resource contains a consistent set of entries representing FHIR resources specific for the transmission of laboratory data:
 
-<table border="1" cellpadding="10" cellspacing="0">
-    <tr style="background-color: #A8D08D;">
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        padding: 10px; 
+    }
+
+    th, td {
+        padding: 15px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    th {
+        font-weight: bold;
+        width: 25%; 
+    }
+
+    td {
+        width: 25%; 
+    }
+</style>
+<table>
+    <tr>
     <td colspan="2">{</td>
   </tr>
   <tr>
-    <td colspan="3">"resourceType": "Bundle",</td>
+    <td colspan="2">"resourceType": "Bundle",</td>
   </tr>
    <tr>
-    <td colspan="4">"id": "document_id_nnnn",</td>
+    <td colspan="2">"id": "document_id_nnnn",</td>
   </tr>
 <tr>
-    <td colspan="5">"entry",</td>
+    <td colspan="2">"entry": [</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"resourceType": "Composition"<br>&nbsp;&nbsp;&nbsp;&nbsp;},</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"resourceType": "<a href="StructureDefinition-ch-elm-composition.html">Composition</a>"<br>&nbsp;&nbsp;&nbsp;&nbsp;},</td>
     <td>parameters like date, language, title, author, and referring to the different resources</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"resourceType": "DiagnosticReport"<br>&nbsp;&nbsp;&nbsp;&nbsp;},</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"resourceType": "<a href="StructureDefinition-ch-elm-diagnosticreport.html">DiagnosticReport</a>"<br>&nbsp;&nbsp;&nbsp;&nbsp;},</td>
     <td>represents the laboratory report as a result of a lab order, with references to all other resources</td>
-  </tr>
+ </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"resourceType": "Patient"<br>&nbsp;&nbsp;&nbsp;&nbsp;},</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"resourceType": "<a href="StructureDefinition-ch-elm-patient.html">Patient</a>"<br>&nbsp;&nbsp;&nbsp;&nbsp;},</td>
     <td>the person from whom the specimen was taken</td>
-  </tr>
+ </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"resourceType": "Observation"<br>&nbsp;&nbsp;&nbsp;&nbsp;},</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"resourceType": "<a href="StructureDefinition-ch-elm-observation-results-laboratory.html">Observation</a>"<br>&nbsp;&nbsp;&nbsp;&nbsp;},</td>
     <td>defines the analyzed organism with the laboratory test result-values, interpretation, and test execution date</td>
-  </tr>
+ </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"resourceType": "Specimen"<br>&nbsp;&nbsp;&nbsp;&nbsp;},</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"resourceType": "<a href="StructureDefinition-ch-elm-specimen.html">Specimen</a>"<br>&nbsp;&nbsp;&nbsp;&nbsp;},</td>
     <td>the specimen material with collection date</td>
-  </tr>
+ </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"resourceType": "ServiceRequest"<br>&nbsp;&nbsp;&nbsp;&nbsp;},</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"resourceType": "<a href="StructureDefinition-ch-elm-servicerequest-laboratory-order.html">ServiceRequest</a>"<br>&nbsp;&nbsp;&nbsp;&nbsp;},</td>
     <td>the lab order with the laboratory order ID, the requester, and performer of the laboratory test</td>
-  </tr>
+ </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"resourceType": "PractitionerRole"<br>&nbsp;&nbsp;&nbsp;&nbsp;},</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"resourceType": "<a href='StructureDefinition-ch-elm-practitionerrole-orderer.html'>PractitionerRole</a>"<br>&nbsp;&nbsp;&nbsp;&nbsp;},</td>
     <td>the orderer of the laboratory test containing a practitioner and/or organization</td>
-  </tr>
-  <tr>
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"resourceType": "Practitioner"<br>&nbsp;&nbsp;&nbsp;&nbsp;},</td>
+</tr>
+<tr>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"resourceType": "<a href='StructureDefinition-ch-elm-practitioner-orderer.html'>Practitioner</a>"<br>&nbsp;&nbsp;&nbsp;&nbsp;},</td>
     <td>the person ordering the laboratory test</td>
-  </tr>
-  <tr>
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"resourceType": "Organization"<br>&nbsp;&nbsp;&nbsp;&nbsp;},</td>
+</tr>
+<tr>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"resourceType": "<a href='StructureDefinition-ch-elm-organization-orderer.html'>Organization</a>"<br>&nbsp;&nbsp;&nbsp;&nbsp;},</td>
     <td>the organization ordering the laboratory test</td>
-  </tr>
-  <tr>
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"resourceType": "Organization"<br>&nbsp;&nbsp;&nbsp;&nbsp;}</td>
+</tr>
+<tr>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"resourceType": "<a href='StructureDefinition-ch-elm-organization-lab.html'>Organization</a>"<br>&nbsp;&nbsp;&nbsp;&nbsp;}</td>
     <td>the performing laboratory</td>
-  </tr>
+</tr>
   <tr>
     <td colspan="6">]</td>
   </tr>
@@ -84,12 +111,12 @@ See the examples in chapter 2.1 to learn how to use the resource profiles for di
 #### Default scenario
 
 examples of basic FHIR documents (no additional codes for organism or specimen)
-<table border="1" cellpadding="10" cellspacing="0" width="100%">
+<table>
     <thead>
         <tr>
             <th>Disease</th>
-            <th>Observation Code Display</th>
-            <th>LOINC Observation Code (Leading Code)</th>
+            <th>observation.code display</th>
+            <th>LOINC observation.code (leading code)</th>
             <th>FHIR Document</th>
         </tr>
     </thead>
@@ -224,12 +251,12 @@ examples of basic FHIR documents (no additional codes for organism or specimen)
 </table>
 
 Example of a Snomed code instead of a LOINC code in observation.code
-<table border="1" cellpadding="10" cellspacing="0" width="100%">
+<table>
     <thead>
-        <tr>
+      <tr>
             <th>Disease</th>
-            <th>Observation Code Display</th>
-            <th>SNOMED CT Observation Code (Leading Code)</th>
+            <th>observation.code display</th>
+            <th>LOINC observation.code (leading code)</th>
             <th>FHIR Document</th>
         </tr>
     </thead>
@@ -247,12 +274,12 @@ Example of a Snomed code instead of a LOINC code in observation.code
 </table>
 
 Example of an organism specification
-<table border="1" cellpadding="10" cellspacing="0" width="100%">
+<table>
     <thead>
-        <tr>
+          <tr>
             <th>Disease</th>
-            <th>Observation Code Display</th>
-            <th>LOINC Observation Code (Leading Code)</th>
+            <th>observation.code display</th>
+            <th>LOINC observation.code (leading code)</th>
             <th>FHIR Document</th>
         </tr>
     </thead>
@@ -297,12 +324,12 @@ Example of an organism specification
 </table>
 
 Example of a specimen specification
-<table border="1" cellpadding="10" cellspacing="0" width="100%">
+<table>
     <thead>
-        <tr>
+          <tr>
             <th>Disease</th>
-            <th>Observation Code Display</th>
-            <th>LOINC Observation Code (Leading Code)</th>
+            <th>observation.code display</th>
+            <th>LOINC observation.code (leading code)</th>
             <th>FHIR Document</th>
         </tr>
     </thead>
@@ -329,12 +356,12 @@ Example of a specimen specification
 </table>
 
 Example of a VCT Patient with specimen specification
-<table border="1" cellpadding="10" cellspacing="0" width="100%">
+<table>
     <thead>
-        <tr>
+          <tr>
             <th>Disease</th>
-            <th>Observation Code Display</th>
-            <th>LOINC Observation Code (Leading Code)</th>
+            <th>observation.code display</th>
+            <th>LOINC observation.code (leading code)</th>
             <th>FHIR Document</th>
         </tr>
     </thead>
@@ -352,12 +379,12 @@ Example of a VCT Patient with specimen specification
 </table>
 
 #### Broker scenario
-<table border="1" cellpadding="10" cellspacing="0" width="100%">
+<table>
     <thead>
-        <tr>
+           <tr>
             <th>Disease</th>
-            <th>Observation Code Display</th>
-            <th>LOINC Observation Code (Leading Code)</th>
+            <th>observation.code display</th>
+            <th>LOINC observation.code (leading code)</th>
             <th>FHIR Document</th>
         </tr>
     </thead>
@@ -375,12 +402,12 @@ Example of a VCT Patient with specimen specification
 </table>
 
 #### Scenario for confirmation tests
-<table border="1" cellpadding="10" cellspacing="0" width="100%">
+<table>
     <thead>
-        <tr>
+           <tr>
             <th>Disease</th>
-            <th>Observation Code Display</th>
-            <th>LOINC Observation Code (Leading Code)</th>
+            <th>observation.code display</th>
+            <th>LOINC observation.code (leading code)</th>
             <th>FHIR Document</th>
         </tr>
     </thead>
