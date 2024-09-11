@@ -22,7 +22,7 @@ This guide supports you as a laboratory in the following way:
 - The data elements defined by the ordinance of the Federal Office of Public Health (FOPH) for the report are defined in the [logical model](StructureDefinition-LaboratoryReport.html) and are then [mapped](StructureDefinition-LaboratoryReport-mappings.html#mappings-for-ch-elm-laboratory-report-to-fhir-hl7-org-fhir-r4) to the FHIR document structure.  
 - Value sets for the [terminology](terminology.html) are provided as FHIR resources which you can directly import from the [npm package](package.tgz).   
 - The [laboratory report](document.html) is sent to the FOPH by a [FHIR RESTful web API endpoint](api.html).
-- Further documentation for specific topics can be found on the [guidance](guidance.html).
+- Further documentation for specific topics can be found on [guidance](guidance.html) and/or by contacting the FOPH directly.
 
 [FHIR R4](https://hl7.org/fhir/R4/index.html) has a huge implementation community and offers various libraries to support the implementation of FHIR based solutions, for creating the FHIR document or providing a client for doing the FHIR API calls. For java we recommend [hapi-fhir](https://hapifhir.io/), for .NET [firely-net-sdk](https://github.com/FirelyTeam/firely-net-sdk), but there are also multiple other [options](https://confluence.hl7.org/display/FHIR/Open+Source+Implementations). If you have questions about general FHIR questions do not hesitate to ask in [chat.fhir.org](https://chat.fhir.org/).
 

@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-interpretation-code",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-interpretation-code",
-  "version": "2024-08-13",
+  "version": "2024-08-20",
   "name": "ChElmResultsToInterpretationCode",
   "title": "CH ELM Results To Interpretation Code",
   "status": "active",
@@ -25,6 +25,16 @@
       "source": "http://loinc.org",
       "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-interpretation-codes-vs",
       "element": [
+        {
+          "code": "46732-4",
+          "display": "Francisella tularensis subtype [Identifier] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
         {
           "code": "100383-9",
           "display": "Monkeypox virus DNA [Presence] in Specimen by NAA with probe detection",
@@ -78,6 +88,16 @@
         {
           "code": "101307-7",
           "display": "Plasmodium vivax+ovale DNA [Presence] in Blood by NAA with non-probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "101364-8",
+          "display": "Francisella tularensis DNA [Presence] in Blood by NAA with non-probe detection",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -236,16 +256,6 @@
           ]
         },
         {
-          "code": "13952-7",
-          "display": "Hepatitis B virus core Ab [Presence] in Serum or Plasma by Immunoassay",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "13954-3",
           "display": "Hepatitis B virus e Ag [Presence] in Serum or Plasma by Immunoassay",
           "target": [
@@ -258,6 +268,16 @@
         {
           "code": "14127-5",
           "display": "Neisseria gonorrhoeae [Presence] in Anal by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "14357-8",
+          "display": "Microscopic observation [Identifier] in Cerebral spinal fluid by Gram stain",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -318,16 +338,6 @@
         {
           "code": "16676-9",
           "display": "Corynebacterium diphtheriae [Presence] in Specimen by Organism specific culture",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "17057-1",
-          "display": "Legionella pneumophila Ag [Presence] in Specimen",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -426,6 +436,26 @@
           ]
         },
         {
+          "code": "23126-6",
+          "display": "Francisella tularensis Ag [Presence] in Tissue by Immune stain",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "23130-8",
+          "display": "Francisella tularensis DNA [Presence] in Tissue by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "23838-6",
           "display": "Chlamydia trachomatis rRNA [Presence] in Genital fluid by Probe",
           "target": [
@@ -476,8 +506,8 @@
           ]
         },
         {
-          "code": "26621-3",
-          "display": "Legionella sp Ag [Presence] in Specimen",
+          "code": "29610-3",
+          "display": "Hepatitis B virus DNA [Presence] in Serum or Plasma by NAA with probe detection",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -486,8 +516,8 @@
           ]
         },
         {
-          "code": "29610-3",
-          "display": "Hepatitis B virus DNA [Presence] in Serum or Plasma by NAA with probe detection",
+          "code": "29907-3",
+          "display": "Haemophilus influenzae B DNA [Presence] in Specimen by NAA with probe detection",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -536,6 +566,26 @@
           ]
         },
         {
+          "code": "31828-7",
+          "display": "Francisella tularensis Ag [Presence] in Serum",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "31829-5",
+          "display": "Francisella tularensis Ag [Presence] in Specimen",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "31844-4",
           "display": "Hepatitis B virus e Ag [Presence] in Serum",
           "target": [
@@ -568,16 +618,6 @@
         {
           "code": "31868-3",
           "display": "Legionella pneumophila 1 Ag [Presence] in Urine",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "31869-1",
-          "display": "Legionella pneumophila Ag [Presence] in Sputum",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -646,6 +686,16 @@
           ]
         },
         {
+          "code": "31912-9",
+          "display": "Neisseria meningitidis Ag [Presence] in Specimen",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "31969-9",
           "display": "Streptococcus pneumoniae Ag [Presence] in Specimen",
           "target": [
@@ -676,6 +726,26 @@
           ]
         },
         {
+          "code": "33676-8",
+          "display": "Francisella tularensis [Presence] in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "33679-2",
+          "display": "Francisella tularensis DNA [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "34487-9",
           "display": "Influenza virus A RNA [Presence] in Specimen by NAA with probe detection",
           "target": [
@@ -698,16 +768,6 @@
         {
           "code": "38382-8",
           "display": "Influenza virus B [Presence] in Specimen by Organism specific culture",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "38394-3",
-          "display": "Legionella sp identified in Urine by Organism specific culture",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -1116,6 +1176,16 @@
           ]
         },
         {
+          "code": "53607-8",
+          "display": "Haemophilus influenzae B DNA [Presence] in Blood by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "53879-3",
           "display": "Neisseria gonorrhoeae rRNA [Presence] in Vaginal fluid by NAA with probe detection",
           "target": [
@@ -1166,6 +1236,26 @@
           ]
         },
         {
+          "code": "53941-1",
+          "display": "Vibrio cholerae toxin Ag [Presence] in Isolate",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "53942-9",
+          "display": "Vibrio cholerae toxin ctx gene [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "55465-9",
           "display": "Influenza virus A H1 2009 pandemic RNA [Presence] in Specimen by NAA with probe detection",
           "target": [
@@ -1188,6 +1278,16 @@
         {
           "code": "57458-2",
           "display": "Neisseria gonorrhoeae rRNA [Presence] in Anal by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "58473-0",
+          "display": "Haemophilus influenzae serotype DNA [Identifier] in Specimen by NAA with probe detection",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -1246,8 +1346,18 @@
           ]
         },
         {
-          "code": "60420-7",
-          "display": "Dengue virus 2 RNA [Presence] in Serum by NAA with probe detection",
+          "code": "60422-3",
+          "display": "Measles virus genotype [Identifier] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "61366-1",
+          "display": "Haemophilus influenzae DNA [Presence] in Specimen by NAA with probe detection",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -1258,6 +1368,16 @@
         {
           "code": "61368-7",
           "display": "Campylobacter jejuni DNA [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "61371-1",
+          "display": "Vibrio cholerae DNA [Presence] in Specimen by NAA with probe detection",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -1336,6 +1456,16 @@
           ]
         },
         {
+          "code": "6508-6",
+          "display": "Neisseria meningitidis Ag [Presence] in Cerebral spinal fluid",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "6578-9",
           "display": "Vibrio sp identified in Blood by Organism specific culture",
           "target": [
@@ -1358,6 +1488,16 @@
         {
           "code": "6581-3",
           "display": "Vibrio sp identified in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "6584-7",
+          "display": "Virus identified in Specimen by Culture",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -1428,6 +1568,16 @@
         {
           "code": "694-0",
           "display": "Neisseria gonorrhoeae [Presence] in Semen by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "69410-9",
+          "display": "Haemophilus influenzae [Identifier] in Specimen by Organism specific culture",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -1616,6 +1766,16 @@
           ]
         },
         {
+          "code": "7890-7",
+          "display": "Francisella tularensis IgM Ab [Presence] in Serum",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "79189-7",
           "display": "Hepatitis C virus core Ag [Presence] in Serum or Plasma by Immunoassay",
           "target": [
@@ -1686,8 +1846,8 @@
           ]
         },
         {
-          "code": "81656-1",
-          "display": "Campylobacter coli+jejuni tuf gene [Presence] in Stool by NAA with probe detection",
+          "code": "80680-2",
+          "display": "Vibrio cholerae toxin ctxA gene [Presence] in Stool by NAA with probe detection",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -1696,8 +1856,8 @@
           ]
         },
         {
-          "code": "82187-6",
-          "display": "Streptococcus pneumoniae DNA [Presence] in Cerebral spinal fluid by NAA with non-probe detection",
+          "code": "81656-1",
+          "display": "Campylobacter coli+jejuni tuf gene [Presence] in Stool by NAA with probe detection",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -1788,6 +1948,26 @@
         {
           "code": "88584-8",
           "display": "Corynebacterium diphtheriae [Presence] in Upper respiratory specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "88585-5",
+          "display": "Legionella sp identified in Lower respiratory specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "88588-9",
+          "display": "Legionella sp DNA [Identifier] in Lower respiratory specimen by NAA with probe detection",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -2116,6 +2296,16 @@
           ]
         },
         {
+          "code": "97314-9",
+          "display": "Vibrio cholerae DNA [Presence] in Stool by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "97513-6",
           "display": "Campylobacter sp [Presence] in Specimen by Organism specific culture",
           "target": [
@@ -2148,6 +2338,16 @@
         {
           "code": "99092-9",
           "display": "Neisseria meningitidis DNA [Presence] in Cerebral spinal fluid by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "99094-5",
+          "display": "Streptococcus pneumoniae DNA [Presence] in Cerebral spinal fluid by NAA with probe detection",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",

@@ -5,20 +5,24 @@ The website of the Federal Office of Public Health (FOPH) ([EN](https://www.bag.
 ### Key Facts
 The reporting obligation is the key systemic element for the surveillance of communicable diseases in Switzerland. Notifiable laboratory findings must comply with the legal provisions regarding reporting criteria, reporting deadlines and reporting data in accordance with the Ordinance of the FDHA on the Reporting of Observations of Communicable human diseases (SR 818.101.126) ([DE](https://www.fedlex.admin.ch/eli/cc/2015/892/de), [FR](https://www.fedlex.admin.ch/eli/cc/2015/892/fr), [IT](https://www.fedlex.admin.ch/eli/cc/2015/892/it)).
 
-### Personal Data (Patient Name)
-Depending on the organism (leading code), the requirement for how the patient's name (e.g. Ernst Karl Tanner) is reported varies. There are different [patient name schemas](CodeSystem-ch-elm-foph-patient-name-representation.html) to be used:
+### Personal Data (Patient)
+Depending on the organism (leading code), the requirement for how the patient’s personal data, such as name or address, (e.g. Ernst Karl Tanner, Tannenstrasse 10a, 3000 Bern) is reported varies. There are different [patient schemas](CodeSystem-ch-elm-foph-patient-name-representation.html) to be used:
 * **Full Name**
    * Organism: SARS-CoV-2, Legionella spp., etc.
-   * [Example](Patient-Pat-006.json.html): Ernst Karl Tanner (Patient.name.family = Tanner, Patient.name.given = Ernst, Karl)
+   * see Profile [CH ELM Patient](StructureDefinition-ch-elm-patient.html) 
+   * [Example](Patient-Pat-006.json.html): Ernst Karl Tanner (Patient.name.family = Tanner, Patient.name.given = Ernst, Karl, Patient.address)
 * **Initials**
    * Organism: Organism: Neisseria gonorrhoeae, Chlamydia trachomatis, etc
-   * [Example](Patient-Pat-005.json.html): ET (Patient.name.family = T, Patient.name.given = E)
+   * see Profile [CH ELM Patient Initials](StructureDefinition-ChElmPatientInitials.html) 
+   * [Example](Patient-Pat-005.json.html): ET (Patient.name.family = T, Patient.name.given = E, no telecom and no street address)
 * **VCT Code**
    * Organism: Neisseria gonorrhoeae, Chlamydia trachomatis, Treponema pallidum
-   * [Example](Patient-Pat-VCT.json.html): kste12345 (Patient.name.extension = kste12345, Patient.name.family/Patient.name.given = masked)
+   * see Profile [CH ELM Patient VCT](StructureDefinition-ChElmPatientVCT.html) 
+   * [Example](Patient-Pat-VCT.json.html): kste12345 (Patient.name.extension = kste12345, Patient.name.family/Patient.name.given = masked, no telecom and no street address)
 * **HIV Code**
    * Organism: In the case of HIV/AIDS, under initials, enter the first letter and the number of letters of the first name. If this is longer than 9 letters, the number is 0. In the case of multi-part first names with a hyphen or in two words, only the first part is used.
-   * [Example](Patient-Pat-004.json.html): E5 (Patient.name.extension = E5, Patient.name.family/Patient.name.given = masked)
+   * see Profile [CH ELM Patient HIV](StructureDefinition-ChElmPatientHIV.html) 
+   * [Example](Patient-Pat-004.json.html): E5 (Patient.name.extension = E5, Patient.name.family/Patient.name.given = masked, no telecom and no street address)
 * **Conditional**
    * The patient's identification cannot determined directly based on the leading code. Consult the implementation guideline for further information.
 

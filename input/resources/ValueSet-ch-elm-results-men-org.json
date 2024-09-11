@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-results-men-org",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-men-org",
+  "version": "2024-08-20",
+  "name": "ChElmResultsMenOrg",
+  "title": "CH ELM Results Men Org",
+  "status": "active",
+  "experimental": false,
+  "description": "The \"CH ELM Results Men Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Men Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "17872004",
+            "display": "Neisseria meningitidis (organism)"
+          }
+        ]
+      }
+    ]
+  }
+}

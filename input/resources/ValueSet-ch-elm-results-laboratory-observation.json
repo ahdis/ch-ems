@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
-  "version": "2024-08-13",
+  "version": "2024-08-20",
   "name": "ChElmResultsLaboratoryObservation",
   "title": "CH ELM Results Laboratory Observation",
   "status": "active",
@@ -13,6 +13,10 @@
       {
         "system": "http://loinc.org",
         "concept": [
+          {
+            "code": "46732-4",
+            "display": "Francisella tularensis subtype [Identifier] in Specimen by NAA with probe detection"
+          },
           {
             "code": "100383-9",
             "display": "Monkeypox virus DNA [Presence] in Specimen by NAA with probe detection"
@@ -102,10 +106,6 @@
             "display": "Hepatitis C virus RNA [Presence] in Serum or Plasma by NAA with probe detection"
           },
           {
-            "code": "13952-7",
-            "display": "Hepatitis B virus core Ab [Presence] in Serum or Plasma by Immunoassay"
-          },
-          {
             "code": "13954-3",
             "display": "Hepatitis B virus e Ag [Presence] in Serum or Plasma by Immunoassay"
           },
@@ -140,10 +140,6 @@
           {
             "code": "16676-9",
             "display": "Corynebacterium diphtheriae [Presence] in Specimen by Organism specific culture"
-          },
-          {
-            "code": "17057-1",
-            "display": "Legionella pneumophila Ag [Presence] in Specimen"
           },
           {
             "code": "20489-1",
@@ -210,10 +206,6 @@
             "display": "Dengue virus IgM Ab [Presence] in Serum"
           },
           {
-            "code": "26621-3",
-            "display": "Legionella sp Ag [Presence] in Specimen"
-          },
-          {
             "code": "29610-3",
             "display": "Hepatitis B virus DNA [Presence] in Serum or Plasma by NAA with probe detection"
           },
@@ -262,10 +254,6 @@
             "display": "Legionella pneumophila 1 Ag [Presence] in Urine"
           },
           {
-            "code": "31869-1",
-            "display": "Legionella pneumophila Ag [Presence] in Sputum"
-          },
-          {
             "code": "31870-9",
             "display": "Legionella pneumophila Ag [Presence] in Urine"
           },
@@ -288,6 +276,10 @@
           {
             "code": "31887-3",
             "display": "Measles virus Ag [Presence] in Specimen"
+          },
+          {
+            "code": "31912-9",
+            "display": "Neisseria meningitidis Ag [Presence] in Specimen"
           },
           {
             "code": "31969-9",
@@ -320,10 +312,6 @@
           {
             "code": "38382-8",
             "display": "Influenza virus B [Presence] in Specimen by Organism specific culture"
-          },
-          {
-            "code": "38394-3",
-            "display": "Legionella sp identified in Urine by Organism specific culture"
           },
           {
             "code": "39007-0",
@@ -554,20 +542,8 @@
             "display": "Neisseria gonorrhoeae rRNA [Presence] in Urine by NAA with probe detection"
           },
           {
-            "code": "60262-3",
-            "display": "Dengue virus 1 RNA [Presence] in Serum by NAA with probe detection"
-          },
-          {
-            "code": "60418-1",
-            "display": "Dengue virus 4 RNA [Presence] in Serum by NAA with probe detection"
-          },
-          {
-            "code": "60419-9",
-            "display": "Dengue virus 3 RNA [Presence] in Serum by NAA with probe detection"
-          },
-          {
-            "code": "60420-7",
-            "display": "Dengue virus 2 RNA [Presence] in Serum by NAA with probe detection"
+            "code": "60422-3",
+            "display": "Measles virus genotype [Identifier] in Specimen by NAA with probe detection"
           },
           {
             "code": "61366-1",
@@ -608,6 +584,10 @@
           {
             "code": "6387-5",
             "display": "Dengue virus DNA [Presence] in Specimen by Probe"
+          },
+          {
+            "code": "6508-6",
+            "display": "Neisseria meningitidis Ag [Presence] in Cerebral spinal fluid"
           },
           {
             "code": "6578-9",
@@ -770,14 +750,6 @@
             "display": "Campylobacter coli+jejuni tuf gene [Presence] in Stool by NAA with probe detection"
           },
           {
-            "code": "82187-6",
-            "display": "Streptococcus pneumoniae DNA [Presence] in Cerebral spinal fluid by NAA with non-probe detection"
-          },
-          {
-            "code": "82201-5",
-            "display": "Vibrio cholerae DNA [Presence] in Stool by NAA with non-probe detection"
-          },
-          {
             "code": "82300-5",
             "display": "Shigella sp [Presence] in Stool by Culture"
           },
@@ -812,6 +784,14 @@
           {
             "code": "88584-8",
             "display": "Corynebacterium diphtheriae [Presence] in Upper respiratory specimen by Organism specific culture"
+          },
+          {
+            "code": "88585-5",
+            "display": "Legionella sp identified in Lower respiratory specimen by Organism specific culture"
+          },
+          {
+            "code": "88588-9",
+            "display": "Legionella sp DNA [Identifier] in Lower respiratory specimen by NAA with probe detection"
           },
           {
             "code": "88590-5",
@@ -942,6 +922,10 @@
             "display": "SARS-CoV-2 (COVID-19) RNA [Presence] in Oropharyngeal wash by NAA with probe detection"
           },
           {
+            "code": "97314-9",
+            "display": "Vibrio cholerae DNA [Presence] in Stool by NAA with probe detection"
+          },
+          {
             "code": "97513-6",
             "display": "Campylobacter sp [Presence] in Specimen by Organism specific culture"
           },
@@ -956,6 +940,10 @@
           {
             "code": "99092-9",
             "display": "Neisseria meningitidis DNA [Presence] in Cerebral spinal fluid by NAA with probe detection"
+          },
+          {
+            "code": "99094-5",
+            "display": "Streptococcus pneumoniae DNA [Presence] in Cerebral spinal fluid by NAA with probe detection"
           }
         ]
       },

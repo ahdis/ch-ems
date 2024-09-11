@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-cpe-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org",
-  "version": "2024-08-13",
+  "version": "2024-08-20",
   "name": "ChElmResultsCpeOrg",
   "title": "CH ELM Results Cpe Org",
   "status": "active",

@@ -12,11 +12,11 @@ status: active # draft | active | retired | unknown
 license: CC0-1.0
 copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CHE
-date: 2024-08-13
-version: 1.4.0-cibuild
+date: 2024-08-20
+version: 1.4.0
 fhirVersion: 4.0.1
 copyrightYear: 2023+
-releaseLabel: ci-build # release # ci-build 
+releaseLabel: release # ci-build # ci-build 
 publisher:
   name: Federal Office of Public Health FOPH
 contact:
@@ -149,9 +149,31 @@ resources:
   Bundle/17Doc-Neisseria:
     name: 17Doc - Neisseria meningitidis – microscopic finding
     description: Example Document for a microscopic observation of Neisseria meningitidis by primary lab
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Bundle/18Doc-C-diphtheriae:
     name: 18Doc - Corynebacterium diphtheriae 
     description: Example Document for Corynebacterium diphtheriae with specimen specification
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/19Doc-S-pneumoniae:
+    name: 19Doc - Streptococcus pneumoniae 
+    description: Example Document for Streptococcus pneumoniae
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/20Doc-Vibrio-cholerae:
+    name: 20Doc - Vibrio cholerae
+    description: Example Document for Vibrio cholerae
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/21Doc-HepatiteE:
+    name: 21Doc - Hepatite E
+    description: Example Document for Hepatite E
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/22Doc-H-influenzae:
+    name: 22Doc - Haemophilus influenzae
+    description: Example Document for Haemophilus influenzae
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/23Doc-F-tularensis:
+    name: 23Doc - Francisella tularensis with organism specification
+    description: Example Document for Francisella tularensis with organism specification
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Binary/Test92-Bundle-WarningBerUidGln:
     extension:
       - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format

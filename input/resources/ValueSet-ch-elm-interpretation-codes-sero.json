@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-interpretation-codes-sero",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-sero",
-  "version": "2024-08-13",
+  "version": "2024-08-20",
   "name": "ChElmInterpretationCodesSero",
   "title": "CH ELM Interpretation Codes SERO",
   "status": "active",

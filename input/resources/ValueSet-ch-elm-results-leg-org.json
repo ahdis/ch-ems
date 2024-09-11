@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-leg-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-leg-org",
-  "version": "2024-08-13",
+  "version": "2024-08-20",
   "name": "ChElmResultsLegOrg",
   "title": "CH ELM Results Leg Org",
   "status": "active",
@@ -44,6 +44,10 @@
           {
             "code": "116379006",
             "display": "Legionella maceachernii (organism)"
+          },
+          {
+            "code": "131325006",
+            "display": "Legionella pneumophilia serogroup 13 (organism)"
           },
           {
             "code": "18214000",

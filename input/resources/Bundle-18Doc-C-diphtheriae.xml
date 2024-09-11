@@ -227,6 +227,7 @@
         <id value="54d2ee7e-227e-4396-8653-8e82a6d0e3e7"/>
         <type>
           <coding>
+              <system value="http://snomed.info/sct"/>
             <code value="608969007"/>
           </coding>
         </type>

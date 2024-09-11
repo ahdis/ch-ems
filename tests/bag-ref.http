@@ -1,37 +1,43 @@
 ###
-GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/metadata HTTP/1.1
+GET https://ws.infreport-r.bag.admin.ch/ch-elm/v1/fhir/metadata HTTP/1.1
 Accept: application/fhir+xml
 
 ###
-GET https://ws.infreport-a.bag.admin.ch/ HTTP/1.1
+GET https://ws.infreport-r.bag.admin.ch/ HTTP/1.1
 Accept: application/fhir+xml
 
-
 ### Provoke ERROR (returns 400)
-POST https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference HTTP/1.1
+POST https://ws.infreport-r.bag.admin.ch/ch-elm/v1/fhir/DocumentReference HTTP/1.1
 Content-Type: application/fhir+json
 Accept: application/fhir+json
 
 TEST
 
 ### Successful POST
-POST https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference HTTP/1.1
+POST https://ws.infreport-r.bag.admin.ch/ch-elm/v1/fhir/DocumentReference/$validate HTTP/1.1
 Content-Type: application/fhir+json
 Accept: application/fhir+json
 
-< ./2Doc-ChlamydiaTrachomatis.json
+< ./output/DocumentReference-2-DocumentReferenceVct.json
+
+### Successful POST
+POST https://ws.infreport-r.bag.admin.ch/ch-elm/v1/fhir/DocumentReference/$validate HTTP/1.1
+Content-Type: application/fhir+json
+Accept: application/fhir+json
+
+< ./vct_document_normal_with_slice_information.json
 
 
 ### SARSS-CoV-2
 # @name docfref 
-POST https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference HTTP/1.1
+POST https://ws.infreport-r.bag.admin.ch/ch-elm/v1/fhir/DocumentReference HTTP/1.1
 Content-Type: application/fhir+json
 Accept: application/fhir+json
 
-< ../output/DocumentReference-7-DocumentReferenceStrict.json
+< ./vct_document_normal_with_slice_information.json
 
 ###
-GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference/{{docfref.response.body.id}} HTTP/1.1
+GET https://ws.infreport-r.bag.admin.ch/ch-elm/v1/fhir/DocumentReference/{{docfref.response.body.id}} HTTP/1.1
 Content-Type: application/fhir+json
 Accept: application/fhir+json
 
@@ -44,54 +50,54 @@ Accept: application/fhir+json
 < ./2Doc-ChlamydiaTrachomatis.json
 
 ###
-GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference/8064a318-0105-4d94-a7b0-48ea4c32cd81 HTTP/1.1
+GET https://ws.infreport-r.bag.admin.ch/ch-elm/v1/fhir/DocumentReference/8064a318-0105-4d94-a7b0-48ea4c32cd81 HTTP/1.1
 Content-Type: application/fhir+json
 Accept: application/fhir+json
 
 ### returns list
-GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference HTTP/1.1
+GET https://ws.infreport-r.bag.admin.ch/ch-elm/v1/fhir/DocumentReference HTTP/1.1
 Content-Type: application/fhir+json
 Accept: application/fhir+json
 
 ### returns list of only in-progress
-GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference?elm-status=in-progress HTTP/1.1
+GET https://ws.infreport-r.bag.admin.ch/ch-elm/v1/fhir/DocumentReference?elm-status=in-progress HTTP/1.1
 Content-Type: application/fhir+json
 Accept: application/fhir+json
 
 ### returns list of only in-progress
-GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference?elm-status=completed HTTP/1.1
+GET https://ws.infreport-r.bag.admin.ch/ch-elm/v1/fhir/DocumentReference?elm-status=completed HTTP/1.1
 Content-Type: application/fhir+json
 Accept: application/fhir+json
 
 ### returns lists as of nov-8-23 (currently 1)
-GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference?date=ge2023-11-08 HTTP/1.1
+GET https://ws.infreport-r.bag.admin.ch/ch-elm/v1/fhir/DocumentReference?date=ge2023-11-08 HTTP/1.1
 Content-Type: application/fhir+json
 Accept: application/fhir+json
 
 ### returns lists as of nov-8-23 (currently 3)
-GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference?date=lt2023-11-08 HTTP/1.1
+GET https://ws.infreport-r.bag.admin.ch/ch-elm/v1/fhir/DocumentReference?date=lt2023-11-08 HTTP/1.1
 Content-Type: application/fhir+json
 Accept: application/fhir+json
 
 ### returns lists as of nov-8-23 (currently 1)
-GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference?_lastUpdated=gt2023-11-08 HTTP/1.1
+GET https://ws.infreport-r.bag.admin.ch/ch-elm/v1/fhir/DocumentReference?_lastUpdated=gt2023-11-08 HTTP/1.1
 Content-Type: application/fhir+json
 Accept: application/fhir+json
 
 ### returns lists as of nov-8-23 (currently 3)
-GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference?_lastUpdated=lt2023-11-08 HTTP/1.1
+GET https://ws.infreport-r.bag.admin.ch/ch-elm/v1/fhir/DocumentReference?_lastUpdated=lt2023-11-08 HTTP/1.1
 Content-Type: application/fhir+json
 Accept: application/fhir+json
 
 ### returns identified by identifer
-GET https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference?identifier=urn:uuid:1901332d-6012-443f-9690-9291adb2e19d HTTP/1.1
+GET https://ws.infreport-r.bag.admin.ch/ch-elm/v1/fhir/DocumentReference?identifier=urn:uuid:1901332d-6012-443f-9690-9291adb2e19d HTTP/1.1
 Content-Type: application/fhir+json
 Accept: application/fhir+json
 
 
 ### Duplicate POST, correct, but 52 second response time
 ### need to remove 'http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict' from profile
-POST https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/DocumentReference HTTP/1.1
+POST https://ws.infreport-r.bag.admin.ch/ch-elm/v1/fhir/DocumentReference HTTP/1.1
 Content-Type: application/fhir+json
 Accept: application/fhir+json
 

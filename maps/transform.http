@@ -73,4 +73,39 @@ POST {{host}}/StructureMap/$transform?source=http://fhir.ch/ig/ch-elm/StructureM
 Accept: application/fhir+xml;fhirVersion=4.0
 Content-Type: application/fhir+json;fhirVersion=4.0
 
-< ./18Doc-C.diphtheriae.json
+< ./18Doc-C-diphtheriae.json
+
+### 2a. Transform order-referral-form to ORF Bundle
+POST {{host}}/StructureMap/$transform?source=http://fhir.ch/ig/ch-elm/StructureMap/QrToBundle
+Accept: application/fhir+xml;fhirVersion=4.0
+Content-Type: application/fhir+json;fhirVersion=4.0
+
+< ./19Doc-S-pneumoniae.json
+
+### 2a. Transform order-referral-form to ORF Bundle
+POST {{host}}/StructureMap/$transform?source=http://fhir.ch/ig/ch-elm/StructureMap/QrToBundle
+Accept: application/fhir+xml;fhirVersion=4.0
+Content-Type: application/fhir+json;fhirVersion=4.0
+
+< ./20Doc-Vibrio-cholerae.json
+
+### 2a. Transform order-referral-form to ORF Bundle
+POST {{host}}/StructureMap/$transform?source=http://fhir.ch/ig/ch-elm/StructureMap/QrToBundle
+Accept: application/fhir+xml;fhirVersion=4.0
+Content-Type: application/fhir+json;fhirVersion=4.0
+
+< ./21Doc-HepatiteE.json
+
+### 2a. Transform order-referral-form to ORF Bundle
+POST {{host}}/StructureMap/$transform?source=http://fhir.ch/ig/ch-elm/StructureMap/QrToBundle
+Accept: application/fhir+xml;fhirVersion=4.0
+Content-Type: application/fhir+json;fhirVersion=4.0
+
+< ./22Doc-H-influenzae.json
+
+### 2a. Transform order-referral-form to ORF Bundle
+POST {{host}}/StructureMap/$transform?source=http://fhir.ch/ig/ch-elm/StructureMap/QrToBundle
+Accept: application/fhir+xml;fhirVersion=4.0
+Content-Type: application/fhir+json;fhirVersion=4.0
+
+< ./23Doc-F-tularensis.json
