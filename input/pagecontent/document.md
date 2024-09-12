@@ -103,7 +103,7 @@ Example: the FHIR resource «organization» is used to map the sender of the FHI
 
 The diagram [“Resource Overview”](profiles.html#overview) illustrates the connections between the individual resource-profiles of a FHIR document.
 
-See the examples in chapter 2.1 to learn how to use the resource profiles for different use cases and data requirements.
+See the examples in chapter 2.2 to learn how to use the resource profiles for different use cases and data requirements.
 
 ### Example FHIR documents
 
