@@ -41,9 +41,7 @@ The bundle resource contains a consistent set of entries representing FHIR resou
   <tr>
     <td colspan="2">"resourceType": "Bundle",</td>
   </tr>
-   <tr>
-    <td colspan="2">"id": "document_id_nnnn",</td>
-  </tr>
+
 <tr>
     <td colspan="2">"entry": [</td>
   </tr>
