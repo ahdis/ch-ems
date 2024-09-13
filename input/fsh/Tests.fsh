@@ -62,7 +62,7 @@ InstanceOf: TestScript
 * insert ActionAssertResponseCodeOk
 * insert ActionAssertFhirPathTrue(Confirm that the returned resource is an OperationOutcome., [[is(FHIR.OperationOutcome)]])
 * insert ActionAssertFhirPathTrue(Confirm that we have at least one error, [[issue.where(severity='error' or severity='fatal').count()>0]])
-* insert ActionAssertFhirPathTrue(Check slicing fails, [[issue.where(severity='error' and diagnostics.startsWith('Slice \\'DocumentReference.contained:document\\': minimum required = 1, but only found 0')).count() > 0]])
+* insert ActionAssertFhirPathTrue(Check slicing fails, [[issue.where(severity='error' and diagnostics.startsWith('Slice \\'DocumentReference.contained:document\\': a matching slice is required, but not found')).count() > 0]])
 
 Instance: Test94-Ignore-Source-Warning
 InstanceOf: TestScript
