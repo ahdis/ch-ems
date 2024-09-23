@@ -7,23 +7,35 @@ The FHIR document consists of a bundle-resource of type "document" (the terms "F
 The bundle resource contains a consistent set of entries representing FHIR resources specific for the transmission of laboratory data:
 
 <style>
+
+   .first-table {
+       width: 85%;  
+       td:first-child {
+       width: 1%;
+       white-space: pre; 
+}  
+    }
     table {
         width: 100%;
         border-collapse: collapse;
         margin: 20px 0;
     }
-
+    
     table, th, td {
-        border: 1px solid black;
-        padding: 10px; 
+         border: 1px solid silver;
+         font-size: 12px;
+         line-height: 1.4em;
+         font-family: verdana;
+         font-weight: normal;
+         padding: 3px;
+         vertical-align: top;
+         overflow-wrap: break-word; 
     }
 
     th, td {
-        padding: 15px;
         text-align: left;
         vertical-align: top;
     }
-
 
     th {
         font-weight: bold;
@@ -33,15 +45,16 @@ The bundle resource contains a consistent set of entries representing FHIR resou
     td {
         width: 25%; 
     }
+
 </style>
-<table>
+
+<table class="first-table">
     <tr>
     <td colspan="2">{</td>
   </tr>
   <tr>
     <td colspan="2">"resourceType": "Bundle",</td>
   </tr>
-
 <tr>
     <td colspan="2">"entry": [</td>
   </tr>
@@ -128,6 +141,15 @@ examples of basic FHIR documents (no additional codes for organism or specimen)
                 <a href="Bundle-4Doc-Campylobacter.json.html">JSON</a>, 
                 <a href="Bundle-4Doc-Campylobacter.xml.html">XML</a>
             </td>
+        </tr>       
+        <tr>
+            <td>Chikungunya</td>
+            <td>Chikungunya virus RNA [Presence] in Urine by NAA with probe detection</td>
+            <td>86515-4</td>
+             <td>
+                <a href="Bundle-24Doc-Chikungunya.json.html">JSON</a>, 
+                <a href="Bundle-24Doc-Chikungunya.xml.html">XML</a>
+            </td>
         </tr>
         <tr>
             <td>Cholera</td>
@@ -184,6 +206,15 @@ examples of basic FHIR documents (no additional codes for organism or specimen)
             </td>
         </tr>
         <tr>
+            <td>Hepatitis A</td>
+            <td>Hepatitis A virus IgM Ab [Presence] in Serum</td>
+            <td>22314-9</td>
+           <td>
+                <a href="Bundle-26Doc-HepatiteA.json.html">JSON</a>, 
+                <a href="Bundle-26Doc-HepatiteA.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
             <td>Hepatitis B</td>
             <td>Hepatitis B virus core IgM Ab [Presence] in Serum</td>
             <td>31204-1</td>
@@ -219,6 +250,15 @@ examples of basic FHIR documents (no additional codes for organism or specimen)
                 <a href="Bundle-6Doc-Influenza.xml.html">XML</a>
             </td>
         </tr>
+          <tr>
+            <td>Listeriosis</td>
+            <td>Listeria monocytogenes DNA [Presence] in Cerebral spinal fluid by NAA with non-probe detection</td>
+            <td>82184-3</td>
+              <td>
+                <a href="Bundle-28Doc-Listeria-monocytogenes.json.html">JSON</a>, 
+                <a href="Bundle-28Doc-Listeria-monocytogenes.xml.html">XML</a>
+            </td>
+        </tr>
         <tr>
             <td>Malaria</td>
             <td>Plasmodium knowlesi DNA [Presence] in Blood by NAA with probe detection</td>
@@ -244,6 +284,24 @@ examples of basic FHIR documents (no additional codes for organism or specimen)
             <td>
                 <a href="Bundle-19Doc-S-pneumoniae.json.html">JSON</a>, 
                 <a href="Bundle-19Doc-S-pneumoniae.json.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Rubella - reporting of a seroconversion</td>
+            <td>Rubella virus IgG Ab [Interpretation] in Serum</td>
+            <td>20458-6</td>
+            <td>
+                <a href="Bundle-29Doc-Rubella.json.html">JSON</a>, 
+                <a href="Bundle-29Doc-Rubella.json.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Tick - borne encephalitis</td>
+            <td>Tick - borne encephalitis virus RNA [Presence] in Specimen by NAA with probe detection</td>
+            <td>97920-3</td>
+             <td>
+                <a href="Bundle-25Doc-tick-borne-encephalitis.json.html">JSON</a>, 
+                <a href="Bundle-25Doc-tick-borne-encephalitis.xml.html">XML</a>
             </td>
         </tr>
     </tbody>
@@ -284,7 +342,7 @@ Example of an organism specification
     </thead>
     <tbody>
         <tr>
-            <td>Carbapenemase-producing enterobacteriaceae (CPE)</td>
+            <td>Carbapenemase - producing enterobacteriaceae (CPE)</td>
             <td>Carbapenem resistance bla OXA-48-like gene [Presence] by Molecular method</td>
             <td>85827-4</td>
               <td>

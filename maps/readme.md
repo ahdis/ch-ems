@@ -15,5 +15,5 @@
 8. Add name/description/exampleCanonical of the example to sushi-config.yaml
 9. Add example in pagecontent/document.md for xml and json versions
 10. Run the IG Publisher and check that no errors have been created.
-11. Add new warnings to input/resources/ignoreWarnings.txt by changing in this example the url from qa.html http://localhost:52330/output/qa.html# to qa.txt http://localhost:52330/output/qa.txt#
+11. Add new warnings to input/resources/ignoreWarnings.txt by changing in this example the url from qa.html http://localhost:XXXXX/output/qa.html# to qa.txt http://localhost:XXXXX/output/qa.txt#
 12. Add/Update Changelog
