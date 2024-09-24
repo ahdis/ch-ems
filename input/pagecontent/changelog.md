@@ -1,5 +1,8 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
+### 1.5.0 2024/09/24
+* [#115](https://github.com/ahdis/ch-elm/issues/115) reorganize FHIR document page and add examples for Chikungunya fever, Tick-borne encephalitis, Hepatitis A, Listeriosis and Rubella - reporting of a seroconversion, valuesets are also updated
+
 ### 1.4.0 2024/08/20
 
 * [#111](https://github.com/ahdis/ch-elm/issues/111) added examples for Neisseria (primary and secondary lab), Measles Seroconversion,  Corynebacterium diphtheriae, Streptococcus pneumoniae,  Vibrio cholerae, Hepatite E, Haemophilus influenzae, Francisella tularensis, Dengue Titer and updated valuesets

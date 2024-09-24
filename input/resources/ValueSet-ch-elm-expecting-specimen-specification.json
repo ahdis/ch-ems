@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-expecting-specimen-specification",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-specimen-specification",
-  "version": "2024-08-20",
+  "version": "2024-09-24",
   "name": "ChElmExpectingSpecimenSpecification",
   "title": "CH ELM Expecting Specimen Specification",
   "status": "active",
@@ -14,28 +14,12 @@
         "system": "http://loinc.org",
         "concept": [
           {
-            "code": "104375-1",
-            "display": "Corynebacterium ulcerans DNA [Presence] in Specimen by NAA with probe detection"
-          },
-          {
-            "code": "104376-9",
-            "display": "Diphtheria toxin DNA [Presence] in Specimen by NAA with probe detection"
-          },
-          {
             "code": "16134-9",
             "display": "Neisseria meningitidis [Presence] in Specimen by Organism specific culture"
           },
           {
-            "code": "16676-9",
-            "display": "Corynebacterium diphtheriae [Presence] in Specimen by Organism specific culture"
-          },
-          {
             "code": "21613-5",
             "display": "Chlamydia trachomatis DNA [Presence] in Specimen by NAA with probe detection"
-          },
-          {
-            "code": "24102-6",
-            "display": "Corynebacterium toxin [Presence] in Specimen by Immune diffusion (ID)"
           },
           {
             "code": "29907-3",
@@ -78,6 +62,10 @@
             "display": "Haemophilus influenzae DNA [Presence] in Specimen by NAA with probe detection"
           },
           {
+            "code": "61369-5",
+            "display": "Listeria monocytogenes DNA [Presence] in Specimen by NAA with probe detection"
+          },
+          {
             "code": "6349-5",
             "display": "Chlamydia trachomatis [Presence] in Specimen by Organism specific culture"
           },
@@ -86,8 +74,8 @@
             "display": "Haemophilus sp identified in Specimen by Organism specific culture"
           },
           {
-            "code": "67561-1",
-            "display": "Corynebacterium diphtheriae DNA [Presence] in Specimen by NAA with probe detection"
+            "code": "6609-2",
+            "display": "Listeria sp identified in Specimen by Organism specific culture"
           },
           {
             "code": "69410-9",

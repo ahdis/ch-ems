@@ -112,5 +112,37 @@ Entry 'urn:uuid:2cf0731f-5d91-4fe4-ae17-5cc29a35daa6' isn't reachable by travers
 Entry 'urn:uuid:e9dcd38c-593d-4db5-9181-e439c6fda5dd' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'urn:uuid:265708c7-e532-4855-908b-cfea197761b8' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 
+# input\resources\Bundle-24Doc-Chikungunya.xml ==
+Entry 'urn:uuid:8564e794-a14e-4efd-baa8-341be26e7cd0' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:8ebae5a6-ac49-48dc-89c0-8b0050609d12' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+# input\resources\Bundle-25Doc-Tick-borne-encephalitis.xml ==
+Entry 'urn:uuid:004324bc-a50d-41d6-a9a7-53eaf8ce3664' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:0b8c928d-75fa-4197-a3e4-dee35ad58368' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+# input\resources\Bundle-26Doc-HepatiteA.xml ==
+Entry 'urn:uuid:c2b11250-ca1b-4a52-84f5-1d7e4620686d' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:5a34f3ae-3f19-4dfe-9344-444e183a9299' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+# input\resources\27Doc-Coxiella burnetii.xml ==
+Entry 'urn:uuid:140341c9-fa68-46f4-ad36-6a5a92dc5729' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:27de4201-e81f-4e7f-a38b-3d236554e57b' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+# input\resources\Bundle-28Doc-Listeria-monocytogenes.xml ==
+Entry 'urn:uuid:14dc2c6d-1697-46de-90a2-5f8327739503' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:66c62457-104a-4a81-8fad-d76e6bbbf50d' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+# input\resources\Bundle-29Doc-Rubella.xml ==
+Entry 'urn:uuid:1736e921-e851-49e9-ac2e-d66ecf8a2485' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:b0ee488e-8fc6-43d3-96ed-3d7edcdcee54' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+# input\resources\Bundle-30Doc-Salmonella-enteritidis.xml ==
+Entry 'urn:uuid:7688a35a-13d7-47e6-957e-88bebc80f74c' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:f3a6fb93-867e-4283-bc41-d6b3e4018efb' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+# input\resources\Bundle-31Doc-Salmonella-typhi.xml ==
+Entry 'urn:uuid:bdae0960-c093-4684-ae8f-863f8bcf4613' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:22702194-d26d-4352-a5f8-805dd1fb6bcb' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
 # Terminology error during build, no impact
 Error from http://tx.fhir.org/r4: POST Stream too large%

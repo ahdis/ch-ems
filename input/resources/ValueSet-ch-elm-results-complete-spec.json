@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-complete-spec",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-complete-spec",
-  "version": "2024-08-20",
+  "version": "2024-09-24",
   "name": "ChElmResultsCompleteSpec",
   "title": "CH ELM Results Complete Spec",
   "status": "active",
@@ -76,6 +76,10 @@
           {
             "code": "119395005",
             "display": "Specimen from uterine cervix (specimen)"
+          },
+          {
+            "code": "309066003",
+            "display": "Skin biopsy specimen (specimen)"
           },
           {
             "code": "122575003",
@@ -200,6 +204,10 @@
           {
             "code": "119324002",
             "display": "Specimen of unknown material (specimen)"
+          },
+          {
+            "code": "122571007",
+            "display": "Pericardial fluid specimen (specimen)"
           },
           {
             "code": "309165001",

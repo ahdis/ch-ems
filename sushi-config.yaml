@@ -12,8 +12,8 @@ status: active # draft | active | retired | unknown
 license: CC0-1.0
 copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CHE
-date: 2024-08-20
-version: 1.4.0
+date: 2024-09-24
+version: 1.5.0
 fhirVersion: 4.0.1
 copyrightYear: 2023+
 releaseLabel: release # ci-build # ci-build 
@@ -174,6 +174,38 @@ resources:
     name: 23Doc - Francisella tularensis with organism specification
     description: Example Document for Francisella tularensis with organism specification
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/24Doc-Chikungunya:
+    name: 24Doc - Chikungunya fever 
+    description: Example Document for Chikungunya fever
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/25Doc-Tick-borne-encephalitis:
+    name: 25Doc - Tick-borne encephalitis
+    description: Example Document for Tick-borne encephalitis
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/26Doc-HepatiteA:
+    name: 26Doc - Hepatite A
+    description: Example Document for Hepatite A
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  # Bundle/27Doc-Coxiella-burnetii:
+  #  name: 27Doc - Coxiella burnetii
+  # description: Example Document for Coxiella burnetii
+  #  exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/28Doc-Listeria-monocytogenes:
+    name: 28Doc - Listeria monocytogenes
+    description: Example Document for Listeria monocytogenes
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/29Doc-Rubella:
+    name: 29Doc - Rubella
+    description: Example Document for Rubella
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  # Bundle/30Doc-Salmonella-enteritidis:
+  # name: 30Doc - Salmonella enteritidis
+  #  description: Example Document for Salmonella enteritidis
+  #   exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  #Bundle/31Doc-Salmonella-typhi:
+  # name: 31Doc - Salmonella typhi
+  # description: Example Document for Salmonella typhi
+  # exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict         
   Binary/Test92-Bundle-WarningBerUidGln:
     extension:
       - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format

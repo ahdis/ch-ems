@@ -109,3 +109,60 @@ Accept: application/fhir+xml;fhirVersion=4.0
 Content-Type: application/fhir+json;fhirVersion=4.0
 
 < ./23Doc-F-tularensis.json
+
+### 2a. Transform order-referral-form to ORF Bundle
+POST {{host}}/StructureMap/$transform?source=http://fhir.ch/ig/ch-elm/StructureMap/QrToBundle
+Accept: application/fhir+xml;fhirVersion=4.0
+Content-Type: application/fhir+json;fhirVersion=4.0
+
+< ./24Doc-Chikungunya.json
+
+### 2a. Transform order-referral-form to ORF Bundle
+POST {{host}}/StructureMap/$transform?source=http://fhir.ch/ig/ch-elm/StructureMap/QrToBundle
+Accept: application/fhir+xml;fhirVersion=4.0
+Content-Type: application/fhir+json;fhirVersion=4.0
+
+< ./25Doc-tick-borne-encephalitis.json
+
+### 2a. Transform order-referral-form to ORF Bundle
+POST {{host}}/StructureMap/$transform?source=http://fhir.ch/ig/ch-elm/StructureMap/QrToBundle
+Accept: application/fhir+xml;fhirVersion=4.0
+Content-Type: application/fhir+json;fhirVersion=4.0
+
+< ./26Doc-HepatiteA.json
+
+### 2a. Transform order-referral-form to ORF Bundle
+POST {{host}}/StructureMap/$transform?source=http://fhir.ch/ig/ch-elm/StructureMap/QrToBundle
+Accept: application/fhir+xml;fhirVersion=4.0
+Content-Type: application/fhir+json;fhirVersion=4.0
+
+< ./27Doc-Coxiella-burnetii.json
+
+### 2a. Transform order-referral-form to ORF Bundle
+POST {{host}}/StructureMap/$transform?source=http://fhir.ch/ig/ch-elm/StructureMap/QrToBundle
+Accept: application/fhir+xml;fhirVersion=4.0
+Content-Type: application/fhir+json;fhirVersion=4.0
+
+< ./28Doc-Listeria-monocytogenes.json
+
+### 2a. Transform order-referral-form to ORF Bundle
+POST {{host}}/StructureMap/$transform?source=http://fhir.ch/ig/ch-elm/StructureMap/QrToBundle
+Accept: application/fhir+xml;fhirVersion=4.0
+Content-Type: application/fhir+json;fhirVersion=4.0
+
+< ./29Doc-Rubella.json
+
+### 2a. Transform order-referral-form to ORF Bundle
+POST {{host}}/StructureMap/$transform?source=http://fhir.ch/ig/ch-elm/StructureMap/QrToBundle
+Accept: application/fhir+xml;fhirVersion=4.0
+Content-Type: application/fhir+json;fhirVersion=4.0
+
+< ./30Doc-Salmonella-enteritidis.json
+
+
+### 2a. Transform order-referral-form to ORF Bundle
+POST {{host}}/StructureMap/$transform?source=http://fhir.ch/ig/ch-elm/StructureMap/QrToBundle
+Accept: application/fhir+xml;fhirVersion=4.0
+Content-Type: application/fhir+json;fhirVersion=4.0
+
+< ./31Doc-Salmonella-typhi.json
