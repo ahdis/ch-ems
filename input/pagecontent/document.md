@@ -122,13 +122,19 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
 
 #### Default scenario
 
-examples of basic FHIR documents (no additional codes for organism or specimen)
-<table>
+##### Examples of basic FHIR documents (no additional codes for organism or specimen)
+<table class="grid">
+    <colgroup> 
+        <col style="width:25%" /> 
+        <col style="width:50%" /> 
+        <col style="width:15%" /> 
+        <col style="width:10%" /> 
+    </colgroup> 
     <thead>
         <tr>
             <th>Disease</th>
             <th>observation.code display</th>
-            <th>LOINC observation.code (leading code)</th>
+            <th>LOINC observation.code<br />(leading code)</th>
             <th>FHIR Document</th>
         </tr>
     </thead>
@@ -143,7 +149,7 @@ examples of basic FHIR documents (no additional codes for organism or specimen)
             </td>
         </tr>       
         <tr>
-            <td>Chikungunya</td>
+            <td>Chikungunya fever</td>
             <td>Chikungunya virus RNA [Presence] in Urine by NAA with probe detection</td>
             <td>86515-4</td>
              <td>
@@ -300,20 +306,26 @@ examples of basic FHIR documents (no additional codes for organism or specimen)
             <td>Tick - borne encephalitis virus RNA [Presence] in Specimen by NAA with probe detection</td>
             <td>97920-3</td>
              <td>
-                <a href="Bundle-25Doc-tick-borne-encephalitis.json.html">JSON</a>, 
-                <a href="Bundle-25Doc-tick-borne-encephalitis.xml.html">XML</a>
+                <a href="Bundle-25Doc-Tick-borne-encephalitis.json.html">JSON</a>, 
+                <a href="Bundle-25Doc-Tick-borne-encephalitis.xml.html">XML</a>
             </td>
         </tr>
     </tbody>
 </table>
 
-Example of a Snomed code instead of a LOINC code in observation.code
-<table>
+##### Example of a SNOMED CT code instead of a LOINC code in observation.code
+<table class="grid">
+    <colgroup> 
+        <col style="width:25%" /> 
+        <col style="width:50%" /> 
+        <col style="width:15%" /> 
+        <col style="width:10%" /> 
+    </colgroup> 
     <thead>
       <tr>
             <th>Disease</th>
             <th>observation.code display</th>
-            <th>LOINC observation.code (leading code)</th>
+            <th>SNOMED CT observation.code<br />(leading code)</th>
             <th>FHIR Document</th>
         </tr>
     </thead>
@@ -330,13 +342,19 @@ Example of a Snomed code instead of a LOINC code in observation.code
     </tbody>
 </table>
 
-Example of an organism specification
-<table>
+##### Example of an organism specification
+<table class="grid">
+    <colgroup> 
+        <col style="width:25%" /> 
+        <col style="width:50%" /> 
+        <col style="width:15%" /> 
+        <col style="width:10%" /> 
+    </colgroup> 
     <thead>
           <tr>
             <th>Disease</th>
             <th>observation.code display</th>
-            <th>LOINC observation.code (leading code)</th>
+            <th>LOINC observation.code<br />(leading code)</th>
             <th>FHIR Document</th>
         </tr>
     </thead>
@@ -380,13 +398,19 @@ Example of an organism specification
     </tbody>
 </table>
 
-Example of a specimen specification
-<table>
+##### Example of a specimen specification
+<table class="grid">
+    <colgroup> 
+        <col style="width:25%" /> 
+        <col style="width:50%" /> 
+        <col style="width:15%" /> 
+        <col style="width:10%" /> 
+    </colgroup> 
     <thead>
           <tr>
             <th>Disease</th>
             <th>observation.code display</th>
-            <th>LOINC observation.code (leading code)</th>
+            <th>LOINC observation.code<br />(leading code)</th>
             <th>FHIR Document</th>
         </tr>
     </thead>
@@ -412,13 +436,19 @@ Example of a specimen specification
     </tbody>
 </table>
 
-Example of a VCT Patient with specimen specification
-<table>
+##### Example of a VCT Patient with specimen specification
+<table class="grid">
+    <colgroup> 
+        <col style="width:25%" /> 
+        <col style="width:50%" /> 
+        <col style="width:15%" /> 
+        <col style="width:10%" /> 
+    </colgroup> 
     <thead>
           <tr>
             <th>Disease</th>
             <th>observation.code display</th>
-            <th>LOINC observation.code (leading code)</th>
+            <th>LOINC observation.code<br />(leading code)</th>
             <th>FHIR Document</th>
         </tr>
     </thead>
@@ -436,12 +466,18 @@ Example of a VCT Patient with specimen specification
 </table>
 
 #### Broker scenario
-<table>
+<table class="grid">
+    <colgroup> 
+        <col style="width:25%" /> 
+        <col style="width:50%" /> 
+        <col style="width:15%" /> 
+        <col style="width:10%" /> 
+    </colgroup> 
     <thead>
            <tr>
             <th>Disease</th>
             <th>observation.code display</th>
-            <th>LOINC observation.code (leading code)</th>
+            <th>LOINC observation.code<br />(leading code)</th>
             <th>FHIR Document</th>
         </tr>
     </thead>
@@ -459,12 +495,18 @@ Example of a VCT Patient with specimen specification
 </table>
 
 #### Scenario for confirmation tests
-<table>
+<table class="grid">
+    <colgroup> 
+        <col style="width:25%" /> 
+        <col style="width:50%" /> 
+        <col style="width:15%" /> 
+        <col style="width:10%" /> 
+    </colgroup> 
     <thead>
            <tr>
             <th>Disease</th>
             <th>observation.code display</th>
-            <th>LOINC observation.code (leading code)</th>
+            <th>LOINC observation.code<br />(leading code)</th>
             <th>FHIR Document</th>
         </tr>
     </thead>

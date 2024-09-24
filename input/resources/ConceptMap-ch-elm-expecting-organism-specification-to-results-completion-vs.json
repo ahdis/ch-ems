@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-expecting-organism-specification-to-results-completion-vs",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-organism-specification-to-results-completion-vs",
-  "version": "2024-08-20",
+  "version": "2024-09-24",
   "name": "ChElmExpectingOrganismSpecificationToResultsCompletionVs",
   "title": "CH ELM Expecting Organism Specification To Results Completion Vs",
   "status": "active",
@@ -25,16 +25,6 @@
       "source": "http://loinc.org",
       "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-completion-vs",
       "element": [
-        {
-          "code": "46732-4",
-          "display": "Francisella tularensis subtype [Identifier] in Specimen by NAA with probe detection",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tul-org",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
         {
           "code": "100911-7",
           "display": "Campylobacter sp [Presence] in Stool by Organism specific culture",
@@ -141,6 +131,16 @@
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-shi-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "46732-4",
+          "display": "Francisella tularensis subtype [Identifier] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-tul-org",
               "equivalence": "relatedto"
             }
           ]
@@ -301,6 +301,16 @@
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-haem-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "6609-2",
+          "display": "Listeria sp identified in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-lis-org",
               "equivalence": "relatedto"
             }
           ]

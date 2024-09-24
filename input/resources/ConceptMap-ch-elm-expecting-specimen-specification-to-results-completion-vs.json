@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-expecting-specimen-specification-to-results-completion-vs",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-specimen-specification-to-results-completion-vs",
-  "version": "2024-08-20",
+  "version": "2024-09-24",
   "name": "ChElmExpectingSpecimenSpecificationToResultsCompletionVs",
   "title": "CH ELM Expecting Specimen Specification To Results Completion Vs",
   "status": "active",
@@ -26,26 +26,6 @@
       "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-results-completion-vs",
       "element": [
         {
-          "code": "104375-1",
-          "display": "Corynebacterium ulcerans DNA [Presence] in Specimen by NAA with probe detection",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-complete-spec",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "104376-9",
-          "display": "Diphtheria toxin DNA [Presence] in Specimen by NAA with probe detection",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-complete-spec",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "16134-9",
           "display": "Neisseria meningitidis [Presence] in Specimen by Organism specific culture",
           "target": [
@@ -56,31 +36,11 @@
           ]
         },
         {
-          "code": "16676-9",
-          "display": "Corynebacterium diphtheriae [Presence] in Specimen by Organism specific culture",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-complete-spec",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "21613-5",
           "display": "Chlamydia trachomatis DNA [Presence] in Specimen by NAA with probe detection",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-geni-spec",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "24102-6",
-          "display": "Corynebacterium toxin [Presence] in Specimen by Immune diffusion (ID)",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-complete-spec",
               "equivalence": "relatedto"
             }
           ]
@@ -186,6 +146,16 @@
           ]
         },
         {
+          "code": "61369-5",
+          "display": "Listeria monocytogenes DNA [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sterile-spec",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "6349-5",
           "display": "Chlamydia trachomatis [Presence] in Specimen by Organism specific culture",
           "target": [
@@ -206,11 +176,11 @@
           ]
         },
         {
-          "code": "67561-1",
-          "display": "Corynebacterium diphtheriae DNA [Presence] in Specimen by NAA with probe detection",
+          "code": "6609-2",
+          "display": "Listeria sp identified in Specimen by Organism specific culture",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-complete-spec",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sterile-spec",
               "equivalence": "relatedto"
             }
           ]

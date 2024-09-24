@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-virus-cult-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-virus-cult-org",
-  "version": "2024-08-20",
+  "version": "2024-09-24",
   "name": "ChElmResultsVirusCultOrg",
   "title": "CH ELM Results Virus Cult Org",
   "status": "active",
@@ -14,8 +14,16 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "32323003",
+            "display": "Tick-borne encephalitis virus (organism)"
+          },
+          {
             "code": "34348001",
             "display": "Dengue virus (organism)"
+          },
+          {
+            "code": "2423009",
+            "display": "Chikungunya virus (organism)"
           }
         ]
       }

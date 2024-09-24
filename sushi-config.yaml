@@ -12,8 +12,8 @@ status: active # draft | active | retired | unknown
 license: CC0-1.0
 copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CHE
-date: 2024-08-20
-version: 1.4.0
+date: 2024-09-24
+version: 1.5.0
 fhirVersion: 4.0.1
 copyrightYear: 2023+
 releaseLabel: release # ci-build # ci-build 
@@ -178,7 +178,7 @@ resources:
     name: 24Doc - Chikungunya fever 
     description: Example Document for Chikungunya fever
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
-  Bundle/25Doc-tick-borne-encephalitis:
+  Bundle/25Doc-Tick-borne-encephalitis:
     name: 25Doc - Tick-borne encephalitis
     description: Example Document for Tick-borne encephalitis
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict

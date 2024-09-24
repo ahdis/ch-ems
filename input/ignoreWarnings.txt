@@ -116,7 +116,7 @@ Entry 'urn:uuid:265708c7-e532-4855-908b-cfea197761b8' isn't reachable by travers
 Entry 'urn:uuid:8564e794-a14e-4efd-baa8-341be26e7cd0' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'urn:uuid:8ebae5a6-ac49-48dc-89c0-8b0050609d12' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 
-# input\resources\Bundle-25Doc-tick-borne-encephalitis.xml ==
+# input\resources\Bundle-25Doc-Tick-borne-encephalitis.xml ==
 Entry 'urn:uuid:004324bc-a50d-41d6-a9a7-53eaf8ce3664' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'urn:uuid:0b8c928d-75fa-4197-a3e4-dee35ad58368' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 

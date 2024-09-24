@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle 
   xmlns="http://hl7.org/fhir">
-  <id value="25Doc-tick-borne-encephalitis"/>
+  <id value="25Doc-Tick-borne-encephalitis"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:uuid:ac01252d-6012-443f-9690-9291adb23433"/>
@@ -129,6 +129,7 @@
         </performer>
         <valueCodeableConcept>
           <coding>
+            <system value="http://snomed.info/sct"/>
             <code value="91508008"/>
           </coding>
         </valueCodeableConcept>
