@@ -19,7 +19,7 @@
     }
   ],
   "sourceCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
-  "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-vs",
+  "targetCanonical": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-observation-profile-vs",
   "group": [
     {
       "source": "http://loinc.org",
