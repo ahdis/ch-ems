@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "ch-elm-observation-profile",
   "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-observation-profile",
-  "version": "2024-09-18",
+  "version": "2024-10-17",
   "name": "ChElmObservationProfile",
   "title": "CH ELM Observation Profile",
   "status": "active",
@@ -22,13 +22,13 @@
   "content": "complete",
   "concept": [
     {
-      "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-pq"
+      "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-txt"
     },
     {
       "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-rto"
     },
     {
-      "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-txt"
+      "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-pq"
     }
   ]
 }
