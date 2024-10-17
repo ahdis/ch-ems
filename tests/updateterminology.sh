@@ -354,7 +354,7 @@ curl --request GET \
   --key $KEY \
   -o ../input/resources/CodeSystem-$CODESYSTEM.json
 
-CODESYSTEM="ch-elm-observation-profile"
+CODESYSTEM="ch-elm-observation-profile-vs"
 curl --request GET \
   --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/CodeSystem/$CODESYSTEM \
   --header 'accept: application/fhir+json' \
