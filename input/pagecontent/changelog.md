@@ -1,4 +1,7 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
+### 1.6.0 - unreleased
+
+* [#118](https://github.com/ahdis/ch-elm/issues/118)Observation.value depending on leading code
 
 * [#117](https://github.com/ahdis/ch-elm/issues/117) New Interpretation Valueset «avidity»
 
