@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-results-bru-org",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-bru-org",
+  "version": "2024-10-21",
+  "name": "ChElmResultsBruOrg",
+  "title": "CH ELM Results Bru Org",
+  "status": "active",
+  "experimental": false,
+  "description": "The \"CH ELM Results Bru Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Bru Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "72829003",
+            "display": "Brucella melitensis (organism)"
+          },
+          {
+            "code": "38025008",
+            "display": "Brucella canis (organism)"
+          },
+          {
+            "code": "24224000",
+            "display": "Brucella abortus (organism)"
+          },
+          {
+            "code": "48317004",
+            "display": "Brucella suis (organism)"
+          },
+          {
+            "code": "26250004",
+            "display": "Genus Brucella (organism)"
+          }
+        ]
+      }
+    ]
+  }
+}

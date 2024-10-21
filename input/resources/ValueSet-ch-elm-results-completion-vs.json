@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-completion-vs",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-completion-vs",
-  "version": "2024-10-15",
+  "version": "2024-10-21",
   "name": "ChElmResultsCompletionVs",
   "title": "CH ELM Results Completion Vs",
   "status": "active",
@@ -47,13 +47,22 @@
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-chol-org"
           },
           {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cjd-org"
+          },
+          {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org"
           },
           {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-diph-org"
           },
           {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-ebol-org"
+          },
+          {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-ehec-org"
+          },
+          {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-ehec-tox-org"
           },
           {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-haem-org"
@@ -77,6 +86,9 @@
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mal-org"
           },
           {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-maldi-tof-org"
+          },
+          {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mea-org"
           },
           {
@@ -96,6 +108,9 @@
           },
           {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sal-org"
+          },
+          {
+            "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sal-org-complete"
           },
           {
             "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-shi-org"

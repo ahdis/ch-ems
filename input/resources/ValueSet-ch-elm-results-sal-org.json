@@ -2,10 +2,51 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-sal-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sal-org",
-  "version": "2024-05-07",
+  "version": "2024-10-21",
   "name": "ChElmResultsSalOrg",
   "title": "CH ELM Results Sal Org",
   "status": "active",
   "experimental": false,
-  "description": "The \"CH ELM Results Sal Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Sal Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information."
+  "description": "The \"CH ELM Results Sal Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Sal Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "85908006",
+            "display": "Salmonella Paratyphi B (organism)"
+          },
+          {
+            "code": "79128009",
+            "display": "Salmonella Paratyphi A (organism)"
+          },
+          {
+            "code": "5595000",
+            "display": "Salmonella Typhi (organism)"
+          },
+          {
+            "code": "73525009",
+            "display": "Salmonella Enteritidis (organism)"
+          },
+          {
+            "code": "398467008",
+            "display": "Salmonella group O:4 (organism)"
+          },
+          {
+            "code": "32488009",
+            "display": "Salmonella Paratyphi C (organism)"
+          },
+          {
+            "code": "27268008",
+            "display": "Genus Salmonella (organism)"
+          },
+          {
+            "code": "50136005",
+            "display": "Salmonella Typhimurium (organism)"
+          }
+        ]
+      }
+    ]
+  }
 }

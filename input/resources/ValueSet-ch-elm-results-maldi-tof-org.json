@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-results-maldi-tof-org",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-maldi-tof-org",
+  "version": "2024-10-21",
+  "name": "ChElmResultsMaldiTofOrg",
+  "title": "CH ELM Results Maldi-tof Org",
+  "status": "active",
+  "experimental": false,
+  "description": "The \"CH ELM Results Maldi-tof Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Maldi-tof Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "21927003",
+            "display": "Bacillus anthracis (organism)"
+          },
+          {
+            "code": "54365000",
+            "display": "Yersinia pestis (organism)"
+          }
+        ]
+      }
+    ]
+  }
+}

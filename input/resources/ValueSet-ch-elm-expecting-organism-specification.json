@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-expecting-organism-specification",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-organism-specification",
-  "version": "2024-10-15",
+  "version": "2024-10-21",
   "name": "ChElmExpectingOrganismSpecification",
   "title": "CH ELM Expecting Organism Specification",
   "status": "active",
@@ -44,6 +44,10 @@
           {
             "code": "32781-7",
             "display": "Legionella sp Ag [Presence] in Urine"
+          },
+          {
+            "code": "33764-2",
+            "display": "Shiga toxin stx gene [Identifier] in Specimen by NAA with probe detection"
           },
           {
             "code": "38353-9",
@@ -122,6 +126,10 @@
             "display": "Measles virus genotype [Identifier] in Specimen by NAA with probe detection"
           },
           {
+            "code": "65756-9",
+            "display": "Salmonella sp serovar [Type] in Isolate"
+          },
+          {
             "code": "6578-9",
             "display": "Vibrio sp identified in Blood by Organism specific culture"
           },
@@ -152,6 +160,14 @@
           {
             "code": "71429-5",
             "display": "Campylobacter sp DNA.diarrheagenic [Presence] in Stool by NAA with probe detection"
+          },
+          {
+            "code": "74037-3",
+            "display": "Transmissible spongiform encephalopathy [Identifier] in Brain by Light microscopy"
+          },
+          {
+            "code": "75756-7",
+            "display": "Bacteria identified in Isolate by MS.MALDI-TOF"
           },
           {
             "code": "82300-5",

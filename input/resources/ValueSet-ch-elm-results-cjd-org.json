@@ -1,0 +1,44 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-results-cjd-org",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cjd-org",
+  "version": "2024-10-21",
+  "name": "ChElmResultsCjdOrg",
+  "title": "CH ELM Results Cjd Org",
+  "status": "active",
+  "experimental": false,
+  "description": "The \"CH ELM Results Cjd Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Cjd Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "715807002",
+            "display": "Familial Creutzfeldt-Jakob (disorder)"
+          },
+          {
+            "code": "715662009",
+            "display": "Iatrogenic Jakob-Creutzfeldt disease (disorder)"
+          },
+          {
+            "code": "304603007",
+            "display": "Variant Creutzfeldt-Jakob disease (disorder)"
+          },
+          {
+            "code": "713060000",
+            "display": "Sporadic Creutzfeldt-Jakob disease (disorder)"
+          },
+          {
+            "code": "84676004",
+            "display": "Prion (organism)"
+          },
+          {
+            "code": "721165001",
+            "display": "Variably protease sensitive prionopathy (disorder)"
+          }
+        ]
+      }
+    ]
+  }
+}
