@@ -220,6 +220,8 @@ group QrToBundleItems(source qr : QuestionnaireResponse, target bundle : Bundle,
       } "LaboratoryReport-TestResult.Value.CodeSystem";
    }  "LaboratoryReport-TestResult.Value.Code";
 
+   qr.item as item where linkId='LaboratoryReport.TestResult.Value.String' -> observation.value = create('string') as str, str.value = (%item.answer.value) "LaboratoryReport-TestResult.Value.String";
+
    qr.item as item where linkId='LaboratoryReport.TestResult.Interpretation.Code' -> observation.interpretation = create('CodeableConcept') as codeableConcept, codeableConcept.coding as coding, coding.code = (%item.answer.value) then {
       item.answer as answer where value='POS' -> coding.display = 'Positive';
       item.answer as answer where value='NEG' -> coding.display = 'Negative';

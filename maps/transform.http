@@ -174,3 +174,10 @@ Accept: application/fhir+xml;fhirVersion=4.0
 Content-Type: application/fhir+json;fhirVersion=4.0
 
 < ./32Doc-RubellaAvidity.json
+
+###
+POST {{host}}/StructureMap/$transform?source=http://fhir.ch/ig/ch-elm/StructureMap/QrToBundle
+Accept: application/fhir+xml;fhirVersion=4.0
+Content-Type: application/fhir+json;fhirVersion=4.0
+
+< ./33Doc-Salmonella-valueString.json

@@ -23,11 +23,11 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * effectiveDateTime 1..
 * effectiveDateTime obeys ch-elm-dateTime
 
-* valueQuantity 0..1
-* valueCodeableConcept 0..1
+* valueString ^short = "String if required by leading code, see also 'Guidance - Laboratory Result'" 
+* valueQuantity ^short = "Quantity if required by leading code, see also 'Guidance - Laboratory Result'"
+* valueCodeableConcept ^short = "Positive/Negative or code for an additional organism specification, see also 'Guidance - Laboratory Result'"
 * valueCodeableConcept only ChElmCodeableConcept
 * valueCodeableConcept from ChElmResultsCodedValuesLaboratory (preferred) // not required, because the additional organism codes come from other valuesets
-* valueCodeableConcept ^short = "Positive/Negative or code for an additional organism specification, see also 'Guidance - Laboratory Result'"
 
 * performer 1..1
 * performer only Reference(ChElmOrganizationLab)

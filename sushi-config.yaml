@@ -210,6 +210,10 @@ resources:
     name: 32Doc - Rubella avidity
     description: Example Document for Rubella avidity
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/33Doc-Salmonella-valueString:
+    name: 33Doc - Salmonella valueString
+    description: Example Document for Salmonella reporting a (new) serotype for which no coding exists
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Binary/Test92-Bundle-WarningBerUidGln:
     extension:
       - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format
