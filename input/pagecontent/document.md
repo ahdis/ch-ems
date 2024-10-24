@@ -375,15 +375,6 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             </td>
         </tr>
         <tr>
-            <td>Q-fever</td>
-            <td>Coxiella burnetii phase 2 IgG Ab [Presence] in Serum</td>
-            <td>31314-8</td>
-            <td>
-                <a href="Bundle-27Doc-Coxiella-burnetii.json.html">JSON</a>, 
-                <a href="Bundle-27Doc-Coxiella-burnetii.json.html">XML</a>
-            </td>
-        </tr>
-        <tr>
             <td>Pneumococcal disease</td>
             <td>Streptococcus pneumoniae Ag [Presence] in Cerebral spinal fluid</td>
             <td>20489-1</td>
@@ -426,15 +417,6 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             <td>
                 <a href="Bundle-47Doc-Variola.json.html">JSON</a>, 
                 <a href="Bundle-47Doc-Variola.json.html">XML</a>
-            </td>
-        </tr>
-        <tr>
-            <td>Typhus abdominalis</td>
-            <td>Salmonella typhi [Identifier] in Isolate by Agglutination</td>
-            <td>53956-9</td>
-             <td>
-                <a href="Bundle-31Doc-Salmonella-typhi.json.html">JSON</a>, 
-                <a href="Bundle-31Doc-Salmonella-typhi.xml.html">XML</a>
             </td>
         </tr>
         <tr>

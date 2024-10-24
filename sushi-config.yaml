@@ -186,10 +186,10 @@ resources:
     name: 26Doc - Hepatite A
     description: Example Document for Hepatite A
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
-  Bundle/27Doc-Coxiella-burnetii:
-    name: 27Doc - Coxiella burnetii
-    description: Example Document for Coxiella burnetii
-    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  # Bundle/27Doc-Coxiella-burnetii:
+  #   name: 27Doc - Coxiella burnetii
+  #   description: Example Document for Coxiella burnetii
+  #   exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Bundle/28Doc-Listeria-monocytogenes:
     name: 28Doc - Listeria monocytogenes
     description: Example Document for Listeria monocytogenes
@@ -202,10 +202,6 @@ resources:
     name: 30Doc - Salmonella enteritidis
     description: Example Document for Salmonella enteritidis
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
-  Bundle/31Doc-Salmonella-typhi:
-    name: 31Doc - Salmonella typhi
-    description: Example Document for Salmonella typhi
-    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict         
   Bundle/32Doc-Rubella-avidity:
     name: 32Doc - Rubella avidity
     description: Example Document for reporting a rubella avidity

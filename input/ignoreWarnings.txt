@@ -142,10 +142,6 @@ Entry 'urn:uuid:b0ee488e-8fc6-43d3-96ed-3d7edcdcee54' isn't reachable by travers
 Entry 'urn:uuid:2c305e50-e5e2-4947-a99d-95f4ec4856ec' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'urn:uuid:285392d7-5c98-4a6c-9a43-48871237b473' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 
-== input/resources/Bundle-31Doc-Salmonella-typhi.xml ==
-Entry 'urn:uuid:843ae240-4e1e-479a-96fc-ec80788e4d61' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
-Entry 'urn:uuid:08ad2aa7-2f46-4adc-84ce-8eda0e1d2a0a' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
-
 == input/resources/Bundle-32Doc-Rubella-avidity.xml ==
 Entry 'urn:uuid:0fdc0897-6abf-4b54-b3f0-96087f6e8153' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'urn:uuid:b0564da1-cc00-4022-86b3-4d35efaeb414' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
