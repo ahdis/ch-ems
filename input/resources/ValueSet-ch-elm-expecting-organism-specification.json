@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-expecting-organism-specification",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-organism-specification",
-  "version": "2024-10-21",
+  "version": "2024-10-23",
   "name": "ChElmExpectingOrganismSpecification",
   "title": "CH ELM Expecting Organism Specification",
   "status": "active",
@@ -44,10 +44,6 @@
           {
             "code": "32781-7",
             "display": "Legionella sp Ag [Presence] in Urine"
-          },
-          {
-            "code": "33764-2",
-            "display": "Shiga toxin stx gene [Identifier] in Specimen by NAA with probe detection"
           },
           {
             "code": "38353-9",

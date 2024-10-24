@@ -186,10 +186,10 @@ resources:
     name: 26Doc - Hepatite A
     description: Example Document for Hepatite A
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
-  # Bundle/27Doc-Coxiella-burnetii:
-  #  name: 27Doc - Coxiella burnetii
-  # description: Example Document for Coxiella burnetii
-  #  exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/27Doc-Coxiella-burnetii:
+    name: 27Doc - Coxiella burnetii
+    description: Example Document for Coxiella burnetii
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Bundle/28Doc-Listeria-monocytogenes:
     name: 28Doc - Listeria monocytogenes
     description: Example Document for Listeria monocytogenes
@@ -198,21 +198,81 @@ resources:
     name: 29Doc - Rubella
     description: Example Document for Rubella
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
-  # Bundle/30Doc-Salmonella-enteritidis:
-  # name: 30Doc - Salmonella enteritidis
-  #  description: Example Document for Salmonella enteritidis
-  #   exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
-  #Bundle/31Doc-Salmonella-typhi:
-  # name: 31Doc - Salmonella typhi
-  # description: Example Document for Salmonella typhi
-  # exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict         
+  Bundle/30Doc-Salmonella-enteritidis:
+    name: 30Doc - Salmonella enteritidis
+    description: Example Document for Salmonella enteritidis
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/31Doc-Salmonella-typhi:
+    name: 31Doc - Salmonella typhi
+    description: Example Document for Salmonella typhi
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict         
   Bundle/32Doc-Rubella-avidity:
     name: 32Doc - Rubella avidity
-    description: Example Document for Rubella avidity
+    description: Example Document for reporting a rubella avidity
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Bundle/33Doc-Salmonella-valueString:
     name: 33Doc - Salmonella valueString
     description: Example Document for Salmonella reporting a (new) serotype for which no coding exists
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/34Doc-Brucella:
+    name: 34Doc - Brucella
+    description: Example Document for Brucella
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/35Doc-CJD:
+    name: 35Doc CJD
+    description: Example Document for Creutzfeldt-Jakob disease
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/36Doc-Salmonella-paratyphi:
+    name: 36Doc - Salmonella paratyphi
+    description: Example Document for Salmonella paratyphi
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/37Doc-Zika:
+    name: 37Doc - Zika
+    description: Example Document for Zika
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/38Doc-Anthrax:
+    name: 38Doc - Anthrax
+    description: Example Document for Bacillus anthracis
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/39Doc-Botulims:
+    name: 39Doc - Botulism
+    description: Example Document for Clostridium botulinum
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/40Doc-Crimean-Congo:
+    name: 40Doc - Crimean-Congo
+    description: Example Document for Crimean-congo virus
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/41Doc-Ebola:
+    name: 41Doc - Ebola
+    description: Example Document for Ebola virus
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/42Doc-Lassa:
+    name: 42Doc - Lassa
+    description: Example Document for Lassa virus
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/43Doc-Marburg:
+    name: 43Doc - Marburg
+    description: Example Document for Marburg virus
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/44Doc-Mers-CoV:
+    name: 44Doc - MERS-CoV
+    description: Example Document for MERS coronavirus
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/45Doc-Sars-CoV:
+    name: 45Doc - SARS-CoV
+    description: Example Document for Sars coronavirus
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/46Doc-Yersinia-pestis:
+    name: 46Doc - Yersinia pestis
+    description: Example Document for Yersinia pestis
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/47Doc-Variola:
+    name: 47Doc - Variola
+    description: Example Document for Variola
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/48Doc-Mpox-Clade:
+    name: 48Doc - Monkeypox Clade
+    description: Example Document for Monkeypox Clade
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Binary/Test92-Bundle-WarningBerUidGln:
     extension:

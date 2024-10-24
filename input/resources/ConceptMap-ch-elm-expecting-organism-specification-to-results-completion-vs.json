@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-expecting-organism-specification-to-results-completion-vs",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-organism-specification-to-results-completion-vs",
-  "version": "2024-10-21",
+  "version": "2024-10-23",
   "name": "ChElmExpectingOrganismSpecificationToResultsCompletionVs",
   "title": "CH ELM Expecting Organism Specification To Results Completion Vs",
   "status": "active",
@@ -101,16 +101,6 @@
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-leg-org",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "33764-2",
-          "display": "Shiga toxin stx gene [Identifier] in Specimen by NAA with probe detection",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-ehec-tox-org",
               "equivalence": "relatedto"
             }
           ]

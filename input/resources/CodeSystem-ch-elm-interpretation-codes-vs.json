@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "ch-elm-interpretation-codes-vs",
   "url": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-interpretation-codes-vs",
-  "version": "2024-10-21",
+  "version": "2024-10-23",
   "name": "ChElmInterpretationCodesVs",
   "title": "CH ELM Interpretation Codes Vs",
   "status": "active",

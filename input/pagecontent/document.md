@@ -123,6 +123,7 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
 #### Default scenario
 
 ##### Examples of basic FHIR documents (no additional codes for organism or specimen)
+
 <table class="grid">
     <colgroup> 
         <col style="width:25%" /> 
@@ -139,7 +140,34 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
         </tr>
     </thead>
     <tbody>
-           <tr>
+        <tr>
+            <td>Anthrax</td>
+            <td>Bacillus anthracis Ag [Presence] in Specimen</td>
+            <td>31726-3</td>
+            <td>
+                <a href="Bundle-38Doc-Anthrax.json.html">JSON</a>, 
+                <a href="Bundle-38Doc-Anthrax.xml.html">XML</a>
+            </td>
+        </tr>       
+        <tr>
+            <td>Botulisms</td>
+            <td>Clostridium botulinum toxin [Presence] in Specimen by Mouse bioassay</td>
+            <td>33696-6</td>
+            <td>
+                <a href="Bundle-39Doc-Botulims.json.html">JSON</a>, 
+                <a href="Bundle-39Doc-Botulims.xml.html">XML</a>
+            </td>
+        </tr>       
+        <tr>
+            <td>Brucellosis</td>
+            <td>Brucella sp IgA Ab [Presence] in Serum</td>
+            <td>101802-7</td>
+            <td>
+                <a href="Bundle-34Doc-Brucella.json.html">JSON</a>, 
+                <a href="Bundle-34Doc-Brucella.xml.html">XML</a>
+            </td>
+        </tr>       
+        <tr>
             <td>Campylobacteriosis</td>
             <td>Campylobacter coli DNA [Presence] in Stool by NAA with probe detection</td>
             <td>101552-8</td>
@@ -176,12 +204,39 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             </td>
         </tr>
         <tr>
+            <td>Crimean-Congo</td>
+            <td>Crimean-Congo hemorrhagic fever virus RNA [Presence] in Serum by NAA with probe detection</td>
+            <td>88192-0</td>
+            <td>
+                <a href="Bundle-40Doc-Crimean-Congo.json.html">JSON</a>, 
+                <a href="Bundle-40Doc-Crimean-Congo.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Creutzfeldt-Jakob Disease (CJD)</td>
+            <td>14-3-3 Ag [Presence] in Cerebral spinal fluid</td>
+            <td>31989-7</td>
+            <td>
+                <a href="Bundle-35Doc-CJD.json.html">JSON</a>, 
+                <a href="Bundle-35Doc-CJD.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
             <td>Dengue - reporting of high-level titer result</td>
             <td>Dengue virus IgG Ab [Titer] in Serum</td>
             <td>6811-4</td>
             <td>
                 <a href="Bundle-16Doc-Dengue-Titer.json.html">JSON</a>, 
                 <a href="Bundle-16Doc-Dengue-Titer.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Ebola</td>
+            <td>Ebola virus RNA [Presence] in Blood by NAA with probe detection</td>
+            <td>86518-8</td>
+            <td>
+                <a href="Bundle-41Doc-Ebola.json.html">JSON</a>, 
+                <a href="Bundle-41Doc-Ebola.xml.html">XML</a>
             </td>
         </tr>
         <tr>
@@ -257,6 +312,15 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             </td>
         </tr>
           <tr>
+            <td>Lassa fever</td>
+            <td>Lassa virus RNA [Presence] in Specimen by NAA with probe detection</td>
+            <td>97646-4</td>
+              <td>
+                <a href="Bundle-42Doc-Lassa.json.html">JSON</a>, 
+                <a href="Bundle-42Doc-Lassa.xml.html">XML</a>
+            </td>
+        </tr>
+          <tr>
             <td>Listeriosis</td>
             <td>Listeria monocytogenes DNA [Presence] in Cerebral spinal fluid by NAA with non-probe detection</td>
             <td>82184-3</td>
@@ -275,12 +339,48 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             </td>
         </tr>
         <tr>
+            <td>Marburg fever</td>
+            <td>Marburg virus RNA [Presence] in Blood by NAA with probe detection</td>
+            <td>86574-1</td>
+             <td>
+                <a href="Bundle-43Doc-Marburg.json.html">JSON</a>, 
+                <a href="Bundle-43Doc-Marburg.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
             <td>Measles - reporting of a seroconversion</td>
             <td>Measles virus IgG and IgM [Interpretation] in Serum</td>
             <td>44012-3</td>
               <td>
                 <a href="Bundle-15Doc-Measles-Seroconversion.json.html">JSON</a>, 
                 <a href="Bundle-15Doc-Measles-Seroconversion.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>MERS</td>
+            <td>Middle East respiratory syndrome coronavirus (MERS-CoV) RNA [Presence] in Respiratory system specimen by NAA with probe detection</td>
+            <td>94501-4</td>
+             <td>
+                <a href="Bundle-44Doc-Mers-CoV.json.html">JSON</a>, 
+                <a href="Bundle-44Doc-Mers-CoV.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Plague</td>
+            <td>Yersinia pestis [Presence] in Specimen by Organism specific culture</td>
+            <td>33685-9</td>
+            <td>
+                <a href="Bundle-46Doc-Yersinia-pestis.json.html">JSON</a>, 
+                <a href="Bundle-46Doc-Yersinia-pestis.json.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Q-fever</td>
+            <td>Coxiella burnetii phase 2 IgG Ab [Presence] in Serum</td>
+            <td>31314-8</td>
+            <td>
+                <a href="Bundle-27Doc-Coxiella-burnetii.json.html">JSON</a>, 
+                <a href="Bundle-27Doc-Coxiella-burnetii.json.html">XML</a>
             </td>
         </tr>
         <tr>
@@ -302,6 +402,42 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             </td>
         </tr>
         <tr>
+            <td>Rubella - reporting of an avidity</td>
+            <td>Rubella virus IgG Ab avidity [Ratio] in Serum by Immunoassay</td>
+            <td>52986-7</td>
+            <td>
+                <a href="Bundle-32Doc-Rubella-avidity.json.html">JSON</a>, 
+                <a href="Bundle-32Doc-Rubella-avidity.json.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>SARS</td>
+            <td>SARS coronavirus RNA [Presence] in Specimen by NAA with probe detection</td>
+            <td>41458-1</td>
+            <td>
+                <a href="Bundle-45Doc-Sars-CoV.json.html">JSON</a>, 
+                <a href="Bundle-45Doc-Sars-CoV.json.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Smallpox</td>
+            <td>Variola virus DNA [Presence] in Specimen by NAA with probe detection</td>
+            <td>41856-6</td>
+            <td>
+                <a href="Bundle-47Doc-Variola.json.html">JSON</a>, 
+                <a href="Bundle-47Doc-Variola.json.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Typhus abdominalis</td>
+            <td>Salmonella typhi [Identifier] in Isolate by Agglutination</td>
+            <td>53956-9</td>
+             <td>
+                <a href="Bundle-31Doc-Salmonella-typhi.json.html">JSON</a>, 
+                <a href="Bundle-31Doc-Salmonella-typhi.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
             <td>Tick - borne encephalitis</td>
             <td>Tick - borne encephalitis virus RNA [Presence] in Specimen by NAA with probe detection</td>
             <td>97920-3</td>
@@ -310,10 +446,21 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
                 <a href="Bundle-25Doc-Tick-borne-encephalitis.xml.html">XML</a>
             </td>
         </tr>
+        <tr>
+            <td>Zika fever</td>
+            <td>Zika virus IgM Ab [Presence] in Serum by Immunofluorescence</td>
+            <td>82731-1</td>
+             <td>
+                <a href="Bundle-37Doc-Zika.json.html">JSON</a>, 
+                <a href="Bundle-37Doc-Zika.xml.html">XML</a>
+            </td>
+        </tr>
     </tbody>
 </table>
 
+
 ##### Example of a SNOMED CT code instead of a LOINC code in observation.code
+
 <table class="grid">
     <colgroup> 
         <col style="width:25%" /> 
@@ -343,6 +490,7 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
 </table>
 
 ##### Example of an organism specification
+
 <table class="grid">
     <colgroup> 
         <col style="width:25%" /> 
@@ -378,6 +526,24 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             </td>
         </tr>
         <tr>
+            <td>Paratyphoid fever</td>
+            <td>Salmonella sp [Presence] in Stool by Culture</td>
+            <td>82301-3</td>
+             <td>
+                <a href="Bundle-36Doc-Salmonella-paratyphi.json.html">JSON</a>, 
+                <a href="Bundle-36Doc-Salmonella-paratyphi.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Salmonellosis</td>
+            <td>Salmonella sp DNA [Presence] in Specimen by NAA with probe detection</td>
+            <td>49612-5</td>
+             <td>
+                <a href="Bundle-30Doc-Salmonella-enteritidis.json.html">JSON</a>, 
+                <a href="Bundle-30Doc-Salmonella-enteritidis.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
             <td>Shigellosis</td>
             <td>Shigella sp DNA [Presence] in Stool by NAA with probe detection</td>
             <td>101427-3</td>
@@ -399,6 +565,7 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
 </table>
 
 ##### Example of a specimen specification
+
 <table class="grid">
     <colgroup> 
         <col style="width:25%" /> 
@@ -437,6 +604,7 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
 </table>
 
 ##### Example of a VCT Patient with specimen specification
+
 <table class="grid">
     <colgroup> 
         <col style="width:25%" /> 
@@ -465,7 +633,48 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
     </tbody>
 </table>
 
+##### Example of quantity, ratio or text observation values (non-coded)
+
+<table class="grid">
+    <colgroup> 
+        <col style="width:25%" /> 
+        <col style="width:50%" /> 
+        <col style="width:15%" /> 
+        <col style="width:10%" /> 
+    </colgroup> 
+    <thead>
+          <tr>
+            <th>Disease</th>
+            <th>observation.code display</th>
+            <th>LOINC observation.code<br />(leading code)</th>
+            <th>FHIR Document</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Salmonellosis</td>
+            <td>Salmonella sp antigenic formula [Identifier] in Isolate by Agglutination   </td>
+            <td>56475-7</td>
+           <td>
+                <a href="Bundle-33Doc-Salmonella-valueString.json.html">JSON</a>, 
+                <a href="Bundle-33Doc-Salmonella-valueString.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Monkeypox</td>
+            <td>Monkeypox virus clade [Type] in Specimen by Sequencing</td>
+            <td>101003-2</td>
+           <td>
+                <a href="Bundle-48Doc-Mpox-Clade.json.html">JSON</a>, 
+                <a href="Bundle-48Doc-Mpox-Clade.xml.html">XML</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
 #### Broker scenario
+
 <table class="grid">
     <colgroup> 
         <col style="width:25%" /> 
@@ -495,6 +704,7 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
 </table>
 
 #### Scenario for confirmation tests
+
 <table class="grid">
     <colgroup> 
         <col style="width:25%" /> 
