@@ -525,6 +525,15 @@ curl --request GET \
   --key $KEY \
   -o ../input/resources/ConceptMap-$CONCEPTMAP.json
 
+CONCEPTMAP="ch-elm-results-to-observation-profile"
+curl --request GET \
+  --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/ConceptMap/$CONCEPTMAP \
+  --header 'accept: application/fhir+json' \
+  --header 'user-agent: vscode-restclient' \
+  --cert $CERT \
+  --key $KEY \
+  -o ../input/resources/ConceptMap-$CONCEPTMAP.json
+
 CODESYSTEM="ch-elm-foph-business-rules"
 curl --request GET \
   --url https://ws.infreport-a.bag.admin.ch/ch-elm/v1/fhir/CodeSystem/$CODESYSTEM \
