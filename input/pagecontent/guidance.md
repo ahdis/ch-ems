@@ -98,5 +98,10 @@ In some cases, an additional organism must be specified.
 Depending on the leading code different interpretation codes are allowed. The [ConceptMap](ConceptMap-ch-elm-results-to-interpretation-code.html) specifies which values from which ValueSet
 are allowed (e.g. for Neisseria gonorrhoeae the [ValueSet: CH ELM Interpretation Codes Positive ](ValueSet-ch-elm-interpretation-codes-pos.html) is specified, which allows only a positive interpretation code to be specified).
 
+##### Expecting observation profile
+
+In cases where certain test results like physical quantities, sequencing-/typing results etc. or a series of test values with their associated measuring units and interpretations are to be transmitted,, a specific observation profile is expected depending on the leading code. The [ConceptMap](ConceptMap-ch-elm-results-to-observation-profile.html) defines which profile has to be considered.
+
+
 ### Multiplex Cases
 The exchange format defines the [FHIR document](document.html) for reporting to the FOPH so that **one document per organism per patient** is submitted. 

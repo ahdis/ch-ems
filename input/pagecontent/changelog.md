@@ -1,7 +1,7 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
-### 1.6.0 - unreleased
+### 1.6.0 2024/10/31
 
-* [#118](https://github.com/ahdis/ch-elm/issues/118) Observation.value depending on leading code
+* [#118](https://github.com/ahdis/ch-elm/issues/118) Observation.value depending on leading code, see [guidance](guidance.html#expecting-observation-profile)
 * [#117](https://github.com/ahdis/ch-elm/issues/117) New Interpretation Valueset «avidity»
 * Examples for Anthrax, Botulims, Brucellosis, CJD, Crimean-Congo, Ebola, Lassa fever, Marburg fever, MERS, Mpox, Paratyphoid fever, Plague, Q-fever, Rubella, SARS, Salmonellosis, Salmonellosis, Smallpox, Zika fever
 

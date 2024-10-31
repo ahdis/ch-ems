@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
-  "version": "2024-10-23",
+  "version": "2024-10-31",
   "name": "ChElmResultsLaboratoryObservation",
   "title": "CH ELM Results Laboratory Observation",
   "status": "active",
@@ -550,10 +550,6 @@
             "display": "Influenza virus A H3 RNA [Presence] in Specimen by NAA with probe detection"
           },
           {
-            "code": "49609-1",
-            "display": "Vibrio sp DNA [Identifier] in Specimen by NAA with probe detection"
-          },
-          {
             "code": "49612-5",
             "display": "Salmonella sp DNA [Presence] in Specimen by NAA with probe detection"
           },
@@ -980,10 +976,6 @@
           {
             "code": "81656-1",
             "display": "Campylobacter coli+jejuni tuf gene [Presence] in Stool by NAA with probe detection"
-          },
-          {
-            "code": "81868-2",
-            "display": "PRNP gene targeted mutation analysis in Blood or Tissue by Molecular genetics method"
           },
           {
             "code": "82184-3",

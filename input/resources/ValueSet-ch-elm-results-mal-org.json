@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-mal-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mal-org",
-  "version": "2024-10-23",
+  "version": "2024-10-31",
   "name": "ChElmResultsMalOrg",
   "title": "CH ELM Results Mal Org",
   "status": "active",

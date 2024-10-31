@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-sal-org-complete",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sal-org-complete",
-  "version": "2024-10-23",
+  "version": "2024-10-31",
   "name": "ChElmResultsSalOrgComplete",
   "title": "CH ELM Results Sal Org Complete",
   "status": "active",
@@ -1300,6 +1300,10 @@
           {
             "code": "416057009",
             "display": "Salmonella Choleraesuis var. Decatur (organism)"
+          },
+          {
+            "code": "5595000",
+            "display": "Salmonella Typhi (organism)"
           },
           {
             "code": "398377009",
@@ -3698,6 +3702,10 @@
             "display": "Salmonella IIIb 47:z52:1,5,7 (organism)"
           },
           {
+            "code": "85908006",
+            "display": "Salmonella Paratyphi B (organism)"
+          },
+          {
             "code": "114487005",
             "display": "Salmonella II 4,12:z:1,7 (organism)"
           },
@@ -6062,6 +6070,10 @@
             "display": "Salmonella II 39:l,z28:e,n,x (organism)"
           },
           {
+            "code": "32488009",
+            "display": "Salmonella Paratyphi C (organism)"
+          },
+          {
             "code": "24666009",
             "display": "Salmonella Worthington (organism)"
           },
@@ -6356,6 +6368,10 @@
           {
             "code": "404593007",
             "display": "Salmonella IV, group O:50 (organism)"
+          },
+          {
+            "code": "79128009",
+            "display": "Salmonella Paratyphi A (organism)"
           },
           {
             "code": "404602001",
@@ -6812,6 +6828,10 @@
           {
             "code": "68937001",
             "display": "Salmonella Itami (organism)"
+          },
+          {
+            "code": "733501004",
+            "display": "Salmonella II rough:l,z28:z6 (organism)"
           },
           {
             "code": "21469008",

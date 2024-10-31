@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-foph-patient-name-representation",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-foph-patient-name-representation",
-  "version": "2024-10-23",
+  "version": "2024-10-31",
   "name": "ChElmResultsToFophPatientNameRepresentation",
   "title": "CH ELM Results To FOPH Patient Name Representation",
   "status": "active",
@@ -1366,16 +1366,6 @@
           ]
         },
         {
-          "code": "49609-1",
-          "display": "Vibrio sp DNA [Identifier] in Specimen by NAA with probe detection",
-          "target": [
-            {
-              "code": "full-name",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "49612-5",
           "display": "Salmonella sp DNA [Presence] in Specimen by NAA with probe detection",
           "target": [
@@ -2441,16 +2431,6 @@
           "target": [
             {
               "code": "initials",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "81868-2",
-          "display": "PRNP gene targeted mutation analysis in Blood or Tissue by Molecular genetics method",
-          "target": [
-            {
-              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]

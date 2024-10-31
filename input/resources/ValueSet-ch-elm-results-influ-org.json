@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-influ-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-influ-org",
-  "version": "2024-10-23",
+  "version": "2024-10-31",
   "name": "ChElmResultsInfluOrg",
   "title": "CH ELM Results Influ Org",
   "status": "active",
