@@ -27,6 +27,6 @@ Da es sich nicht um den Typ S. enteritidis handelt, wird die Probe zur genauen T
 Eine Liquorprobe wurde vom Kreisspital notfallmässig zugeschickt und direkt mikroskopisch untersucht. Es finden sich gramnegative Diplokokken. Dieser Befund zu einer Infektion mit Neisseria meningitidis muss innerhalb eines Tages gemeldet werden [JSON](Bundle-17Doc-Neisseria.json.html). Die weitere Verarbeitung (Kultur, Genomsequenz) erfolgt durch das Nationale Zentrum für Meningokokken (Sekundärlabor), von welchem wiederum eine vollständige Meldung zusammen mit der Auftragsnummer des Primärlabors (50002610 im Beispiel) an die Sektion Meldesysteme des BAG erfolgt [JSON](Bundle-14Doc-Neisseriameningitidis-confirmationtest.json.html).
 
 
-### Szenario 3 - Meldeweg bei Weitergabe eines Laborauftrages oder bei HIV-Diagnose
+### Szenario 3 - Meldeweg bei Weitergabe eines Laborauftrages
 
-{% include img.html img="scenario3.png" caption="Abb. 5: Meldeweg bei Weitergabe eines Laborauftrages oder bei HIV-Diagnose" width="55%" %}
+{% include img.html img="scenario3.png" caption="Abb. 5: Meldeweg bei Weitergabe eines Laborauftrages" width="55%" %}
