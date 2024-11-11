@@ -1288,6 +1288,9 @@
           {
             "code": "99094-5",
             "display": "Streptococcus pneumoniae DNA [Presence] in Cerebral spinal fluid by NAA with probe detection"
+          },
+          {
+            "code": "62469-2"
           }
         ]
       },

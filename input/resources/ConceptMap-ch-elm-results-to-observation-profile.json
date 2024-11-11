@@ -44,7 +44,16 @@
               "equivalence": "relatedto"
             }
           ]
-        }
+        },
+        {
+          "code": "62469-2",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-pq",
+              "equivalence": "relatedto"
+            }
+          ]
+        }        
       ]
     }
   ]

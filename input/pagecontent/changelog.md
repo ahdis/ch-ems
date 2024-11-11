@@ -3,7 +3,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### 1.7.0 unreleased
 
 * [#125](https://github.com/ahdis/ch-elm/issues/125) HIV not an example for use case 3
-
+* [#124]((https://github.com/ahdis/ch-elm/issues/125) HIV: Observation.valueQuantity for specific Code
 
 ### 1.6.0 2024/10/31
 
