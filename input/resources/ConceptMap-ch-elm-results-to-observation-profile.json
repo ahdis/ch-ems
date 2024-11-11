@@ -49,7 +49,7 @@
           "code": "62469-2",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-pq",
+              "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-pq-virl",
               "equivalence": "relatedto"
             }
           ]

@@ -51,6 +51,13 @@ Parent: Observation
 Id: ch-elm-observation-pq
 * valueQuantity 1..1
 
+Profile: ChElmObservationVirl
+Parent: ChElmObservationPq
+Description: "Viral load"
+Id: ch-elm-observation-pq-virl
+* valueQuantity.code = #1/mL 
+* valueQuantity.system = "http://unitsofmeasure.org"
+
 Profile: ChElmObservationRto
 Parent: Observation
 Id: ch-elm-observation-rto

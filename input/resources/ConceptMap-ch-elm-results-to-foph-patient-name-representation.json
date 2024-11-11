@@ -3214,6 +3214,15 @@
               "equivalence": "relatedto"
             }
           ]
+        },
+        {
+          "code": "62469-2",
+          "target": [
+            {
+              "code": "hiv-code",
+              "equivalence": "relatedto"
+            }
+          ]
         }
       ]
     },

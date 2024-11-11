@@ -183,6 +183,9 @@ group QrToBundleItems(source qr : QuestionnaireResponse, target bundle : Bundle,
    
    } "LaboratoryReport-Patient.Address.City";  
 
+  
+   qr.item as item where linkId='LaboratoryReport.Patient.Phone' -> patient.telecom as telecom, telecom.system= 'phone', telecom.value = (%item.answer.value)  "LaboratoryReport.Patient.Phone";  
+
 
    qr.item as item where linkId='LaboratoryReport.TestResult.ExecutionDateTime' then { 
       item.answer as answer then {
