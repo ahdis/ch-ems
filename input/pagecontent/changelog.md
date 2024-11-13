@@ -5,6 +5,8 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#125](https://github.com/ahdis/ch-elm/issues/125) HIV not an example for use case 3
 * [#124](https://github.com/ahdis/ch-elm/issues/124) HIV: Observation.valueQuantity for specific Code
 * [#122](https://github.com/ahdis/ch-elm/issues/122) Allow ZSR for Practitioner Orderer
+* [#121](https://github.com/ahdis/ch-elm/issues/121) DocumentReference for Publish Response should not contain bundle
+
 
 ### 1.6.0 2024/10/31
 

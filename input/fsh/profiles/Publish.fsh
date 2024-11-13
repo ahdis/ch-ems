@@ -94,6 +94,12 @@ A profile on the DocumentReference resource for the publication response:
 - must be status current
 - must have an identifier
 """
+* contained 0..1
+* contained ^slicing.discriminator.type = #profile
+* contained ^slicing.discriminator.path = "$this"
+* contained ^slicing.rules = #closed
+* contained contains OperationOutcome 0..1 MS
+* contained[OperationOutcome] ^type.profile = Canonical(OperationOutcome)
 * extension contains ChExtElmStatus named chextelmstatus 1..1
 * modifierExtension 0..0
 * identifier 1..1

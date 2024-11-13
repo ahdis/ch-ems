@@ -210,5 +210,13 @@ Entry 'urn:uuid:6ecb284b-26a8-49e5-9033-a1876cbcff51' isn't reachable by travers
 Entry 'urn:uuid:3733a80e-2095-4b27-bff9-e03a440d3a7b' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'urn:uuid:50c767a9-31cc-44db-b0ab-eed33b2faf33' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 
+== input/resources/Bundle-49Doc-HIV.xml ==
+Entry 'urn:uuid:d78e6789-f3f0-46fe-aded-04b2da318e68' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:6bfcd981-5e6b-47ed-8531-aba2b9eef9cd' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+== input/resources/Bundle-50Doc-HIV-viremia.xml ==
+Entry 'urn:uuid:2779825f-c7cc-4916-ac47-fb78ee8d5091' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:99266b5b-8355-4c50-a46d-1dbdbc681c70' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
 # Terminology error during build, no impact
 Error from http://tx.fhir.org/r4: POST Stream too large%
