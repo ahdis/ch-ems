@@ -468,6 +468,15 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
                 <a href="Bundle-5Doc-TreponemaPallidum.xml.html">XML</a>
             </td>
         </tr>
+        <tr>
+            <td>HIV</td>
+            <td>Human immunodeficiency virus type I (organism)</td>
+            <td>89293008</td>
+            <td>
+                <a href="Bundle-49Doc-HIV.json.html">JSON</a>, 
+                <a href="Bundle-49Doc-HIV.xml.html">XML</a>
+            </td>
+        </tr>
     </tbody>
 </table>
 
@@ -649,6 +658,15 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
            <td>
                 <a href="Bundle-48Doc-Mpox-Clade.json.html">JSON</a>, 
                 <a href="Bundle-48Doc-Mpox-Clade.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>HIV (reporting a viremia quantity value)</td>
+            <td>HIV 1 RNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection</td>
+            <td>62469-2</td>
+           <td>
+                <a href="Bundle-50Doc-HIV-viremia.json.html">JSON</a>, 
+                <a href="Bundle-50Doc-HIV-viremia.xml.html">XML</a>
             </td>
         </tr>
     </tbody>

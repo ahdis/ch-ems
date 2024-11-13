@@ -197,12 +197,16 @@ group QrToBundleItems(source qr : QuestionnaireResponse, target bundle : Bundle,
    qr.item as item where linkId='LaboratoryReport.TestResult.Type.Code' -> observation.code = create('CodeableConcept') as codeableConcept, codeableConcept.coding as coding, coding.code = (%item.answer.value) then {
       qr.item as item where linkId='LaboratoryReport.TestResult.Type.CodeSystem' then {
          item.answer as answer where value='LOINC' -> coding.system = 'http://loinc.org';
+         item.answer as answer where value.startsWith('Snomed') -> coding.system = 'http://snomed.info/sct';
+         item.answer as answer where value.startsWith('SNOMED') -> coding.system = 'http://snomed.info/sct';
       } "LaboratoryReport-TestResult.Type.CodeSystem";
    }  "LaboratoryReport-TestResult.Type.Code";
 
    qr.item as item where linkId='LaboratoryReport.TestResult.Type.Code' -> servicerequest.code = create('CodeableConcept') as codeableConcept, codeableConcept.coding as coding, coding.code = (%item.answer.value) then {
       qr.item as item where linkId='LaboratoryReport.TestResult.Type.CodeSystem' then {
          item.answer as answer where value='LOINC' -> coding.system = 'http://loinc.org';
+         item.answer as answer where value.startsWith('Snomed') -> coding.system = 'http://snomed.info/sct';
+         item.answer as answer where value.startsWith('SNOMED') -> coding.system = 'http://snomed.info/sct';
       } "LaboratoryReport-TestResult.Type.CodeSystem";
    }  "LaboratoryReport-TestResult.Type.Code";
 
@@ -217,7 +221,8 @@ group QrToBundleItems(source qr : QuestionnaireResponse, target bundle : Bundle,
 
    qr.item as item where linkId='LaboratoryReport.TestResult.Specimen.Type.Code' -> specimen.type = create('CodeableConcept') as codeableConcept, codeableConcept.coding as coding, coding.code = (%item.answer.value) then {
       qr.item as item where linkId='LaboratoryReport.TestResult.Specimen.Type.CodeSystem' then {
-         item.answer as answer where value='SNOMED CT' -> coding.system = 'http://snomed.info/sct';
+         item.answer as answer where value.startsWith('Snomed') -> coding.system = 'http://snomed.info/sct';
+         item.answer as answer where value.startsWith('SNOMED') -> coding.system = 'http://snomed.info/sct';
       } "LaboratoryReport-TestResult.Specimen.Type.CodeSystem";
    }  "LaboratoryReport-TestResult.Specimen.Type.Code";
 
