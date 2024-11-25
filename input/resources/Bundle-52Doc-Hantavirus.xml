@@ -129,7 +129,8 @@
         </performer>
         <valueCodeableConcept>
           <coding>
-            <code value="40754006"/>
+            <code value="40754006"/>            
+            <system value="http://snomed.info/sct"/>
           </coding>
         </valueCodeableConcept>
         <interpretation>

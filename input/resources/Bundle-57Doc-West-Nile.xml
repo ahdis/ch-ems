@@ -130,6 +130,7 @@
         <valueCodeableConcept>
           <coding>
             <code value="57311007"/>
+            <system value="http://snomed.info/sct"/>
           </coding>
         </valueCodeableConcept>
         <interpretation>
