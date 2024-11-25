@@ -218,5 +218,34 @@ Entry 'urn:uuid:6bfcd981-5e6b-47ed-8531-aba2b9eef9cd' isn't reachable by travers
 Entry 'urn:uuid:2779825f-c7cc-4916-ac47-fb78ee8d5091' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'urn:uuid:99266b5b-8355-4c50-a46d-1dbdbc681c70' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 
+== input/resources/Bundle-51Doc-Gelbfieber.xml == 
+Entry 'urn:uuid:2ef84027-ae9d-4406-b8e1-be895e2a570c' isn't reachable by traversing forwards from the Composition.
+Entry 'urn:uuid:b401e43b-54ad-42f3-826f-30d333363b59' isn't reachable by traversing forwards from the Composition.
+
+== input/resources/Bundle-52Doc-Hantavirus.xml ==
+Entry 'urn:uuid:34cc0824-ee5d-44f8-acbe-f21102e18cd1' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:8f35d5a6-df90-4a4d-a3a2-22d06c315f22' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+== input/resources/Bundle-53Doc-InfluenzaHxNy.xml ==
+Entry 'urn:uuid:864cc197-d700-4564-a461-a71309187f86' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:1d0b1c13-86e6-423b-a5c2-9e9fb091c575' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+== input/resources/Bundle-54Doc-Poliomyelitis.xml ==
+Entry 'urn:uuid:4975cd03-4c1e-4547-a549-5653394353fd' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:51d0f5e0-63da-4b6c-825c-806810829871' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+== input/resources/Bundle-Bundle-55Doc-Tollwut.xml ==
+Entry 'urn:uuid:63ffdc07-ede4-477f-989b-9f0ef45b69f4' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:bd97db6c-d1ea-478a-9dfd-28fcffb973b8' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+== input/resources/Bundle-56Doc-Trichinella-spiralis.xml ==
+Entry 'urn:uuid:94910ba2-6893-4a0c-9fbb-90b343efe48a' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:52366089-5bd6-4071-bead-d77663e189ad' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+== input/resources/Bundle-57Doc-West-Nile.xml ==
+Entry 'urn:uuid:2b1bd88a-5b86-4178-aa22-39d19bf2c6b9' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:7a47a32a-e5c0-4e90-a242-69e734979179' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+
 # Terminology error during build, no impact
 Error from http://tx.fhir.org/r4: POST Stream too large%
