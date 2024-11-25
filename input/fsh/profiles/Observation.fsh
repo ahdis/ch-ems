@@ -11,6 +11,8 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 * obeys ch-elm-patient-name-representation-initial-snomedct
 * obeys ch-elm-patient-name-representation-initial-or-vctcode-loinc
 * obeys ch-elm-patient-name-representation-initial-or-vctcode-snomedct
+* obeys ch-elm-patient-name-representation-hiv-code-loinc
+* obeys ch-elm-patient-name-representation-hiv-code-snomedct
 * obeys ch-elm-observation-profile-loinc
 * obeys ch-elm-observation-profile-snomedct
 * . ^short = "CH ELM Observation Results: Laboratory"

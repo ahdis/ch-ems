@@ -6,7 +6,6 @@ Description: "Example for a CH ELM PractitionerRole: Orderer"
 * practitioner = Reference(1Pract-KsAbc)
 * organization = Reference(1Org-KsAbc)
 
-
 Instance: 1Pract-KsAbc
 InstanceOf: ChElmPractitionerOrderer
 Usage: #example
@@ -14,6 +13,8 @@ Title: "1Pract - Monika Giacometti"
 Description: "Example for a CH ELM Practitioner: Orderer"
 * identifier[GLN].system = "urn:oid:2.51.1.3"
 * identifier[GLN].value = "7601000234438"
+* identifier[ZSR].system = "urn:oid:2.16.756.5.30.1.123.100.2.1.1"
+* identifier[ZSR].value = "A123262"
 * name.family = "Giacometti"
 * name.given = "Monika"
 * telecom[email].system = #email

@@ -6,7 +6,7 @@ Description: "This CH ELM base profile constrains the Practitioner resource for 
 * . ^short = "CH ELM Practitioner: Orderer"
 * identifier ..1 MS
 * identifier[GLN] ..1 MS
-* identifier[ZSR] 0..1
+* identifier[ZSR] 0..1 MS
 * name ..1
 * name.given ..1 MS
 * name.given ^maxLength = 100
