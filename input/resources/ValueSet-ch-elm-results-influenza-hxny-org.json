@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-results-influenza-hxny-org",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-influenza-hxny-org",
+  "version": "2024-11-25",
+  "name": "ChElmResultsInfluenzaHxnyOrg",
+  "title": "CH ELM Results Influenza Hxny Org",
+  "status": "active",
+  "experimental": false,
+  "description": "The \"CH ELM Results Influenza Hxny Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Influenza Hxny Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "446649001",
+            "display": "Influenza A virus subtype H9 (organism)"
+          },
+          {
+            "code": "772827006",
+            "display": "Influenza A virus subtype H5N1 (organism)"
+          },
+          {
+            "code": "446647004",
+            "display": "Influenza A virus subtype H5 (organism)"
+          },
+          {
+            "code": "700349009",
+            "display": "Influenza A virus subtype H10 (organism)"
+          },
+          {
+            "code": "446648009",
+            "display": "Influenza A virus subtype H7 (organism)"
+          }
+        ]
+      }
+    ]
+  }
+}

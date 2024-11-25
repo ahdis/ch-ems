@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ch-elm-results-hanta-org",
+  "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-hanta-org",
+  "version": "2024-11-25",
+  "name": "ChElmResultsHantaOrg",
+  "title": "CH ELM Results Hanta Org",
+  "status": "active",
+  "experimental": false,
+  "description": "The \"CH ELM Results Hanta Org\" organism group provides a curated set of codes representing specific organisms. Each code within this group has been selected to ensure precise representation and consistency in relation to the primary LOINC codes. Clients utilizing the \"CH ELM Results Hanta Org\" group should refer to the provided codes to accurately and uniformly capture and report organism-related information.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "35439004",
+            "display": "Seoul virus (organism)"
+          },
+          {
+            "code": "40754006",
+            "display": "Puumala virus (organism)"
+          },
+          {
+            "code": "116663002",
+            "display": "Sin Nombre virus (organism)"
+          },
+          {
+            "code": "35439004",
+            "display": "Seoul virus (organism)"
+          },
+          {
+            "code": "49445003",
+            "display": "Genus Hantavirus (organism)"
+          },
+          {
+            "code": "116662007",
+            "display": "Dobrava-Belgrade virus (organism)"
+          },
+          {
+            "code": "52779006",
+            "display": "Hantaan virus (organism)"
+          }
+        ]
+      }
+    ]
+  }
+}

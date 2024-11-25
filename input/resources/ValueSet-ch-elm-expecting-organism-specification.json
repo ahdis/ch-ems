@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-expecting-organism-specification",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-organism-specification",
-  "version": "2024-10-31",
+  "version": "2024-11-25",
   "name": "ChElmExpectingOrganismSpecification",
   "title": "CH ELM Expecting Organism Specification",
   "status": "active",
@@ -22,10 +22,6 @@
             "display": "Legionella sp DNA [Presence] in Specimen by NAA with probe detection"
           },
           {
-            "code": "101427-3",
-            "display": "Shigella sp DNA [Presence] in Stool by NAA with probe detection"
-          },
-          {
             "code": "104376-9",
             "display": "Diphtheria toxin DNA [Presence] in Specimen by NAA with probe detection"
           },
@@ -36,6 +32,10 @@
           {
             "code": "17563-8",
             "display": "Salmonella sp identified in Specimen by Organism specific culture"
+          },
+          {
+            "code": "22826-2",
+            "display": "Influenza virus A identified in Specimen by Bioassay"
           },
           {
             "code": "24102-6",
@@ -50,6 +50,10 @@
             "display": "Streptococcus sp identified in Specimen by Organism specific culture"
           },
           {
+            "code": "39025-2",
+            "display": "Influenza virus A hemagglutinin cDNA [Identifier] in Specimen by Sequencing"
+          },
+          {
             "code": "41625-5",
             "display": "Brucella sp DNA [Identifier] in Specimen by NAA with probe detection"
           },
@@ -60,10 +64,6 @@
           {
             "code": "46454-5",
             "display": "Shigella sp [Presence] in Specimen by Organism specific culture"
-          },
-          {
-            "code": "46455-2",
-            "display": "Shigella sp DNA [Presence] in Specimen by NAA with probe detection"
           },
           {
             "code": "46732-4",
@@ -78,16 +78,12 @@
             "display": "Salmonella sp DNA [Presence] in Specimen by NAA with probe detection"
           },
           {
-            "code": "49614-1",
-            "display": "Campylobacter sp DNA [Identifier] in Specimen by NAA with probe detection"
-          },
-          {
-            "code": "4992-4",
-            "display": "Campylobacter sp rRNA [Presence] in Specimen by Probe"
-          },
-          {
             "code": "50687-3",
             "display": "Plasmodium sp Ag [Presence] in Blood"
+          },
+          {
+            "code": "50697-2",
+            "display": "Influenza virus A Ag [Identifier] in Isolate"
           },
           {
             "code": "51587-4",
@@ -112,6 +108,10 @@
           {
             "code": "593-4",
             "display": "Legionella sp identified in Specimen by Organism specific culture"
+          },
+          {
+            "code": "59423-4",
+            "display": "Influenza virus A hemagglutinin type RNA [Identifier] in Specimen by NAA with probe detection"
           },
           {
             "code": "60422-3",
@@ -142,6 +142,10 @@
             "display": "Haemophilus sp identified in Specimen by Organism specific culture"
           },
           {
+            "code": "6604-3",
+            "display": "Influenza virus identified in Specimen by Organism specific culture"
+          },
+          {
             "code": "6609-2",
             "display": "Listeria sp identified in Specimen by Organism specific culture"
           },
@@ -162,6 +166,10 @@
             "display": "Bacteria identified in Isolate by MS.MALDI-TOF"
           },
           {
+            "code": "7899-8",
+            "display": "Hantavirus RNA [Presence] in Serum by NAA with probe detection"
+          },
+          {
             "code": "82300-5",
             "display": "Shigella sp [Presence] in Stool by Culture"
           },
@@ -172,6 +180,10 @@
           {
             "code": "85827-4",
             "display": "Carbapenem resistance bla OXA-48-like gene [Presence] by Molecular method"
+          },
+          {
+            "code": "86520-4",
+            "display": "Hantavirus RNA [Presence] in Blood by NAA with probe detection"
           },
           {
             "code": "88585-5",
