@@ -38,7 +38,7 @@ Cardinalities:
 * Orderer.OrganizationDepartment 1..1 string "Department where the laboratory test is ordered" 
 * Orderer.Physician 1..1 Element "Ordering physician"
 * Orderer.Physician.GLN 1..1 Identifier "Global location number (GLN) of the physician"
-* Orderer.OrganizationZSR 0..1 Identifier "Unique Identification (ZSR/RCC) of the ordering physician"  
+* Orderer.Physician.ZSR 0..1 Identifier "Unique Identification (ZSR/RCC) of the ordering physician"  
 * Orderer.Physician.Surname 1..1 string "Surname physician"
 * Orderer.Physician.Givenname 1..1 string "Given name physician" 
 * Orderer.Physician.Phone 1..1 string "Phone number physician"
