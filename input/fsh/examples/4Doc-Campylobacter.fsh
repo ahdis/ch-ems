@@ -67,7 +67,7 @@ InstanceOf: ChElmObservationResultsLaboratory
 Usage: #inline
 * status = #final
 * category[laboratory] = $observation-category#laboratory "Laboratory"
-* code = $loinc#101552-8 "Campylobacter coli DNA [Presence] in Stool by NAA with probe detection"
+* code = $loinc#105640-7 "Campylobacter sp DNA [Presence] in Specimen by NAA with probe detection"
 * subject = Reference(Pat-002)
 * effectiveDateTime = "2023-09-19T17:50:00+02:00"
 * performer = Reference(1Org-Labor)
@@ -88,7 +88,7 @@ Usage: #inline
 * identifier.value = "26955847714"
 * status = #completed
 * intent = #order
-* code = $loinc#101552-8 "Campylobacter coli DNA [Presence] in Stool by NAA with probe detection"
+* code = $loinc#105640-7 "Campylobacter sp DNA [Presence] in Specimen by NAA with probe detection"
 * subject = Reference(Pat-002)
 * requester = Reference(1PR-KsAbc)
 * specimen = Reference(4Spec-Specimen)
