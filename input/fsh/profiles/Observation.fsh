@@ -48,24 +48,26 @@ Title: "CH ELM Observation Results: Laboratory (strict)"
 Description: "CH ELM profile for the Observation resource with a stricter validation mechanism than the base profile via binding strength reinforcement for the leading code element."
 * code from ChElmResultsLaboratoryObservation (required)
 
-Profile: ChElmObservationPq
-Parent: Observation
-Id: ch-elm-observation-pq
-* valueQuantity 1..1
-
 Profile: ChElmObservationVirl
-Parent: ChElmObservationPq
+Parent: Observation
 Description: "Viral load"
 Id: ch-elm-observation-pq-virl
+Title: "CH ELM Observation Results: Viral Load"
+Description: "Viral Load as observation result, see also 'Guidance - Laboratory Result'"
+* valueQuantity 1..1
 * valueQuantity.code = #1/mL 
 * valueQuantity.system = "http://unitsofmeasure.org"
 
 Profile: ChElmObservationRto
 Parent: Observation
 Id: ch-elm-observation-rto
+Title: "CH ELM Observation Results: Ratio"
+Description: "Ratio as observation result, see also 'Guidance - Laboratory Result'"
 * valueRatio 1..1
 
 Profile: ChElmObservationTxt
 Parent: Observation
 Id: ch-elm-observation-txt
+Title: "CH ELM Observation Results: Text"
+Description: "Text as observation result, see also 'Guidance - Laboratory Result'"
 * valueString 1..1
