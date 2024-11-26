@@ -50,7 +50,6 @@ Description: "CH ELM profile for the Observation resource with a stricter valida
 
 Profile: ChElmObservationVirl
 Parent: Observation
-Description: "Viral load"
 Id: ch-elm-observation-pq-virl
 Title: "CH ELM Observation Results: Viral Load"
 Description: "Viral Load as observation result, see also 'Guidance - Laboratory Result'"
