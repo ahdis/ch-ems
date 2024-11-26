@@ -384,6 +384,24 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             </td>
         </tr>
         <tr>
+            <td>Poliomyelitis</td>
+            <td>Polio virus identified in Specimen by Organism specific culture</td>
+            <td>73907-8</td>
+            <td>
+                <a href="Bundle-54Doc-Poliomyelitis.json.html">JSON</a>, 
+                <a href="Bundle-54Doc-Poliomyelitis.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Rabies</td>
+            <td>Rabies virus neutralizing antibody [Presence] in Serum by Neutralization test</td>
+            <td>70858-6</td>
+            <td>
+                <a href="Bundle-55Doc-Tollwut.json.html">JSON</a>, 
+                <a href="Bundle-55Doc-Tollwut.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
             <td>Rubella - reporting of a seroconversion</td>
             <td>Rubella virus IgG Ab [Interpretation] in Serum</td>
             <td>20458-6</td>
@@ -428,6 +446,24 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
                 <a href="Bundle-25Doc-Tick-borne-encephalitis.xml.html">XML</a>
             </td>
         </tr>
+        <tr>
+            <td>Trichinellosis</td>
+            <td>Trichinella spiralis [Presence] in Tissue by Light microscopy</td>
+            <td>23499-7</td>
+            <td>
+                <a href="Bundle-56Doc-Trichinella spiralis.json.html">JSON</a>, 
+                <a href="Bundle-56Doc-Trichinella spiralis.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Yellow fever</td>
+            <td>Yellow fever virus IgM Ab [Presence] in Serum</td>
+            <td>41216-3</td>
+            <td>
+                <a href="Bundle-51Doc-Gelbfieber.json.html">JSON</a>, 
+                <a href="Bundle-51Doc-Gelbfieber.xml.html">XML</a>
+            </td>
+        </tr>"
         <tr>
             <td>Zika fever</td>
             <td>Zika virus IgM Ab [Presence] in Serum by Immunofluorescence</td>
@@ -508,6 +544,24 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             </td>
         </tr>
         <tr>
+            <td>Hanta fever</td>
+            <td>Hantavirus RNA [Presence] in Blood by NAA with probe detection</td>
+            <td>18725-2</td>
+            <td>
+                <a href="Bundle-52Doc-Hantavirus.json.html"">JSON</a>, 
+                <a href="Bundle-52Doc-Hantavirus.xml.html"">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Influenza A new subtype</td>
+            <td>Influenza virus A hemagglutinin type RNA [Identifier] in Specimen by NAA with probe detection</td>
+            <td>59423-4</td>
+            <td>
+                <a href="Bundle-53Doc-InfluenzaHxNy.json.html">JSON</a>, 
+                <a href="Bundle-53Doc-InfluenzaHxNy.xml.html">XML</a>
+            </td>
+        </tr>        
+        <tr>
             <td>Legionellosis</td>
             <td>Legionella sp Ag [Presence] in Urine</td>
             <td>32781-7</td>
@@ -536,8 +590,8 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
         </tr>
         <tr>
             <td>Shigellosis</td>
-            <td>Shigella sp DNA [Presence] in Stool by NAA with probe detection</td>
-            <td>101427-3</td>
+            <td>Shigella sp [Presence] in Specimen by Organism specific culture</td>
+            <td>46454-5</td>
              <td>
                 <a href="Bundle-13Doc-Shigella.json.html">JSON</a>, 
                 <a href="Bundle-13Doc-Shigella.xml.html">XML</a>
@@ -552,6 +606,15 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
                 <a href="Bundle-23Doc-F-tularensis.xml.html">XML</a>
             </td>
         </tr>
+        <tr>
+            <td>West-Nile-Fever</td>
+            <td>Virus identified in Specimen by Culture</td>
+            <td>6584-7</td>
+            <td>
+                <a href="Bundle-57Doc-West-Nile.json.html">JSON</a>, 
+                <a href="Bundle-57Doc-West-Nile.xml.html">XML</a>
+            </td>
+        </tr>"
     </tbody>
 </table>
 
@@ -661,7 +724,7 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             </td>
         </tr>
         <tr>
-            <td>HIV (reporting a viremia quantity value)</td>
+            <td>HIV</td>
             <td>HIV 1 RNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection</td>
             <td>62469-2</td>
            <td>

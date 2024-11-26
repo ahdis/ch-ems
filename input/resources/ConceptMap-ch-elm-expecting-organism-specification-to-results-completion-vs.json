@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-expecting-organism-specification-to-results-completion-vs",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-organism-specification-to-results-completion-vs",
-  "version": "2024-10-31",
+  "version": "2024-11-25",
   "name": "ChElmExpectingOrganismSpecificationToResultsCompletionVs",
   "title": "CH ELM Expecting Organism Specification To Results Completion Vs",
   "status": "active",
@@ -46,16 +46,6 @@
           ]
         },
         {
-          "code": "101427-3",
-          "display": "Shigella sp DNA [Presence] in Stool by NAA with probe detection",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-shi-org",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "104376-9",
           "display": "Diphtheria toxin DNA [Presence] in Specimen by NAA with probe detection",
           "target": [
@@ -81,6 +71,16 @@
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sal-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "22826-2",
+          "display": "Influenza virus A identified in Specimen by Bioassay",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-influenza-hxny-org",
               "equivalence": "relatedto"
             }
           ]
@@ -116,6 +116,16 @@
           ]
         },
         {
+          "code": "39025-2",
+          "display": "Influenza virus A hemagglutinin cDNA [Identifier] in Specimen by Sequencing",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-influenza-hxny-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "41625-5",
           "display": "Brucella sp DNA [Identifier] in Specimen by NAA with probe detection",
           "target": [
@@ -138,16 +148,6 @@
         {
           "code": "46454-5",
           "display": "Shigella sp [Presence] in Specimen by Organism specific culture",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-shi-org",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "46455-2",
-          "display": "Shigella sp DNA [Presence] in Specimen by NAA with probe detection",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-shi-org",
@@ -186,31 +186,21 @@
           ]
         },
         {
-          "code": "49614-1",
-          "display": "Campylobacter sp DNA [Identifier] in Specimen by NAA with probe detection",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-camp-org",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "4992-4",
-          "display": "Campylobacter sp rRNA [Presence] in Specimen by Probe",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-camp-org",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "50687-3",
           "display": "Plasmodium sp Ag [Presence] in Blood",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mal-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "50697-2",
+          "display": "Influenza virus A Ag [Identifier] in Isolate",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-influenza-hxny-org",
               "equivalence": "relatedto"
             }
           ]
@@ -271,6 +261,16 @@
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-leg-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "59423-4",
+          "display": "Influenza virus A hemagglutinin type RNA [Identifier] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-influenza-hxny-org",
               "equivalence": "relatedto"
             }
           ]
@@ -346,6 +346,16 @@
           ]
         },
         {
+          "code": "6604-3",
+          "display": "Influenza virus identified in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-influenza-hxny-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "6609-2",
           "display": "Listeria sp identified in Specimen by Organism specific culture",
           "target": [
@@ -396,6 +406,16 @@
           ]
         },
         {
+          "code": "7899-8",
+          "display": "Hantavirus RNA [Presence] in Serum by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-hanta-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "82300-5",
           "display": "Shigella sp [Presence] in Stool by Culture",
           "target": [
@@ -421,6 +441,16 @@
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "86520-4",
+          "display": "Hantavirus RNA [Presence] in Blood by NAA with probe detection",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-hanta-org",
               "equivalence": "relatedto"
             }
           ]

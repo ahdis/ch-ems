@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-virus-cult-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-virus-cult-org",
-  "version": "2024-10-31",
+  "version": "2024-11-25",
   "name": "ChElmResultsVirusCultOrg",
   "title": "CH ELM Results Virus Cult Org",
   "status": "active",
@@ -24,6 +24,10 @@
           {
             "code": "2423009",
             "display": "Chikungunya virus (organism)"
+          },
+          {
+            "code": "57311007",
+            "display": "West Nile virus (organism)"
           }
         ]
       }

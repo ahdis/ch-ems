@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-foph-patient-name-representation",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-foph-patient-name-representation",
-  "version": "2024-10-31",
+  "version": "2024-11-25",
   "name": "ChElmResultsToFophPatientNameRepresentation",
   "title": "CH ELM Results To FOPH Patient Name Representation",
   "status": "active",
@@ -151,16 +151,6 @@
           "target": [
             {
               "code": "initials",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "101427-3",
-          "display": "Shigella sp DNA [Presence] in Stool by NAA with probe detection",
-          "target": [
-            {
-              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -316,11 +306,51 @@
           ]
         },
         {
+          "code": "104407-2",
+          "display": "Hantavirus IgG Ab [Titer] in Serum by Immunoassay --2nd specimen",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "104454-4",
+          "display": "Trichinella spiralis IgG Ab [Titer] in Serum by Immunoassay --2nd specimen",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "104476-7",
           "display": "Zika virus IgG Ab [Titer] in Serum by Immunoassay --2nd specimen",
           "target": [
             {
               "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "105065-7",
+          "display": "Shigella species+EIEC invasion plasmid antigen H ipaH gene [Presence] in Specimen",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "105640-7",
+          "display": "Campylobacter sp DNA [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "initials",
               "equivalence": "relatedto"
             }
           ]
@@ -446,6 +476,16 @@
           ]
         },
         {
+          "code": "17735-2",
+          "display": "Trichinella spiralis IgM Ab [Presence] in Serum",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "20458-6",
           "display": "Rubella virus IgG Ab [Interpretation] in Serum",
           "target": [
@@ -556,6 +596,16 @@
           ]
         },
         {
+          "code": "22826-2",
+          "display": "Influenza virus A identified in Specimen by Bioassay",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "22866-8",
           "display": "Bacillus anthracis Ag [Presence] in Tissue by Immunofluorescence",
           "target": [
@@ -588,6 +638,16 @@
         {
           "code": "23130-8",
           "display": "Francisella tularensis DNA [Presence] in Tissue by NAA with probe detection",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "23499-7",
+          "display": "Trichinella spiralis [Presence] in Tissue by Light microscopy",
           "target": [
             {
               "code": "initials",
@@ -676,6 +736,26 @@
           ]
         },
         {
+          "code": "26620-5",
+          "display": "Hantavirus IgG Ab [Presence] in Serum",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "29566-7",
+          "display": "West Nile virus IgG Ab [Presence] in Serum by Immunoassay",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "29610-3",
           "display": "Hepatitis B virus DNA [Presence] in Serum or Plasma by NAA with probe detection",
           "target": [
@@ -711,6 +791,16 @@
           "target": [
             {
               "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "31703-2",
+          "display": "West Nile virus IgM Ab [Presence] in Cerebral spinal fluid",
+          "target": [
+            {
+              "code": "initials",
               "equivalence": "relatedto"
             }
           ]
@@ -906,6 +996,16 @@
           ]
         },
         {
+          "code": "32131-5",
+          "display": "Hantavirus IgM Ab [Presence] in Serum",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "32705-6",
           "display": "Neisseria gonorrhoeae DNA [Presence] in Vaginal fluid by NAA with probe detection",
           "target": [
@@ -986,11 +1086,51 @@
           ]
         },
         {
+          "code": "34460-6",
+          "display": "West Nile virus RNA [Presence] in Blood by NAA with probe detection",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "34461-4",
+          "display": "West Nile virus RNA [Presence] in Cerebral spinal fluid by NAA with probe detection",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "34487-9",
           "display": "Influenza virus A RNA [Presence] in Specimen by NAA with probe detection",
           "target": [
             {
               "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "38270-5",
+          "display": "Influenza virus A H7 RNA [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "38272-1",
+          "display": "Influenza virus A H5 RNA [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -1036,6 +1176,16 @@
           ]
         },
         {
+          "code": "39025-2",
+          "display": "Influenza virus A hemagglutinin cDNA [Identifier] in Specimen by Sequencing",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "40669-4",
           "display": "Rubella virus IgM Ab [Presence] in Cerebral spinal fluid by Immunoassay",
           "target": [
@@ -1051,6 +1201,16 @@
           "target": [
             {
               "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "41216-3",
+          "display": "Yellow fever virus IgM Ab [Presence] in Serum",
+          "target": [
+            {
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -1286,16 +1446,6 @@
           ]
         },
         {
-          "code": "46455-2",
-          "display": "Shigella sp DNA [Presence] in Specimen by NAA with probe detection",
-          "target": [
-            {
-              "code": "full-name",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "46732-4",
           "display": "Francisella tularensis subtype [Identifier] in Specimen by NAA with probe detection",
           "target": [
@@ -1366,8 +1516,8 @@
           ]
         },
         {
-          "code": "49612-5",
-          "display": "Salmonella sp DNA [Presence] in Specimen by NAA with probe detection",
+          "code": "49528-3",
+          "display": "Influenza virus A H9 RNA [Presence] in Specimen by NAA with probe detection",
           "target": [
             {
               "code": "full-name",
@@ -1376,11 +1526,11 @@
           ]
         },
         {
-          "code": "49614-1",
-          "display": "Campylobacter sp DNA [Identifier] in Specimen by NAA with probe detection",
+          "code": "49612-5",
+          "display": "Salmonella sp DNA [Presence] in Specimen by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -1398,16 +1548,6 @@
         {
           "code": "49672-9",
           "display": "Streptococcus pneumoniae DNA [Presence] in Specimen by NAA with probe detection",
-          "target": [
-            {
-              "code": "initials",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "4992-4",
-          "display": "Campylobacter sp rRNA [Presence] in Specimen by Probe",
           "target": [
             {
               "code": "initials",
@@ -1486,6 +1626,16 @@
           ]
         },
         {
+          "code": "50697-2",
+          "display": "Influenza virus A Ag [Identifier] in Isolate",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "51578-3",
           "display": "Chlamydia trachomatis DNA [Presence] in Semen by NAA with probe detection",
           "target": [
@@ -1501,6 +1651,16 @@
           "target": [
             {
               "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "51646-8",
+          "display": "Rabies virus RNA [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -1766,6 +1926,16 @@
           ]
         },
         {
+          "code": "59423-4",
+          "display": "Influenza virus A hemagglutinin type RNA [Identifier] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "60255-7",
           "display": "Neisseria gonorrhoeae rRNA [Presence] in Throat by NAA with probe detection",
           "target": [
@@ -1816,6 +1986,16 @@
           ]
         },
         {
+          "code": "60546-9",
+          "display": "Polio virus identified [Type] in Isolate by Organism specific culture",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "61366-1",
           "display": "Haemophilus influenzae DNA [Presence] in Specimen by NAA with probe detection",
           "target": [
@@ -1856,31 +2036,11 @@
           ]
         },
         {
-          "code": "6329-7",
-          "display": "Campylobacter coli rRNA [Presence] in Specimen by Probe",
+          "code": "62469-2",
+          "display": "HIV 1 RNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection",
           "target": [
             {
-              "code": "initials",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "6333-9",
-          "display": "Campylobacter jejuni rRNA [Presence] in Specimen by Probe",
-          "target": [
-            {
-              "code": "initials",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "6334-7",
-          "display": "Campylobacter lari rRNA [Presence] in Specimen by Probe",
-          "target": [
-            {
-              "code": "initials",
+              "code": "hiv-code",
               "equivalence": "relatedto"
             }
           ]
@@ -1928,6 +2088,26 @@
         {
           "code": "6508-6",
           "display": "Neisseria meningitidis Ag [Presence] in Cerebral spinal fluid",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "6532-6",
+          "display": "Rabies virus Ag [Presence] in Specimen by Immunofluorescence",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "6539-1",
+          "display": "Rabies virus identified in Specimen by Organism specific culture",
           "target": [
             {
               "code": "full-name",
@@ -2001,6 +2181,16 @@
           "target": [
             {
               "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "6604-3",
+          "display": "Influenza virus identified in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -2166,6 +2356,16 @@
           ]
         },
         {
+          "code": "70858-6",
+          "display": "Rabies virus neutralizing antibody [Presence] in Serum by Neutralization test",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "71429-5",
           "display": "Campylobacter sp DNA.diarrheagenic [Presence] in Stool by NAA with probe detection",
           "target": [
@@ -2176,11 +2376,31 @@
           ]
         },
         {
+          "code": "71782-7",
+          "display": "Yellow fever virus IgM Ab [Presence] in Cerebral spinal fluid by Immunoassay",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "72307-2",
           "display": "Brucella sp IgG Ab [Titer] in Serum --2nd specimen",
           "target": [
             {
               "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "73907-8",
+          "display": "Polio virus identified in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -2296,6 +2516,16 @@
           ]
         },
         {
+          "code": "77955-3",
+          "display": "Yellow fever virus IgM Ab [Presence] in Serum by Immunofluorescence",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "7889-9",
           "display": "Francisella tularensis IgG Ab [Presence] in Serum",
           "target": [
@@ -2308,6 +2538,16 @@
         {
           "code": "7890-7",
           "display": "Francisella tularensis IgM Ab [Presence] in Serum",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "7899-8",
+          "display": "Hantavirus RNA [Presence] in Serum by NAA with probe detection",
           "target": [
             {
               "code": "initials",
@@ -2406,6 +2646,16 @@
           ]
         },
         {
+          "code": "8043-2",
+          "display": "Trichinella spiralis IgG Ab [Presence] in Serum",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "80680-2",
           "display": "Vibrio cholerae toxin ctxA gene [Presence] in Stool by NAA with probe detection",
           "target": [
@@ -2421,16 +2671,6 @@
           "target": [
             {
               "code": "full-name",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "81656-1",
-          "display": "Campylobacter coli+jejuni tuf gene [Presence] in Stool by NAA with probe detection",
-          "target": [
-            {
-              "code": "initials",
               "equivalence": "relatedto"
             }
           ]
@@ -2546,6 +2786,16 @@
           ]
         },
         {
+          "code": "86520-4",
+          "display": "Hantavirus RNA [Presence] in Blood by NAA with probe detection",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "86574-1",
           "display": "Marburg virus RNA [Presence] in Blood by NAA with probe detection",
           "target": [
@@ -2591,6 +2841,16 @@
           "target": [
             {
               "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "87985-8",
+          "display": "Trichinella spiralis DNA [Presence] in Tissue by NAA with probe detection",
+          "target": [
+            {
+              "code": "initials",
               "equivalence": "relatedto"
             }
           ]
@@ -2718,6 +2978,16 @@
         {
           "code": "90066-2",
           "display": "Corynebacterium sp identified in Isolate by Organism specific culture",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "90459-9",
+          "display": "Yellow fever virus RNA [Presence] in Blood by NAA with probe detection",
           "target": [
             {
               "code": "full-name",
@@ -2966,6 +3236,26 @@
           ]
         },
         {
+          "code": "94184-9",
+          "display": "Yellow fever virus RNA [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "94289-6",
+          "display": "West Nile virus neutralizing antibody [Presence] in Specimen by Neutralization test",
+          "target": [
+            {
+              "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "94309-2",
           "display": "SARS-CoV-2 (COVID-19) RNA [Presence] in Specimen by NAA with probe detection",
           "target": [
@@ -3068,6 +3358,16 @@
         {
           "code": "95687-0",
           "display": "Chikungunya virus IgM Ab [Presence] in Specimen by Immunoassay",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "95690-4",
+          "display": "Yellow fever virus IgM Ab [Presence] in Specimen by Immunoassay",
           "target": [
             {
               "code": "full-name",
@@ -3214,15 +3514,6 @@
               "equivalence": "relatedto"
             }
           ]
-        },
-        {
-          "code": "62469-2",
-          "target": [
-            {
-              "code": "hiv-code",
-              "equivalence": "relatedto"
-            }
-          ]
         }
       ]
     },
@@ -3230,6 +3521,26 @@
       "source": "http://snomed.info/sct",
       "target": "http://fhir.ch/ig/ch-elm/CodeSystem/ch-elm-foph-patient-name-representation",
       "element": [
+        {
+          "code": "19030005",
+          "display": "Human immunodeficiency virus (organism)",
+          "target": [
+            {
+              "code": "hiv-code",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "36115006",
+          "display": "Human immunodeficiency virus type 2 (organism)",
+          "target": [
+            {
+              "code": "hiv-code",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
         {
           "code": "72904005",
           "display": "Treponema pallidum (organism)",
@@ -3242,6 +3553,7 @@
         },
         {
           "code": "89293008",
+          "display": "Human immunodeficiency virus type I (organism)",
           "target": [
             {
               "code": "hiv-code",

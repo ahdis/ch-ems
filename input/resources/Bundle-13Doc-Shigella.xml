@@ -118,7 +118,7 @@
         <code>
           <coding>
             <system value="http://loinc.org"/>
-            <code value="101427-3"/>
+            <code value="46454-5"/>
           </coding>
         </code>
         <subject>
@@ -243,7 +243,7 @@
         <code>
           <coding>
             <system value="http://loinc.org"/>
-            <code value="101427-3"/>
+            <code value="46454-5"/>
           </coding>
         </code>
         <subject>
