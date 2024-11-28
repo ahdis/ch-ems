@@ -451,8 +451,8 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             <td>Trichinella spiralis [Presence] in Tissue by Light microscopy</td>
             <td>23499-7</td>
             <td>
-                <a href="Bundle-56Doc-Trichinella spiralis.json.html">JSON</a>, 
-                <a href="Bundle-56Doc-Trichinella spiralis.xml.html">XML</a>
+                <a href="Bundle-56Doc-Trichinella-spiralis.json.html">JSON</a>, 
+                <a href="Bundle-56Doc-Trichinella-spiralis.xml.html">XML</a>
             </td>
         </tr>
         <tr>
