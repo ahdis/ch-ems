@@ -1,7 +1,8 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### 1.7.0 unreleased
+### 1.7.0 2024/11/28
 
+* [#130](https://github.com/ahdis/ch-elm/issues/130) update usecase to english
 * [#128](https://github.com/ahdis/ch-elm/issues/128) updated ValueSets and new examples for Hanta fever, HIV, Influenza A new subtype, Poliomyelitis, Rabies, Trichinellosis, West-Nile-Fever and Yellow fever
 * [#125](https://github.com/ahdis/ch-elm/issues/125) HIV not an example for use case 3
 * [#124](https://github.com/ahdis/ch-elm/issues/124) HIV: Observation.valueQuantity for specific Code
