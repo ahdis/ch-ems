@@ -20,9 +20,6 @@
             "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-rto"
           },
           {
-            "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-pq"
-          },
-          {
             "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-pq-virl"
           }
         ]

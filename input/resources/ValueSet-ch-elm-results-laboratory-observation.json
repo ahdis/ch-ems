@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
-  "version": "2024-11-25",
+  "version": "2024-11-28",
   "name": "ChElmResultsLaboratoryObservation",
   "title": "CH ELM Results Laboratory Observation",
   "status": "active",
@@ -64,6 +64,10 @@
           {
             "code": "101424-0",
             "display": "Influenza virus A H3 RNA [Presence] in Respiratory system specimen by NAA with probe detection"
+          },
+          {
+            "code": "101427-3",
+            "display": "Shigella sp DNA [Presence] in Stool by NAA with probe detection"
           },
           {
             "code": "101552-8",
@@ -582,6 +586,10 @@
             "display": "Shigella sp [Presence] in Specimen by Organism specific culture"
           },
           {
+            "code": "46455-2",
+            "display": "Shigella sp DNA [Presence] in Specimen by NAA with probe detection"
+          },
+          {
             "code": "46732-4",
             "display": "Francisella tularensis subtype [Identifier] in Specimen by NAA with probe detection"
           },
@@ -618,12 +626,20 @@
             "display": "Salmonella sp DNA [Presence] in Specimen by NAA with probe detection"
           },
           {
+            "code": "49614-1",
+            "display": "Campylobacter sp DNA [Identifier] in Specimen by NAA with probe detection"
+          },
+          {
             "code": "49671-1",
             "display": "Neisseria meningitidis DNA [Presence] in Specimen by NAA with probe detection"
           },
           {
             "code": "49672-9",
             "display": "Streptococcus pneumoniae DNA [Presence] in Specimen by NAA with probe detection"
+          },
+          {
+            "code": "4992-4",
+            "display": "Campylobacter sp rRNA [Presence] in Specimen by Probe"
           },
           {
             "code": "5007-0",
@@ -820,6 +836,18 @@
           {
             "code": "62469-2",
             "display": "HIV 1 RNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection"
+          },
+          {
+            "code": "6329-7",
+            "display": "Campylobacter coli rRNA [Presence] in Specimen by Probe"
+          },
+          {
+            "code": "6333-9",
+            "display": "Campylobacter jejuni rRNA [Presence] in Specimen by Probe"
+          },
+          {
+            "code": "6334-7",
+            "display": "Campylobacter lari rRNA [Presence] in Specimen by Probe"
           },
           {
             "code": "6349-5",
@@ -1072,6 +1100,10 @@
           {
             "code": "80824-6",
             "display": "Zika virus IgM Ab [Presence] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "81656-1",
+            "display": "Campylobacter coli+jejuni tuf gene [Presence] in Stool by NAA with probe detection"
           },
           {
             "code": "82184-3",

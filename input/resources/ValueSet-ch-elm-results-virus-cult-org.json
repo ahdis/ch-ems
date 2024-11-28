@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-virus-cult-org",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-virus-cult-org",
-  "version": "2024-11-25",
+  "version": "2024-11-28",
   "name": "ChElmResultsVirusCultOrg",
   "title": "CH ELM Results Virus Cult Org",
   "status": "active",
@@ -20,6 +20,10 @@
           {
             "code": "34348001",
             "display": "Dengue virus (organism)"
+          },
+          {
+            "code": "49445003",
+            "display": "Genus Hantavirus (organism)"
           },
           {
             "code": "2423009",
