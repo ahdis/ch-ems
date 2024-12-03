@@ -130,11 +130,11 @@ Description: "Example for a CH ELM Organization: Orderer"
 * address.city = "Genève"
 * address.postalCode = "1202"
 
-Instance: 7-DocumentReferenceStrict
+Instance: Publish-7Doc-SARSCoV2
 InstanceOf: PublishDocumentReferenceStrict
 Usage: #example
-Title: "DocumentReference for reporting SARSCoV2"
-Description: "Example for a CH ELM DocumentReference: Laboratory Report"
+Title: "Publish 7Doc-SARSCoV2"
+Description: "Reporting SARSCoV2"
 * contained = 7Doc-SARSCoV2
 * status = #current
 * identifier[0].system = "urn:ietf:rfc:3986"

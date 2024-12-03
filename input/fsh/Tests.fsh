@@ -69,7 +69,7 @@ InstanceOf: TestScript
 * url = "http://fhir.ch/ig/ch-elm/TestScript/Test94-Ignore-Source-Warning"
 * name = "Test94IgnoreSourceWarning"
 * status = #active
-* insert Fixture(inputdata, [[DocumentReference/1-DocumentReference]])
+* insert Fixture(inputdata, [[DocumentReference/Publish-1Doc-NeisseriaGonorrhoeae]])
 * test.name = "Test94"
 * test.description = "Test script to verify that warning Binding for path (.+) has no source, so can't be checked"
 * insert ActionOperationValidate(http://fhir.ch/ig/ch-elm/StructureDefinition/PublishDocumentReference, inputdata)
@@ -97,7 +97,7 @@ InstanceOf: TestScript
 * url = "http://fhir.ch/ig/ch-elm/TestScript/Test96-Ignore-Slice-Patient-Eu-Lab-Information"
 * name = "Test96IgnoreObservationInterpretationCodesInformation"
 * status = #active
-* insert Fixture(inputdata, [[DocumentReference/2-DocumentReferenceVct]])
+* insert Fixture(inputdata, [[DocumentReference/Publish-2Doc-ChlamydiaTrachomatis-Vct]])
 * test.name = "Test96"
 * test.description = "Test script to verify that Information This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab is ignored"
 * insert ActionOperationValidate(http://fhir.ch/ig/ch-elm/StructureDefinition/PublishDocumentReference, inputdata)

@@ -1,307 +1,385 @@
 {
   "resourceType" : "DocumentReference",
-  "contained" : [{
+  "contained" : [
+  {
     "resourceType" : "Bundle",
     "id" : "1Doc-NeisseriaGonorrhoeae",
     "identifier" : {
       "system" : "urn:ietf:rfc:3986",
-      "value" : "urn:uuid:1901332d-6012-443f-9690-9291adb2e19d"
+      "value" : "urn:uuid:3401332d-6012-443f-9690-6334adb23aac"
     },
     "type" : "document",
-    "timestamp" : "2023-07-14T16:00:00+02:00",
-    "entry" : [{
-      "fullUrl" : "http://test.fhir.ch/r4/Composition/1Comp-NeisseriaGonorrhoeae",
-      "resource" : {
-        "resourceType" : "Composition",
-        "id" : "1Comp-NeisseriaGonorrhoeae",
-        "language" : "de-CH",
-        "identifier" : {
-          "system" : "urn:ietf:rfc:3986",
-          "value" : "urn:uuid:1901332d-6012-443f-9690-9291adb2e19d"
-        },
-        "status" : "final",
-        "type" : {
-          "coding" : [{
-            "system" : "http://snomed.info/sct",
-            "version" : "http://snomed.info/sct/2011000195101",
-            "code" : "4241000179101",
-            "display" : "Laborbericht"
+    "timestamp" : "2024-11-06T12:00:00+02:00",
+    "entry" : [
+      {
+        "fullUrl" : "urn:uuid:288f3a94-5c88-461f-937c-c8948dd86ca0",
+        "resource" : {
+          "resourceType" : "Composition",
+          "id" : "288f3a94-5c88-461f-937c-c8948dd86ca0",
+          "language" : "de-CH",
+          "identifier" : {
+            "system" : "urn:ietf:rfc:3986",
+            "value" : "urn:uuid:3401332d-6012-443f-9690-6334adb23aac"
           },
-          {
-            "system" : "http://loinc.org",
-            "code" : "11502-2",
-            "display" : "Laboratory report"
-          }]
-        },
-        "subject" : {
-          "reference" : "Patient/Pat-001"
-        },
-        "date" : "2023-07-14T16:00:00+02:00",
-        "author" : [{
-          "reference" : "Organization/1Org-Labor"
-        }],
-        "title" : "Laborbericht vom 14.07.2023",
-        "section" : [{
-          "title" : "Analyseergebnisse der mikrobiologischen Untersuchung",
-          "code" : {
-            "coding" : [{
-              "system" : "http://loinc.org",
-              "code" : "18725-2",
-              "display" : "Microbiology studies (set)"
-            }]
-          },
-          "entry" : [{
-            "reference" : "Observation/1Obs-NeisseriaGonorrhoeae"
-          }]
-        }]
-      }
-    },
-    {
-      "fullUrl" : "http://test.fhir.ch/r4/DiagnosticReport/1DR-NeisseriaGonorrhoeae",
-      "resource" : {
-        "resourceType" : "DiagnosticReport",
-        "id" : "1DR-NeisseriaGonorrhoeae",
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition",
-          "valueReference" : {
-            "reference" : "Composition/1Comp-NeisseriaGonorrhoeae"
-          }
-        }],
-        "identifier" : [{
-          "system" : "urn:ietf:rfc:3986",
-          "value" : "urn:uuid:1901332d-6012-443f-9690-9291adb2e19d"
-        }],
-        "basedOn" : [{
-          "reference" : "ServiceRequest/1SR-Order"
-        }],
-        "status" : "final",
-        "code" : {
-          "coding" : [{
-            "system" : "http://loinc.org",
-            "code" : "11502-2",
-            "display" : "Laboratory report"
-          }]
-        },
-        "subject" : {
-          "reference" : "Patient/Pat-001"
-        },
-        "performer" : [{
-          "reference" : "Organization/1Org-Labor"
-        }],
-        "specimen" : [{
-          "reference" : "Specimen/1Spec-Specimen"
-        }],
-        "result" : [{
-          "reference" : "Observation/1Obs-NeisseriaGonorrhoeae"
-        }]
-      }
-    },
-    {
-      "fullUrl" : "http://test.fhir.ch/r4/Patient/Pat-001",
-      "resource" : {
-        "resourceType" : "Patient",
-        "id" : "Pat-001",
-        "identifier" : [{
-          "system" : "urn:oid:2.16.756.5.32",
-          "value" : "7562295883070"
-        }],
-        "name" : [{
-          "family" : "M",
-          "given" : ["D"]
-        }],
-        "gender" : "male",
-        "birthDate" : "1960-08-22",
-        "address" : [{
-          "use" : "home",
-          "city" : "Bern",
-          "state" : "BE",
-          "postalCode" : "3000",
-          "country" : "CH",
-          "_country" : {
-            "extension" : [{
-              "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding",
-              "valueCoding" : {
-                "system" : "urn:iso:std:iso:3166",
-                "code" : "CH"
+          "status" : "final",
+          "type" : {
+            "coding" : [
+              {
+                "system" : "http://snomed.info/sct",
+                "version" : "http://snomed.info/sct/2011000195101",
+                "code" : "4241000179101",
+                "display" : "Laborbericht"
+              },
+              {
+                "system" : "http://loinc.org",
+                "code" : "11502-2",
+                "display" : "Laboratory report"
               }
-            }]
+            ]
+          },
+          "subject" : {
+            "reference" : "urn:uuid:53b13bba-26d7-4ab7-81cd-7eaf18dc26eb"
+          },
+          "date" : "2024-11-06T12:00:00+02:00",
+          "author" : [
+            {
+              "reference" : "urn:uuid:3e25781f-bdcc-4e9f-99b2-162b4aaebc56"
+            }
+          ],
+          "title" : "Laborbericht vom 6.11.2024",
+          "section" : [
+            {
+              "title" : "Analyseergebnisse der mikrobiologischen Untersuchung",
+              "code" : {
+                "coding" : [
+                  {
+                    "system" : "http://loinc.org",
+                    "code" : "18725-2",
+                    "display" : "Microbiology studies (set)"
+                  }
+                ]
+              },
+              "entry" : [
+                {
+                  "reference" : "urn:uuid:2ead0239-152f-4db9-89dd-68c073477155"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "fullUrl" : "urn:uuid:53b13bba-26d7-4ab7-81cd-7eaf18dc26eb",
+        "resource" : {
+          "resourceType" : "Patient",
+          "id" : "53b13bba-26d7-4ab7-81cd-7eaf18dc26eb",
+          "identifier" : [
+            {
+              "system" : "urn:oid:2.16.756.5.32",
+              "value" : "7561234567897"
+            }
+          ],
+          "name" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-ext-hiv-code",
+                  "valueString" : "H5"
+                }
+              ],
+               "name": [
+                {
+                  "family": "Trudiane",
+                  "given": [
+                    "Gersterson"
+                  ]
+                }
+              ]
+            }
+          ],
+          "gender" : "female",
+          "birthDate" : "1981-02-07",
+          "address" : [
+            {
+              "use" : "home",
+              "city" : "Carouge",
+              "state" : "GE",
+              "postalCode" : "1227",
+              "country" : "CH",
+              "_country" : {
+                "extension" : [
+                  {
+                    "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding",
+                    "valueCoding" : {
+                      "system" : "urn:iso:std:iso:3166",
+                      "code" : "CH"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "fullUrl" : "urn:uuid:3e25781f-bdcc-4e9f-99b2-162b4aaebc56",
+        "resource" : {
+          "resourceType" : "Organization",
+          "id" : "3e25781f-bdcc-4e9f-99b2-162b4aaebc56",
+          "identifier" : [
+            {
+              "system" : "urn:oid:2.51.1.3",
+              "value" : "7601002331470"
+            }
+          ],
+          "name" : "SanLab"
+        }
+      },
+      {
+        "fullUrl" : "urn:uuid:2ead0239-152f-4db9-89dd-68c073477155",
+        "resource" : {
+          "resourceType" : "Observation",
+          "id" : "2ead0239-152f-4db9-89dd-68c073477155",
+          "status" : "final",
+          "category" : [
+            {
+              "coding" : [
+                {
+                  "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code" : "laboratory",
+                  "display" : "Laboratory"
+                }
+              ]
+            }
+          ],
+          "code" : {
+            "coding" : [
+              {
+                "system" : "http://snomed.info/sct",
+                "code" : "89293008"
+              }
+            ]
+          },
+          "subject" : {
+            "reference" : "urn:uuid:53b13bba-26d7-4ab7-81cd-7eaf18dc26eb"
+          },
+          "effectiveDateTime" : "2024-11-04T14:20:00+02:00",
+          "performer" : [
+            {
+              "reference" : "urn:uuid:3e25781f-bdcc-4e9f-99b2-162b4aaebc56"
+            }
+          ],
+          "dataAbsentReason" : {
+            "coding" : [
+              {
+                "system" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "code" : "not-applicable"
+              }
+            ]
+          },
+          "interpretation" : [
+            {
+              "coding" : [
+                {
+                  "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                  "code" : "POS",
+                  "display" : "Positive"
+                }
+              ]
+            }
+          ],
+          "specimen" : {
+            "reference" : "urn:uuid:fa064f03-0908-4958-82cb-e940cadacfd3"
           }
-        }]
-      }
-    },
-    {
-      "fullUrl" : "http://test.fhir.ch/r4/Observation/1Obs-NeisseriaGonorrhoeae",
-      "resource" : {
-        "resourceType" : "Observation",
-        "id" : "1Obs-NeisseriaGonorrhoeae",
-        "status" : "final",
-        "category" : [{
-          "coding" : [{
-            "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-            "code" : "laboratory",
-            "display" : "Laboratory"
-          }]
-        }],
-        "code" : {
-          "coding" : [{
-            "system" : "http://loinc.org",
-            "code" : "697-3",
-            "display" : "Neisseria gonorrhoeae [Presence] in Urethra by Organism specific culture"
-          }]
-        },
-        "subject" : {
-          "reference" : "Patient/Pat-001"
-        },
-        "effectiveDateTime" : "2023-07-14T11:10:00+02:00",
-        "performer" : [{
-          "reference" : "Organization/1Org-Labor"
-        }],
-        "valueCodeableConcept" : {
-          "coding" : [{
-            "system" : "http://snomed.info/sct",
-            "code" : "10828004",
-            "display" : "Positive"
-          }]
-        },
-        "interpretation" : [{
-          "coding" : [{
-            "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-            "code" : "POS",
-            "display" : "Positive"
-          }]
-        }],
-        "specimen" : {
-          "reference" : "Specimen/1Spec-Specimen"
         }
-      }
-    },
-    {
-      "fullUrl" : "http://test.fhir.ch/r4/Specimen/1Spec-Specimen",
-      "resource" : {
-        "resourceType" : "Specimen",
-        "id" : "1Spec-Specimen",
-        "type" : {
-          "text" : "Material declared by Observation.code or non-mandatory"
-        },
-        "subject" : {
-          "reference" : "Patient/Pat-001"
-        },
-        "collection" : {
-          "collectedDateTime" : "2023-07-01"
-        }
-      }
-    },
-    {
-      "fullUrl" : "http://test.fhir.ch/r4/ServiceRequest/1SR-Order",
-      "resource" : {
-        "resourceType" : "ServiceRequest",
-        "id" : "1SR-Order",
-        "identifier" : [{
-          "value" : "22000938108"
-        }],
-        "status" : "completed",
-        "intent" : "order",
-        "code" : {
-          "coding" : [{
-            "system" : "http://loinc.org",
-            "code" : "697-3",
-            "display" : "Neisseria gonorrhoeae [Presence] in Urethra by Organism specific culture"
-          }]
-        },
-        "subject" : {
-          "reference" : "Patient/Pat-001"
-        },
-        "requester" : {
-          "reference" : "PractitionerRole/1PR-KsAbc"
-        },
-        "specimen" : [{
-          "reference" : "Specimen/1Spec-Specimen"
-        }]
-      }
-    },
-    {
-      "fullUrl" : "http://test.fhir.ch/r4/PractitionerRole/1PR-KsAbc",
-      "resource" : {
-        "resourceType" : "PractitionerRole",
-        "id" : "1PR-KsAbc",
-        "practitioner" : {
-          "reference" : "Practitioner/1Pract-KsAbc"
-        },
-        "organization" : {
-          "reference" : "Organization/1Org-KsAbc"
-        }
-      }
-    },
-    {
-      "fullUrl" : "http://test.fhir.ch/r4/Practitioner/1Pract-KsAbc",
-      "resource" : {
-        "resourceType" : "Practitioner",
-        "id" : "1Pract-KsAbc",
-        "identifier" : [{
-          "system" : "urn:oid:2.51.1.3",
-          "value" : "7601000234438"
-        }],
-        "name" : [{
-          "family" : "Giacometti",
-          "given" : ["Monika"]
-        }],
-        "telecom" : [{
-          "system" : "email",
-          "value" : "m.giacometti@ks-abc.ch"
-        },
-        {
-          "system" : "phone",
-          "value" : "+41 79 111 44 55"
-        }]
-      }
-    },
-    {
-      "fullUrl" : "http://test.fhir.ch/r4/Organization/1Org-Labor",
-      "resource" : {
-        "resourceType" : "Organization",
-        "id" : "1Org-Labor",
-        "identifier" : [{
-          "system" : "urn:oid:2.51.1.3",
-          "value" : "7601002331470"
-        }],
-        "name" : "SanLab"
-      }
-    },
-    {
-      "fullUrl" : "http://test.fhir.ch/r4/Organization/1Org-KsAbc",
-      "resource" : {
-        "resourceType" : "Organization",
-        "id" : "1Org-KsAbc",
-        "extension" : [{
-          "url" : "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-ext-department",
-          "valueString" : "Abteilung 2"
-        }],
-        "identifier" : [{
-          "system" : "urn:oid:2.51.1.3",
-          "value" : "7601888888884"
-        }],
-        "name" : "Kantonsspital ABC",
-        "address" : [{
-          "_line" : [{
-            "extension" : [{
-              "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
-              "valueString" : "Aortastrasse"
+      },
+      {
+        "fullUrl" : "urn:uuid:1cb13eb9-4e83-4df0-87ab-11b5cce250ba",
+        "resource" : {
+          "resourceType" : "Practitioner",
+          "id" : "1cb13eb9-4e83-4df0-87ab-11b5cce250ba",
+          "identifier" : [
+            {
+              "system" : "urn:oid:2.51.1.3",
+              "value" : "7601000000514"
+            }
+          ],
+          "name" : [
+            {
+              "family" : "Hauser",
+              "given" : [
+                "Peter"
+              ]
+            }
+          ],
+          "telecom" : [
+            {
+              "system" : "phone",
+              "value" : "+41 79 222 33 44"
             },
             {
-              "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
-              "valueString" : "22"
-            },
+              "system" : "email",
+              "value" : "peter.hauser@hauserpraxis.ch"
+            }
+          ]
+        }
+      },
+      {
+        "fullUrl" : "urn:uuid:1a06aa4d-fc32-403f-99c1-680232316b57",
+        "resource" : {
+          "resourceType" : "Organization",
+          "id" : "1a06aa4d-fc32-403f-99c1-680232316b57",
+          "identifier" : [
             {
-              "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox",
-              "valueString" : "18"
-            }]
-          }],
-          "city" : "Bern",
-          "postalCode" : "3000"
-        }]
+              "system" : "urn:oid:2.16.756.5.45",
+              "value" : "A74966168"
+            }
+          ],
+          "name" : "Praxis Dr. Hauser",
+          "address" : [
+            {
+              "line" : [
+                "Hauptstrasse 10"
+              ],
+              "_line" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                      "valueString" : "Hauptstrasse"
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                      "valueString" : "10"
+                    }
+                  ]
+                }
+              ],
+              "city" : "Solothurn",
+              "postalCode" : "4500"
+            }
+          ]
+        }
+      },
+      {
+        "fullUrl" : "urn:uuid:0d4d9b6a-6a42-47a1-8abf-c715bdb5de2c",
+        "resource" : {
+          "resourceType" : "PractitionerRole",
+          "id" : "0d4d9b6a-6a42-47a1-8abf-c715bdb5de2c",
+          "practitioner" : {
+            "reference" : "urn:uuid:1cb13eb9-4e83-4df0-87ab-11b5cce250ba"
+          },
+          "organization" : {
+            "reference" : "urn:uuid:1a06aa4d-fc32-403f-99c1-680232316b57"
+          }
+        }
+      },
+      {
+        "fullUrl" : "urn:uuid:fa064f03-0908-4958-82cb-e940cadacfd3",
+        "resource" : {
+          "resourceType" : "Specimen",
+          "id" : "fa064f03-0908-4958-82cb-e940cadacfd3",
+          "type" : {
+            "text" : "Material declared by Observation.code or non-mandatory"
+          },
+          "subject" : {
+            "reference" : "urn:uuid:53b13bba-26d7-4ab7-81cd-7eaf18dc26eb"
+          },
+          "collection" : {
+            "collectedDateTime" : "2024-11-01T14:20:00+02:00"
+          }
+        }
+      },
+      {
+        "fullUrl" : "urn:uuid:d78e6789-f3f0-46fe-aded-04b2da318e68",
+        "resource" : {
+          "resourceType" : "ServiceRequest",
+          "id" : "d78e6789-f3f0-46fe-aded-04b2da318e68",
+          "identifier" : [
+            {
+              "value" : "26500923622"
+            }
+          ],
+          "status" : "completed",
+          "intent" : "order",
+          "code" : {
+            "coding" : [
+              {
+                "system" : "http://snomed.info/sct",
+                "code" : "89293008"
+              }
+            ]
+          },
+          "subject" : {
+            "reference" : "urn:uuid:53b13bba-26d7-4ab7-81cd-7eaf18dc26eb"
+          },
+          "requester" : {
+            "reference" : "urn:uuid:0d4d9b6a-6a42-47a1-8abf-c715bdb5de2c"
+          },
+          "specimen" : [
+            {
+              "reference" : "urn:uuid:fa064f03-0908-4958-82cb-e940cadacfd3"
+            }
+          ]
+        }
+      },
+      {
+        "fullUrl" : "urn:uuid:6bfcd981-5e6b-47ed-8531-aba2b9eef9cd",
+        "resource" : {
+          "resourceType" : "DiagnosticReport",
+          "id" : "6bfcd981-5e6b-47ed-8531-aba2b9eef9cd",
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition",
+              "valueReference" : {
+                "reference" : "urn:uuid:288f3a94-5c88-461f-937c-c8948dd86ca0"
+              }
+            }
+          ],
+          "identifier" : [
+            {
+              "system" : "urn:ietf:rfc:3986",
+              "value" : "urn:uuid:3401332d-6012-443f-9690-6334adb23aac"
+            }
+          ],
+          "basedOn" : [
+            {
+              "reference" : "urn:uuid:d78e6789-f3f0-46fe-aded-04b2da318e68"
+            }
+          ],
+          "status" : "final",
+          "code" : {
+            "coding" : [
+              {
+                "system" : "http://loinc.org",
+                "code" : "11502-2",
+                "display" : "Laboratory report"
+              }
+            ]
+          },
+          "subject" : {
+            "reference" : "urn:uuid:53b13bba-26d7-4ab7-81cd-7eaf18dc26eb"
+          },
+          "performer" : [
+            {
+              "reference" : "urn:uuid:3e25781f-bdcc-4e9f-99b2-162b4aaebc56"
+            }
+          ],
+          "specimen" : [
+            {
+              "reference" : "urn:uuid:fa064f03-0908-4958-82cb-e940cadacfd3"
+            }
+          ],
+          "result" : [
+            {
+              "reference" : "urn:uuid:2ead0239-152f-4db9-89dd-68c073477155"
+            }
+          ]
+        }
       }
-    }]
-  }],
+    ]
+  }
+],
   "identifier" : [{
     "system" : "urn:ietf:rfc:3986",
     "value" : "urn:uuid:1901332d-6012-443f-9690-9291adb2e19d"

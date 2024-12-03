@@ -1,8 +1,8 @@
 Instance: 1-DocumentReferenceStrict
 InstanceOf: PublishDocumentReferenceStrict
 Usage: #example
-Title: "DocumentReference for reporting Neisseria Gonorhoeae"
-Description: "Example for a CH ELM DocumentReference: Laboratory Report"
+Title: "Publish 1Doc-NeisseriaGonorrhoeae (Strict)"
+Description: "Reporting Neisseria Gonorhoeae"
 * contained = 1Doc-NeisseriaGonorrhoeae
 * status = #current
 * identifier[0].system = "urn:ietf:rfc:3986"
@@ -10,11 +10,11 @@ Description: "Example for a CH ELM DocumentReference: Laboratory Report"
 * content.attachment.language = #de-CH
 * content.attachment.url = "#1Doc-NeisseriaGonorrhoeae" 
 
-Instance: 1-DocumentReference
+Instance: Publish-1Doc-NeisseriaGonorrhoeae
 InstanceOf: PublishDocumentReference
 Usage: #example
-Title: "DocumentReference for reporting Neisseria Gonorhoeae"
-Description: "Example for a CH ELM DocumentReference: Laboratory Report"
+Title: "Publish 1Doc-NeisseriaGonorrhoeae"
+Description: "Reporting Neisseria Gonorhoeae"
 * contained = 1Doc-NeisseriaGonorrhoeae
 * status = #current
 * identifier[0].system = "urn:ietf:rfc:3986"
@@ -25,8 +25,8 @@ Description: "Example for a CH ELM DocumentReference: Laboratory Report"
 Instance: 1-DocumentReferenceResponseInProgress
 InstanceOf: PublishDocumentReferenceResponse
 Usage: #example
-Title: "DocumentReference Response for Neisseria Gonorhoeae in progress"
-Description: "Example for a CH ELM DocumentReference: Laboratory Report - in-progress"
+Title: "Publish Response for Neisseria Gonorhoeae in progress"
+Description: "Reporting Neisseria Gonorhoeae"
 * extension[chextelmstatus].extension[status].url = "status"
 * extension[chextelmstatus].extension[status].valueCode = $task-status#in-progress
 * meta.versionId = "1"
@@ -40,8 +40,8 @@ Description: "Example for a CH ELM DocumentReference: Laboratory Report - in-pro
 Instance: 1-DocumentReferenceResponseCompleted
 InstanceOf: PublishDocumentReferenceResponse
 Usage: #example
-Title: "DocumentReference Response for  Neisseria Gonorhoeae completed"
-Description: "Example for a CH ELM DocumentReference: Laboratory Report - completed"
+Title: "Publish Response for Neisseria Gonorhoeae completed"
+Description: "Reporting Neisseria Gonorhoeae"
 * extension[chextelmstatus].extension[status].url = "status"
 * extension[chextelmstatus].extension[status].valueCode = $task-status#completed
 * meta.versionId = "2"
@@ -62,8 +62,8 @@ Usage: #inline
 Instance: 1-DocumentReferenceResponseFailed
 InstanceOf: PublishDocumentReferenceResponse
 Usage: #example
-Title: "DocumentReference for  Neisseria Gonorhoeae - falied"
-Description: "Example for a CH ELM DocumentReference: Laboratory Report - failed"
+Title: "Publish Response for Neisseria Gonorhoeae failed"
+Description: "Reporting Neisseria Gonorhoeae"
 * contained = 1-OperationOutcome
 * extension[chextelmstatus].extension[status].url = "status"
 * extension[chextelmstatus].extension[status].valueCode = $task-status#failed

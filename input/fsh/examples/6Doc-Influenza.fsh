@@ -128,3 +128,15 @@ Description: "Example for a CH ELM Organization: Orderer"
 * address.line.extension[houseNumber].valueString = "10"
 * address.city = "Solothurn"
 * address.postalCode = "4500"
+
+Instance: Publish-6Doc-Influenza
+InstanceOf: PublishDocumentReferenceStrict
+Usage: #example
+Title: "Publish 6Doc-Influenza"
+Description: "Reporting Influenza"
+* contained = 6Doc-Influenza
+* status = #current
+* identifier[0].system = "urn:ietf:rfc:3986"
+* identifier[0].value = "urn:uuid:1901332d-6012-443f-9690-9291adb23a5c"
+* content.attachment.language = #de-CH
+* content.attachment.url = "#6Doc-Influenza" 

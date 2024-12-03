@@ -73,9 +73,9 @@
         <birthDate value="1981-02-07"/>
         <address>
           <use value="home"/>
-          <line value="rue de la r�publique 10">
+          <line value="rue de la république 10">
             <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
-              <valueString value="rue de la r�publique"/>
+              <valueString value="rue de la république"/>
             </extension>
             <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
               <valueString value="10"/>

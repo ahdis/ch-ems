@@ -92,3 +92,15 @@ Usage: #inline
 * subject = Reference(Pat-002)
 * requester = Reference(1PR-KsAbc)
 * specimen = Reference(4Spec-Specimen)
+
+Instance: Publish-4Doc-Campylobacter
+InstanceOf: PublishDocumentReferenceStrict
+Usage: #example
+Title: "Publish 4Doc-Campylobacter"
+Description: "Reporting Campylobacter coli"
+* contained = 4Doc-Campylobacter
+* status = #current
+* identifier[0].system = "urn:ietf:rfc:3986"
+* identifier[0].value = "urn:uuid:1901332d-6012-443f-9690-9291adb2cb3"
+* content.attachment.language = #de-CH
+* content.attachment.url = "#4Doc-Campylobacter" 

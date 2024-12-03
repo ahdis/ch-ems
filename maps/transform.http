@@ -196,3 +196,22 @@ Accept: application/fhir+xml;fhirVersion=4.0
 Content-Type: application/fhir+json;fhirVersion=4.0
 
 < ./50Doc-HIV-viremia.json
+
+
+
+
+
+### 1. POST OrfQrToBundle.map
+POST {{host}}/StructureMap HTTP/1.1
+Accept: application/fhir+xml;fhirVersion=4.0
+Content-Type: text/fhir-mapping
+
+< ./BundleToDocRef.map
+
+###
+POST {{host}}/StructureMap/$transform?source=http://fhir.ch/ig/ch-elm/StructureMap/BundleToDocRef
+Accept: application/fhir+json; charset=utf-8
+Content-Type: application/fhir+xml; charset=utf-8
+
+< ../input/resources/Bundle-51Doc-Gelbfieber.xml
+

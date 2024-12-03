@@ -86,7 +86,7 @@ Accept: application/fhir+json
 
 ###### DocumentReference Resources
 
-DocumentReference needs to follow the [Publish DocumentReference Profile](StructureDefinition-PublishDocumentReference.html) Resource metadata requirements. See [example](DocumentReference-1-DocumentReference.json.html).
+DocumentReference needs to follow the [Publish DocumentReference Profile](StructureDefinition-PublishDocumentReference.html) Resource metadata requirements. See [example](DocumentReference-Publish-1Doc-NeisseriaGonorrhoeae.json.html).
 
 When resources are `contained` they shall be contained using the FHIR contained method (see [http://hl7.org/fhir/R4/references.html#contained](http://hl7.org/fhir/R4/references.html#contained) ).
 

@@ -92,3 +92,14 @@ Usage: #inline
 * requester = Reference(1PR-KsAbc)
 * specimen = Reference(5Spec-Specimen)
 
+Instance: Publish-5Doc-TreponemaPallidum
+InstanceOf: PublishDocumentReferenceStrict
+Usage: #example
+Title: "Publish 5Doc-TreponemaPallidum"
+Description: "Reporting Treponema pallidum"
+* contained = 5Doc-TreponemaPallidum
+* status = #current
+* identifier[0].system = "urn:ietf:rfc:3986"
+* identifier[0].value = "urn:uuid:1901332d-6012-443f-9690-9291adb234fe"
+* content.attachment.language = #de-CH
+* content.attachment.url = "#5Doc-TreponemaPallidum" 

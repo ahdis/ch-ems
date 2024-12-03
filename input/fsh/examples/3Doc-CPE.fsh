@@ -91,3 +91,15 @@ Usage: #inline
 * subject = Reference(Pat-002)
 * requester = Reference(1PR-KsAbc)
 * specimen = Reference(3Spec-Specimen)
+
+Instance: Publish-3Doc-CPE
+InstanceOf: PublishDocumentReferenceStrict
+Usage: #example
+Title: "Publish 3Doc-CPE"
+Description: "Reporting Carbapenemase-producing Enterobacteriaceae (CPE)"
+* contained = 3Doc-CPE
+* status = #current
+* identifier[0].system = "urn:ietf:rfc:3986"
+* identifier[0].value = "urn:uuid:1301332d-6012-443f-9690-72913db2e3cc"
+* content.attachment.language = #de-CH
+* content.attachment.url = "#3Doc-CPE" 

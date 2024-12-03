@@ -1,5 +1,9 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
+### 1.8.0 unreleased
+
+* additional publication examples
+
 ### 1.7.0 2024/11/28
 
 * [#130](https://github.com/ahdis/ch-elm/issues/130) update usecase to english
