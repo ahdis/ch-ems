@@ -3,6 +3,7 @@ Parent: ChLabPractitioner
 Id: ch-elm-practitioner-orderer
 Title: "CH ELM Practitioner: Orderer"
 Description: "This CH ELM base profile constrains the Practitioner resource for the orderer."
+* obeys ch-elm-practioner-zsr-check-length and ch-elm-practioner-zsr-check-digit
 * . ^short = "CH ELM Practitioner: Orderer"
 * identifier ..2 MS
 * identifier[GLN] ..1 MS
