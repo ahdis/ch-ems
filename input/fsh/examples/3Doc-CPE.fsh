@@ -77,7 +77,6 @@ Usage: #inline
 Instance: 3Spec-Specimen
 InstanceOf: ChElmSpecimen
 Usage: #inline
-* type.text = "Material declared by Observation.code or non-mandatory"
 * subject = Reference(Pat-002)
 * collection.collectedDateTime = "2023-08-01"
 

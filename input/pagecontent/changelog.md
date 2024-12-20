@@ -4,7 +4,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 * additional publication examples
 * [#131](https://github.com/ahdis/ch-elm/issues/131) add check for ZSR number is valid
-
+* [#31](https://github.com/ahdis/ch-elm/issues/31) Reduction min cardinality Specimen.type from 1 to 0
 
 ### 1.7.0 2024/11/28
 
