@@ -766,6 +766,36 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
     </tbody>
 </table>
 
+#### Example withh minimal practitioner orderer information (only name, plz, city)
+
+<table class="grid">
+    <colgroup> 
+        <col style="width:25%" /> 
+        <col style="width:50%" /> 
+        <col style="width:15%" /> 
+        <col style="width:10%" /> 
+    </colgroup> 
+    <thead>
+           <tr>
+            <th>Disease</th>
+            <th>observation.code display</th>
+            <th>LOINC observation.code<br />(leading code)</th>
+            <th>FHIR Document</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Gonorrhoea</td>
+            <td>Neisseria gonorrhoeae [Presence] in Urethra by Organism specific culture</td>
+            <td>697-3</td>
+             <td>
+                <a href="Bundle-1cDoc-NeisseriaGonorrhoeae.json.html">JSON</a>, 
+                <a href="Bundle-1cDoc-NeisseriaGonorrhoeae.xml.html">XML</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 #### Scenario for confirmation tests
 
 <table class="grid">

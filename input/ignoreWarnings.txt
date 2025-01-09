@@ -37,6 +37,7 @@ This element does not match any known slice defined in the profile http://hl7.eu
 # Based on the design choice from HL7 Europe Laboratory Report (https://hl7.eu/fhir/laboratory/design-choice.html)
 Entry 'http://test.fhir.ch/r4/DiagnosticReport/1DR-NeisseriaGonorrhoeae' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'http://test.fhir.ch/r4/DiagnosticReport/1bDR-NeisseriaGonorrhoeae' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'http://test.fhir.ch/r4/DiagnosticReport/1cDR-NeisseriaGonorrhoeae' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'urn:uuid:2f69f609-e3bf-4863-bc42-3cbf0568cab1' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'urn:uuid:9f5bb881-80f5-4962-8885-df6439ebe154' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'http://test.fhir.ch/r4/DiagnosticReport/3DR-CPE' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)

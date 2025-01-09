@@ -5,6 +5,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * additional publication examples
 * [#131](https://github.com/ahdis/ch-elm/issues/131) add check for ZSR number is valid
 * [#31](https://github.com/ahdis/ch-elm/issues/31) Reduction min cardinality Specimen.type from 1 to 0
+* [#133](https://github.com/ahdis/ch-elm/issues/133) Example for  for an Practitioner Orderer with only a last name and no org, see example [Bundle](DocumentReference-1c-DocumentReferenceStrict.html) or [DocumentReference](DocumentReference-1c-DocumentReferenceStrict.html)
 
 ### 1.7.0 2024/11/28
 
