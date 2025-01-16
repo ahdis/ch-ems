@@ -14,7 +14,7 @@ uses "http://hl7.org/fhir/StructureDefinition/DiagnosticReport" alias Diagnostic
 uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QuestionnaireResponse as target
 
 group QrToBundle(source qr : QuestionnaireResponse, target bundle : Bundle ) {
-   qr.item as item where linkId='LaboratoryReport' -> bundle.id = (%item.answer.value) "LaboratoryReport";  
+   qr.item as item where linkId='LaboratoryReport.Id' -> bundle.id = (%item.answer.value) "LaboratoryReport";  
    qr -> bundle.entry as e, 
             e.resource = create('Composition') as composition, 
             composition.id = uuid() as uuid,
@@ -239,6 +239,10 @@ group QrToBundleItems(source qr : QuestionnaireResponse, target bundle : Bundle,
    qr.item as item where linkId='LaboratoryReport.TestResult.Value.Quantity' -> observation.value = create('Quantity') as qty, qty.value = (%item.answer.value) then {
       qr.item as item where linkId='LaboratoryReport.TestResult.Value.Quantitiy.Code' -> qty.code = (%item.answer.value) "LaboratoryReport-TestResult.Value.Quantitiy.Code";
       qr.item as item where linkId='LaboratoryReport.TestResult.Value.Quantitiy.CodeSystem' -> qty.system = (%item.answer.value) "LaboratoryReport.TestResult.Value.Quantitiy.CodeSystem";
+   } "LaboratoryReport-TestResult.Value.Quantity";
+
+   qr.item as item where linkId='LaboratoryReport.TestResult.Value.Ratio.NumeratorValue' -> observation.value = create('Ratio') as rto, rto.numerator = create('Quantity') as qty, qty.value = (%item.answer.value), qty.system = 'http://unitsofmeasure.org', qty.code = '1' then {
+      qr.item as item where linkId='LaboratoryReport.TestResult.Value.Ratio.DenominatorValue' -> rto.denominator = create('Quantity') as qty, qty.value = (%item.answer.value), qty.system = 'http://unitsofmeasure.org', qty.code = '1' "LaboratoryReport.TestResult.Value.Ratio.DenominatorValue";
    } "LaboratoryReport-TestResult.Value.Quantity";
 
    qr.item as item where linkId='LaboratoryReport.TestResult.Interpretation.Code' -> observation.interpretation = create('CodeableConcept') as codeableConcept, codeableConcept.coding as coding, coding.code = (%item.answer.value) then {

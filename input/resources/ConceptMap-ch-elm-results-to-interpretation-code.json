@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-interpretation-code",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-interpretation-code",
-  "version": "2024-11-28",
+  "version": "2025-01-16",
   "name": "ChElmResultsToInterpretationCode",
   "title": "CH ELM Results To Interpretation Code",
   "status": "active",
@@ -250,7 +250,7 @@
           "display": "Corynebacterium pseudotuberculosis [Presence] in Specimen by Organism specific culture",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg",
               "equivalence": "relatedto"
             }
           ]
@@ -260,7 +260,7 @@
           "display": "Corynebacterium pseudotuberculosis [Presence] in Upper respiratory specimen by Organism specific culture",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg",
               "equivalence": "relatedto"
             }
           ]
@@ -270,7 +270,7 @@
           "display": "Corynebacterium ulcerans [Presence] in Specimen by Organism specific culture",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg",
               "equivalence": "relatedto"
             }
           ]
@@ -280,7 +280,7 @@
           "display": "Corynebacterium ulcerans [Presence] in Upper respiratory specimen by Organism specific culture",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg",
               "equivalence": "relatedto"
             }
           ]
@@ -290,7 +290,7 @@
           "display": "Corynebacterium ulcerans DNA [Presence] in Specimen by NAA with probe detection",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg",
               "equivalence": "relatedto"
             }
           ]
@@ -460,7 +460,7 @@
           "display": "Corynebacterium diphtheriae [Presence] in Specimen by Organism specific culture",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg",
               "equivalence": "relatedto"
             }
           ]
@@ -1716,6 +1716,16 @@
           ]
         },
         {
+          "code": "51940-5",
+          "display": "Escherichia coli shiga-like toxin 1 [Presence] in Stool by Immunoassay",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "5195-3",
           "display": "Hepatitis B virus surface Ag [Presence] in Serum",
           "target": [
@@ -2280,7 +2290,7 @@
           "display": "Corynebacterium diphtheriae DNA [Presence] in Specimen by NAA with probe detection",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg",
               "equivalence": "relatedto"
             }
           ]
@@ -2980,7 +2990,7 @@
           "display": "Corynebacterium diphtheriae [Presence] in Upper respiratory specimen by Organism specific culture",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg",
               "equivalence": "relatedto"
             }
           ]
@@ -3060,7 +3070,7 @@
           "display": "Corynebacterium sp identified in Isolate by Organism specific culture",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg",
               "equivalence": "relatedto"
             }
           ]
@@ -3220,7 +3230,7 @@
           "display": "Corynebacterium sp DNA [Presence] by NAA with probe detection in Positive blood culture",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg",
               "equivalence": "relatedto"
             }
           ]
@@ -3308,6 +3318,16 @@
         {
           "code": "93979-3",
           "display": "Chikungunya virus IgG Ab [Presence] in Serum or Plasma",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "94151-8",
+          "display": "Bacteria.carbapenem resistant identified in Specimen by Organism specific culture",
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
@@ -3491,6 +3511,16 @@
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos-neg",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "9709-7",
+          "display": "Coxiella burnetii phase 2 IgG Ab [Titer] in Serum",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
               "equivalence": "relatedto"
             }
           ]

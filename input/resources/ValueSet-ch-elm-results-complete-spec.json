@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-complete-spec",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-complete-spec",
-  "version": "2024-11-28",
+  "version": "2025-01-16",
   "name": "ChElmResultsCompleteSpec",
   "title": "CH ELM Results Complete Spec",
   "status": "active",
@@ -26,12 +26,20 @@
             "display": "Bile specimen (specimen)"
           },
           {
+            "code": "397129002",
+            "display": "Specimen from vulva (specimen)"
+          },
+          {
             "code": "258603007",
             "display": "Specimen from respiratory system (specimen)"
           },
           {
             "code": "309051001",
             "display": "Body fluid specimen (specimen)"
+          },
+          {
+            "code": "418932006",
+            "display": "Oral Swab (specimen)"
           },
           {
             "code": "119401005",
@@ -80,6 +88,10 @@
           {
             "code": "309066003",
             "display": "Skin biopsy specimen (specimen)"
+          },
+          {
+            "code": "258542004",
+            "display": "Heart valve specimen (specimen)"
           },
           {
             "code": "122575003",
@@ -166,6 +178,10 @@
             "display": "Lymph node specimen (specimen)"
           },
           {
+            "code": "3040001000004107",
+            "display": "Paraffin embedded tissue block specimen (specimen)"
+          },
+          {
             "code": "119295008",
             "display": "Specimen obtained by aspiration (specimen)"
           },
@@ -192,6 +208,10 @@
           {
             "code": "119344008",
             "display": "Specimen from genital system (specimen)"
+          },
+          {
+            "code": "447955000",
+            "display": "Specimen from rectum (specimen)"
           },
           {
             "code": "119376003",
@@ -236,6 +256,10 @@
           {
             "code": "258450006",
             "display": "Cerebrospinal fluid specimen (specimen)"
+          },
+          {
+            "code": "258607008",
+            "display": "Bronchoalveolar lavage fluid specimen (specimen)"
           },
           {
             "code": "258415003",

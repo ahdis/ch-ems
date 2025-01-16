@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-foph-patient-name-representation",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-foph-patient-name-representation",
-  "version": "2024-11-28",
+  "version": "2025-01-16",
   "name": "ChElmResultsToFophPatientNameRepresentation",
   "title": "CH ELM Results To FOPH Patient Name Representation",
   "status": "active",
@@ -1716,6 +1716,16 @@
           ]
         },
         {
+          "code": "51940-5",
+          "display": "Escherichia coli shiga-like toxin 1 [Presence] in Stool by Immunoassay",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "5195-3",
           "display": "Hepatitis B virus surface Ag [Presence] in Serum",
           "target": [
@@ -2840,7 +2850,7 @@
           "display": "Carbapenem resistance bla OXA-48-like gene [Presence] by Molecular method",
           "target": [
             {
-              "code": "initials",
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -3316,6 +3326,16 @@
           ]
         },
         {
+          "code": "94151-8",
+          "display": "Bacteria.carbapenem resistant identified in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "94184-9",
           "display": "Yellow fever virus RNA [Presence] in Specimen by NAA with probe detection",
           "target": [
@@ -3488,6 +3508,16 @@
         {
           "code": "96797-6",
           "display": "SARS-CoV-2 (COVID-19) RNA [Presence] in Oropharyngeal wash by NAA with probe detection",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "9709-7",
+          "display": "Coxiella burnetii phase 2 IgG Ab [Titer] in Serum",
           "target": [
             {
               "code": "full-name",

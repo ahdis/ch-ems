@@ -198,6 +198,12 @@ Content-Type: application/fhir+json;fhirVersion=4.0
 < ./50Doc-HIV-viremia.json
 
 
+###
+POST {{host}}/StructureMap/$transform?source=http://fhir.ch/ig/ch-elm/StructureMap/QrToBundle
+Accept: application/fhir+xml;fhirVersion=4.0
+Content-Type: application/fhir+json;fhirVersion=4.0
+
+< ./58Doc-Coxiella.json
 
 
 
@@ -213,5 +219,5 @@ POST {{host}}/StructureMap/$transform?source=http://fhir.ch/ig/ch-elm/StructureM
 Accept: application/fhir+json; charset=utf-8
 Content-Type: application/fhir+xml; charset=utf-8
 
-< ../input/resources/Bundle-51Doc-Gelbfieber.xml
+< ../input/resources/Bundle-58Doc-Co.xml
 

@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
-  "version": "2024-11-28",
+  "version": "2025-01-16",
   "name": "ChElmResultsLaboratoryObservation",
   "title": "CH ELM Results Laboratory Observation",
   "status": "active",
@@ -690,6 +690,10 @@
             "display": "Chikungunya virus RNA [Presence] in Specimen by NAA with probe detection"
           },
           {
+            "code": "51940-5",
+            "display": "Escherichia coli shiga-like toxin 1 [Presence] in Stool by Immunoassay"
+          },
+          {
             "code": "5195-3",
             "display": "Hepatitis B virus surface Ag [Presence] in Serum"
           },
@@ -1330,6 +1334,10 @@
             "display": "Chikungunya virus IgG Ab [Presence] in Serum or Plasma"
           },
           {
+            "code": "94151-8",
+            "display": "Bacteria.carbapenem resistant identified in Specimen by Organism specific culture"
+          },
+          {
             "code": "94184-9",
             "display": "Yellow fever virus RNA [Presence] in Specimen by NAA with probe detection"
           },
@@ -1400,6 +1408,10 @@
           {
             "code": "96797-6",
             "display": "SARS-CoV-2 (COVID-19) RNA [Presence] in Oropharyngeal wash by NAA with probe detection"
+          },
+          {
+            "code": "9709-7",
+            "display": "Coxiella burnetii phase 2 IgG Ab [Titer] in Serum"
           },
           {
             "code": "97313-1",

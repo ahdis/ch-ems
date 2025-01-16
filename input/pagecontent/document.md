@@ -249,6 +249,15 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             </td>
         </tr>
         <tr>
+            <td>Enterohemorrhagic E. coli</td>
+            <td>Escherichia coli shiga-like toxin 1 [Presence] in Stool by Immunoassay</td>
+            <td>51940-5</td>
+             <td>
+                <a href="Bundle-59Doc-EHEC.json.html">JSON</a>, 
+                <a href="Bundle-59Doc-EHEC.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
             <td>Gonorrhoea</td>
             <td>Neisseria gonorrhoeae [Presence] in Urethra by Organism specific culture</td>
             <td>697-3</td>
@@ -706,12 +715,12 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
     </thead>
     <tbody>
         <tr>
-            <td>Salmonellosis</td>
-            <td>Salmonella sp antigenic formula [Identifier] in Isolate by Agglutination   </td>
-            <td>56475-7</td>
+            <td>HIV</td>
+            <td>HIV 1 RNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection</td>
+            <td>62469-2</td>
            <td>
-                <a href="Bundle-33Doc-Salmonella-valueString.json.html">JSON</a>, 
-                <a href="Bundle-33Doc-Salmonella-valueString.xml.html">XML</a>
+                <a href="Bundle-50Doc-HIV-viremia.json.html">JSON</a>, 
+                <a href="Bundle-50Doc-HIV-viremia.xml.html">XML</a>
             </td>
         </tr>
         <tr>
@@ -724,12 +733,21 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
             </td>
         </tr>
         <tr>
-            <td>HIV</td>
-            <td>HIV 1 RNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection</td>
-            <td>62469-2</td>
+            <td>Q-fever</td>
+            <td>Coxiella burnetii phase 2 IgG Ab [Titer] in Serum</td>
+            <td>9709-7</td>
            <td>
-                <a href="Bundle-50Doc-HIV-viremia.json.html">JSON</a>, 
-                <a href="Bundle-50Doc-HIV-viremia.xml.html">XML</a>
+                <a href="Bundle-58Doc-Coxiella.json.html">JSON</a>, 
+                <a href="Bundle-58Doc-Coxiella.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Salmonellosis</td>
+            <td>Salmonella sp antigenic formula [Identifier] in Isolate by Agglutination   </td>
+            <td>56475-7</td>
+           <td>
+                <a href="Bundle-33Doc-Salmonella-valueString.json.html">JSON</a>, 
+                <a href="Bundle-33Doc-Salmonella-valueString.xml.html">XML</a>
             </td>
         </tr>
     </tbody>

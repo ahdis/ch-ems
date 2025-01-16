@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-observation-profile",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-observation-profile",
-  "version": "2024-11-28",
+  "version": "2025-01-16",
   "name": "ChElmResultsToObservationProfile",
   "title": "CH ELM Results To Observation Profile",
   "status": "active",
@@ -51,6 +51,16 @@
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-pq-virl",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "9709-7",
+          "display": "Coxiella burnetii phase 2 IgG Ab [Titer] in Serum",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-rto",
               "equivalence": "relatedto"
             }
           ]

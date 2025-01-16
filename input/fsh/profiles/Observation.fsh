@@ -27,6 +27,7 @@ Description: "This CH ELM base profile constrains the Observation resource for t
 
 * valueString ^short = "String if required by leading code, see also 'Guidance - Laboratory Result'" 
 * valueQuantity ^short = "Quantity if required by leading code, see also 'Guidance - Laboratory Result'"
+* valueRatio ^short = "Ratio if required by leading code, see also 'Guidance - Laboratory Result'"
 * valueCodeableConcept ^short = "Positive/Negative or code for an additional organism specification, see also 'Guidance - Laboratory Result'"
 * valueCodeableConcept only ChElmCodeableConcept
 * valueCodeableConcept from ChElmResultsCodedValuesLaboratory (preferred) // not required, because the additional organism codes come from other valuesets
@@ -63,6 +64,13 @@ Id: ch-elm-observation-rto
 Title: "CH ELM Observation Results: Ratio"
 Description: "Ratio as observation result, see also 'Guidance - Laboratory Result'"
 * valueRatio 1..1
+* valueRatio.numerator 1..1
+* valueRatio.numerator.value = 1
+* valueRatio.numerator.system = "http://unitsofmeasure.org"
+* valueRatio.numerator.code = #1
+* valueRatio.denominator 1..1
+* valueRatio.denominator.value 1..1
+* valueRatio.denominator.code 1..1
 
 Profile: ChElmObservationTxt
 Parent: Observation
