@@ -64,6 +64,16 @@
               "equivalence": "relatedto"
             }
           ]
+        },
+        {
+          "code": "9711-3",
+          "display": "Coxiella burnetii phase 2 IgM Ab [Titer] in Serum",
+          "target": [
+            {
+              "code": "http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-observation-rto",
+              "equivalence": "relatedto"
+            }
+          ]
         }
       ]
     }

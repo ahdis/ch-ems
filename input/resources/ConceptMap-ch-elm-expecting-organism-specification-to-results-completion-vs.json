@@ -206,26 +206,6 @@
           ]
         },
         {
-          "code": "49614-1",
-          "display": "Campylobacter sp DNA [Identifier] in Specimen by NAA with probe detection",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-camp-org",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "4992-4",
-          "display": "Campylobacter sp rRNA [Presence] in Specimen by Probe",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-camp-org",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "50687-3",
           "display": "Plasmodium sp Ag [Presence] in Blood",
           "target": [
@@ -411,16 +391,6 @@
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-mal-org",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "71429-5",
-          "display": "Campylobacter sp DNA.diarrheagenic [Presence] in Stool by NAA with probe detection",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-camp-diar-org",
               "equivalence": "relatedto"
             }
           ]

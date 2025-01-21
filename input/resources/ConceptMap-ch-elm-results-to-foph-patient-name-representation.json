@@ -166,36 +166,6 @@
           ]
         },
         {
-          "code": "101552-8",
-          "display": "Campylobacter coli DNA [Presence] in Stool by NAA with probe detection",
-          "target": [
-            {
-              "code": "initials",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "101554-4",
-          "display": "Campylobacter jejuni DNA [Presence] in Stool by NAA with probe detection",
-          "target": [
-            {
-              "code": "initials",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "101555-1",
-          "display": "Campylobacter upsaliensis DNA [Presence] in Stool by NAA with probe detection",
-          "target": [
-            {
-              "code": "initials",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "101662-5",
           "display": "Abnormal Prion Protein [Presence] in Cerebral spinal fluid by RT-QuIC",
           "target": [
@@ -376,6 +346,16 @@
           ]
         },
         {
+          "code": "11469-4",
+          "display": "Bacillus anthracis [Presence] in Specimen by Organism specific culture",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "13954-3",
           "display": "Hepatitis B virus e Ag [Presence] in Serum or Plasma by Immunoassay",
           "target": [
@@ -536,6 +516,16 @@
           ]
         },
         {
+          "code": "21262-1",
+          "display": "Escherichia coli shiga-like toxin [Presence] in Stool by Immunoassay",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "21363-7",
           "display": "Legionella pneumophila DNA [Presence] in Specimen by NAA with probe detection",
           "target": [
@@ -628,6 +618,16 @@
         {
           "code": "22867-6",
           "display": "Bacillus anthracis Ag [Presence] in Specimen by Immunofluorescence",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "23024-3",
+          "display": "Coxiella burnetii DNA [Presence] in Specimen by NAA with probe detection",
           "target": [
             {
               "code": "full-name",
@@ -788,6 +788,26 @@
         {
           "code": "31204-1",
           "display": "Hepatitis B virus core IgM Ab [Presence] in Serum",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "31314-8",
+          "display": "Coxiella burnetii phase 2 IgG Ab [Presence] in Serum",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "31315-5",
+          "display": "Coxiella burnetii phase 2 IgM Ab [Presence] in Serum",
           "target": [
             {
               "code": "full-name",
@@ -1516,6 +1536,16 @@
           ]
         },
         {
+          "code": "49124-1",
+          "display": "Coxiella burnetii identified in Specimen by Sequencing",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "49521-8",
           "display": "Influenza virus A H1 RNA [Presence] in Specimen by NAA with probe detection",
           "target": [
@@ -1556,16 +1586,6 @@
           ]
         },
         {
-          "code": "49614-1",
-          "display": "Campylobacter sp DNA [Identifier] in Specimen by NAA with probe detection",
-          "target": [
-            {
-              "code": "initials",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "49671-1",
           "display": "Neisseria meningitidis DNA [Presence] in Specimen by NAA with probe detection",
           "target": [
@@ -1578,16 +1598,6 @@
         {
           "code": "49672-9",
           "display": "Streptococcus pneumoniae DNA [Presence] in Specimen by NAA with probe detection",
-          "target": [
-            {
-              "code": "initials",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "4992-4",
-          "display": "Campylobacter sp rRNA [Presence] in Specimen by Probe",
           "target": [
             {
               "code": "initials",
@@ -1708,6 +1718,16 @@
         {
           "code": "51664-1",
           "display": "Chikungunya virus RNA [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "51939-7",
+          "display": "Escherichia coli shiga-like toxin 2 [Presence] in Stool by Immunoassay",
           "target": [
             {
               "code": "full-name",
@@ -1838,6 +1858,16 @@
         {
           "code": "53942-9",
           "display": "Vibrio cholerae toxin ctx gene [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "53946-0",
+          "display": "Escherichia coli shiga-like toxin identified in Specimen",
           "target": [
             {
               "code": "full-name",
@@ -2006,6 +2036,16 @@
           ]
         },
         {
+          "code": "60261-5",
+          "display": "Coxiella burnetii DNA [Presence] in Serum or Plasma by NAA with probe detection",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "60274-8",
           "display": "Rubella virus RNA [Presence] in Serum or Plasma by NAA with probe detection",
           "target": [
@@ -2056,16 +2096,6 @@
           ]
         },
         {
-          "code": "61368-7",
-          "display": "Campylobacter jejuni DNA [Presence] in Specimen by NAA with probe detection",
-          "target": [
-            {
-              "code": "initials",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "61369-5",
           "display": "Listeria monocytogenes DNA [Presence] in Specimen by NAA with probe detection",
           "target": [
@@ -2091,36 +2121,6 @@
           "target": [
             {
               "code": "hiv-code",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "6329-7",
-          "display": "Campylobacter coli rRNA [Presence] in Specimen by Probe",
-          "target": [
-            {
-              "code": "initials",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "6333-9",
-          "display": "Campylobacter jejuni rRNA [Presence] in Specimen by Probe",
-          "target": [
-            {
-              "code": "initials",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "6334-7",
-          "display": "Campylobacter lari rRNA [Presence] in Specimen by Probe",
-          "target": [
-            {
-              "code": "initials",
               "equivalence": "relatedto"
             }
           ]
@@ -2446,16 +2446,6 @@
           ]
         },
         {
-          "code": "71429-5",
-          "display": "Campylobacter sp DNA.diarrheagenic [Presence] in Stool by NAA with probe detection",
-          "target": [
-            {
-              "code": "initials",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "71782-7",
           "display": "Yellow fever virus IgM Ab [Presence] in Cerebral spinal fluid by Immunoassay",
           "target": [
@@ -2658,6 +2648,26 @@
         {
           "code": "79190-5",
           "display": "Zika virus RNA [Presence] in Specimen by NAA with probe detection",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "79386-9",
+          "display": "Escherichia coli Stx1 toxin stx1 gene [Presence] in Stool by NAA with probe detection",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "79387-7",
+          "display": "Escherichia coli Stx2 toxin stx2 gene [Presence] in Stool by NAA with probe detection",
           "target": [
             {
               "code": "full-name",
@@ -2941,6 +2951,26 @@
           "target": [
             {
               "code": "initials",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "88177-1",
+          "display": "Coxiella burnetii DNA [Presence] in Blood by NAA with probe detection",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "88178-9",
+          "display": "Coxiella burnetii DNA [Presence] in Tissue by NAA with probe detection",
+          "target": [
+            {
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]
@@ -3508,6 +3538,16 @@
         {
           "code": "9709-7",
           "display": "Coxiella burnetii phase 2 IgG Ab [Titer] in Serum",
+          "target": [
+            {
+              "code": "full-name",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "9711-3",
+          "display": "Coxiella burnetii phase 2 IgM Ab [Titer] in Serum",
           "target": [
             {
               "code": "full-name",

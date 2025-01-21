@@ -86,14 +86,6 @@
             "display": "Salmonella sp DNA [Presence] in Specimen by NAA with probe detection"
           },
           {
-            "code": "49614-1",
-            "display": "Campylobacter sp DNA [Identifier] in Specimen by NAA with probe detection"
-          },
-          {
-            "code": "4992-4",
-            "display": "Campylobacter sp rRNA [Presence] in Specimen by Probe"
-          },
-          {
             "code": "50687-3",
             "display": "Plasmodium sp Ag [Presence] in Blood"
           },
@@ -168,10 +160,6 @@
           {
             "code": "70569-9",
             "display": "Plasmodium sp Ag [Identifier] in Blood by Rapid immunoassay"
-          },
-          {
-            "code": "71429-5",
-            "display": "Campylobacter sp DNA.diarrheagenic [Presence] in Stool by NAA with probe detection"
           },
           {
             "code": "74037-3",
