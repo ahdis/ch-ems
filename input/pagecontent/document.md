@@ -170,7 +170,7 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
         <tr>
             <td>Campylobacteriosis</td>
             <td>Campylobacter coli DNA [Presence] in Stool by NAA with probe detection</td>
-            <td>101552-8</td>
+            <td>103168-1</td>
             <td>
                 <a href="Bundle-4Doc-Campylobacter.json.html">JSON</a>, 
                 <a href="Bundle-4Doc-Campylobacter.xml.html">XML</a>
