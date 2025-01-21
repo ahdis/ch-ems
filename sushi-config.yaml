@@ -309,6 +309,10 @@ resources:
     name: 58Doc - Coxiella
     description: Example Document for reporting titer ratio
     exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
+  Bundle/58Doc-Coxiella-noRatio:
+    name: 58Doc - Coxiella
+    description: Example Document for Coxiella bu not titer ratio
+    exampleCanonical: http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict
   Bundle/59Doc-EHEC:
     name: 59Doc - EHEC
     description: Example Document for reporting EHEC toxin

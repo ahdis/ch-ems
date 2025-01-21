@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-interpretation-code",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-interpretation-code",
-  "version": "2025-01-16",
+  "version": "2025-01-21",
   "name": "ChElmResultsToInterpretationCode",
   "title": "CH ELM Results To Interpretation Code",
   "status": "active",
@@ -3326,16 +3326,6 @@
           ]
         },
         {
-          "code": "94151-8",
-          "display": "Bacteria.carbapenem resistant identified in Specimen by Organism specific culture",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "94184-9",
           "display": "Yellow fever virus RNA [Presence] in Specimen by NAA with probe detection",
           "target": [
@@ -3520,7 +3510,7 @@
           "display": "Coxiella burnetii phase 2 IgG Ab [Titer] in Serum",
           "target": [
             {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-pos",
+              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-interpretation-codes-titer",
               "equivalence": "relatedto"
             }
           ]

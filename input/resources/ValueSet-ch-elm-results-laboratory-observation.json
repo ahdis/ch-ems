@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
-  "version": "2025-01-16",
+  "version": "2025-01-21",
   "name": "ChElmResultsLaboratoryObservation",
   "title": "CH ELM Results Laboratory Observation",
   "status": "active",
@@ -1332,10 +1332,6 @@
           {
             "code": "93979-3",
             "display": "Chikungunya virus IgG Ab [Presence] in Serum or Plasma"
-          },
-          {
-            "code": "94151-8",
-            "display": "Bacteria.carbapenem resistant identified in Specimen by Organism specific culture"
           },
           {
             "code": "94184-9",

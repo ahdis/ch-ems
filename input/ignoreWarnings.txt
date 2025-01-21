@@ -250,6 +250,13 @@ Entry 'urn:uuid:52366089-5bd6-4071-bead-d77663e189ad' isn't reachable by travers
 Entry 'urn:uuid:2b1bd88a-5b86-4178-aa22-39d19bf2c6b9' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 Entry 'urn:uuid:7a47a32a-e5c0-4e90-a242-69e734979179' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 
+== input/resources/Bundle-58Doc-Coxiella.xml and -noRatio.xml ==
+Entry 'urn:uuid:a5ee60ab-687f-4d24-a7c2-12826db5c2d4' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:c49f7bcc-40eb-4c23-a58e-90f74a4e1b44' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+
+== input/resources/Bundle-59Doc-EHEC.xml ==
+Entry 'urn:uuid:62ee45ab-fc08-4464-9c52-bbfcc4210bed' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+Entry 'urn:uuid:ec00281a-19ff-41a5-94ef-91303db77c69' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
 
 # Terminology error during build, no impact
 Error from http://tx.fhir.org/r4: POST Stream too large%
