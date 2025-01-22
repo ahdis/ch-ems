@@ -1,5 +1,8 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
+### 1.9.0 unreleased
+* [#127](https://github.com/ahdis/ch-elm/issues/127) Susceptibility and genotyping  #127
+
 ### 1.8.0 unreleased
 
 * additional publication examples
