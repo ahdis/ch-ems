@@ -63,7 +63,7 @@ Parent: Observation
 Id: ch-elm-observation-rto
 Title: "CH ELM Observation Results: Ratio"
 Description: "Ratio as observation result, see also 'Guidance - Laboratory Result'"
-* valueRatio 0..1
+* valueRatio 1..1
 * valueRatio.numerator 1..1
 * valueRatio.numerator.value = 1
 * valueRatio.numerator.system = "http://unitsofmeasure.org"

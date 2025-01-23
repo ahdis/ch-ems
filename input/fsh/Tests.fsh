@@ -105,3 +105,17 @@ InstanceOf: TestScript
 * insert ActionAssertFhirPathTrue(Confirm that the returned resource is an OperationOutcome., [[is(FHIR.OperationOutcome)]])
 * insert ActionAssertFhirPathTrue(Confirm that we have no errors., [[issue.where(severity='error' or severity='fatal').count()=0]])
 * insert ActionAssertFhirPathTrue(Check information ignored, [[issue.where(severity='information' and diagnostics.matches('This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab(.+)')).count() = 0]])
+
+Instance: Test97-CoaxiellaNoRatio
+InstanceOf: TestScript
+* url = "http://fhir.ch/ig/ch-elm/TestScript/Test97-CoaxiellaNoRatio"
+* name = "Test97CoaxiellaNoRatio"
+* status = #active
+* insert Fixture(inputdata, [[Binary/Test97-Bundle-CoaxiellaNoRatio]])
+* test.name = "Test97"
+* test.description = "Test97: Verify that error for missing ratio is raised"
+* insert ActionOperationValidate(http://fhir.ch/ig/ch-elm/StructureDefinition/ch-elm-document-strict, inputdata)
+* insert ActionAssertResponseCodeOk
+* insert ActionAssertFhirPathTrue(Confirm that the returned resource is an OperationOutcome., [[is(FHIR.OperationOutcome)]])
+* insert ActionAssertFhirPathTrue(Confirm that we have errors., [[issue.where(severity='error' or severity='fatal').count()>0]])
+* insert ActionAssertFhirPathTrue(Check Constraint failed: gln-modulus-10, [[issue.where(severity='warning' and diagnostics.startsWith('Constraint failed: ch-elm-observation-profile-loinc')).count() = 1]])
