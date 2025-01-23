@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-results-to-foph-patient-name-representation",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-foph-patient-name-representation",
-  "version": "2025-01-21",
+  "version": "2025-01-23",
   "name": "ChElmResultsToFophPatientNameRepresentation",
   "title": "CH ELM Results To FOPH Patient Name Representation",
   "status": "active",
@@ -2856,16 +2856,6 @@
           ]
         },
         {
-          "code": "85827-4",
-          "display": "Carbapenem resistance bla OXA-48-like gene [Presence] by Molecular method",
-          "target": [
-            {
-              "code": "full-name",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "86515-4",
           "display": "Chikungunya virus RNA [Presence] in Urine by NAA with probe detection",
           "target": [
@@ -3687,6 +3677,16 @@
           "target": [
             {
               "code": "initials-or-vctcode",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "734351004",
+          "display": "Carbapenemase-producing Enterobacteriaceae (organism)",
+          "target": [
+            {
+              "code": "full-name",
               "equivalence": "relatedto"
             }
           ]

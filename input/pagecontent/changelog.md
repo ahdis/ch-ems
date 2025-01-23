@@ -7,7 +7,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#31](https://github.com/ahdis/ch-elm/issues/31) Reduction min cardinality Specimen.type from 1 to 0
 * [#133](https://github.com/ahdis/ch-elm/issues/133) Example for  for an Practitioner Orderer with only a last name and no org, see example [Bundle](DocumentReference-1c-DocumentReferenceStrict.html) or [DocumentReference](DocumentReference-1c-DocumentReferenceStrict.html)
 * [#134](https://github.com/ahdis/ch-elm/issues/134) ratio needs to have denominator value and fixed nominator 
-* Updated ValueSets and examples for [Q-fever](Bundle-58Doc-Coxiella.json.html) and [Enterohemorrhagic E. coli](undle-59Doc-EHEC.json.html)
+* Updated ValueSets and examples for [Q-fever](Bundle-58Doc-Coxiella.json.html) and [Enterohemorrhagic E. coli](Bundle-59Doc-EHEC.json.html) and [CPE](Bundle-3Doc-CPE.json.html)
 
 ### 1.7.0 2024/11/28
 

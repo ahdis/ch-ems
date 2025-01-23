@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-expecting-organism-specification",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-expecting-organism-specification",
-  "version": "2025-01-21",
+  "version": "2025-01-23",
   "name": "ChElmExpectingOrganismSpecification",
   "title": "CH ELM Expecting Organism Specification",
   "status": "active",
@@ -180,10 +180,6 @@
           {
             "code": "82301-3",
             "display": "Salmonella sp [Presence] in Stool by Culture"
-          },
-          {
-            "code": "85827-4",
-            "display": "Carbapenem resistance bla OXA-48-like gene [Presence] by Molecular method"
           },
           {
             "code": "86520-4",

@@ -18,6 +18,14 @@ Content-Type: application/fhir+json;fhirVersion=4.0
 
 < ./8Doc-HepatiteB.json
 
+
+### 2a. Transform order-referral-form to ORF Bundle
+POST {{host}}/StructureMap/$transform?source=http://fhir.ch/ig/ch-elm/StructureMap/QrToBundle
+Accept: application/fhir+xml;fhirVersion=4.0
+Content-Type: application/fhir+json;fhirVersion=4.0
+
+< ./3Doc-CPE.json
+
 ### 2a. Transform order-referral-form to ORF Bundle
 POST {{host}}/StructureMap/$transform?source=http://fhir.ch/ig/ch-elm/StructureMap/QrToBundle
 Accept: application/fhir+xml;fhirVersion=4.0
@@ -196,6 +204,8 @@ Accept: application/fhir+xml;fhirVersion=4.0
 Content-Type: application/fhir+json;fhirVersion=4.0
 
 < ./50Doc-HIV-viremia.json
+
+
 
 
 ###

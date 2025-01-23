@@ -505,6 +505,15 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
     </thead>
     <tbody>
         <tr>
+            <td>Carbapenemase-producing Enterobacteriaceae</td>
+            <td>Carbapenemase-producing Enterobacteriaceae (organism)</td>
+            <td>734351004</td>
+              <td>
+                <a href="Bundle-3Doc-CPE.json.html">JSON</a>, 
+                <a href="Bundle-3Doc-CPE.xml.html">XML</a>
+            </td>
+        </tr>
+        <tr>
             <td>Syphilis</td>
             <td>Treponema pallidum (organism)</td>
             <td>72904005</td>
@@ -543,15 +552,6 @@ See the examples in chapter 2.2 to learn how to use the resource profiles for di
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>Carbapenemase - producing enterobacteriaceae (CPE)</td>
-            <td>Carbapenem resistance bla OXA-48-like gene [Presence] by Molecular method</td>
-            <td>85827-4</td>
-              <td>
-                <a href="Bundle-3Doc-CPE.json.html">JSON</a>, 
-                <a href="Bundle-3Doc-CPE.xml.html">XML</a>
-            </td>
-        </tr>
         <tr>
             <td>Hanta fever</td>
             <td>Hantavirus RNA [Presence] in Blood by NAA with probe detection</td>

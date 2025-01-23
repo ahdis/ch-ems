@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ch-elm-results-laboratory-observation",
   "url": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-laboratory-observation",
-  "version": "2025-01-21",
+  "version": "2025-01-23",
   "name": "ChElmResultsLaboratoryObservation",
   "title": "CH ELM Results Laboratory Observation",
   "status": "active",
@@ -1146,10 +1146,6 @@
             "display": "Zika virus RNA [Presence] in Urine by NAA with probe detection"
           },
           {
-            "code": "85827-4",
-            "display": "Carbapenem resistance bla OXA-48-like gene [Presence] by Molecular method"
-          },
-          {
             "code": "86515-4",
             "display": "Chikungunya virus RNA [Presence] in Urine by NAA with probe detection"
           },
@@ -1481,6 +1477,10 @@
           {
             "code": "72904005",
             "display": "Treponema pallidum (organism)"
+          },
+          {
+            "code": "734351004",
+            "display": "Carbapenemase-producing Enterobacteriaceae (organism)"
           },
           {
             "code": "89293008",

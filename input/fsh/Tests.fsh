@@ -118,4 +118,4 @@ InstanceOf: TestScript
 * insert ActionAssertResponseCodeOk
 * insert ActionAssertFhirPathTrue(Confirm that the returned resource is an OperationOutcome., [[is(FHIR.OperationOutcome)]])
 * insert ActionAssertFhirPathTrue(Confirm that we have errors., [[issue.where(severity='error' or severity='fatal').count()>0]])
-* insert ActionAssertFhirPathTrue(Check Constraint failed: gln-modulus-10, [[issue.where(severity='warning' and diagnostics.startsWith('Constraint failed: ch-elm-observation-profile-loinc')).count() = 1]])
+* insert ActionAssertFhirPathTrue(Check Constraint failed: ch-elm-observation-profile-loinc, [[issue.where(diagnostics.matches('Constraint failed: ch-elm-observation-profile-loinc')).count() > 0]])

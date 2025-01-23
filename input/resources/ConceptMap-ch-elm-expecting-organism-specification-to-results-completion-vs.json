@@ -2,7 +2,7 @@
   "resourceType": "ConceptMap",
   "id": "ch-elm-expecting-organism-specification-to-results-completion-vs",
   "url": "http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-expecting-organism-specification-to-results-completion-vs",
-  "version": "2025-01-21",
+  "version": "2025-01-23",
   "name": "ChElmExpectingOrganismSpecificationToResultsCompletionVs",
   "title": "CH ELM Expecting Organism Specification To Results Completion Vs",
   "status": "active",
@@ -441,16 +441,6 @@
           "target": [
             {
               "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-sal-org",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "85827-4",
-          "display": "Carbapenem resistance bla OXA-48-like gene [Presence] by Molecular method",
-          "target": [
-            {
-              "code": "http://fhir.ch/ig/ch-elm/ValueSet/ch-elm-results-cpe-org",
               "equivalence": "relatedto"
             }
           ]
