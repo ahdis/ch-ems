@@ -8,7 +8,7 @@ Description: "Name with extensions for data-absent-reason"
 * extension ^slicing.rules = #open
 * extension contains ChElmExtVctCode named vctcode 0..1 and ChElmExtHivCode named hivcode 0..1
 * family.extension contains $data-absent-reason named dataabsentreason 0..1
-* given.extension contains $data-absent-reason named dataabsentreason 0..1
+* given.extension contains $data-absent-reason named dataabsentreason 0..0
 
 Profile: ChElmPatient
 Parent: ChLabPatient
