@@ -14,6 +14,7 @@ Description: "This CH ELM base profile constrains the Practitioner resource for 
 * name.given.extension contains $data-absent-reason named dataabsentreason 0..1
 * name.family MS
 * name.family ^maxLength = 100
+* name.family.extension contains $data-absent-reason named dataabsentreason 0..0
 * telecom[email] MS
 * telecom[email].value ^example.label = "CH ELM"
 * telecom[email].value ^example.valueString = "info@domain.ch"

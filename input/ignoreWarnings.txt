@@ -263,3 +263,14 @@ Entry 'urn:uuid:ec00281a-19ff-41a5-94ef-91303db77c69' isn't reachable by travers
 
 # Terminology error during build, no impact
 Error from http://tx.fhir.org/r4: POST Stream too large%
+
+# see https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Duplicate.20ID.20for.20contained.20resource.20in.20IG.20Publisher.201.2E8.2E10
+Duplicate ID for contained resource: 1-OperationOutcome
+Duplicate ID for contained resource: 1Doc-NeisseriaGonorrhoeae
+Duplicate ID for contained resource: 1cDoc-NeisseriaGonorrhoeae
+Duplicate ID for contained resource: 2Doc-ChlamydiaTrachomatis
+Duplicate ID for contained resource: 2Doc-ChlamydiaTrachomatis-Vct
+Duplicate ID for contained resource: 4Doc-Campylobacter
+Duplicate ID for contained resource: 5Doc-TreponemaPallidum
+Duplicate ID for contained resource: 6Doc-Influenza
+Duplicate ID for contained resource: 7Doc-SARSCoV2

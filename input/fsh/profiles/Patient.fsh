@@ -3,7 +3,6 @@ Parent: CHCoreHumanName
 Id: ch-elm-humanname
 Title: "Human Name"
 Description: "Name with extensions for data-absent-reason"
-* obeys ch-elm-first-name-not-unknown
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

@@ -88,11 +88,6 @@ Description: "If Observation.code is mapped in http://fhir.ch/ig/ch-elm/ConceptM
 Severity: #error
 Expression: "'http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-observation-profile'.resolve().group.where(source='http://snomed.info/sct').element.where(code=%context.code.coding.where(system='http://snomed.info/sct').first().code).exists() implies conformsTo('http://fhir.ch/ig/ch-elm/ConceptMap/ch-elm-results-to-observation-profile'.resolve().group.where(source='http://snomed.info/sct').element.where(code=%context.code.coding.where(system='http://snomed.info/sct').first().code).target.first().code)"
 
-Invariant: ch-elm-first-name-not-unknown
-Description: "first name cannot be unknown"
-Severity: #error
-Expression: "given.extension.where(url='http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists() implies given.extension.where(url='http://hl7.org/fhir/StructureDefinition/data-absent-reason').value != 'unknown'"
-
 Invariant: name-initials
 Description: "a name with initials"
 Severity: #error
