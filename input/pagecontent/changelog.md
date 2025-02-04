@@ -1,6 +1,6 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### 1.8.0 unreleased
+### 1.8.0 2025/02/04
 
 * additional publication examples
 * [#131](https://github.com/ahdis/ch-elm/issues/131) add check for ZSR number is valid
